@@ -7,6 +7,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 from datetime import datetime
 from pathlib import Path
@@ -14,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 SITE_URL = "https://iwasakiy55-creator.github.io/kakunin-links/"     # 公開の置き場（GitHub Pages）
-SITE_DIR = Path(r"C:\Users\WindowsUser\Documents\岩崎\kakunin-links")   # 公開する中身（git）
+SITE_DIR = Path(os.environ.get("SITE_DIR") or ROOT.parent)   # 公開する中身（このリポジトリのいちばん上）
 
 # 県ごとの元データ（同じ県の複数ファイルは、まとめる）
 SOURCES = [

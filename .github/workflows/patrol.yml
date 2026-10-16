@@ -1,0 +1,30 @@
+# 毎日 19 時（日本時間）に、リンクを見回り、画面を作り直して公開する。手でも動かせる（Actions の画面の Run workflow）
+name: links-patrol
+on:
+  schedule:
+    - cron: "0 10 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: patrol
+  cancel-in-progress: false
+jobs:
+  patrol:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: check links
+        run: pwsh -NoProfile -File src/tools/check.ps1 -Quiet
+      - name: build
+        run: python src/build.py
+      - name: publish
+        run: |
+          git config user.name "links-patrol"
+          git config user.email "links-patrol@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || (git commit -m "patrol $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M')" && git push)

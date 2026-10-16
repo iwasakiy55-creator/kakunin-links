@@ -554,6 +554,8 @@ body.finding .pref.off { display:block; }
 body.finding .pref.off.dim { display:none; }
 body.finding .ptabs { opacity:.5; }
 @media (max-width: 760px) { .ptabs { top:108px; } .ptabs button { padding:8px 14px; font-size:16px; } }
+
+.prog .tm { color:var(--sub); font-size:15.5px; margin-right:8px; } .prog .tm b { color:var(--ink); }
 </style>
 </head>
 <body>
@@ -664,7 +666,7 @@ const ss = {
 };
 let CASE = ss.get("linkshu-case", { addr: "", where: "", items: {} });   // items: {目的: {done, note}}
 function caseSave() { ss.set("linkshu-case", CASE); }
-function caseFor(where) { if (CASE.where !== where) CASE = { addr: CASE.where ? "" : CASE.addr, where, items: {} }; caseSave(); }
+function caseFor(where) { if (CASE.where !== where) CASE = { addr: CASE.where ? "" : CASE.addr, where, items: {}, t0: Date.now() }; if (!CASE.t0) CASE.t0 = Date.now(); caseSave(); }
 const EX = { "都市計画": "例：第一種住居 60/200・準防火", "道路": "例：42条1項1号・幅員6m", "道路台帳": "例：市道○号線・認定幅員6m", "災害": "例：区域外", "地形": "例：高低差 約1m・がけなし",
   "盛土": "例：宅造区域・許可不要", "白地": "例：該当なし", "中間検査": "例：対象外（告示○号）", "そのほか": "例：景観計画区域" };
 function findMuni(addr) {     // 地名地番から市町村を見つける（いちばん長く合うもの）
@@ -1016,7 +1018,11 @@ function caseProgress() {
   const rs = [...document.querySelectorAll(".row[data-k]:not(.empty)")], pg = $("#prog"); if (!pg) return;
   rs.forEach(r => { const it = CASE.items[r.dataset.k] || {}, sv = r.querySelector(".sv"); if (sv) sv.textContent = it.saved ? `写し ${it.saved} 枚 保存` : "開いた"; });
   const d = rs.filter(r => r.classList.contains("is-seen")).length, n = rs.length, sh = rs.reduce((a, r) => a + ((CASE.items[r.dataset.k] || {}).saved || 0), 0);
-  pg.innerHTML = `<span>${d === n && n ? `${svg(I.ok, 18, "ic-s")} <b>すべて開きました</b>` : `開いた <b>${d}</b> / ${n}`}${sh ? `　写し <b>${sh}</b> 枚` : ""}</span>
+  if (d === n && n && !CASE.t1) { CASE.t1 = Date.now(); caseSave(); }
+  const mins = CASE.t0 ? Math.max(1, Math.round(((CASE.t1 || Date.now()) - CASE.t0) / 60000)) : 0;
+  const tm = mins ? `<span class="tm">${CASE.t1 ? `調べにかかった時間 <b>${mins} 分</b>` : `始めてから ${mins} 分`}</span>` : "";
+  clearTimeout(caseProgress.t); if (!CASE.t1 && pg) caseProgress.t = setTimeout(caseProgress, 60000);
+  pg.innerHTML = tm + `<span>${d === n && n ? `${svg(I.ok, 18, "ic-s")} <b>すべて開きました</b>` : `開いた <b>${d}</b> / ${n}`}${sh ? `　写し <b>${sh}</b> 枚` : ""}</span>
     <span class="dots">${rs.map(r => `<i class="${r.classList.contains("is-seen") ? "on" : ""}" style="--pc:${r.style.getPropertyValue("--pc")}" data-jump="${r.id}" title="${esc(r.querySelector(".rh b").textContent)}">${r.querySelector(".no").textContent}</i>`).join("")}</span>`;
 }
 function caseProgressOld() {
@@ -1237,7 +1243,7 @@ function wire() {
     if (!o) { const hs = [...document.querySelectorAll(".grid button.hit")]; if (hs.length === 1) o = { p: +hs[0].dataset.p, m: hs[0].dataset.m }; }
     if (!o) { $("#startMsg").innerHTML = `<span class="msg">市町村の名前が見つかりませんでした。市町村の名前から貼り付けるか、下から選んでください。</span>`; CASE.addr = v; caseSave(); return; }
     const onlyName = norm(v).replace(/^(静岡県|山梨県|神奈川県)/, "").replace(/^.{1,4}郡/, "") === norm(o.m);
-    CASE = { addr: onlyName ? "" : v, where: D.prefs[o.p].name + "/" + o.m, items: {} }; caseSave();
+    CASE = { addr: onlyName ? "" : v, where: D.prefs[o.p].name + "/" + o.m, items: {}, t0: Date.now() }; caseSave();
     city(o.p, o.m);
   });
   let tm;

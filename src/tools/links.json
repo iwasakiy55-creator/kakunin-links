@@ -182,6 +182,13 @@
 "label": "建築基準法に基づく中間検査における静岡市告示"
 },
 {
+"url": "https://krr001.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
+"pref": "静岡県",
+"muni": "静岡市",
+"purpose": "地区計画",
+"label": "静岡市地区計画の区域内における建築物の制限に関する条例（平成20年条例第71号）"
+},
+{
 "url": "https://www.city.shizuoka.lg.jp/s6487/s001053.html",
 "pref": "静岡県",
 "muni": "静岡市",
@@ -208,13 +215,6 @@
 "muni": "静岡市",
 "purpose": "開発許可",
 "label": "都市計画法第53条に基づく建築許可申請（静岡市）"
-},
-{
-"url": "https://krr001.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
-"pref": "静岡県",
-"muni": "静岡市",
-"purpose": "地区計画",
-"label": "静岡市例規集"
 },
 {
 "url": "https://www.city.shizuoka.lg.jp/p018744.html",
@@ -1603,11 +1603,11 @@
 "label": "静岡県GIS「建築基準法上の道路」"
 },
 {
-"url": "https://www.town.higashiizu.lg.jp/gyoseijyoho/yakusho-madoguchiannai/index.html",
+"url": "https://www.town.higashiizu.lg.jp/gyoseijyoho/yakusho-madoguchiannai/1090.html",
 "pref": "静岡県",
 "muni": "東伊豆町",
 "purpose": "道路台帳",
-"label": "東伊豆町 建設整備課 建設管理係"
+"label": "町の仕事と連絡先（東伊豆町 建設整備課 建設管理係）"
 },
 {
 "url": "https://www.suntoizufd119.jp/yobo/",
@@ -1736,11 +1736,11 @@
 "label": "静岡県 指定道路図の公開（土木事務所の一覧）"
 },
 {
-"url": "https://www.town.matsuzaki.shizuoka.jp/docs/2016020400759/",
+"url": "https://www.town.matsuzaki.shizuoka.jp/docs/2016020400919/",
 "pref": "静岡県",
 "muni": "松崎町",
 "purpose": "道路台帳",
-"label": "松崎町 産業建設課"
+"label": "各課のお問い合わせ先（松崎町 産業建設課 管理係）"
 },
 {
 "url": "https://www.town.matsuzaki.shizuoka.jp/docs/2021050700014/",
@@ -1785,11 +1785,11 @@
 "label": "静岡県 指定道路図の公開（土木事務所の一覧）"
 },
 {
-"url": "https://www.town.nishiizu.shizuoka.jp/kakuka/kensetsu/",
+"url": "https://www.town.nishiizu.shizuoka.jp/kakuka/kensetsu/kensetsu/",
 "pref": "静岡県",
 "muni": "西伊豆町",
 "purpose": "道路台帳",
-"label": "西伊豆町 建設課"
+"label": "西伊豆町 建設課 建設係"
 },
 {
 "url": "https://shimoda-fd.jp/fire_prevention/fire_alarm/",
@@ -2478,11 +2478,11 @@
 "label": "富士吉田市の用途地域（都市政策課）"
 },
 {
-"url": "http://www.mfi.or.jp/fg-kanrika/yobogyoumu/seikatsu.html",
+"url": "https://www.mfi.or.jp/~fg-kanrika/yobogyoumu/yobogyoumu.html",
 "pref": "山梨県",
 "muni": "富士吉田市",
 "purpose": "消防",
-"label": "富士五湖消防本部 生活安全"
+"label": "富士五湖消防本部 予防関係"
 },
 {
 "url": "https://www.city.fujiyoshida.yamanashi.jp/page/6900.html",
@@ -2499,11 +2499,11 @@
 "label": "水道工事の申込み・申請"
 },
 {
-"url": "https://www.city.fujiyoshida.yamanashi.jp/page/1664.html",
+"url": "https://www.city.fujiyoshida.yamanashi.jp/page/1895.html",
 "pref": "山梨県",
 "muni": "富士吉田市",
 "purpose": "地区計画",
-"label": "富士吉田市の都市計画（都市政策課）"
+"label": "都市計画の概要（富士吉田市 都市政策課）"
 },
 {
 "url": "https://www1.g-reiki.net/fujiyoshida/reiki_taikei/taikei_default.html",
@@ -3402,11 +3402,11 @@
 "label": "山梨県 都市計画総括図（富士北麓都市計画）"
 },
 {
-"url": "http://www.mfi.or.jp/fg-kanrika/yobogyoumu/seikatsu.html",
+"url": "https://www.mfi.or.jp/~fg-kanrika/yobogyoumu/yobogyoumu.html",
 "pref": "山梨県",
 "muni": "西桂町",
 "purpose": "消防",
-"label": "富士五湖消防本部 生活安全"
+"label": "富士五湖消防本部 予防関係"
 },
 {
 "url": "https://www.town.nishikatsura.yamanashi.jp/info/40",
@@ -3451,11 +3451,11 @@
 "label": "村道（村が管理している道路）"
 },
 {
-"url": "http://www.mfi.or.jp/fg-kanrika/yobogyoumu/seikatsu.html",
+"url": "https://www.mfi.or.jp/~fg-kanrika/yobogyoumu/yobogyoumu.html",
 "pref": "山梨県",
 "muni": "忍野村",
 "purpose": "消防",
-"label": "富士五湖消防本部 生活安全"
+"label": "富士五湖消防本部 予防関係"
 },
 {
 "url": "https://www.vill.oshino.lg.jp/page/1519.html",
@@ -3507,11 +3507,11 @@
 "label": "山中湖村の道路紹介（村道一覧・路線図）"
 },
 {
-"url": "http://www.mfi.or.jp/fg-kanrika/yobogyoumu/seikatsu.html",
+"url": "https://www.mfi.or.jp/~fg-kanrika/yobogyoumu/yobogyoumu.html",
 "pref": "山梨県",
 "muni": "山中湖村",
 "purpose": "消防",
-"label": "富士五湖消防本部 生活安全"
+"label": "富士五湖消防本部 予防関係"
 },
 {
 "url": "https://www.vill.yamanakako.lg.jp/info/1410",
@@ -3542,11 +3542,11 @@
 "label": "建築確認申請について（鳴沢村 振興課）"
 },
 {
-"url": "http://www.mfi.or.jp/fg-kanrika/yobogyoumu/seikatsu.html",
+"url": "https://www.mfi.or.jp/~fg-kanrika/yobogyoumu/yobogyoumu.html",
 "pref": "山梨県",
 "muni": "鳴沢村",
 "purpose": "消防",
-"label": "富士五湖消防本部 生活安全"
+"label": "富士五湖消防本部 予防関係"
 },
 {
 "url": "https://www.vill.narusawa.yamanashi.jp/gyosei/machizukuri_kankyo/jogesuido/961.html",
@@ -3591,11 +3591,11 @@
 "label": "富士河口湖町 建築確認申請"
 },
 {
-"url": "http://www.mfi.or.jp/fg-kanrika/yobogyoumu/seikatsu.html",
+"url": "https://www.mfi.or.jp/~fg-kanrika/yobogyoumu/yobogyoumu.html",
 "pref": "山梨県",
 "muni": "富士河口湖町",
 "purpose": "消防",
-"label": "富士五湖消防本部 生活安全"
+"label": "富士五湖消防本部 予防関係"
 },
 {
 "url": "https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=6003&ka_id=15",
@@ -4109,6 +4109,13 @@
 "label": "中間検査に係る特定工程及び特定工程後の工程の指定（相模原市告示第125号）"
 },
 {
+"url": "https://krg211.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
+"pref": "神奈川県",
+"muni": "相模原市",
+"purpose": "地区計画",
+"label": "相模原市地区計画の区域内における建築物の制限に関する条例（平成4年条例第15号）"
+},
+{
 "url": "https://www.city.sagamihara.kanagawa.jp/shinseisho_menu/1011844/1011854.html",
 "pref": "神奈川県",
 "muni": "相模原市",
@@ -4142,13 +4149,6 @@
 "muni": "相模原市",
 "purpose": "浸水",
 "label": "特定都市河川流域における雨水浸透阻害行為の制限"
-},
-{
-"url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026766/reiki/index.html",
-"pref": "神奈川県",
-"muni": "相模原市",
-"purpose": "地区計画",
-"label": "相模原市例規集"
 },
 {
 "url": "https://www.city.sagamihara.kanagawa.jp/kurashi/1026489/sumai/1026516/1008023.html",

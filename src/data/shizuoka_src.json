@@ -241,10 +241,11 @@
    {
     "label": "沼津市認定路線網図",
     "url": "https://www.city.numazu.shizuoka.jp/shisei/office/ichiran/kensetsu/doukan/rosenmouzu/index.htm",
-    "what": "市道認定路線の位置と路線名（幅員はない。幅員の台帳図は道路管理課の窓口）",
+    "what": "沼津市路線網図（地図。開けた）。市道の路線を1級・2級・その他で色分け。幅員は出ない",
     "verified": true,
     "purpose": "道路台帳",
-    "role": "まずここで調べる"
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    },
    {
     "label": "建築関係例規（特定工程及び特定工程後の工程の指定）",
@@ -347,10 +348,11 @@
    {
     "label": "いとうデジタルコンパス（都市計画情報）",
     "url": "https://webgis.tohnichi-asp.jp/ito/toshikei/",
-    "what": "都市計画情報。市は県GISでも見られると案内",
+    "what": "いとうデジタルコンパス（都市計画情報。令和8年3月時点）。利用規約に同意してから地図が開く。問い合わせは建設部 都市計画課 0557-32-1781",
     "verified": true,
     "purpose": "都市計画",
-    "role": "まずここで調べる"
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    },
    {
     "label": "静岡県GIS「建築基準法上の道路」",
@@ -709,10 +711,11 @@
    {
     "label": "伊豆市道路台帳附図",
     "url": "https://webgis.tohnichi-asp.jp/izu/kanri/",
-    "what": "市道の道路台帳附図（認定状況）。用地管理課",
+    "what": "伊豆市クラウドGIS（道路台帳附図）。市が管理する道路の幅員・路線を見られる。利用規約に同意してから開く。境界は示さない",
     "verified": true,
     "purpose": "道路台帳",
-    "role": "まずここで調べる"
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    }
   ],
   "御前崎市": [
@@ -795,10 +798,11 @@
    {
     "label": "伊豆の国市道路台帳附図",
     "url": "https://webgis.tohnichi-asp.jp/izunokuni/kensetu/pub",
-    "what": "市道の道路台帳附図（認定状況）。建設課",
+    "what": "伊豆の国市クラウドGIS（道路台帳附図）。市が管理する道路の幅員・路線を見られる。利用規約に同意してから開く。境界は示さない",
     "verified": true,
     "purpose": "道路台帳",
-    "role": "まずここで調べる"
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    }
   ],
   "牧之原市": [
@@ -845,22 +849,24 @@
     "role": "まずここで調べる（県の所管区域・参考図）"
    },
    {
-    "label": "東伊豆町 建設整備課 建設管理係",
-    "url": "https://www.town.higashiizu.lg.jp/gyoseijyoho/yakusho-madoguchiannai/index.html",
-    "what": "町道の道路台帳の公開は見つからなかった。問い合わせ",
-    "verified": false,
+    "label": "町の仕事と連絡先（東伊豆町 建設整備課 建設管理係）",
+    "url": "https://www.town.higashiizu.lg.jp/gyoseijyoho/yakusho-madoguchiannai/1090.html",
+    "what": "建設管理係の担当に「道路台帳」「都市計画」「建築基準法」とある。電話 0557-95-6303",
+    "verified": true,
     "purpose": "道路台帳",
-    "role": "担当課の案内"
+    "role": "担当課の案内",
+    "checked": "2026-10-17"
    }
   ],
   "河津町": [
    {
     "label": "河津町都市計画用途地域図（PDF）",
     "url": "https://www.town.kawazu.shizuoka.jp/wp/wp-content/uploads/2024/05/toshikeikakuyoutochiikizu.pdf",
-    "what": "用途地域図。町の独自GISはなく、県GISで見る（下田土木の所管）",
+    "what": "河津都市計画用途地域図（画像のPDF・1ページ・1/10,000。「平成二十年十一月印刷」とある）。用途地域・建蔽率・容積率・都市計画道路。古い図なので、最新は町に確かめる",
     "verified": true,
     "purpose": "都市計画",
-    "role": "まずここで調べる"
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    },
    {
     "label": "静岡県GIS「建築基準法上の道路」",
@@ -873,10 +879,11 @@
    {
     "label": "河津町 建設課",
     "url": "https://www.town.kawazu.shizuoka.jp/gyousei/otoiawase/",
-    "what": "町道の道路台帳の公開は見つからなかった。問い合わせ",
+    "what": "各課のお問い合わせ。建設課 管理係が「町道、橋梁、河川等の管理事務」。電話 0558-34-1952。道路台帳の語はない",
     "verified": false,
     "purpose": "道路台帳",
-    "role": "担当課の案内"
+    "role": "担当課の案内",
+    "checked": "2026-10-17"
    }
   ],
   "南伊豆町": [
@@ -899,10 +906,11 @@
    {
     "label": "南伊豆町 地域整備課",
     "url": "https://www.town.minamiizu.shizuoka.jp/soshiki/minamiizu/tseibi/",
-    "what": "町道の道路台帳の公開は見つからなかった。問い合わせ",
+    "what": "町道の担当課（地域整備課。町道の通行止めのお知らせあり）。道路台帳の記載はページにない。閲覧は窓口で確かめる。代表 0558-62-1111",
     "verified": false,
     "purpose": "道路台帳",
-    "role": "担当課の案内"
+    "role": "担当課の案内",
+    "checked": "2026-10-17"
    }
   ],
   "松崎町": [
@@ -923,12 +931,13 @@
     "role": "担当課の案内"
    },
    {
-    "label": "松崎町 産業建設課",
-    "url": "https://www.town.matsuzaki.shizuoka.jp/docs/2016020400759/",
-    "what": "町道の道路台帳の公開は見つからなかった。問い合わせ",
-    "verified": false,
+    "label": "各課のお問い合わせ先（松崎町 産業建設課 管理係）",
+    "url": "https://www.town.matsuzaki.shizuoka.jp/docs/2016020400919/",
+    "what": "産業建設課 管理係の担当に「道路・河川」「建築確認」とある（道路台帳の語はない）。電話 0558-42-3965",
+    "verified": true,
     "purpose": "道路台帳",
-    "role": "担当課の案内"
+    "role": "担当課の案内",
+    "checked": "2026-10-17"
    }
   ],
   "西伊豆町": [
@@ -949,12 +958,13 @@
     "role": "担当課の案内"
    },
    {
-    "label": "西伊豆町 建設課",
-    "url": "https://www.town.nishiizu.shizuoka.jp/kakuka/kensetsu/",
-    "what": "町道の道路台帳の公開は見つからなかった。問い合わせ",
-    "verified": false,
+    "label": "西伊豆町 建設課 建設係",
+    "url": "https://www.town.nishiizu.shizuoka.jp/kakuka/kensetsu/kensetsu/",
+    "what": "建設係の担当に「町道（不認定道路を含む）の計画・管理・占使用」「町道の境界査定」とある（道路台帳の語はない）。建設課 直通 0558-55-0212",
+    "verified": true,
     "purpose": "道路台帳",
-    "role": "担当課の案内"
+    "role": "担当課の案内",
+    "checked": "2026-10-17"
    }
   ],
   "函南町": [
@@ -1091,10 +1101,11 @@
    {
     "label": "川根本町 建設課",
     "url": "https://www.town.kawanehon.shizuoka.jp/soshiki/kensetsu/index.html",
-    "what": "都市計画区域の外とされている（町の公式ページでは未確認）。建築確認区域などは建設課に問い合わせ",
+    "what": "建設課の入口。都市計画・用途地域の記載は課のページにない（町の公式サイトに都市計画のページは見つからなかった）。都市計画区域の有無は建設課に確かめる。代表 0547-56-1111",
     "verified": false,
     "purpose": "都市計画",
-    "role": "担当課の案内"
+    "role": "担当課の案内",
+    "checked": "2026-10-17"
    },
    {
     "label": "静岡県 指定道路図の公開（土木事務所の一覧）",
@@ -1107,10 +1118,11 @@
    {
     "label": "川根本町 建設課",
     "url": "https://www.town.kawanehon.shizuoka.jp/soshiki/kensetsu/index.html",
-    "what": "町道の道路台帳の公開は見つからなかった。問い合わせ",
+    "what": "建設課（建設事業室・道路メンテナンス事業）の入口。道路台帳の記載はページにない。閲覧は窓口で確かめる。代表 0547-56-1111",
     "verified": false,
     "purpose": "道路台帳",
-    "role": "担当課の案内"
+    "role": "担当課の案内",
+    "checked": "2026-10-17"
    }
   ],
   "森町": [
@@ -1133,10 +1145,11 @@
    {
     "label": "森町 建設課 管理係",
     "url": "https://www.town.morimachi.shizuoka.jp/gyosei/machinososhiki/kensetsuka/index.html",
-    "what": "町道の道路台帳の公開は見つからなかった。問い合わせ",
+    "what": "建設課の入口。道路は管理係（道路占用などの申請の窓口。電話 0538-85-6325）。道路台帳・認定路線の記載はサイトにない。閲覧は管理係に確かめる",
     "verified": false,
     "purpose": "道路台帳",
-    "role": "担当課の案内"
+    "role": "担当課の案内",
+    "checked": "2026-10-17"
    }
   ]
  },

@@ -1,1142 +1,1143 @@
 {
-  "prefecture_name": "神奈川県",
-  "checked_at": "2026-10-16",
-  "tokutei_gyoseicho": [
-    "神奈川県",
-    "横浜市",
-    "川崎市",
-    "相模原市",
-    "横須賀市",
-    "平塚市",
-    "鎌倉市",
-    "藤沢市",
-    "小田原市",
-    "茅ヶ崎市",
-    "大和市",
-    "厚木市",
-    "秦野市"
-  ],
-  "tokutei_gyoseicho_note": "県のページ（県所管区域における建築基準法の取扱い）による。12市が特定行政庁。限定特定行政庁の記載はなかった。逗子・三浦・伊勢原・海老名・座間・南足柄・綾瀬は県所管（土木事務所）",
-  "prefecture": [
-    {
-      "label": "県所管区域における建築基準法の取扱い（特定行政庁と土木事務所の担当区域）",
-      "url": "https://www.pref.kanagawa.jp/docs/cz4/cnt/f360252/index.html",
-      "what": "特定行政庁は12市。それ以外の市町村は県が特定行政庁で、土木事務所が担当（担当区域の表）",
-      "verified": true,
-      "purpose": "道路",
-      "role": "補助"
-    },
-    {
-      "label": "都市計画・地域発展（県土整備局 都市部都市計画課）",
-      "url": "https://www.pref.kanagawa.jp/menu/6/27/141/index.html",
-      "what": "県の都市計画の案内の入口。用途地域などの地図は各市町の都市計画の地図で見る（e-かなマップに都市計画の地図はない）",
-      "verified": true,
-      "purpose": "都市計画",
-      "role": "補助"
-    },
-    {
-      "label": "神奈川県土砂災害情報ポータル",
-      "url": "https://dosyasaigai.pref.kanagawa.jp/website/kanagawa/gis/index.html",
-      "what": "土砂災害警戒区域・特別警戒区域・急傾斜地崩壊危険区域など（砂防三法の区域）を地図で見る。最新の告示時点は「更新情報」",
-      "verified": true,
-      "purpose": "災害",
-      "role": "まずここで調べる"
-    },
-    {
-      "label": "e-かなマップ 土砂災害警戒区域マップ",
-      "url": "https://www2.wagmap.jp/pref-kanagawa/PositionSelect?mid=51",
-      "what": "土砂災害警戒区域（平成30年11月14日時点）。特別警戒区域は出ない。開くと利用許諾の画面",
-      "verified": true,
-      "purpose": "災害",
-      "role": "補助"
-    },
-    {
-      "label": "盛土規制法の運用（宅地造成等工事規制区域・特定盛土等規制区域）",
-      "url": "https://www.pref.kanagawa.jp/docs/jy2/morido/moridounyou.html",
-      "what": "令和7年4月1日から県所管全域（29市町村）が規制区域。横浜・川崎・相模原・横須賀は各市が指定",
-      "verified": true,
-      "purpose": "盛土",
-      "role": "まずここで調べる"
-    },
-    {
-      "label": "市町村毎の規制区域（宅地造成・特定盛土）の概要",
-      "url": "https://www.pref.kanagawa.jp/docs/jy2/morido/moridokiseikuiki_gaiyou.html",
-      "what": "市町村ごとの区域の別。区域図（全体）はPDF /documents/113935/morido_kuiki.pdf",
-      "verified": true,
-      "purpose": "盛土",
-      "role": "補助"
-    },
-    {
-      "label": "e-かなマップ 神奈川県指定道路マップ",
-      "url": "https://www2.wagmap.jp/pref-kanagawa/PositionSelect?mid=21",
-      "what": "県所管区域の42条1項4号・5号（位置指定）・2項道路の位置と種別。その他の道路は参考表示。最新は土木事務所で確認。開くと利用許諾の画面",
-      "verified": true,
-      "purpose": "道路",
-      "role": "まずここで調べる"
-    },
-    {
-      "label": "指定道路図及び指定道路調書について",
-      "url": "https://www.pref.kanagawa.jp/docs/cz4/cnt/f300254/index.html",
-      "what": "県所管区域の指定道路図の閲覧方法（土木事務所の窓口・e-かなマップ）",
-      "verified": true,
-      "purpose": "道路",
-      "role": "補助"
-    },
-    {
-      "label": "e-かなマップ 道路情報マップ",
-      "url": "https://www2.wagmap.jp/pref-kanagawa/PositionSelect?mid=27",
-      "what": "県が管理する道路の道路台帳図面（電子化した部分）。市道は各市の道路台帳で。開くと利用許諾の画面",
-      "verified": true,
-      "purpose": "道路台帳",
-      "role": "補助"
-    },
-    {
-      "label": "用途地域の指定のない区域における建築形態制限の指定",
-      "url": "https://www.pref.kanagawa.jp/docs/cz4/cnt/f6963/p36725.html",
-      "what": "県所管区域（12市を除く）の白地地域の容積率・建蔽率等の指定と、市町村ごとの指定図",
-      "verified": true,
-      "purpose": "白地",
-      "role": "まずここで調べる"
-    },
-    {
-      "label": "神奈川県の中間検査について",
-      "url": "https://www.pref.kanagawa.jp/docs/cz4/cnt/f6963/p40919.html",
-      "what": "県所管区域の中間検査。令和8年10月1日以降の申請は新告示（第186号。一戸建て住宅で階数2以上・200㎡超も対象。木造の特定工程は屋根小屋組・軸組）",
-      "verified": true,
-      "purpose": "中間検査",
-      "role": "まずここで調べる"
-    },
-    {
-      "label": "特定工程の告示（令和8年神奈川県告示第186号）",
-      "url": "https://www.pref.kanagawa.jp/documents/24956/r080327_kokuji186_tokuteikoutei.pdf",
-      "what": "令和8年10月1日施行の告示PDF。9月30日までの申請は旧告示 /documents/24956/03_kokuji.pdf",
-      "verified": true,
-      "purpose": "中間検査",
-      "role": "補助"
-    }
-  ],
-  "municipalities": {
-    "横浜市": [
-      {
-        "label": "横浜市行政地図情報提供システム（iマッピー）",
-        "url": "https://wwwm.city.yokohama.lg.jp/yokohama/Portal",
-        "what": "用途地域・容積率・建蔽率・防火地域・地区計画などの都市計画決定内容と建築制限を地図で見る（市の公式GIS）",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "都市計画情報（横浜市建築局）",
-        "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/toshikeikaku/joho/",
-        "what": "iマッピー・Aマッピー（過去の都市計画）・Rマッピー（都市計画道路）・問合せ窓口の案内",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "急傾斜地崩壊危険区域・土砂災害警戒区域の確認先（横浜市FAQ）",
-        "url": "https://www.city.yokohama.lg.jp/faq/kukyoku/kenchiku/kenchiku-bosai/20211013170048243.html",
-        "what": "急傾斜地崩壊危険区域・土砂災害警戒区域の場所の調べ方の案内（区域図は県のポータル）",
-        "verified": true,
-        "purpose": "災害",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "崖地に関するQ＆A（横浜市建築局）",
-        "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/bosai/gake/qa.html",
-        "what": "崖（がけ条例）・急傾斜地・土砂災害特別警戒区域での建築の注意",
-        "verified": true,
-        "purpose": "災害",
-        "role": "補助"
-      },
-      {
-        "label": "盛土規制法の規制区域（横浜市）",
-        "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/takuchi/morido/moridokuiki.html",
-        "what": "令和7年4月1日に市全域を宅地造成等工事規制区域に指定（特定盛土等規制区域の指定なし）",
-        "verified": true,
-        "purpose": "盛土",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "建築基準法の道路について（横浜市建築局）",
-        "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/tetsuduki/doro/doro.html",
-        "what": "指定道路図（iマッピー）での道路種別の調べ方、42条各号・2項道路の定義と確認先",
-        "verified": true,
-        "purpose": "道路",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "道路位置指定（法42条1項5号）",
-        "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/tetsuduki/kyoka/ichishitei.html",
-        "what": "位置指定道路の手続きと手引（指定図面はiマッピー・よこはま建築情報センター）",
-        "verified": true,
-        "purpose": "道路",
-        "role": "補助"
-      },
-      {
-        "label": "道路台帳図面の閲覧（よこはまのみち）",
-        "url": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/doro/tetsuzuki/daichosys.html",
-        "what": "認定路線図・道路台帳平面図・区域線図の閲覧（窓口端末とインターネットの「よこはまのみち」）",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "特定工程（横浜市 中間検査）",
-        "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/tetsuduki/kakunin/kosaku/tyukankensa/koutei.html",
-        "what": "横浜市建築基準法施行細則第17条による特定工程表（木造2階以下500㎡以下＝全軸組緊結完了時 など）",
-        "verified": true,
-        "purpose": "中間検査",
-        "role": "まずここで調べる"
-      }
-    ],
-    "川崎市": [
-      {
-        "label": "ガイドマップかわさき（川崎市地図情報システム）",
-        "url": "https://kawasaki.geocloud.jp/webgis/?p=1",
-        "what": "都市計画情報（用途地域・高度地区・防火地域など）、指定道路図（参考図）、道水路台帳平面図、土砂災害区域などの地図（市の公式GIS）",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "川崎市都市計画情報インターネット提供サービス",
-        "url": "https://www.city.kawasaki.jp/500/page/0000002354.html",
-        "what": "用途地域・高度地区・防火地域・準防火地域などの都市計画情報の見方の案内",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "川崎市建築基準条例に基づく災害危険区域について",
-        "url": "https://www.city.kawasaki.jp/500/page/0000115824.html",
-        "what": "急傾斜地崩壊危険区域＝災害危険区域での建築制限、がけ条例",
-        "verified": true,
-        "purpose": "災害",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "土砂災害警戒区域・土砂災害特別警戒区域について（川崎市）",
-        "url": "https://www.city.kawasaki.jp/500/page/0000060977.html",
-        "what": "市内の土砂災害（特別）警戒区域の指定と建築の扱い",
-        "verified": true,
-        "purpose": "災害",
-        "role": "補助"
-      },
-      {
-        "label": "盛土規制法の施行について（川崎市）",
-        "url": "https://www.city.kawasaki.jp/500/page/0000151005.html",
-        "what": "令和7年4月1日に川崎市全域を宅地造成等工事規制区域に指定（特定盛土等規制区域・造成宅地防災区域の指定なし）",
-        "verified": true,
-        "purpose": "盛土",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "道路について（建築基準法第42条の規定による道路）",
-        "url": "https://www.city.kawasaki.jp/500/page/0000071753.html",
-        "what": "道路種別は指定道路図（建築審査課窓口）、ガイドマップかわさきは参考図（試行期間）。位置指定道路図面の閲覧方法",
-        "verified": true,
-        "purpose": "道路",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "建築基準法上の道路種別（道路扱い）について知りたい（川崎市FAQ）",
-        "url": "https://www.city.kawasaki.jp/templates/faq/500/0000011834.html",
-        "what": "道路種別の調べ方・問合せ先",
-        "verified": true,
-        "purpose": "道路",
-        "role": "補助"
-      },
-      {
-        "label": "道水路台帳平面図の閲覧方法について知りたい（川崎市FAQ）",
-        "url": "https://www.city.kawasaki.jp/templates/faq/530/0000012113.html",
-        "what": "道水路台帳平面図の閲覧（ガイドマップかわさき・道路公園センター・建設緑政局管理課）",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "中間検査（川崎市）",
-        "url": "https://www.city.kawasaki.jp/500/page/0000056969.html",
-        "what": "特定工程の指定告示（着工時期別：令和7年4月1日以後着工の版あり）と中間検査指針",
-        "verified": true,
-        "purpose": "中間検査",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "中間検査の対象となる建築物について知りたい（川崎市FAQ）",
-        "url": "https://www.city.kawasaki.jp/templates/faq/500/0000123589.html",
-        "what": "法7条の3第1項1号・2号による対象建築物と特定工程",
-        "verified": true,
-        "purpose": "中間検査",
-        "role": "補助"
-      }
-    ],
-    "相模原市": [
-      {
-        "label": "さがみはら地図情報（Web公開型GIS）",
-        "url": "https://sagamihara.geocloud.jp/",
-        "what": "市の公式GIS。「都市計画指定状況図等」で用途地域・都市計画道路などを見る（市のページ「都市計画情報等のインターネット公開について」で案内）",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "都市計画情報等のインターネット公開について（相模原市）",
-        "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026823/machitsukuri/toshikeikaku/1004657.html",
-        "what": "用途地域・都市計画道路などはさがみはら地図情報の「都市計画指定状況図等」で見る、という市の案内",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "土砂災害ハザードマップ（相模原市）",
-        "url": "https://www.city.sagamihara.kanagawa.jp/kurashi/1026529/bousai/1008688/1013027/index.html",
-        "what": "土砂災害警戒区域・特別警戒区域のハザードマップ。マップ未反映の区域の一覧（PDF）もある。最新は県の告示図書で確かめる、と書かれている",
-        "verified": true,
-        "purpose": "災害",
-        "role": "補助"
-      },
-      {
-        "label": "宅地造成及び特定盛土等規制法（盛土規制法）について（相模原市）",
-        "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026823/machitsukuri/kaihatsu/1029495.html",
-        "what": "市全域が規制区域（令和7年4月1日から）。宅地造成等工事規制区域／特定盛土等規制区域の全体図・詳細図（PDF）と許可の規模要件",
-        "verified": true,
-        "purpose": "盛土",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "建築基準法の道路について（相模原市）",
-        "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026823/machitsukuri/kaihatsu/1004788.html",
-        "what": "道路の種別の説明。指定道路図は窓口のタッチパネルと、さがみはら地図情報で閲覧。電話・メールでの種別の問い合わせは受けない",
-        "verified": true,
-        "purpose": "道路",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "道路の位置の指定等（相模原市）",
-        "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026823/machitsukuri/kaihatsu/1030818.html",
-        "what": "位置指定道路の指定・変更・廃止の流れと必要書類、要綱・申請の手引き（PDF）",
-        "verified": true,
-        "purpose": "道路",
-        "role": "補助"
-      },
-      {
-        "label": "さがみはら地図情報（Web公開型GIS）について（相模原市）",
-        "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026823/1004480/1026832/1024999.html",
-        "what": "GISの提供データの一覧：道路台帳平面図・認定路線網図・建築基準法道路種別（指定道路図）・都市計画指定状況図など（津久井地域の一部は道路台帳の対象外）",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "中間検査対象の適用除外となる建築物が拡大しました（相模原市）",
-        "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026823/machitsukuri/kaihatsu/1004707.html",
-        "what": "中間検査の案内のページ。特定工程の指定の告示（平成21年告示第125号、令和4年改正まで）と説明のPDFへのリンク",
-        "verified": true,
-        "purpose": "中間検査",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "中間検査に係る特定工程及び特定工程後の工程の指定（相模原市告示第125号）",
-        "url": "https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/004/707/kouteishitei.pdf",
-        "what": "告示の本文（PDF）。中間検査を行う区域＝相模原市全域、対象の建築物、特定工程",
-        "verified": true,
-        "purpose": "中間検査",
-        "role": "補助"
-      }
-    ],
-    "横須賀市": [
-      {
-        "label": "よこすか わが街ガイド：用途地域、建築協定区域、各種区域",
-        "url": "https://www2.wagmap.jp/yokosuka/Agreement?IsPost=False&MapId=5&RequestPage=%2fyokosuka%2fPositionSelect%3fmid%3d5",
-        "what": "市が委託して公開している地図（市のページ「土地・建物」から案内）。用途地域などの各種区域。利用規約への同意の画面から入る",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "都市計画（横須賀市）",
-        "url": "https://www.city.yokosuka.kanagawa.jp/sangyo/toshiseibi/keikaku/index.html",
-        "what": "都市計画の案内の一覧（高度地区・地区計画・風致地区・都市計画道路の区域内の制限・わが街ガイドへのリンク）",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "防災関係の地図（ハザードマップなど）（横須賀市）",
-        "url": "https://www.city.yokosuka.kanagawa.jp/0525/bousainavi/sonae/hazardmap/index.html",
-        "what": "土砂災害ハザードマップ・修正追加情報、わが街ガイドの土砂災害警戒区域、県の告示図書へのリンク",
-        "verified": true,
-        "purpose": "災害",
-        "role": "補助"
-      },
-      {
-        "label": "盛土規制法について（横須賀市）",
-        "url": "https://www.city.yokosuka.kanagawa.jp/4830/kaihatu/morido.html",
-        "what": "令和7年4月1日から適用。宅地造成等工事規制区域・特定盛土等規制区域の区域図（北部・西部・南部のPDF）、許可・届出の一覧",
-        "verified": true,
-        "purpose": "盛土",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "よこすか わが街ガイド：建築基準法道路（指定道路図）",
-        "url": "https://www2.wagmap.jp/yokosuka/Agreement?IsPost=False&MapId=6&RequestPage=%2fyokosuka%2fPositionSelect%3fmid%3d6",
-        "what": "指定道路図（参考図。証明には使えない。月1回更新。最新は建築指導課の窓口。電話の問い合わせは受けない）",
-        "verified": true,
-        "purpose": "道路",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "建築基準法の道路（横須賀市）",
-        "url": "https://www.city.yokosuka.kanagawa.jp/4840/sidouka/douro.html",
-        "what": "指定道路図の色分けの凡例（1項1号〜5号・2項道路・通路）と、わが街ガイドへの入口",
-        "verified": true,
-        "purpose": "道路",
-        "role": "補助"
-      },
-      {
-        "label": "横須賀市の中間検査について",
-        "url": "https://www.city.yokosuka.kanagawa.jp/4840/sidouka/kensa/tyuukankensa.html",
-        "what": "特定工程の指定の告示。神奈川県告示（令和8年3月27日 第186号）と同じ内容に改正（令和8年10月1日施行）。改正告示・旧告示・新旧対照表のPDF。確認申請の日で新旧が分かれる",
-        "verified": true,
-        "purpose": "中間検査",
-        "role": "まずここで調べる"
-      }
-    ],
-    "平塚市": [
-      {
-        "label": "ひらつかわくわくマップ（平塚市地理情報システム）",
-        "url": "https://webgis.alandis.jp/hiratsuka14/",
-        "what": "都市計画（用途地域・高度地区など）・建築基準法の道路・市道認定路線網図・道路台帳",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "平塚の都市計画（平塚市）",
-        "url": "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_02877.html",
-        "what": "用途地域・高度地区・防火準防火・地区計画などの資料",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "建築基準法上の道路種別について（平塚市）",
-        "url": "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page57_00001.html",
-        "what": "道路種別はわくわくマップで確認・各号の説明・位置指定道路と2項道路は窓口",
-        "verified": true,
-        "purpose": "道路",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "ひらつかわくわくマップ（認定路線網図・道路台帳）",
-        "url": "https://webgis.alandis.jp/hiratsuka14/",
-        "what": "市道認定路線網図・道路台帳図（同じ地図の別のマップ）",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "建築確認等の手続き（平塚市）",
-        "url": "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_01924.html",
-        "what": "中間検査の特定工程の公示文（令和3年6月1日から／令和8年6月1日から）",
-        "verified": true,
-        "purpose": "中間検査",
-        "role": "まずここで調べる"
-      }
-    ],
-    "鎌倉市": [
-      {
-        "label": "かまくらわが街マップ：都市計画情報マップ（鎌倉市都市計画情報等提供サービス）",
-        "url": "https://www2.wagmap.jp/kamakura-hazard/PositionSelect?mid=231",
-        "what": "市の公式の地図（市の「都市計画」のページから案内）。市街化区域・用途地域・防火準防火・高度地区・地区計画・風致地区・歴史的風土保存区域など。参考図。利用規約の画面から入る",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "都市計画（鎌倉市）",
-        "url": "https://www.city.kamakura.kanagawa.jp/sangyou_machi/toshikeikaku/index.html",
-        "what": "都市計画の案内の一覧（都市計画情報等提供サービス・地区計画・都市計画施設）",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "鎌倉市土砂災害ハザードマップ",
-        "url": "https://www.city.kamakura.kanagawa.jp/sougoubousai/dosha-hm.html",
-        "what": "県が指定した土砂災害警戒区域・特別警戒区域をもとにしたハザードマップ（令和4年1月改定）",
-        "verified": true,
-        "purpose": "災害",
-        "role": "補助"
-      },
-      {
-        "label": "建築基準法の道路（鎌倉市）",
-        "url": "https://www.city.kamakura.kanagawa.jp/kenchikushidou/kijunhou_douro.html",
-        "what": "道路の種別の説明。種別は本庁舎3階の建築指導課の窓口のPC端末で確かめる（ウェブの指定道路図はない）。電話の問い合わせは受けない",
-        "verified": true,
-        "purpose": "道路",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "復元、測量成果、道路台帳（鎌倉市）",
-        "url": "https://www.city.kamakura.kanagawa.jp/dorochosa/daityou.html",
-        "what": "道路台帳（調書・平面図1/500）の案内。道路台帳平面図は令和8年4月1日から、かまくらわが街マップで公開",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "路線番号・舗装構成・掘削規制地図情報（鎌倉市）",
-        "url": "https://www.city.kamakura.kanagawa.jp/dorochosa/rosenmap.html",
-        "what": "市道の路線位置（路線番号）を、かまくらわが街マップの「路線位置マップ」で見る。国道・県道・私道は載っていない",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "補助"
-      },
-      {
-        "label": "中間検査申請（鎌倉市）",
-        "url": "https://www.city.kamakura.kanagawa.jp/kenchikushidou/newpage5.html",
-        "what": "特定工程の指定（令和4年鎌倉市告示82号。令和4年6月17日施行）の告示PDFと「中間検査が必要となる建築物について」のお知らせPDF",
-        "verified": true,
-        "purpose": "中間検査",
-        "role": "まずここで調べる"
-      }
-    ],
-    "藤沢市": [
-      {
-        "label": "ふじさわキュンマップ（藤沢市の地図情報）",
-        "url": "https://webgis.alandis.jp/fujisawa14/210/portal/",
-        "what": "用途地域などの都市計画情報・指定道路図（建築基準法の道路種別）・認定路線網図・道路台帳平面図",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "都市計画情報の閲覧（藤沢市）",
-        "url": "https://www.city.fujisawa.kanagawa.jp/tosikei/machizukuri/toshi/joho/etsuran.html",
-        "what": "都市計画情報はキュンマップで見られる、という市の案内",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "急傾斜地について（藤沢市）",
-        "url": "https://www.city.fujisawa.kanagawa.jp/bousai/bosai/kyukeisya.html",
-        "what": "土砂災害（特別）警戒区域と急傾斜地崩壊危険区域の違い・県の地図へのリンク",
-        "verified": true,
-        "purpose": "災害",
-        "role": "補助"
-      },
-      {
-        "label": "建築基準法上の道路種別について（藤沢市）",
-        "url": "https://www.city.fujisawa.kanagawa.jp/kentiku/machizukuri/kenchiku/kakunin/siteidouro.html",
-        "what": "道路種別の調べ方（指定道路図・キュンマップ）・2項道路の後退",
-        "verified": true,
-        "purpose": "道路",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "建築基準法第42条第1項第5号の道路（藤沢市）",
-        "url": "https://www.city.fujisawa.kanagawa.jp/kentiku/itisitei.html",
-        "what": "位置指定道路の案内",
-        "verified": true,
-        "purpose": "道路",
-        "role": "補助"
-      },
-      {
-        "label": "道路台帳について（藤沢市）",
-        "url": "https://www.city.fujisawa.kanagawa.jp/rosei/machizukuri/kotsu/kanri/dourodaicho.html",
-        "what": "道路台帳の閲覧・インターネット公開（キュンマップ）の案内",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "中間検査の概要（藤沢市）",
-        "url": "https://www.city.fujisawa.kanagawa.jp/kentiku/machizukuri/kenchiku/kakunin/shinse-kensa/kenchiku-kosaku/chukan.html",
-        "what": "中間検査を行う区域（市全域）・期間・特定工程（市規則による指定）",
-        "verified": true,
-        "purpose": "中間検査",
-        "role": "まずここで調べる"
-      }
-    ],
-    "小田原市": [
-      {
-        "label": "Navi-O（小田原市地理情報システム）",
-        "url": "https://www2.wagmap.jp/navi-odawara/Portal",
-        "what": "都市計画図・建築基準法道路（指定道路図）・認定路線情報",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "用途地域、建ぺい率・容積率のお問い合わせ（小田原市）",
-        "url": "https://www.city.odawara.kanagawa.jp/field/c-planning/urban-d/plan/toiawase.html",
-        "what": "用途地域・建ぺい率容積率・防火準防火・高度地区は地理情報システムで見る、という市の案内",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "土砂災害防止法の概要（小田原市）",
-        "url": "https://www.city.odawara.kanagawa.jp/field/disaster/disaster/nature/sediment-disaster/dosyasaigai.html",
-        "what": "土砂災害警戒区域・特別警戒区域の案内",
-        "verified": true,
-        "purpose": "災害",
-        "role": "補助"
-      },
-      {
-        "label": "指定道路図の閲覧（小田原市）",
-        "url": "https://www.city.odawara.kanagawa.jp/field/c-planning/building/confirmation/douroatukaisoudan.html",
-        "what": "指定道路図はNavi-Oと建築指導課の窓口端末で閲覧。最新は窓口",
-        "verified": true,
-        "purpose": "道路",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "市が管理する道路について（小田原市）",
-        "url": "https://www.city.odawara.kanagawa.jp/field/c-planning/urbanarea/road/sidou.html",
-        "what": "認定路線の番号・起終点・幅員はNavi-Oで参考図。道路台帳図は窓口で発行",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "中間検査について（小田原市）",
-        "url": "https://www.city.odawara.kanagawa.jp/field/c-planning/building/confirmation/tyuukannkennsanituite.html",
-        "what": "中間検査の対象と、特定工程・特定工程後の工程（PDF）",
-        "verified": true,
-        "purpose": "中間検査",
-        "role": "まずここで調べる"
-      }
-    ],
-    "茅ヶ崎市": [
-      {
-        "label": "まっぷdeちがさき（パソコン版）",
-        "url": "https://www2.wagmap.jp/chigasaki/Portal",
-        "what": "都市計画図（用途地域・防火地域など）・指定道路図・道路情報",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "都市計画情報（用途地域等）の閲覧（茅ヶ崎市）",
-        "url": "https://www.city.chigasaki.kanagawa.jp/machidukuri/chizu/1007994.html",
-        "what": "都市計画情報は、まっぷdeちがさき（パソコン版）で見る、という市の案内",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "建築基準法の道路種別の閲覧について（茅ヶ崎市）",
-        "url": "https://www.city.chigasaki.kanagawa.jp/machidukuri/shidou/1008170.html",
-        "what": "指定道路図・指定道路調書の閲覧（窓口・まっぷdeちがさき）",
-        "verified": true,
-        "purpose": "道路",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "茅ヶ崎市道認定路線網図",
-        "url": "https://www.city.chigasaki.kanagawa.jp/road/nintei/1008399.html",
-        "what": "市道の認定路線網図",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "茅ヶ崎市の中間検査について",
-        "url": "https://www.city.chigasaki.kanagawa.jp/machidukuri/shidou/1008171.html",
-        "what": "特定工程・特定工程後の工程（現行の告示と、令和8年10月1日以降の申請に適用する改正告示）",
-        "verified": true,
-        "purpose": "中間検査",
-        "role": "まずここで調べる"
-      }
-    ],
-    "大和市": [
-      {
-        "label": "大和市都市計画マップ（公開型地図情報サービス）",
-        "url": "https://www.machi-info.jp/machikado/yamato_city/consentpage/gis-toshi.html",
-        "what": "用途地域などの都市計画の地図。利用条件の同意のページから入る（市の公開型地図情報サービスの案内ページからのリンク）",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "都市計画の制限（用途地域など）について（よくある質問）",
-        "url": "https://www.city.yamato.lg.jp/gyosei/soshik/20/yokuarushitsumon_kaitoshu/12606.html",
-        "what": "都市計画の制限の調べ方の市の案内（街づくり計画課）",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "大和市土砂災害警戒区域マップ",
-        "url": "https://www.machi-info.jp/machikado/yamato_city/consentpage/gis-hazard-dosha.html",
-        "what": "土砂災害警戒区域の地図（参考図・危機管理課）。利用条件の同意から入る",
-        "verified": true,
-        "purpose": "災害",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "大和市指定道路マップ",
-        "url": "https://www.machi-info.jp/machikado/yamato_city/consentpage/gis-road.html",
-        "what": "建築基準法の道路とおおむねの位置（令和7年10月27日時点）。確認の際は窓口で最新を確かめる、と注記",
-        "verified": true,
-        "purpose": "道路",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "舗装構成図及び路線名図（公開型地図情報サービス）",
-        "url": "https://www.city.yamato.lg.jp/gyosei/soshik/72/doro_kasenkanri/doro/20026.html",
-        "what": "市道の路線名図・認定幅員・舗装構成図を地図で見られる、との案内（道路管理課）",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "中間検査の対象建築物について（建築指導課）",
-        "url": "https://www.city.yamato.lg.jp/gyosei/soshik/35/KenchikubutsuTetsuduki/6271.html",
-        "what": "細則第6条で指定する中間検査の対象（一戸建ての住宅で延べ面積50㎡超・3階以上の木造など）。特定工程は細則第6条を見る、と案内",
-        "verified": true,
-        "purpose": "中間検査",
-        "role": "まずここで調べる"
-      }
-    ],
-    "厚木市": [
-      {
-        "label": "都市計画情報のインターネット公開について（都市計画課）",
-        "url": "https://www.city.atsugi.kanagawa.jp/soshiki/toshikeikakuka/12/6129.html",
-        "what": "用途地域・都市計画道路などの都市計画情報の公開の案内。ここから「都市計画情報マップ」（厚木タウンマップ）へ入る",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "厚木タウンマップ（地図情報システム）",
-        "url": "https://www2.wagmap.jp/atsugi/Portal",
-        "what": "市の地図システム。都市計画情報マップ・建築基準法道路マップ・オールハザードマップ・道路・地籍調査マップなどが入っている",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "厚木タウンマップ（災害・緊急情報マップ／オールハザードマップ）",
-        "url": "https://www.city.atsugi.kanagawa.jp/soshiki/johoseisakuka/9/8771.html",
-        "what": "市の案内ページ。掲載マップに「災害・緊急情報マップ」「オールハザードマップ」。土砂災害警戒区域が載っているかは、地図の中まで確かめていない",
-        "verified": true,
-        "purpose": "災害",
-        "role": "補助"
-      },
-      {
-        "label": "厚木タウンマップ（建築基準法道路マップ）",
-        "url": "https://www2.wagmap.jp/atsugi/Portal",
-        "what": "掲載マップ一覧の「建築基準法道路マップ」（問い合わせは建築指導課）。道路種別は、敷地により窓口での確認が要る（市の敷地調査のページ）",
-        "verified": true,
-        "purpose": "道路",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "位置指定道路（建築基準法第42条第1項第5号）",
-        "url": "https://www.city.atsugi.kanagawa.jp/soshiki/kenchikushidoka/7/1/624.html",
-        "what": "位置指定道路の指定の基準・手続き・申請の手引き（建築指導課）",
-        "verified": true,
-        "purpose": "道路",
-        "role": "補助"
-      },
-      {
-        "label": "厚木市の道路（道路総務課）",
-        "url": "https://www.city.atsugi.kanagawa.jp/soshiki/dorokanrika/9/533.html",
-        "what": "市道の位置・名称・幅員は厚木タウンマップの道路情報マップで、と案内。延長・路線数",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "認定路線網図（オープンデータ）",
-        "url": "https://www.city.atsugi.kanagawa.jp/soshiki/dorokanrika/douro_opendata/28113.html",
-        "what": "認定路線網図のデータ（shape・GeoJSON。路線番号・名称・最小／最大幅員）。2025年2月時点",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "補助"
-      },
-      {
-        "label": "中間検査について（令和7年4月1日改正）",
-        "url": "https://www.city.atsugi.kanagawa.jp/soshiki/kenchikushidoka/6/27882.html",
-        "what": "中間検査の区域（市全域）・対象（一戸建て住宅で延べ面積50㎡超など。瑕疵保険の現場検査を受けるものは除く）・特定工程の指定のPDF（令和6年告示）",
-        "verified": true,
-        "purpose": "中間検査",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "特定工程及び特定工程後の工程の指定（告示PDF）",
-        "url": "https://www.city.atsugi.kanagawa.jp/material/files/group/50/r7tokuteikoutei.pdf",
-        "what": "上のページの関連ファイル（告示の本文）。ファイルが開けること（PDF・約140KB）は確かめたが、本文は読んでいない",
-        "verified": false,
-        "purpose": "中間検査",
-        "role": "補助"
-      }
-    ],
-    "秦野市": [
-      {
-        "label": "はだのWEBマップ（秦野市公開型地理情報システム）",
-        "url": "https://www2.wagmap.jp/hadano/Portal",
-        "what": "都市計画情報（用途地域など）・地区計画・建築協定区域を地図で見る。利用規約に同意してから使う",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "秦野都市計画図の閲覧（まちづくり計画課）",
-        "url": "https://www.city.hadano.kanagawa.jp/soshiki/8/1053/5/3160.html",
-        "what": "市が作った都市計画図（PDF・一般参考図）。利用条件に同意して開く",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "秦野市地区別防災ハザードマップ",
-        "url": "https://www.city.hadano.kanagawa.jp/soshiki/3/1016/3/bousaimap/1519.html",
-        "what": "6地区別のハザードマップ（PDF）。土砂災害（特別）警戒区域・洪水浸水想定区域を掲載（令和7年1月改訂）",
-        "verified": true,
-        "purpose": "災害",
-        "role": "補助"
-      },
-      {
-        "label": "はだのWEBマップ（指定道路種別・建築基準法道路）",
-        "url": "https://www.city.hadano.kanagawa.jp/soshiki/1/1005/4230.html",
-        "what": "市の案内ページ。公開地図の一覧に「指定道路種別（建築基準法道路）」があり、ここからWEBマップへ入る",
-        "verified": true,
-        "purpose": "道路",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "秦野市道の現況（認定市道路線網図）",
-        "url": "https://www.city.hadano.kanagawa.jp/soshiki/9/1059/1/1755.html",
-        "what": "認定市道の路線網図（地区別PDF・索引図）。路線名・幅員はWEBマップの認定市道路線網図・道路台帳図で、と案内",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "中間検査の必要な建築物（建築指導課）",
-        "url": "https://www.city.hadano.kanagawa.jp/soshiki/8/1057/2/1/2133.html",
-        "what": "中間検査の対象建築物と特定工程の表（木造在来：建方工事など）。対象に建て売りの一戸建て住宅・階数3以上。告示の原文へのリンクはない",
-        "verified": true,
-        "purpose": "中間検査",
-        "role": "まずここで調べる"
-      }
-    ],
-    "逗子市": [
-      {
-        "label": "逗子市オンラインマップ（逗子市地図情報サービス）",
-        "url": "https://www.city.zushi.kanagawa.jp/jigyosha/kaihatsu/1009302.html",
-        "what": "市の地図情報サービスの案内ページ。都市計画情報・景観形成重点地区・建築協定・市道路関連情報を地図で公開。用途境の詳細は環境都市課窓口",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "逗子市オンラインマップ（地図本体）",
-        "url": "https://zushimap-zushicity.hub.arcgis.com/",
-        "what": "市の都市計画図の閲覧ページ（1005724）からリンクされている市の公式GIS（ArcGIS Hub）",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "逗子市土砂災害等ハザードマップ",
-        "url": "https://www.city.zushi.kanagawa.jp/kurashi/bosai/1001502/1001542/1001544.html",
-        "what": "市の土砂災害等ハザードマップ（令和8年3月改訂）のPDF",
-        "verified": true,
-        "purpose": "災害",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "急傾斜地崩壊危険区域の指定（逗子市）",
-        "url": "https://www.city.zushi.kanagawa.jp/kurashi/dorokotsu/1002334/1002340.html",
-        "what": "急傾斜地崩壊危険区域の指定基準の案内（指定は県。問合せは横須賀土木事務所）",
-        "verified": true,
-        "purpose": "災害",
-        "role": "補助"
-      },
-      {
-        "label": "市道認定路線網図及び道路台帳図（逗子市）",
-        "url": "https://www.city.zushi.kanagawa.jp/kurashi/dorokotsu/1002322/1002324.html",
-        "what": "市道路線網図・道路台帳図を「市道路関連マップ」で提供（令和7年4月〜）",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "市道路関連マップ（逗子市）",
-        "url": "https://experience.arcgis.com/experience/6006125f3dde40bb8a044384618ce402",
-        "what": "上の市のページからリンクされている地図本体（ArcGIS。中身は地図アプリのため本文は未確認）",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "補助"
-      }
-    ],
-    "三浦市": [
-      {
-        "label": "都市計画情報等の閲覧について（三浦市）",
-        "url": "https://www.city.miura.kanagawa.jp/soshiki/toshikeikakuka/machizukuri/toshikeikakuka/madoguchi/8043.html",
-        "what": "都市計画情報は「みうらわが街ガイド」で確認、詳細は都市計画課、という案内",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "みうらわが街ガイド",
-        "url": "https://www2.wagmap.jp/miura/Portal",
-        "what": "市の地図情報サイト。掲載マップに「都市計画等情報」がある",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "土砂災害（特別）警戒区域について（三浦市）",
-        "url": "https://www.city.miura.kanagawa.jp/kurashi/anzen_anshin/6/1/1/hazardmap/3948.html",
-        "what": "市内の指定状況と、三浦市土砂災害警戒区域図（PDF）",
-        "verified": true,
-        "purpose": "災害",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "建築基準法上の道路種別について（三浦市）",
-        "url": "https://www.city.miura.kanagawa.jp/shigoto_sangyo_machizukuri/kaihatsu/2/4540.html",
-        "what": "道路種別は横須賀土木事務所まちづくり・建築指導課へ、一部は県の指定道路マップで確認、という案内",
-        "verified": true,
-        "purpose": "道路",
-        "role": "補助"
-      },
-      {
-        "label": "道路台帳（現況）平面図の閲覧について（全域図、詳細図）",
-        "url": "https://www.city.miura.kanagawa.jp/soshiki/dobokuka/dobokuka_yochi/1/1354.html",
-        "what": "道路台帳（現況）平面図をPDFで閲覧。全域図で図郭番号を探して詳細図を開く（住所検索は不可）",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "道路台帳（現況）平面図の閲覧（利用規約）",
-        "url": "https://www.city.miura.kanagawa.jp/kurashi/doro_kotsu/2/4161.html",
-        "what": "上の閲覧ページへの入口と利用規約・注意事項",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "補助"
-      }
-    ],
-    "伊勢原市": [
-      {
-        "label": "いせはらWebMaps",
-        "url": "https://www2.wagmap.jp/isehara/Portal",
-        "what": "市の公開型地理情報システム。掲載マップに「都市計画情報」「認定路線網図」「道路台帳図」「洪水・土砂災害ハザードマップ」がある",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "伊勢原市都市計画総括図",
-        "url": "https://www.city.isehara.kanagawa.jp/docs/2017061600061/",
-        "what": "都市計画総括図（令和7年3月）のPDF（地図面・概要面）。用途地域・都市計画道路など。用途地域は建築住宅課に問合せ",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "土砂災害警戒区域を見る（急傾斜地の崩壊、土石流）",
-        "url": "https://www.city.isehara.kanagawa.jp/docs/2012060100017/",
-        "what": "土砂災害警戒区域・特別警戒区域の説明と市内の指定状況",
-        "verified": true,
-        "purpose": "災害",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "いせはらWebMapsで道路台帳と公共下水道台帳の運用を開始",
-        "url": "https://www.city.isehara.kanagawa.jp/docs/2024030500079/",
-        "what": "道路台帳をいせはらWebMapsで公開している案内（土木総務課）",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "市道認定路線図について（伊勢原市）",
-        "url": "https://www.city.isehara.kanagawa.jp/docs/2023022200041/",
-        "what": "市道認定路線図のPDF（市内全域・地区別。令和5年2月時点）",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "補助"
-      }
-    ],
-    "海老名市": [
-      {
-        "label": "都市計画情報、用途地域などに関してよくある質問",
-        "url": "https://www.city.ebina.kanagawa.jp/shisei/seisaku/machidukuri/toshi/1008405.html",
-        "what": "用途地域・建蔽率・容積率・防火指定は「i-Map わが街海老名ガイド」で確認（地図をクリックして表示）。日影・斜線は建築規制表PDF",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "i-Map わが街海老名ガイド",
-        "url": "https://www2.wagmap.jp/ebina/Portal",
-        "what": "市の地図情報サービス。掲載マップに「都市計画情報」「道路情報(参考図)」がある",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "海老名市防災ガイドブック（ハザードマップ）",
-        "url": "https://www.bousai.city.ebina.kanagawa.jp/guidebook/hazardmap/",
-        "what": "市の防災ホームページ。洪水・内水・土砂災害のハザードマップPDF（令和8年6月改訂）",
-        "verified": true,
-        "purpose": "災害",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "土砂災害警戒区域の指定について（海老名市）",
-        "url": "https://www.city.ebina.kanagawa.jp/guide/kyukyu/bousai/1016180/1002767.html",
-        "what": "市内は急傾斜地の崩壊のみが対象、という説明と指定の基準",
-        "verified": true,
-        "purpose": "災害",
-        "role": "補助"
-      },
-      {
-        "label": "海老名市道路網図",
-        "url": "https://www.city.ebina.kanagawa.jp/guide/kotsu/douro/1016495.html",
-        "what": "令和8年度海老名市道路網図のPDF（路線番号の特定は道路管理課）",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "わが街海老名ガイドでの道路情報の閲覧について",
-        "url": "https://www.city.ebina.kanagawa.jp/guide/kotsu/douro/1018928.html",
-        "what": "市道と民有地の境界の位置・延長を「道路情報」で閲覧（令和8年5月〜。参考図）",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "補助"
-      }
-    ],
-    "座間市": [
-      {
-        "label": "地図情報検索システム「座間市わが街ガイド」",
-        "url": "https://www.city.zama.kanagawa.jp/shisei/machi/toshikeikaku/1004466.html",
-        "what": "都市計画情報の検索・閲覧・図面の印刷の案内（参考データ。境界は線引き申請）",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "座間市わが街ガイド",
-        "url": "https://www2.wagmap.jp/zama/Portal",
-        "what": "市の地図情報サイト。掲載マップに「都市計画図」「ハザードマップ」がある",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "座間市防災ハザードマップ",
-        "url": "https://www.city.zama.kanagawa.jp/kurashi/bousai/guide/1001665.html",
-        "what": "防災ハザードマップ（土砂災害（特別）警戒区域を含む）のPDF。わが街ガイドでも閲覧可",
-        "verified": true,
-        "purpose": "災害",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "建築基準法上の道路に関するお問い合わせは、特定行政庁へ（座間市）",
-        "url": "https://www.city.zama.kanagawa.jp/shisei/machi/douro/1012849/1004499.html",
-        "what": "道路種別・セットバックは県（厚木土木事務所東部センター）へ、一部は県の指定道路マップ、という案内",
-        "verified": true,
-        "purpose": "道路",
-        "role": "補助"
-      },
-      {
-        "label": "座間市道路情報管理システム",
-        "url": "https://www.city.zama.kanagawa.jp/shisei/machi/douro/1012849/1011723.html",
-        "what": "認定路線網図（路線延長・認定幅員）・掘削規制箇所をネットで公開。道路台帳図・境界確定図は窓口のみ",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "座間市道路情報管理システム（地図本体）",
-        "url": "https://webgis.alandis.jp/zama14/portal/main/index.html",
-        "what": "上の市のページからリンクされている地図本体（座間市地理情報システム）",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "補助"
-      }
-    ],
-    "南足柄市": [
-      {
-        "label": "南足柄市地理情報システム「ミナミナビ」",
-        "url": "https://www2.wagmap.jp/minamiashigara/Portal",
-        "what": "市の地図情報サイト。掲載マップに「都市計画図」「道路台帳図」「防災ハザードマップ」がある",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "地域地区（南足柄市）",
-        "url": "https://www.city.minamiashigara.kanagawa.jp/business/toshi/keikaku/chiiki_chiku.html",
-        "what": "用途地域・防火地域・準防火地域などのPDFと、地図情報システム「ミナミナビ」への案内",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "土砂災害警戒区域等の公表及び指定について（南足柄市）",
-        "url": "https://www.city.minamiashigara.kanagawa.jp/kurashi/bouan/boutai/bousailink/2404.html",
-        "what": "土砂災害警戒区域等の基礎調査の公表と指定の状況",
-        "verified": true,
-        "purpose": "災害",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "防災ハザードマップ（南足柄市）",
-        "url": "https://www.city.minamiashigara.kanagawa.jp/kurashi/bouan/boutai/sonae/hazard.html",
-        "what": "土砂災害などの防災ハザードマップ",
-        "verified": true,
-        "purpose": "災害",
-        "role": "補助"
-      }
-    ],
-    "綾瀬市": [
-      {
-        "label": "公開型地図情報配信システム「あやせびゅ～まっぷ」",
-        "url": "https://www.city.ayase.kanagawa.jp/shigoto_sangyo_machizukuri/kaihatsu_toshikeikaku/16788.html",
-        "what": "都市計画情報等を地図で公開する市のシステムの案内",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "あやせびゅ～まっぷ",
-        "url": "https://www2.wagmap.jp/ayasecity/Portal",
-        "what": "市の地図情報サイト。掲載マップに「都市計画マップ」「認定路線網図」「道路境界確定図」がある",
-        "verified": true,
-        "purpose": "都市計画",
-        "role": "補助"
-      },
-      {
-        "label": "綾瀬市防災ハザードマップ（R8.6.1）",
-        "url": "https://www.city.ayase.kanagawa.jp/kurashi_tetsuzuki/bosai_bohan_anzen_anshin/bosai/24623.html",
-        "what": "内水の浸水想定区域・土砂災害警戒区域等の危険箇所を載せたハザードマップ",
-        "verified": true,
-        "purpose": "災害",
-        "role": "まずここで調べる"
-      },
-      {
-        "label": "あやせびゅ～まっぷ（認定路線網図）",
-        "url": "https://www2.wagmap.jp/ayasecity/Portal",
-        "what": "市の地図サイトの掲載マップに「認定路線網図」がある（市の道路のページには案内がない。地図の一覧で確認）",
-        "verified": true,
-        "purpose": "道路台帳",
-        "role": "まずここで調べる"
-      }
-    ]
+ "prefecture_name": "神奈川県",
+ "checked_at": "2026-10-16",
+ "tokutei_gyoseicho": [
+  "神奈川県",
+  "横浜市",
+  "川崎市",
+  "相模原市",
+  "横須賀市",
+  "平塚市",
+  "鎌倉市",
+  "藤沢市",
+  "小田原市",
+  "茅ヶ崎市",
+  "大和市",
+  "厚木市",
+  "秦野市"
+ ],
+ "tokutei_gyoseicho_note": "県のページ（県所管区域における建築基準法の取扱い）による。12市が特定行政庁。限定特定行政庁の記載はなかった。逗子・三浦・伊勢原・海老名・座間・南足柄・綾瀬は県所管（土木事務所）",
+ "prefecture": [
+  {
+   "label": "県所管区域における建築基準法の取扱い（特定行政庁と土木事務所の担当区域）",
+   "url": "https://www.pref.kanagawa.jp/docs/cz4/cnt/f360252/index.html",
+   "what": "特定行政庁は12市。それ以外の市町村は県が特定行政庁で、土木事務所が担当（担当区域の表）",
+   "verified": true,
+   "purpose": "道路",
+   "role": "補助"
+  },
+  {
+   "label": "都市計画・地域発展（県土整備局 都市部都市計画課）",
+   "url": "https://www.pref.kanagawa.jp/menu/6/27/141/index.html",
+   "what": "県の都市計画の案内の入口。用途地域などの地図は各市町の都市計画の地図で見る（e-かなマップに都市計画の地図はない）",
+   "verified": true,
+   "purpose": "都市計画",
+   "role": "補助"
+  },
+  {
+   "label": "神奈川県土砂災害情報ポータル",
+   "url": "https://dosyasaigai.pref.kanagawa.jp/website/kanagawa/gis/index.html",
+   "what": "土砂災害警戒区域・特別警戒区域・急傾斜地崩壊危険区域など（砂防三法の区域）を地図で見る。最新の告示時点は「更新情報」",
+   "verified": true,
+   "purpose": "災害",
+   "role": "まずここで調べる"
+  },
+  {
+   "label": "e-かなマップ 土砂災害警戒区域マップ",
+   "url": "https://www2.wagmap.jp/pref-kanagawa/PositionSelect?mid=51",
+   "what": "土砂災害警戒区域（平成30年11月14日時点）。特別警戒区域は出ない。開くと利用許諾の画面",
+   "verified": true,
+   "purpose": "災害",
+   "role": "補助"
+  },
+  {
+   "label": "盛土規制法の運用（宅地造成等工事規制区域・特定盛土等規制区域）",
+   "url": "https://www.pref.kanagawa.jp/docs/jy2/morido/moridounyou.html",
+   "what": "令和7年4月1日から県所管全域（29市町村）が規制区域。横浜・川崎・相模原・横須賀は各市が指定",
+   "verified": true,
+   "purpose": "盛土",
+   "role": "まずここで調べる"
+  },
+  {
+   "label": "市町村毎の規制区域（宅地造成・特定盛土）の概要",
+   "url": "https://www.pref.kanagawa.jp/docs/jy2/morido/moridokiseikuiki_gaiyou.html",
+   "what": "市町村ごとの区域の別。区域図（全体）はPDF /documents/113935/morido_kuiki.pdf",
+   "verified": true,
+   "purpose": "盛土",
+   "role": "補助"
+  },
+  {
+   "label": "e-かなマップ 神奈川県指定道路マップ",
+   "url": "https://www2.wagmap.jp/pref-kanagawa/PositionSelect?mid=21",
+   "what": "県所管区域の42条1項4号・5号（位置指定）・2項道路の位置と種別。その他の道路は参考表示。最新は土木事務所で確認。開くと利用許諾の画面",
+   "verified": true,
+   "purpose": "道路",
+   "role": "まずここで調べる"
+  },
+  {
+   "label": "指定道路図及び指定道路調書について",
+   "url": "https://www.pref.kanagawa.jp/docs/cz4/cnt/f300254/index.html",
+   "what": "県所管区域の指定道路図の閲覧方法（土木事務所の窓口・e-かなマップ）",
+   "verified": true,
+   "purpose": "道路",
+   "role": "補助"
+  },
+  {
+   "label": "e-かなマップ 道路情報マップ",
+   "url": "https://www2.wagmap.jp/pref-kanagawa/PositionSelect?mid=27",
+   "what": "県が管理する道路の道路台帳図面（電子化した部分）。市道は各市の道路台帳で。開くと利用許諾の画面",
+   "verified": true,
+   "purpose": "道路台帳",
+   "role": "補助"
+  },
+  {
+   "label": "用途地域の指定のない区域における建築形態制限の指定",
+   "url": "https://www.pref.kanagawa.jp/docs/cz4/cnt/f6963/p36725.html",
+   "what": "県所管区域（12市を除く）の白地地域の容積率・建蔽率等の指定と、市町村ごとの指定図",
+   "verified": true,
+   "purpose": "白地",
+   "role": "まずここで調べる"
+  },
+  {
+   "label": "神奈川県の中間検査について",
+   "url": "https://www.pref.kanagawa.jp/docs/cz4/cnt/f6963/p40919.html",
+   "what": "県所管区域の中間検査。令和8年10月1日以降の申請は新告示（第186号。一戸建て住宅で階数2以上・200㎡超も対象。木造の特定工程は屋根小屋組・軸組）",
+   "verified": true,
+   "purpose": "中間検査",
+   "role": "まずここで調べる"
+  },
+  {
+   "label": "特定工程の告示（令和8年神奈川県告示第186号）",
+   "url": "https://www.pref.kanagawa.jp/documents/24956/r080327_kokuji186_tokuteikoutei.pdf",
+   "what": "令和8年10月1日施行の告示PDF。9月30日までの申請は旧告示 /documents/24956/03_kokuji.pdf",
+   "verified": true,
+   "purpose": "中間検査",
+   "role": "補助"
   }
+ ],
+ "municipalities": {
+  "横浜市": [
+   {
+    "label": "横浜市行政地図情報提供システム（iマッピー）",
+    "url": "https://wwwm.city.yokohama.lg.jp/yokohama/Portal",
+    "what": "横浜市行政地図情報提供システムの入口（開けた）。「iマッピー」で用途地域など都市計画の制限・建築基準法の道路種別を見られる。「よこはまのみち」に道路台帳図・認定路線図",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
+   },
+   {
+    "label": "都市計画情報（横浜市建築局）",
+    "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/toshikeikaku/joho/",
+    "what": "iマッピー・Aマッピー（過去の都市計画）・Rマッピー（都市計画道路）・問合せ窓口の案内",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "急傾斜地崩壊危険区域・土砂災害警戒区域の確認先（横浜市FAQ）",
+    "url": "https://www.city.yokohama.lg.jp/faq/kukyoku/kenchiku/kenchiku-bosai/20211013170048243.html",
+    "what": "急傾斜地崩壊危険区域・土砂災害警戒区域の場所の調べ方の案内（区域図は県のポータル）",
+    "verified": true,
+    "purpose": "災害",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "崖地に関するQ＆A（横浜市建築局）",
+    "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/bosai/gake/qa.html",
+    "what": "崖（がけ条例）・急傾斜地・土砂災害特別警戒区域での建築の注意",
+    "verified": true,
+    "purpose": "災害",
+    "role": "補助"
+   },
+   {
+    "label": "盛土規制法の規制区域（横浜市）",
+    "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/takuchi/morido/moridokuiki.html",
+    "what": "令和7年4月1日に市全域を宅地造成等工事規制区域に指定（特定盛土等規制区域の指定なし）",
+    "verified": true,
+    "purpose": "盛土",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "建築基準法の道路について（横浜市建築局）",
+    "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/tetsuduki/doro/doro.html",
+    "what": "指定道路図（iマッピー）での道路種別の調べ方、42条各号・2項道路の定義と確認先",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "道路位置指定（法42条1項5号）",
+    "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/tetsuduki/kyoka/ichishitei.html",
+    "what": "位置指定道路の手続きと手引（指定図面はiマッピー・よこはま建築情報センター）",
+    "verified": true,
+    "purpose": "道路",
+    "role": "補助"
+   },
+   {
+    "label": "道路台帳図面の閲覧（よこはまのみち）",
+    "url": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/doro/tetsuzuki/daichosys.html",
+    "what": "認定路線図・道路台帳平面図・区域線図の閲覧（窓口端末とインターネットの「よこはまのみち」）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "特定工程（横浜市 中間検査）",
+    "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/tetsuduki/kakunin/kosaku/tyukankensa/koutei.html",
+    "what": "横浜市建築基準法施行細則第17条による特定工程表（木造2階以下500㎡以下＝全軸組緊結完了時 など）",
+    "verified": true,
+    "purpose": "中間検査",
+    "role": "まずここで調べる"
+   }
+  ],
+  "川崎市": [
+   {
+    "label": "ガイドマップかわさき（川崎市地図情報システム）",
+    "url": "https://kawasaki.geocloud.jp/webgis/?p=1",
+    "what": "都市計画情報（用途地域・高度地区・防火地域など）、指定道路図（参考図）、道水路台帳平面図、土砂災害区域などの地図（市の公式GIS）",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "川崎市都市計画情報インターネット提供サービス",
+    "url": "https://www.city.kawasaki.jp/500/page/0000002354.html",
+    "what": "用途地域・高度地区・防火地域・準防火地域などの都市計画情報の見方の案内",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "川崎市建築基準条例に基づく災害危険区域について",
+    "url": "https://www.city.kawasaki.jp/500/page/0000115824.html",
+    "what": "急傾斜地崩壊危険区域＝災害危険区域での建築制限、がけ条例",
+    "verified": true,
+    "purpose": "災害",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "土砂災害警戒区域・土砂災害特別警戒区域について（川崎市）",
+    "url": "https://www.city.kawasaki.jp/500/page/0000060977.html",
+    "what": "市内の土砂災害（特別）警戒区域の指定と建築の扱い",
+    "verified": true,
+    "purpose": "災害",
+    "role": "補助"
+   },
+   {
+    "label": "盛土規制法の施行について（川崎市）",
+    "url": "https://www.city.kawasaki.jp/500/page/0000151005.html",
+    "what": "令和7年4月1日に川崎市全域を宅地造成等工事規制区域に指定（特定盛土等規制区域・造成宅地防災区域の指定なし）",
+    "verified": true,
+    "purpose": "盛土",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "道路について（建築基準法第42条の規定による道路）",
+    "url": "https://www.city.kawasaki.jp/500/page/0000071753.html",
+    "what": "道路種別は指定道路図（建築審査課窓口）、ガイドマップかわさきは参考図（試行期間）。位置指定道路図面の閲覧方法",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "建築基準法上の道路種別（道路扱い）について知りたい（川崎市FAQ）",
+    "url": "https://www.city.kawasaki.jp/templates/faq/500/0000011834.html",
+    "what": "道路種別の調べ方・問合せ先",
+    "verified": true,
+    "purpose": "道路",
+    "role": "補助"
+   },
+   {
+    "label": "道水路台帳平面図の閲覧方法について知りたい（川崎市FAQ）",
+    "url": "https://www.city.kawasaki.jp/templates/faq/530/0000012113.html",
+    "what": "道水路台帳平面図の閲覧（ガイドマップかわさき・道路公園センター・建設緑政局管理課）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "中間検査（川崎市）",
+    "url": "https://www.city.kawasaki.jp/500/page/0000056969.html",
+    "what": "特定工程の指定告示（着工時期別：令和7年4月1日以後着工の版あり）と中間検査指針",
+    "verified": true,
+    "purpose": "中間検査",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "中間検査の対象となる建築物について知りたい（川崎市FAQ）",
+    "url": "https://www.city.kawasaki.jp/templates/faq/500/0000123589.html",
+    "what": "法7条の3第1項1号・2号による対象建築物と特定工程",
+    "verified": true,
+    "purpose": "中間検査",
+    "role": "補助"
+   }
+  ],
+  "相模原市": [
+   {
+    "label": "さがみはら地図情報（Web公開型GIS）",
+    "url": "https://sagamihara.geocloud.jp/",
+    "what": "市の公式GIS。「都市計画指定状況図等」で用途地域・都市計画道路などを見る（市のページ「都市計画情報等のインターネット公開について」で案内）",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "都市計画情報等のインターネット公開について（相模原市）",
+    "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026823/machitsukuri/toshikeikaku/1004657.html",
+    "what": "用途地域・都市計画道路などはさがみはら地図情報の「都市計画指定状況図等」で見る、という市の案内",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "土砂災害ハザードマップ（相模原市）",
+    "url": "https://www.city.sagamihara.kanagawa.jp/kurashi/1026529/bousai/1008688/1013027/index.html",
+    "what": "土砂災害警戒区域・特別警戒区域のハザードマップ。マップ未反映の区域の一覧（PDF）もある。最新は県の告示図書で確かめる、と書かれている",
+    "verified": true,
+    "purpose": "災害",
+    "role": "補助"
+   },
+   {
+    "label": "宅地造成及び特定盛土等規制法（盛土規制法）について（相模原市）",
+    "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026823/machitsukuri/kaihatsu/1029495.html",
+    "what": "市全域が規制区域（令和7年4月1日から）。宅地造成等工事規制区域／特定盛土等規制区域の全体図・詳細図（PDF）と許可の規模要件",
+    "verified": true,
+    "purpose": "盛土",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "建築基準法の道路について（相模原市）",
+    "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026823/machitsukuri/kaihatsu/1004788.html",
+    "what": "道路の種別の説明。指定道路図は窓口のタッチパネルと、さがみはら地図情報で閲覧。電話・メールでの種別の問い合わせは受けない",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "道路の位置の指定等（相模原市）",
+    "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026823/machitsukuri/kaihatsu/1030818.html",
+    "what": "位置指定道路の指定・変更・廃止の流れと必要書類、要綱・申請の手引き（PDF）",
+    "verified": true,
+    "purpose": "道路",
+    "role": "補助"
+   },
+   {
+    "label": "さがみはら地図情報（Web公開型GIS）について（相模原市）",
+    "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026823/1004480/1026832/1024999.html",
+    "what": "GISの提供データの一覧：道路台帳平面図・認定路線網図・建築基準法道路種別（指定道路図）・都市計画指定状況図など（津久井地域の一部は道路台帳の対象外）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "中間検査対象の適用除外となる建築物が拡大しました（相模原市）",
+    "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026823/machitsukuri/kaihatsu/1004707.html",
+    "what": "中間検査の案内のページ。特定工程の指定の告示（平成21年告示第125号、令和4年改正まで）と説明のPDFへのリンク",
+    "verified": true,
+    "purpose": "中間検査",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "中間検査に係る特定工程及び特定工程後の工程の指定（相模原市告示第125号）",
+    "url": "https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/004/707/kouteishitei.pdf",
+    "what": "告示の本文（PDF）。中間検査を行う区域＝相模原市全域、対象の建築物、特定工程",
+    "verified": true,
+    "purpose": "中間検査",
+    "role": "補助"
+   }
+  ],
+  "横須賀市": [
+   {
+    "label": "よこすか わが街ガイド：用途地域、建築協定区域、各種区域",
+    "url": "https://www2.wagmap.jp/yokosuka/Agreement?IsPost=False&MapId=5&RequestPage=%2fyokosuka%2fPositionSelect%3fmid%3d5",
+    "what": "市が委託して公開している地図（市のページ「土地・建物」から案内）。用途地域などの各種区域。利用規約への同意の画面から入る",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "都市計画（横須賀市）",
+    "url": "https://www.city.yokosuka.kanagawa.jp/sangyo/toshiseibi/keikaku/index.html",
+    "what": "都市計画の案内の一覧（高度地区・地区計画・風致地区・都市計画道路の区域内の制限・わが街ガイドへのリンク）",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "防災関係の地図（ハザードマップなど）（横須賀市）",
+    "url": "https://www.city.yokosuka.kanagawa.jp/0525/bousainavi/sonae/hazardmap/index.html",
+    "what": "土砂災害ハザードマップ・修正追加情報、わが街ガイドの土砂災害警戒区域、県の告示図書へのリンク",
+    "verified": true,
+    "purpose": "災害",
+    "role": "補助"
+   },
+   {
+    "label": "盛土規制法について（横須賀市）",
+    "url": "https://www.city.yokosuka.kanagawa.jp/4830/kaihatu/morido.html",
+    "what": "令和7年4月1日から適用。宅地造成等工事規制区域・特定盛土等規制区域の区域図（北部・西部・南部のPDF）、許可・届出の一覧",
+    "verified": true,
+    "purpose": "盛土",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "よこすか わが街ガイド：建築基準法道路（指定道路図）",
+    "url": "https://www2.wagmap.jp/yokosuka/Agreement?IsPost=False&MapId=6&RequestPage=%2fyokosuka%2fPositionSelect%3fmid%3d6",
+    "what": "指定道路図（参考図。証明には使えない。月1回更新。最新は建築指導課の窓口。電話の問い合わせは受けない）",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "建築基準法の道路（横須賀市）",
+    "url": "https://www.city.yokosuka.kanagawa.jp/4840/sidouka/douro.html",
+    "what": "指定道路図の色分けの凡例（1項1号〜5号・2項道路・通路）と、わが街ガイドへの入口",
+    "verified": true,
+    "purpose": "道路",
+    "role": "補助"
+   },
+   {
+    "label": "横須賀市の中間検査について",
+    "url": "https://www.city.yokosuka.kanagawa.jp/4840/sidouka/kensa/tyuukankensa.html",
+    "what": "特定工程の指定の告示。神奈川県告示（令和8年3月27日 第186号）と同じ内容に改正（令和8年10月1日施行）。改正告示・旧告示・新旧対照表のPDF。確認申請の日で新旧が分かれる",
+    "verified": true,
+    "purpose": "中間検査",
+    "role": "まずここで調べる"
+   }
+  ],
+  "平塚市": [
+   {
+    "label": "ひらつかわくわくマップ（平塚市地理情報システム）",
+    "url": "https://webgis.alandis.jp/hiratsuka14/",
+    "what": "都市計画（用途地域・高度地区など）・建築基準法の道路・市道認定路線網図・道路台帳",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "平塚の都市計画（平塚市）",
+    "url": "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_02877.html",
+    "what": "用途地域・高度地区・防火準防火・地区計画などの資料",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "建築基準法上の道路種別について（平塚市）",
+    "url": "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page57_00001.html",
+    "what": "道路種別はわくわくマップで確認・各号の説明・位置指定道路と2項道路は窓口",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "ひらつかわくわくマップ（認定路線網図・道路台帳）",
+    "url": "https://webgis.alandis.jp/hiratsuka14/",
+    "what": "市道認定路線網図・道路台帳図（同じ地図の別のマップ）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "建築確認等の手続き（平塚市）",
+    "url": "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_01924.html",
+    "what": "中間検査の特定工程の公示文（令和3年6月1日から／令和8年6月1日から）",
+    "verified": true,
+    "purpose": "中間検査",
+    "role": "まずここで調べる"
+   }
+  ],
+  "鎌倉市": [
+   {
+    "label": "かまくらわが街マップ：都市計画情報マップ（鎌倉市都市計画情報等提供サービス）",
+    "url": "https://www2.wagmap.jp/kamakura-hazard/PositionSelect?mid=231",
+    "what": "市の公式の地図（市の「都市計画」のページから案内）。市街化区域・用途地域・防火準防火・高度地区・地区計画・風致地区・歴史的風土保存区域など。参考図。利用規約の画面から入る",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "都市計画（鎌倉市）",
+    "url": "https://www.city.kamakura.kanagawa.jp/sangyou_machi/toshikeikaku/index.html",
+    "what": "都市計画の案内の一覧（都市計画情報等提供サービス・地区計画・都市計画施設）",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "鎌倉市土砂災害ハザードマップ",
+    "url": "https://www.city.kamakura.kanagawa.jp/sougoubousai/dosha-hm.html",
+    "what": "県が指定した土砂災害警戒区域・特別警戒区域をもとにしたハザードマップ（令和4年1月改定）",
+    "verified": true,
+    "purpose": "災害",
+    "role": "補助"
+   },
+   {
+    "label": "建築基準法の道路（鎌倉市）",
+    "url": "https://www.city.kamakura.kanagawa.jp/kenchikushidou/kijunhou_douro.html",
+    "what": "道路の種別の説明。種別は本庁舎3階の建築指導課の窓口のPC端末で確かめる（ウェブの指定道路図はない）。電話の問い合わせは受けない",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "復元、測量成果、道路台帳（鎌倉市）",
+    "url": "https://www.city.kamakura.kanagawa.jp/dorochosa/daityou.html",
+    "what": "道路台帳（調書・平面図1/500）の案内。道路台帳平面図は令和8年4月1日から、かまくらわが街マップで公開",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "路線番号・舗装構成・掘削規制地図情報（鎌倉市）",
+    "url": "https://www.city.kamakura.kanagawa.jp/dorochosa/rosenmap.html",
+    "what": "市道の路線位置（路線番号）を、かまくらわが街マップの「路線位置マップ」で見る。国道・県道・私道は載っていない",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "補助"
+   },
+   {
+    "label": "中間検査申請（鎌倉市）",
+    "url": "https://www.city.kamakura.kanagawa.jp/kenchikushidou/newpage5.html",
+    "what": "特定工程の指定（令和4年鎌倉市告示82号。令和4年6月17日施行）の告示PDFと「中間検査が必要となる建築物について」のお知らせPDF",
+    "verified": true,
+    "purpose": "中間検査",
+    "role": "まずここで調べる"
+   }
+  ],
+  "藤沢市": [
+   {
+    "label": "ふじさわキュンマップ（藤沢市の地図情報）",
+    "url": "https://webgis.alandis.jp/fujisawa14/210/portal/",
+    "what": "用途地域などの都市計画情報・指定道路図（建築基準法の道路種別）・認定路線網図・道路台帳平面図",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "都市計画情報の閲覧（藤沢市）",
+    "url": "https://www.city.fujisawa.kanagawa.jp/tosikei/machizukuri/toshi/joho/etsuran.html",
+    "what": "都市計画情報はキュンマップで見られる、という市の案内",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "急傾斜地について（藤沢市）",
+    "url": "https://www.city.fujisawa.kanagawa.jp/bousai/bosai/kyukeisya.html",
+    "what": "土砂災害（特別）警戒区域と急傾斜地崩壊危険区域の違い・県の地図へのリンク",
+    "verified": true,
+    "purpose": "災害",
+    "role": "補助"
+   },
+   {
+    "label": "建築基準法上の道路種別について（藤沢市）",
+    "url": "https://www.city.fujisawa.kanagawa.jp/kentiku/machizukuri/kenchiku/kakunin/siteidouro.html",
+    "what": "道路種別の調べ方（指定道路図・キュンマップ）・2項道路の後退",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "建築基準法第42条第1項第5号の道路（藤沢市）",
+    "url": "https://www.city.fujisawa.kanagawa.jp/kentiku/itisitei.html",
+    "what": "位置指定道路の案内",
+    "verified": true,
+    "purpose": "道路",
+    "role": "補助"
+   },
+   {
+    "label": "道路台帳について（藤沢市）",
+    "url": "https://www.city.fujisawa.kanagawa.jp/rosei/machizukuri/kotsu/kanri/dourodaicho.html",
+    "what": "道路台帳の閲覧・インターネット公開（キュンマップ）の案内",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "中間検査の概要（藤沢市）",
+    "url": "https://www.city.fujisawa.kanagawa.jp/kentiku/machizukuri/kenchiku/kakunin/shinse-kensa/kenchiku-kosaku/chukan.html",
+    "what": "中間検査を行う区域（市全域）・期間・特定工程（市規則による指定）",
+    "verified": true,
+    "purpose": "中間検査",
+    "role": "まずここで調べる"
+   }
+  ],
+  "小田原市": [
+   {
+    "label": "Navi-O（小田原市地理情報システム）",
+    "url": "https://www2.wagmap.jp/navi-odawara/Portal",
+    "what": "都市計画図・建築基準法道路（指定道路図）・認定路線情報",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "用途地域、建ぺい率・容積率のお問い合わせ（小田原市）",
+    "url": "https://www.city.odawara.kanagawa.jp/field/c-planning/urban-d/plan/toiawase.html",
+    "what": "用途地域・建ぺい率容積率・防火準防火・高度地区は地理情報システムで見る、という市の案内",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "土砂災害防止法の概要（小田原市）",
+    "url": "https://www.city.odawara.kanagawa.jp/field/disaster/disaster/nature/sediment-disaster/dosyasaigai.html",
+    "what": "土砂災害警戒区域・特別警戒区域の案内",
+    "verified": true,
+    "purpose": "災害",
+    "role": "補助"
+   },
+   {
+    "label": "指定道路図の閲覧（小田原市）",
+    "url": "https://www.city.odawara.kanagawa.jp/field/c-planning/building/confirmation/douroatukaisoudan.html",
+    "what": "指定道路図はNavi-Oと建築指導課の窓口端末で閲覧。最新は窓口",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "市が管理する道路について（小田原市）",
+    "url": "https://www.city.odawara.kanagawa.jp/field/c-planning/urbanarea/road/sidou.html",
+    "what": "認定路線の番号・起終点・幅員はNavi-Oで参考図。道路台帳図は窓口で発行",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "中間検査について（小田原市）",
+    "url": "https://www.city.odawara.kanagawa.jp/field/c-planning/building/confirmation/tyuukannkennsanituite.html",
+    "what": "中間検査の対象と、特定工程・特定工程後の工程（PDF）",
+    "verified": true,
+    "purpose": "中間検査",
+    "role": "まずここで調べる"
+   }
+  ],
+  "茅ヶ崎市": [
+   {
+    "label": "まっぷdeちがさき（パソコン版）",
+    "url": "https://www2.wagmap.jp/chigasaki/Portal",
+    "what": "都市計画図（用途地域・防火地域など）・指定道路図・道路情報",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "都市計画情報（用途地域等）の閲覧（茅ヶ崎市）",
+    "url": "https://www.city.chigasaki.kanagawa.jp/machidukuri/chizu/1007994.html",
+    "what": "都市計画情報は、まっぷdeちがさき（パソコン版）で見る、という市の案内",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "建築基準法の道路種別の閲覧について（茅ヶ崎市）",
+    "url": "https://www.city.chigasaki.kanagawa.jp/machidukuri/shidou/1008170.html",
+    "what": "指定道路図・指定道路調書の閲覧（窓口・まっぷdeちがさき）",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "茅ヶ崎市道認定路線網図",
+    "url": "https://www.city.chigasaki.kanagawa.jp/road/nintei/1008399.html",
+    "what": "市道の認定路線網図",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "茅ヶ崎市の中間検査について",
+    "url": "https://www.city.chigasaki.kanagawa.jp/machidukuri/shidou/1008171.html",
+    "what": "特定工程・特定工程後の工程（現行の告示と、令和8年10月1日以降の申請に適用する改正告示）",
+    "verified": true,
+    "purpose": "中間検査",
+    "role": "まずここで調べる"
+   }
+  ],
+  "大和市": [
+   {
+    "label": "大和市都市計画マップ（公開型地図情報サービス）",
+    "url": "https://www.machi-info.jp/machikado/yamato_city/consentpage/gis-toshi.html",
+    "what": "用途地域などの都市計画の地図。利用条件の同意のページから入る（市の公開型地図情報サービスの案内ページからのリンク）",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "都市計画の制限（用途地域など）について（よくある質問）",
+    "url": "https://www.city.yamato.lg.jp/gyosei/soshik/20/yokuarushitsumon_kaitoshu/12606.html",
+    "what": "都市計画の制限の調べ方の市の案内（街づくり計画課）",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "大和市土砂災害警戒区域マップ",
+    "url": "https://www.machi-info.jp/machikado/yamato_city/consentpage/gis-hazard-dosha.html",
+    "what": "土砂災害警戒区域の地図（参考図・危機管理課）。利用条件の同意から入る",
+    "verified": true,
+    "purpose": "災害",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "大和市指定道路マップ",
+    "url": "https://www.machi-info.jp/machikado/yamato_city/consentpage/gis-road.html",
+    "what": "建築基準法の道路とおおむねの位置（令和7年10月27日時点）。確認の際は窓口で最新を確かめる、と注記",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "舗装構成図及び路線名図（公開型地図情報サービス）",
+    "url": "https://www.city.yamato.lg.jp/gyosei/soshik/72/doro_kasenkanri/doro/20026.html",
+    "what": "市道の路線名図・認定幅員・舗装構成図を地図で見られる、との案内（道路管理課）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "中間検査の対象建築物について（建築指導課）",
+    "url": "https://www.city.yamato.lg.jp/gyosei/soshik/35/KenchikubutsuTetsuduki/6271.html",
+    "what": "細則第6条で指定する中間検査の対象（一戸建ての住宅で延べ面積50㎡超・3階以上の木造など）。特定工程は細則第6条を見る、と案内",
+    "verified": true,
+    "purpose": "中間検査",
+    "role": "まずここで調べる"
+   }
+  ],
+  "厚木市": [
+   {
+    "label": "都市計画情報のインターネット公開について（都市計画課）",
+    "url": "https://www.city.atsugi.kanagawa.jp/soshiki/toshikeikakuka/12/6129.html",
+    "what": "用途地域・都市計画道路などの都市計画情報の公開の案内。ここから「都市計画情報マップ」（厚木タウンマップ）へ入る",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "厚木タウンマップ（地図情報システム）",
+    "url": "https://www2.wagmap.jp/atsugi/Portal",
+    "what": "市の地図システム。都市計画情報マップ・建築基準法道路マップ・オールハザードマップ・道路・地籍調査マップなどが入っている",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "厚木タウンマップ（災害・緊急情報マップ／オールハザードマップ）",
+    "url": "https://www.city.atsugi.kanagawa.jp/soshiki/johoseisakuka/9/8771.html",
+    "what": "市の案内ページ。掲載マップに「災害・緊急情報マップ」「オールハザードマップ」。土砂災害警戒区域が載っているかは、地図の中まで確かめていない",
+    "verified": true,
+    "purpose": "災害",
+    "role": "補助"
+   },
+   {
+    "label": "厚木タウンマップ（建築基準法道路マップ）",
+    "url": "https://www2.wagmap.jp/atsugi/Portal",
+    "what": "掲載マップ一覧の「建築基準法道路マップ」（問い合わせは建築指導課）。道路種別は、敷地により窓口での確認が要る（市の敷地調査のページ）",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "位置指定道路（建築基準法第42条第1項第5号）",
+    "url": "https://www.city.atsugi.kanagawa.jp/soshiki/kenchikushidoka/7/1/624.html",
+    "what": "位置指定道路の指定の基準・手続き・申請の手引き（建築指導課）",
+    "verified": true,
+    "purpose": "道路",
+    "role": "補助"
+   },
+   {
+    "label": "厚木市の道路（道路総務課）",
+    "url": "https://www.city.atsugi.kanagawa.jp/soshiki/dorokanrika/9/533.html",
+    "what": "市道の位置・名称・幅員は厚木タウンマップの道路情報マップで、と案内。延長・路線数",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "認定路線網図（オープンデータ）",
+    "url": "https://www.city.atsugi.kanagawa.jp/soshiki/dorokanrika/douro_opendata/28113.html",
+    "what": "認定路線網図のデータ（shape・GeoJSON。路線番号・名称・最小／最大幅員）。2025年2月時点",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "補助"
+   },
+   {
+    "label": "中間検査について（令和7年4月1日改正）",
+    "url": "https://www.city.atsugi.kanagawa.jp/soshiki/kenchikushidoka/6/27882.html",
+    "what": "中間検査の区域（市全域）・対象（一戸建て住宅で延べ面積50㎡超など。瑕疵保険の現場検査を受けるものは除く）・特定工程の指定のPDF（令和6年告示）",
+    "verified": true,
+    "purpose": "中間検査",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "特定工程及び特定工程後の工程の指定（告示PDF）",
+    "url": "https://www.city.atsugi.kanagawa.jp/material/files/group/50/r7tokuteikoutei.pdf",
+    "what": "上のページの関連ファイル（告示の本文）。ファイルが開けること（PDF・約140KB）は確かめたが、本文は読んでいない",
+    "verified": false,
+    "purpose": "中間検査",
+    "role": "補助"
+   }
+  ],
+  "秦野市": [
+   {
+    "label": "はだのWEBマップ（秦野市公開型地理情報システム）",
+    "url": "https://www2.wagmap.jp/hadano/Portal",
+    "what": "都市計画情報（用途地域など）・地区計画・建築協定区域を地図で見る。利用規約に同意してから使う",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "秦野都市計画図の閲覧（まちづくり計画課）",
+    "url": "https://www.city.hadano.kanagawa.jp/soshiki/8/1053/5/3160.html",
+    "what": "市が作った都市計画図（PDF・一般参考図）。利用条件に同意して開く",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "秦野市地区別防災ハザードマップ",
+    "url": "https://www.city.hadano.kanagawa.jp/soshiki/3/1016/3/bousaimap/1519.html",
+    "what": "6地区別のハザードマップ（PDF）。土砂災害（特別）警戒区域・洪水浸水想定区域を掲載（令和7年1月改訂）",
+    "verified": true,
+    "purpose": "災害",
+    "role": "補助"
+   },
+   {
+    "label": "はだのWEBマップ（指定道路種別・建築基準法道路）",
+    "url": "https://www.city.hadano.kanagawa.jp/soshiki/1/1005/4230.html",
+    "what": "市の案内ページ。公開地図の一覧に「指定道路種別（建築基準法道路）」があり、ここからWEBマップへ入る",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "秦野市道の現況（認定市道路線網図）",
+    "url": "https://www.city.hadano.kanagawa.jp/soshiki/9/1059/1/1755.html",
+    "what": "認定市道の路線網図（地区別PDF・索引図）。路線名・幅員はWEBマップの認定市道路線網図・道路台帳図で、と案内",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "中間検査の必要な建築物（建築指導課）",
+    "url": "https://www.city.hadano.kanagawa.jp/soshiki/8/1057/2/1/2133.html",
+    "what": "中間検査の対象建築物と特定工程の表（木造在来：建方工事など）。対象に建て売りの一戸建て住宅・階数3以上。告示の原文へのリンクはない",
+    "verified": true,
+    "purpose": "中間検査",
+    "role": "まずここで調べる"
+   }
+  ],
+  "逗子市": [
+   {
+    "label": "逗子市オンラインマップ（逗子市地図情報サービス）",
+    "url": "https://www.city.zushi.kanagawa.jp/jigyosha/kaihatsu/1009302.html",
+    "what": "市の地図情報サービスの案内ページ。都市計画情報・景観形成重点地区・建築協定・市道路関連情報を地図で公開。用途境の詳細は環境都市課窓口",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "逗子市オンラインマップ（地図本体）",
+    "url": "https://zushimap-zushicity.hub.arcgis.com/",
+    "what": "市の都市計画図の閲覧ページ（1005724）からリンクされている市の公式GIS（ArcGIS Hub）",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "逗子市土砂災害等ハザードマップ",
+    "url": "https://www.city.zushi.kanagawa.jp/kurashi/bosai/1001502/1001542/1001544.html",
+    "what": "市の土砂災害等ハザードマップ（令和8年3月改訂）のPDF",
+    "verified": true,
+    "purpose": "災害",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "急傾斜地崩壊危険区域の指定（逗子市）",
+    "url": "https://www.city.zushi.kanagawa.jp/kurashi/dorokotsu/1002334/1002340.html",
+    "what": "急傾斜地崩壊危険区域の指定基準の案内（指定は県。問合せは横須賀土木事務所）",
+    "verified": true,
+    "purpose": "災害",
+    "role": "補助"
+   },
+   {
+    "label": "市道認定路線網図及び道路台帳図（逗子市）",
+    "url": "https://www.city.zushi.kanagawa.jp/kurashi/dorokotsu/1002322/1002324.html",
+    "what": "市道路線網図・道路台帳図を「市道路関連マップ」で提供（令和7年4月〜）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "市道路関連マップ（逗子市）",
+    "url": "https://experience.arcgis.com/experience/6006125f3dde40bb8a044384618ce402",
+    "what": "上の市のページからリンクされている地図本体（ArcGIS。中身は地図アプリのため本文は未確認）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "補助"
+   }
+  ],
+  "三浦市": [
+   {
+    "label": "都市計画情報等の閲覧について（三浦市）",
+    "url": "https://www.city.miura.kanagawa.jp/soshiki/toshikeikakuka/machizukuri/toshikeikakuka/madoguchi/8043.html",
+    "what": "都市計画情報は「みうらわが街ガイド」で確認、詳細は都市計画課、という案内",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "みうらわが街ガイド",
+    "url": "https://www2.wagmap.jp/miura/Portal",
+    "what": "市の地図情報サイト。掲載マップに「都市計画等情報」がある",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "土砂災害（特別）警戒区域について（三浦市）",
+    "url": "https://www.city.miura.kanagawa.jp/kurashi/anzen_anshin/6/1/1/hazardmap/3948.html",
+    "what": "市内の指定状況と、三浦市土砂災害警戒区域図（PDF）",
+    "verified": true,
+    "purpose": "災害",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "建築基準法上の道路種別について（三浦市）",
+    "url": "https://www.city.miura.kanagawa.jp/shigoto_sangyo_machizukuri/kaihatsu/2/4540.html",
+    "what": "道路種別は横須賀土木事務所まちづくり・建築指導課へ、一部は県の指定道路マップで確認、という案内",
+    "verified": true,
+    "purpose": "道路",
+    "role": "補助"
+   },
+   {
+    "label": "道路台帳（現況）平面図の閲覧について（全域図、詳細図）",
+    "url": "https://www.city.miura.kanagawa.jp/soshiki/dobokuka/dobokuka_yochi/1/1354.html",
+    "what": "道路台帳（現況）平面図をPDFで閲覧。全域図で図郭番号を探して詳細図を開く（住所検索は不可）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "道路台帳（現況）平面図の閲覧（利用規約）",
+    "url": "https://www.city.miura.kanagawa.jp/kurashi/doro_kotsu/2/4161.html",
+    "what": "上の閲覧ページへの入口と利用規約・注意事項",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "補助"
+   }
+  ],
+  "伊勢原市": [
+   {
+    "label": "いせはらWebMaps",
+    "url": "https://www2.wagmap.jp/isehara/Portal",
+    "what": "市の公開型地理情報システム。掲載マップに「都市計画情報」「認定路線網図」「道路台帳図」「洪水・土砂災害ハザードマップ」がある",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "伊勢原市都市計画総括図",
+    "url": "https://www.city.isehara.kanagawa.jp/docs/2017061600061/",
+    "what": "都市計画総括図（令和7年3月）のPDF（地図面・概要面）。用途地域・都市計画道路など。用途地域は建築住宅課に問合せ",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "土砂災害警戒区域を見る（急傾斜地の崩壊、土石流）",
+    "url": "https://www.city.isehara.kanagawa.jp/docs/2012060100017/",
+    "what": "土砂災害警戒区域・特別警戒区域の説明と市内の指定状況",
+    "verified": true,
+    "purpose": "災害",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "いせはらWebMapsで道路台帳と公共下水道台帳の運用を開始",
+    "url": "https://www.city.isehara.kanagawa.jp/docs/2024030500079/",
+    "what": "道路台帳をいせはらWebMapsで公開している案内（土木総務課）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "市道認定路線図について（伊勢原市）",
+    "url": "https://www.city.isehara.kanagawa.jp/docs/2023022200041/",
+    "what": "市道認定路線図のPDF（市内全域・地区別。令和5年2月時点）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "補助"
+   }
+  ],
+  "海老名市": [
+   {
+    "label": "都市計画情報、用途地域などに関してよくある質問",
+    "url": "https://www.city.ebina.kanagawa.jp/shisei/seisaku/machidukuri/toshi/1008405.html",
+    "what": "用途地域・建蔽率・容積率・防火指定は「i-Map わが街海老名ガイド」で確認（地図をクリックして表示）。日影・斜線は建築規制表PDF",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "i-Map わが街海老名ガイド",
+    "url": "https://www2.wagmap.jp/ebina/Portal",
+    "what": "市の地図情報サービス。掲載マップに「都市計画情報」「道路情報(参考図)」がある",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "海老名市防災ガイドブック（ハザードマップ）",
+    "url": "https://www.bousai.city.ebina.kanagawa.jp/guidebook/hazardmap/",
+    "what": "市の防災ホームページ。洪水・内水・土砂災害のハザードマップPDF（令和8年6月改訂）",
+    "verified": true,
+    "purpose": "災害",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "土砂災害警戒区域の指定について（海老名市）",
+    "url": "https://www.city.ebina.kanagawa.jp/guide/kyukyu/bousai/1016180/1002767.html",
+    "what": "市内は急傾斜地の崩壊のみが対象、という説明と指定の基準",
+    "verified": true,
+    "purpose": "災害",
+    "role": "補助"
+   },
+   {
+    "label": "海老名市道路網図",
+    "url": "https://www.city.ebina.kanagawa.jp/guide/kotsu/douro/1016495.html",
+    "what": "令和8年度海老名市道路網図のPDF（路線番号の特定は道路管理課）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "わが街海老名ガイドでの道路情報の閲覧について",
+    "url": "https://www.city.ebina.kanagawa.jp/guide/kotsu/douro/1018928.html",
+    "what": "市道と民有地の境界の位置・延長を「道路情報」で閲覧（令和8年5月〜。参考図）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "補助"
+   }
+  ],
+  "座間市": [
+   {
+    "label": "地図情報検索システム「座間市わが街ガイド」",
+    "url": "https://www.city.zama.kanagawa.jp/shisei/machi/toshikeikaku/1004466.html",
+    "what": "都市計画情報の検索・閲覧・図面の印刷の案内（参考データ。境界は線引き申請）",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "座間市わが街ガイド",
+    "url": "https://www2.wagmap.jp/zama/Portal",
+    "what": "市の地図情報サイト。掲載マップに「都市計画図」「ハザードマップ」がある",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "座間市防災ハザードマップ",
+    "url": "https://www.city.zama.kanagawa.jp/kurashi/bousai/guide/1001665.html",
+    "what": "防災ハザードマップ（土砂災害（特別）警戒区域を含む）のPDF。わが街ガイドでも閲覧可",
+    "verified": true,
+    "purpose": "災害",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "建築基準法上の道路に関するお問い合わせは、特定行政庁へ（座間市）",
+    "url": "https://www.city.zama.kanagawa.jp/shisei/machi/douro/1012849/1004499.html",
+    "what": "道路種別・セットバックは県（厚木土木事務所東部センター）へ、一部は県の指定道路マップ、という案内",
+    "verified": true,
+    "purpose": "道路",
+    "role": "補助"
+   },
+   {
+    "label": "座間市道路情報管理システム",
+    "url": "https://www.city.zama.kanagawa.jp/shisei/machi/douro/1012849/1011723.html",
+    "what": "認定路線網図（路線延長・認定幅員）・掘削規制箇所をネットで公開。道路台帳図・境界確定図は窓口のみ",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "座間市道路情報管理システム（地図本体）",
+    "url": "https://webgis.alandis.jp/zama14/portal/main/index.html",
+    "what": "上の市のページからリンクされている地図本体（座間市地理情報システム）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "補助"
+   }
+  ],
+  "南足柄市": [
+   {
+    "label": "南足柄市地理情報システム「ミナミナビ」",
+    "url": "https://www2.wagmap.jp/minamiashigara/Portal",
+    "what": "市の地図情報サイト。掲載マップに「都市計画図」「道路台帳図」「防災ハザードマップ」がある",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "地域地区（南足柄市）",
+    "url": "https://www.city.minamiashigara.kanagawa.jp/business/toshi/keikaku/chiiki_chiku.html",
+    "what": "用途地域・防火地域・準防火地域などのPDFと、地図情報システム「ミナミナビ」への案内",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "土砂災害警戒区域等の公表及び指定について（南足柄市）",
+    "url": "https://www.city.minamiashigara.kanagawa.jp/kurashi/bouan/boutai/bousailink/2404.html",
+    "what": "土砂災害警戒区域等の基礎調査の公表と指定の状況",
+    "verified": true,
+    "purpose": "災害",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "防災ハザードマップ（南足柄市）",
+    "url": "https://www.city.minamiashigara.kanagawa.jp/kurashi/bouan/boutai/sonae/hazard.html",
+    "what": "土砂災害などの防災ハザードマップ",
+    "verified": true,
+    "purpose": "災害",
+    "role": "補助"
+   }
+  ],
+  "綾瀬市": [
+   {
+    "label": "公開型地図情報配信システム「あやせびゅ～まっぷ」",
+    "url": "https://www.city.ayase.kanagawa.jp/shigoto_sangyo_machizukuri/kaihatsu_toshikeikaku/16788.html",
+    "what": "都市計画情報等を地図で公開する市のシステムの案内",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "あやせびゅ～まっぷ",
+    "url": "https://www2.wagmap.jp/ayasecity/Portal",
+    "what": "市の地図情報サイト。掲載マップに「都市計画マップ」「認定路線網図」「道路境界確定図」がある",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "綾瀬市防災ハザードマップ（R8.6.1）",
+    "url": "https://www.city.ayase.kanagawa.jp/kurashi_tetsuzuki/bosai_bohan_anzen_anshin/bosai/24623.html",
+    "what": "内水の浸水想定区域・土砂災害警戒区域等の危険箇所を載せたハザードマップ",
+    "verified": true,
+    "purpose": "災害",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "あやせびゅ～まっぷ（認定路線網図）",
+    "url": "https://www2.wagmap.jp/ayasecity/Portal",
+    "what": "市の地図サイトの掲載マップに「認定路線網図」がある（市の道路のページには案内がない。地図の一覧で確認）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ]
+ }
 }

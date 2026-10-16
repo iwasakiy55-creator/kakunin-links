@@ -51,16 +51,6 @@ window.LINK_STATUS = {
                                                                                    "why":  "",
                                                                                    "hash":  "1A57A257C0429251"
                                                                                },
-                  "http://www.mfi.or.jp/fg-kanrika/yobogyoumu/seikatsu.html":  {
-                                                                                   "code":  "200",
-                                                                                   "at":  "2026-10-17",
-                                                                                   "fails":  0,
-                                                                                   "kind":  "",
-                                                                                   "title":  "",
-                                                                                   "changed":  "",
-                                                                                   "why":  "",
-                                                                                   "hash":  "CB9264B5144AF136"
-                                                                               },
                   "http://www.town.ichikawamisato.yamanashi.jp/reiki_int/reiki_menu.html":  {
                                                                                                 "code":  "200",
                                                                                                 "at":  "2026-10-17",
@@ -311,6 +301,16 @@ window.LINK_STATUS = {
                                                                "why":  "",
                                                                "hash":  "E3B0C44298FC1C14"
                                                            },
+                  "https://krg211.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf":  {
+                                                                                         "code":  "200",
+                                                                                         "at":  "2026-10-17",
+                                                                                         "fails":  0,
+                                                                                         "kind":  "",
+                                                                                         "title":  "Reiki-Base インターネット版",
+                                                                                         "changed":  "",
+                                                                                         "why":  "",
+                                                                                         "hash":  "10DAF92A901AF0AD"
+                                                                                     },
                   "https://krg308.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf":  {
                                                                                          "code":  "200",
                                                                                          "at":  "2026-10-17",
@@ -1731,15 +1731,15 @@ window.LINK_STATUS = {
                                                                                                    "why":  "",
                                                                                                    "hash":  "2609B0BFE2268992"
                                                                                                },
-                  "https://www.city.fujiyoshida.yamanashi.jp/page/1664.html":  {
+                  "https://www.city.fujiyoshida.yamanashi.jp/page/1895.html":  {
                                                                                    "code":  "200",
                                                                                    "at":  "2026-10-17",
                                                                                    "fails":  0,
                                                                                    "kind":  "",
-                                                                                   "title":  "富士吉田市の都市計画 - 富士吉田市公式ホームページ（都市政策課）",
+                                                                                   "title":  "都市計画の概要 - 富士吉田市公式ホームページ（都市政策課）",
                                                                                    "changed":  "",
                                                                                    "why":  "",
-                                                                                   "hash":  "AEAD8B1878DABDC1"
+                                                                                   "hash":  "8162AABA65ED4E11"
                                                                                },
                   "https://www.city.fujiyoshida.yamanashi.jp/page/1942.html":  {
                                                                                    "code":  "200",
@@ -2577,8 +2577,8 @@ window.LINK_STATUS = {
                                                                                       "fails":  0,
                                                                                       "kind":  "",
                                                                                       "title":  "下水道の種類と区域 - 掛川市",
-                                                                                      "changed":  "2026-10-16",
-                                                                                      "why":  "body",
+                                                                                      "changed":  "",
+                                                                                      "why":  "",
                                                                                       "hash":  "2A3B9EF01CD3101C"
                                                                                   },
                   "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/8038.html":  {
@@ -2587,9 +2587,9 @@ window.LINK_STATUS = {
                                                                                       "fails":  0,
                                                                                       "kind":  "",
                                                                                       "title":  "給水装置工事の申込み - 掛川市",
-                                                                                      "changed":  "",
-                                                                                      "why":  "",
-                                                                                      "hash":  "94FE240F6A26271C"
+                                                                                      "changed":  "2026-10-17",
+                                                                                      "why":  "body",
+                                                                                      "hash":  "7F63C7E3C903D38C"
                                                                                   },
                   "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/8840.html":  {
                                                                                       "code":  "200",
@@ -3771,16 +3771,6 @@ window.LINK_STATUS = {
                                                                                                            "why":  "",
                                                                                                            "hash":  "0E8EB09D7DEDBE36"
                                                                                                        },
-                  "https://www.city.sagamihara.kanagawa.jp/shisei/1026766/reiki/index.html":  {
-                                                                                                  "code":  "200",
-                                                                                                  "at":  "2026-10-17",
-                                                                                                  "fails":  0,
-                                                                                                  "kind":  "",
-                                                                                                  "title":  "条例・規則等｜相模原市",
-                                                                                                  "changed":  "",
-                                                                                                  "why":  "",
-                                                                                                  "hash":  "184A9C7E35D3E2C3"
-                                                                                              },
                   "https://www.city.sagamihara.kanagawa.jp/shisei/1026823/1004480/1026832/1024999.html":  {
                                                                                                               "code":  "200",
                                                                                                               "at":  "2026-10-17",
@@ -5151,6 +5141,16 @@ window.LINK_STATUS = {
                                                                                                      "why":  "",
                                                                                                      "hash":  "6013434143DD52C4"
                                                                                                  },
+                  "https://www.mfi.or.jp/~fg-kanrika/yobogyoumu/yobogyoumu.html":  {
+                                                                                       "code":  "200",
+                                                                                       "at":  "2026-10-17",
+                                                                                       "fails":  0,
+                                                                                       "kind":  "",
+                                                                                       "title":  "",
+                                                                                       "changed":  "",
+                                                                                       "why":  "",
+                                                                                       "hash":  "0C01CC0D629930C1"
+                                                                                   },
                   "https://www.pref.kanagawa.jp/docs/cz4/cnt/f300254/index.html":  {
                                                                                        "code":  "200",
                                                                                        "at":  "2026-10-17",
@@ -5951,16 +5951,16 @@ window.LINK_STATUS = {
                                                                                   "why":  "",
                                                                                   "hash":  "CCF075329C78EB94"
                                                                               },
-                  "https://www.town.higashiizu.lg.jp/gyoseijyoho/yakusho-madoguchiannai/index.html":  {
-                                                                                                          "code":  "200",
-                                                                                                          "at":  "2026-10-17",
-                                                                                                          "fails":  0,
-                                                                                                          "kind":  "",
-                                                                                                          "title":  "役所・窓口案内／東伊豆町｜満点の海・山・空は東伊豆",
-                                                                                                          "changed":  "",
-                                                                                                          "why":  "",
-                                                                                                          "hash":  "11CDB8531C38C702"
-                                                                                                      },
+                  "https://www.town.higashiizu.lg.jp/gyoseijyoho/yakusho-madoguchiannai/1090.html":  {
+                                                                                                         "code":  "200",
+                                                                                                         "at":  "2026-10-17",
+                                                                                                         "fails":  0,
+                                                                                                         "kind":  "",
+                                                                                                         "title":  "町の仕事と連絡先／東伊豆町｜満点の海・山・空は東伊豆",
+                                                                                                         "changed":  "",
+                                                                                                         "why":  "",
+                                                                                                         "hash":  "BF23E2ED1C140739"
+                                                                                                     },
                   "https://www.town.ichikawamisato.yamanashi.jp/20life/21water/2021-1112-1520-12.html":  {
                                                                                                              "code":  "200",
                                                                                                              "at":  "2026-10-17",
@@ -6161,15 +6161,15 @@ window.LINK_STATUS = {
                                                                                      "why":  "",
                                                                                      "hash":  "6B4D32440BF6D973"
                                                                                  },
-                  "https://www.town.matsuzaki.shizuoka.jp/docs/2016020400759/":  {
+                  "https://www.town.matsuzaki.shizuoka.jp/docs/2016020400919/":  {
                                                                                      "code":  "200",
                                                                                      "at":  "2026-10-17",
                                                                                      "fails":  0,
                                                                                      "kind":  "",
-                                                                                     "title":  "産業建設課へのお問い合わせ | 松崎町",
+                                                                                     "title":  "各課のお問い合わせ | 松崎町",
                                                                                      "changed":  "",
                                                                                      "why":  "",
-                                                                                     "hash":  "0B366DC6430AD55B"
+                                                                                     "hash":  "BD9C694BBBCB3EFF"
                                                                                  },
                   "https://www.town.matsuzaki.shizuoka.jp/docs/2021050700014/":  {
                                                                                      "code":  "200",
@@ -6431,16 +6431,16 @@ window.LINK_STATUS = {
                                                                                 "why":  "",
                                                                                 "hash":  "B43E88F8F011BB00"
                                                                             },
-                  "https://www.town.nishiizu.shizuoka.jp/kakuka/kensetsu/":  {
-                                                                                 "code":  "200",
-                                                                                 "at":  "2026-10-17",
-                                                                                 "fails":  0,
-                                                                                 "kind":  "",
-                                                                                 "title":  "建設課 | 西伊豆町役場",
-                                                                                 "changed":  "",
-                                                                                 "why":  "",
-                                                                                 "hash":  "64AD98B3613B38C2"
-                                                                             },
+                  "https://www.town.nishiizu.shizuoka.jp/kakuka/kensetsu/kensetsu/":  {
+                                                                                          "code":  "200",
+                                                                                          "at":  "2026-10-17",
+                                                                                          "fails":  0,
+                                                                                          "kind":  "",
+                                                                                          "title":  "建設係 | 建設課 | 西伊豆町役場",
+                                                                                          "changed":  "",
+                                                                                          "why":  "",
+                                                                                          "hash":  "50EB80CE0C89ED33"
+                                                                                      },
                   "https://www.town.nishiizu.shizuoka.jp/kakuka/kigyou/suido/jigyousya.html":  {
                                                                                                    "code":  "200",
                                                                                                    "at":  "2026-10-17",
@@ -6944,7 +6944,7 @@ window.LINK_STATUS = {
                   "https://www.vill.doshi.lg.jp/":  {
                                                         "code":  "ConnectFailure",
                                                         "at":  "2026-10-17",
-                                                        "fails":  11,
+                                                        "fails":  12,
                                                         "kind":  "",
                                                         "title":  "",
                                                         "changed":  "",
@@ -6954,7 +6954,7 @@ window.LINK_STATUS = {
                   "https://www.vill.kosuge.yamanashi.jp/":  {
                                                                 "code":  "ConnectFailure",
                                                                 "at":  "2026-10-17",
-                                                                "fails":  11,
+                                                                "fails":  12,
                                                                 "kind":  "",
                                                                 "title":  "",
                                                                 "changed":  "",

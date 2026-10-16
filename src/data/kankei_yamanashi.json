@@ -323,10 +323,11 @@
    {
     "label": "都市計画図・管内図（建設課）",
     "url": "https://www.city.nirasaki.lg.jp/soshikiichiran/kensetsuka/keikakukanri/2_1/1441.html",
-    "what": "都市計画図の販売案内。地区計画の記載なし",
+    "what": "都市計画図（都市計画区域・用途地域のPDF）の案内。都市計画のページ一覧に地区計画のページはない。指定の有無は建設課 計画管理担当に確かめる",
     "verified": true,
     "purpose": "地区計画",
-    "role": "補助"
+    "role": "補助",
+    "checked": "2026-10-17"
    },
    {
     "label": "韮崎市例規類集（第11類 建設）",
@@ -365,10 +366,11 @@
    {
     "label": "都市計画・用途地域・建築制限等のご案内",
     "url": "https://www.city.hokuto.yamanashi.jp/docs/1028.html",
-    "what": "用途地域・建築協定は「なし」。地区計画の記載なし（2017年更新）",
+    "what": "市の全域が都市計画区域外（用途地域なし）と書かれた案内。地区計画は定められない。建築の制限は市のまちづくり条例。問い合わせは建設部 土地政策課 0551-42-1361",
     "verified": true,
     "purpose": "地区計画",
-    "role": "補助"
+    "role": "補助",
+    "checked": "2026-10-17"
    },
    {
     "label": "浄化槽設置費補助金（環境課）",
@@ -559,12 +561,13 @@
   ],
   "富士吉田市": [
    {
-    "label": "富士五湖消防本部 生活安全",
-    "url": "http://www.mfi.or.jp/fg-kanrika/yobogyoumu/seikatsu.html",
-    "what": "住宅用防災警報器の設置の資料へのリンクらしい。ページが文字化けして中身を確かめられず",
-    "verified": false,
+    "label": "富士五湖消防本部 予防関係",
+    "url": "https://www.mfi.or.jp/~fg-kanrika/yobogyoumu/yobogyoumu.html",
+    "what": "富士五湖消防本部（富士五湖広域行政事務組合）の予防関係のページ。「火災予防条例」（PDF・画像47ページ）へのリンクあり。住宅用火災警報器のちらし（PDF）は「生活安心情報」のページにある。TEL 0555-22-0119",
+    "verified": true,
     "purpose": "消防",
-    "role": "まずここで調べる"
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    },
    {
     "label": "排水設備の役割（上下水道工務課）",
@@ -583,12 +586,13 @@
     "role": "まずここで調べる"
    },
    {
-    "label": "富士吉田市の都市計画（都市政策課）",
-    "url": "https://www.city.fujiyoshida.yamanashi.jp/page/1664.html",
-    "what": "都市計画の概要・用途地域・都市施設。地区計画・建築協定の記載なし（都市政策課に確かめる）",
+    "label": "都市計画の概要（富士吉田市 都市政策課）",
+    "url": "https://www.city.fujiyoshida.yamanashi.jp/page/1895.html",
+    "what": "「6）地区計画等」に「市内には地区計画が設定された地区はありません」と書かれている。都市政策課 0555-22-1111（内線169・177）",
     "verified": true,
     "purpose": "地区計画",
-    "role": "補助"
+    "role": "補助",
+    "checked": "2026-10-17"
    },
    {
     "label": "富士吉田市例規集（第9編 建設）",
@@ -601,12 +605,13 @@
   ],
   "西桂町": [
    {
-    "label": "富士五湖消防本部 生活安全",
-    "url": "http://www.mfi.or.jp/fg-kanrika/yobogyoumu/seikatsu.html",
-    "what": "住宅用防災警報器の資料らしい。文字化けで中身を確かめられず",
-    "verified": false,
+    "label": "富士五湖消防本部 予防関係",
+    "url": "https://www.mfi.or.jp/~fg-kanrika/yobogyoumu/yobogyoumu.html",
+    "what": "富士五湖消防本部（富士五湖広域行政事務組合）の予防関係のページ。「火災予防条例」（PDF・画像47ページ）へのリンクあり。住宅用火災警報器のちらし（PDF）は「生活安心情報」のページにある。TEL 0555-22-0119",
+    "verified": true,
     "purpose": "消防",
-    "role": "まずここで調べる"
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    },
    {
     "label": "下水道排水設備（建設産業課）",
@@ -635,12 +640,13 @@
   ],
   "忍野村": [
    {
-    "label": "富士五湖消防本部 生活安全",
-    "url": "http://www.mfi.or.jp/fg-kanrika/yobogyoumu/seikatsu.html",
-    "what": "住宅用防災警報器の資料らしい。文字化けで中身を確かめられず",
-    "verified": false,
+    "label": "富士五湖消防本部 予防関係",
+    "url": "https://www.mfi.or.jp/~fg-kanrika/yobogyoumu/yobogyoumu.html",
+    "what": "富士五湖消防本部（富士五湖広域行政事務組合）の予防関係のページ。「火災予防条例」（PDF・画像47ページ）へのリンクあり。住宅用火災警報器のちらし（PDF）は「生活安心情報」のページにある。TEL 0555-22-0119",
+    "verified": true,
     "purpose": "消防",
-    "role": "まずここで調べる"
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    },
    {
     "label": "排水設備工事の流れ（環境水道課）",
@@ -685,12 +691,13 @@
   ],
   "山中湖村": [
    {
-    "label": "富士五湖消防本部 生活安全",
-    "url": "http://www.mfi.or.jp/fg-kanrika/yobogyoumu/seikatsu.html",
-    "what": "住宅用防災警報器の資料らしい。文字化けで中身を確かめられず",
-    "verified": false,
+    "label": "富士五湖消防本部 予防関係",
+    "url": "https://www.mfi.or.jp/~fg-kanrika/yobogyoumu/yobogyoumu.html",
+    "what": "富士五湖消防本部（富士五湖広域行政事務組合）の予防関係のページ。「火災予防条例」（PDF・画像47ページ）へのリンクあり。住宅用火災警報器のちらし（PDF）は「生活安心情報」のページにある。TEL 0555-22-0119",
+    "verified": true,
     "purpose": "消防",
-    "role": "まずここで調べる"
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    },
    {
     "label": "下水道工事（村土整備課）",
@@ -719,12 +726,13 @@
   ],
   "鳴沢村": [
    {
-    "label": "富士五湖消防本部 生活安全",
-    "url": "http://www.mfi.or.jp/fg-kanrika/yobogyoumu/seikatsu.html",
-    "what": "住宅用防災警報器の資料らしい。文字化けで中身を確かめられず",
-    "verified": false,
+    "label": "富士五湖消防本部 予防関係",
+    "url": "https://www.mfi.or.jp/~fg-kanrika/yobogyoumu/yobogyoumu.html",
+    "what": "富士五湖消防本部（富士五湖広域行政事務組合）の予防関係のページ。「火災予防条例」（PDF・画像47ページ）へのリンクあり。住宅用火災警報器のちらし（PDF）は「生活安心情報」のページにある。TEL 0555-22-0119",
+    "verified": true,
     "purpose": "消防",
-    "role": "まずここで調べる"
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    },
    {
     "label": "合併処理浄化槽",
@@ -761,12 +769,13 @@
   ],
   "富士河口湖町": [
    {
-    "label": "富士五湖消防本部 生活安全",
-    "url": "http://www.mfi.or.jp/fg-kanrika/yobogyoumu/seikatsu.html",
-    "what": "住宅用防災警報器の資料らしい。文字化けで中身を確かめられず",
-    "verified": false,
+    "label": "富士五湖消防本部 予防関係",
+    "url": "https://www.mfi.or.jp/~fg-kanrika/yobogyoumu/yobogyoumu.html",
+    "what": "富士五湖消防本部（富士五湖広域行政事務組合）の予防関係のページ。「火災予防条例」（PDF・画像47ページ）へのリンクあり。住宅用火災警報器のちらし（PDF）は「生活安心情報」のページにある。TEL 0555-22-0119",
+    "verified": true,
     "purpose": "消防",
-    "role": "まずここで調べる"
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    },
    {
     "label": "【下水道】排水設備に関する各種様式",
@@ -829,10 +838,11 @@
    {
     "label": "山梨市都市計画図（都市計画課）",
     "url": "https://www.city.yamanashi.yamanashi.jp/soshiki/20/1960.html",
-    "what": "都市計画図（PDF）・GIS。地区計画の記載なし",
+    "what": "都市計画図（PDF）の案内。都市計画課のページ一覧にも地区計画のページはない。指定の有無は都市計画課（内線2243・2244）に確かめる",
     "verified": true,
     "purpose": "地区計画",
-    "role": "補助"
+    "role": "補助",
+    "checked": "2026-10-17"
    },
    {
     "label": "山梨市内における開発行為の指導",
@@ -955,10 +965,11 @@
    {
     "label": "都留市の都市計画（建設課 都市計画担当）",
     "url": "https://www.city.tsuru.yamanashi.jp/soshiki/kensetsu/toshikeikaku_t/1/811.html",
-    "what": "都市計画区域・用途地域・都市計画施設。地区計画・建築協定の記載なし",
+    "what": "都市計画（区域・用途地域・都市施設）の案内。地区計画の記載はなく、都市計画のページ一覧にもない。指定の有無は建設課 都市計画担当に確かめる",
     "verified": true,
     "purpose": "地区計画",
-    "role": "補助"
+    "role": "補助",
+    "checked": "2026-10-17"
    },
    {
     "label": "住宅用火災警報器の設置（都留市消防本部）",
@@ -1073,10 +1084,11 @@
    {
     "label": "都市計画（大月市）",
     "url": "https://www.city.otsuki.yamanashi.jp/sangyo/machi/toshikeikaku.html",
-    "what": "都市計画総括図・用途地域。地区計画の記載なし",
+    "what": "都市計画（区域・用途地域・総括図）の案内。地区計画の記載はない。指定の有無は地域整備課 都市整備担当 0554-20-1855 に確かめる",
     "verified": true,
     "purpose": "地区計画",
-    "role": "補助"
+    "role": "補助",
+    "checked": "2026-10-17"
    },
    {
     "label": "予防担当からのお知らせ（大月市消防本部）",

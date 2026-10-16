@@ -10,7 +10,7 @@ function L($t) { $line = (Get-Date).ToString('yyyy-MM-dd HH:mm:ss') + '  ' + $t;
 try {
   Push-Location $repo
   L '見回りを始めます'
-  git pull -q --rebase 2>&1 | Out-Host
+  git pull -q --rebase --autostash 2>&1 | Out-Null
   & (Join-Path $here 'check.ps1') -Quiet | Out-Host
   & py -X utf8 (Join-Path $src 'build.py') | Out-Host
   if ($LASTEXITCODE -ne 0) { throw '画面を作れませんでした' }

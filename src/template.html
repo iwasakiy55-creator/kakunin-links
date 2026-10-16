@@ -542,6 +542,18 @@ body.home header .sbox { visibility:hidden; }
 #terms .sum { background:var(--a-pale); border-radius:12px; padding:12px 16px 6px; margin:4px 0 12px; }
 #terms .sum ol { margin:6px 0 4px; padding-left:22px; } #terms .sum li { margin:4px 0; }
 #terms .tx h3 { font-size:16.5px; }
+
+/* 県の切り替え */
+.ptabs { display:flex; gap:8px; margin:0 0 12px; flex-wrap:wrap; position:sticky; top:63px; z-index:6; padding:6px 0; background:linear-gradient(var(--bg) 80%, transparent); }
+.ptabs button { border:1.5px solid var(--line); background:var(--panel); border-radius:12px; padding:10px 22px; font-size:18px; font-weight:bold; cursor:pointer; color:var(--sub); }
+.ptabs button:hover { border-color:var(--a); color:var(--a); }
+.ptabs button.on { background:var(--a); border-color:var(--a); color:var(--a-ink); }
+.ptabs button small { font-weight:normal; font-size:13px; margin-left:6px; opacity:.85; }
+.pref.off { display:none; }
+body.finding .pref.off { display:block; }
+body.finding .pref.off.dim { display:none; }
+body.finding .ptabs { opacity:.5; }
+@media (max-width: 760px) { .ptabs { top:108px; } .ptabs button { padding:8px 14px; font-size:16px; } }
 </style>
 </head>
 <body>
@@ -817,6 +829,12 @@ function regions(p) {     // 地域ごとの市町村の並び。地域に入っ
   return out;
 }
 
+let PT = (() => { const v = store.get("linkshu-pt", 0); return typeof v === "number" ? v : 0; })();
+function setPT(i) {
+  PT = i; store.set("linkshu-pt", i);
+  document.querySelectorAll(".ptabs [data-pt]").forEach(b => b.classList.toggle("on", +b.dataset.pt === i));
+  document.querySelectorAll(".pref[data-pi]").forEach(g => g.classList.toggle("off", +g.dataset.pi !== i));
+}
 function narrow() {     // はじめの枠に入れた字で、一覧を絞る（地名地番を貼ったときは、市町村の名前の部分で）
   const v = norm(($("#startA") || {}).value || ""), bs = [...document.querySelectorAll(".grid button[data-nm]")];
   const o = v ? findMuni(v) : null, key = o ? norm(o.m) : v.replace(/^(静岡県|山梨県|神奈川県)/, "");
@@ -824,9 +842,11 @@ function narrow() {     // はじめの枠に入れた字で、一覧を絞る�
   bs.forEach(b => { const on = !key || b.dataset.nm.includes(key) || (o && b.dataset.nm === norm(o.m)); b.classList.toggle("dim", !on); b.classList.toggle("hit", !!key && on); if (on) hit++; });
   document.querySelectorAll(".rg").forEach(g => g.classList.toggle("dim", !!key && !g.querySelector("button:not(.dim)")));
   document.querySelectorAll(".pref").forEach(g => g.classList.toggle("dim", !!key && !g.querySelector(".rg:not(.dim)")));
+  document.body.classList.toggle("finding", !!key);
   const msg = $("#startMsg"); if (msg) msg.innerHTML = key ? `<span class="msg">${hit ? `${hit} 件。${hit === 1 ? "Enter で開きます" : "下から選んでください"}` : "見つかりません"}</span>` : "";
 }
 function home() {
+  if (PT >= D.prefs.length) PT = 0;
   go(""); setTimeout(() => { const a = $("#startA"); if (a && !/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)) a.focus(); }, 50);
   const rc = recent.filter(r => D.prefs[r.p] && D.prefs[r.p].munis[r.m]);
   const memoed = MUNIS.filter(o => muniHasMemo(D.prefs[o.p].name, o.m));
@@ -842,7 +862,8 @@ function home() {
     + checkBand()
     + (rc.length ? `<div class="shelf"><span>${svg(I.hist, 15)}最近見た</span>${rc.map(r => `<button class="pill" data-p="${r.p}" data-m="${esc(r.m)}">${esc(r.m)}</button>`).join("")}</div>` : "")
     + (memoed.length ? `<div class="shelf"><span>${svg(I.memo, 15)}メモのある市町村</span>${memoed.map(o => `<button class="pill memo" data-p="${o.p}" data-m="${esc(o.m)}">${esc(o.m)}</button>`).join("")}</div>` : "")
-    + D.prefs.map((p, i) => `<div class="pref"><h3>${esc(p.name)}<span class="n">${Object.keys(p.munis).length} 市町村</span><button class="pill" data-p="${i}" data-m="">県全体のページ</button></h3>
+    + `<div class="ptabs" role="tablist">${D.prefs.map((p, i) => `<button role="tab" data-pt="${i}" class="${i === PT ? "on" : ""}">${esc(p.name)}<small>${Object.keys(p.munis).length}</small></button>`).join("")}</div>`
+    + D.prefs.map((p, i) => `<div class="pref ${i === PT ? "" : "off"}" data-pi="${i}"><h3>${esc(p.name)}<span class="n">${Object.keys(p.munis).length} 市町村</span><button class="pill" data-p="${i}" data-m="">県全体のページ</button></h3>
       ${regions(p).map(([r, xs]) => `<div class="rg"><div class="rgn">${esc(r)}</div><div class="grid">${xs.map(m => `<button class="${isTk(p, m) ? "tk" : ""}" data-p="${i}" data-m="${esc(m)}" data-nm="${esc(norm(m))}" title="${isTk(p, m) ? "特定行政庁" : ""}">${esc(m)}${isTk(p, m) ? '<span class="d"></span>' : ""}</button>`).join("")}</div></div>`).join("")}</div>`).join("")
     + `<div class="legend"><span><i></i>太字と点＝特定行政庁</span></div>`, false);
   document.body.classList.add("home");
@@ -874,6 +895,7 @@ function memoBox(url, mm, where) {
 function city(pi, m) {
   const p = D.prefs[pi];
   go(p.name + (m ? "/" + m : ""));
+  if (m) { PT = pi; store.set("linkshu-pt", pi); }
   if (m) { recent = [{ p: pi, m }, ...recent.filter(r => !(r.p === pi && r.m === m))].slice(0, 8); store.set("linkshu-recent", recent); }
   const own = m ? p.munis[m] || [] : p.pref, ken = m ? forMuni(p, m) : [];
   const tk = m && isTk(p, m);
@@ -1138,6 +1160,7 @@ function wire() {
     if (e.key === "Escape" && !typing && location.hash && $("#zoom").style.display !== "grid") home();
   });
   document.addEventListener("click", e => {
+    const pt = e.target.closest("[data-pt]"); if (pt) { setPT(+pt.dataset.pt); return; }
     const j = e.target.closest("[data-jump]");
     if (j) { e.preventDefault(); const r = document.getElementById(j.dataset.jump); r.scrollIntoView(); r.classList.add("flash"); setTimeout(() => r.classList.remove("flash"), 1200); return; }
     const sl = e.target.closest("[data-sel]"); if (sl) { setActive(sl.dataset.sel); return; }

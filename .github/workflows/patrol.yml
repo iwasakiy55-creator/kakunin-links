@@ -1,8 +1,8 @@
 # 毎日 19 時（日本時間）に、リンクを見回り、画面を作り直して公開する。手でも動かせる（Actions の画面の Run workflow）
 name: links-patrol
+# 見回りは、日本の PC で回す（県・市町村のサイトの多くが、海外からのつながりを断つため。2026-10-17 に GitHub の上で 43 件が開けなかった）。
+# ここは手で動かす「画面を作り直すだけ」のときに使う
 on:
-  schedule:
-    - cron: "0 10 * * *"
   workflow_dispatch:
 permissions:
   contents: write
@@ -18,8 +18,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: check links
-        run: pwsh -NoProfile -File src/tools/check.ps1 -Quiet
       - name: build
         run: python src/build.py
       - name: publish

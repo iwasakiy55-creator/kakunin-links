@@ -1,0 +1,338 @@
+{
+ "prefecture_name": "神奈川県",
+ "checked_at": "2026-10-16",
+ "municipalities": {
+  "葉山町": [
+   {
+    "label": "はやまMap（公開型GIS）の案内",
+    "url": "https://www.town.hayama.lg.jp/soshiki/soumu/oshirase/16361.html",
+    "what": "都市計画マップ（用途地域・準防火地域・風致地区・地区計画・都市計画道路・建築協定）と道路台帳図を載せた公開型GIS（https://www2.wagmap.jp/hayama/）の入口。参考図で証明には使えない",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "都市計画全般（葉山都市計画図）",
+    "url": "https://www.town.hayama.lg.jp/soshiki/toshi/4/1/16007.html",
+    "what": "葉山都市計画図（令和6年3月作成）のPDF。区域区分・用途地域・地区計画・都市施設。建蔽率・容積率の記載はない",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "はやまMap（道路台帳図）",
+    "url": "https://www.town.hayama.lg.jp/soshiki/soumu/oshirase/16361.html",
+    "what": "はやまMapの搭載マップに「道路台帳図」（道路河川課）がある。ページはGISの案内",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "葉山町まちづくり条例",
+    "url": "https://www.town.hayama.lg.jp/chousei/keikaku/3/5667.html",
+    "what": "開発事業・建築行為の事前相談と手続きの流れ、様式。国道134号・県道311号沿いの色彩制限",
+    "verified": true,
+    "purpose": "そのほか",
+    "role": "まずここで調べる"
+   }
+  ],
+  "寒川町": [
+   {
+    "label": "都市計画情報の閲覧（e-マップさむかわ）",
+    "url": "https://www.town.samukawa.kanagawa.jp/soshiki/toshikensetsu/toshikeikaku/tokei_kaihatsu/info/toshikeikaku/toshikeikakujouhou/index.html",
+    "what": "用途地域などの都市計画情報を、町の地図サービス e-マップさむかわで確認する案内",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "都市計画情報提供サービス（e-マップさむかわ）の注意事項",
+    "url": "https://www.town.samukawa.kanagawa.jp/soshiki/toshikensetsu/toshikeikaku/tokei_kaihatsu/info/toshikeikaku/toshikeikakujouhou/1412210299681.html",
+    "what": "e-マップさむかわの利用上の注意と地図への入口。地図上で用途地域・高度地区・田端西地区地区計画が見られる",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "道路台帳図の公開について",
+    "url": "https://www.town.samukawa.kanagawa.jp/soshiki/toshikensetsu/doro/kanri/dourozumen/index.html",
+    "what": "寒川町道認定路線網図（PDF）で図面番号を調べ、区分ごとの道路台帳図（PDF）を開く。e-マップさむかわからも開ける",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "開発行為について（寒川町開発指導要綱）",
+    "url": "https://www.town.samukawa.kanagawa.jp/soshiki/toshikensetsu/toshikeikaku/tokei_kaihatsu/info/kaihatsu_kenchiku/jizenkyogi_kakunin/1361759080299.html",
+    "what": "開発指導要綱による町との協議の対象（500㎡以上・3階以上の中高層・5戸以上 など）",
+    "verified": true,
+    "purpose": "そのほか",
+    "role": "まずここで調べる"
+   }
+  ],
+  "大磯町": [
+   {
+    "label": "大磯都市計画図",
+    "url": "https://www.town.oiso.kanagawa.jp/soshiki/toshikensetsubu/toshi/tanto/1365727477322.html",
+    "what": "都市計画図（1/10,000、令和4年2月作成）のPDF。用途地域・都市計画施設",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "用途地域",
+    "url": "https://www.town.oiso.kanagawa.jp/sangyo/toshikeikaku/chiiki/1359075245089.html",
+    "what": "用途地域ごとの建ぺい率の一覧（容積率の数値一覧はない）",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "大磯町道路認定網図",
+    "url": "https://www.town.oiso.kanagawa.jp/soshiki/toshikensetsubu/kensetsu/tanto/17164.html",
+    "what": "町道の認定路線網図（PDF）。認定路線の確認だけに使える。道路台帳そのものは道路課道路管理係",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "まちづくり条例の手続きが必要な開発事業一覧",
+    "url": "https://www.town.oiso.kanagawa.jp/soshiki/toshikensetsubu/toshi/tanto/machi/jyourei/ichiran.html",
+    "what": "大磯町まちづくり条例の対象（300㎡以上の開発・高さ10m以上または3階以上・10戸以上の集合住宅 など）",
+    "verified": true,
+    "purpose": "そのほか",
+    "role": "まずここで調べる"
+   }
+  ],
+  "二宮町": [
+   {
+    "label": "都市計画図",
+    "url": "https://www.town.ninomiya.kanagawa.jp/0000000133.html",
+    "what": "二宮町都市計画図（1/10,000、令和6年2月反映）のPDF。用途地域・都市計画施設",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "用途地域",
+    "url": "https://www.town.ninomiya.kanagawa.jp/0000000137.html",
+    "what": "用途地域の説明と、建ぺい率・容積率の用途地域一覧表（PDF）",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "道路に関すること（事業者向け）",
+    "url": "https://www.town.ninomiya.kanagawa.jp/0000000143.html",
+    "what": "認定路線網図・認定路線調書（令和7年4月1日現在）のPDF。4m未満の道に接するときの狭あい道路等の協議も同じページ",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "中井町": [
+   {
+    "label": "中井町の都市計画",
+    "url": "https://www.town.nakai.kanagawa.jp/soshiki/machiseibikakeikakuhan/keikaku_seisaku/1/782.html",
+    "what": "区域区分、用途地域（7種）ごとの容積率・建ぺい率、都市計画図（令和5年7月作成）のPDF",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "中井町地理情報ポータル（GIS）",
+    "url": "https://www.town.nakai.kanagawa.jp/shigoto_sangyo/kaihatsu_machizukuri/3791.html",
+    "what": "都市計画情報・道路台帳図・認定路線網図などを載せたGIS（https://webgis.alandis.jp/nakai14/portal/）の案内",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "中井町地理情報ポータル（道路台帳図・認定路線網図）",
+    "url": "https://www.town.nakai.kanagawa.jp/shigoto_sangyo/kaihatsu_machizukuri/3791.html",
+    "what": "GISの公開地図に道路台帳図・認定路線網図がある。地図ごとに利用規約への同意が要る",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "大井町": [
+   {
+    "label": "大井都市計画図",
+    "url": "https://www.town.oi.kanagawa.jp/soshiki/11/toshikeikakuzu.html",
+    "what": "都市計画図（1/10,000、令和4年3月現在）のPDF。区域区分・用途地域・地区計画・都市施設",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "大井町町道路線網図",
+    "url": "https://www.town.oi.kanagawa.jp/soshiki/11/rosennmou.html",
+    "what": "町道の認定路線網図（令和8年4月1日現在）のPDF。延長・幅員は都市整備課へ",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "道路幅員",
+    "url": "https://www.town.oi.kanagawa.jp/soshiki/11/dourofukuin.html",
+    "what": "認定道路は道路台帳あり（電話・窓口で確認）、認定外道路は台帳なし。特定地点の幅員は道路幅員証明願",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "補助"
+   }
+  ],
+  "松田町": [
+   {
+    "label": "都市計画図（用途地域図）",
+    "url": "https://town.matsuda.kanagawa.jp/soshiki/10/tosikeikaku.html",
+    "what": "松田都市計画図（1/10,000、令和7年12月更新）のPDF。用途地域・都市計画施設",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "松田町特定地域土地利用計画",
+    "url": "https://town.matsuda.kanagawa.jp/soshiki/1/tochikeikaku.html",
+    "what": "都市計画区域外の地域（特定地域）の土地利用計画。土地構想図・土地規制図のPDF",
+    "verified": true,
+    "purpose": "そのほか",
+    "role": "まずここで調べる"
+   }
+  ],
+  "山北町": [
+   {
+    "label": "山北町都市計画図・地区計画",
+    "url": "https://www.town.yamakita.kanagawa.jp/0000007340.html",
+    "what": "都市計画図（1/10,000、令和4年1月修正）のPDFと、5地区の地区計画の条例・計画図",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "山北町狭あい道路拡幅整備要綱",
+    "url": "https://www.town.yamakita.kanagawa.jp/0000007342.html",
+    "what": "建築確認申請の30日前までに拡幅整備の事前協議（必須）。道路種別・中心線の確認は県西土木事務所",
+    "verified": true,
+    "purpose": "そのほか",
+    "role": "まずここで調べる"
+   }
+  ],
+  "開成町": [
+   {
+    "label": "開成都市計画図",
+    "url": "https://www.town.kaisei.kanagawa.jp/info/418",
+    "what": "都市計画図（1/10,000、令和3年11月作成）のPDF。用途地域・都市計画施設",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "開発行為指導要綱",
+    "url": "https://www.town.kaisei.kanagawa.jp/info/193",
+    "what": "対象：500㎡以上の開発行為等・中高層建築物（自己居住用を除く）・8戸以上の共同住宅等",
+    "verified": true,
+    "purpose": "そのほか",
+    "role": "まずここで調べる"
+   }
+  ],
+  "箱根町": [
+   {
+    "label": "都市計画情報の公開について（はこねMAP）",
+    "url": "https://www.town.hakone.kanagawa.jp/www/contents/1100000002098/index.html",
+    "what": "はこねMAP（GIS。https://www.sonicweb-asp.jp/hakone/）と、地域地区総括図・索引図・詳細図（47枚）のPDF。用途地域・特別用途地区・防火・準防火・建ぺい率・容積率",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "都市計画（用途地域など）について",
+    "url": "https://www.town.hakone.kanagawa.jp/www/contents/1100000001397/index.html",
+    "what": "用途地域ごとの建ぺい率・容積率・高さ・最低敷地面積・外壁後退、指定のない区域の率、斜線・日影、特別用途地区、自然公園法、開発指導要綱の対象。窓口相談チェックシート",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "補助"
+   },
+   {
+    "label": "都市整備課（閲覧できる図書）",
+    "url": "https://www.town.hakone.kanagawa.jp/www/contents/1100000000257/index.html",
+    "what": "都市整備課で閲覧できる図書に道路台帳がある、という記載だけ（オンライン公開はない）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "補助"
+   }
+  ],
+  "真鶴町": [
+   {
+    "label": "真鶴町都市計画図",
+    "url": "https://www.town.manazuru.kanagawa.jp/soshiki/toshikeikaku/toshikeikaku/2176.html",
+    "what": "都市計画図（1/10,000）のPDF。用途地域・都市計画施設。参考図（ページ更新 2022年1月）",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "美の町真鶴（まちづくり条例「美の基準」）",
+    "url": "https://www.town.manazuru.kanagawa.jp/soshiki/toshikeikaku/toshikeikaku/973.html",
+    "what": "まちづくり条例第10条の美の基準（デザインコードブック）。建築時の手続きの案内はこのページにはない（都市計画課へ）",
+    "verified": true,
+    "purpose": "そのほか",
+    "role": "まずここで調べる"
+   }
+  ],
+  "湯河原町": [
+   {
+    "label": "都市計画図の閲覧",
+    "url": "https://www.town.yugawara.kanagawa.jp/soshiki/5/1050.html",
+    "what": "都市計画図（令和7年9月現在）のPDF。用途地域など。一般参考図",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "開発指導要綱",
+    "url": "https://www.town.yugawara.kanagawa.jp/soshiki/5/1044.html",
+    "what": "湯河原町開発指導要綱の案内（対象の基準は要綱本文。まちづくり課）",
+    "verified": true,
+    "purpose": "そのほか",
+    "role": "まずここで調べる"
+   }
+  ],
+  "愛川町": [
+   {
+    "label": "愛川町都市計画図",
+    "url": "https://www.town.aikawa.kanagawa.jp/soshiki/kensetsu/toshi/toshi/info/toshikeikakuzu/1432857728646.html",
+    "what": "都市計画図（1/10,000、平成29年1月作成）のPDF。用途地域・都市計画施設",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "道路台帳の閲覧をしたいとき",
+    "url": "https://www.town.aikawa.kanagawa.jp/soshiki/kensetsu/douro/kanri/info/1422278462850.html",
+    "what": "町道の道路台帳の閲覧、道路台帳（現況）平面図・道路境界確定図の写しの交付（道路課道路管理班。オンライン公開はない）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "開発行為（愛川町開発指導要綱）",
+    "url": "https://www.town.aikawa.kanagawa.jp/soshiki/kensetsu/toshi/toshi/info/tochi_riyou/1422278421204.html",
+    "what": "要綱の協議の対象（500㎡以上・都計法29条許可・高さ10m以上の中高層）と様式",
+    "verified": true,
+    "purpose": "そのほか",
+    "role": "まずここで調べる"
+   }
+  ],
+  "清川村": [
+   {
+    "label": "建築・開発行為・特定地域土地利用計画・ホテル条例",
+    "url": "https://www.town.kiyokawa.kanagawa.jp/soshiki/sangyokanko/sizenkouennokugaikoukokubutu/461.html",
+    "what": "村全域が都市計画区域外（用途地域なし）。特定地域土地利用計画・開発指導条例・ホテル条例・自然公園法の案内と問い合わせ先。村道（道路台帳）は建設農林課",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   }
+  ]
+ }
+}

@@ -1,0 +1,589 @@
+{
+  "prefecture_name": "山梨県",
+  "checked_at": "2026-10-16",
+  "tokutei_gyoseicho": [
+    "山梨県",
+    "甲府市"
+  ],
+  "prefecture": [
+    {
+      "label": "山梨県 都市計画総括図",
+      "url": "https://www.pref.yamanashi.jp/toshikei/tosikeikakuzu/tosikeikakuzukeisai.html",
+      "what": "県内の都市計画区域ごとの総括図（PDF。用途地域等の概略位置の参考図。証明にはならず、個別の土地は市町村に確かめる）",
+      "verified": true,
+      "purpose": "都市計画",
+      "role": "補助"
+    },
+    {
+      "label": "山梨県 土砂災害警戒区域マップ（山梨県土砂災害警戒情報）",
+      "url": "https://sabo.pref.yamanashi.jp/MapKeikai",
+      "what": "土砂災害警戒区域・特別警戒区域（土石流・急傾斜地・地すべり）の地図。参考図。最新は建設事務所に確かめる",
+      "verified": true,
+      "purpose": "災害",
+      "role": "まずここで調べる"
+    },
+    {
+      "label": "山梨県 土砂災害警戒区域等の指定について（砂防課）",
+      "url": "https://www.pref.yamanashi.jp/sabo/keikaikuiki.html",
+      "what": "指定状況の案内・市町村別の指定一覧（PDF）・区域マップへの案内",
+      "verified": true,
+      "purpose": "災害",
+      "role": "補助"
+    },
+    {
+      "label": "山梨県地域防災計画（資料編2）：地すべり防止区域・急傾斜地崩壊危険区域一覧表",
+      "url": "https://www.pref.yamanashi.jp/bousai/04183046257.html",
+      "what": "急傾斜地崩壊危険区域（県条例で災害危険区域）・地すべり防止区域の一覧表（PDF）",
+      "verified": true,
+      "purpose": "災害",
+      "role": "補助"
+    },
+    {
+      "label": "山梨県 盛土規制法に基づく規制区域の指定について",
+      "url": "https://www.pref.yamanashi.jp/morido/kiseikuikishitei.html",
+      "what": "宅地造成等工事規制区域・特定盛土等規制区域の区域図（県全域と市町村ごとのPDF）。甲府市を除く県内全域",
+      "verified": true,
+      "purpose": "盛土",
+      "role": "まずここで調べる"
+    },
+    {
+      "label": "山梨県 道路位置指定について（指定道路図の公開の案内）",
+      "url": "https://www.pref.yamanashi.jp/kenchikujutaku/sinsa/ichisiteidouro.html",
+      "what": "位置指定道路の案内・建設事務所ごとの窓口。指定道路図・指定道路調書は「まっぷDE山梨」で公開（甲府市を除く）",
+      "verified": true,
+      "purpose": "道路",
+      "role": "まずここで調べる"
+    },
+    {
+      "label": "まっぷDE山梨（山梨県地理情報システム）",
+      "url": "http://gis.pref.yamanashi.jp/webgis/?p=1",
+      "what": "指定道路図・指定道路調書（県の案内による）。地図はJSのため中身は開いて確かめられなかった。利用規約への同意が要る",
+      "verified": false,
+      "purpose": "道路",
+      "role": "補助"
+    },
+    {
+      "label": "山梨県 白地地域内の建築形態規制",
+      "url": "https://www.pref.yamanashi.jp/kenchikujutaku/91925871681.html",
+      "what": "用途地域の指定のない区域の容積率・建蔽率等（県告示。甲府市内は甲府市が定める）",
+      "verified": true,
+      "purpose": "白地",
+      "role": "まずここで調べる"
+    },
+    {
+      "label": "平成23年山梨県告示第149号（白地地域の容積率等）",
+      "url": "https://www.pref.yamanashi.jp/documents/2394/h23kokuji149.pdf",
+      "what": "区域ごとの容積率・建蔽率・斜線の数値の表（告示本文PDF）",
+      "verified": true,
+      "purpose": "白地",
+      "role": "補助"
+    },
+    {
+      "label": "山梨県 中間検査制度について",
+      "url": "https://www.pref.yamanashi.jp/kenchikujutaku/83480973852.html",
+      "what": "特定工程の指定（山梨県告示第67号・平成28年4月1日から）。県内全域（甲府市を除く）・階数3以上または延べ500㎡超",
+      "verified": true,
+      "purpose": "中間検査",
+      "role": "まずここで調べる"
+    },
+    {
+      "label": "山梨県 建築基準法関連情報",
+      "url": "https://www.pref.yamanashi.jp/kenchikujutaku/36787304840.html",
+      "what": "県の建築基準法の案内の一覧（特定行政庁は山梨県と甲府市、と記載）。43条・白地・土砂・中間検査などへの入口",
+      "verified": true,
+      "purpose": "中間検査",
+      "role": "補助"
+    }
+  ],
+  "municipalities": {
+    "甲府市": [
+      {
+        "label": "甲府市 用途地域などの確認はこちら",
+        "url": "https://www.city.kofu.yamanashi.jp/toshikekaku/youtochiiki.html",
+        "what": "用途地域・建蔽率・容積率・防火地域・都市計画道路を「こうふMAP」で確かめる手順、都市計画総括図（PDF）",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "こうふMAP（甲府市公開型GIS）",
+        "url": "https://kofu.geocloud.jp/webgis/?p=1",
+        "what": "都市計画情報の地図（市の案内による）。地図はJSのため中身は開いて確かめられなかった",
+        "verified": false,
+        "purpose": "都市計画",
+        "role": "補助"
+      },
+      {
+        "label": "甲府市 宅地造成及び特定盛土等規制法について",
+        "url": "https://www.city.kofu.yamanashi.jp/shinrin/morido/moridokiseihou.html",
+        "what": "甲府市が独自に指定した規制区域（令和7年4月1日から）。区域図は手続きのページへ",
+        "verified": true,
+        "purpose": "盛土",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "甲府市 盛土規制法に関する手続きについて",
+        "url": "https://www.city.kofu.yamanashi.jp/shinrin/morido/moridotetuduki.html",
+        "what": "甲府市の宅地造成等工事規制区域・特定盛土等規制区域の図（PDF）と「こうふMAP」での確認の案内",
+        "verified": true,
+        "purpose": "盛土",
+        "role": "補助"
+      },
+      {
+        "label": "甲府市 建築基準法上の道路種別等に関する相談について",
+        "url": "https://www.city.kofu.yamanashi.jp/kenchikushido/dourosoudan.html",
+        "what": "道路種別・接道の確認は「道路相談カード」で建築指導課へ（回答まで通常2週間ほど）。地図の公開の記載はない",
+        "verified": true,
+        "purpose": "道路",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "甲府市 建築基準法第42条第2項による道路（2項道路）",
+        "url": "https://www.city.kofu.yamanashi.jp/kenchikushido/machi/kenchiku/kenchikukijun/42-2doro.html",
+        "what": "2項道路の考え方（基準時・後退）。個別の確認は建築指導課",
+        "verified": true,
+        "purpose": "道路",
+        "role": "補助"
+      },
+      {
+        "label": "甲府市 道路台帳平面図の閲覧サービス（こうふMAP）のお知らせ",
+        "url": "https://www.city.kofu.yamanashi.jp/shise/gaiyo/shicho/kaiken/r6/documents/20250207-5.pdf",
+        "what": "令和7年3月3日から、甲府市道路台帳平面図を「こうふMAP」で閲覧・交付（市長会見資料PDF）",
+        "verified": true,
+        "purpose": "道路台帳",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "甲府市 道路河川課",
+        "url": "https://www.city.kofu.yamanashi.jp/dorokasen/",
+        "what": "市道の認定・廃止・変更、市道台帳（図面を含む）の整備・保管の担当課（管理占用係）",
+        "verified": true,
+        "purpose": "道路台帳",
+        "role": "補助"
+      },
+      {
+        "label": "甲府市 白地地域の建築形態規制",
+        "url": "https://www.city.kofu.yamanashi.jp/kenchikushido/machi/kenchiku/kenchikukijun/shiraji.html",
+        "what": "甲府市内の白地地域の容積率・建蔽率・斜線（市が定める）",
+        "verified": true,
+        "purpose": "白地",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "甲府市 中間検査・完了検査",
+        "url": "https://www.city.kofu.yamanashi.jp/kenchikushido/machi/kenchiku/kenchikukijun/kensa.html",
+        "what": "甲府市告示第606号（令和6年10月1日）。市内全域・床面積の合計100㎡以上（除外あり）。特定工程一覧PDF",
+        "verified": true,
+        "purpose": "中間検査",
+        "role": "まずここで調べる"
+      }
+    ],
+    "富士吉田市": [
+      {
+        "label": "都市計画用途地域図の閲覧（都市政策課）",
+        "url": "https://www.city.fujiyoshida.yamanashi.jp/page/2080.html",
+        "what": "用途地域図（1/2500）のPDF15枚と索引図。GISはない",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "富士吉田市の用途地域（都市政策課）",
+        "url": "https://www.city.fujiyoshida.yamanashi.jp/page/1949.html",
+        "what": "用途地域ごとの建蔽率・容積率、特別工業地区、準防火地域、白地地域の建蔽率・容積率",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "補助"
+      }
+    ],
+    "都留市": [
+      {
+        "label": "都留市の都市計画（建設課都市計画担当）",
+        "url": "https://www.city.tsuru.yamanashi.jp/soshiki/kensetsu/toshikeikaku_t/1/811.html",
+        "what": "用途地域の面積と建蔽率・容積率の表、特別工業地区、準防火地域。地図は載っていない",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      }
+    ],
+    "山梨市": [
+      {
+        "label": "山梨市都市計画図（都市計画課）",
+        "url": "https://www.city.yamanashi.yamanashi.jp/soshiki/20/1960.html",
+        "what": "都市計画図1/10000のPDF（令和5年1月現在）。公開型GISと県の総括図への案内",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "山梨市地理情報システム（公開型GIS）",
+        "url": "https://www.sonicweb-asp.jp/yamanashi/",
+        "what": "都市計画情報・盛土規制区域の地図（市の案内による）。JSの地図で、中身は開いて確かめていない",
+        "verified": false,
+        "purpose": "都市計画",
+        "role": "補助"
+      },
+      {
+        "label": "山梨市地理情報システム（公開型GIS）",
+        "url": "https://www.sonicweb-asp.jp/yamanashi/",
+        "what": "道路台帳図（市の案内による）。JSの地図で、中身は開いて確かめていない",
+        "verified": false,
+        "purpose": "道路台帳",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "山梨市地理情報システム（公開型GIS）",
+        "url": "https://www.sonicweb-asp.jp/yamanashi/",
+        "what": "土砂災害警戒区域・浸水想定区域（市の案内による）。JSの地図で、中身は開いて確かめていない",
+        "verified": false,
+        "purpose": "災害",
+        "role": "補助"
+      }
+    ],
+    "大月市": [
+      {
+        "label": "大月市 都市計画",
+        "url": "https://www.city.otsuki.yamanashi.jp/sangyo/machi/toshikeikaku.html",
+        "what": "用途地域ごとの建蔽率・容積率、都市計画総括図（1/10000）のPDF、用途地域変更の計画書",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      }
+    ],
+    "韮崎市": [
+      {
+        "label": "都市計画図・管内図について（建設課計画管理担当）",
+        "url": "https://www.city.nirasaki.lg.jp/soshikiichiran/kensetsuka/keikakukanri/2_1/1441.html",
+        "what": "都市計画区域と用途地域を表示した都市計画図（1/10000）のPDF",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "市道の路線について（建設課）",
+        "url": "https://www.city.nirasaki.lg.jp/soshikiichiran/kensetsuka/kensetsudobokutanto/1_2/2189.html",
+        "what": "市道認定調書のPDFと認定路線網図のPDF",
+        "verified": true,
+        "purpose": "道路台帳",
+        "role": "まずここで調べる"
+      }
+    ],
+    "南アルプス市": [
+      {
+        "label": "土地利用及び開発行為について（都市計画課）",
+        "url": "https://www.city.minami-alps.yamanashi.jp/docs/15476.html",
+        "what": "用途地域の調べ方（全国都市計画GISビューアの案内）、総括図、建蔽率・容積率。市道名・認定幅員は管理住宅課、道路種別は県中北建設事務所の案内",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "都市計画図等の公開について（都市計画課）",
+        "url": "https://www.city.minami-alps.yamanashi.jp/docs/16366.html",
+        "what": "都市計画総括図（令和7年2月時点）と白図のPDF",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "補助"
+      },
+      {
+        "label": "土地利用及び開発行為について（市道の問い合わせ先）",
+        "url": "https://www.city.minami-alps.yamanashi.jp/docs/15476.html",
+        "what": "市道名・認定幅員の問い合わせ先（管理住宅課）だけ。道路台帳の公開は見つからなかった",
+        "verified": true,
+        "purpose": "道路台帳",
+        "role": "補助"
+      }
+    ],
+    "北杜市": [
+      {
+        "label": "都市計画・用途地域・建築制限等のご案内（土地政策課）",
+        "url": "https://www.city.hokuto.yamanashi.jp/docs/1028.html",
+        "what": "市全域が都市計画区域外（用途地域・防火地域なし）。まちづくり条例の建蔽率・容積率などの制限、4号区域の案内",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "北杜市の認定道路情報の提供（道路河川課）",
+        "url": "https://www.city.hokuto.yamanashi.jp/docs/1393.html",
+        "what": "路線網図（1/10000）と道路台帳図（1/2000）の参考PDF。窓口で台帳を閲覧できる",
+        "verified": true,
+        "purpose": "道路台帳",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "市道に関する案内（道路河川課）",
+        "url": "https://www.city.hokuto.yamanashi.jp/docs/1132.html",
+        "what": "認定市道の名称・幅員の問い合わせ方法、窓口での路線網図・台帳の閲覧、道路幅員証明",
+        "verified": true,
+        "purpose": "道路台帳",
+        "role": "補助"
+      }
+    ],
+    "甲斐市": [
+      {
+        "label": "都市計画図について（甲斐市 都市計画課）",
+        "url": "https://www.city.kai.yamanashi.jp/page/4535.html",
+        "what": "都市計画総括図・複合図のPDF（参考図）、デジMap甲斐の都市計画図（用途地域・建蔽率・容積率）の案内",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "公開型GIS「デジMap甲斐」",
+        "url": "https://webgis.alandis.jp/kai19/portal/",
+        "what": "都市計画図（市の案内による）。利用規約の画面までで、地図の中身は確かめられなかった",
+        "verified": false,
+        "purpose": "都市計画",
+        "role": "補助"
+      },
+      {
+        "label": "公開型GIS「デジMap甲斐」の案内（政策戦略課）",
+        "url": "https://www.city.kai.yamanashi.jp/page/3271.html",
+        "what": "デジMap甲斐に「認定路線網図」がある、という案内。GISの中身は未確認",
+        "verified": false,
+        "purpose": "道路台帳",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "公開型GIS「デジMap甲斐」の案内（政策戦略課）",
+        "url": "https://www.city.kai.yamanashi.jp/page/3271.html",
+        "what": "防災情報（土砂災害の区域・洪水ハザード）がある、という案内。GISの中身は未確認",
+        "verified": false,
+        "purpose": "災害",
+        "role": "補助"
+      }
+    ],
+    "笛吹市": [
+      {
+        "label": "用途地域等について（笛吹市）",
+        "url": "https://www.city.fuefuki.yamanashi.jp/machizukuri/youto/youto.html",
+        "what": "用途地域ごとの建蔽率・容積率・斜線・日影、防火・準防火、風致、地区計画。場所ごとはGISで",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "公開型GIS「ふえふきわが街ガイドマップ」",
+        "url": "https://www2.wagmap.jp/fuefuki",
+        "what": "都市計画区域・用途地域（市の案内による）。地図の中身は確かめられなかった",
+        "verified": false,
+        "purpose": "都市計画",
+        "role": "補助"
+      },
+      {
+        "label": "市内道路網図（笛吹市 土木課）",
+        "url": "https://www.city.fuefuki.yamanashi.jp/doboku/kurashi/doro/shinaidoro/shinaidoromozu.html",
+        "what": "8地区ごとの道路網図のPDF、市道・農道の一覧（最大・最小幅員）",
+        "verified": true,
+        "purpose": "道路台帳",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "公開型GIS「ふえふきわが街ガイドマップ」の案内",
+        "url": "https://www.city.fuefuki.yamanashi.jp/joho/shisejoho/johokokaihogo/kokaigatagis.html",
+        "what": "GISに認定路線網図がある、という案内。GISの中身は未確認",
+        "verified": false,
+        "purpose": "道路台帳",
+        "role": "補助"
+      }
+    ],
+    "上野原市": [
+      {
+        "label": "上野原市都市計画図",
+        "url": "https://www.city.uenohara.yamanashi.jp/page/1020228.html",
+        "what": "都市計画図（1/10,000）のPDF（令和7年4月時点・参考図）",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "上野原都市計画の決定及び変更について",
+        "url": "https://www.city.uenohara.yamanashi.jp/page/2404.html",
+        "what": "用途地域・地区計画・風致地区の変更（平成26年12月）の計画図・計画書",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "補助"
+      }
+    ],
+    "甲州市": [
+      {
+        "label": "甲州市内市道・農道・林道の認定路線網図",
+        "url": "https://www.city.koshu.yamanashi.jp/docs/2024120900017/",
+        "what": "索引図と21ブロックの道路台帳図のPDF、路線名の索引表（令和6年4月1日現在・参考）",
+        "verified": true,
+        "purpose": "道路台帳",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "甲州市道路台帳図の写しの交付及び閲覧",
+        "url": "https://www.city.koshu.yamanashi.jp/docs/2023022200072/",
+        "what": "建設課の窓口での道路台帳図の閲覧・写しの交付",
+        "verified": true,
+        "purpose": "道路台帳",
+        "role": "補助"
+      }
+    ],
+    "中央市": [
+      {
+        "label": "都市計画図の閲覧・販売について（中央市）",
+        "url": "https://www.city.chuo.yamanashi.jp/soshiki/toshikeikaku/toshiseibi/385.html",
+        "what": "都市計画図（1/10,000）・白図のPDF（平成30年7月時点・参考図）",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "地区計画の届出・審査（中央市）",
+        "url": "https://www.city.chuo.yamanashi.jp/soshiki/toshikeikaku/toshiseibi/334.html",
+        "what": "地区計画と届出の案内（検索結果で見ただけで、ページは開いていない）",
+        "verified": false,
+        "purpose": "都市計画",
+        "role": "補助"
+      }
+    ],
+    "市川三郷町": [
+      {
+        "label": "山梨県 都市計画総括図（甲府盆地7都市計画・市川三郷）",
+        "url": "https://www.pref.yamanashi.jp/toshikei/tosikeikakuzu/tosikeikakuzukeisai.html",
+        "what": "市川三郷都市計画区域の総括図PDF（参考図）。町の都市計画のページは見つからなかった",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      }
+    ],
+    "早川町": [],
+    "身延町": [
+      {
+        "label": "山梨県 都市計画総括図（身延都市計画）",
+        "url": "https://www.pref.yamanashi.jp/toshikei/tosikeikakuzu/tosikeikakuzukeisai.html",
+        "what": "身延都市計画区域の総括図PDF（参考図。個別の土地は町に確かめる）",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "身延町 風致地区の許可申請",
+        "url": "https://www.town.minobu.lg.jp/page/1164.html",
+        "what": "身延山の風致地区と規制される行為（区域図はない）",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "補助"
+      }
+    ],
+    "南部町": [],
+    "富士川町": [
+      {
+        "label": "山梨県 都市計画総括図（甲府盆地7都市計画・富士川）",
+        "url": "https://www.pref.yamanashi.jp/toshikei/tosikeikakuzu/tosikeikakuzukeisai.html",
+        "what": "富士川都市計画区域の総括図PDF（参考図）",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      }
+    ],
+    "昭和町": [
+      {
+        "label": "昭和町 都市計画図について",
+        "url": "https://www.town.showa.yamanashi.jp/soshiki/9/7142.html",
+        "what": "都市計画図（1/10,000）・基本図（1/2,500）のPDF、用途地域内の形態制限（令和4年4月現在）",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "昭和町 地区計画区域内での建築について",
+        "url": "https://www.town.showa.yamanashi.jp/soshiki/9/1582.html",
+        "what": "3地区の地区計画の概要と区域図のPDF、届出の流れ",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "補助"
+      }
+    ],
+    "道志村": [],
+    "西桂町": [
+      {
+        "label": "山梨県 都市計画総括図（富士北麓都市計画）",
+        "url": "https://www.pref.yamanashi.jp/toshikei/tosikeikakuzu/tosikeikakuzukeisai.html",
+        "what": "富士北麓都市計画区域の総括図PDF。用途地域の指定のない区域の建蔽率・容積率の表（参考図）",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      }
+    ],
+    "忍野村": [
+      {
+        "label": "用途地域（忍野村 建設課）",
+        "url": "https://www.vill.oshino.lg.jp/page/1018.html",
+        "what": "全域が富士北麓都市計画区域の非線引きで、用途地域の指定はない。建蔽率70%・容積率200%",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "風致地区（忍野村 建設課）",
+        "url": "https://www.vill.oshino.lg.jp/page/1032.html",
+        "what": "風致地区の対象（字の名前）と許可の基準（建蔽率・高さ・後退・色彩・緑地率）",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "補助"
+      },
+      {
+        "label": "村道（村が管理している道路）",
+        "url": "https://www.vill.oshino.lg.jp/page/1014.html",
+        "what": "村道の管理者（建設課）と問い合わせ先だけ。路線図・台帳の公開はない",
+        "verified": true,
+        "purpose": "道路台帳",
+        "role": "補助"
+      }
+    ],
+    "山中湖村": [
+      {
+        "label": "都市開発（山中湖村 村土整備課）",
+        "url": "https://www.vill.yamanakako.lg.jp/Info/696",
+        "what": "富士北麓都市計画区域に入っていること、開発の事前協議、建築確認と自然公園法の手続き。用途地域・建蔽率は書かれていない",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "山中湖村の道路紹介（村道一覧・路線図）",
+        "url": "https://www.vill.yamanakako.lg.jp/info/208",
+        "what": "村道の路線図のPDF。幅員・延長は村土整備課へ",
+        "verified": true,
+        "purpose": "道路台帳",
+        "role": "まずここで調べる"
+      }
+    ],
+    "鳴沢村": [
+      {
+        "label": "建築確認申請について（鳴沢村 振興課）",
+        "url": "https://www.vill.narusawa.yamanashi.jp/gyosei/soshikikarasagasu/shinkoka/kenchiku_kaihatsu/538.html",
+        "what": "村は都市計画区域の外で、用途地域・防火地域の指定はない。確認申請の出し先",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "補助"
+      }
+    ],
+    "富士河口湖町": [
+      {
+        "label": "富士河口湖町 用途地域の変更及び特別用途地区の指定について",
+        "url": "https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=3144",
+        "what": "用途地域の総括図・拡大図のPDF（平成27年告示第5号）、特別用途地区の条例",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "まずここで調べる"
+      },
+      {
+        "label": "富士河口湖町 建築確認申請",
+        "url": "https://www.town.fujikawaguchiko.lg.jp/ka/info.php?if_id=52",
+        "what": "都市計画区域（精進・本栖・富士ヶ嶺は区域外）、防火地域・22条区域はないこと。用途・建蔽率・容積率は都市整備課",
+        "verified": true,
+        "purpose": "都市計画",
+        "role": "補助"
+      }
+    ],
+    "小菅村": [],
+    "丹波山村": []
+  }
+}

@@ -1,0 +1,1183 @@
+{
+ "checked_at": "2026-10-03",
+ "note": "第三面の都市計画の指定（R143）を人が調べるためのサイトの案内。市町・県の公式サイトだけ。verified=true は、実際に開いて、その市町の都市計画情報の地図・案内のページであることを確かめたもの。URLに住所は入れない（開いた地図で入力する）。only／except は、その案内を出す市町を絞るためのもの。 purpose は調べる目的、role は使い分け（まずここ／補助）。",
+ "prefecture": [
+  {
+   "label": "静岡県GIS 都市計画情報（都市計画図）",
+   "url": "https://www.gis.pref.shizuoka.jp/?z=15&ll=35.172725%2C138.666738&t=roadmap&mp=301&op=19&vlf=00000f",
+   "what": "用途地域・建蔽率・容積率・防火／準防火地域・区域区分・地区計画・特別用途地区など（県の都市計画課が所管）。地図は動かせる",
+   "verified": true,
+   "except": [
+    "静岡市",
+    "浜松市"
+   ],
+   "purpose": "都市計画",
+   "role": "補助：市町に地図がないとき"
+  },
+  {
+   "label": "静岡県GIS 建築関連情報マップ（掲載内容の案内）",
+   "url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1052551/1015991.html",
+   "what": "県が所管する区域の建築基準法上の道路、宅造法規制区域・災害危険区域、建築協定区域、22条指定区域、白地地域・区域区分、6条1項4号指定区域など",
+   "verified": true,
+   "except": [
+    "静岡市",
+    "浜松市"
+   ],
+   "purpose": "都市計画",
+   "role": "補助：県が所管する区域の22条区域・区域区分など"
+  },
+  {
+   "label": "白地地域（用途地域の指定のない区域）の建築形態制限",
+   "url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1044596/1002530/index.html",
+   "what": "白地地域の容積率・建蔽率・高さ制限などの一覧（PDF）",
+   "verified": true,
+   "except": [
+    "静岡市",
+    "浜松市"
+   ],
+   "purpose": "白地",
+   "role": ""
+  },
+  {
+   "label": "盛土規制法における規制区域（静岡県）",
+   "url": "https://www.pref.shizuoka.jp/machizukuri/tochiriyou/1041004/1064870.html",
+   "what": "宅地造成等工事規制区域・特定盛土等規制区域（令和7年5月26日指定、静岡市・浜松市を除く県内全域）。地域別の区域図PDF",
+   "verified": true,
+   "except": [
+    "静岡市",
+    "浜松市"
+   ],
+   "purpose": "盛土",
+   "role": ""
+  },
+  {
+   "label": "静岡県GIS 盛土規制区域指定情報",
+   "url": "https://www.gis.pref.shizuoka.jp/?z=15&ll=34.895718%2C138.269498&t=roadmap&mp=4002&op=47&vlf=000001",
+   "what": "盛土規制法の規制区域の地図（静岡市・浜松市を除く）",
+   "verified": true,
+   "except": [
+    "静岡市",
+    "浜松市"
+   ],
+   "purpose": "盛土",
+   "role": "地図"
+  },
+  {
+   "label": "静岡市 盛土規制法（規制区域）",
+   "url": "https://www.city.shizuoka.lg.jp/s9465/s012533.html",
+   "what": "市の全域が宅地造成等工事規制区域か特定盛土等規制区域のどちらか。区域はしずマップで確認",
+   "verified": true,
+   "only": [
+    "静岡市"
+   ],
+   "purpose": "盛土",
+   "role": ""
+  },
+  {
+   "label": "浜松市 盛土規制法の概要（規制区域）",
+   "url": "https://www.city.hamamatsu.shizuoka.jp/morido/moridotaisaku/moridokisei.html",
+   "what": "市の全域が規制区域。区域図PDFと浜松市盛土関連情報GIS",
+   "verified": true,
+   "only": [
+    "浜松市"
+   ],
+   "purpose": "盛土",
+   "role": ""
+  },
+  {
+   "label": "静岡県 砂防課（土砂災害警戒区域・特別警戒区域）",
+   "url": "https://www.pref.shizuoka.jp/machizukuri/kasensabo/1076945/index.html",
+   "what": "土砂災害警戒区域・特別警戒区域（レッドゾーン）の指定状況、基礎調査の結果、候補箇所",
+   "verified": true,
+   "purpose": "災害",
+   "role": "まずここで調べる"
+  },
+  {
+   "label": "静岡県GIS 土砂災害情報マップ（警戒区域・特別警戒区域）",
+   "url": "https://www.gis.pref.shizuoka.jp/?z=15&ll=34.9772%2C138.3826&t=roadmap&mp=9002&op=70&vlf=-1",
+   "what": "土砂災害警戒区域（イエロー）・特別警戒区域（レッド）",
+   "verified": true,
+   "purpose": "災害",
+   "role": "地図"
+  },
+  {
+   "label": "建築確認申請等について（中間検査告示・中間検査取扱）",
+   "url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1052541.html",
+   "what": "県が所管する区域の、中間検査の告示（平成28年10月1日から）と取扱い・事例集。ページの中の「中間検査告示」「中間検査取扱・事例集」を開く",
+   "verified": true,
+   "checked": "2026-10-05",
+   "except": [
+    "静岡市",
+    "浜松市",
+    "沼津市",
+    "富士市",
+    "富士宮市",
+    "焼津市"
+   ],
+   "purpose": "中間検査",
+   "role": "まずここで調べる"
+  }
+ ],
+ "municipalities": {
+  "静岡市": [
+   {
+    "label": "静岡市都市計画情報インターネット提供サービス",
+    "url": "https://www.city.shizuoka.lg.jp/s5698/s007693.html",
+    "what": "用途地域、防火・準防火地域、高度地区などの地域地区、地区計画、都市施設、市街地開発事業、立地適正化計画",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "しずマップ（都市計画情報）",
+    "url": "https://city.shizuoka.geocloud.jp/webgis/?z=15&ll=34.974982%2C138.383725&t=dm&mp=300&op=70&ot=1&vlf=00001f",
+    "what": "上と同じ内容の地図本体",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "しずマップ「建築基準法上の指定道路情報」（地図の一覧から開く）",
+    "url": "https://city.shizuoka.geocloud.jp/",
+    "what": "3号・4号・5号・2項道路、非道路。令和8年3月31日現在の道路判定図（参考）。開くと閲覧の同意が要る",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "しずマップ「道路台帳図情報」（地図の一覧から開く）",
+    "url": "https://city.shizuoka.geocloud.jp/",
+    "what": "幅員（縮尺1/250〜1/2000のみ）、路線名、路線網図。同じ一覧に法定外公共物マップ（赤道・青線）もある",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "建築基準法に基づく中間検査における静岡市告示",
+    "url": "https://www.city.shizuoka.lg.jp/s2574/s007821.html",
+    "what": "静岡市告示第642号（平成28年8月26日）。対象の建築物と特定工程",
+    "verified": true,
+    "checked": "2026-10-05",
+    "purpose": "中間検査",
+    "role": "まずここで調べる"
+   }
+  ],
+  "浜松市": [
+   {
+    "label": "浜松市地図情報サイト「都市計画マップ」",
+    "url": "https://www2.wagmap.jp/hamamatsu/PositionSelect?mid=3",
+    "what": "用途地域・防火地域などの都市計画の地図。開くと利用規約の同意の画面が出る",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "浜松市都市計画マップ（案内）",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/toshikei/city/toshikei_gis/index.html",
+    "what": "浜松市の都市計画情報（用途地域など）。地図本体は「浜松市わが街ガイド」の都市計画マップ。境界の詳細は都市計画課",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "担当課の案内"
+   },
+   {
+    "label": "浜松市地図情報サイト「指定道路図（建築基準法）」",
+    "url": "https://www2.wagmap.jp/hamamatsu/PositionSelect?mid=65",
+    "what": "道路種別（幅員・境界・起終点は示さない）。5号道路と民地の2項道路は指定時の図面PDFを地図から開ける。建築行政課（浜名区・天竜区は北部都市整備事務所）",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "浜松市 指定道路閲覧図（PDF）",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/kensido/ichisiteidouroeturanzu.html",
+    "what": "5号道路（位置指定道路）と2項道路の指定図面のPDF集",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "浜松市地図情報サイト「現況平面図」",
+    "url": "https://www2.wagmap.jp/hamamatsu/PositionSelect?mid=62",
+    "what": "道路幅員と側溝寸法。道路保全課",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "浜松市地図情報サイト「路線認定図」",
+    "url": "https://www2.wagmap.jp/hamamatsu/PositionSelect?mid=61",
+    "what": "市道の起終点のおおよその位置と道路名称",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "浜松市告示第508号（特定工程及び特定工程後の工程の指定）",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/kensido/home_tochi/home/kensido/kisoku/kokuji508.html",
+    "what": "浜松市告示第508号（平成28年10月1日施行）。対象の建築物と特定工程",
+    "verified": true,
+    "checked": "2026-10-05",
+    "purpose": "中間検査",
+    "role": "まずここで調べる"
+   }
+  ],
+  "沼津市": [
+   {
+    "label": "都市計画総括図のインターネット公開",
+    "url": "https://www.city.numazu.shizuoka.jp/shisei/keikaku/various/toshikei/naiyou/soukatsu.htm",
+    "what": "都市計画総括図PDF（用途地域・都市計画道路など）。市の独自GISはなく、県GISを案内。総括図は法定図面ではない",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "沼津市 指定道路図（PDF）",
+    "url": "https://www.city.numazu.shizuoka.jp/shisei/office/ichiran/toshikei/jyutakuseisaku/shiteidourozu.htm",
+    "what": "指定道路図のPDF43枚（令和6年3月31日時点）。住宅政策課",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "沼津市認定路線網図",
+    "url": "https://www.city.numazu.shizuoka.jp/shisei/office/ichiran/kensetsu/doukan/rosenmouzu/index.htm",
+    "what": "市道認定路線の位置と路線名（幅員はない。幅員の台帳図は道路管理課の窓口）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "建築関係例規（特定工程及び特定工程後の工程の指定）",
+    "url": "https://www.city.numazu.shizuoka.jp/shisei/office/ichiran/toshikei/jyutakuseisaku/reiki.htm",
+    "what": "ページの中の「特定工程及び特定工程後の工程の指定」を開く",
+    "verified": true,
+    "checked": "2026-10-05",
+    "purpose": "中間検査",
+    "role": "まずここで調べる"
+   }
+  ],
+  "熱海市": [
+   {
+    "label": "都市計画総括図の公開",
+    "url": "https://www.city.atami.lg.jp/shisei/machidukuri/1001373/1001383.html",
+    "what": "都市計画総括図PDF（用途地域・都市計画施設など）。市の独自GISはなく、県GISで見る",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡県GIS「建築基準法上の道路」",
+    "url": "https://www.gis.pref.shizuoka.jp/?mc=02&mp=101&z=10",
+    "what": "県が所管する区域の指定道路図（参考図）。熱海土木事務所",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる（県の所管区域・参考図）"
+   },
+   {
+    "label": "あたみMAP「路線網図・道路台帳図」",
+    "url": "https://www2.wagmap.jp/atamicity/PositionSelect?mid=7",
+    "what": "市道の路線網図と道路台帳図（現況幅員）。都市整備課",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "三島市": [
+   {
+    "label": "三島市の用途地域等の都市計画情報",
+    "url": "https://www.city.mishima.shizuoka.jp/page/1739.html",
+    "what": "都市計画区域・区域区分・用途地域・防火地域・都市計画道路などの都市計画図PDF、詳細図。地図は県GISを案内",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "三島市 指定道路図の公開（PDF）",
+    "url": "https://www.city.mishima.shizuoka.jp/page/2249.html",
+    "what": "指定道路図のPDF19枚と凡例・整合表（令和7年3月14日現在）。住宅政策課 建築指導係",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "三島市地図情報提供システム「道路台帳」",
+    "url": "https://webgis.alandis.jp/mishima22/portal/doro/index.html",
+    "what": "認定路線網図と道路台帳図（幅員の見方のPDFあり）。共通規約への同意が要る。土木課",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "富士宮市": [
+   {
+    "label": "富士宮市わが街ガイド 宮まっぷ「都市計画情報」",
+    "url": "https://www2.wagmap.jp/fujinomiyacity/PositionSelect?mid=2",
+    "what": "都市計画情報を検索できる地図",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "宮まっぷ「建築基準法上の道路種別」",
+    "url": "https://www2.wagmap.jp/fujinomiyacity/PositionSelect?mid=5",
+    "what": "法42条の道路種別。位置指定道路と2項道路の一部は指定道路調書が見られる。建築住宅課 建築指導係",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "宮まっぷ「市道に関する情報」",
+    "url": "https://www2.wagmap.jp/fujinomiyacity/PositionSelect?mid=3",
+    "what": "現況の道路台帳図（現況幅員。側溝がある所は有効幅員）。縮尺1/1000・1/500のときだけ表示。管理課",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "中間検査",
+    "url": "https://www.city.fujinomiya.lg.jp/sp/entrepreneur/llti2b0000002jo4.html",
+    "what": "富士宮市告示第138号。対象の建築物と特定工程",
+    "verified": true,
+    "checked": "2026-10-05",
+    "purpose": "中間検査",
+    "role": "まずここで調べる"
+   }
+  ],
+  "伊東市": [
+   {
+    "label": "いとうデジタルコンパス（都市計画情報）",
+    "url": "https://webgis.tohnichi-asp.jp/ito/toshikei/",
+    "what": "都市計画情報。市は県GISでも見られると案内",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡県GIS「建築基準法上の道路」",
+    "url": "https://www.gis.pref.shizuoka.jp/?mc=02&mp=101&z=10",
+    "what": "県が所管する区域の指定道路図（参考図）。熱海土木事務所",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる（県の所管区域・参考図）"
+   },
+   {
+    "label": "伊東市クラウドGIS（道路台帳附図）",
+    "url": "https://webgis.tohnichi-asp.jp/ito/kensetu/",
+    "what": "認定市道の道路台帳附図（幅員・路線情報）。営利目的の利用は不可",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "島田市": [
+   {
+    "label": "島田市わが街ガイド「都市計画図」",
+    "url": "https://www2.wagmap.jp/shimada/PositionSelect?mid=10",
+    "what": "市内の都市計画情報",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "島田市わが街ガイド「建築基準法上の道路」",
+    "url": "https://www2.wagmap.jp/shimada/PositionSelect?mid=7",
+    "what": "建築基準法上の道路のおおよその位置と種類。建築住宅課",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "島田市わが街ガイド「道路台帳図」",
+    "url": "https://www2.wagmap.jp/shimada/PositionSelect?mid=8",
+    "what": "認定道路の位置・名称と現状幅員（令和8年3月作成）。同じ一覧に法定外公共物管理図もある",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "富士市": [
+   {
+    "label": "都市計画情報の検索（ふじタウンマップ）",
+    "url": "https://www.city.fuji.shizuoka.jp/1040050000/p003818.html",
+    "what": "都市計画区域、区域区分、防火／準防火地域、用途地域、特別用途地区、高度地区、建蔽率・容積率・最低敷地面積、都市計画施設、地区計画",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "ふじタウンマップ「指定道路情報」",
+    "url": "https://www2.wagmap.jp/fujicity/PositionSelect?mid=11",
+    "what": "建築基準法に基づき市が指定した道路の概略位置。営利目的の利用は不可",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "ふじタウンマップ「基準点・道路マップ」",
+    "url": "https://www2.wagmap.jp/fujicity/PositionSelect?mid=6",
+    "what": "認定路線（路線名・最大最小幅員）と道路台帳図（右上の切り替えで地形図_道路台帳図）。建設総務課",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "中間検査・完了検査について（中間検査対象建築物の指定）",
+    "url": "https://www.city.fuji.shizuoka.jp/1040070000/p003929.html",
+    "what": "ページの中の「中間検査対象建築物の指定【平成28年10月1日以降】」「中間検査対象建築物の取扱い」を開く",
+    "verified": true,
+    "checked": "2026-10-05",
+    "purpose": "中間検査",
+    "role": "まずここで調べる"
+   }
+  ],
+  "磐田市": [
+   {
+    "label": "磐田市地図情報提供サービス「用途地域」",
+    "url": "https://www.sonicweb-asp.jp/iwata/map?theme=th_3",
+    "what": "都市計画情報（用途地域・建蔽率・容積率など）、道路の幅員、上下水道",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "磐田市地図情報提供サービス「指定道路」",
+    "url": "https://www.sonicweb-asp.jp/iwata/map?theme=th_11",
+    "what": "建築基準法による道路。建築住宅課",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "磐田市地図情報提供サービス「道路台帳図」",
+    "url": "https://www.sonicweb-asp.jp/iwata/map?theme=th_21",
+    "what": "道路台帳図（幅員）。道路網図は theme=th_1。道路河川課",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "焼津市": [
+   {
+    "label": "都市計画の概要（地図での確かめ方の案内）",
+    "url": "https://www.city.yaizu.lg.jp/life/urban/development/about/index.html",
+    "what": "スマートマップ焼津（都市計画図）、紙の地図、県GISの案内",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "焼津市 建築基準法の道路について（建築住宅課）",
+    "url": "https://www.city.yaizu.lg.jp/life/sumai-kenchiku/kenchiku/kenchiku-kakunin/kentiku-douro/index.html",
+    "what": "市全体の地図は公開していない。相談は原則窓口、未判定の路線は判定に約2週間。建築住宅課 建築指導担当",
+    "verified": false,
+    "purpose": "道路",
+    "role": "担当課の案内"
+   },
+   {
+    "label": "焼津市 路線網図・道路台帳図",
+    "url": "https://www.city.yaizu.lg.jp/life/urban/road/dorodaicho.html",
+    "what": "道路台帳図（歩道・道路の幅員、路線番号）のPDFと、簡易版・スマートマップの入口。土木管理課",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "建築の手続き（中間検査）",
+    "url": "https://www.city.yaizu.lg.jp/life/sumai-kenchiku/kenchiku/kenchiku-kakunin/kenchiku-tetsuzuki.html",
+    "what": "焼津市告示第230号（平成28年8月22日）。ページの中の中間検査の項と告示を開く",
+    "verified": true,
+    "checked": "2026-10-05",
+    "purpose": "中間検査",
+    "role": "まずここで調べる"
+   }
+  ],
+  "掛川市": [
+   {
+    "label": "e-地図かけがわ「都市計画情報マップ」",
+    "url": "https://www2.wagmap.jp/kakegawa/PositionSelect?mid=15",
+    "what": "用途地域、防火地域、地区計画、都市計画道路など。建築基準法指定道路マップもある",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "e-地図かけがわ「建築基準法指定道路マップ」",
+    "url": "https://www2.wagmap.jp/kakegawa/PositionSelect?mid=16",
+    "what": "指定道路の概略位置（幅員・境界・接道状況は示さない）。都市政策課の窓口で確認",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "e-地図かけがわ「市道認定路線マップ」",
+    "url": "https://www2.wagmap.jp/kakegawa/PositionSelect?mid=17",
+    "what": "市道認定路線の路線網図（幅員はない。台帳図は維持管理課の窓口）。道路境界確定マップ（mid=22）もある",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "藤枝市": [
+   {
+    "label": "藤枝市 都市計画情報GIS（令和3年3月時点）",
+    "url": "https://www.city.fujieda.shizuoka.jp/soshiki/toshikensetsu/toshiseisaku/gyomu/3/17988.html",
+    "what": "都市計画情報。情報が令和3年3月時点と古いので、新しい決定は都市計画図PDF（令和8年3月作成）か都市政策課で確かめる",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "藤枝市 都市計画図（PDF・令和8年3月作成）",
+    "url": "https://www.city.fujieda.shizuoka.jp/soshiki/toshikensetsu/toshiseisaku/gyomu/3/pamphlet/1479105366078.html",
+    "what": "最新の都市計画図",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "藤枝市 建築住宅課（建築基準法の道路）",
+    "url": "https://www.city.fujieda.shizuoka.jp/soshiki/toshikensetsu/kenchikujutaku/oshirase/23263.html",
+    "what": "市の地図公開は見つからなかった。県GISの藤枝市分は令和6年5月10日までの掲載で、市の判断と違う可能性がある。建築住宅課に確かめる",
+    "verified": false,
+    "purpose": "道路",
+    "role": "担当課の案内"
+   },
+   {
+    "label": "藤枝市道路地図配信システム（道路台帳図・認定路線網図）",
+    "url": "https://webgis.alandis.jp/fujieda22/webgis/index.php/common/Screen_initializer/initialize?user_id=11&login_method=1&application_class=jsWebGIS",
+    "what": "道路台帳図と認定路線網図（年度末ごとに更新）。建設管理課",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "御殿場市": [
+   {
+    "label": "御殿場小山広域都市計画図（PDF）",
+    "url": "https://www.city.gotemba.lg.jp/gyousei/g-3/g-3-1/1208.html",
+    "what": "都市計画図PDF（用途地域・地区計画の位置など）。市の独自GISはなく、県GISを案内。詳しい図面は都市計画課",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "ごてんばNAVI「建築基準法道路」",
+    "url": "https://www2.wagmap.jp/gotembacity/PositionSelect?mid=19",
+    "what": "法42条の道路種別（参考図）。1号道路は道路台帳で確かめる。建築住宅課",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "ごてんばNAVI「道路台帳」",
+    "url": "https://www2.wagmap.jp/gotembacity/PositionSelect?mid=14",
+    "what": "道路台帳図（道路区域の境界線など）。道路網図は mid=15。管理維持課（電話では受け付けない）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "袋井市": [
+   {
+    "label": "どまんなか袋井navi「都市計画情報マップ」",
+    "url": "https://www2.wagmap.jp/fukuroi/PositionSelect?mid=2",
+    "what": "都市計画マップ（用途地域・都市計画道路）、屋外広告物規制区域",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "どまんなか袋井navi「道路情報マップ」（③建築基準法指定道路図）",
+    "url": "https://www2.wagmap.jp/fukuroi/PositionSelect?mid=3",
+    "what": "建築基準法指定道路図（令和7年3月17日現在）。建築住宅課",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "どまんなか袋井navi「道路情報マップ」（①路線網図・②道路台帳）",
+    "url": "https://www2.wagmap.jp/fukuroi/PositionSelect?mid=3",
+    "what": "路線網図と道路台帳（令和8年4月1日現在）。維持管理課。営利目的の利用は不可",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "下田市": [
+   {
+    "label": "用途地域や建ぺい率・容積率について",
+    "url": "https://www.city.shimoda.shizuoka.jp/category/020800sumai_kentiku/148119.html",
+    "what": "県GISで用途地域・建蔽率・容積率・建築基準法上の道路・土砂災害警戒区域・宅造法区域を見るよう案内。問い合わせは下田土木事務所。市の景観まちづくり条例も別に確かめる",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡県GIS「建築基準法上の道路」",
+    "url": "https://www.gis.pref.shizuoka.jp/?mc=02&mp=101&z=10",
+    "what": "県が所管する区域の指定道路図（参考図）。下田土木事務所",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる（県の所管区域・参考図）"
+   },
+   {
+    "label": "下田市 建設課 土木管理係",
+    "url": "https://www.city.shimoda.shizuoka.jp/category/080700shiyakusyo_annai/110203.html",
+    "what": "道路台帳のインターネット公開は見つからなかった。問い合わせ",
+    "verified": false,
+    "purpose": "道路台帳",
+    "role": "担当課の案内"
+   }
+  ],
+  "裾野市": [
+   {
+    "label": "裾野市 都市計画の案内（都市計画課）",
+    "url": "https://www.city.susono.shizuoka.jp/soshiki/6/1/1_1/3551.html",
+    "what": "市の都市計画情報提供サービスの案内。地図のURLは見つからなかったので、県GISか都市計画課 土地対策係で確かめる",
+    "verified": false,
+    "purpose": "都市計画",
+    "role": "担当課の案内"
+   },
+   {
+    "label": "裾野市 位置指定道路の情報公開",
+    "url": "https://www.city.susono.shizuoka.jp/soshiki/6/1/3/6/14762.html",
+    "what": "位置指定道路（5号）だけ。指定道路図の索引と一覧（番号・指定日・幅員・延長・平面図PDF）。2項道路は窓口だけ。都市計画課 建築住宅係",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "裾野市地図情報 総合サービス",
+    "url": "https://susono.digitalsmartcity.jp/",
+    "what": "路線網図（認定路線・番号）と道路幅員地図（道路台帳）。建設課 建設管理係",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "湖西市": [
+   {
+    "label": "GISこさい「用途地域」",
+    "url": "https://experience.arcgis.com/experience/dd07e699e2ce41ac8a265a386f59f6f3/page/地図-都市計画-用途地域?org=kosai",
+    "what": "用途地域、風致地区、土地区画整理事業区域、立地適正化計画の誘導区域、景観計画区域、大規模既存集落など",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "湖西市 都市計画図（PDF）",
+    "url": "https://www.city.kosai.shizuoka.jp/kurashi_tetsuzuki/toshikeikaku_machizukuri/toshikeikaku/1/3519.html",
+    "what": "都市計画図PDFと窓口閲覧用の図面",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "GISこさい「建築基準法第42条の規定による道路」",
+    "url": "https://experience.arcgis.com/experience/dd07e699e2ce41ac8a265a386f59f6f3/?org=kosai",
+    "what": "建築基準法上の道路種別のおおよその位置（参考図）",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "GISこさい「道路法第28条の規定による道路台帳」",
+    "url": "https://experience.arcgis.com/experience/dd07e699e2ce41ac8a265a386f59f6f3/?org=kosai",
+    "what": "市道の位置と名称（令和4年3月31日現在。古め。幅員の表示は未確認）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "伊豆市": [
+   {
+    "label": "伊豆都市計画図（PDF）",
+    "url": "https://www.city.izu.shizuoka.jp/soshiki/1024/2/3/931.html",
+    "what": "都市計画図PDF（全域・用途地域の拡大図）。市の独自GISはなく、県GISで見る",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡県GIS「建築基準法上の道路」",
+    "url": "https://www.gis.pref.shizuoka.jp/?mc=02&mp=101&z=10",
+    "what": "県が所管する区域の指定道路図（参考図）。沼津土木事務所",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる（県の所管区域・参考図）"
+   },
+   {
+    "label": "伊豆市道路台帳附図",
+    "url": "https://webgis.tohnichi-asp.jp/izu/kanri/",
+    "what": "市道の道路台帳附図（認定状況）。用地管理課",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "御前崎市": [
+   {
+    "label": "うみかぜマップ「都市計画マップ」",
+    "url": "https://www2.wagmap.jp/omaezakicity/PositionSelect?mid=4",
+    "what": "都市計画マップ。用途地域があるのは池新田地域だけ。県GISでも見られる",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡県GIS「建築基準法上の道路」",
+    "url": "https://www.gis.pref.shizuoka.jp/?mc=02&mp=101&z=10",
+    "what": "県が所管する区域の指定道路図（参考図）。袋井土木事務所",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる（県の所管区域・参考図）"
+   },
+   {
+    "label": "うみかぜマップ「道路台帳図」",
+    "url": "https://www2.wagmap.jp/omaezakicity/PositionSelect?mid=23",
+    "what": "道路台帳図（時点・幅員の説明はない）",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "菊川市": [
+   {
+    "label": "きくのんマップ「都市計画情報」",
+    "url": "https://www2.wagmap.jp/kikugawa/PositionSelect?mid=4",
+    "what": "用途地域・防火地域などの都市計画の地図。開くと利用規約の同意の画面が出る",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "きくのんマップ（都市計画情報）の案内",
+    "url": "https://www.city.kikugawa.shizuoka.jp/toshikeikaku/toshikeikakuzu.html",
+    "what": "都市計画情報（用途地域など）。地図は利用規約に同意する画面から始まる",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "担当課の案内"
+   },
+   {
+    "label": "きくのんマップ「建築基準法道路」",
+    "url": "https://www2.wagmap.jp/kikugawa/PositionSelect?mid=5",
+    "what": "市内の建築基準法の道路（参考図）。県の所管（袋井土木事務所）だが市が独自に公開。確認は都市計画課の窓口",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "きくのんマップ「市道認定路線網図閲覧サービス」",
+    "url": "https://www2.wagmap.jp/kikugawa/PositionSelect?mid=11",
+    "what": "市道認定路線の網図（幅員・道路区域は示さない）。建設課",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "伊豆の国市": [
+   {
+    "label": "伊豆の国市クラウドGIS（都市計画情報）",
+    "url": "https://webgis.tohnichi-asp.jp/izunokuni/tosikei/",
+    "what": "都市計画の用途図、屋外広告物規制図など（令和3年3月時点とされている）",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡県GIS「建築基準法上の道路」",
+    "url": "https://www.gis.pref.shizuoka.jp/?mc=02&mp=101&z=10",
+    "what": "県が所管する区域の指定道路図（参考図）。沼津土木事務所",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる（県の所管区域・参考図）"
+   },
+   {
+    "label": "伊豆の国市道路台帳附図",
+    "url": "https://webgis.tohnichi-asp.jp/izunokuni/kensetu/pub",
+    "what": "市道の道路台帳附図（認定状況）。建設課",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "牧之原市": [
+   {
+    "label": "牧之原市の都市計画について",
+    "url": "https://www.city.makinohara.shizuoka.jp/soshiki/27/36495.html",
+    "what": "都市計画図PDF、用途地域ごとの建築形態の制限。市の独自GISはなく、県GISで見る。準都市計画区域がある（県内でここだけ）",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡県GIS「建築基準法上の道路」",
+    "url": "https://www.gis.pref.shizuoka.jp/?mc=02&mp=101&z=10",
+    "what": "県が所管する区域の指定道路図（参考図）。島田土木事務所",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる（県の所管区域・参考図）"
+   },
+   {
+    "label": "牧之原市道路網図（PDF）",
+    "url": "https://www.city.makinohara.shizuoka.jp/soshiki/25/1243.html",
+    "what": "道路網図のPDF（令和8年4月1日現在）。幅員の台帳図は建設課の窓口",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "東伊豆町": [
+   {
+    "label": "建築規制及び都市計画情報（都市計画図等）",
+    "url": "https://www.town.higashiizu.lg.jp/bamen/sumai/1798.html",
+    "what": "規制区域図・都市計画図PDF（非線引き・用途地域の指定なし。地区ごとに建蔽率・容積率）。県GISを案内",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡県GIS「建築基準法上の道路」",
+    "url": "https://www.gis.pref.shizuoka.jp/?mc=02&mp=101&z=10",
+    "what": "県が所管する区域の指定道路図（参考図）。下田土木事務所",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる（県の所管区域・参考図）"
+   },
+   {
+    "label": "東伊豆町 建設整備課 建設管理係",
+    "url": "https://www.town.higashiizu.lg.jp/gyoseijyoho/yakusho-madoguchiannai/index.html",
+    "what": "町道の道路台帳の公開は見つからなかった。問い合わせ",
+    "verified": false,
+    "purpose": "道路台帳",
+    "role": "担当課の案内"
+   }
+  ],
+  "河津町": [
+   {
+    "label": "河津町都市計画用途地域図（PDF）",
+    "url": "https://www.town.kawazu.shizuoka.jp/wp/wp-content/uploads/2024/05/toshikeikakuyoutochiikizu.pdf",
+    "what": "用途地域図。町の独自GISはなく、県GISで見る（下田土木の所管）",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡県GIS「建築基準法上の道路」",
+    "url": "https://www.gis.pref.shizuoka.jp/?mc=02&mp=101&z=10",
+    "what": "県が所管する区域の指定道路図（参考図）。下田土木事務所",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる（県の所管区域・参考図）"
+   },
+   {
+    "label": "河津町 建設課",
+    "url": "https://www.town.kawazu.shizuoka.jp/gyousei/otoiawase/",
+    "what": "町道の道路台帳の公開は見つからなかった。問い合わせ",
+    "verified": false,
+    "purpose": "道路台帳",
+    "role": "担当課の案内"
+   }
+  ],
+  "南伊豆町": [
+   {
+    "label": "南伊豆町 都市計画の案内（地域整備課）",
+    "url": "https://www.town.minamiizu.shizuoka.jp/docs/2013031200255/",
+    "what": "町のほぼ全域が都市計画区域という説明だけで、地図はない。県GIS（下田土木の所管）か地域整備課で確かめる",
+    "verified": false,
+    "purpose": "都市計画",
+    "role": "担当課の案内"
+   },
+   {
+    "label": "静岡県GIS「建築基準法上の道路」",
+    "url": "https://www.gis.pref.shizuoka.jp/?mc=02&mp=101&z=10",
+    "what": "県が所管する区域の指定道路図（参考図）。下田土木事務所",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる（県の所管区域・参考図）"
+   },
+   {
+    "label": "南伊豆町 地域整備課",
+    "url": "https://www.town.minamiizu.shizuoka.jp/soshiki/minamiizu/tseibi/",
+    "what": "町道の道路台帳の公開は見つからなかった。問い合わせ",
+    "verified": false,
+    "purpose": "道路台帳",
+    "role": "担当課の案内"
+   }
+  ],
+  "松崎町": [
+   {
+    "label": "松崎町 建築確認の区域の案内",
+    "url": "https://www.town.matsuzaki.shizuoka.jp/docs/2016020400384/",
+    "what": "都市計画区域の指定がない。確認申請は県知事が指定する区域内だけ必要。範囲は産業建設課・下田土木事務所に問い合わせ",
+    "verified": false,
+    "purpose": "都市計画",
+    "role": "担当課の案内"
+   },
+   {
+    "label": "静岡県 指定道路図の公開（土木事務所の一覧）",
+    "url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1044596/1015983.html",
+    "what": "県の一覧に松崎町は載っていない。下田土木事務所に確かめる",
+    "verified": false,
+    "purpose": "道路",
+    "role": "担当課の案内"
+   },
+   {
+    "label": "松崎町 産業建設課",
+    "url": "https://www.town.matsuzaki.shizuoka.jp/docs/2016020400759/",
+    "what": "町道の道路台帳の公開は見つからなかった。問い合わせ",
+    "verified": false,
+    "purpose": "道路台帳",
+    "role": "担当課の案内"
+   }
+  ],
+  "西伊豆町": [
+   {
+    "label": "西伊豆町 土地・建物の案内",
+    "url": "https://www.town.nishiizu.shizuoka.jp/kakuka/machizukuri/kikaku/tochi_tatemono.html",
+    "what": "町の全域が都市計画区域の外。仁科地区の一部が建築確認区域。範囲は建設課建設係に問い合わせ",
+    "verified": false,
+    "purpose": "都市計画",
+    "role": "担当課の案内"
+   },
+   {
+    "label": "静岡県 指定道路図の公開（土木事務所の一覧）",
+    "url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1044596/1015983.html",
+    "what": "県の一覧に西伊豆町は載っていない。下田土木事務所に確かめる",
+    "verified": false,
+    "purpose": "道路",
+    "role": "担当課の案内"
+   },
+   {
+    "label": "西伊豆町 建設課",
+    "url": "https://www.town.nishiizu.shizuoka.jp/kakuka/kensetsu/",
+    "what": "町道の道路台帳の公開は見つからなかった。問い合わせ",
+    "verified": false,
+    "purpose": "道路台帳",
+    "role": "担当課の案内"
+   }
+  ],
+  "函南町": [
+   {
+    "label": "函南町の都市計画情報（用途地域等）",
+    "url": "https://www.town.kannami.shizuoka.jp/soshiki/1012/2/5/1179.html",
+    "what": "都市計画図PDF（市街化区域の周辺だけ）と県GISの案内",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡県GIS「建築基準法上の道路」",
+    "url": "https://www.gis.pref.shizuoka.jp/?mc=02&mp=101&z=10",
+    "what": "県が所管する区域の指定道路図（参考図）。沼津土木事務所",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる（県の所管区域・参考図）"
+   },
+   {
+    "label": "かんなみ わが街マップ「道路台帳図」",
+    "url": "https://www2.wagmap.jp/kannamitown/PositionSelect?mid=30",
+    "what": "町道の道路台帳図（現況幅。側溝がある所は有効幅員）。縮尺1/1000・1/500のときだけ表示。原図のスキャンで一部読みにくい。建設課",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "清水町": [
+   {
+    "label": "清水町都市計画図（参考図）の閲覧",
+    "url": "https://www.town.shimizu.shizuoka.jp/toshi/toshi00074.html",
+    "what": "都市計画図PDF（区域区分・用途地域・準防火地域・地区計画など）。県GISを案内",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡県GIS「建築基準法上の道路」",
+    "url": "https://www.gis.pref.shizuoka.jp/?mc=02&mp=101&z=10",
+    "what": "県が所管する区域の指定道路図（参考図）。沼津土木事務所",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる（県の所管区域・参考図）"
+   },
+   {
+    "label": "清水町ガイドマップ「道路台帳図」",
+    "url": "https://www2.wagmap.jp/shimizutown/PositionSelect?mid=2",
+    "what": "道路台帳図（令和8年3月31日現在）。建設課 管理係",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "長泉町": [
+   {
+    "label": "ながいずみちょうどいいマップ",
+    "url": "https://experience.arcgis.com/experience/f0f31a252fea499ea94617dc6cf80cea",
+    "what": "用途地域などの都市計画情報（都市計画図）、道路台帳ほか",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡県GIS「建築基準法上の道路」",
+    "url": "https://www.gis.pref.shizuoka.jp/?mc=02&mp=101&z=10",
+    "what": "県が所管する区域の指定道路図（参考図）。沼津土木事務所",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる（県の所管区域・参考図）"
+   },
+   {
+    "label": "ながいずみちょうどいいマップ「道路情報マップ」",
+    "url": "https://experience.arcgis.com/experience/e8dc80e8099b4fa59f92fd5c51b3240f",
+    "what": "町の道路情報（道路台帳）。営利目的の利用は不可。建設計画課",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "小山町": [
+   {
+    "label": "小山町 都市整備課",
+    "url": "https://www.fuji-oyama.jp/soshiki/17/",
+    "what": "町の都市計画の地図は見つからなかった。県GIS（沼津土木の所管）か都市整備課で確かめる",
+    "verified": false,
+    "purpose": "都市計画",
+    "role": "担当課の案内"
+   },
+   {
+    "label": "静岡県GIS「建築基準法上の道路」",
+    "url": "https://www.gis.pref.shizuoka.jp/?mc=02&mp=101&z=10",
+    "what": "県が所管する区域の指定道路図（参考図）。沼津土木事務所",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる（県の所管区域・参考図）"
+   },
+   {
+    "label": "小山町 建設課",
+    "url": "https://www.fuji-oyama.jp/soshiki/7.html",
+    "what": "町道の道路台帳の公開は見つからなかった。問い合わせ",
+    "verified": false,
+    "purpose": "道路台帳",
+    "role": "担当課の案内"
+   }
+  ],
+  "吉田町": [
+   {
+    "label": "用途地域（都市計画法）",
+    "url": "https://www.town.yoshida.shizuoka.jp/4590.htm",
+    "what": "県GISを「都市計画情報」に切り替えて見るよう案内。都市計画図PDFもある。境界が分からないときは都市環境課",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡県GIS「建築基準法上の道路」",
+    "url": "https://www.gis.pref.shizuoka.jp/?mc=02&mp=101&z=10",
+    "what": "県が所管する区域の指定道路図（参考図）。島田土木事務所",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる（県の所管区域・参考図）"
+   },
+   {
+    "label": "吉田町 道路台帳図（PDF）",
+    "url": "https://www.town.yoshida.shizuoka.jp/7785.htm",
+    "what": "路線網図で区画の番号を調べて開く道路台帳図のPDF（現況幅員）。建設課",
+    "verified": true,
+    "purpose": "道路台帳",
+    "role": "まずここで調べる"
+   }
+  ],
+  "川根本町": [
+   {
+    "label": "川根本町 建設課",
+    "url": "https://www.town.kawanehon.shizuoka.jp/soshiki/kensetsu/index.html",
+    "what": "都市計画区域の外とされている（町の公式ページでは未確認）。建築確認区域などは建設課に問い合わせ",
+    "verified": false,
+    "purpose": "都市計画",
+    "role": "担当課の案内"
+   },
+   {
+    "label": "静岡県 指定道路図の公開（土木事務所の一覧）",
+    "url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1044596/1015983.html",
+    "what": "県の一覧に川根本町は載っていない。島田土木事務所に確かめる",
+    "verified": false,
+    "purpose": "道路",
+    "role": "担当課の案内"
+   },
+   {
+    "label": "川根本町 建設課",
+    "url": "https://www.town.kawanehon.shizuoka.jp/soshiki/kensetsu/index.html",
+    "what": "町道の道路台帳の公開は見つからなかった。問い合わせ",
+    "verified": false,
+    "purpose": "道路台帳",
+    "role": "担当課の案内"
+   }
+  ],
+  "森町": [
+   {
+    "label": "都市計画図（用途図）について",
+    "url": "https://www.town.morimachi.shizuoka.jp/gyosei/machinososhiki/kensetsuka/toshikeikakukakari/2/752.html",
+    "what": "中遠広域都市計画図（森町）用途地域図PDF。町の独自GISはなく、県GISで見る（袋井土木の所管）",
+    "verified": true,
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡県GIS「建築基準法上の道路」",
+    "url": "https://www.gis.pref.shizuoka.jp/?mc=02&mp=101&z=10",
+    "what": "県が所管する区域の指定道路図（参考図）。袋井土木事務所",
+    "verified": true,
+    "purpose": "道路",
+    "role": "まずここで調べる（県の所管区域・参考図）"
+   },
+   {
+    "label": "森町 建設課 管理係",
+    "url": "https://www.town.morimachi.shizuoka.jp/gyosei/machinososhiki/kensetsuka/index.html",
+    "what": "町道の道路台帳の公開は見つからなかった。問い合わせ",
+    "verified": false,
+    "purpose": "道路台帳",
+    "role": "担当課の案内"
+   }
+  ]
+ },
+ "purposes": [
+  {
+   "key": "都市計画",
+   "title": "都市計画（区域区分・用途地域・容積率・建蔽率・防火地域・地区計画）",
+   "guide": "まず市町のサイトで調べる（市町が最新の都市計画を出している）。市町に地図がないときだけ、県GISで補う。境界にかかる敷地は、市町の担当課で確かめる"
+  },
+  {
+   "key": "災害",
+   "title": "災害（土砂災害特別警戒区域＝レッドゾーン・警戒区域、災害危険区域）",
+   "guide": "県の砂防課のページで調べる（指定の状況と区域図）。地図は県GISの土砂災害情報マップ"
+  },
+  {
+   "key": "盛土",
+   "title": "盛土規制法の区域（宅地造成等工事規制区域・特定盛土等規制区域）",
+   "guide": "静岡市・浜松市は市のページ、それ以外の市町は県のページで調べる"
+  },
+  {
+   "key": "道路",
+   "title": "建築基準法の道路（42条の道路種別・位置指定道路・2項道路）",
+   "guide": "特定行政庁・限定特定行政庁の市は市の地図、県が所管する区域は県GISの指定道路図で調べる。どれも参考図なので、接道の判断に迷う所は、建築の担当課・土木事務所で確かめる"
+  },
+  {
+   "key": "道路台帳",
+   "title": "道路台帳（市町道の認定路線・幅員）",
+   "guide": "前面道路の幅員・認定の確かめに使う。幅員の載った台帳図は、窓口でしか見られない市町もある"
+  },
+  {
+   "key": "白地",
+   "title": "用途地域の指定のない区域（白地地域）の制限",
+   "guide": "用途地域がない敷地は、県の白地地域の制限の一覧で、容積率・建蔽率を確かめる"
+  },
+  {
+   "key": "中間検査",
+   "title": "中間検査（特定工程）の指定",
+   "guide": "中間検査の対象（区域・建築物・特定工程）は、特定行政庁ごとの告示で決まる。静岡市・浜松市・沼津市・富士市・富士宮市・焼津市は市、そのほかは県。告示は改正されることがあるので、最新のものを開いて確かめる"
+  }
+ ],
+ "roads_checked_at": "2026-10-03",
+ "tokutei_checked_at": "2026-10-05",
+ "stale_days": 365
+}

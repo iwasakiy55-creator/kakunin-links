@@ -1,0 +1,1761 @@
+{
+ "checked_at": "2026-10-16",
+ "prefecture": [
+  {
+   "label": "静岡県 都市計画法に基づく開発行為等の許可",
+   "url": "https://www.pref.shizuoka.jp/machizukuri/tochiriyou/1040484/1040485/1029753.html",
+   "what": "開発許可・市街化調整区域内の建築等許可の窓口（2ha以上は県土地対策課、2ha未満は下田・島田・袋井土木事務所）と様式。権限を持つ26市町は各市町へ",
+   "verified": true,
+   "purpose": "開発許可",
+   "role": "まずここで調べる",
+   "except": [
+    "三島市",
+    "伊東市",
+    "伊豆の国市",
+    "伊豆市",
+    "函南町",
+    "富士宮市",
+    "富士市",
+    "小山町",
+    "島田市",
+    "御前崎市",
+    "御殿場市",
+    "沼津市",
+    "浜松市",
+    "清水町",
+    "湖西市",
+    "焼津市",
+    "熱海市",
+    "牧之原市",
+    "磐田市",
+    "菊川市",
+    "藤枝市",
+    "袋井市",
+    "裾野市",
+    "長泉町",
+    "静岡市"
+   ]
+  },
+  {
+   "label": "静岡県 都市計画法静岡県開発行為等の手引き",
+   "url": "https://www.pref.shizuoka.jp/machizukuri/tochiriyou/1040484/1040485/1029743.html",
+   "what": "県知事が許可する場合の手引き（審査基準。令和8年4月一部改正版）。権限市町の区域は各市町の基準",
+   "verified": true,
+   "purpose": "開発許可",
+   "role": "あわせて見る",
+   "except": [
+    "三島市",
+    "伊東市",
+    "伊豆の国市",
+    "伊豆市",
+    "函南町",
+    "富士宮市",
+    "富士市",
+    "小山町",
+    "島田市",
+    "御前崎市",
+    "御殿場市",
+    "沼津市",
+    "浜松市",
+    "清水町",
+    "湖西市",
+    "焼津市",
+    "熱海市",
+    "牧之原市",
+    "磐田市",
+    "菊川市",
+    "藤枝市",
+    "袋井市",
+    "裾野市",
+    "長泉町",
+    "静岡市"
+   ]
+  },
+  {
+   "label": "静岡県 浄化槽の届出の窓口（健康福祉センター）",
+   "url": "https://www.pref.shizuoka.jp/1066349/1066353/1067818/1072313.html",
+   "what": "浄化槽法の届出の県の窓口（賀茂・東部・中部・西部健康福祉センター）。静岡市・浜松市・沼津市・富士市は各市で受付。※このページは使用開始報告書の様式ページで、設置届出書の様式ページそのものは確かめられていない",
+   "verified": true,
+   "purpose": "浄化槽",
+   "role": "まずここで調べる",
+   "except": [
+    "静岡市",
+    "浜松市",
+    "沼津市",
+    "富士市"
+   ]
+  },
+  {
+   "label": "静岡県 菊川水系黒沢川（特定都市河川）",
+   "url": "https://www.pref.shizuoka.jp/machizukuri/kasensabo/river/1003551/1073849/1073851.html",
+   "what": "令和7年3月31日に特定都市河川に指定。流域で1,000㎡以上の雨水浸透阻害行為は知事の許可（袋井土木事務所）。対象地域はページ内のPDF。浸水被害防止区域の指定の記載はなし",
+   "verified": true,
+   "purpose": "浸水",
+   "role": "まずここで調べる"
+  },
+  {
+   "label": "静岡県 地区計画の建築条例策定状況",
+   "url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1052551/1015992.html",
+   "what": "県内市町の地区計画一覧（PDF。建築条例のある地区に○。令和2年4月1日現在で古い）。条例化：あり（三島・御殿場・裾野・藤枝・湖西など多数）。最新は各市町の都市計画担当課",
+   "verified": true,
+   "purpose": "地区計画",
+   "role": "まずここで調べる",
+   "except": [
+    "静岡市",
+    "浜松市",
+    "沼津市",
+    "富士市",
+    "富士宮市",
+    "焼津市"
+   ]
+  },
+  {
+   "label": "静岡県 地理情報システム（建築関連情報）",
+   "url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1052551/1015991.html",
+   "what": "県GIS「建築関連情報」の掲載項目の説明。建築協定区域を地図で見られる。県土木事務所の所管区域の一覧。認可された協定の一覧表ではない",
+   "verified": true,
+   "purpose": "建築協定",
+   "role": "まずここで調べる",
+   "except": [
+    "静岡市",
+    "浜松市",
+    "沼津市",
+    "富士市",
+    "富士宮市",
+    "焼津市"
+   ]
+  },
+  {
+   "label": "都市計画制度について（静岡県）",
+   "url": "https://www.pref.shizuoka.jp/machizukuri/toshikeikaku/1029694.html",
+   "what": "53条の説明。許可権者＝県知事と明記。申請窓口の案内はない。問合せ＝県都市計画課",
+   "verified": true,
+   "purpose": "開発許可",
+   "role": "補助"
+  },
+  {
+   "label": "都市計画法第53条の許可に関する問合せ窓口（沼津土木事務所管内）",
+   "url": "https://www.pref.shizuoka.jp/machizukuri/dobokujimusho/numazudoboku/1042497.html",
+   "what": "53条の窓口の表。沼津・三島・御殿場・裾野・伊豆・伊豆の国・函南・清水・長泉・小山。窓口はどれも市町の課。許可権者の記載はない",
+   "verified": true,
+   "purpose": "開発許可",
+   "role": "補助"
+  }
+ ],
+ "municipalities": {
+  "静岡市": [
+   {
+    "label": "公共下水道が使える区域一覧（静岡市上下水道局）",
+    "url": "https://www.city.shizuoka.lg.jp/s6487/s001053.html",
+    "what": "供用区域・未供用区域の概略図（処理区ごとの拡大地図PDF。2025年3月31日現在）",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "開発行為の許可（静岡市）",
+    "url": "https://www.city.shizuoka.lg.jp/s9465/s007745.html",
+    "what": "29条。許可権者＝市長と明記。市街化区域1,000㎡以上・都市計画区域外1ha以上、調整区域は34条該当のみ。窓口＝土地政策課開発政策係",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "市街化調整区域の建築許可（静岡市）",
+    "url": "https://www.city.shizuoka.lg.jp/s9465/s007749.html",
+    "what": "43条。許可権者＝市長と明記（分家住宅等は開発審査会の承認を経て市長）。窓口＝土地政策課開発政策係",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "補助"
+   },
+   {
+    "label": "都市計画法第53条に基づく建築許可申請（静岡市）",
+    "url": "https://www.city.shizuoka.lg.jp/s5698/s007697.html",
+    "what": "53条。許可権者＝市長と明記。階数3以下（事業具体化区域は2以下）・地階なし・木造等。確認申請前に。窓口＝都市計画課（公園は緑地政策課）",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "補助"
+   },
+   {
+    "label": "静岡市例規集",
+    "url": "https://krr001.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
+    "what": "条例化：確かめられない（10月17日、例規集がメンテナンス中で開けなかった。市のサイトの施行規則PDFには「静岡市地区計画の区域内における建築物の制限に関する条例（平成20年条例第71号）」とある）",
+    "verified": false,
+    "purpose": "地区計画",
+    "role": "補助"
+   },
+   {
+    "label": "住宅用火災警報器（静岡市消防局）",
+    "url": "https://www.city.shizuoka.lg.jp/p018744.html",
+    "what": "住宅用火災警報器の設置・点検・取付支援の案内（各ページへの入口）",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "水道工事（給水装置工事）の流れ（静岡市上下水道局）",
+    "url": "https://www.city.shizuoka.lg.jp/s4283/s001195.html",
+    "what": "給水装置工事の申込み〜審査〜完成検査の流れ。窓口は水道建設・維持課給水装置係（清水区は清水の水道事務所）",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "浄化槽設置届出書（静岡市）",
+    "url": "https://www.city.shizuoka.lg.jp/shinsei/dtl.php?id=1683",
+    "what": "浄化槽設置届の窓口（廃棄物対策課浄化槽推進係）・提出時期（工事開始の22日前まで等）",
+    "verified": true,
+    "purpose": "浄化槽",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "建築安全推進課で閲覧できる資料（静岡市）",
+    "url": "https://www.city.shizuoka.lg.jp/s2574/s007812.html",
+    "what": "縦覧に供する建築協定書（フローラタウン美和野・清水船越地区北矢部・清水堂林地区の3件）",
+    "verified": true,
+    "purpose": "建築協定",
+    "role": "まずここで調べる"
+   }
+  ],
+  "浜松市": [
+   {
+    "label": "浜松市地区計画の区域内における建築物の制限に関する条例",
+    "url": "https://www1.g-reiki.net/hamamatsu/reiki_honbun/o700RG00000998.html",
+    "what": "条例化：あり（都田・高丘商業業務・浜北新都市・西美薗西・中瀬南部・山手町・蜆塚一丁目南部・蜆塚二区・船明・井伊谷・西上池川・高竜・広沢二丁目3部・天竜川駅南・高塚駅北・阿蔵山・浜北中央北）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "下水道管に関するQ&A（浜松市上下水道部）",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/service/gesui/konnnatokiha_gesui.html",
+    "what": "道路の下水道管の状況は浜松市地図情報サイト（下水道管網図）で確認、宅内排水設備は窓口で台帳閲覧の案内",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "都市計画法（開発許可制度）について（浜松市）",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/tochi/home_tochi/home/takuti/index.html",
+    "what": "29条。許可権者＝市長と明記。市街化区域1,000㎡以上・調整区域500㎡以上（未満は原則43条）・区域外10,000㎡以上。窓口＝土地政策課",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "市街化調整区域に建築物を建てるときは（浜松市）",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/tochi/home_tochi/home/kensido/chousei/index.html",
+    "what": "調整区域の建築（43条の語・許可権者の記載はない）。窓口＝中央区は土地政策課、浜名区・天竜区は北部都市整備事務所",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "補助"
+   },
+   {
+    "label": "都市計画施設等の区域内における建築の許可（浜松市）",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/toshikei/home_tochi/tochi/53permission/index.html",
+    "what": "53条。許可権者＝市長と明記。建物がかかる場合に必要（敷地だけは不要）。階数3以下・地階なし・木造等。窓口＝都市計画課（浜名区・天竜区は北部都市整備事務所）",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "補助"
+   },
+   {
+    "label": "住宅用火災警報器の設置維持管理（浜松市消防局）",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/hfdyobo/disaster/shobo/juukeikisetti/juukeikisetti.html",
+    "what": "浜松市火災予防条例による設置場所（寝室・階段・廊下）と取付け位置の決まり",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "給水装置工事申し込みに係る各種書式のダウンロード（浜松市上下水道部）",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/service/suidou/kyuusui_kouji_youshiki.html",
+    "what": "給水装置工事申込書などの様式（お客さまサービス課）",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "浄化槽を設置したいときは（浜松市）",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/service/wastewater/zyoukasou/setti.html",
+    "what": "浄化槽設置届の窓口（各区役所まちづくり推進課・行政センター）。建築確認申請をする場合は不要",
+    "verified": true,
+    "purpose": "浄化槽",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "建築協定（浜松市）",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/kensido/home_tochi/home/kensido/anzen/kenchikukyoutei.html",
+    "what": "市内32か所の建築協定の一覧（認可年月日・区域図・内容）",
+    "verified": true,
+    "purpose": "建築協定",
+    "role": "まずここで調べる"
+   }
+  ],
+  "沼津市": [
+   {
+    "label": "沼津市地区計画の区域内における建築物の制限に関する条例（平成11年条例第28号）",
+    "url": "https://ops-jg.d1-law.com/opensearch/SrJbF01/init?jctcd=8A8573C75D&houcd=H411901010028",
+    "what": "条例化：あり（黄瀬川沼津インター線（ぐるめ街道）沿道商業地区・岡宮北地区・沼津駅北第一地区・東椎路地区・町方町・大門町・通横町地区・足高地区・大手町五丁目第一地区）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "公共下水道を使用できる地域が広がります（沼津市水道部）",
+    "url": "https://city.numazu.shizuoka.jp/kurashi/sumai/suido/topics/shiyouchiiki/index.htm",
+    "what": "供用開始区域の地図（町名ごとのPDF。赤が供用開始区域）。概ねの区域",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "沼津市指定給水装置工事事業者一覧",
+    "url": "https://city.numazu.shizuoka.jp/kurashi/sumai/suido/visitor/shitei.htm",
+    "what": "給水装置工事は沼津市指定給水装置工事事業者に申し込む旨と事業者一覧（申込みの手続きそのもののページではない）",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "開発許可制度の概要（沼津市）",
+    "url": "https://www.city.numazu.shizuoka.jp/shisei/office/ichiran/toshikei/machisidou/kaihatsu/kaihatsukyoka.htm",
+    "what": "29条。許可権者の記載はない。市街化区域1,000㎡以上・区域外1ha以上、調整区域は原則不可。窓口＝開発指導課",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "市街化調整区域内での建築等の許可制度の概要（沼津市）",
+    "url": "https://city.numazu.shizuoka.jp/shisei/office/ichiran/toshikei/machisidou/kaihatsu/shigaika.htm",
+    "what": "43条。許可権者の記載はない。開発許可を受けた土地以外での建築・第一種特定工作物。窓口＝開発指導課",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "補助"
+   },
+   {
+    "label": "都市計画法第53条第1項の許可について（沼津市）",
+    "url": "https://www.city.numazu.shizuoka.jp/shisei/office/ichiran/toshikei/machisidou/keikaku53-1.htm",
+    "what": "53条。許可権者＝市長と明記。許可基準の記載はない。窓口＝開発指導課",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "補助"
+   },
+   {
+    "label": "火災予防について（駿東伊豆消防本部）",
+    "url": "https://www.suntoizufd119.jp/yobo/",
+    "what": "管轄消防本部の火災予防のページ。住宅用火災警報器の案内（PDF）・条例改正のお知らせ",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "し尿処理（沼津市）",
+    "url": "https://www.city.numazu.shizuoka.jp/kurashi/sumai/shinyo/",
+    "what": "浄化槽設置届（設置の21日前まで、認定型式は10日前まで）。問い合わせはクリーンセンター",
+    "verified": true,
+    "purpose": "浄化槽",
+    "role": "まずここで調べる"
+   }
+  ],
+  "富士市": [
+   {
+    "label": "岳南広域都市計画○○地区計画の区域内における建築物の制限に関する条例（地区ごとに13本。富士市例規集）",
+    "url": "https://krg311.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
+    "what": "条例化：あり（富士中部・富士市役所周辺・広見商店街周辺・三ツ倉・桜ケ丘・新富士駅南・富士見台住宅団地・国久保周辺・第二東名IC周辺・青葉台小学校南・岩松北小学校周辺・あしたの杜・富士山フロント工業団地・富士駅北口周辺）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "供用開始区域について（下水道）",
+    "url": "https://www.city.fuji.shizuoka.jp/1545250000/p000821.html",
+    "what": "供用開始箇所図（PDF。令和7年度末＝2026年3月31日時点）",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "給水装置に関する申請（富士市上下水道部）",
+    "url": "https://www.city.fuji.shizuoka.jp/1545230000/p000906.html",
+    "what": "給水装置工事申込書（電子申請。令和8年1月から）・3階直結給水協議書など",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "浄化槽申請書・届出書一覧（富士市生活排水対策課）",
+    "url": "https://www.city.fuji.shizuoka.jp/1545350000/p000860.html",
+    "what": "浄化槽設置届出書の様式・チェック表・提出先（建築確認を伴う場合は除くと記載）",
+    "verified": true,
+    "purpose": "浄化槽",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "開発行為に関する事務について（富士市）",
+    "url": "https://www.city.fuji.shizuoka.jp/1040070000/p004409.html",
+    "what": "29条。許可権者の記載はない。市街化区域1,000㎡以上・調整区域500㎡以上。窓口＝建築土地対策課開発調整担当",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "市街化調整区域における建築に関する事務について（富士市）",
+    "url": "https://www.city.fuji.shizuoka.jp/machi/c1801/fmervo000000a1kt.html",
+    "what": "調整区域の建築許可（既存宅地など）。43条の許可権者の記載はない。窓口＝建築土地対策課開発調整担当",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "補助"
+   },
+   {
+    "label": "都市計画施設等の区域内における建築物の建築許可申請（富士市）",
+    "url": "https://www.city.fuji.shizuoka.jp/machi/c1205/fmervo00000077ii.html",
+    "what": "53条。許可権者＝市長と明記。原則階数2以下（指定区域外は3以下に緩和）・地階なし・木造等。確認申請前に。窓口＝都市計画課",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "補助"
+   },
+   {
+    "label": "ついてますか？住宅用火災警報器！（富士市消防本部）",
+    "url": "https://www.city.fuji.shizuoka.jp/3005200000/p000144.html",
+    "what": "設置場所（寝室・寝室がある階の階段上部）と維持管理。消防本部予防課",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   }
+  ],
+  "富士宮市": [
+   {
+    "label": "岳南広域都市計画外神東地区計画建築基準条例／前田北地区計画建築基準条例／中島町地区計画建築基準条例／浅間町地区計画建築基準条例（富士宮市例規集）",
+    "url": "https://krg308.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
+    "what": "条例化：あり（外神東地区・前田北地区・中島町地区・浅間町地区）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "下水道台帳図の公開（富士宮市下水道課）",
+    "url": "https://www.city.fujinomiya.lg.jp/1045300000/p000521.html",
+    "what": "大字ごとの下水道台帳図PDF（管のおおよその位置。2024年4月1日時点。供用区域の明記は未確認）",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "開発行為（富士宮市）",
+    "url": "https://www.city.fujinomiya.lg.jp/citizen/llti2b00000025dq.html",
+    "what": "29条。許可権者の記載はない。市街化区域1,000㎡以上・調整区域は面積にかかわらず全て・区域外10,000㎡以上。申請前に土地利用事業の手続き。窓口＝都市計画課土地対策係",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "都市計画法第43条建築許可申請（富士宮市）",
+    "url": "https://www.city.fujinomiya.lg.jp/1040400000/p002042.html",
+    "what": "43条。許可権者の記載はない。調整区域で開発区域以外の建築・用途変更等。窓口＝都市計画課土地対策係",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "補助"
+   },
+   {
+    "label": "都市計画決定区域内における建築の構造制限（富士宮市）",
+    "url": "https://www.city.fujinomiya.lg.jp/sp/citizen/visuf80000006kz2.html",
+    "what": "53条。許可権者の記載はない。階数3以下（事業予定区域は2以下）・地階なし・木造等（2011年の内容）。窓口＝都市計画課計画係",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "補助"
+   },
+   {
+    "label": "住宅用火災警報器（富士宮市消防本部）",
+    "url": "https://www.city.fujinomiya.lg.jp/citizen/llti2b00000024rj.html",
+    "what": "設置義務・設置場所（寝室・階段上部）。消防本部予防課",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "給水装置設計施工指針（富士宮市水道部）",
+    "url": "https://www.city.fujinomiya.lg.jp/1045200000/p002389.html",
+    "what": "給水装置の設計施工指針と給水装置工事申込書の様式（水道工務課給水係）",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "設計にあたっての条件（富士宮市）",
+    "url": "https://www.city.fujinomiya.lg.jp/entrepreneur/visuf8000000gm2s.html",
+    "what": "市内の建築協定2件（アマダ庭園住宅分譲用地・アイグスタウン富士宮「桜並木」地区）",
+    "verified": true,
+    "purpose": "建築協定",
+    "role": "まずここで調べる"
+   }
+  ],
+  "焼津市": [
+   {
+    "label": "焼津市地区計画区域における建築物等の制限に関する条例（平成7年条例第37号）",
+    "url": "https://www1.g-reiki.net/city.yaizu/reiki_honbun/g313RG00000708.html",
+    "what": "条例化：あり（駅北二丁目・三丁目地区・会下ノ島石津地区・栄町第一地区）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "公共下水道の使える区域｜焼津市",
+    "url": "https://www.city.yaizu.lg.jp/life/water-sewage/sewage/public-sewer/area.html",
+    "what": "下水道供用区域図と、地区別・五十音順の字名一覧（2024年3月26日現在）",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "指定給水装置工事事業者の方へ｜焼津市",
+    "url": "https://www.city.yaizu.lg.jp/life/water-sewage/water/tetuzuki/jigyosha/shiteikyusuisouchijigyousya.html",
+    "what": "給水装置工事申込書（新設・改造・修繕・撤去）の様式・審査手数料",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "開発許可制度の概要（焼津市）",
+    "url": "https://www.city.yaizu.lg.jp/life/urban/development/kaihatsu/about.html",
+    "what": "29条。許可権者の記載はない。市街化区域1,000㎡以上。調整区域は用途ごとの説明のみ。窓口＝都市計画課土地対策担当",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "都市計画法第43条第1項の規定による建築許可申請書（焼津市）",
+    "url": "https://www.city.yaizu.lg.jp/life/urban/development/kaihatsu/yoshikishu/kaihatuyousiki43.html",
+    "what": "43条（様式のページ）。許可権者の記載はない。調整区域で宅地造成を要しない土地の建築。窓口＝都市計画課土地対策担当",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "補助"
+   },
+   {
+    "label": "都市計画施設等の区域内における建築の許可申請（焼津市）",
+    "url": "https://www.city.yaizu.lg.jp/life/urban/development/toshikeikakuhou53jo.html",
+    "what": "53条。許可権者の記載はない。階数2以下・地階なし・木造等。窓口＝都市計画課",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "補助"
+   },
+   {
+    "label": "消防同意・消防用設備等関係様式（志太消防本部）",
+    "url": "https://www.shida119.jp/shinseisyo/setsubi-youshiki/",
+    "what": "管轄消防本部の消防同意関係様式（消防同意調査書）・消防用設備等の様式",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "建築協定について（焼津市）",
+    "url": "https://www.city.yaizu.lg.jp/life/sumai-kenchiku/kenchiku/kenchiku-kakunin/kenchikukyotei.html",
+    "what": "市内の建築協定（大島タウン建築協定 1件）。建築住宅課",
+    "verified": true,
+    "purpose": "建築協定",
+    "role": "まずここで調べる"
+   }
+  ],
+  "熱海市": [
+   {
+    "label": "熱海市 排水設備（水洗化）工事",
+    "url": "https://www.city.atami.lg.jp/kurashi/suido/1000884/1000888.html",
+    "what": "排水設備は指定工事店に依頼。公共下水道供用区域図（R7.4.1時点）のPDFへのリンクあり。下水道課施設室",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "熱海市消防本部 住宅用火災警報器関係",
+    "url": "https://www.city.atami.lg.jp/kurashi/kyukyu/1005064/1005066/index.html",
+    "what": "熱海市消防本部（市の直営）の住宅用火災警報器の取り付け場所・取り付け方・相談窓口",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "熱海市【水道】書式ダウンロード",
+    "url": "https://www.city.atami.lg.jp/kurashi/suido/1004880/1007771.html",
+    "what": "給水装置工事申込書（R5.10.1から）・完成届・水道施設工事承認申請書など。水道温泉課",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "熱海市 都市計画法による開発行為",
+    "url": "https://www.city.atami.lg.jp/shisei/machidukuri/1001355/1001359.html",
+    "what": "全域非線引き・3,000㎡以上が許可対象。開発行為等事務処理要領及び様式集（R7.5.27改訂）。まちづくり課都市計画室。43条の記載はなし",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "熱海市 地区計画",
+    "url": "https://www.city.atami.lg.jp/shisei/machidukuri/1001373/1005461.html",
+    "what": "条例化：あり（東海岸町医療福祉集積地区）。桜木町地区計画は条例の有無の記載なし",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   }
+  ],
+  "三島市": [
+   {
+    "label": "三島市 排水設備工事（公共下水道への切替え）について",
+    "url": "https://www.city.mishima.shizuoka.jp/page/1217.html",
+    "what": "処理区域は毎年3月31日に告示、6か月以内に排水設備工事。指定工事店・様式。供用開始区域の地図へのリンクはこのページになし。下水道課",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "富士山南東消防本部 住宅用火災警報器を設置しましょう",
+    "url": "https://fdfujisan-nantou.shizuoka.jp/life/prevent/keihouki",
+    "what": "三島市・裾野市・長泉町を管轄。設置義務・設置場所（寝室・階段）・取付の注意。予防課",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "三島市 家庭に水道を引くには",
+    "url": "https://www.city.mishima.shizuoka.jp/page/1213.html",
+    "what": "指定給水装置工事事業者への申込みから給水開始までの流れ・加入金・検査手数料。水道課営業係",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "三島市 開発許可",
+    "url": "https://www.city.mishima.shizuoka.jp/page/1290.html",
+    "what": "開発許可の概要（権限移譲）。都市計画課土地対策係。29条・43条の申請書様式は同課の別ページ",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "三島市 地区計画の区域内における建築物の制限について",
+    "url": "https://www.city.mishima.shizuoka.jp/page/2548.html",
+    "what": "条例化：あり（芙蓉台・初音台・加茂・三島駅南口周辺の一部・三島駅北口周辺・東大場・国道1号沿線・錦が丘・三ツ谷工業団地・北沢・市山新田・大場赤王・富士見台・三嶋大社東・塚原新田の15地区）。無：東本町幸原線沿道南・萩南・若松町桐木",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   }
+  ],
+  "伊東市": [
+   {
+    "label": "伊東市 公共下水道供用開始区域",
+    "url": "https://www.city.ito.shizuoka.jp/gyosei/soshikikarasagasu/gesuidoka/kurashi_tetsuzuki/1/6/index.html",
+    "what": "供用開始区域の地区別ページ（宇佐美・伊東北・伊東南・荻十足、地形図つき）の一覧。下水道課",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "駿東伊豆消防本部 火災予防について",
+    "url": "https://www.suntoizufd119.jp/yobo/",
+    "what": "駿東伊豆消防本部（沼津・伊東・伊豆・伊豆の国・東伊豆・函南・清水）の火災予防。住宅用火災警報器の案内PDFへのリンク（専用のHTMLページはなし）",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "伊東市 水道事業 申請書ダウンロードサービス",
+    "url": "https://www.city.ito.shizuoka.jp/gyosei/soshikikarasagasu/suidoka/shinseishodownload/1/1/2481.html",
+    "what": "給水装置工事申込書・しゅん工検査申請書など。水道課（給水計画係）",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "伊東市 都市計画法による開発行為となる広さ",
+    "url": "https://www.city.ito.shizuoka.jp/gyosei/soshikikarasagasu/toshikeikakuka/toshikeikaku/totiriyou/2510.html",
+    "what": "3,000㎡以上が開発行為。伊東市開発行為等事務処理要領の案内。都市計画課（2019年更新）",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "伊東市例規集",
+    "url": "https://krg309.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
+    "what": "条例化：なし（例規集に該当の条例なし。件名「地区計画」「建築物」で検索。10月17日確認）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   }
+  ],
+  "伊豆市": [
+   {
+    "label": "伊豆市牧之郷地区計画の区域内における建築物の制限に関する条例（令和元年条例第7号）",
+    "url": "https://ops-jg.d1-law.com/opensearch/SrJbF01/init?jctcd=8A8573C81C&houcd=H501901010007",
+    "what": "条例化：あり（牧之郷地区。住商共存地区・田園住宅地区）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "伊豆市の汚水処理施設について",
+    "url": "https://www.city.izu.shizuoka.jp/soshiki/1015/1/2/989.html",
+    "what": "処理施設ごとの供用開始年月と処理方式、下水道計画図（PDF）。区域の範囲・排水設備の手続きは書かれていない。上下水道課下水道スタッフ",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "駿東伊豆消防本部 火災予防について",
+    "url": "https://www.suntoizufd119.jp/yobo/",
+    "what": "伊豆市を管轄する駿東伊豆消防本部の火災予防。住宅用火災警報器の案内PDFへのリンク",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "伊豆市 水道の手続きについて",
+    "url": "https://www.city.izu.shizuoka.jp/soshiki/1015/1/3/910.html",
+    "what": "新設・改造は伊豆市指定給水装置工事事業者に依頼し、業者が市へ届出。改造は検査手数料あり。上下水道課",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "伊豆市 都市計画法に基づく開発行為等の許可",
+    "url": "https://www.city.izu.shizuoka.jp/soshiki/1024/2/4/900.html",
+    "what": "権限移譲（H20.4）。事務処理の手引き・設計図書作成要領・様式集（43条関係の様式を含む）。都市計画課土地対策スタッフ",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "伊豆市の地区計画、届出手続について",
+    "url": "https://www.city.izu.shizuoka.jp/soshiki/1024/2/3/861.html",
+    "what": "地区計画は牧之郷地区のみ（H31.3.29決定）。一覧に条例の有無の記載なし",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   }
+  ],
+  "伊豆の国市": [
+   {
+    "label": "伊豆の国市 下水道について「こんなときどうする？」",
+    "url": "https://www.city.izunokuni.shizuoka.jp/jyougesui/kurashi/suidou/gesuidou/about.html",
+    "what": "接続工事は指定工事店で・接続後の届出・下水道管の位置確認（台帳図面）。処理区域・供用開始区域の地図はなし。上下水道課（下水道）",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "駿東伊豆消防本部 火災予防について",
+    "url": "https://www.suntoizufd119.jp/yobo/",
+    "what": "伊豆の国市を管轄する駿東伊豆消防本部の火災予防。住宅用火災警報器の案内PDFへのリンク",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "伊豆の国市 指定給水装置工事業者に関すること",
+    "url": "https://www.city.izunokuni.shizuoka.jp/jyougesui/kurashi/suidou/shite.html",
+    "what": "給水装置工事申請書（様式第1号）・設計審査・検査申請書など、着手前・完了後の提出書類と手数料。上下水道課",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "伊豆の国市 開発行為等の許可",
+    "url": "https://www.city.izunokuni.shizuoka.jp/tosikei/machizukuri/kaihatsu/kaihatsu.html",
+    "what": "権限移譲（H20.4）。様式・施行細則・手数料・34条運用基準。43条は別ページへのリンク。都市計画課",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "伊豆の国市 地区計画",
+    "url": "https://www.city.izunokuni.shizuoka.jp/tosikei/chiku.html",
+    "what": "条例化：あり（伊豆長岡医療拠点地区）。地区計画はこの1地区のみ",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   }
+  ],
+  "下田市": [
+   {
+    "label": "下田都市計画再開発地区計画武ガ浜地区再開発地区計画の区域内における建築物の制限に関する条例（平成13年条例第21号）",
+    "url": "https://ops-jg.d1-law.com/opensearch/SrJbF01/init?jctcd=8A8573C7C8&houcd=H413901010021",
+    "what": "条例化：あり（武ガ浜地区再開発地区計画の区域。A地区・B地区）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "下田市 下水道への接続をお願いします",
+    "url": "https://www.city.shimoda.shizuoka.jp/category/020200gesuidou/110344.html",
+    "what": "排水設備の設置・指定工事人による確認申請の案内（上下水道課）。処理区域の地図はこのページにない",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "下田消防本部（下田地区消防組合） 住宅用火災警報器",
+    "url": "https://shimoda-fd.jp/fire_prevention/fire_alarm/",
+    "what": "住宅用火災警報器の設置義務（組合の火災予防条例）・設置場所・交換の目安",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "下田市指定給水装置工事事業者",
+    "url": "https://www.city.shimoda.shizuoka.jp/category/021000suidou/146639.html",
+    "what": "給水装置工事（新設・改造）は指定事業者に申し込む旨と事業者一覧（上下水道課）",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   }
+  ],
+  "東伊豆町": [
+   {
+    "label": "駿東伊豆消防本部 火災予防について",
+    "url": "https://www.suntoizufd119.jp/yobo/",
+    "what": "火災予防の案内。住宅用火災警報器の資料（PDF）・火災予防条例の改正の案内あり。東伊豆町は駿東伊豆消防組合の管轄",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "東伊豆町例規集（体系目次）",
+    "url": "https://www1.g-reiki.net/town.higashiizu.shizuoka/reiki_taikei/taikei_default.html",
+    "what": "条例化：なし（例規集に該当の条例なし。10月17日確認）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   },
+   {
+    "label": "建築規制及び都市計画情報（東伊豆町）",
+    "url": "https://www.town.higashiizu.lg.jp/bamen/sumai/1798.html",
+    "what": "「公共下水道はないため、合併浄化槽を利用すること」と記載（建設整備課）",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   }
+  ],
+  "河津町": [
+   {
+    "label": "下田消防本部（下田地区消防組合） 住宅用火災警報器",
+    "url": "https://shimoda-fd.jp/fire_prevention/fire_alarm/",
+    "what": "住宅用火災警報器の設置義務（組合の火災予防条例）・設置場所・交換の目安。河津町は下田地区消防組合の管轄",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "河津町 水道の手続き",
+    "url": "https://www.town.kawazu.shizuoka.jp/choumin/suidou/",
+    "what": "水道工事は町指定給水装置工事事業者に依頼・新設の申請手数料・事業者一覧（水道温泉課）",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "河津町例規集（目次検索）",
+    "url": "https://en3-jg.d1-law.com/kawazu/d1w_reiki/reiki.html",
+    "what": "条例化：なし（例規集に該当の条例なし。10月17日確認）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   }
+  ],
+  "南伊豆町": [
+   {
+    "label": "南伊豆町下水道排水設備等工事指定工事人について",
+    "url": "https://www.town.minamiizu.shizuoka.jp/docs/2013030800067/",
+    "what": "排水設備工事は指定工事人が施工し確認申請を代行する旨と指定工事人一覧（生活環境課）。処理区域の地図はない",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "下田消防本部（下田地区消防組合） 住宅用火災警報器",
+    "url": "https://shimoda-fd.jp/fire_prevention/fire_alarm/",
+    "what": "住宅用火災警報器の設置義務（組合の火災予防条例）・設置場所・交換の目安。南伊豆町は下田地区消防組合の管轄",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "南伊豆町指定給水装置工事事業者一覧表",
+    "url": "https://www.town.minamiizu.shizuoka.jp/docs/2014053000038/",
+    "what": "指定給水装置工事事業者の一覧。申込み手続きの記載はなく、生活環境課へ問い合わせ",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "南伊豆町例規集",
+    "url": "https://ops-jg.d1-law.com/opensearch/SrMjF01/init?jctcd=8A8573EED2",
+    "what": "条例化：なし（例規集に該当の条例なし。目次の全分類の題名を確認。10月17日確認）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   }
+  ],
+  "松崎町": [
+   {
+    "label": "松崎町集落排水事業経営戦略について",
+    "url": "https://www.town.matsuzaki.shizuoka.jp/docs/2021050700014/",
+    "what": "公共下水道の案内は見当たらず、集落排水（岩地・石部・雲見）の経営戦略のページのみ。処理区域・排水設備の手続きは書かれていない（生活環境課へ確認）",
+    "verified": false,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "下田消防本部（下田地区消防組合） 住宅用火災警報器",
+    "url": "https://shimoda-fd.jp/fire_prevention/fire_alarm/",
+    "what": "住宅用火災警報器の設置義務（組合の火災予防条例）・設置場所・交換の目安。松崎町は下田地区消防組合の管轄",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "松崎町 水道の新規加入について",
+    "url": "https://www.town.matsuzaki.shizuoka.jp/docs/2016011900251/",
+    "what": "新規加入は町指定給水装置工事事業者が生活環境課へ申請・水道加入金（口径別）",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "松崎町例規集（目次検索）",
+    "url": "https://en3-jg.d1-law.com/matsuzaki/d1w_reiki/reiki.html",
+    "what": "条例化：なし（例規集に該当の条例なし。10月17日確認）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   }
+  ],
+  "西伊豆町": [
+   {
+    "label": "下田消防本部（下田地区消防組合） 住宅用火災警報器",
+    "url": "https://shimoda-fd.jp/fire_prevention/fire_alarm/",
+    "what": "住宅用火災警報器の設置義務（組合の火災予防条例）・設置場所・交換の目安。西伊豆町は下田地区消防組合の管轄",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "西伊豆町 水道・温泉指定工事事業者",
+    "url": "https://www.town.nishiizu.shizuoka.jp/kakuka/kigyou/suido/jigyousya.html",
+    "what": "指定給水装置工事事業者の名簿（PDF）と規程。申込み方法の記載はなく、企業課水道温泉係へ問い合わせ",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "西伊豆町例規集（体系目次）",
+    "url": "https://www.town.nishiizu.shizuoka.jp/reiki/reiki_taikei/taikei_default.html",
+    "what": "条例化：なし（例規集に該当の条例なし。10月17日確認）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   }
+  ],
+  "御殿場市": [
+   {
+    "label": "御殿場小山広域都市計画○○地区計画の区域内における建築物（等）の制限に関する条例（地区ごとに8本。御殿場市例規集）",
+    "url": "http://krg316.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
+    "what": "条例化：あり（二の岡・東田中鮎沢・神場南・東部幹線沿線・御殿場駅東・富士御殿場・御殿場駅箱根乙女口広場周辺・富士見原）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "御殿場市 公共下水道利用可能区域",
+    "url": "https://www.city.gotemba.lg.jp/kurashi/b-6/b-6-1/15144.html",
+    "what": "公共下水道の利用区域（区域図はPDF）。排水設備の申請書は同じ下水道のページ群（こんなときには届け出を）",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "御殿場市・小山町広域行政組合消防本部 住宅用火災警報器",
+    "url": "https://www.gotemba-oyama-kouiki.jp/pages/105/",
+    "what": "住宅用火災警報器の設置義務と理由（同じ消防本部の火災予防の中に、種類・設置場所のページ）",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "御殿場市 指定工事業者（水道）",
+    "url": "https://www.city.gotemba.lg.jp/kurashi/b-5/b-5-1/314.html",
+    "what": "給水装置の新設・改造は市の指定給水装置工事事業者に相談（申請は業者が代行）。上水道課の連絡先",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "御殿場市 開発行為申請等",
+    "url": "https://www.city.gotemba.lg.jp/gyousei/g-3/g-3-2/1284.html",
+    "what": "開発行為等の許可申請の様式・事務処理要領・開発行為等の手引き（第1〜3編）。都市計画課",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "御殿場市 地区計画区域内における行為の届出",
+    "url": "https://www.city.gotemba.lg.jp/gyousei/g-3/g-3-1/1628.html",
+    "what": "地区計画8地区の一覧と届出。一覧に条例の有無の記載なし（御殿場駅東地区の建築物等の制限に関する条例は市サイトにPDFあり）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   }
+  ],
+  "裾野市": [
+   {
+    "label": "裾野市地区計画の区域内における建築物等の制限に関する条例（令和5年条例第20号）",
+    "url": "http://krg321.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
+    "what": "条例化：あり（千福が丘・南部・裾野駅西・御宿）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "裾野市 下水道",
+    "url": "http://www.city.susono.shizuoka.jp/kurashi/7/1/2486.html",
+    "what": "公共下水道の概要・処理区域の説明・排水設備の接続（指定工事店に依頼）。区域の地図はこのページにない",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "富士山南東消防本部 住宅用火災警報器を設置しましょう",
+    "url": "https://fdfujisan-nantou.shizuoka.jp/life/prevent/keihouki",
+    "what": "住宅用火災警報器の設置場所（寝室・階段）・種類・交換の目安。予防課の連絡先",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "裾野市 指定給水工事事業者",
+    "url": "https://www.city.susono.shizuoka.jp/kurashi/7/2/2503.html",
+    "what": "水道工事は指定給水装置工事事業者に申し込む旨と、事業者の一覧",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "裾野市 都市計画法に基づく開発行為（法第29条、第43条、省令第60条）などの許可",
+    "url": "https://www.city.susono.shizuoka.jp/machizukuri/3/3076.html",
+    "what": "開発許可の規則・事務処理要領・手引き・様式・手数料。都市計画課 土地対策係",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "裾野市 地区計画",
+    "url": "https://www.city.susono.shizuoka.jp/machizukuri/1/3265.html",
+    "what": "地区計画5地区（千福が丘・南部・裾野駅西・御宿・東富士研究開発拠点）。一覧に条例の有無の記載なし",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   }
+  ],
+  "函南町": [
+   {
+    "label": "函南町 下水道各種申請書のご案内",
+    "url": "https://www.town.kannami.shizuoka.jp/soshiki/1014/2/1/4/380.html",
+    "what": "排水設備確認申請・完了届、工事着手届などの様式（上下水道課）。区域の地図はこのページにない",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "駿東伊豆消防本部 火災予防について",
+    "url": "https://www.suntoizufd119.jp/yobo/",
+    "what": "火災予防のページ。住宅用火災警報器の説明PDF・取付支援の案内へのリンク（専用のHTMLページはない）",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "函南町 給水装置新設等申込書のご案内",
+    "url": "https://www.town.kannami.shizuoka.jp/soshiki/1014/2/3/1/371.html",
+    "what": "新築等の給水装置工事は事前に申込書を上下水道課へ提出し承認後に着工。指定事業者が施工。様式PDF",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "函南町 都市計画法に基づく開発の許可",
+    "url": "https://www.town.kannami.shizuoka.jp/sangyo_machizukuri/machizukuri_toshikeikaku/4/2917.html",
+    "what": "開発許可（権限移譲の事務処理町。基準は県の基準を読み替え）。都市計画課",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "函南町 用途地域と地区計画が都市計画決定（変更）されました",
+    "url": "https://www.town.kannami.shizuoka.jp/soshiki/1012/2/5/688.html",
+    "what": "条例化：あり（東駿河湾環状線沿道地区地区計画。条例の施行H26.4.1と記載）。ほかの地区の一覧ページは見当たらず",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   }
+  ],
+  "清水町": [
+   {
+    "label": "清水町地区計画の区域内における建築物の制限等に関する条例（平成18年条例第9号）",
+    "url": "https://ops-jg.d1-law.com/opensearch/SrJbF01/init?jctcd=8A8573F059&houcd=H418901010009",
+    "what": "条例化：あり（伏見・玉川国道1号北部地区）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "清水町 下水道",
+    "url": "https://www.town.shimizu.shizuoka.jp/toshi/toshi00053.html",
+    "what": "下水道整備済み区域図（PDF）・使用開始の手続き・排水設備工事へのリンク",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "駿東伊豆消防本部 火災予防について",
+    "url": "https://www.suntoizufd119.jp/yobo/",
+    "what": "火災予防のページ。住宅用火災警報器の説明PDF・取付支援の案内へのリンク（専用のHTMLページはない）",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "沼津市水道部 水道サービス課",
+    "url": "http://www.city.numazu.shizuoka.jp/shisei/office/ichiran/suido/service.htm",
+    "what": "清水町の水道事業者は沼津市（清水町の「上水道の手続き」が案内）。新設・改造は指定給水装置工事事業者へ申し込む旨。ページは古い作り",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "清水町 開発許可等申請方法・様式について",
+    "url": "https://www.town.shimizu.shizuoka.jp/toshi/toshi00021.html",
+    "what": "開発許可・43条許可・規則60条証明の申請様式。都市計画課 計画指導係",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "清水町 地区計画について",
+    "url": "https://www.town.shimizu.shizuoka.jp/toshi/toshi00031.html",
+    "what": "伏見・玉川国道1号北部地区計画（1地区のみ記載）。一覧に条例の有無の記載なし",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   }
+  ],
+  "長泉町": [
+   {
+    "label": "長泉町 排水設備工事",
+    "url": "https://www.town.nagaizumi.lg.jp/soshiki/jyougesui/1_2/1978.html",
+    "what": "排水設備工事の案内（指定工事店・切替時期・検査・利子補給）。区域は「上下水道管路情報等（ながいずみちょうどいいマップ）」のページ",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "富士山南東消防本部 住宅用火災警報器を設置しましょう",
+    "url": "https://fdfujisan-nantou.shizuoka.jp/life/prevent/keihouki",
+    "what": "住宅用火災警報器の設置場所（寝室・階段）・種類・交換の目安。予防課の連絡先",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "長泉町 給水装置工事",
+    "url": "https://www.town.nagaizumi.lg.jp/soshiki/jyougesui/3/1972.html",
+    "what": "給水装置の新設・改造・修理は町の指定給水装置工事事業者に依頼。上下水道課",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "長泉町 開発許可制度（令和8年4月改正）",
+    "url": "https://www.town.nagaizumi.lg.jp/soshiki/kensetsu/kaihatsu/kaihatukyokaseido.html",
+    "what": "長泉町開発行為等の手引き（改正版）・規則・要領・様式。建設計画課 計画チーム",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "長泉町 地区計画",
+    "url": "https://www.town.nagaizumi.lg.jp/soshiki/kensetsu/toshikeikaku/tikukeikaku.html",
+    "what": "地区計画4地区（「南一色」「国道246号沿道下長窪・南一色」「駿河平」「県立静岡がんセンター周辺」）。一覧に条例の有無の記載なし",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "長泉町例規集",
+    "url": "https://krg339.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
+    "what": "条例化：なし（例規集に該当の条例なし。件名「地区計画」「建築物」で検索。10月17日確認）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   }
+  ],
+  "小山町": [
+   {
+    "label": "御殿場小山広域都市計画地区計画新産業集積エリア地区計画の区域内における建築物の制限に関する条例",
+    "url": "https://www.fuji-oyama.jp/oyama/reiki/reiki_honbun/g340RG00001019.html",
+    "what": "条例化：あり（新産業集積エリア地区。A・B・C地区）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "御殿場小山広域都市計画地区計画富士山麓フロンティアパーク小山地区計画の区域内における建築物の制限に関する条例",
+    "url": "https://www.fuji-oyama.jp/oyama/reiki/reiki_honbun/g340RG00000989.html",
+    "what": "条例化：あり（富士山麓フロンティアパーク小山地区）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   },
+   {
+    "label": "御殿場小山広域都市計画地区計画上野工業団地地区計画の区域内における建築物の制限に関する条例",
+    "url": "https://www.fuji-oyama.jp/oyama/reiki/reiki_honbun/g340RG00001132.html",
+    "what": "条例化：あり（上野工業団地地区）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   },
+   {
+    "label": "小山町 下水道・浄化槽",
+    "url": "https://www.fuji-oyama.jp/life/1/5/30/",
+    "what": "下水道の手続き・計画の一覧。供用開始区域の地図・排水設備の申請のページは見当たらず",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "御殿場市・小山町広域行政組合消防本部 住宅用火災警報器",
+    "url": "https://www.gotemba-oyama-kouiki.jp/pages/105/",
+    "what": "住宅用火災警報器の設置義務と理由（同じ消防本部の火災予防の中に、種類・設置場所のページ）",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "小山町 給水装置工事について",
+    "url": "https://www.fuji-oyama.jp/page/1243.html",
+    "what": "給水装置の新設・変更は申込みが必要。指定事業者に依頼。申込様式・施工指針。上下水道課工務班",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "小山町 開発行為",
+    "url": "https://www.fuji-oyama.jp/page/1367.html",
+    "what": "開発許可（H24.4から町に権限移譲）。規則・様式・技術基準・手数料。都市整備課",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "小山町の地区計画",
+    "url": "https://www.fuji-oyama.jp/page/1587.html",
+    "what": "地区計画3地区（富士山麓フロンティアパーク小山・新産業集積エリア・上野工業団地）。一覧に条例の有無の記載なし",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   }
+  ],
+  "島田市": [
+   {
+    "label": "島田市 排水設備のしくみ",
+    "url": "https://www.city.shimada.shizuoka.jp/kurashi-docs/haisuisetubi.html",
+    "what": "排水設備の説明と「排水設備工事の手続き」へのリンク。下水道課。区域図のページは見当たらず",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡市消防局 住宅用火災警報器取付支援のご案内",
+    "url": "https://www.city.shizuoka.lg.jp/shobo/s000116.html",
+    "what": "島田市は静岡市消防局の管轄（島田消防署が載る）。住宅用火災警報器の取付支援の案内（設置義務の説明ページではない）",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "島田市内で工事をする水道工事店へのおしらせ",
+    "url": "https://www.city.shimada.shizuoka.jp/kurashi-docs/c222.html",
+    "what": "給水装置工事申込書（記載例つき）・設計書・検査申請の様式、給水装置設置工事指針。水道課",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "島田市 開発許可制度の概要",
+    "url": "https://www.city.shimada.shizuoka.jp/gyosei-docs/kaihatukoui.html",
+    "what": "開発許可（H17.4から市に移譲）。事務処理要領・施行細則・様式。都市政策課 土地対策係",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "島田市 地区計画とは",
+    "url": "https://www.city.shimada.shizuoka.jp/gyosei-docs/chikukeikakutoha.html",
+    "what": "条例化：あり（六合駅南・新東名島田金谷IC周辺・向島町・若松町・川越し街道周辺。表の条例欄に〇）。中央第三・往還下は〇なし",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   }
+  ],
+  "藤枝市": [
+   {
+    "label": "藤枝市地区計画区域における建築物の制限に関する条例",
+    "url": "https://www.city.fujieda.shizuoka.jp/static/reiki_int/reiki_honbun/g315RG00000400.html",
+    "what": "条例化：あり（サニーヒルズ・青木・清里・水守・駅南・南清里・横内・三輪・新藤岡台・藤枝ビュータウン・緑の丘・岡部台団地・内瀬戸・駅前一丁目8街区・高田・駅前一丁目9街区・駅前一丁目6街区）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "藤枝市 下水道が使える地域",
+    "url": "https://www.city.fujieda.shizuoka.jp/toshi/jogesuido/KU011/1447731243794.html",
+    "what": "公共下水道の供用区域図（PDF。概略図。詳細は下水道課で台帳）。排水設備の手続きは同じ下水道のページ",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "志太消防本部 住宅用火災警報器設置について",
+    "url": "https://www.shida119.jp/kasaiyobou/keihou-secchi/",
+    "what": "住宅用火災警報器の設置場所・取付位置・種類・維持管理（焼津市・藤枝市を管轄）",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "藤枝市給水装置工事の手引き",
+    "url": "https://www.city.fujieda.shizuoka.jp/toshi/jogesuido/KU013/jigyosha/20748.html",
+    "what": "給水装置の設計・施工の基準と手続（手引きはPDF）。上水道課。申込みの具体はPDF側",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "藤枝市 開発行為",
+    "url": "https://www.city.fujieda.shizuoka.jp/toshi/toshikeikaku/1460973707791.html",
+    "what": "開発許可の審査基準・事務処理要領・様式、申請受付の部数・手数料。都市政策課",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "藤枝市 地区計画",
+    "url": "https://www.city.fujieda.shizuoka.jp/toshi/toshikeikaku/1447731241552.html",
+    "what": "地区計画の一覧（18件）。一覧に条例の有無の記載なし（建築関係例規のリンク集あり）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   }
+  ],
+  "吉田町": [
+   {
+    "label": "吉田町 下水道事業（下水道への接続、使用料、受益者負担金等）",
+    "url": "https://www.town.yoshida.shizuoka.jp/2540.htm",
+    "what": "公共下水道の区域（計画処理区域図PDF）・接続の義務・排水設備は町指定工事店。上下水道課",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡市消防局 住宅用火災警報器取付支援のご案内",
+    "url": "https://www.city.shizuoka.lg.jp/shobo/s000116.html",
+    "what": "吉田町は静岡市消防局の管轄（吉田消防署が載る）。住宅用火災警報器の取付支援の案内（設置義務の説明ページではない）",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "吉田町上水道事業指定給水装置工事事業者一覧表",
+    "url": "https://www.town.yoshida.shizuoka.jp/6806.htm",
+    "what": "指定給水装置工事事業者の一覧（PDF）と上下水道課の連絡先。申込み手続きの説明はない",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "吉田町 地区計画の区域内における行為の届出について",
+    "url": "https://www.town.yoshida.shizuoka.jp/4619.htm",
+    "what": "地区計画区域内の届出。地区名・条例の有無の記載なし（「建築条例に定められている場合」の届出不要の記述のみ）。都市環境課",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "吉田町例規集（体系目次）",
+    "url": "https://www.town.yoshida.shizuoka.jp/yakuba/reiki/reiki_taikei/taikei_default.html",
+    "what": "条例化：なし（例規集に該当の条例なし。10月17日確認）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   }
+  ],
+  "川根本町": [
+   {
+    "label": "静岡市消防局 住宅用火災警報器取付支援のご案内",
+    "url": "https://www.city.shizuoka.lg.jp/shobo/s000116.html",
+    "what": "川根本町は静岡市消防局の管轄（総務省消防庁の消防本部一覧による）。このページに川根本町の消防署の記載はない。取付支援の案内",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "川根本町例規集（体系目次）",
+    "url": "https://www.town.kawanehon.shizuoka.jp/section/reiki_int/reiki_taikei/taikei_default.html",
+    "what": "条例化：なし（例規集に該当の条例なし。10月17日確認）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   }
+  ],
+  "磐田市": [
+   {
+    "label": "磐田市 公共下水道の供用開始区域",
+    "url": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/jougesuidou/gedsuidou/1001569.html",
+    "what": "新たに追加された供用開始区域の案内と区域図（PDF）。排水設備の手続きは「下水道の接続工事」（同課 1001557.html）",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "磐田市消防本部 住宅用火災警報器",
+    "url": "https://www.city.iwata.shizuoka.jp/bousai_anzen/1013969/kaji_sonae/1001166.html",
+    "what": "設置の義務・設置場所（寝室・階段）・磐田市火災予防条例の基準。消防本部 予防課",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "磐田市 水道関係の申請書など",
+    "url": "https://www.city.iwata.shizuoka.jp/sangyou_business/jyougesuidou/1005448.html",
+    "what": "給水装置工事申込書・しゅん工届などの様式。上下水道総務課 給排水サービスグループ（手順の説明は少ない）",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "磐田市 開発許可制度",
+    "url": "https://www.city.iwata.shizuoka.jp/sangyou_business/kaihatsu/1002169.html",
+    "what": "許可が要る規模（市街化区域1,000㎡以上・調整区域は原則すべて）、立地基準・技術基準の手引き、申請様式。都市計画課 土地対策グループ",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "磐田市 建築関係例規",
+    "url": "https://www.city.iwata.shizuoka.jp/sangyou_business/kenchiku/1005810.html",
+    "what": "条例化：あり（今之浦・磐田駅前・遠州豊田PA周辺・鎌田第一・下野部の5地区）。地区計画そのものの一覧ではない",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   }
+  ],
+  "掛川市": [
+   {
+    "label": "掛川市地区計画の区域内における建築物の制限に関する条例（平成21年条例第26号）",
+    "url": "https://ops-jg.d1-law.com/opensearch/SrJbF01/init?jctcd=8A8573C7C2&houcd=H421901010026",
+    "what": "条例化：あり（掛川市城下町風街づくり地区・洋望台地区）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "掛川市 下水道の種類と区域",
+    "url": "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/7503.html",
+    "what": "掛川・大東・大須賀処理区ごとの供用開始区域図（PDF）と事業計画書。排水設備は「宅内排水設備工事について」（docs/9813.html）",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "掛川市消防本部 住宅用火災警報器の点検及び交換",
+    "url": "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/8840.html",
+    "what": "住警器の設置の呼びかけ・点検・交換の目安。消防本部 予防課（設置基準の詳しい説明はない）",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "掛川市 給水装置工事の申込み",
+    "url": "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/8038.html",
+    "what": "給水装置工事（新設・改造）申込書・添付図面・完成届などの様式、申込業者用マニュアル（R8.4改訂）",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "掛川市 地区計画について",
+    "url": "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/9859.html",
+    "what": "地区計画の一覧（17地区）と届出書。一覧に条例の有無の記載なし",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   },
+   {
+    "label": "都市計画施設にかかる建築許可申請書（掛川市）",
+    "url": "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/9982.html",
+    "what": "53条（様式のページ）。許可権者・規模の記載はない。提出先は掛川市役所。窓口＝都市政策課 計画・土地利用係",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "補助"
+   }
+  ],
+  "袋井市": [
+   {
+    "label": "袋井市 排水設備工事",
+    "url": "https://www.city.fukuroi.shizuoka.jp/soshiki/21/2/gesuido/1422533458085.html",
+    "what": "処理区域の告示後1年以内の接続義務、指定工事店、確認申請書・完了届などの様式。区域図は「袋井市公共下水道計画処理区域図」（同 1422533455918.html。中身は未確認）",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "袋井市森町広域行政組合火災予防条例の一部改正（袋井消防本部）",
+    "url": "https://www.city.fukuroi.shizuoka.jp/kurashi_tetsuzuki/bosai_anzen/shobo/kasaiyoboujohou/1459763047104.html",
+    "what": "袋井市森町広域行政組合火災予防条例（別表第3）の改正のお知らせ。袋井消防本部 予防課。住警器の専用ページは見つからなかった",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "袋井市 給水装置の新設・変更について",
+    "url": "https://www.city.fukuroi.shizuoka.jp/soshiki/52/1_1/josuido/9515.html",
+    "what": "指定給水装置工事事業者を通した申込み、各種申請書、給水装置工事マニュアル。水道課 水道工事係",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "袋井市 土地利用事業及び開発行為の手続き等",
+    "url": "https://www.city.fukuroi.shizuoka.jp/soshiki/53/1/3/1486703128750.html",
+    "what": "土地利用事業（1,000㎡以上）・開発行為（3,000㎡以上）の手続き、開発行為等事務処理要領、都市計画法施行細則。建築住宅課 住宅土地対策係。29条・43条の文言はない",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "袋井市 地区計画について",
+    "url": "https://www.city.fukuroi.shizuoka.jp/soshiki/17/1/toshikeikaku/tikukeikaku/1552538409473.html",
+    "what": "市内の地区計画の一覧（19地区）と届出。一覧に条例の有無の記載なし",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "袋井市例規集",
+    "url": "https://krr179.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
+    "what": "条例化：なし（例規集に該当の条例なし。件名「地区計画」「建築物」で検索。10月17日確認）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   }
+  ],
+  "湖西市": [
+   {
+    "label": "湖西市地区計画の区域内における建築物等の制限に関する条例",
+    "url": "https://www.city.kosai.shizuoka.jp/section/reiki/reiki_honbun/g322RG00000613.html",
+    "what": "条例化：あり（市役所周辺・鷲津駅前・風の杜・吉美ニュータウン・ブライトスクエア鷲津駅前・新所原駅南・梅田ノナカ・あけぼの・郷北・柏原・北柏原・大沢・内山）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "湖西市消防本部 住宅用火災警報器",
+    "url": "https://www.city.kosai.shizuoka.jp/shobo/shobo_yobo/8855.html",
+    "what": "住警器の概要と点検の必要性。消防本部 予防課（設置基準の詳しい説明はない）",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "湖西市 開発行為について（都市計画法）",
+    "url": "https://www.city.kosai.shizuoka.jp/soshikiichiran/toshikeikakuka/gyomuannai/4/1/2/1257.html",
+    "what": "許可が要る規模（市街化区域1,000㎡以上・調整区域は原則すべて）、湖西市開発行為等の手引き、申請様式へのリンク。都市計画課 開発指導係",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "湖西市 地区計画",
+    "url": "https://www.city.kosai.shizuoka.jp/soshikiichiran/kenchikujutakuka/1_2/6632.html",
+    "what": "地区計画のパンフレット（市役所周辺・鷲津駅前 など11地区。大沢・内山は都市計画課へ）と届出。一覧に条例の有無の記載なし",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   },
+   {
+    "label": "水道管の工事（湖西市）",
+    "url": "https://www.city.kosai.shizuoka.jp/soshikiichiran/suidoka/1_1/suidousiyoushashoyuusha/1961.html",
+    "what": "給水装置工事（新設・改造）は指定工事業者に依頼。加入金・手数料。上下水道課",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "排水設備工事（湖西市）",
+    "url": "https://www.city.kosai.shizuoka.jp/soshikiichiran/gesuidoka/gyomuannai/3/1_1/1171.html",
+    "what": "公共下水道への排水設備工事の手続き（指定工事店・審査・検査）。処理区域の地図は、このページにはない",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   }
+  ],
+  "御前崎市": [
+   {
+    "label": "御前崎市 排水設備工事の手続き",
+    "url": "https://www.city.omaezaki.shizuoka.jp/kurashi/kurashi_tetsuduki/jogesuido/gesuidojigyo/tetsuduki/2756.html",
+    "what": "排水設備・水洗化工事は指定工事店、申請は工事店が代行、指定工事店一覧。上下水道課 下水道係。供用開始区域の地図は見つからなかった",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "御前崎市消防本部 住宅用火災警報器の設置及び維持管理",
+    "url": "https://www.city.omaezaki.shizuoka.jp/kurashi/bosai_bohan/shobo/fdinfomation/kehoki.html",
+    "what": "設置の義務・維持管理・訪問販売の注意。予防課（更新 2018-03-09）",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "御前崎市 給水装置工事申込関係の取扱い変更",
+    "url": "https://www.city.omaezaki.shizuoka.jp/kurashi/kurashi_tetsuduki/jogesuido/suidojigyo/4277.html",
+    "what": "給水装置工事申込の取扱い（R7.1以降の新様式・完了届一式）。申込みの手順の全体説明ではない",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "御前崎市 開発行為",
+    "url": "https://www.city.omaezaki.shizuoka.jp/kurashi/business/kenc_kaihatsu/kaihatsu/kaihatsu.html",
+    "what": "開発行為等の許可事務が県から市へ移譲（H19.4）、開発行為等事務処理要領（PDF）。都市整備課",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "御前崎市例規集",
+    "url": "https://krr029.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf",
+    "what": "条例化：なし（例規集に該当の条例なし。件名「地区計画」「建築物」で検索。10月17日確認）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   }
+  ],
+  "菊川市": [
+   {
+    "label": "菊川市 排水設備工事の手続きについて",
+    "url": "https://www.city.kikugawa.shizuoka.jp/gesuidou/gesuidou05.html",
+    "what": "指定工事店・計画確認申請・完了届・使用開始届の流れ。下水道課。供用開始区域の案内はない",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "菊川市消防本部 住宅用火災警報器",
+    "url": "https://www.city.kikugawa.shizuoka.jp/shoubouhonbu/kasaikeihouki.html",
+    "what": "設置の義務・種類・設置場所（寝室・階段）・交換の目安",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "菊川市 水道使用に関する工事（給水工事）",
+    "url": "https://www.city.kikugawa.shizuoka.jp/suidou/kouji_rousui.html",
+    "what": "新築・増改築で水回りが変わるときは給水工事の申請が必要、指定給水装置工事事業者または水道課へ、加入分担金",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "菊川市 開発許可",
+    "url": "https://www.city.kikugawa.shizuoka.jp/toshikeikaku/kaihatsukyoka.html",
+    "what": "許可が要る規模（都市計画区域内3,000㎡以上）、H19.4に県から権限移譲、事務処理要領・様式集・施行細則。都市計画課 都市計画係。43条の記載はない",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "菊川市 黒沢川特定都市河川の指定について",
+    "url": "https://www.city.kikugawa.shizuoka.jp/kenchiku/tokuteitoshikasen.html",
+    "what": "黒沢川が令和7年3月31日に特定都市河川に指定。建設課 流域治水係。雨水浸透阻害行為の許可の規模・窓口の記載はない",
+    "verified": true,
+    "purpose": "浸水",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "菊川市例規集（体系目次）",
+    "url": "https://www1.g-reiki.net/city.kikugawa/reiki_taikei/taikei_default.html",
+    "what": "条例化：なし（例規集に該当の条例なし。10月17日確認）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助"
+   }
+  ],
+  "牧之原市": [
+   {
+    "label": "牧之原市地区計画の区域内における建築物の制限に関する条例（令和6年条例第31号）",
+    "url": "https://www.city.makinohara.shizuoka.jp/reiki/reiki_honbun/r221RG00001419.html",
+    "what": "条例化：あり（IC北側地区）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡市消防局 火災予防に関する申請・届出（牧之原市のページからのリンク先）",
+    "url": "https://www.city.shizuoka.lg.jp/886_000065.html",
+    "what": "牧之原市の「火災予防関係届出手続きのご案内」から案内されている先。このページに牧之原市を管轄する旨の記載は確かめられなかった。管轄は牧之原市危機管理課 消防係（0548-23-0057）で確かめる",
+    "verified": false,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "牧之原市 水道工事をするとき",
+    "url": "https://www.city.makinohara.shizuoka.jp/soshiki/29/1715.html",
+    "what": "給水装置工事の事前協議・設計審査・申込書・検査・加入分担金の流れ。水道課 工務係（更新 2019-11-07）",
+    "verified": true,
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "牧之原市 開発行為",
+    "url": "https://www.city.makinohara.shizuoka.jp/soshiki/27/1970.html",
+    "what": "手続きが要る規模（都市計画区域内3,000㎡以上）、事務処理要領・施行細則・様式第1〜43号（建築許可の様式を含む）。都市住宅課",
+    "verified": true,
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
+   }
+  ],
+  "森町": [
+   {
+    "label": "中遠広域都市計画森町駅南周辺地区計画の区域内における建築物の制限に関する条例（平成23年条例第21号）",
+    "url": "https://en3-jg.d1-law.com/mori/d1w_reiki/H423901010021/H423901010021.html",
+    "what": "条例化：あり（森町駅南周辺地区）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "森町 公共下水道を利用するには",
+    "url": "https://www.town.morimachi.shizuoka.jp/gyosei/kurashi_tetsuzuki/jogesuido/gesuido/1242.html",
+    "what": "供用開始から1年以内の排水設備の設置、指定工事店、確認申請などの様式。上下水道課 下水道管理係。供用開始区域の一覧・地図はない",
+    "verified": true,
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "袋井市森町広域行政組合火災予防条例の一部改正（袋井消防本部）",
+    "url": "https://www.city.fukuroi.shizuoka.jp/kurashi_tetsuzuki/bosai_anzen/shobo/kasaiyoboujohou/1459763047104.html",
+    "what": "袋井市森町広域行政組合火災予防条例の改正のお知らせ（袋井市のサイト内）。森町を管轄する旨は条例の名前から。住警器の専用ページは見つからなかった",
+    "verified": true,
+    "purpose": "消防",
+    "role": "まずここで調べる"
+   }
+  ]
+ }
+}

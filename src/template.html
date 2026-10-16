@@ -1,0 +1,1297 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>建築確認 調べ先リンク集</title>
+<style>
+:root {
+  --bg:#F2F5F7; --panel:#FFFFFF; --ink:#0F2530; --sub:#5A6B73; --faint:#8A989F; --line:#DDE4E8;
+  --a:#17708F; --a2:#0E4F66; --a-ink:#FFFFFF; --a-pale:#E3F0F5; --glow:rgba(23,112,143,.20);
+  --ok:#2C7A51; --ok-pale:#E5F3EB; --warn:#9A6412; --warn-pale:#FFF4DE;
+  --memo:#FFF8D6; --memo-line:#E9D58A; --memo-ink:#5B4A12;
+  --c1:#17708F; --c2:#7A5AA8; --c3:#4D7C2A; --c4:#B5502E; --c5:#8C6A1C; --c6:#5B6770; --c7:#2D6C9E; --c8:#6B7280;
+  --shadow:0 1px 2px rgba(15,37,48,.05), 0 8px 24px rgba(15,37,48,.06);
+  --r:16px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg:#0D171C; --panel:#152329; --ink:#E5EDF0; --sub:#9EB0B8; --faint:#73868E; --line:#25353D;
+  --a:#5CB6D6; --a2:#3E93B3; --a-ink:#06141A; --a-pale:#17313B; --glow:rgba(92,182,214,.25);
+  --ok:#6CC18F; --ok-pale:#163024; --warn:#E6B66A; --warn-pale:#382C16;
+  --memo:#2F2A16; --memo-line:#5E5124; --memo-ink:#EBDDA4;
+  --c1:#5CB6D6; --c2:#B79BE0; --c3:#9BC873; --c4:#EE9373; --c5:#E0C06A; --c6:#A3B0B8; --c7:#7FB3E0; --c8:#A3A9B3;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.22); } }
+:root[data-theme="dark"] {
+  --bg:#0D171C; --panel:#152329; --ink:#E5EDF0; --sub:#9EB0B8; --faint:#73868E; --line:#25353D;
+  --a:#5CB6D6; --a2:#3E93B3; --a-ink:#06141A; --a-pale:#17313B; --glow:rgba(92,182,214,.25);
+  --ok:#6CC18F; --ok-pale:#163024; --warn:#E6B66A; --warn-pale:#382C16;
+  --memo:#2F2A16; --memo-line:#5E5124; --memo-ink:#EBDDA4;
+  --c1:#5CB6D6; --c2:#B79BE0; --c3:#9BC873; --c4:#EE9373; --c5:#E0C06A; --c6:#A3B0B8; --c7:#7FB3E0; --c8:#A3A9B3;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.22); }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:120px; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:"Yu Gothic UI","Yu Gothic","Hiragino Sans","Meiryo",sans-serif; font-size:16px; line-height:1.65; -webkit-font-smoothing:antialiased; }
+a { color:inherit; }
+button, input, textarea { font-family:inherit; color:inherit; }
+:focus-visible { outline:3px solid var(--glow); outline-offset:2px; border-radius:8px; }
+main:focus, main:focus-visible { outline:none; }
+.duo > *, .row > *, .lkline > *, .ttl > * { min-width:0; }
+.what, .who, .cmemo, .hit, .note { overflow-wrap:anywhere; }
+.wrap { max-width:1020px; margin:0 auto; padding:0 16px; }
+.ic-s { display:inline-block; vertical-align:-3px; }
+
+/* 上の帯 */
+header { background:color-mix(in srgb, var(--panel) 90%, transparent); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:10; }
+header .wrap { display:flex; align-items:center; gap:12px; padding-top:10px; padding-bottom:10px; }
+.brand { display:flex; align-items:center; gap:10px; cursor:pointer; white-space:nowrap; border:0; background:none; padding:2px; text-align:left; }
+.brand .mk { width:36px; height:36px; border-radius:10px; background:linear-gradient(135deg, #1A7FA2, #0E4F66); display:grid; place-items:center; color:#fff; box-shadow:0 3px 10px rgba(14,79,102,.3); }
+.brand b { font-size:17px; letter-spacing:.03em; display:block; line-height:1.25; }
+.brand small { display:block; font-size:11px; color:var(--sub); }
+.sbox { position:relative; flex:1; }
+.sbox > svg { position:absolute; left:14px; top:50%; transform:translateY(-50%); color:var(--faint); pointer-events:none; }
+#q { width:100%; padding:11px 44px 11px 42px; border:1.5px solid var(--line); border-radius:12px; font-size:16.5px; background:var(--panel); transition:border-color .15s, box-shadow .15s; }
+#q::placeholder { color:var(--faint); }
+#q:focus { outline:none; border-color:var(--a); box-shadow:0 0 0 4px var(--glow); }
+.kbd { position:absolute; right:12px; top:50%; transform:translateY(-50%); font-size:12px; color:var(--faint); border:1px solid var(--line); border-bottom-width:2px; border-radius:6px; padding:0 7px; pointer-events:none; background:var(--bg); }
+#sug { position:absolute; left:0; right:0; top:calc(100% + 6px); background:var(--panel); border:1px solid var(--line); border-radius:14px; box-shadow:0 12px 40px rgba(0,0,0,.16); display:none; max-height:64vh; overflow-y:auto; padding:6px; }
+#sug button { display:flex; justify-content:space-between; align-items:center; gap:10px; width:100%; text-align:left; border:0; background:none; padding:9px 12px; font-size:16px; cursor:pointer; border-radius:9px; }
+#sug button.on { background:var(--a-pale); }
+#sug button mark { background:none; color:var(--a); font-weight:bold; }
+#sug small { color:var(--sub); font-size:13px; white-space:nowrap; }
+#sug .tk { font-size:11px; color:var(--a); border:1px solid currentColor; border-radius:4px; padding:0 4px; margin-left:6px; }
+#sug .wd { border-top:1px solid var(--line); border-radius:0 0 9px 9px; margin-top:4px; padding-top:11px; color:var(--a); }
+.hbtn { position:relative; display:inline-flex; align-items:center; gap:6px; border:1px solid var(--line); background:var(--panel); border-radius:12px; padding:9px 12px; font-size:14.5px; cursor:pointer; white-space:nowrap; transition:all .12s; }
+.hbtn:hover { border-color:var(--a); color:var(--a); }
+.hbtn .cnt { min-width:20px; height:20px; border-radius:10px; background:var(--memo-line); color:var(--memo-ink); font-size:12px; font-weight:bold; display:inline-grid; place-items:center; padding:0 5px; }
+.hbtn.sq { padding:9px; }
+main { padding:22px 0 36px; min-height:62vh; }
+.fade { animation:fade .24s ease-out; }
+@keyframes fade { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
+@media (prefers-reduced-motion: reduce) { .fade { animation:none; } html { scroll-behavior:auto; } * { transition:none !important; } }
+
+/* はじめの画面 */
+.hero { position:relative; overflow:hidden; border-radius:20px; padding:28px 28px 24px; margin-bottom:16px; color:#fff;
+  background:radial-gradient(900px 260px at 95% -30%, rgba(255,255,255,.20), transparent 60%), radial-gradient(500px 200px at 0% 120%, rgba(92,182,214,.35), transparent 60%), linear-gradient(135deg, #1A7FA2 0%, #0E4F66 58%, #0A3A4B 100%); box-shadow:0 10px 30px rgba(14,79,102,.25); }
+.hero h2 { font-size:30px; margin:0 0 6px; letter-spacing:.03em; line-height:1.3; }
+.hero p { margin:0; opacity:.92; font-size:15.5px; max-width:640px; }
+.hero .stats { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+.hero .stats div { background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.2); border-radius:12px; padding:6px 14px; }
+.hero .stats b { font-size:22px; margin-right:4px; font-variant-numeric:tabular-nums; }
+.hero .stats span { font-size:13px; opacity:.9; }
+.hero .deco { position:absolute; right:-6px; bottom:-14px; opacity:.14; pointer-events:none; }
+.band { display:flex; align-items:center; gap:12px; background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:11px 14px; margin:0 0 16px; box-shadow:var(--shadow); }
+.dot { width:32px; height:32px; flex:none; border-radius:50%; display:grid; place-items:center; background:var(--ok-pale); color:var(--ok); }
+.band.warn .dot { background:var(--warn-pale); color:var(--warn); }
+.band .tx { flex:1; font-size:15px; line-height:1.5; }
+.band .tx small { display:block; color:var(--sub); font-size:12.5px; }
+.pill { display:inline-flex; align-items:center; gap:6px; border:1px solid var(--line); background:var(--panel); border-radius:999px; padding:5px 14px; font-size:14.5px; cursor:pointer; transition:all .12s; white-space:nowrap; }
+.pill:hover { border-color:var(--a); color:var(--a); }
+.pill.memo { background:var(--memo); border-color:var(--memo-line); color:var(--memo-ink); }
+.shelf { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:0 0 14px; }
+.shelf > span { color:var(--sub); font-size:13.5px; margin-right:4px; display:inline-flex; align-items:center; gap:5px; }
+.pref { background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:15px 16px 16px; margin-bottom:14px; box-shadow:var(--shadow); }
+.pref h3 { margin:0 0 11px; font-size:18px; display:flex; align-items:center; gap:10px; }
+.pref h3 .n { font-size:13px; color:var(--sub); font-weight:normal; flex:1; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(114px, 1fr)); gap:7px; }
+.grid button { position:relative; border:1px solid var(--line); background:var(--bg); border-radius:10px; padding:8px 6px; font-size:15px; cursor:pointer; transition:all .12s; }
+.grid button:hover { border-color:var(--a); background:var(--a-pale); color:var(--a); transform:translateY(-1px); box-shadow:0 4px 10px var(--glow); }
+.grid button.tk { font-weight:bold; }
+.grid button .d { position:absolute; top:6px; right:6px; width:7px; height:7px; border-radius:50%; background:var(--a); }
+.grid button .mm { position:absolute; top:4px; left:5px; color:var(--memo-line); }
+.legend { font-size:13px; color:var(--sub); margin:2px 4px 0; display:flex; flex-wrap:wrap; align-items:center; gap:4px 16px; }
+.legend i { display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--a); margin-right:5px; }
+
+/* 市町村の画面 */
+.crumbs { display:flex; align-items:center; gap:6px; font-size:14px; color:var(--sub); margin-bottom:6px; }
+.crumbs button { border:0; background:none; color:var(--a); cursor:pointer; padding:2px 0; font-size:14px; }
+.crumbs button:hover { text-decoration:underline; }
+.ttl { display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; margin-bottom:12px; }
+.ttl h2 { font-size:32px; margin:0; letter-spacing:.03em; line-height:1.2; }
+.ttl .sp { flex:1; }
+.badge { display:inline-flex; align-items:center; gap:5px; font-size:13px; font-weight:bold; color:var(--a); background:var(--a-pale); border-radius:999px; padding:3px 11px; }
+.duo { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px; }
+.who { display:flex; gap:12px; align-items:flex-start; background:var(--panel); border:1px solid var(--line); border-left:4px solid var(--a); border-radius:14px; padding:12px 14px; font-size:15px; box-shadow:var(--shadow); }
+.who svg { flex:none; color:var(--a); margin-top:2px; }
+.who b { color:var(--a); }
+.cmemo { background:var(--memo); border:1px solid var(--memo-line); border-radius:14px; padding:10px 12px; color:var(--memo-ink); box-shadow:var(--shadow); }
+.cmemo .h { display:flex; align-items:center; gap:6px; font-size:13.5px; font-weight:bold; margin-bottom:4px; }
+.cmemo .h .st { margin-left:auto; font-weight:normal; font-size:12px; opacity:.8; }
+.cmemo textarea { width:100%; min-height:52px; border:0; background:transparent; resize:vertical; font-size:15px; line-height:1.6; color:var(--memo-ink); padding:0; }
+.cmemo textarea:focus { outline:none; }
+.cmemo textarea::placeholder { color:var(--memo-ink); opacity:.55; }
+.toc { position:sticky; top:63px; z-index:6; display:flex; gap:6px; overflow-x:auto; padding:8px 0 10px; margin:0 0 4px; background:linear-gradient(var(--bg) 75%, transparent); scrollbar-width:none; }
+.toc::-webkit-scrollbar { display:none; }
+.toc a { flex:none; text-decoration:none; font-size:13.5px; border:1px solid var(--line); background:var(--panel); border-radius:999px; padding:4px 12px 4px 9px; display:inline-flex; align-items:center; gap:6px; transition:all .12s; }
+.toc a:hover { border-color:var(--pc); color:var(--pc); }
+.toc a i { width:8px; height:8px; border-radius:50%; background:var(--pc); }
+.toc a.off { opacity:.45; }
+.row { --pc:var(--c1); background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:15px 16px; margin-bottom:12px; display:grid; grid-template-columns:46px 180px 1fr; gap:4px 14px; align-items:start; box-shadow:var(--shadow); transition:box-shadow .2s; }
+.row:target, .row.flash { box-shadow:0 0 0 3px color-mix(in srgb, var(--pc) 35%, transparent), var(--shadow); }
+.row .ic { width:46px; height:46px; border-radius:13px; display:grid; place-items:center; color:var(--pc); background:color-mix(in srgb, var(--pc) 13%, transparent); }
+.row .k b { display:block; font-size:17.5px; line-height:1.35; margin-top:2px; }
+.row .k small { color:var(--sub); font-size:12.5px; line-height:1.5; display:block; margin-top:3px; }
+.lk { margin-bottom:2px; }
+.lk + .lk { margin-top:10px; }
+.lkline { display:flex; gap:8px; align-items:stretch; }
+.go { flex:1; display:flex; align-items:center; gap:12px; text-decoration:none; background:linear-gradient(135deg, var(--a), var(--a2)); color:var(--a-ink); border-radius:12px; padding:11px 16px; font-weight:bold; font-size:16px; transition:transform .12s, box-shadow .12s; box-shadow:0 2px 8px var(--glow); min-width:0; }
+.go:hover { transform:translateY(-1px); box-shadow:0 8px 20px var(--glow); }
+.go .lbl { flex:1; min-width:0; }
+.go svg { flex:none; opacity:.9; }
+.go.sub { background:var(--panel); color:var(--a); border:1px solid var(--line); box-shadow:none; font-size:15px; padding:9px 14px; }
+.go.sub:hover { border-color:var(--a); background:var(--a-pale); box-shadow:none; }
+.act { flex:none; display:grid; place-items:center; width:42px; border:1px solid var(--line); background:var(--panel); border-radius:12px; cursor:pointer; color:var(--sub); transition:all .12s; }
+.act:hover { border-color:var(--a); color:var(--a); }
+.act.has { background:var(--memo); border-color:var(--memo-line); color:var(--memo-ink); }
+.tagk { display:inline-block; font-size:11.5px; font-weight:bold; background:rgba(255,255,255,.22); border-radius:4px; padding:0 6px; margin-right:8px; vertical-align:1px; }
+.go.sub .tagk { background:var(--a-pale); color:var(--a); }
+.what { font-size:14px; color:var(--sub); margin:6px 2px 0; }
+.note { display:inline-flex; align-items:center; gap:5px; font-size:12.5px; color:var(--warn); background:var(--warn-pale); border-radius:7px; padding:2px 9px; margin:6px 4px 0 2px; }
+.lmemo { margin:8px 0 0; background:var(--memo); border:1px solid var(--memo-line); border-radius:10px; padding:7px 10px; color:var(--memo-ink); }
+.lmemo textarea { width:100%; min-height:42px; border:0; background:transparent; resize:vertical; font-size:14.5px; line-height:1.55; color:var(--memo-ink); padding:0; }
+.lmemo textarea:focus { outline:none; }
+.lmemo textarea::placeholder { color:var(--memo-ink); opacity:.55; }
+.lmemo .st { font-size:11.5px; opacity:.75; text-align:right; }
+details.more { margin-top:10px; }
+details.more summary { cursor:pointer; color:var(--a); font-size:14px; list-style:none; display:inline-flex; align-items:center; gap:5px; padding:2px 0; }
+details.more summary::-webkit-details-marker { display:none; }
+details.more summary::before { content:""; width:7px; height:7px; border-right:2px solid currentColor; border-bottom:2px solid currentColor; transform:rotate(-45deg); transition:transform .15s; margin-right:3px; }
+details.more[open] summary::before { transform:rotate(45deg); }
+details.more > div { margin-top:8px; padding-left:10px; border-left:2px solid var(--line); }
+.none { color:var(--sub); font-size:14.5px; padding-top:11px; }
+.row.empty { box-shadow:none; background:transparent; border-style:dashed; }
+.row.empty .ic { filter:grayscale(1); opacity:.55; }
+.row.empty .k b { color:var(--sub); }
+
+/* 一覧の画面（検索・見回り・メモ） */
+.hits h2 { font-size:24px; margin:0 0 4px; }
+.hits .lead { color:var(--sub); margin:0 0 16px; font-size:14.5px; }
+.hit { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:11px 14px; margin-bottom:8px; box-shadow:var(--shadow); }
+.hit .w2 { font-size:13px; color:var(--sub); display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+.hit .w2 button { border:0; background:none; color:var(--a); cursor:pointer; padding:0; font-size:13px; }
+.hit .w2 button:hover { text-decoration:underline; }
+.hit a.t { color:var(--a); font-weight:bold; text-decoration:none; }
+.hit a.t:hover { text-decoration:underline; }
+.hit .url { font-size:12px; color:var(--faint); word-break:break-all; }
+.hit .mtx { background:var(--memo); border:1px solid var(--memo-line); color:var(--memo-ink); border-radius:9px; padding:6px 10px; margin-top:6px; white-space:pre-wrap; font-size:14.5px; }
+.grp { margin-bottom:20px; }
+.grp h3 { font-size:16px; margin:0 0 9px; display:flex; align-items:center; gap:8px; }
+.grp h3 span { font-size:13px; background:var(--a-pale); color:var(--a); border-radius:999px; padding:0 9px; }
+.grp .nil { color:var(--sub); font-size:14px; padding:4px 2px; }
+.tools { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 18px; }
+.empty-state { text-align:center; color:var(--sub); padding:40px 16px; background:var(--panel); border:1px dashed var(--line); border-radius:var(--r); }
+.empty-state svg { color:var(--memo-line); margin-bottom:6px; }
+.gate { text-align:center; max-width:560px; margin:60px auto; background:var(--panel); border:1px solid var(--line); border-radius:20px; padding:36px 24px; box-shadow:var(--shadow); }
+.gate .gi { width:66px; height:66px; margin:0 auto 12px; border-radius:50%; display:grid; place-items:center; background:var(--a-pale); color:var(--a); }
+.gate h2 { margin:0 0 8px; font-size:22px; }
+.gate p { margin:0; color:var(--sub); }
+footer { font-size:13px; color:var(--sub); padding:0 0 34px; line-height:1.75; }
+footer .wrap { border-top:1px solid var(--line); padding-top:14px; }
+.toast { position:fixed; left:50%; bottom:24px; transform:translateX(-50%) translateY(20px); background:var(--ink); color:var(--bg); border-radius:999px; padding:9px 20px; font-size:14px; opacity:0; transition:all .2s; pointer-events:none; z-index:30; box-shadow:0 8px 24px rgba(0,0,0,.2); }
+.toast.on { opacity:1; transform:translateX(-50%); }
+.sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+@media (max-width: 760px) {
+  header .wrap { flex-wrap:wrap; }
+  .brand small, .kbd, .hbtn .lb { display:none; }
+  .sbox { order:3; flex-basis:100%; }
+  .brand { flex:1; }
+  .duo { grid-template-columns:1fr; }
+  .row { grid-template-columns:40px 1fr; padding:13px; }
+  .row .ic { width:40px; height:40px; }
+  .row > .body { grid-column:1 / -1; }
+  .toc { top:108px; }
+  .hero { padding:22px 20px; } .hero h2 { font-size:24px; }
+  .ttl h2 { font-size:26px; }
+  .ttl .sp { display:none; }
+  .ttl .pill { font-size:13.5px; padding:4px 11px; }
+  .cmemo .h { flex-wrap:wrap; } .cmemo .h .st { margin-left:0; width:100%; }
+  .hbtn { padding:8px 10px; }
+  .act { width:38px; }
+}
+@media print {
+  header, .crumbs, .toc, .band, .act, .ttl .pill, details.more summary, .toast, .cmemo textarea:placeholder-shown { display:none !important; }
+  body { background:#fff; } main { padding:0; }
+  .row, .who, .cmemo { box-shadow:none; break-inside:avoid; }
+  details.more > div { display:block !important; }
+  .go { background:none !important; color:#000 !important; border:1px solid #bbb; box-shadow:none !important; }
+  .go::after { content:"  " attr(href); font-weight:normal; font-size:10px; word-break:break-all; }
+}
+
+/* 2026-10-16 見やすく：重いボタンをやめ、1目的＝1枚の、静かなカードに */
+.row { grid-template-columns:1fr; gap:0; padding:0; overflow:hidden; }
+.row .rh { display:flex; align-items:center; gap:10px; padding:11px 16px 9px; border-bottom:1px solid var(--line); }
+.row .rh .ic { width:30px; height:30px; border-radius:8px; }
+.row .rh .ic svg { width:17px; height:17px; }
+.row .rh b { font-size:16.5px; }
+.row .body { padding:6px 8px 8px; }
+.lk { display:flex; align-items:flex-start; gap:6px; border-radius:10px; padding:8px 8px; margin:0 !important; }
+.lk:hover { background:var(--a-pale); }
+.lk .main { flex:1; min-width:0; text-decoration:none; display:block; }
+.lk .main .tl { color:var(--a); font-weight:bold; font-size:16px; line-height:1.45; }
+.lk .main .tl svg { vertical-align:-2px; margin-left:4px; opacity:.7; }
+.lk .main .what { margin:2px 0 0; font-size:13.5px; }
+.lk .first { display:inline-block; font-size:11.5px; font-weight:bold; color:#fff; background:var(--a); border-radius:4px; padding:0 6px; margin-right:6px; vertical-align:2px; }
+.lk .tagk { background:var(--chip, var(--bg)); color:var(--sub); border:1px solid var(--line); }
+.lk .acts { flex:none; display:flex; gap:2px; opacity:.45; transition:opacity .12s; }
+.lk:hover .acts, .lk:focus-within .acts { opacity:1; }
+.act { width:34px; height:34px; border:0; background:none; border-radius:8px; }
+.act:hover { background:var(--panel); }
+.act.has { opacity:1; }
+.lk .lmemo { flex-basis:100%; }
+.lkw { display:flex; flex-wrap:wrap; }
+.lkw > .lk { flex:1 1 100%; }
+.lkw > .lmemo { flex:1 1 100%; margin:0 8px 6px; }
+details.more { margin:2px 8px 4px; }
+details.more > div { padding-left:0; border-left:0; margin-top:2px; }
+.row.empty .rh { border-bottom:0; }
+.row.empty .body { padding:0 16px 12px; }
+.sub2 { font-size:14px; color:var(--sub); margin:-4px 0 14px; }
+.sub2 b { color:var(--ink); }
+.cmemo { margin:0 0 14px; }
+.duo, .toc { display:none !important; }
+.ttl { margin-bottom:6px; }
+
+/* 物件の調べ（地名地番・結果・調べた） */
+.hero form { display:flex; gap:8px; margin-top:18px; max-width:640px; }
+.hero form input { flex:1; min-width:0; border:0; border-radius:12px; padding:12px 14px; font-size:16.5px; background:rgba(255,255,255,.96); color:#0F2530; }
+.hero form input::placeholder { color:#6B7B83; }
+.hero form button { border:0; border-radius:12px; padding:0 18px; font-size:15.5px; font-weight:bold; background:#FFD86B; color:#3B2E05; cursor:pointer; white-space:nowrap; }
+.hero form button:hover { filter:brightness(1.05); }
+.hero .or { font-size:13px; opacity:.85; margin-top:8px; }
+.hero .msg { font-size:14px; margin-top:8px; background:rgba(0,0,0,.18); border-radius:8px; padding:4px 10px; display:inline-block; }
+.case { background:var(--panel); border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow); padding:12px 14px; margin:0 0 14px; }
+.case .r1 { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.case label { font-size:13px; color:var(--sub); white-space:nowrap; }
+.case input { flex:1; min-width:180px; border:1.5px solid var(--line); border-radius:10px; padding:8px 12px; font-size:16px; background:var(--bg); }
+.case input:focus { outline:none; border-color:var(--a); box-shadow:0 0 0 3px var(--glow); }
+.case .btn { display:inline-flex; align-items:center; gap:6px; border:0; border-radius:10px; padding:8px 14px; font-size:14.5px; font-weight:bold; cursor:pointer; background:var(--a); color:var(--a-ink); white-space:nowrap; }
+.case .btn.ghost { background:none; color:var(--sub); border:1px solid var(--line); font-weight:normal; }
+.case .btn.ghost:hover { color:var(--a); border-color:var(--a); }
+.case .r2 { display:flex; align-items:center; gap:12px; margin-top:9px; flex-wrap:wrap; }
+.case .bar { flex:1; min-width:140px; height:8px; border-radius:4px; background:var(--bg); overflow:hidden; border:1px solid var(--line); }
+.case .bar i { display:block; height:100%; background:linear-gradient(90deg, var(--ok), #4FB37C); width:0; transition:width .3s; }
+.case .cnt { font-size:14.5px; font-weight:bold; white-space:nowrap; }
+.case .cnt.all { color:var(--ok); }
+.case .hint { font-size:12px; color:var(--faint); }
+.row .rh .sp { flex:1; }
+.res { width:min(380px, 42vw); border:1px solid var(--line); border-radius:8px; padding:5px 10px; font-size:14.5px; background:var(--bg); }
+.res:focus { outline:none; border-color:var(--a); box-shadow:0 0 0 3px var(--glow); background:var(--panel); }
+.chk { display:inline-flex; align-items:center; gap:5px; border:1.5px solid var(--line); background:var(--panel); border-radius:999px; padding:4px 12px 4px 8px; font-size:13.5px; cursor:pointer; white-space:nowrap; color:var(--sub); transition:all .15s; }
+.chk .bx { width:16px; height:16px; border-radius:5px; border:1.5px solid currentColor; display:grid; place-items:center; }
+.chk:hover { border-color:var(--ok); color:var(--ok); }
+.row.done .chk { background:var(--ok); border-color:var(--ok); color:#fff; }
+.row.done .chk .bx { background:#fff; color:var(--ok); border-color:#fff; }
+.row.done .rh { background:var(--ok-pale); }
+.row.done .body { opacity:.72; }
+@media (max-width: 760px) {
+  .case { top:108px; }
+  .row .rh { flex-wrap:wrap; } .row .rh .sp { display:none; }
+  .res { order:5; width:100%; }
+  .hero form { flex-direction:column; } .hero form button { padding:10px; }
+}
+@media print {
+  .case { position:static; box-shadow:none; } .case .btn, .case .hint, .chk { display:none !important; }
+  .res { border:0; padding:0; font-weight:bold; }
+}
+
+/* 画面の写し（スクショ） */
+.shots { display:flex; flex-wrap:wrap; gap:8px; padding:4px 16px 12px; align-items:center; }
+.shots:empty { display:none; }
+.shot { position:relative; width:150px; height:96px; border-radius:9px; overflow:hidden; border:1px solid var(--line); background:var(--bg); cursor:zoom-in; }
+.shot img { width:100%; height:100%; object-fit:cover; object-position:top left; display:block; }
+.shot button { position:absolute; top:4px; right:4px; width:22px; height:22px; border-radius:50%; border:0; background:rgba(0,0,0,.6); color:#fff; cursor:pointer; font-size:13px; line-height:1; }
+.pastebtn { display:inline-flex; align-items:center; gap:5px; border:1.5px dashed var(--line); background:none; border-radius:999px; padding:3px 11px; font-size:13px; color:var(--sub); cursor:pointer; white-space:nowrap; }
+.pastebtn:hover, .row.active .pastebtn { border-color:var(--a); color:var(--a); }
+.row.active { box-shadow:0 0 0 2px var(--glow), var(--shadow); }
+.row.drag { box-shadow:0 0 0 3px var(--a), var(--shadow); }
+#zoom { position:fixed; inset:0; background:rgba(5,15,20,.82); z-index:40; display:none; place-items:center; padding:24px; cursor:zoom-out; }
+#zoom img { max-width:100%; max-height:100%; border-radius:8px; box-shadow:0 10px 40px rgba(0,0,0,.5); }
+.case .btn.rec { background:#2C7A51; }
+@media print { .pastebtn, .shot button { display:none !important; } }
+
+/* 2026-10-16 文字を大きく・押しやすく（だれでも使える） */
+body { font-size:18.5px; line-height:1.7; }
+:root { --sub:#44545C; --faint:#6B7B83; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --sub:#B8C6CC; --faint:#93A4AB; } }
+:root[data-theme="dark"] { --sub:#B8C6CC; --faint:#93A4AB; }
+.wrap { max-width:1080px; }
+.brand b { font-size:20px; } .brand small { font-size:13px; }
+#q { font-size:19px; padding:14px 46px 14px 46px; }
+#sug button { font-size:19px; padding:12px 14px; } #sug small { font-size:15px; }
+.hbtn { font-size:17px; padding:11px 14px; }
+.hero h2 { font-size:34px; } .hero p { font-size:18px; }
+.hero form input { font-size:19px; padding:15px 16px; } .hero form button { font-size:18px; padding:0 22px; }
+.hero .or { font-size:15px; }
+.band .tx { font-size:17px; } .band .tx small { font-size:14.5px; }
+.pill { font-size:16.5px; padding:8px 16px; }
+.pref h3 { font-size:21px; } .pref h3 .n { font-size:15px; }
+.grid { grid-template-columns:repeat(auto-fill, minmax(132px, 1fr)); gap:9px; }
+.grid button { font-size:18px; padding:12px 6px; }
+.legend { font-size:15px; }
+.crumbs, .crumbs button { font-size:16px; }
+.ttl h2 { font-size:36px; }
+.badge { font-size:15px; padding:4px 13px; }
+.sub2 { font-size:17px; }
+.case label { font-size:16px; color:var(--ink); font-weight:bold; }
+.case input { font-size:18.5px; padding:11px 14px; }
+.case .btn { font-size:17px; padding:11px 18px; }
+.case .cnt { font-size:18px; } .case .hint { font-size:15px; color:var(--sub); }
+.row .rh { padding:14px 18px 12px; } .row .rh b { font-size:20px; }
+.row .rh .ic { width:38px; height:38px; } .row .rh .ic svg { width:21px; height:21px; }
+.res { font-size:17px; padding:9px 12px; width:min(420px, 40vw); }
+.chk { font-size:16.5px; padding:8px 16px 8px 11px; } .chk .bx { width:20px; height:20px; }
+.pastebtn { font-size:16px; padding:7px 14px; }
+.lk { padding:12px 12px; }
+.lk .main .tl { font-size:19px; }
+.lk .main .what { font-size:16px; }
+.lk .acts { opacity:1; gap:6px; }
+.act { width:auto; height:auto; padding:7px 12px; border:1px solid var(--line); background:var(--panel); border-radius:10px; font-size:15px; display:inline-flex; align-items:center; gap:5px; color:var(--sub); }
+.act::after { content:attr(data-lb); }
+.note { font-size:15px; }
+details.more summary { font-size:17px; padding:6px 0; }
+.cmemo .h { font-size:16px; } .cmemo textarea, .lmemo textarea { font-size:17px; }
+.hit { padding:14px 16px; } .hit .w2, .hit .w2 button { font-size:15px; } .hit .mtx { font-size:17px; }
+.hits h2 { font-size:28px; } .hits .lead { font-size:17px; }
+.grp h3 { font-size:19px; }
+footer { font-size:15px; }
+.toast { font-size:17px; padding:12px 24px; bottom:30px; max-width:90vw; text-align:center; }
+.gate h2 { font-size:26px; } .gate p { font-size:18px; }
+.kbd { display:none; }
+@media (max-width: 760px) { .ttl h2 { font-size:28px; } .res { width:100%; } .grid { grid-template-columns:repeat(auto-fill, minmax(112px, 1fr)); } }
+
+/* 早くたどり着く：番号キー・帯を小さく */
+.row .rh .no { flex:none; width:30px; height:30px; border-radius:8px; display:grid; place-items:center; font-weight:bold; font-size:17px; color:#fff; background:var(--pc); }
+.case { padding:10px 14px; }
+.case .r2 { margin-top:8px; gap:8px; }
+.case .r2 .btn { padding:8px 14px; font-size:16px; }
+.case .bar { max-width:160px; }
+.case .hint { font-size:14.5px; margin-top:4px; }
+.keys { font-size:15px; color:var(--sub); margin:-6px 0 12px; }
+.keys b { display:inline-block; min-width:24px; text-align:center; border:1px solid var(--line); border-bottom-width:2px; border-radius:6px; padding:0 5px; background:var(--panel); color:var(--ink); }
+@media (max-width: 760px) { .keys { display:none; } }
+
+/* 入力・チェックは廃止（2026-10-16）。メモも出さない */
+#memoBtn, .cmemo, [data-go="cmemo"], [data-lmemo], .lmemo, .pill.memo, .shelf:has(.pill.memo), .legend span:nth-child(2), .grid button .mm { display:none !important; }
+
+/* 色の意味（2026-10-16）
+   目的の色＝その目的だけに使う（番号・左の線・いちばん上のページ）。緑＝済んだ。黄＝気をつけて。青（基本の色）＝操作 */
+:root { --c1:#1E6FB8; --c7:#4B4FB0; --c3:#18806E; --c4:#C2412D; --c9:#3E8A3A; --c5:#94621A; --c6:#68757D; --c2:#8A4FB0; --c8:#6B7280; --done:#2C8A57; --done-pale:#E4F5EA; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --c1:#6FB2F0; --c7:#9EA2F2; --c3:#5CC8B4; --c4:#F08A73; --c9:#86CD7D; --c5:#E0B064; --c6:#A9B5BC; --c2:#C69BEA; --done:#6CD198; --done-pale:#173326; } }
+:root[data-theme="dark"] { --c1:#6FB2F0; --c7:#9EA2F2; --c3:#5CC8B4; --c4:#F08A73; --c9:#86CD7D; --c5:#E0B064; --c6:#A9B5BC; --c2:#C69BEA; --done:#6CD198; --done-pale:#173326; }
+.row { border-left:6px solid var(--pc); }
+.row .rh { background:color-mix(in srgb, var(--pc) 7%, var(--panel)); border-bottom-color:color-mix(in srgb, var(--pc) 22%, var(--line)); }
+.row .rh b { color:color-mix(in srgb, var(--pc) 70%, var(--ink)); }
+.row .lk.top { background:color-mix(in srgb, var(--pc) 9%, transparent); border:1.5px solid color-mix(in srgb, var(--pc) 45%, transparent); margin:4px 0 2px !important; }
+.row .lk.top:hover { background:color-mix(in srgb, var(--pc) 16%, transparent); }
+.row .lk.top .tl { color:color-mix(in srgb, var(--pc) 80%, var(--ink)); font-size:20px; }
+.row .lk.top .tl svg { opacity:1; }
+.row .lk .tl { color:var(--ink); }
+.row .seen { display:none; align-items:center; gap:5px; font-size:15.5px; font-weight:bold; color:var(--done); background:var(--done-pale); border-radius:999px; padding:4px 12px; white-space:nowrap; }
+.row.is-seen .seen { display:inline-flex; }
+.row.is-seen .no { background:var(--done); }
+.row.is-seen { border-left-color:var(--done); }
+.prog { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:10px; font-size:17px; }
+.prog b { color:var(--done); }
+.prog .dots { display:flex; gap:6px; flex-wrap:wrap; }
+.prog .dots i { width:28px; height:28px; border-radius:7px; display:grid; place-items:center; font-style:normal; font-size:14.5px; font-weight:bold; color:#fff; background:var(--pc); opacity:.45; cursor:pointer; }
+.prog .dots i.on { background:var(--done); opacity:1; }
+.steps { display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; margin:0 0 16px; }
+.steps > div { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:12px 14px; box-shadow:var(--shadow); display:flex; gap:10px; align-items:flex-start; font-size:17.5px; line-height:1.45; font-weight:bold; }
+.steps > div > span { flex:none; width:32px; height:32px; border-radius:50%; background:var(--a); color:#fff; display:grid; place-items:center; }
+.steps small { display:block; color:var(--sub); font-size:14.5px; margin-top:3px; font-weight:normal; }
+.toast.ok { background:var(--done); color:#fff; }
+.keys { display:none; }
+@media (max-width: 760px) { .steps { grid-template-columns:1fr; } }
+
+/* 文字を減らす・並びを整える（2026-10-16） */
+.brand small { display:none; }
+.crumbs { display:none; }
+.ttl { margin:4px 0 14px; align-items:baseline; }
+.ttl .note2 { font-size:16px; color:var(--sub); }
+.sub2, .ttl .pill { display:none !important; }
+.case { padding:12px 16px; }
+.case .r1 label { display:none; }
+.case .line2 { display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-top:10px; }
+.case .line2 .prog { margin:0; flex:1; min-width:260px; }
+.case .line2 .dir { font-size:14.5px; color:var(--sub); white-space:nowrap; }
+.case .line2 .dir button { border:0; background:none; color:var(--a); cursor:pointer; font-size:14.5px; padding:0 0 0 4px; text-decoration:underline; }
+.case .how { font-size:14.5px; color:var(--sub); margin-top:6px; }
+.case .how b { color:var(--ink); background:var(--bg); border:1px solid var(--line); border-bottom-width:2px; border-radius:6px; padding:0 6px; font-weight:normal; font-size:13.5px; }
+.lk .main .what { display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden; }
+.lk:hover .main .what, .lk:focus-within .main .what { -webkit-line-clamp:unset; }
+.lk .acts { display:none; }
+.row .body { padding:8px 10px 10px; }
+.row.empty .body { padding:10px 18px 14px; font-size:16px; }
+.hero { padding:30px 30px 26px; }
+.hero p { display:none; }
+.hero .or { display:none; }
+.hero .stats { margin-top:16px; }
+.steps > div { align-items:center; }
+.steps small { display:none; }
+.band { display:none; }
+.legend { justify-content:center; }
+footer { font-size:14px; }
+.fade { animation:none !important; }
+
+/* 左に目次・右に中身（2026-10-16） */
+.md { display:grid; grid-template-columns:250px 1fr; gap:16px; align-items:start; }
+.mdl { position:sticky; top:84px; background:var(--panel); border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow); padding:8px; display:flex; flex-direction:column; gap:3px; }
+.mdl button { --pc:var(--c1); display:flex; align-items:center; gap:10px; width:100%; text-align:left; border:0; background:none; border-radius:10px; padding:11px 12px; font-size:18px; cursor:pointer; color:var(--ink); position:relative; }
+.mdl button:hover { background:color-mix(in srgb, var(--pc) 9%, transparent); }
+.mdl button .n { flex:none; width:30px; height:30px; border-radius:8px; display:grid; place-items:center; font-weight:bold; font-size:16px; color:#fff; background:var(--pc); }
+.mdl button .tx { flex:1; line-height:1.3; }
+.mdl button .ck { flex:none; color:var(--done); display:none; }
+.mdl button.seen .ck { display:block; }
+.mdl button.seen .n { background:var(--done); }
+.mdl button.sel { background:color-mix(in srgb, var(--pc) 14%, transparent); font-weight:bold; color:color-mix(in srgb, var(--pc) 75%, var(--ink)); }
+.mdl button.sel::before { content:""; position:absolute; left:-8px; top:8px; bottom:8px; width:5px; border-radius:0 4px 4px 0; background:var(--pc); }
+.mdl button.none .tx { color:var(--faint); }
+.mdr .row { display:none; margin:0; }
+.mdr .row.sel { display:block; }
+.mdr .row .rh { padding:16px 20px 14px; }
+.mdr .row .rh b { font-size:24px; }
+.mdr .row .body { padding:12px 14px 14px; }
+.mdr .lk { margin:0 0 8px !important; border:1.5px solid var(--line); }
+.mdr .lk.top { border-color:color-mix(in srgb, var(--pc) 50%, transparent); }
+.mdr .lk .main .what { -webkit-line-clamp:unset; display:block; }
+.mdr details.more { margin:6px 0 0; }
+.mdr details.more > summary { display:none; }
+.mdr details.more > div { display:block; margin:0; }
+.mdr .shots { padding:4px 20px 16px; }
+.mdr .nextp { display:flex; justify-content:flex-end; padding:0 16px 14px; }
+.mdr .nextp button { border:1px solid var(--line); background:var(--panel); border-radius:10px; padding:9px 16px; font-size:16.5px; cursor:pointer; color:var(--a); }
+.mdr .nextp button:hover { border-color:var(--a); }
+.prog .dots { display:none; }
+@media (max-width: 760px) {
+  .md { grid-template-columns:1fr; }
+  .mdl { position:static; flex-direction:row; overflow-x:auto; padding:6px; }
+  .mdl button { flex:none; width:auto; padding:8px 10px; font-size:16px; }
+  .mdl button.sel::before { display:none; }
+}
+
+/* 目次のまとまり・関係規定の一覧 */
+.mdl .grp { font-size:13.5px; color:var(--faint); font-weight:bold; padding:10px 12px 2px; letter-spacing:.05em; }
+.mdl .grp:first-child { padding-top:4px; }
+.mdl button { padding:9px 12px; font-size:17px; }
+.mdl button .n { width:28px; height:28px; font-size:15px; }
+.law { background:var(--panel); border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow); overflow:hidden; }
+.law table { width:100%; border-collapse:collapse; }
+.law th, .law td { text-align:left; padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; font-size:17px; }
+.law th { background:var(--bg); font-size:15px; color:var(--sub); }
+.law td.nm b { display:block; } .law td.nm small { color:var(--sub); font-size:14.5px; }
+.law a { color:var(--a); }
+.hs { display:inline-block; border-radius:999px; padding:2px 12px; font-size:15px; font-weight:bold; white-space:nowrap; }
+.hs.よく { background:#C2412D; color:#fff; } .hs.場合 { background:#F2C14E; color:#3B2E05; } .hs.まれ { background:var(--bg); color:var(--faint); border:1px solid var(--line); }
+.law tr.まれ td { color:var(--sub); }
+.lawtabs { display:flex; gap:8px; margin:0 0 12px; flex-wrap:wrap; }
+.hbtn.law-b { font-weight:bold; }
+
+/* 利用規約 */
+#terms { position:fixed; inset:0; z-index:50; background:rgba(5,15,20,.6); display:none; place-items:center; padding:16px; }
+#terms .box { background:var(--panel); border-radius:18px; max-width:760px; width:100%; max-height:88vh; display:flex; flex-direction:column; box-shadow:0 20px 60px rgba(0,0,0,.35); }
+#terms .tx { overflow-y:auto; padding:22px 26px 8px; font-size:16.5px; line-height:1.75; }
+#terms .tx h2 { font-size:23px; margin:0; } #terms .tx .tv { color:var(--sub); font-size:14px; margin:2px 0 10px; }
+#terms .tx h3 { font-size:17.5px; margin:16px 0 4px; } #terms .tx p, #terms .tx ul { margin:0 0 6px; } #terms .tx li { margin:2px 0; }
+#terms .ft { padding:14px 26px 18px; border-top:1px solid var(--line); display:flex; gap:10px; justify-content:flex-end; flex-wrap:wrap; }
+#terms .ft button { border:0; border-radius:12px; padding:12px 22px; font-size:17px; font-weight:bold; cursor:pointer; background:var(--a); color:var(--a-ink); }
+#terms .ft button.g { background:none; border:1px solid var(--line); color:var(--sub); font-weight:normal; }
+footer a.tl { color:var(--a); cursor:pointer; text-decoration:underline; }
+
+.holdn { display:flex; gap:12px; align-items:flex-start; background:var(--warn-pale); border:1px solid #E2B04A; border-radius:14px; padding:12px 16px; margin:0 0 14px; font-size:16.5px; line-height:1.6; }
+.holdn svg { flex:none; color:var(--warn); margin-top:3px; }
+
+/* 鬼レビュー（2026-10-17）：入口を1つに・はみ出さない・目次を1画面に */
+html, body { overflow-x:hidden; }
+body.home header .sbox { visibility:hidden; }
+.hero .stats, .hero .deco { display:none; }
+.hero { padding:26px 28px; }
+.hero h2 { font-size:30px; margin-bottom:14px; }
+.hero form { margin-top:0; max-width:none; }
+.hero form input { font-size:20px; padding:16px 18px; }
+.hero form button { font-size:19px; padding:0 26px; }
+.steps > div { font-size:17px; font-weight:normal; }
+.steps > div b { font-weight:bold; }
+.back2 { border:0; background:none; color:var(--a); font-size:16px; cursor:pointer; padding:2px 0; margin:0 0 2px; }
+.back2:hover { text-decoration:underline; }
+.md > *, .case > *, .case .r1 > * { min-width:0; }
+.mdl { max-height:calc(100vh - 100px); overflow-y:auto; }
+.mdl .grp { padding:8px 12px 0; }
+.mdl button { padding:7px 12px; }
+.law td:nth-child(1), .law td:nth-child(4), .law td:nth-child(5) { white-space:nowrap; }
+.law td:nth-child(5) a { white-space:nowrap; }
+@media (max-width: 760px) {
+  .mdl .grp { display:none; }
+  .mdl { max-height:none; }
+  .mdl button { flex:none; }
+  .case .r1 { flex-wrap:nowrap; } .case .r1 input { min-width:0; flex:1; }
+  .case .btn { padding:10px 12px; }
+  .law table, .law tbody, .law tr, .law td { display:block; width:100%; } .law tr:first-child { display:none; }
+  .law td { border:0; padding:4px 14px; } .law tr { border-bottom:1px solid var(--line); padding:8px 0; }
+  .hbtn.law-b { padding:9px 10px; font-size:15px; }
+}
+
+/* 地域ごとの一覧・絞り込み */
+.rg { display:grid; grid-template-columns:96px 1fr; gap:8px 12px; align-items:start; padding:8px 0; border-top:1px dashed var(--line); }
+.pref h3 + .rg { border-top:0; padding-top:0; }
+.rgn { font-size:15.5px; font-weight:bold; color:var(--sub); padding-top:11px; }
+.rg.dim, .pref.dim { display:none; }
+.grid button.dim { opacity:.25; }
+.grid button.hit { border-color:var(--a); background:var(--a-pale); color:var(--a); font-weight:bold; }
+.hero .msg { margin-top:10px; font-size:16px; }
+@media (max-width: 760px) { .rg { grid-template-columns:1fr; gap:4px; } .rgn { padding-top:4px; } }
+
+#terms .sum { background:var(--a-pale); border-radius:12px; padding:12px 16px 6px; margin:4px 0 12px; }
+#terms .sum ol { margin:6px 0 4px; padding-left:22px; } #terms .sum li { margin:4px 0; }
+#terms .tx h3 { font-size:16.5px; }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <button class="brand" id="home" title="はじめの画面へ">
+    <span class="mk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l7-5 7 5v12"/><path d="M9 21v-6h6v6"/></svg></span>
+    <span><b>調べ先リンク集</b><small>建築確認　静岡・山梨・神奈川</small></span>
+  </button>
+  <div class="sbox">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" autocomplete="off" placeholder="市町村の名前を入れる（例：沼津、甲府、藤沢）" aria-label="市町村の名前、または探すことば" aria-controls="sug">
+    <span class="kbd" id="kbd" aria-hidden="true">/</span>
+    <div id="sug" role="listbox"></div>
+  </div>
+  <button class="hbtn" id="memoBtn" title="メモの一覧"><span id="memoIc"></span><span class="lb">メモ</span><span class="cnt" id="memoCnt" hidden></span></button>
+  <button class="hbtn law-b" id="lawBtn" title="建築基準関係規定の一覧">関係規定</button>
+  <button class="hbtn sq" id="themeBtn" title="画面の明るさを切り替える" aria-label="画面の明るさ"><span id="themeIc"></span></button>
+</div></header>
+<main class="wrap" id="main" tabindex="-1"></main>
+<footer><div class="wrap" id="foot"></div></footer>
+<div id="terms" role="dialog" aria-modal="true" aria-label="利用規約"><div class="box"><div class="tx"><h2>調べ先リンク集　利用規約（案）</h2>
+<p class="tv">2026年10月17日 版（第3版）</p>
+<div class="sum"><b>使う前に、次のことに同意してください。</b>
+<ol><li>この道具は<b>調べ先の案内</b>です。区域・道路・法令に当たるかは<b>判断しません</b>。審査の判断は、審査をする方が、リンク先の正式な情報で行ってください。</li>
+<li>リンクや説明の<b>正しさ・最新であること・すべてを載せていることは、保証しません</b>。載っていない区域・規定・調べ先があります。</li>
+<li>リンク先のサイトの内容・開けるかどうか・そこで起きたことに、当社は責任を負いません。</li>
+<li>地名地番と画面の写しは、<b>利用者のPCの中だけ</b>で扱います。画面の写しが保存されたかは、利用者が確かめてください。</li>
+<li>試用を認めた機関の方だけが使えます。この画面の場所を、外の方に渡さないでください。</li></ol></div>
+<h3>第1条（この道具について）</h3>
+<p>「調べ先リンク集」（以下「本道具」）は、建築確認の審査・申請で調べる先（県・市町村・国などの公式のページ）を、目的ごとにまとめた案内です。株式会社マルホープ（以下「当社」）が、試用として無償で提供します。</p>
+<h3>第2条（同意）</h3>
+<p>利用者は、本道具を開くたびに、この規約に同意してから使います。同意しないときは、使えません。</p>
+<h3>第3条（使える人・期間）</h3>
+<ul><li>本道具を使えるのは、当社が試用を認めた機関に所属する方だけです。本道具の場所（URL）を、ほかの方に渡したり、公開したりしないでください。</li>
+<li>試用の期間・時間は、画面の下に書いたとおりです。当社は、期間・時間・内容を、予告なく変えたり、止めたりすることがあります。</li></ul>
+<h3>第4条（本道具が行わないこと）</h3>
+<ul><li>本道具は、法令に適合しているか、区域・道路・規制に当たるか、許可・届出が要るかを<b>判断しません</b>。</li>
+<li>本道具は参考の案内です。確認の審査・申請の判断の根拠には、リンク先の正式な告示・図面・条例と、担当の課への確認を用いてください。審査・申請の判断の責任は、それを行う方にあります。</li>
+<li>「戸建てでかかりやすい」などの表示は、当社の目安です。</li></ul>
+<h3>第5条（内容を保証しないこと）</h3>
+<ul><li>当社は、本道具のリンク・説明・一覧について、正しいこと、最新であること、すべてを載せていること、利用者の目的に合うことを保証しません。</li>
+<li>法令・告示・条例・区域・リンク先のページは、変わることがあります。当社はリンクが開けるかを毎日見回りますが、中身の変更までは確かめていません。</li>
+<li>本道具に載っていない区域・規定・調べ先があります。載っていないことは、当てはまらないことを意味しません。</li></ul>
+<h3>第6条（リンク先について）</h3>
+<ul><li>リンク先のページは、それぞれの持ち主が管理しています。当社は、リンク先の内容、開けるかどうか、リンク先で利用者に生じたこと（不具合・ウイルスなどを含む）に責任を負いません。</li>
+<li>本道具は、県・市町村・国の機関とは関係がありません。リンク先の機関が本道具を勧めているわけではありません。</li>
+<li>当社は、リンク先の各サイトの、リンクについての決まりに沿うよう努めます。リンク先の機関からご指摘があったときは、すぐに直すか外します。リンクに事前の許可が要るサイトは、許可をいただくまで載せません。</li>
+<li>リンク先の地図・資料の画面を写して使うときは、それぞれのサイトの利用規約（出典の書き方・使ってよい範囲）に従ってください。国土地理院の地図は「出典：国土地理院」を付けます。</li></ul>
+<h3>第7条（情報の扱い）</h3>
+<ul><li>貼り付けた地名地番は、開いているタブの中だけに置き、閉じると消えます。当社には送りません。</li>
+<li>画面の写し（PDF）は、利用者が選んだ、利用者のPCのフォルダに保存します。当社には送りません。保存できなかった・消えたことについて、当社は責任を負いません。大事な記録は、保存されたことを確かめ、利用者の決まりで保管してください。</li>
+<li>本道具を開くと、リンクの一覧を当社の置き場（GitHub）から読み込みます。このとき置き場の側に、開いた日時と接続元が記録されることがあります。</li>
+<li>利用者のPC・ブラウザの管理（ほかの人に画面を見られない など）は、利用者が行ってください。</li></ul>
+<h3>第8条（してはいけないこと）</h3>
+<ul><li>本道具の画面・一覧を、当社に断らずに写して配る・売る・作り変えること。</li>
+<li>機械で大量に開くなど、本道具やリンク先のサイトに負担をかける使い方。</li>
+<li>試用の期間・時間・同意の仕組みを外して使うこと。</li>
+<li>法令やこの規約に反する使い方。</li></ul>
+<h3>第9条（責任の範囲）</h3>
+<ul><li>本道具を使ったこと、使えなかったこと、本道具の内容に誤りがあったことで利用者や第三者に生じた損害について、当社に故意または重大な過失がある場合を除き、当社は責任を負いません。</li>
+<li>当社が責任を負う場合も、その範囲は、直接かつ通常の損害に限ります。</li></ul>
+<h3>第10条（知的財産）</h3>
+<p>本道具の画面・一覧・説明の文の権利は、当社または正当な権利者にあります。リンク先の情報の権利は、それぞれの持ち主にあります。</p>
+<h3>第11条（規約の変更）</h3>
+<p>当社は、この規約を変えることがあります。変えた規約は、本道具の画面に出した時点から効力を持ちます。</p>
+<h3>第12条（準拠法・裁判所）</h3>
+<p>この規約は、日本の法律に従います。本道具について争いが生じたときは、当社の本店の所在地を受け持つ地方裁判所を、第一審の専属の裁判所とします。</p>
+<h3>第13条（問い合わせ）</h3>
+<p>株式会社マルホープ　岩崎（連絡先は名刺をご覧ください）。リンク先の機関の方からのご連絡も受け付けます。</p></div><div class="ft"><button class="g" id="termsClose" hidden>閉じる</button><button id="termsOk">上の1〜5と規約に同意して使う</button></div></div></div>
+<div id="zoom" role="dialog" aria-label="画面の写し"><img alt=""></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const SITE = /*SITE*/"";
+let D = /*DATA*/null;      // 中に入っている一覧。最新の一覧（latest.js）が取れたら、そちらを使う
+let ST = {}, ST_AT = "", MUNIS = [], NLINK = 0;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const norm = s => String(s).replace(/[ヶケが]/g, "ケ").replace(/[\s　]/g, "").toLowerCase();
+const isTk = (p, m) => p.tokutei.some(t => t.replace(/（.*/, "") === m);
+function setData(d) {
+  D = d; ST = (d.status && d.status.links) || {}; ST_AT = (d.status && d.status.checked_at) || "";
+  MUNIS = []; D.prefs.forEach((p, i) => Object.keys(p.munis).forEach(m => MUNIS.push({ p: i, m })));
+  NLINK = D.prefs.reduce((n, p) => n + p.pref.length + Object.values(p.munis).reduce((a, xs) => a + xs.length, 0), 0);
+}
+
+/* このブラウザに残すもの（メモ・最近見た・明るさ）。外には送らない */
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } },
+};
+let MEMO = store.get("linkshu-memo", {});      // { "m:静岡県/沼津市": {t, at}, "u:<url>": {t, at, where} }
+let recent = store.get("linkshu-recent", []);
+const canStore = store.set("linkshu-probe", 1);
+const memoKeyM = (p, m) => "m:" + p + "/" + (m || "");
+const memoKeyU = u => "u:" + u;
+function memoSet(k, t, where) {
+  const s = t.trim();
+  if (s) MEMO[k] = { t: s, at: new Date().toISOString().slice(0, 16).replace("T", " "), ...(where ? { where } : {}) }; else delete MEMO[k];
+  const ok = store.set("linkshu-memo", MEMO); memoCount(); return ok;
+}
+function memoCount() { const n = Object.keys(MEMO).length; const c = $("#memoCnt"); c.hidden = !n; c.textContent = n; }
+const muniHasMemo = (pn, m) => MEMO[memoKeyM(pn, m)] || Object.values(MEMO).some(v => v.where === pn + "/" + m);
+
+/* 物件の調べ。地名地番と結果は、このタブの中だけに残す（閉じると消える）。外には送らない */
+const ss = {
+  get(k, d) { try { const v = sessionStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { sessionStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+};
+let CASE = ss.get("linkshu-case", { addr: "", where: "", items: {} });   // items: {目的: {done, note}}
+function caseSave() { ss.set("linkshu-case", CASE); }
+function caseFor(where) { if (CASE.where !== where) CASE = { addr: CASE.where ? "" : CASE.addr, where, items: {} }; caseSave(); }
+const EX = { "都市計画": "例：第一種住居 60/200・準防火", "道路": "例：42条1項1号・幅員6m", "道路台帳": "例：市道○号線・認定幅員6m", "災害": "例：区域外", "地形": "例：高低差 約1m・がけなし",
+  "盛土": "例：宅造区域・許可不要", "白地": "例：該当なし", "中間検査": "例：対象外（告示○号）", "そのほか": "例：景観計画区域" };
+function findMuni(addr) {     // 地名地番から市町村を見つける（いちばん長く合うもの）
+  const a = norm(addr); let best = null;
+  MUNIS.forEach(o => { const n = norm(o.m); const i = a.indexOf(n); if (i >= 0 && (!best || n.length > norm(best.m).length)) best = o; });
+  return best;
+}
+
+/* 画面の写しの置き場。このPCのブラウザの中（IndexedDB）だけ。外には送らない */
+const SHOTS = {};      // { where|目的: [dataURL] }
+const idb = (() => {
+  let db = null;
+  const open = () => new Promise(res => { try { const r = indexedDB.open("linkshu", 1); r.onupgradeneeded = () => r.result.createObjectStore("shots"); r.onsuccess = () => { db = r.result; res(db); }; r.onerror = () => res(null); } catch (e) { res(null); } });
+  const ready = open();
+  const tx = async (mode, fn) => { await ready; if (!db) return null; return new Promise(res => { try { const s = db.transaction("shots", mode).objectStore("shots"); const q = fn(s); q.onsuccess = () => res(q.result); q.onerror = () => res(null); } catch (e) { res(null); } }); };
+  return { get: k => tx("readonly", s => s.get(k)), put: (k, v) => tx("readwrite", s => s.put(v, k)), clear: () => tx("readwrite", s => s.clear()) };
+})();
+const shotKey = k => CASE.where + "|" + k;
+async function shotsLoad(k) { return SHOTS[shotKey(k)] || []; }
+function shrink(blob) {       // 長い辺 1600 画素まで小さくして、JPEG に
+  return new Promise(res => { const u = URL.createObjectURL(blob), im = new Image();
+    im.onload = () => { const s = Math.min(1, 1600 / Math.max(im.width, im.height)), c = document.createElement("canvas"); c.width = Math.round(im.width * s); c.height = Math.round(im.height * s);
+      c.getContext("2d").drawImage(im, 0, 0, c.width, c.height); URL.revokeObjectURL(u); res(c.toDataURL("image/jpeg", .85)); };
+    im.onerror = () => res(null); im.src = u; });
+}
+async function addShot(k, blob) {
+  const d = await shrink(blob); if (!d) { toast("画像を読み込めませんでした"); return; }
+  const r = document.querySelector(`.row[data-k="${CSS.escape(k)}"]`), name = r ? r.querySelector(".rh b").textContent : k;
+  try {
+    const where = await saveShotPdf(name, d);
+    (SHOTS[shotKey(k)] = SHOTS[shotKey(k)] || []).push(d); drawShots(k); markSeen(k, true);
+    toast(`「${name}」の写しを PDF で保存しました：${where}`, "ok");
+  } catch (e) { toast("保存できませんでした（" + (e && e.name === "NotAllowedError" ? "フォルダへの書き込みが許可されていません。保存先を選び直してください" : "ネットにつながっているか確かめてください") + "）"); }
+}
+async function drawShots(k) {
+  const box = document.querySelector(`.shots[data-sk="${CSS.escape(k)}"]`); if (!box) return;
+  const arr = await shotsLoad(k);
+  box.innerHTML = arr.map((d, i) => `<div class="shot" data-zoom="${i}"><img src="${d}" alt="画面の写し ${i + 1}"></div>`).join("");
+}
+let ACTIVE = "";
+function setActive(k) {
+  ACTIVE = k;
+  document.querySelectorAll(".row[data-k]").forEach(r => { r.classList.toggle("sel", r.dataset.k === k); r.classList.remove("active"); });
+  document.querySelectorAll(".mdl [data-sel]").forEach(b => b.classList.toggle("sel", b.dataset.sel === k));
+}
+
+/* 目的ごとの色と絵 */
+const ICON = {
+  "都市計画": ["--c1", '<path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/>'],
+  "道路": ["--c7", '<path d="M8 3 4 21M16 3l4 18"/><path d="M12 4v3M12 10.5v3M12 17v3"/>'],
+  "道路台帳": ["--c3", '<path d="M4 4h11a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3z"/><path d="M4 17a3 3 0 0 1 3-3h11"/>'],
+  "災害": ["--c4", '<path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17h.01"/>'],
+  "地区計画": ["--c1", '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>'],
+  "建築協定": ["--c7", '<path d="M8 3h8l3 3v15H5V3z"/><path d="M9 12h6M9 16h4"/>'],
+  "開発許可": ["--c5", '<path d="M4 20h16M6 20V10l6-5 6 5v10"/><path d="M10 14h4"/>'],
+  "浸水": ["--c4", '<path d="M3 15c3 0 3 2 6 2s3-2 6-2 3 2 6 2"/><path d="M12 3s5 5 5 8a5 5 0 0 1-10 0c0-3 5-8 5-8z"/>'],
+  "下水道": ["--c3", '<path d="M4 6h16M4 12h16M4 18h16"/>'],
+  "浄化槽": ["--c3", '<rect x="4" y="8" width="16" height="10" rx="2"/><path d="M8 8V5h8v3"/>'],
+  "水道": ["--c7", '<path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/>'],
+  "消防": ["--c4", '<path d="M12 3c2 4 6 6 6 11a6 6 0 0 1-12 0c0-3 2-5 3-6 0 2 1 3 2 3 0-3 0-6 1-8z"/>'],
+  "地形": ["--c9", '<path d="m3 20 6-10 4 6 3-4 5 8z"/><path d="M14 6h.01"/>'],
+  "盛土": ["--c5", '<path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/>'],
+  "白地": ["--c6", '<rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 12h16" stroke-dasharray="2 3"/>'],
+  "中間検査": ["--c2", '<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="m9 13 2 2 4-4"/>'],
+  "そのほか": ["--c8", '<circle cx="6" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="18" cy="12" r="1.3"/>'],
+};
+const svg = (d, s = 22, cls = "") => `<svg class="${cls}" width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
+const I = {
+  arrow: '<path d="M7 17 17 7M8 7h9v9"/>',
+  memo: '<path d="M5 3h10l4 4v14H5z"/><path d="M14 3v5h5M8 13h8M8 17h5"/>',
+  pen: '<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="m13.5 6.5 4 4"/>',
+  copy: '<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/>',
+  print: '<path d="M7 9V3h10v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v7H7z"/>',
+  info: '<circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/>',
+  warn: '<path d="M12 9v4M12 17h.01"/><circle cx="12" cy="12" r="9"/>',
+  ok: '<path d="m5 12 5 5 9-10"/>',
+  bld: '<path d="M3 21h18M5 21V9l7-5 7 5v12"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  moon: '<path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/>',
+  hist: '<path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/>',
+  down: '<path d="M12 3v12M7 10l5 5 5-5M5 21h14"/>',
+  up: '<path d="M12 21V9M7 14l5-5 5 5M5 3h14"/>',
+};
+
+function toast(t, kind) { const e = $("#toast"); e.textContent = t; e.className = "toast " + (kind || ""); void e.offsetWidth; e.classList.add("on"); clearTimeout(toast.t); toast.t = setTimeout(() => e.classList.remove("on"), 3500); }
+function copy(t, msg) { (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(() => toast(msg), () => prompt("この内容を写してください", t)); }
+function forMuni(p, m) { return p.pref.filter(x => (!x.only || x.only.includes(m)) && (!x.except || !x.except.includes(m))); }
+const recentChg = d => d && (Date.now() - new Date(d)) / 864e5 <= 60;
+function problem(st) {
+  if (!st || (st.fails || 0) < 2) return "";
+  return st.kind === "top" ? "トップページに移ってしまいます（ページが移ったかもしれません）" : st.kind === "notfound" ? "「ページが見つかりません」と出ます" : "いま開けない状態です";
+}
+function flags(x) {
+  const st = ST[x.url], f = [];
+  const pb = problem(st); if (pb) f.push(pb);
+  if (st && recentChg(st.changed)) f.push(`${st.changed} にページの${st.why === "title" ? "題名" : "中身"}が変わりました。告示・条例の改正かもしれません。開いて確かめてください`);
+  if (x.verified === false) f.push("地図などで、中身までは確かめていません");
+  return f.map(t => `<span class="note">${svg(I.warn, 13)}${esc(t)}</span>`).join("");
+}
+const score = x => (x.role || "").startsWith("まず") ? 0 : 1;
+function show(html, focus = true) { document.body.classList.remove("home"); const m = $("#main"); m.innerHTML = html; m.classList.remove("fade"); void m.offsetWidth; m.classList.add("fade"); window.scrollTo(0, 0); if (focus) m.focus({ preventScroll: true }); }
+function go(h) { history.replaceState(null, "", h ? "#" + encodeURIComponent(h) : location.pathname + location.search); }
+
+/* 見回り */
+function issues() {
+  const out = [];
+  D.prefs.forEach(p => [[p.name + "（県のページ）", p.pref], ...Object.entries(p.munis)].forEach(([m, xs]) => xs.forEach(x => {
+    const st = ST[x.url]; if (!st) return;
+    const pb = problem(st), ch = recentChg(st.changed), once = (st.fails || 0) === 1;
+    if (pb || ch || once) out.push({ p, m, x, st, pb, ch, once });
+  })));
+  return out;
+}
+function checkBand() {
+  if (!ST_AT) return "";
+  const is = issues(), n = is.filter(o => o.pb).length, c = is.filter(o => o.ch).length, bad = n || c;
+  return `<div class="band ${bad ? "warn" : ""}"><div class="dot">${svg(bad ? I.warn : I.ok, 18)}</div>
+    <div class="tx">${bad ? `中身が変わったページ <b>${c}</b> 件・開けないリンク <b>${n}</b> 件があります` : `${NLINK} 件のリンクは、すべて開けました`}<small>毎日 19 時に、すべてのリンクを見回っています（前回 ${esc(ST_AT)}）</small></div>
+    <button class="pill" data-go="check">見回りの結果</button></div>`;
+}
+function report() {
+  go("見回り");
+  const is = issues();
+  const grp = (t, xs, why) => `<div class="grp"><h3>${esc(t)}<span>${xs.length}</span></h3>${xs.length ? xs.map(o => hit(o.p, o.m, o.x, why(o))).join("") : `<div class="nil">ありません</div>`}</div>`;
+  show(`<div class="crumbs"><button data-go="home">はじめ</button>›<span>見回りの結果</span></div><div class="hits"><h2>リンクの見回りの結果</h2>
+    <p class="lead">${ST_AT ? `前回の見回り ${esc(ST_AT)}。` : ""}開いて確かめ、ページが移っていたら、新しい場所をマルホープへお知らせください。</p>`
+    + grp("開けないリンク（2回続けて）", is.filter(o => o.pb), o => o.pb + `（状態 ${o.st.code}）`)
+    + grp("中身・題名が変わったページ（60日以内）", is.filter(o => o.ch && !o.pb).sort((a, b) => (b.st.changed || "").localeCompare(a.st.changed || "")), o => `${o.st.changed} に${o.st.why === "title" ? "題名" : "中身"}が変わった（いまの題名：${o.st.title || "―"}）`)
+    + grp("今回だけ開けなかった（次の見回りで、もう一度見ます）", is.filter(o => o.once), o => `状態 ${o.st.code}`)
+    + "</div>");
+}
+function hit(p, m, x, extra) {
+  const real = p.munis[m] ? m : "";
+  const mm = MEMO[memoKeyU(x.url)];
+  return `<div class="hit"><div class="w2">${esc(p.name)}　${real ? `<button data-p="${D.prefs.indexOf(p)}" data-m="${esc(real)}">${esc(real)}</button>` : esc(m)}　／ ${esc(x.purpose || "")}</div>
+    <a class="t" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)} ↗</a>${x.what ? `<div class="w2">${esc(x.what)}</div>` : ""}
+    ${extra ? `<div class="w2">${esc(extra)}</div>` : ""}${mm ? `<div class="mtx">${esc(mm.t)}</div>` : ""}</div>`;
+}
+
+/* はじめの画面 */
+/* 市町村の地域（一覧を探しやすくするため） */
+const REGION = {
+  "静岡県": [["伊豆", "熱海市 伊東市 下田市 伊豆市 伊豆の国市 東伊豆町 河津町 南伊豆町 松崎町 西伊豆町 函南町"],
+            ["東部", "沼津市 三島市 富士宮市 富士市 御殿場市 裾野市 清水町 長泉町 小山町"],
+            ["中部", "静岡市 島田市 焼津市 藤枝市 牧之原市 吉田町 川根本町"],
+            ["西部", "浜松市 磐田市 掛川市 袋井市 湖西市 御前崎市 菊川市 森町"]],
+  "山梨県": [["中北", "甲府市 韮崎市 南アルプス市 北杜市 甲斐市 中央市 昭和町"],
+            ["峡東", "山梨市 笛吹市 甲州市"],
+            ["峡南", "市川三郷町 早川町 身延町 南部町 富士川町"],
+            ["富士・東部", "富士吉田市 都留市 大月市 上野原市 道志村 西桂町 忍野村 山中湖村 鳴沢村 富士河口湖町 小菅村 丹波山村"]],
+  "神奈川県": [["横浜・川崎", "横浜市 川崎市"],
+            ["横須賀・三浦", "横須賀市 鎌倉市 逗子市 三浦市 葉山町"],
+            ["湘南", "平塚市 藤沢市 茅ヶ崎市 秦野市 伊勢原市 寒川町 大磯町 二宮町"],
+            ["県央", "相模原市 厚木市 大和市 海老名市 座間市 綾瀬市 愛川町 清川村"],
+            ["県西", "小田原市 南足柄市 中井町 大井町 松田町 山北町 開成町 箱根町 真鶴町 湯河原町"]],
+};
+function regions(p) {     // 地域ごとの市町村の並び。地域に入っていない市町村は「そのほか」に
+  const ms = Object.keys(p.munis), used = new Set(), out = [];
+  (REGION[p.name] || []).forEach(([r, s]) => { const xs = s.split(" ").filter(m => p.munis[m]); xs.forEach(m => used.add(m)); if (xs.length) out.push([r, xs]); });
+  const rest = ms.filter(m => !used.has(m)); if (rest.length) out.push(["そのほか", rest]);
+  return out;
+}
+
+function narrow() {     // はじめの枠に入れた字で、一覧を絞る（地名地番を貼ったときは、市町村の名前の部分で）
+  const v = norm(($("#startA") || {}).value || ""), bs = [...document.querySelectorAll(".grid button[data-nm]")];
+  const o = v ? findMuni(v) : null, key = o ? norm(o.m) : v.replace(/^(静岡県|山梨県|神奈川県)/, "");
+  let hit = 0;
+  bs.forEach(b => { const on = !key || b.dataset.nm.includes(key) || (o && b.dataset.nm === norm(o.m)); b.classList.toggle("dim", !on); b.classList.toggle("hit", !!key && on); if (on) hit++; });
+  document.querySelectorAll(".rg").forEach(g => g.classList.toggle("dim", !!key && !g.querySelector("button:not(.dim)")));
+  document.querySelectorAll(".pref").forEach(g => g.classList.toggle("dim", !!key && !g.querySelector(".rg:not(.dim)")));
+  const msg = $("#startMsg"); if (msg) msg.innerHTML = key ? `<span class="msg">${hit ? `${hit} 件。${hit === 1 ? "Enter で開きます" : "下から選んでください"}` : "見つかりません"}</span>` : "";
+}
+function home() {
+  go(""); setTimeout(() => { const a = $("#startA"); if (a && !/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)) a.focus(); }, 50);
+  const rc = recent.filter(r => D.prefs[r.p] && D.prefs[r.p].munis[r.m]);
+  const memoed = MUNIS.filter(o => muniHasMemo(D.prefs[o.p].name, o.m));
+  show(`<div class="hero"><h2>どこの物件を調べますか？</h2>
+      <p>都市計画・建築基準法の道路・災害・盛土・中間検査を、どこで調べるか。県と市町村の公式のページだけを、目的ごとにまとめました。</p>
+      <form id="startF" autocomplete="off"><input id="startA" placeholder="市町村の名前、または地名地番を貼る（例：沼津市大手町1丁目1番1）" aria-label="市町村の名前、または地名地番" value="${esc(CASE.addr || "")}"><button type="submit">調べはじめる</button></form>
+      <div class="or">貼ると、その市町村の調べ先が開きます。地名地番は、この画面を閉じると消えます（外には送りません）。</div><div id="startMsg"></div>
+      <div class="stats"><div><b>${D.prefs.length}</b><span>県</span></div><div><b>${MUNIS.length}</b><span>市町村</span></div><div><b>${NLINK}</b><span>公式のページ</span></div></div>
+      <svg class="deco" width="240" height="160" viewBox="0 0 24 16" fill="none" stroke="#fff" stroke-width=".5"><path d="M1 15h22M3 15V8l5-4 5 4v7M13 15V6l4-3 4 3v9M6 15v-4h4v4M15 9h4M15 12h4"/></svg></div>`
+    + `<div class="steps"><div><span>1</span><div><b>市町村か地名地番</b>を入れて Enter</div></div>
+      <div><span>2</span><div>左の目次で<b>目的を選び</b>、ページを開く</div></div>
+      <div><span>3</span><div>画面を切り取り <b>Ctrl + V</b> で PDF 保存</div></div></div>`
+    + checkBand()
+    + (rc.length ? `<div class="shelf"><span>${svg(I.hist, 15)}最近見た</span>${rc.map(r => `<button class="pill" data-p="${r.p}" data-m="${esc(r.m)}">${esc(r.m)}</button>`).join("")}</div>` : "")
+    + (memoed.length ? `<div class="shelf"><span>${svg(I.memo, 15)}メモのある市町村</span>${memoed.map(o => `<button class="pill memo" data-p="${o.p}" data-m="${esc(o.m)}">${esc(o.m)}</button>`).join("")}</div>` : "")
+    + D.prefs.map((p, i) => `<div class="pref"><h3>${esc(p.name)}<span class="n">${Object.keys(p.munis).length} 市町村</span><button class="pill" data-p="${i}" data-m="">県全体のページ</button></h3>
+      ${regions(p).map(([r, xs]) => `<div class="rg"><div class="rgn">${esc(r)}</div><div class="grid">${xs.map(m => `<button class="${isTk(p, m) ? "tk" : ""}" data-p="${i}" data-m="${esc(m)}" data-nm="${esc(norm(m))}" title="${isTk(p, m) ? "特定行政庁" : ""}">${esc(m)}${isTk(p, m) ? '<span class="d"></span>' : ""}</button>`).join("")}</div></div>`).join("")}</div>`).join("")
+    + `<div class="legend"><span><i></i>太字と点＝特定行政庁</span></div>`, false);
+  document.body.classList.add("home");
+  const a = $("#startA"); if (a) { a.addEventListener("input", narrow); narrow(); }
+}
+
+/* ページがないときの言葉（目的ごと） */
+const EMPTY = {
+  "浸水": "特定都市河川の流域の指定は、見つかっていません（流域でなければ、雨水浸透阻害行為の許可は要りません）。迷うときは県の河川の担当課で確かめてください",
+  "建築協定": "認可された建築協定の一覧は、公開されていません。協定の区域かどうかは、建築の担当課で確かめてください",
+  "下水道": "下水道の案内のページが見つかっていません。公共下水道があるか・処理区域かは、下水道の担当課で確かめてください",
+  "地区計画": "地区計画の案内のページが見つかっていません。都市計画の担当課で確かめてください",
+};
+/* 市町村の画面 */
+const KEN_FIRST = new Set(["災害", "盛土", "白地", "地形"]);
+function linkBlock(o, p, m, first) {
+  const x = o.x, mm = MEMO[memoKeyU(x.url)];
+  const kt = o.ken && (m || x.src) ? `<span class="first tagk">${esc(x.src || p.name)}</span>` : "";
+  return `<div class="lkw"><div class="lk ${first ? "top" : ""}" data-u="${esc(x.url)}">
+    <a class="main" href="${esc(x.url)}" target="_blank" rel="noopener"><div class="tl">${kt}${esc(x.label)}${svg(I.arrow, 15)}</div>
+      ${x.what ? `<div class="what">${esc(x.what)}</div>` : ""}</a>
+    <div class="acts"><button class="act" data-copy="${esc(x.url)}" title="このページの場所を写す（質疑書などに貼れる）" aria-label="場所を写す" data-lb="写す">${svg(I.copy, 17)}</button>
+      <button class="act ${mm ? "has" : ""}" data-lmemo="${esc(x.url)}" title="このページにメモを書く" aria-label="メモ" data-lb="メモ">${svg(I.pen, 17)}</button></div></div>
+    ${flags(x) ? `<div style="flex-basis:100%;padding:0 8px 4px">${flags(x)}</div>` : ""}${mm ? memoBox(x.url, mm, p.name + "/" + (m || "")) : ""}</div>`;
+}
+function memoBox(url, mm, where) {
+  return `<div class="lmemo"><textarea data-mk="${esc(memoKeyU(url))}" data-where="${esc(where)}" placeholder="このページのメモ（例：区域図は PDF の 3 枚目）" aria-label="このページのメモ">${esc(mm ? mm.t : "")}</textarea><div class="st">${mm ? `${esc(mm.at)} に保存` : "書くと、自動で保存します"}</div></div>`;
+}
+function city(pi, m) {
+  const p = D.prefs[pi];
+  go(p.name + (m ? "/" + m : ""));
+  if (m) { recent = [{ p: pi, m }, ...recent.filter(r => !(r.p === pi && r.m === m))].slice(0, 8); store.set("linkshu-recent", recent); }
+  const own = m ? p.munis[m] || [] : p.pref, ken = m ? forMuni(p, m) : [];
+  const tk = m && isTk(p, m);
+  const list = D.purposes.map(([k, t, sub]) => {
+    const a = own.filter(x => (x.purpose || "そのほか") === k).map(x => ({ x, ken: !m }));
+    const b = ken.filter(x => (x.purpose || "そのほか") === k).map(x => ({ x, ken: true }));
+    const all = (KEN_FIRST.has(k) ? [...b, ...a] : [...a, ...b]).map((o, i) => ({ ...o, i })).sort((u, v) => score(u.x) - score(v.x) || u.i - v.i);
+    return { k, t, sub, all };
+  }).filter(o => o.all.length || !["そのほか", "白地"].includes(o.k));
+  const rows = list.map(({ k, t, sub, all }, idx) => {
+    const [cv, ic] = ICON[k] || ICON["そのほか"];
+    const it = CASE.items[k] || {};
+    const head = `<div class="rh"><span class="no" title="キーボードの ${idx + 1} で開く">${idx + 1}</span><b>${esc(t)}</b><span class="sp"></span><span class="seen">${svg(I.ok, 15)}<span class="sv">開いた</span></span>
+</div>`;
+    if (!all.length) return `<div class="row empty" data-k="${esc(k)}" id="p${idx}" style="--pc:var(${cv})">${head}<div class="body none">${esc(EMPTY[k] || "公式のページが見つかっていません。担当の課で確かめてください")}</div><div class="shots" data-sk="${esc(k)}"></div>${idx < list.length - 1 ? `<div class="nextp"><button data-next="${idx + 1}">次へ：${esc(list[idx + 1].t)} ▶</button></div>` : ""}</div>`;
+    const [f, ...rest] = all;
+    const opened = rest.some(o => MEMO[memoKeyU(o.x.url)]);
+    return `<div class="row ${it.seen || it.saved ? "is-seen" : ""}" data-k="${esc(k)}" data-first="${esc(f.x.label)}" id="p${idx}" style="--pc:var(${cv})">${head}<div class="body">${linkBlock(f, p, m, true)}
+      ${rest.length ? `<details class="more" open><summary>ほかのページ（${rest.length}）</summary><div>${rest.map(o => linkBlock(o, p, m, false)).join("")}</div></details>` : ""}</div><div class="shots" data-sk="${esc(k)}"></div>${idx < list.length - 1 ? `<div class="nextp"><button data-next="${idx + 1}">次へ：${esc(list[idx + 1].t)} ▶</button></div>` : ""}</div>`;
+  }).join("");
+  const toc = list.map(({ k, t, all }, idx) => `<a href="#p${idx}" data-jump="p${idx}" class="${all.length ? "" : "off"}" style="--pc:var(${(ICON[k] || ICON["そのほか"])[0]})"><i></i>${esc(t)}</a>`).join("");
+  caseFor(p.name + "/" + (m || ""));
+  const caseBox = `<div class="case" id="case"><div class="r1"><label for="caseA">地名地番</label>
+      <input id="caseA" value="${esc(CASE.addr)}" placeholder="地名地番（貼っておくと、すぐ写せます）" autocomplete="off">
+      <button class="btn" data-go="copyAddr">${svg(I.copy, 15)}写す</button></div>
+
+    <div class="line2"><div class="prog" id="prog"></div><span class="dir" id="dirName"></span></div>
+    <div class="how">画面の写し：<b>Win</b> + <b>Shift</b> + <b>S</b> で切り取り → <b>Ctrl</b> + <b>V</b>　自動で PDF に保存</div></div>`;
+  const G = Object.fromEntries(D.purposes.map(x => [x[0], x[3] || ""]));
+  const navs = list.map(({ k, t, all }, idx) => { const it = CASE.items[k] || {};
+    const gh = idx === 0 || G[list[idx - 1].k] !== G[k] ? `<div class="grp">${esc(G[k] || "")}</div>` : "";
+    return gh + `<button data-sel="${esc(k)}" class="${it.seen || it.saved ? "seen" : ""} ${all.length ? "" : "none"}" style="--pc:var(${(ICON[k] || ICON["そのほか"])[0]})"><span class="n">${idx + 1}</span><span class="tx">${esc(t)}</span><span class="ck">${svg(I.ok, 18)}</span></button>`; }).join("");
+  const keys = `<div class="keys">数字キーで開く：${list.map((o, i) => `<b>${i + 1}</b> ${esc(o.t.replace("建築基準法の", ""))}`).join("　")}</div>`;
+  const hold = m && (p.hold || []).includes(m)
+    ? `<div class="holdn">${svg(I.info, 20)}<div><b>${esc(m)}</b>のホームページは、リンクに事前の許可が要るため、許可をいただくまで載せていません。${esc(p.name)}・国などのページを載せています。${esc(m)}のページは、${esc(m)}のホームページから直接たどってください。</div></div>` : "";
+  const sub2 = m ? `<div class="sub2">建築基準法の道路・中間検査は <b>${esc(tk ? m : p.name)}</b>${tk ? "" : "（県の所管）"}</div>` : `<div class="sub2">県全体で使うページ</div>`;
+  const mk = memoKeyM(p.name, m), cm = MEMO[mk];
+  const cmemo = `<div class="cmemo" id="cmemo" ${cm ? "" : "hidden"}><div class="h">${svg(I.memo, 15)}${esc(m || p.name)}のメモ<span class="st" id="cmSt">${cm ? `${esc(cm.at)} に保存` : "このPCのブラウザだけに残ります"}</span></div>
+    <textarea data-mk="${esc(mk)}" placeholder="気づいたことを書いておけます（例：指定道路図は窓口で確認。担当は建築指導課）" aria-label="この市町村のメモ" ${canStore ? "" : "disabled"}>${esc(cm ? cm.t : "")}</textarea></div>`;
+  show(`<div class="crumbs"><button data-go="home">はじめ</button>›<span>${esc(p.name)}</span>${m ? `›<span>${esc(m)}</span>` : ""}</div>
+    <button class="back2" data-go="home">◀ ほかの市町村を選ぶ</button>
+    <div class="ttl"><h2>${esc(m || p.name + "（県全体）")}</h2>${tk ? `<span class="badge">特定行政庁</span>` : m ? `<span class="note2">道路・中間検査は${esc(p.name)}</span>` : ""}<span class="sp"></span>
+      ${cm ? "" : `<button class="pill" data-go="cmemo">${svg(I.pen, 15)}メモを書く</button>`}<button class="pill" data-go="copy">${svg(I.copy, 15)}場所を写す</button><button class="pill" data-go="print">${svg(I.print, 15)}印刷</button></div>
+    ${sub2}${hold}${caseBox}${keys}${cmemo}<div class="md"><nav class="mdl" aria-label="目的">${navs}</nav><div class="mdr">${rows}</div></div>`);
+  caseProgress();
+  const first = list.find(o => o.all.length && !((CASE.items[o.k] || {}).seen)) || list[0];
+  setActive(first ? first.k : "");
+  document.querySelectorAll(".shots[data-sk]").forEach(b => drawShots(b.dataset.sk)); drawDir();
+}
+/* 保存：選んだフォルダの中に、物件ごとのフォルダを作って置く（このPCの中だけ） */
+let DIR = null;
+const canDir = "showDirectoryPicker" in window;
+const safe = s => String(s || "").replace(/[\\/:*?"<>|\s]/g, "").slice(0, 40);
+function caseFolder() { const [pn, m] = CASE.where.split("/"), d = new Date(), z = n => String(n).padStart(2, "0"); return ["調べ先", safe(m || pn), `${d.getFullYear()}${z(d.getMonth() + 1)}${z(d.getDate())}`].join("_"); }
+async function pickDir() {
+  try { DIR = await window.showDirectoryPicker({ mode: "readwrite", id: "linkshu" }); idb.put("dir", DIR); drawDir(); toast("保存先を決めました"); return true; }
+  catch (e) { return false; }
+}
+async function dirReady() {
+  if (!canDir) return false;
+  if (!DIR) DIR = await idb.get("dir");
+  if (!DIR) return pickDir();
+  try { if ((await DIR.queryPermission({ mode: "readwrite" })) === "granted" || (await DIR.requestPermission({ mode: "readwrite" })) === "granted") return true; } catch (e) {}
+  return pickDir();
+}
+async function saveFile(name, blob) {    // 保存先があればそこへ。なければ、ふつうのダウンロード
+  if (await dirReady()) {
+    const sub = await DIR.getDirectoryHandle(caseFolder(), { create: true });
+    const fh = await sub.getFileHandle(name, { create: true }), w = await fh.createWritable();
+    await w.write(blob); await w.close();
+    return DIR.name + "\\" + caseFolder() + "\\" + name;
+  }
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = caseFolder() + "_" + name; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 3000);
+  return "ダウンロード：" + a.download;
+}
+async function drawDir() {
+  const el = $("#dirName"); if (!el) return;
+  if (!canDir) { el.textContent = "保存先：ダウンロード"; return; }
+  if (!DIR) DIR = await idb.get("dir");
+  el.innerHTML = DIR ? `保存先：${esc(DIR.name)}<button data-go="pickDir">変える</button>` : `<button data-go="pickDir">保存先のフォルダを選ぶ</button>`;
+}
+let jspdfP = null;
+function pdfLib() {
+  if (!jspdfP) jspdfP = new Promise((res, rej) => { const s = document.createElement("script"); s.src = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"; s.onload = () => res(window.jspdf.jsPDF); s.onerror = rej; document.head.appendChild(s); });
+  return jspdfP;
+}
+const stamp = () => { const d = new Date(), z = n => String(n).padStart(2, "0"); return `${d.getFullYear()}${z(d.getMonth() + 1)}${z(d.getDate())}_${z(d.getHours())}${z(d.getMinutes())}${z(d.getSeconds())}`; };
+async function saveShotPdf(k, dataUrl) {
+  const JsPDF = await pdfLib();
+  const src = await new Promise(r => { const i = new Image(); i.onload = () => r(i); i.src = dataUrl; });
+  const [pn, m] = CASE.where.split("/"), d = new Date(), z = n => String(n).padStart(2, "0");
+  const fs = Math.max(16, Math.round(src.width / 60)), band = fs * 2.6;
+  const cv = document.createElement("canvas"); cv.width = src.width; cv.height = Math.round(src.height + band);
+  const g = cv.getContext("2d"); g.fillStyle = "#fff"; g.fillRect(0, 0, cv.width, cv.height);
+  g.fillStyle = "#0F2530"; g.font = `bold ${fs}px "Yu Gothic UI","Meiryo",sans-serif`; g.textBaseline = "middle";
+  g.fillText(`調べ先の確認　${m || pn}（${pn}）　${k}`, fs * .8, band * .36);
+  g.font = `${Math.round(fs * .78)}px "Yu Gothic UI","Meiryo",sans-serif`; g.fillStyle = "#56676F";
+  g.fillText(`${d.getFullYear()}-${z(d.getMonth() + 1)}-${z(d.getDate())} ${z(d.getHours())}:${z(d.getMinutes())}`, fs * .8, band * .76);
+  g.drawImage(src, 0, band);
+  const im = cv; dataUrl = cv.toDataURL("image/jpeg", .88);
+  const pdf = new JsPDF({ orientation: im.width > im.height ? "l" : "p", unit: "px", format: [im.width, im.height], hotfixes: ["px_scaling"] });
+  pdf.addImage(dataUrl, "JPEG", 0, 0, im.width, im.height);
+  return saveFile(`${safe(k)}_${stamp()}.pdf`, pdf.output("blob"));
+}
+async function saveSummary() {
+  const head = `調べ先リンク集（${D.built} 版）`;
+  const txt = caseSummary() + "\r\n" + head + "\r\n";
+  const where = await saveFile(`調べた結果_${stamp()}.txt`, new Blob(["\ufeff" + txt.replace(/\n/g, "\r\n").replace(/\r\r/g, "\r")], { type: "text/plain" }));
+  toast("保存しました：" + where);
+}
+function markSeen(k, saved) {
+  const it = CASE.items[k] = CASE.items[k] || {}; it.seen = true; if (saved) it.saved = (it.saved || 0) + 1; caseSave();
+  const r = document.querySelector(`.row[data-k="${CSS.escape(k)}"]`); if (r) r.classList.add("is-seen");
+  const nb = document.querySelector(`.mdl [data-sel="${CSS.escape(k)}"]`); if (nb) nb.classList.add("seen");
+  caseProgress();
+}
+function caseProgress() {
+  const rs = [...document.querySelectorAll(".row[data-k]:not(.empty)")], pg = $("#prog"); if (!pg) return;
+  rs.forEach(r => { const it = CASE.items[r.dataset.k] || {}, sv = r.querySelector(".sv"); if (sv) sv.textContent = it.saved ? `写し ${it.saved} 枚 保存` : "開いた"; });
+  const d = rs.filter(r => r.classList.contains("is-seen")).length, n = rs.length, sh = rs.reduce((a, r) => a + ((CASE.items[r.dataset.k] || {}).saved || 0), 0);
+  pg.innerHTML = `<span>${d === n && n ? `${svg(I.ok, 18, "ic-s")} <b>すべて開きました</b>` : `開いた <b>${d}</b> / ${n}`}${sh ? `　写し <b>${sh}</b> 枚` : ""}</span>
+    <span class="dots">${rs.map(r => `<i class="${r.classList.contains("is-seen") ? "on" : ""}" style="--pc:${r.style.getPropertyValue("--pc")}" data-jump="${r.id}" title="${esc(r.querySelector(".rh b").textContent)}">${r.querySelector(".no").textContent}</i>`).join("")}</span>`;
+}
+function caseProgressOld() {
+  const rs = [...document.querySelectorAll(".row[data-k]")], n = rs.length, d = rs.filter(r => r.classList.contains("done")).length;
+  const c = $("#caseCnt"); if (!c) return;
+  c.textContent = d === n ? `すべて調べました（${n} / ${n}）` : `調べた ${d} / ${n}`; c.classList.toggle("all", d === n);
+  $("#caseBar").style.width = (n ? d * 100 / n : 0) + "%";
+}
+function caseSummary() {
+  const [pn, m] = CASE.where.split("/");
+  const z = n => String(n).padStart(2, "0"), d = new Date();
+  const lines = [...document.querySelectorAll(".row[data-k]")].map(r => {
+    const k = r.dataset.k, it = CASE.items[k] || {}, t = r.querySelector(".rh b").textContent;
+    return `${it.done ? "■" : "□"} ${t}：${it.note || (it.done ? "（調べた）" : "未")}${r.dataset.first ? `　〔${r.dataset.first}〕` : ""}`;
+  });
+  return `調べ先の確認　${m || pn}（${pn}）　${d.getFullYear()}-${z(d.getMonth() + 1)}-${z(d.getDate())}
+` + lines.join("\n");
+}
+
+/* 建築基準関係規定の一覧 */
+function laws() {
+  go("関係規定");
+  const K = D.kankei || { items: [], also: [] };
+  const back = recent[0] && D.prefs[recent[0].p] ? recent[0] : null;
+  const pk = Object.fromEntries(D.purposes.map(x => [x[0], x[1]]));
+  const row = x => `<tr class="${esc(x.house || "")}"><td><span class="hs ${esc(x.house || "")}">${{ よく: "よくかかる", 場合: "場合による", まれ: "まれ" }[x.house] || ""}</span></td>
+    <td class="nm"><b>${esc(x.law)}</b><small>${esc(x.art)}${x.no ? "　（" + esc(x.no) + "）" : ""}</small></td><td>${esc(x.what)}</td>
+    <td>${x.purpose && back ? `<button class="pill" data-p="${back.p}" data-m="${esc(back.m)}" data-sel2="${esc(x.purpose)}">${esc(pk[x.purpose] || x.purpose)}を調べる</button>` : x.purpose ? esc(pk[x.purpose] || "") : "―"}</td>
+    <td>${x.lawId ? `<a href="https://laws.e-gov.go.jp/law/${esc(x.lawId)}" target="_blank" rel="noopener">条文 ↗</a>` : ""}</td></tr>`;
+  show(`<div class="hits"><h2>建築基準関係規定</h2><p class="lead">建築基準法第6条第1項・施行令第9条の16の法律と、「建築基準関係規定とみなす」とされた3つ（${esc(K.checked || "")} に法令の原文で確かめた）。「戸建てで」の欄は目安です。${back ? `「調べる」を押すと、${esc(back.m)}の調べ先が開きます。` : "市町村を選んでから開くと、その市町村の調べ先へ飛べます。"}</p>
+    <div class="law"><table><tr><th>戸建てで</th><th>法令・条</th><th>見ること</th><th>調べ先</th><th>原文</th></tr>${K.items.map(row).join("")}</table></div>
+    <h3 style="margin:22px 0 10px">あわせて見るもの（建築基準法の中で、市町村ごとに違うもの）</h3>
+    <div class="law"><table>${(K.also || []).map(x => row({ ...x, house: "" })).join("")}</table></div></div>`);
+}
+
+/* メモの一覧 */
+function memos() {
+  go("メモ");
+  const where = k => {
+    if (k.startsWith("m:")) return k.slice(2);
+    return MEMO[k].where || "";
+  };
+  const byW = {};
+  Object.keys(MEMO).forEach(k => (byW[where(k)] = byW[where(k)] || []).push(k));
+  const label = u => { for (const p of D.prefs) for (const xs of [p.pref, ...Object.values(p.munis)]) { const x = xs.find(x => x.url === u); if (x) return x; } return null; };
+  const ws = Object.keys(byW).sort();
+  show(`<div class="crumbs"><button data-go="home">はじめ</button>›<span>メモ</span></div><div class="hits"><h2>メモの一覧</h2>
+    <p class="lead">メモは、このPCのブラウザだけに残ります（外には送りません）。ほかのPCへ移すとき・ほかの人に渡すときは、書き出して、相手の画面で読み込みます。申請者の名前や地番は書かないでください。</p>
+    <div class="tools"><button class="pill" data-go="export">${svg(I.down, 15)}メモを書き出す</button><button class="pill" data-go="import">${svg(I.up, 15)}メモを読み込む</button><input type="file" id="imp" accept=".json,application/json" class="sr"></div>`
+    + (ws.length ? ws.map(w => {
+      const [pn, m] = w.split("/"), pi = D.prefs.findIndex(p => p.name === pn);
+      return `<div class="grp"><h3>${pi >= 0 ? `<button class="pill" data-p="${pi}" data-m="${esc(m || "")}">${esc(m || pn + "（県全体）")}</button>` : esc(w)}<span>${byW[w].length}</span></h3>` + byW[w].map(k => {
+        const mm = MEMO[k];
+        if (k.startsWith("m:")) return `<div class="hit"><div class="w2">${esc(m || pn)} 全体のメモ・${esc(mm.at)}</div><div class="mtx">${esc(mm.t)}</div></div>`;
+        const x = label(k.slice(2));
+        return `<div class="hit"><div class="w2">${esc(x ? x.purpose : "")}・${esc(mm.at)}</div><a class="t" href="${esc(k.slice(2))}" target="_blank" rel="noopener">${esc(x ? x.label : k.slice(2))} ↗</a><div class="mtx">${esc(mm.t)}</div></div>`;
+      }).join("") + "</div>";
+    }).join("") : `<div class="empty-state">${svg(I.memo, 40)}<div>まだメモはありません。<br>市町村の画面の黄色い欄や、各ページの ${svg(I.pen, 14, "ic-s")} から書けます。</div></div>`) + "</div>");
+}
+function exportMemo() {
+  const blob = new Blob([JSON.stringify({ kind: "調べ先リンク集のメモ", at: new Date().toISOString(), memo: MEMO }, null, 1)], { type: "application/json" });
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "リンク集のメモ_" + new Date().toISOString().slice(0, 10) + ".json"; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000); toast("メモを書き出しました");
+}
+function importMemo(file) {
+  const r = new FileReader();
+  r.onload = () => {
+    try {
+      const d = JSON.parse(r.result), m = d.memo || {};
+      let n = 0;
+      Object.entries(m).forEach(([k, v]) => { if (v && typeof v.t === "string" && /^[mu]:/.test(k)) {
+        if (MEMO[k] && MEMO[k].t !== v.t && !MEMO[k].t.includes(v.t)) MEMO[k] = { ...MEMO[k], t: MEMO[k].t + "\n――\n" + v.t }; else if (!MEMO[k]) MEMO[k] = v; n++; } });
+      store.set("linkshu-memo", MEMO); memoCount(); memos(); toast(`${n} 件のメモを読み込みました（同じ場所のメモは、つなげました）`);
+    } catch (e) { toast("このファイルは読み込めません"); }
+  };
+  r.readAsText(file);
+}
+
+/* 検索 */
+let sel = 0;
+function hl(s, q) { const i = norm(s).indexOf(q); return i < 0 || s.length !== norm(s).length ? esc(s) : esc(s.slice(0, i)) + "<mark>" + esc(s.slice(i, i + q.length)) + "</mark>" + esc(s.slice(i + q.length)); }
+function suggest() {
+  const raw = $("#q").value.trim(), q = norm(raw);
+  $("#kbd").style.display = raw ? "none" : "";
+  if (!q) { $("#sug").style.display = "none"; return; }
+  const c = MUNIS.filter(o => norm(o.m).includes(q) || norm(D.prefs[o.p].name + o.m).includes(q))
+    .sort((a, b) => norm(a.m).indexOf(q) - norm(b.m).indexOf(q) || a.m.length - b.m.length).slice(0, 9);
+  sel = 0;
+  $("#sug").innerHTML = c.map((o, i) => `<button class="${i === 0 ? "on" : ""}" role="option" data-p="${o.p}" data-m="${esc(o.m)}"><span>${hl(o.m, q)}${isTk(D.prefs[o.p], o.m) ? '<span class="tk">特定行政庁</span>' : ""}</span><small>${esc(D.prefs[o.p].name)}</small></button>`).join("")
+    + `<button class="wd ${c.length ? "" : "on"}" role="option" data-w="1">${svg('<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>', 15, "ic-s")}　「${esc(raw)}」を含むページ・メモを、すべての県から探す</button>`;
+  $("#sug").style.display = "block";
+}
+function words(qr) {
+  go("");
+  const qs = qr.toLowerCase().split(/\s+/).filter(Boolean), hits = [];
+  D.prefs.forEach(p => [[p.name + "（県のページ）", p.pref], ...Object.entries(p.munis)].forEach(([m, xs]) => xs.forEach(x => {
+    const mm = MEMO[memoKeyU(x.url)];
+    const s = `${p.name} ${m} ${x.label} ${x.what} ${x.purpose} ${mm ? mm.t : ""}`.toLowerCase();
+    if (qs.every(w => s.includes(w))) hits.push([p, m, x]);
+  })));
+  const cm = Object.entries(MEMO).filter(([k, v]) => k.startsWith("m:") && qs.every(w => v.t.toLowerCase().includes(w)));
+  show(`<div class="crumbs"><button data-go="home">はじめ</button>›<span>探す</span></div><div class="hits"><h2>「${esc(qr)}」を含むもの</h2><p class="lead">ページ ${hits.length} 件${cm.length ? `・市町村のメモ ${cm.length} 件` : ""}</p>`
+    + cm.map(([k, v]) => { const [pn, m] = k.slice(2).split("/"), pi = D.prefs.findIndex(p => p.name === pn); return `<div class="hit"><div class="w2">${esc(pn)}　${pi >= 0 ? `<button data-p="${pi}" data-m="${esc(m)}">${esc(m || "県全体")}</button>` : ""}　／ メモ</div><div class="mtx">${esc(v.t)}</div></div>`; }).join("")
+    + hits.slice(0, 200).map(([p, m, x]) => hit(p, m, x)).join("")
+    + (hits.length || cm.length ? "" : `<div class="empty-state">見つかりませんでした。ことばを短くしてみてください（例：「指定道路」「盛土」「中間検査」）。</div>`) + "</div>");
+}
+function pick(btn) {
+  $("#sug").style.display = "none";
+  if (btn.dataset.w) { words($("#q").value.trim()); return; }
+  $("#q").value = ""; $("#kbd").style.display = ""; $("#q").blur();
+  city(+btn.dataset.p, btn.dataset.m || null);
+}
+
+/* 明るさ */
+function theme(t) {
+  if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme;
+  const dark = t ? t === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  $("#themeIc").innerHTML = svg(dark ? I.sun : I.moon, 18);
+}
+
+/* 動き */
+function wire() {
+  $("#q").addEventListener("input", suggest);
+  $("#q").addEventListener("focus", suggest);
+  $("#q").addEventListener("keydown", e => {
+    const bs = [...$("#sug").querySelectorAll("button")];
+    if (e.key === "Escape") { $("#sug").style.display = "none"; $("#q").blur(); return; }
+    if (!bs.length) return;
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); sel = (bs.findIndex(b => b.classList.contains("on")) + (e.key === "ArrowDown" ? 1 : bs.length - 1)) % bs.length; bs.forEach((b, i) => b.classList.toggle("on", i === sel)); bs[sel].scrollIntoView({ block: "nearest" }); }
+    if (e.key === "Enter") { e.preventDefault(); pick(bs.find(b => b.classList.contains("on")) || bs[0]); }
+  });
+  $("#sug").addEventListener("mousedown", e => { const b = e.target.closest("button"); if (b) { e.preventDefault(); pick(b); } });
+  $("#q").addEventListener("blur", () => setTimeout(() => $("#sug").style.display = "none", 150));
+  document.addEventListener("keydown", e => {
+    const typing = /^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName);
+    if (e.key === "/" && !typing) { e.preventDefault(); $("#q").focus(); }
+    if (!typing && !e.ctrlKey && !e.altKey && !e.metaKey && /^[1-9]$/.test(e.key)) {
+      const r = document.querySelectorAll(".row[data-k]")[+e.key - 1];
+      if (r) { e.preventDefault(); setActive(r.dataset.k); const a = r.querySelector(".lk .main"); if (a) { window.open(a.href, "_blank", "noopener"); markSeen(r.dataset.k); } }
+    }
+    if (e.key === "Escape" && !typing && location.hash && $("#zoom").style.display !== "grid") home();
+  });
+  document.addEventListener("click", e => {
+    const j = e.target.closest("[data-jump]");
+    if (j) { e.preventDefault(); const r = document.getElementById(j.dataset.jump); r.scrollIntoView(); r.classList.add("flash"); setTimeout(() => r.classList.remove("flash"), 1200); return; }
+    const sl = e.target.closest("[data-sel]"); if (sl) { setActive(sl.dataset.sel); return; }
+    const nx = e.target.closest("[data-next]"); if (nx) { const r = document.querySelectorAll(".row[data-k]")[+nx.dataset.next]; if (r) { setActive(r.dataset.k); window.scrollTo({ top: 0 }); } return; }
+    const pb = e.target.closest("[data-paste]");
+    if (pb) { setActive(pb.dataset.paste); toast("Win + Shift + S で画面を切り取って、Ctrl + V で貼ってください"); return; }
+    const zs = e.target.closest("[data-delshot]");
+    if (zs) { e.stopPropagation(); const k = zs.closest(".shots").dataset.sk; SHOTS[shotKey(k)].splice(+zs.dataset.delshot, 1); shotsSave(k); drawShots(k); return; }
+    const zm = e.target.closest("[data-zoom]");
+    if (zm) { const z = $("#zoom"); z.querySelector("img").src = zm.querySelector("img").src; z.style.display = "grid"; return; }
+    if (e.target.closest("#zoom")) { $("#zoom").style.display = "none"; return; }
+    const rowEl = e.target.closest(".row[data-k]"); if (rowEl) setActive(rowEl.dataset.k);
+    if (rowEl && e.target.closest(".lk .main")) markSeen(rowEl.dataset.k);
+    const ck = e.target.closest("[data-chk]");
+    if (ck) { const k = ck.dataset.chk, it = CASE.items[k] = CASE.items[k] || {}; it.done = !it.done; caseSave();
+      const r = ck.closest(".row"); r.classList.toggle("done", it.done); ck.setAttribute("aria-pressed", it.done); ck.querySelector(".bx").innerHTML = it.done ? svg(I.ok, 12) : ""; caseProgress(); return; }
+    const c = e.target.closest("[data-copy]"); if (c) { copy(c.dataset.copy, "ページの場所を写しました（貼り付けられます）"); return; }
+    const lm = e.target.closest("[data-lmemo]");
+    if (lm) {
+      const blk = lm.closest(".lkw"); let box = blk.querySelector(".lmemo");
+      if (!box) { blk.insertAdjacentHTML("beforeend", memoBox(lm.dataset.lmemo, null, location.hash ? decodeURIComponent(location.hash.slice(1)) : "")); box = blk.querySelector(".lmemo"); }
+      box.querySelector("textarea").focus(); return;
+    }
+    const g = e.target.closest("[data-go]");
+    if (g) {
+      const k = g.dataset.go;
+      if (k === "home") { $("#q").value = ""; home(); }
+      if (k === "check") report();
+      if (k === "print") window.print();
+      if (k === "copy") copy(location.href, "この画面の場所を写しました");
+      if (k === "copyAddr") { const v = $("#caseA").value.trim(); v ? copy(v, "地名地番を写しました。サイトの検索に貼り付けてください") : ($("#caseA").focus(), toast("先に地名地番を貼り付けてください")); }
+      if (k === "copySum") copy(caseSummary(), "結果を写しました（審査の記録などに貼れます）");
+      if (k === "saveSum") saveSummary();
+      if (k === "pickDir") pickDir();
+      if (k === "newCase") { if (confirm("地名地番と、この物件の結果を消して、次の物件にしますか？")) { CASE = { addr: "", where: "", items: {} }; caseSave(); Object.keys(SHOTS).forEach(k => delete SHOTS[k]); home(); } }
+      if (k === "export") exportMemo();
+      if (k === "cmemo") { const c = $("#cmemo"); c.hidden = false; g.remove(); c.querySelector("textarea").focus(); }
+      if (k === "import") $("#imp").click();
+      return;
+    }
+    const b = e.target.closest("main button[data-p]"); if (b) { city(+b.dataset.p, b.dataset.m || null); if (b.dataset.sel2) setActive(b.dataset.sel2); return; }
+  });
+  document.addEventListener("change", e => { if (e.target.id === "imp" && e.target.files[0]) importMemo(e.target.files[0]); });
+  document.addEventListener("input", e => {
+    if (e.target.id === "caseA") { CASE.addr = e.target.value; caseSave(); }
+    if (e.target.id === "caseNo") { CASE.no = e.target.value; caseSave(); drawDir(); }
+    if (e.target.id === "caseWho") store.set("linkshu-who", e.target.value);
+    const rs = e.target.closest("[data-res]");
+    if (rs) { const it = CASE.items[rs.dataset.res] = CASE.items[rs.dataset.res] || {}; it.note = rs.value; caseSave(); }
+  });
+  document.addEventListener("keydown", e => {      // 結果の欄で Enter → 調べたにする
+    const rs = e.target.closest && e.target.closest("[data-res]");
+    if (rs && e.key === "Enter") { e.preventDefault(); const b = rs.parentElement.querySelector("[data-chk]"); if (b && !rs.closest(".row").classList.contains("done")) b.click(); rs.blur(); }
+  });
+  document.addEventListener("focusin", e => { const r = e.target.closest && e.target.closest(".row[data-k]"); if (r) setActive(r.dataset.k); });
+  document.addEventListener("paste", e => {       // Ctrl + V：画像なら、いまの目的の欄に貼る
+    const it = [...(e.clipboardData ? e.clipboardData.items : [])].find(i => i.type.startsWith("image/"));
+    if (!it) return;
+    if (!document.querySelector(".row[data-k]")) { toast("市町村の画面で貼ってください"); return; }
+    e.preventDefault();
+    const k = ACTIVE || document.querySelector(".row[data-k]").dataset.k; setActive(k);
+    addShot(k, it.getAsFile());
+  });
+  document.addEventListener("dragover", e => { const r = e.target.closest && e.target.closest(".row[data-k]"); if (r && [...e.dataTransfer.types].includes("Files")) { e.preventDefault(); r.classList.add("drag"); } });
+  document.addEventListener("dragleave", e => { const r = e.target.closest && e.target.closest(".row[data-k]"); if (r) r.classList.remove("drag"); });
+  document.addEventListener("drop", e => { const r = e.target.closest && e.target.closest(".row[data-k]"); if (!r) return; e.preventDefault(); r.classList.remove("drag");
+    [...e.dataTransfer.files].filter(f => f.type.startsWith("image/")).forEach(f => { setActive(r.dataset.k); addShot(r.dataset.k, f); }); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") $("#zoom").style.display = "none"; });
+  document.addEventListener("submit", e => {
+    if (e.target.id !== "startF") return;
+    e.preventDefault();
+    const v = $("#startA").value.trim(); if (!v) { $("#startA").focus(); return; }
+    let o = findMuni(v);
+    if (!o) { const hs = [...document.querySelectorAll(".grid button.hit")]; if (hs.length === 1) o = { p: +hs[0].dataset.p, m: hs[0].dataset.m }; }
+    if (!o) { $("#startMsg").innerHTML = `<span class="msg">市町村の名前が見つかりませんでした。市町村の名前から貼り付けるか、下から選んでください。</span>`; CASE.addr = v; caseSave(); return; }
+    const onlyName = norm(v).replace(/^(静岡県|山梨県|神奈川県)/, "").replace(/^.{1,4}郡/, "") === norm(o.m);
+    CASE = { addr: onlyName ? "" : v, where: D.prefs[o.p].name + "/" + o.m, items: {} }; caseSave();
+    city(o.p, o.m);
+  });
+  let tm;
+  document.addEventListener("input", e => {          // メモは、書くと自動で保存する
+    const ta = e.target.closest("textarea[data-mk]"); if (!ta) return;
+    clearTimeout(tm);
+    tm = setTimeout(() => {
+      const ok = memoSet(ta.dataset.mk, ta.value, ta.dataset.where || "");
+      const st = ta.dataset.mk.startsWith("m:") ? $("#cmSt") : ta.parentElement.querySelector(".st");
+      if (st) st.textContent = ok ? (ta.value.trim() ? "保存しました" : "メモを消しました") : "保存できませんでした";
+      const act = ta.closest(".lkw") && ta.closest(".lkw").querySelector("[data-lmemo]"); if (act) act.classList.toggle("has", !!ta.value.trim());
+    }, 500);
+  });
+  $("#home").onclick = () => { $("#q").value = ""; home(); };
+  $("#memoBtn").onclick = () => memos();
+  $("#lawBtn").onclick = () => { $("#q").value = ""; laws(); };
+  $("#memoIc").innerHTML = svg(I.memo, 18);
+  $("#themeBtn").onclick = () => { const cur = document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); const n = cur === "dark" ? "light" : "dark"; store.set("linkshu-theme", n); theme(n); };
+  theme(store.get("linkshu-theme", ""));
+  memoCount();
+}
+
+/* 利用の制限（試用の期間・時間帯）。時刻は日本時間 */
+function gate(c) {
+  if (!c) return "";
+  const now = new Date(Date.now() + (9 * 60 + new Date().getTimezoneOffset()) * 60e3);
+  const z = n => String(n).padStart(2, "0");
+  const ymd = `${now.getFullYear()}-${z(now.getMonth() + 1)}-${z(now.getDate())}`, hm = `${z(now.getHours())}:${z(now.getMinutes())}`, dw = now.getDay();
+  const dn = "日月火水木金土", jd = s => s ? s.replace(/^(\d+)-0?(\d+)-0?(\d+)$/, "$1年$2月$3日") : "";
+  const span = `${jd(c.trial_from)}〜${jd(c.trial_until)}`;
+  const days = c.days || [], wk = days.join() === "1,2,3,4,5" ? "平日" : days.map(d => dn[d]).join("・");
+  const hrs = `${wk} ${c.hours_from}〜${c.hours_to}`;
+  if (c.trial_from && ymd < c.trial_from) return ["試用は、まだ始まっていません", `試用の期間は ${span} です。`];
+  if (c.trial_until && ymd > c.trial_until) return ["試用の期間が終わりました", `試用の期間は ${span} でした。続けてお使いになるときは、${c.contact || "マルホープ"}までご連絡ください。`];
+  if (days.length && !days.includes(dw) || c.hours_from && hm < c.hours_from || c.hours_to && hm >= c.hours_to)
+    return ["いまは、ご利用の時間外です", `ご利用いただける時間は ${hrs} です（試用の期間 ${span}）。`];
+  return "";
+}
+const TERMS_VER = "2026-10-17c";
+function terms(read) {      // はじめてのとき（と、規約を変えたとき）は、同意してから使う
+  const el = $("#terms"); el.style.display = "grid";
+  $("#termsOk").hidden = !!read; $("#termsClose").hidden = !read;
+  $("#termsOk").onclick = () => { el.style.display = "none"; const a = $("#startA"); if (a) a.focus(); };
+  $("#termsClose").onclick = () => { el.style.display = "none"; };
+}
+function boot() {
+  wire();
+  const c = D.config, g = /[?&]naiken\b/.test(location.search) ? "" : gate(c);   // ?naiken＝マルホープの確かめ用（制限の外でも見られる）
+  if (g) {
+    $("#main").innerHTML = `<div class="gate"><div class="gi">${svg(I.clock, 34)}</div><h2>${esc(g[0])}</h2><p>${esc(g[1])}</p></div>`;
+    $("header .sbox").style.visibility = "hidden"; $("#memoBtn").style.display = "none";
+    return;
+  }
+  const jd = s => s ? s.replace(/^(\d+)-0?(\d+)-0?(\d+)$/, "$1年$2月$3日") : "";
+  $("#foot").innerHTML = `県・市町村の公式サイトだけ（${esc(D.built)} 版・毎日 19 時にリンクを見回り）。判断に迷うときは担当の課へ。`
+    + (c && c.trial_until ? `　試用：${esc(jd(c.trial_until))}まで` : "")
+    + `<br><a class="tl" id="termsLink">利用規約</a>　リンクが開けない・載せてほしいページは、${esc((c && c.contact) || "株式会社マルホープ 岩崎")}まで。`;
+  $("#termsLink").onclick = () => terms(true);
+  terms(false);      // 開くたびに、規約に同意してから使う
+  const h = decodeURIComponent(location.hash.slice(1));   // #山梨県/甲府市 の形で開くと、その市町村を出す
+  if (h === "見回り") { report(); return; }
+  if (h === "メモ") { memos(); return; }
+  if (h === "関係規定") { laws(); return; }
+  const [pn, m] = h.split("/");
+  const i = D.prefs.findIndex(p => p.name === pn);
+  if (i >= 0) city(i, m && D.prefs[i].munis[m] ? m : null); else home();
+}
+(() => {   // 最新の一覧を取りに行く。4秒で取れなければ、中に入っている一覧で動く
+  setData(D);
+  let done = false;
+  const start = () => { if (done) return; done = true; if (window.LINK_LATEST && window.LINK_LATEST.built >= D.built) setData(window.LINK_LATEST); boot(); };
+  if (!SITE || /^\?preview/.test(location.search)) { start(); return; }
+  const s = document.createElement("script");
+  s.src = SITE + "latest.js?t=" + Date.now();
+  s.onload = start; s.onerror = start; setTimeout(start, 4000);
+  document.head.appendChild(s);
+})();
+</script>
+</body>
+</html>

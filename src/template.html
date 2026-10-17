@@ -819,7 +819,28 @@ header .brand { margin-right:auto; }
 #help .tys { display:flex; flex-wrap:wrap; gap:8px; margin:6px 0 10px; }
 #help .tys .ty { width:58px; height:50px; font-size:12.5px; }
 .rgn { font-size:17.5px !important; }
+
+/* 利用規約：書類らしい緊張感（明朝・黒の罫・角を立てる） */
+#terms { background:rgba(10,10,12,.72); }
+#terms .box { border-radius:4px !important; border-top:6px solid #1A1A1A; background:#FFFFFF; color:#1A1A1A; }
+#terms .tx { font-family:"BIZ UDPMincho", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif; font-size:16.5px !important; line-height:1.9 !important; color:#1A1A1A; text-align:justify; padding:26px 34px 10px !important; }
+#terms .tx h2 { font-size:25px !important; font-weight:700; text-align:center; letter-spacing:.12em; padding-bottom:10px; border-bottom:2px solid #1A1A1A; }
+#terms .tx .tv { text-align:center; color:#555 !important; font-size:13.5px !important; margin:8px 0 2px !important; }
+#terms .must { text-align:center; color:#A3161A; font-weight:700; letter-spacing:.3em; font-size:15px; margin:0 0 12px !important; }
+#terms .sum { background:#FFFFFF !important; border:1.5px solid #1A1A1A; border-radius:0 !important; padding:0 0 6px !important; }
+#terms .sum .sumh { display:block; background:#1A1A1A; color:#fff; padding:7px 14px; font-size:15.5px; letter-spacing:.06em; }
+#terms .sum ol { padding:6px 16px 0 36px !important; }
+#terms .sum li { margin:6px 0 !important; }
+#terms .sum li::marker { font-weight:700; }
+#terms .tx b { font-weight:700; }
+#terms .tx h3 { font-size:17px !important; font-weight:700; margin:20px 0 4px !important; padding-left:10px; border-left:4px solid #1A1A1A; }
+#terms .ft { background:#F4F4F2; border-top:1.5px solid #1A1A1A !important; }
+#terms .ft button { background:#1A1A1A !important; color:#fff !important; border-radius:4px !important; letter-spacing:.04em; }
+#terms .ft button:hover { background:#A3161A !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #terms .box { background:#FFFFFF; color:#1A1A1A; } }
+@media (max-width: 760px) { #terms .tx { padding:18px 18px 8px !important; font-size:15.5px !important; } #terms .tx h2 { font-size:21px !important; } }
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header><div class="wrap">
@@ -855,7 +876,7 @@ header .brand { margin-right:auto; }
 </div></div>
 <div id="terms" role="dialog" aria-modal="true" aria-label="利用規約"><div class="box"><div class="tx"><h2>調べ先リンク集　利用規約（案）</h2>
 <p class="tv">2026年10月17日 版（第3版）</p>
-<div class="sum"><b>使う前に、次のことに同意してください。</b>
+<p class="must">必ずお読みください</p><div class="sum"><b class="sumh">重要事項　使う前に、次のことに同意してください。</b>
 <ol><li>この道具は<b>調べ先の案内</b>です。区域・道路・法令に当たるかは<b>判断しません</b>。審査の判断は、審査をする方が、リンク先の正式な情報で行ってください。</li>
 <li>リンクや説明の<b>正しさ・最新であること・すべてを載せていることは、保証しません</b>。載っていない区域・規定・調べ先があります。</li>
 <li>リンク先のサイトの内容・開けるかどうか・そこで起きたことに、当社は責任を負いません。</li>

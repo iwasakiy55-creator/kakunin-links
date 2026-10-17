@@ -427,9 +427,9 @@ window.LINK_STATUS = {
                                                                                  "fails":  0,
                                                                                  "kind":  "",
                                                                                  "title":  "葉山町例規集（神奈川県）",
-                                                                                 "changed":  "",
-                                                                                 "why":  "",
-                                                                                 "hash":  "A510079400539798"
+                                                                                 "changed":  "2026-10-17",
+                                                                                 "why":  "body",
+                                                                                 "hash":  "4C8EBFC4FC12B18F"
                                                                              },
                   "https://ops-jg.d1-law.com/opensearch/?jctcd=8A80731BD1":  {
                                                                                  "code":  "200",
@@ -561,6 +561,16 @@ window.LINK_STATUS = {
                                                           "why":  "",
                                                           "hash":  "15DB52C32C3FB51E"
                                                       },
+                  "https://sagamihara.geocloud.jp/webgis/?p=1":  {
+                                                                     "code":  "200",
+                                                                     "at":  "2026-10-17",
+                                                                     "fails":  0,
+                                                                     "kind":  "",
+                                                                     "title":  "さがみはら地図情報",
+                                                                     "changed":  "",
+                                                                     "why":  "",
+                                                                     "hash":  "15DB52C32C3FB51E"
+                                                                 },
                   "https://shimoda-fd.jp/fire_prevention/fire_alarm/":  {
                                                                             "code":  "200",
                                                                             "at":  "2026-10-17",
@@ -911,6 +921,16 @@ window.LINK_STATUS = {
                                                                                                   "why":  "",
                                                                                                   "hash":  "72582A8EBE8C8116"
                                                                                               },
+                  "https://www.city.atsugi.kanagawa.jp/soshiki/toshikeikakuka/7/7/index.html":  {
+                                                                                                    "code":  "200",
+                                                                                                    "at":  "2026-10-17",
+                                                                                                    "fails":  0,
+                                                                                                    "kind":  "",
+                                                                                                    "title":  "地区計画／厚木市",
+                                                                                                    "changed":  "",
+                                                                                                    "why":  "",
+                                                                                                    "hash":  "EBCE048F52C8EF84"
+                                                                                                },
                   "https://www.city.atsugi.kanagawa.jp/soshiki/yoboka/6/3/23218.html":  {
                                                                                             "code":  "200",
                                                                                             "at":  "2026-10-17",
@@ -1381,6 +1401,16 @@ window.LINK_STATUS = {
                                                                                     "why":  "",
                                                                                     "hash":  "61B16AA562C0999B"
                                                                                 },
+                  "https://www.city.fuji.shizuoka.jp/1040070000/p003937.html":  {
+                                                                                    "code":  "200",
+                                                                                    "at":  "2026-10-17",
+                                                                                    "fails":  0,
+                                                                                    "kind":  "",
+                                                                                    "title":  "地区計画・申し合わせ地区 | 静岡県富士市",
+                                                                                    "changed":  "",
+                                                                                    "why":  "",
+                                                                                    "hash":  "4860AB4CB0CCA38B"
+                                                                                },
                   "https://www.city.fuji.shizuoka.jp/1040070000/p004409.html":  {
                                                                                     "code":  "200",
                                                                                     "at":  "2026-10-17",
@@ -1580,6 +1610,16 @@ window.LINK_STATUS = {
                                                                                           "changed":  "",
                                                                                           "why":  "",
                                                                                           "hash":  "A6C21545E3ECE6D9"
+                                                                                      },
+                  "https://www.city.fujinomiya.lg.jp/citizen/llti2b0000002d2i.html":  {
+                                                                                          "code":  "200",
+                                                                                          "at":  "2026-10-17",
+                                                                                          "fails":  0,
+                                                                                          "kind":  "",
+                                                                                          "title":  "地区計画制度とは | 静岡県富士宮市",
+                                                                                          "changed":  "",
+                                                                                          "why":  "",
+                                                                                          "hash":  "A488645639BBCA19"
                                                                                       },
                   "https://www.city.fujinomiya.lg.jp/entrepreneur/visuf8000000gm2s.html":  {
                                                                                                "code":  "200",
@@ -2071,6 +2111,16 @@ window.LINK_STATUS = {
                                                                                                          "why":  "",
                                                                                                          "hash":  "4400BF17D6D59E10"
                                                                                                      },
+                  "https://www.city.hamamatsu.shizuoka.jp/tochi/city/tochi/chikukeikaku/chikukeikaku.html":  {
+                                                                                                                 "code":  "200",
+                                                                                                                 "at":  "2026-10-17",
+                                                                                                                 "fails":  0,
+                                                                                                                 "kind":  "",
+                                                                                                                 "title":  "浜松市内の地区計画区域とその内容について／浜松市",
+                                                                                                                 "changed":  "",
+                                                                                                                 "why":  "",
+                                                                                                                 "hash":  "F97469C03EFD208C"
+                                                                                                             },
                   "https://www.city.hamamatsu.shizuoka.jp/tochi/home_tochi/home/kensido/chousei/index.html":  {
                                                                                                                   "code":  "200",
                                                                                                                   "at":  "2026-10-17",
@@ -2170,6 +2220,16 @@ window.LINK_STATUS = {
                                                                                                "changed":  "",
                                                                                                "why":  "",
                                                                                                "hash":  "96CCBAD42C083DB1"
+                                                                                           },
+                  "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_02868.html":  {
+                                                                                               "code":  "200",
+                                                                                               "at":  "2026-10-17",
+                                                                                               "fails":  0,
+                                                                                               "kind":  "",
+                                                                                               "title":  "地区計画の届出 | 平塚市",
+                                                                                               "changed":  "",
+                                                                                               "why":  "",
+                                                                                               "hash":  "84C8E226ECD77DA5"
                                                                                            },
                   "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_02877.html":  {
                                                                                                "code":  "200",
@@ -2411,6 +2471,16 @@ window.LINK_STATUS = {
                                                                                                     "why":  "",
                                                                                                     "hash":  "FE3603864EA0E7C6"
                                                                                                 },
+                  "https://www.city.iwata.shizuoka.jp/sangyou_business/kenchiku/1002163.html":  {
+                                                                                                    "code":  "200",
+                                                                                                    "at":  "2026-10-17",
+                                                                                                    "fails":  0,
+                                                                                                    "kind":  "",
+                                                                                                    "title":  "地区計画｜磐田市公式ウェブサイト",
+                                                                                                    "changed":  "",
+                                                                                                    "why":  "",
+                                                                                                    "hash":  "EF1B52AC5F7775C7"
+                                                                                                },
                   "https://www.city.iwata.shizuoka.jp/sangyou_business/kenchiku/1005810.html":  {
                                                                                                     "code":  "200",
                                                                                                     "at":  "2026-10-17",
@@ -2597,9 +2667,9 @@ window.LINK_STATUS = {
                                                                                       "fails":  0,
                                                                                       "kind":  "",
                                                                                       "title":  "住宅用火災警報器の点検及び交換について - 掛川市",
-                                                                                      "changed":  "",
-                                                                                      "why":  "",
-                                                                                      "hash":  "9213F64BA4554583"
+                                                                                      "changed":  "2026-10-17",
+                                                                                      "why":  "body",
+                                                                                      "hash":  "A5BC89A847E698C6"
                                                                                   },
                   "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/9859.html":  {
                                                                                       "code":  "200",
@@ -2607,9 +2677,9 @@ window.LINK_STATUS = {
                                                                                       "fails":  0,
                                                                                       "kind":  "",
                                                                                       "title":  "地区計画について - 掛川市",
-                                                                                      "changed":  "",
-                                                                                      "why":  "",
-                                                                                      "hash":  "F7EC1092B43AEB11"
+                                                                                      "changed":  "2026-10-17",
+                                                                                      "why":  "body",
+                                                                                      "hash":  "15C8C2E2E448555D"
                                                                                   },
                   "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/9982.html":  {
                                                                                       "code":  "200",
@@ -2711,6 +2781,16 @@ window.LINK_STATUS = {
                                                                                              "why":  "",
                                                                                              "hash":  "8B01ED64833177EC"
                                                                                          },
+                  "https://www.city.kamakura.kanagawa.jp/plan/tiku.html":  {
+                                                                               "code":  "200",
+                                                                               "at":  "2026-10-17",
+                                                                               "fails":  0,
+                                                                               "kind":  "",
+                                                                               "title":  "鎌倉市／鎌倉の地区計画",
+                                                                               "changed":  "",
+                                                                               "why":  "",
+                                                                               "hash":  "8D1A84A503A0528A"
+                                                                           },
                   "https://www.city.kamakura.kanagawa.jp/sangyou_machi/toshikeikaku/index.html":  {
                                                                                                       "code":  "200",
                                                                                                       "at":  "2026-10-17",
@@ -2760,6 +2840,16 @@ window.LINK_STATUS = {
                                                                                 "changed":  "",
                                                                                 "why":  "",
                                                                                 "hash":  "C64E188985C87EDF"
+                                                                            },
+                  "https://www.city.kawasaki.jp/500/page/0000018574.html":  {
+                                                                                "code":  "200",
+                                                                                "at":  "2026-10-17",
+                                                                                "fails":  0,
+                                                                                "kind":  "",
+                                                                                "title":  "川崎市 : 地区計画制度について",
+                                                                                "changed":  "",
+                                                                                "why":  "",
+                                                                                "hash":  "123800BB145737AB"
                                                                             },
                   "https://www.city.kawasaki.jp/500/page/0000056969.html":  {
                                                                                 "code":  "200",
@@ -3171,6 +3261,16 @@ window.LINK_STATUS = {
                                                                                         "why":  "",
                                                                                         "hash":  "599D0E4393A64EE1"
                                                                                     },
+                  "https://www.city.makinohara.shizuoka.jp/soshiki/27/54583.html":  {
+                                                                                        "code":  "200",
+                                                                                        "at":  "2026-10-17",
+                                                                                        "fails":  0,
+                                                                                        "kind":  "",
+                                                                                        "title":  "東名相良牧之原インターチェンジ北側地区における地区計画の決定について - 牧之原市ホームページ",
+                                                                                        "changed":  "",
+                                                                                        "why":  "",
+                                                                                        "hash":  "BEEC53626AD5E6A6"
+                                                                                    },
                   "https://www.city.makinohara.shizuoka.jp/soshiki/29/1715.html":  {
                                                                                        "code":  "200",
                                                                                        "at":  "2026-10-17",
@@ -3231,6 +3331,16 @@ window.LINK_STATUS = {
                                                                                     "why":  "",
                                                                                     "hash":  "6E63436809586701"
                                                                                 },
+                  "https://www.city.minami-alps.yamanashi.jp/docs/1833.html":  {
+                                                                                   "code":  "200",
+                                                                                   "at":  "2026-10-17",
+                                                                                   "fails":  0,
+                                                                                   "kind":  "",
+                                                                                   "title":  "南アルプス市地区計画 - 山梨県 南アルプス市 -人がつどい 次世代につなぐ 活力あふれるまち-",
+                                                                                   "changed":  "",
+                                                                                   "why":  "",
+                                                                                   "hash":  "B3A38A1285085FB8"
+                                                                               },
                   "https://www.city.minamiashigara.kanagawa.jp/business/toshi/keikaku/chiiki_chiku.html":  {
                                                                                                                "code":  "200",
                                                                                                                "at":  "2026-10-17",
@@ -3731,6 +3841,16 @@ window.LINK_STATUS = {
                                                                                                              "why":  "",
                                                                                                              "hash":  "C6C0B2B10383F618"
                                                                                                          },
+                  "https://www.city.sagamihara.kanagawa.jp/kurashi/1026489/sumai/1026516/1008026.html":  {
+                                                                                                             "code":  "200",
+                                                                                                             "at":  "2026-10-17",
+                                                                                                             "fails":  0,
+                                                                                                             "kind":  "",
+                                                                                                             "title":  "市内の地区計画｜相模原市",
+                                                                                                             "changed":  "",
+                                                                                                             "why":  "",
+                                                                                                             "hash":  "AFEF41770A35570B"
+                                                                                                         },
                   "https://www.city.sagamihara.kanagawa.jp/kurashi/1026529/bousai/1008688/1013027/index.html":  {
                                                                                                                     "code":  "200",
                                                                                                                     "at":  "2026-10-17",
@@ -3931,6 +4051,26 @@ window.LINK_STATUS = {
                                                                                                            "why":  "",
                                                                                                            "hash":  "B588B0A017A8A262"
                                                                                                        },
+                  "https://www.city.shizuoka.lg.jp/000_004562.html":  {
+                                                                          "code":  "200",
+                                                                          "at":  "2026-10-17",
+                                                                          "fails":  0,
+                                                                          "kind":  "",
+                                                                          "title":  "静岡市都市計画情報インターネット提供サービス：静岡市公式ホームページ",
+                                                                          "changed":  "",
+                                                                          "why":  "",
+                                                                          "hash":  "F2683643C64C554C"
+                                                                      },
+                  "https://www.city.shizuoka.lg.jp/000_004565.html":  {
+                                                                          "code":  "200",
+                                                                          "at":  "2026-10-17",
+                                                                          "fails":  0,
+                                                                          "kind":  "",
+                                                                          "title":  "地区計画：静岡市公式ホームページ",
+                                                                          "changed":  "",
+                                                                          "why":  "",
+                                                                          "hash":  "3E2491A8648CEA66"
+                                                                      },
                   "https://www.city.shizuoka.lg.jp/886_000065.html":  {
                                                                           "code":  "200",
                                                                           "at":  "2026-10-17",
@@ -4211,6 +4351,16 @@ window.LINK_STATUS = {
                                                                                 "why":  "",
                                                                                 "hash":  "2145D075E09883DE"
                                                                             },
+                  "https://www.city.uenohara.yamanashi.jp/page/2396.html":  {
+                                                                                "code":  "200",
+                                                                                "at":  "2026-10-17",
+                                                                                "fails":  0,
+                                                                                "kind":  "",
+                                                                                "title":  "地区計画について - 上野原市公式ホームページ（建設課）",
+                                                                                "changed":  "",
+                                                                                "why":  "",
+                                                                                "hash":  "7D1E99DFF6A3E691"
+                                                                            },
                   "https://www.city.uenohara.yamanashi.jp/page/2404.html":  {
                                                                                 "code":  "200",
                                                                                 "at":  "2026-10-17",
@@ -4261,6 +4411,16 @@ window.LINK_STATUS = {
                                                                                                                               "why":  "",
                                                                                                                               "hash":  "83ED64FE291A911D"
                                                                                                                           },
+                  "https://www.city.yaizu.lg.jp/life/urban/development/about/chikukeikaku/index.html":  {
+                                                                                                            "code":  "200",
+                                                                                                            "at":  "2026-10-17",
+                                                                                                            "fails":  0,
+                                                                                                            "kind":  "",
+                                                                                                            "title":  "地区計画制度｜焼津市",
+                                                                                                            "changed":  "",
+                                                                                                            "why":  "",
+                                                                                                            "hash":  "01E7AFE8B427E54B"
+                                                                                                        },
                   "https://www.city.yaizu.lg.jp/life/urban/development/about/index.html":  {
                                                                                                "code":  "200",
                                                                                                "at":  "2026-10-17",
@@ -4611,6 +4771,16 @@ window.LINK_STATUS = {
                                                                                                                                       "why":  "",
                                                                                                                                       "hash":  "0BF78638BBA296CB"
                                                                                                                                   },
+                  "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/toshiseibi/plan-rule/chikukeikaku/tikukeikaku.html":  {
+                                                                                                                                        "code":  "200",
+                                                                                                                                        "at":  "2026-10-17",
+                                                                                                                                        "fails":  0,
+                                                                                                                                        "kind":  "",
+                                                                                                                                        "title":  "地区計画 地区一覧 横浜市",
+                                                                                                                                        "changed":  "",
+                                                                                                                                        "why":  "",
+                                                                                                                                        "hash":  "5B341BB3CEE2D741"
+                                                                                                                                    },
                   "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/toshiseibi/plan-rule/kyotei/kubetsu/":  {
                                                                                                                           "code":  "200",
                                                                                                                           "at":  "2026-10-17",
@@ -5981,6 +6151,16 @@ window.LINK_STATUS = {
                                                                         "why":  "",
                                                                         "hash":  "EB1B583CF6CE3C78"
                                                                     },
+                  "https://www.town.kaisei.kanagawa.jp/info/192":  {
+                                                                       "code":  "200",
+                                                                       "at":  "2026-10-17",
+                                                                       "fails":  0,
+                                                                       "kind":  "",
+                                                                       "title":  "- 神奈川県足柄上郡開成町 - - 神奈川県足柄上郡開成町 -地区計画",
+                                                                       "changed":  "",
+                                                                       "why":  "",
+                                                                       "hash":  "FAB1BE313E4EAA1E"
+                                                                   },
                   "https://www.town.kaisei.kanagawa.jp/info/193":  {
                                                                        "code":  "200",
                                                                        "at":  "2026-10-17",
@@ -6351,6 +6531,16 @@ window.LINK_STATUS = {
                                                                                                            "why":  "",
                                                                                                            "hash":  "F1462C8A6E313D91"
                                                                                                        },
+                  "https://www.town.nakai.kanagawa.jp/soshiki/machiseibikakeikakuhan/keikaku_seisaku/1/735.html":  {
+                                                                                                                       "code":  "200",
+                                                                                                                       "at":  "2026-10-17",
+                                                                                                                       "fails":  0,
+                                                                                                                       "kind":  "",
+                                                                                                                       "title":  "中井町の地区計画／神奈川県中井町役場",
+                                                                                                                       "changed":  "",
+                                                                                                                       "why":  "",
+                                                                                                                       "hash":  "BF9A165B3F149D8D"
+                                                                                                                   },
                   "https://www.town.nakai.kanagawa.jp/soshiki/machiseibikakeikakuhan/keikaku_seisaku/1/782.html":  {
                                                                                                                        "code":  "200",
                                                                                                                        "at":  "2026-10-17",
@@ -6381,6 +6571,16 @@ window.LINK_STATUS = {
                                                                                         "why":  "",
                                                                                         "hash":  "D07DE669D942B4DE"
                                                                                     },
+                  "https://www.town.ninomiya.kanagawa.jp/0000000105.html":  {
+                                                                                "code":  "200",
+                                                                                "at":  "2026-10-17",
+                                                                                "fails":  0,
+                                                                                "kind":  "",
+                                                                                "title":  "地区計画区域内の建築等の届出 | 二宮町",
+                                                                                "changed":  "",
+                                                                                "why":  "",
+                                                                                "hash":  "2122C9EA2B1FE12A"
+                                                                            },
                   "https://www.town.ninomiya.kanagawa.jp/0000000133.html":  {
                                                                                 "code":  "200",
                                                                                 "at":  "2026-10-17",
@@ -6941,10 +7141,20 @@ window.LINK_STATUS = {
                                                                                     "why":  "",
                                                                                     "hash":  "0B39F0B1E1098313"
                                                                                 },
+                  "https://www.town.yugawara.kanagawa.jp/soshiki/5/1074.html":  {
+                                                                                    "code":  "200",
+                                                                                    "at":  "2026-10-17",
+                                                                                    "fails":  0,
+                                                                                    "kind":  "",
+                                                                                    "title":  "まちづくり課 計画係 - 四季彩のまち湯河原公式ホームページ",
+                                                                                    "changed":  "",
+                                                                                    "why":  "",
+                                                                                    "hash":  "8D73B46F64580844"
+                                                                                },
                   "https://www.vill.doshi.lg.jp/":  {
                                                         "code":  "ConnectFailure",
                                                         "at":  "2026-10-17",
-                                                        "fails":  12,
+                                                        "fails":  13,
                                                         "kind":  "",
                                                         "title":  "",
                                                         "changed":  "",
@@ -6954,7 +7164,7 @@ window.LINK_STATUS = {
                   "https://www.vill.kosuge.yamanashi.jp/":  {
                                                                 "code":  "ConnectFailure",
                                                                 "at":  "2026-10-17",
-                                                                "fails":  12,
+                                                                "fails":  13,
                                                                 "kind":  "",
                                                                 "title":  "",
                                                                 "changed":  "",
@@ -7611,6 +7821,16 @@ window.LINK_STATUS = {
                                                                                 "why":  "",
                                                                                 "hash":  "4CBA89058FC77DFE"
                                                                             },
+                  "https://www2.wagmap.jp/kamakura-hazard/Agreement?IsPost=False\u0026MapId=231\u0026RequestPage=/kamakura-hazard/PositionSelect?mid=231":  {
+                                                                                                                                                                "code":  "200",
+                                                                                                                                                                "at":  "2026-10-17",
+                                                                                                                                                                "fails":  0,
+                                                                                                                                                                "kind":  "",
+                                                                                                                                                                "title":  "かまくらわが街マップ | 利用許諾",
+                                                                                                                                                                "changed":  "",
+                                                                                                                                                                "why":  "",
+                                                                                                                                                                "hash":  "85578E458DCCE6A7"
+                                                                                                                                                            },
                   "https://www2.wagmap.jp/kamakura-hazard/PositionSelect?mid=231":  {
                                                                                         "code":  "200",
                                                                                         "at":  "2026-10-17",
@@ -7771,6 +7991,16 @@ window.LINK_STATUS = {
                                                                            "why":  "",
                                                                            "hash":  "5A870EAE87F2BB4B"
                                                                        },
+                  "https://wwwm.city.yokohama.lg.jp/yokohama/yokohama/Content/pages/up_date/2_imapy/koushin.html":  {
+                                                                                                                        "code":  "200",
+                                                                                                                        "at":  "2026-10-17",
+                                                                                                                        "fails":  0,
+                                                                                                                        "kind":  "",
+                                                                                                                        "title":  "横浜市行政地図情報提供システム",
+                                                                                                                        "changed":  "",
+                                                                                                                        "why":  "",
+                                                                                                                        "hash":  "72BD4BE1D3FD416F"
+                                                                                                                    },
                   "https://zushimap-zushicity.hub.arcgis.com/":  {
                                                                      "code":  "200",
                                                                      "at":  "2026-10-17",

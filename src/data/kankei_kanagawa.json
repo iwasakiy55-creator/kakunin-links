@@ -213,6 +213,24 @@
     "verified": true,
     "purpose": "建築協定",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "地区計画 地区一覧",
+    "url": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/toshiseibi/plan-rule/chikukeikaku/tikukeikaku.html",
+    "what": "全130地区の一覧。各地区の「方針等」から、計画書（用途の制限・壁面の位置・高さ）と計画図",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
+   },
+   {
+    "label": "iマッピー（行政地図情報提供システム）の更新情報",
+    "url": "https://wwwm.city.yokohama.lg.jp/yokohama/yokohama/Content/pages/up_date/2_imapy/koushin.html",
+    "what": "区域は iマッピーの「地区計画その他地域地区等」（1/2,500）で",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助",
+    "checked": "2026-10-17"
    }
   ],
   "川崎市": [
@@ -279,6 +297,24 @@
     "verified": true,
     "purpose": "建築協定",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "地区計画制度について（地区計画区別一覧）",
+    "url": "https://www.city.kawasaki.jp/500/page/0000018574.html",
+    "what": "区別・五十音順の一覧と指定状況（PDF）。各地区の概要ページ・PDFへ",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
+   },
+   {
+    "label": "都市計画情報インターネット提供サービス",
+    "url": "https://www.city.kawasaki.jp/500/page/0000002354.html",
+    "what": "都市計画の地図（ガイドマップかわさき）の案内。地区計画の区域が載るかは地図で確かめる",
+    "verified": false,
+    "purpose": "地区計画",
+    "role": "補助",
+    "checked": "2026-10-17"
    }
   ],
   "相模原市": [
@@ -338,6 +374,24 @@
     "verified": true,
     "purpose": "建築協定",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "市内の地区計画",
+    "url": "https://www.city.sagamihara.kanagawa.jp/kurashi/1026489/sumai/1026516/1008026.html",
+    "what": "約40地区の一覧。各地区の計画（PDF）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
+   },
+   {
+    "label": "さがみはら地図情報",
+    "url": "https://sagamihara.geocloud.jp/webgis/?p=1",
+    "what": "地番・住所から、地区計画の区域を地図で",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助",
+    "checked": "2026-10-17"
    }
   ],
   "横須賀市": [
@@ -446,6 +500,24 @@
     "verified": true,
     "purpose": "建築協定",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "地区計画の届出（地区計画の一覧）",
+    "url": "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_02868.html",
+    "what": "8地区の一覧。各地区の計画（PDF）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
+   },
+   {
+    "label": "ひらつかわくわくマップ",
+    "url": "https://webgis.alandis.jp/hiratsuka14/",
+    "what": "市の都市計画情報の地図。地区計画の区域が載るかは地図で確かめる",
+    "verified": false,
+    "purpose": "地区計画",
+    "role": "補助",
+    "checked": "2026-10-17"
    }
   ],
   "鎌倉市": [
@@ -488,6 +560,24 @@
     "verified": true,
     "purpose": "建築協定",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "鎌倉の地区計画",
+    "url": "https://www.city.kamakura.kanagawa.jp/plan/tiku.html",
+    "what": "14地区の一覧。各地区の詳しい内容（PDF）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
+   },
+   {
+    "label": "鎌倉市都市計画情報提供サービス",
+    "url": "https://www2.wagmap.jp/kamakura-hazard/Agreement?IsPost=False&MapId=231&RequestPage=/kamakura-hazard/PositionSelect?mid=231",
+    "what": "都市計画の地図（同意のあと開く）。地区計画の区域が載るかは地図で確かめる",
+    "verified": false,
+    "purpose": "地区計画",
+    "role": "補助",
+    "checked": "2026-10-17"
    }
   ],
   "藤沢市": [
@@ -841,6 +931,15 @@
     "verified": true,
     "purpose": "建築協定",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "地区計画（各地区のページ）",
+    "url": "https://www.city.atsugi.kanagawa.jp/soshiki/toshikeikakuka/7/7/index.html",
+    "what": "13地区。各地区のページに計画書・計画図（PDF）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    }
   ],
   "大和市": [
@@ -1021,6 +1120,15 @@
     "verified": true,
     "purpose": "消防",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "地区計画区域内の建築等の届出",
+    "url": "https://www.town.ninomiya.kanagawa.jp/0000000105.html",
+    "what": "一色・富士見が丘三丁目・二宮駅駅前の3地区の地区整備計画（PDF）と規制内容（PDF）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    }
   ],
   "中井町": [
@@ -1055,6 +1163,15 @@
     "verified": true,
     "purpose": "水道",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "中井町の地区計画",
+    "url": "https://www.town.nakai.kanagawa.jp/soshiki/machiseibikakeikakuhan/keikaku_seisaku/1/735.html",
+    "what": "5地区の計画内容・計画図（PDF）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    }
   ],
   "大井町": [
@@ -1191,6 +1308,15 @@
     "verified": true,
     "purpose": "水道",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "地区計画",
+    "url": "https://www.town.kaisei.kanagawa.jp/info/192",
+    "what": "開成駅周辺・松ノ木河原・南部の3地区の計画書（PDF）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    }
   ],
   "箱根町": [
@@ -1293,6 +1419,15 @@
     "verified": true,
     "purpose": "水道",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "船岡周辺地区地区計画（まちづくり課 計画係）",
+    "url": "https://www.town.yugawara.kanagawa.jp/soshiki/5/1074.html",
+    "what": "船岡周辺地区の計画書・計画図・位置図（PDF）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    }
   ],
   "愛川町": [

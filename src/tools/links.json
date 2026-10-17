@@ -245,6 +245,20 @@
 "label": "建築安全推進課で閲覧できる資料（静岡市）"
 },
 {
+"url": "https://www.city.shizuoka.lg.jp/000_004565.html",
+"pref": "静岡県",
+"muni": "静岡市",
+"purpose": "地区計画",
+"label": "地区計画の一覧"
+},
+{
+"url": "https://www.city.shizuoka.lg.jp/000_004562.html",
+"pref": "静岡県",
+"muni": "静岡市",
+"purpose": "地区計画",
+"label": "都市計画情報インターネット提供サービス（しずマップ）"
+},
+{
 "url": "https://www2.wagmap.jp/hamamatsu/PositionSelect?mid=3",
 "pref": "静岡県",
 "muni": "浜松市",
@@ -355,6 +369,13 @@
 "muni": "浜松市",
 "purpose": "建築協定",
 "label": "建築協定（浜松市）"
+},
+{
+"url": "https://www.city.hamamatsu.shizuoka.jp/tochi/city/tochi/chikukeikaku/chikukeikaku.html",
+"pref": "静岡県",
+"muni": "浜松市",
+"purpose": "地区計画",
+"label": "浜松市内の地区計画区域とその内容"
 },
 {
 "url": "https://www.city.numazu.shizuoka.jp/shisei/keikaku/various/toshikei/naiyou/soukatsu.htm",
@@ -637,6 +658,13 @@
 "label": "設計にあたっての条件（富士宮市）"
 },
 {
+"url": "https://www.city.fujinomiya.lg.jp/citizen/llti2b0000002d2i.html",
+"pref": "静岡県",
+"muni": "富士宮市",
+"purpose": "地区計画",
+"label": "地区計画制度とは（地区計画の一覧）"
+},
+{
 "url": "https://webgis.tohnichi-asp.jp/ito/toshikei/",
 "pref": "静岡県",
 "muni": "伊東市",
@@ -833,6 +861,13 @@
 "label": "ついてますか？住宅用火災警報器！（富士市消防本部）"
 },
 {
+"url": "https://www.city.fuji.shizuoka.jp/1040070000/p003937.html",
+"pref": "静岡県",
+"muni": "富士市",
+"purpose": "地区計画",
+"label": "地区計画・申し合わせ地区"
+},
+{
 "url": "https://www.sonicweb-asp.jp/iwata/map?theme=th_3",
 "pref": "静岡県",
 "muni": "磐田市",
@@ -887,6 +922,13 @@
 "muni": "磐田市",
 "purpose": "地区計画",
 "label": "磐田市 建築関係例規"
+},
+{
+"url": "https://www.city.iwata.shizuoka.jp/sangyou_business/kenchiku/1002163.html",
+"pref": "静岡県",
+"muni": "磐田市",
+"purpose": "地区計画",
+"label": "地区計画"
 },
 {
 "url": "https://www.city.yaizu.lg.jp/life/urban/development/about/index.html",
@@ -971,6 +1013,13 @@
 "muni": "焼津市",
 "purpose": "建築協定",
 "label": "建築協定について（焼津市）"
+},
+{
+"url": "https://www.city.yaizu.lg.jp/life/urban/development/about/chikukeikaku/index.html",
+"pref": "静岡県",
+"muni": "焼津市",
+"purpose": "地区計画",
+"label": "地区計画制度"
 },
 {
 "url": "https://www2.wagmap.jp/kakegawa/PositionSelect?mid=15",
@@ -1587,6 +1636,13 @@
 "muni": "牧之原市",
 "purpose": "開発許可",
 "label": "牧之原市 開発行為"
+},
+{
+"url": "https://www.city.makinohara.shizuoka.jp/soshiki/27/54583.html",
+"pref": "静岡県",
+"muni": "牧之原市",
+"purpose": "地区計画",
+"label": "東名相良牧之原IC北側地区の地区計画"
 },
 {
 "url": "https://www.town.higashiizu.lg.jp/bamen/sumai/1798.html",
@@ -2786,6 +2842,13 @@
 "label": "土地利用及び開発行為（都市計画課）"
 },
 {
+"url": "https://www.city.minami-alps.yamanashi.jp/docs/1833.html",
+"pref": "山梨県",
+"muni": "南アルプス市",
+"purpose": "地区計画",
+"label": "南アルプス市地区計画"
+},
+{
 "url": "https://www.city.hokuto.yamanashi.jp/docs/1028.html",
 "pref": "山梨県",
 "muni": "北杜市",
@@ -3050,6 +3113,13 @@
 "muni": "上野原市",
 "purpose": "消防",
 "label": "住宅用火災警報器の設置（上野原市消防本部）"
+},
+{
+"url": "https://www.city.uenohara.yamanashi.jp/page/2396.html",
+"pref": "山梨県",
+"muni": "上野原市",
+"purpose": "地区計画",
+"label": "地区計画について"
 },
 {
 "url": "https://www.city.koshu.yamanashi.jp/docs/2024120900017/",
@@ -3920,6 +3990,20 @@
 "label": "各区の建築協定（横浜市）"
 },
 {
+"url": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/toshiseibi/plan-rule/chikukeikaku/tikukeikaku.html",
+"pref": "神奈川県",
+"muni": "横浜市",
+"purpose": "地区計画",
+"label": "地区計画 地区一覧"
+},
+{
+"url": "https://wwwm.city.yokohama.lg.jp/yokohama/yokohama/Content/pages/up_date/2_imapy/koushin.html",
+"pref": "神奈川県",
+"muni": "横浜市",
+"purpose": "地区計画",
+"label": "iマッピー（行政地図情報提供システム）の更新情報"
+},
+{
 "url": "https://kawasaki.geocloud.jp/webgis/?p=1",
 "pref": "神奈川県",
 "muni": "川崎市",
@@ -4046,6 +4130,20 @@
 "label": "建築協定制度について（川崎市）"
 },
 {
+"url": "https://www.city.kawasaki.jp/500/page/0000018574.html",
+"pref": "神奈川県",
+"muni": "川崎市",
+"purpose": "地区計画",
+"label": "地区計画制度について（地区計画区別一覧）"
+},
+{
+"url": "https://www.city.kawasaki.jp/500/page/0000002354.html",
+"pref": "神奈川県",
+"muni": "川崎市",
+"purpose": "地区計画",
+"label": "都市計画情報インターネット提供サービス"
+},
+{
 "url": "https://sagamihara.geocloud.jp/",
 "pref": "神奈川県",
 "muni": "相模原市",
@@ -4156,6 +4254,20 @@
 "muni": "相模原市",
 "purpose": "建築協定",
 "label": "建築協定（相模原市 都市計画課）"
+},
+{
+"url": "https://www.city.sagamihara.kanagawa.jp/kurashi/1026489/sumai/1026516/1008026.html",
+"pref": "神奈川県",
+"muni": "相模原市",
+"purpose": "地区計画",
+"label": "市内の地区計画"
+},
+{
+"url": "https://sagamihara.geocloud.jp/webgis/?p=1",
+"pref": "神奈川県",
+"muni": "相模原市",
+"purpose": "地区計画",
+"label": "さがみはら地図情報"
 },
 {
 "url": "https://www2.wagmap.jp/yokosuka/Agreement?IsPost=False&MapId=5&RequestPage=%2fyokosuka%2fPositionSelect%3fmid%3d5",
@@ -4333,6 +4445,20 @@
 "label": "平塚市の建築協定"
 },
 {
+"url": "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_02868.html",
+"pref": "神奈川県",
+"muni": "平塚市",
+"purpose": "地区計画",
+"label": "地区計画の届出（地区計画の一覧）"
+},
+{
+"url": "https://webgis.alandis.jp/hiratsuka14/",
+"pref": "神奈川県",
+"muni": "平塚市",
+"purpose": "地区計画",
+"label": "ひらつかわくわくマップ"
+},
+{
 "url": "https://www2.wagmap.jp/kamakura-hazard/PositionSelect?mid=231",
 "pref": "神奈川県",
 "muni": "鎌倉市",
@@ -4415,6 +4541,20 @@
 "muni": "鎌倉市",
 "purpose": "建築協定",
 "label": "建築協定・住民協定"
+},
+{
+"url": "https://www.city.kamakura.kanagawa.jp/plan/tiku.html",
+"pref": "神奈川県",
+"muni": "鎌倉市",
+"purpose": "地区計画",
+"label": "鎌倉の地区計画"
+},
+{
+"url": "https://www2.wagmap.jp/kamakura-hazard/Agreement?IsPost=False&MapId=231&RequestPage=/kamakura-hazard/PositionSelect?mid=231",
+"pref": "神奈川県",
+"muni": "鎌倉市",
+"purpose": "地区計画",
+"label": "鎌倉市都市計画情報提供サービス"
 },
 {
 "url": "https://webgis.alandis.jp/fujisawa14/210/portal/",
@@ -4877,6 +5017,13 @@
 "muni": "厚木市",
 "purpose": "建築協定",
 "label": "建築協定（厚木市建築指導課）"
+},
+{
+"url": "https://www.city.atsugi.kanagawa.jp/soshiki/toshikeikakuka/7/7/index.html",
+"pref": "神奈川県",
+"muni": "厚木市",
+"purpose": "地区計画",
+"label": "地区計画（各地区のページ）"
 },
 {
 "url": "https://www2.wagmap.jp/hadano/Portal",
@@ -5719,6 +5866,13 @@
 "label": "二宮町消防本部 住宅用防災機器等"
 },
 {
+"url": "https://www.town.ninomiya.kanagawa.jp/0000000105.html",
+"pref": "神奈川県",
+"muni": "二宮町",
+"purpose": "地区計画",
+"label": "地区計画区域内の建築等の届出"
+},
+{
 "url": "https://www.town.nakai.kanagawa.jp/soshiki/machiseibikakeikakuhan/keikaku_seisaku/1/782.html",
 "pref": "神奈川県",
 "muni": "中井町",
@@ -5766,6 +5920,13 @@
 "muni": "中井町",
 "purpose": "水道",
 "label": "中井町 水道工事"
+},
+{
+"url": "https://www.town.nakai.kanagawa.jp/soshiki/machiseibikakeikakuhan/keikaku_seisaku/1/735.html",
+"pref": "神奈川県",
+"muni": "中井町",
+"purpose": "地区計画",
+"label": "中井町の地区計画"
 },
 {
 "url": "https://www.town.oi.kanagawa.jp/soshiki/11/toshikeikakuzu.html",
@@ -5943,6 +6104,13 @@
 "label": "開成町 給水工事設計基準（給水装置工事申込書ほか様式）"
 },
 {
+"url": "https://www.town.kaisei.kanagawa.jp/info/192",
+"pref": "神奈川県",
+"muni": "開成町",
+"purpose": "地区計画",
+"label": "地区計画"
+},
+{
 "url": "https://www.town.hakone.kanagawa.jp/www/contents/1100000002098/index.html",
 "pref": "神奈川県",
 "muni": "箱根町",
@@ -6074,6 +6242,13 @@
 "muni": "湯河原町",
 "purpose": "水道",
 "label": "湯河原町 水道施設紹介"
+},
+{
+"url": "https://www.town.yugawara.kanagawa.jp/soshiki/5/1074.html",
+"pref": "神奈川県",
+"muni": "湯河原町",
+"purpose": "地区計画",
+"label": "船岡周辺地区地区計画（まちづくり課 計画係）"
 },
 {
 "url": "https://www.town.aikawa.kanagawa.jp/soshiki/kensetsu/toshi/toshi/info/toshikeikakuzu/1432857728646.html",

@@ -943,6 +943,15 @@
     "verified": true,
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "南アルプス市地区計画",
+    "url": "https://www.city.minami-alps.yamanashi.jp/docs/1833.html",
+    "what": "4地区の一覧と、地区ごとの計画書・計画図（PDF）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    }
   ],
   "都留市": [
@@ -1062,6 +1071,15 @@
     "verified": true,
     "purpose": "消防",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "地区計画について",
+    "url": "https://www.city.uenohara.yamanashi.jp/page/2396.html",
+    "what": "3地区の一覧と、地区ごとの手引き（PDF）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    }
   ],
   "大月市": [

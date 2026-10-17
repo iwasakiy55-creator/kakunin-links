@@ -216,6 +216,24 @@
     "verified": true,
     "purpose": "建築協定",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "地区計画の一覧",
+    "url": "https://www.city.shizuoka.lg.jp/000_004565.html",
+    "what": "地区ごとの計画書・概要図（PDF）と、地区計画の位置図",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
+   },
+   {
+    "label": "都市計画情報インターネット提供サービス（しずマップ）",
+    "url": "https://www.city.shizuoka.lg.jp/000_004562.html",
+    "what": "区域は地図サイト（しずマップ）で",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "補助",
+    "checked": "2026-10-17"
    }
   ],
   "浜松市": [
@@ -290,6 +308,15 @@
     "verified": true,
     "purpose": "建築協定",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "浜松市内の地区計画区域とその内容",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/tochi/city/tochi/chikukeikaku/chikukeikaku.html",
+    "what": "区ごとの一覧（27地区）。地区名から計画書・計画図（PDF）、位置図（PDF）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    }
   ],
   "沼津市": [
@@ -423,6 +450,15 @@
     "verified": true,
     "purpose": "消防",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "地区計画・申し合わせ地区",
+    "url": "https://www.city.fuji.shizuoka.jp/1040070000/p003937.html",
+    "what": "13地区の一覧と、地区ごとのパンフレット（PDF）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    }
   ],
   "富士宮市": [
@@ -490,6 +526,15 @@
     "verified": true,
     "purpose": "建築協定",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "地区計画制度とは（地区計画の一覧）",
+    "url": "https://www.city.fujinomiya.lg.jp/citizen/llti2b0000002d2i.html",
+    "what": "6地区の一覧。地区ごとのページに計画書・区域図（PDF）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    }
   ],
   "焼津市": [
@@ -556,6 +601,15 @@
     "verified": true,
     "purpose": "建築協定",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "地区計画制度",
+    "url": "https://www.city.yaizu.lg.jp/life/urban/development/about/chikukeikaku/index.html",
+    "what": "4地区の一覧と、地区ごとのパンフレット（PDF）。栄町第一地区は決定のページ",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    }
   ],
   "熱海市": [
@@ -1458,6 +1512,15 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "地区計画",
+    "url": "https://www.city.iwata.shizuoka.jp/sangyou_business/kenchiku/1002163.html",
+    "what": "17地区の一覧と、地区ごとのパンフレット（用途・壁面・高さの制限。PDF）、位置図（PDF）",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    }
   ],
   "掛川市": [
@@ -1734,6 +1797,15 @@
     "verified": true,
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "東名相良牧之原IC北側地区の地区計画",
+    "url": "https://www.city.makinohara.shizuoka.jp/soshiki/27/54583.html",
+    "what": "IC北側地区の計画書・附図（PDF）。市の地区計画の一覧ページは見当たらない",
+    "verified": true,
+    "purpose": "地区計画",
+    "role": "まずここで調べる",
+    "checked": "2026-10-17"
    }
   ],
   "森町": [

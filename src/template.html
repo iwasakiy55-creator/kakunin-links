@@ -594,6 +594,8 @@ body.finding .ptabs { opacity:.5; }
 .ttl h2 { color:var(--ink); }
 .back2 { color:var(--sub); }
 .case { border-top:4px solid var(--a); }
+
+.ck.c { background:#1E6FB8; color:#fff; border-color:#1E6FB8; }
 </style>
 </head>
 <body>
@@ -937,7 +939,8 @@ function chips(x) {           // 大事なことを、先に札で
   const w = String(x.what || ""), out = [];
   const a = w.match(/条例化：あり（([^）]*)）/);
   const isJ = x.purpose === "地区計画" && /条例/.test(x.label || "") && !/案の作成手続/.test(x.label || "");
-  if (a || isJ) { const n = ((a ? a[1] : "") + " " + (x.label || "") + " " + w).match(/(\d+)\s*(地区|本)/); out.push(`<span class="ck ok">条例あり${n ? "　" + n[1] + n[2] : ""}</span>`); }
+  if (a || isJ) { const n = ((a ? a[1] : "") + " " + (x.label || "") + " " + w).match(/(\d+)\s*(地区|本)/); out.push(`<span class="ck ok">条例あり＝審査の対象${n ? "　" + n[1] + n[2] : ""}</span>`); }
+  else if (x.purpose === "地区計画" && !/条例化/.test(w) && !/例規/.test(x.label || "")) out.push(`<span class="ck c">地区計画の中身（計画書・計画図）</span>`);
   else if (/条例化：なし/.test(w)) out.push(`<span class="ck no">条例なし</span>`);
   else if (/条例化：確かめられない/.test(w)) out.push(`<span class="ck warn">条例は未確認</span>`);
   if (/PDF/.test(x.label + w)) out.push(`<span class="ck">PDF</span>`);
@@ -968,7 +971,8 @@ function city(pi, m) {
   const list = D.purposes.map(([k, t, sub]) => {
     const a = own.filter(x => (x.purpose || "そのほか") === k).map(x => ({ x, ken: !m }));
     const b = ken.filter(x => (x.purpose || "そのほか") === k).map(x => ({ x, ken: true }));
-    const all = (KEN_FIRST.has(k) ? [...b, ...a] : [...a, ...b]).map((o, i) => ({ ...o, i })).sort((u, v) => score(u.x) - score(v.x) || u.i - v.i);
+    const rk = x => k !== "地区計画" ? score(x) : (/条例化：(なし|確かめられない)/.test(x.what || "") ? 3 : (/条例/.test(x.label || "") || /例規/.test(x.label || "")) ? 2 : (/GIS|マップ|地図/.test(x.label || "") ? 1 : 0));
+    const all = (KEN_FIRST.has(k) ? [...b, ...a] : [...a, ...b]).map((o, i) => ({ ...o, i })).sort((u, v) => rk(u.x) - rk(v.x) || u.i - v.i);
     return { k, t, sub, all };
   }).filter(o => o.all.length || !["そのほか", "白地"].includes(o.k));
   const rows = list.map(({ k, t, sub, all }, idx) => {

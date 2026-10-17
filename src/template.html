@@ -816,6 +816,8 @@ header .brand { margin-right:auto; }
 
 .ty-proc { background:#FFF3C4; color:#7A5B00; }
 .ty-list { background:#DCEFF7; color:#16627F; }
+#help .tys { display:flex; flex-wrap:wrap; gap:8px; margin:6px 0 10px; }
+#help .tys .ty { width:58px; height:50px; font-size:12.5px; }
 </style>
 </head>
 <body>
@@ -841,12 +843,13 @@ header .brand { margin-right:auto; }
 <div class="hhead"><h2>使い方</h2><button id="helpClose" aria-label="閉じる">×</button></div>
 <div class="hsteps">
 <div class="hs"><span>1</span><div><b>市町村を選ぶ</b><p>はじめの画面の枠に、<b>市町村の名前</b>か<b>地名地番</b>を入れて Enter。<br>県のつまみ（静岡・山梨・神奈川）で切り替えて、一覧から押してもよい。</p></div></div>
-<div class="hs"><span>2</span><div><b>目的を選んで、ページを開く</b><p>左の目次（都市計画・道路・災害 …）を押すと、右に調べ先が出ます。<br>いちばん上の枠が<b>まず見るページ</b>。開いた目的には <b class="g">✓</b> が付きます。</p></div></div>
-<div class="hs"><span>3</span><div><b>地名地番を写して、地図で探す</b><p>上の枠に地名地番を貼っておき、<b>「写す」</b>を押すと、開いた地図の検索に貼り付けられます。</p></div></div>
+<div class="hs"><span>2</span><div><b>目的を選ぶ</b><p>上に並ぶつまみ（都市計画・道路・災害 …）を押すと、下に調べ先が出ます。<br>上が<b>「🔍 調べる」</b>（地図・図面）、下が<b>「☎ 決まり・窓口」</b>（条例・手続き・問い合わせ先）。</p></div></div>
+<div class="hs"><span>3</span><div><b>「開く」を押して調べる</b><p>リンクの左の札で、何のページかが分かります。開いた目的には <b class="g">✓</b> が付きます。<br>地名地番を枠に貼っておくと、<b>「写す」</b>で地図の検索に貼り付けられます。</p></div></div>
 <div class="hs"><span>4</span><div><b>画面の写しを PDF で残す</b><p>調べた画面を <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> で切り取り、リンク集の画面に戻って <kbd>Ctrl</kbd>+<kbd>V</kbd>。<br>いま選んでいる目的の名前で、<b>保存先のフォルダに PDF</b> で入ります（はじめの1回だけ、保存先を聞かれます）。</p></div></div>
 <div class="hs"><span>5</span><div><b>関係規定を確かめる</b><p>上の<b>「関係規定」</b>で、建築基準関係規定（19）の一覧と、条文・調べ先が見られます。</p></div></div>
 </div>
-<div class="hnote"><b>札の見方</b>　<span class="ck c">地区計画の中身</span> 計画書・計画図　<span class="ck ok">条例あり＝審査の対象</span>　<span class="ck">窓口で確かめる</span>　<span class="tkb">特</span> 特定行政庁　<span class="tkb lim">限</span> 限定特定行政庁<br>
+<div class="hnote"><b>リンクの札</b><div class="tys"><span class="ty ty-map"><span class="ti">🗺</span>地図</span><span class="ty ty-pdf"><span class="ti">📄</span>PDF</span><span class="ty ty-list"><span class="ti">📋</span>一覧</span><span class="ty ty-page"><span class="ti">📘</span>説明</span><span class="ty ty-law"><span class="ti">⚖</span>条例</span><span class="ty ty-proc"><span class="ti">📝</span>手続き</span><span class="ty ty-ask"><span class="ti">☎</span>窓口</span></div>
+<b>市町村の印</b>　<span class="tkb">特</span> 特定行政庁　<span class="tkb lim">限</span> 限定特定行政庁（一部の建築物だけ市。ほかは県）<br>
 <b>困ったとき</b>　リンクが開けない・載っていない・間違っているときは、マルホープ 岩崎まで。迷ったら、担当の課で確かめてください。</div>
 </div></div>
 <div id="terms" role="dialog" aria-modal="true" aria-label="利用規約"><div class="box"><div class="tx"><h2>調べ先リンク集　利用規約（案）</h2>

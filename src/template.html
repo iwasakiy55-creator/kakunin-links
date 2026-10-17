@@ -1409,7 +1409,16 @@ function city(pi, m) {
     const mp = new Map();
     list.forEach(({ k, t: tt, all }, li) => all.forEach(o => { if (linkType(o.x)[0] !== "map") return;
       const u = o.x.url; if (!mp.has(u)) mp.set(u, { x: o.x, ken: o.ken, ps: [], ks: [], first: li }); const e = mp.get(u); if (!e.ps.includes(tt)) { e.ps.push(tt); e.ks.push(k); } }));
-    const ms = [...mp.values()];
+    // 同じ地図サイトが2枚あるとき（案内のページと地図の本体）は1枚にまとめ、地図の本体のほうを残す
+    const sysName = x => { const s = shortLabel(x.label); const q = s.match(/「([^」]+)」/); return (q ? q[1] : s.replace(/（[^）]*）/g, "")).replace(/\s/g, ""); };
+    const isBody = x => /地図本体/.test(x.label) || !/^(www\.)?(city|town|vill)\./.test(new URL(x.url).hostname);
+    const merged = new Map();
+    [...mp.values()].forEach(e => { const key = (e.ken ? "k:" : "m:") + sysName(e.x); const o = merged.get(key);
+      if (!o) { merged.set(key, e); return; }
+      const keep = isBody(e.x) && !isBody(o.x) ? e : o, drop = keep === e ? o : e;
+      drop.ps.forEach((s, i) => { if (!keep.ps.includes(s)) { keep.ps.push(s); keep.ks.push(drop.ks[i]); } });
+      keep.first = Math.min(keep.first, drop.first); merged.set(key, keep); });
+    const ms = [...merged.values()];
     if (!ms.length) return "";
     const who = e => e.x.src ? "国" : e.ken ? "県" : "市町村";
     const card = e => { const own = e.x.src || (e.ken ? p.name : (m || p.name));

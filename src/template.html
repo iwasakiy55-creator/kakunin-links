@@ -773,6 +773,18 @@ kbd { display:inline-block; font-family:inherit; font-size:14px; font-weight:bol
   .mdr .lk .main::after { padding:6px 12px; font-size:14px; }
   .kind.look .kh::after { display:none; }
 }
+
+/* 入れ物を1つに：上の帯の検索はやめる（はじめの画面＝市町村・地名地番、市町村の画面＝地名地番） */
+header .sbox { display:none !important; }
+header .wrap { justify-content:flex-start; }
+header .brand { margin-right:auto; }
+@media (max-width: 760px) {
+  header .wrap { flex-wrap:nowrap !important; gap:6px !important; padding-top:8px; padding-bottom:8px; }
+  header .brand small { display:none; }
+  header .brand b { font-size:17px; }
+  header .hbtn { padding:6px 10px !important; font-size:14px !important; min-height:36px; }
+  header #themeBtn { display:none; }
+}
 </style>
 </head>
 <body>
@@ -1424,7 +1436,7 @@ function wire() {
   $("#q").addEventListener("blur", () => setTimeout(() => $("#sug").style.display = "none", 150));
   document.addEventListener("keydown", e => {
     const typing = /^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName);
-    if (e.key === "/" && !typing) { e.preventDefault(); $("#q").focus(); }
+    if (e.key === "/" && !typing) { e.preventDefault(); const f = $("#startA") || $("#caseA"); if (f) f.focus(); }
     if (!typing && !e.ctrlKey && !e.altKey && !e.metaKey && /^[1-9]$/.test(e.key)) {
       const r = document.querySelectorAll(".row[data-k]")[+e.key - 1];
       if (r) { e.preventDefault(); setActive(r.dataset.k); const a = r.querySelector(".lk .main"); if (a) { window.open(a.href, "_blank", "noopener"); markSeen(r.dataset.k); } }

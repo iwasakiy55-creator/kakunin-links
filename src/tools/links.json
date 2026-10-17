@@ -196,6 +196,48 @@
 "label": "【指定予定】洞川ほか 特定都市河川の指定について（沼津土木事務所）"
 },
 {
+"url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/002/530/siraji_20210401.pdf",
+"pref": "静岡県",
+"muni": "（県）",
+"purpose": "白地",
+"label": "静岡県 白地地域の建築形態制限 一覧（令和3年4月1日現在・PDF）"
+},
+{
+"url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1044596/1002530/index.html",
+"pref": "静岡県",
+"muni": "（県）",
+"purpose": "白地",
+"label": "静岡県 白地地域の建築形態制限（案内）"
+},
+{
+"url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1044596/1002530/1047474/1016011.html",
+"pref": "静岡県",
+"muni": "（県）",
+"purpose": "白地",
+"label": "静岡県 白地地域の指定 告示の一覧"
+},
+{
+"url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1044596/1044605/1015970.html",
+"pref": "静岡県",
+"muni": "（県）",
+"purpose": "災害",
+"label": "静岡県 災害危険区域（静岡県建築基準条例 第3条・第4条）"
+},
+{
+"url": "https://www.gis.pref.shizuoka.jp/?z=9&ll=34.9791%2C138.3831&t=roadmap&mp=110&op=70&vlf=00003f",
+"pref": "静岡県",
+"muni": "（県）",
+"purpose": "災害",
+"label": "静岡県GIS 災害危険区域"
+},
+{
+"url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1044596/1044605/1015981.html",
+"pref": "静岡県",
+"muni": "（県）",
+"purpose": "災害",
+"label": "静岡県 災害危険区域の一覧表（知事指定の142か所）"
+},
+{
 "url": "https://www.mlit.go.jp/river/kasen/tokuteitoshikasen/portal.html",
 "pref": "静岡県",
 "muni": "（県）",
@@ -357,6 +399,13 @@
 "label": "巴川流域の総合治水対策（静岡市）"
 },
 {
+"url": "https://www.city.shizuoka.lg.jp/s2574/s007816.html",
+"pref": "静岡県",
+"muni": "静岡市",
+"purpose": "白地",
+"label": "静岡市 建築関係例規「用途地域の指定のない区域の形態規制」"
+},
+{
 "url": "https://www2.wagmap.jp/hamamatsu/PositionSelect?mid=3",
 "pref": "静岡県",
 "muni": "浜松市",
@@ -497,6 +546,13 @@
 "label": "浜松市 特定行政庁が指定する事項等"
 },
 {
+"url": "https://www.city.hamamatsu.shizuoka.jp/documents/133890/siteinasikenchikukeitaiseigen.pdf",
+"pref": "静岡県",
+"muni": "浜松市",
+"purpose": "白地",
+"label": "浜松市 用途地域の指定のない区域の建築形態規制の指定一覧（PDF）"
+},
+{
 "url": "https://www.city.numazu.shizuoka.jp/shisei/keikaku/various/toshikei/naiyou/soukatsu.htm",
 "pref": "静岡県",
 "muni": "沼津市",
@@ -586,6 +642,27 @@
 "muni": "沼津市",
 "purpose": "防火",
 "label": "沼津市 まちづくり政策課の担当業務（22条区域の記載・PDF）"
+},
+{
+"url": "https://www.city.numazu.shizuoka.jp/shisei/office/ichiran/toshikei/jyutakuseisaku/reiki.htm",
+"pref": "静岡県",
+"muni": "沼津市",
+"purpose": "建築協定",
+"label": "沼津市 建築関係例規（沼津市建築協定条例）"
+},
+{
+"url": "https://www.mlit.go.jp/common/001302947.pdf",
+"pref": "静岡県",
+"muni": "沼津市",
+"purpose": "建築協定",
+"label": "国土交通省 建築協定認可一覧（沼津市：コモンステージ片浜駅）"
+},
+{
+"url": "https://www.city.numazu.shizuoka.jp/shisei/jourei/yoko/pdf/kenchiku/kenchiku_010.pdf",
+"pref": "静岡県",
+"muni": "沼津市",
+"purpose": "白地",
+"label": "沼津市告示第18号 白地地域の建築形態制限（PDF）"
 },
 {
 "url": "https://www.city.atami.lg.jp/shisei/machidukuri/1001373/1001383.html",
@@ -819,6 +896,13 @@
 "label": "富士宮市 都市計画決定区域内における建築の構造制限（第53条）"
 },
 {
+"url": "https://www.city.fujinomiya.lg.jp/1040610000/p002400.html",
+"pref": "静岡県",
+"muni": "富士宮市",
+"purpose": "白地",
+"label": "富士宮市 設計にあたっての条件（用途地域の指定のない区域）"
+},
+{
 "url": "https://webgis.tohnichi-asp.jp/ito/toshikei/",
 "pref": "静岡県",
 "muni": "伊東市",
@@ -1036,6 +1120,20 @@
 "label": "地区計画・申し合わせ地区"
 },
 {
+"url": "https://www.city.fuji.shizuoka.jp/1040070000/p003898.html",
+"pref": "静岡県",
+"muni": "富士市",
+"purpose": "建築協定",
+"label": "富士市 建築関係例規（富士市建築協定条例）"
+},
+{
+"url": "https://www.city.fuji.shizuoka.jp/documents/3867/fmervo000000dvw5.pdf",
+"pref": "静岡県",
+"muni": "富士市",
+"purpose": "白地",
+"label": "富士市 高さ制限・日影規制の指定状況（PDF）"
+},
+{
 "url": "https://www.sonicweb-asp.jp/iwata/map?theme=th_3",
 "pref": "静岡県",
 "muni": "磐田市",
@@ -1202,6 +1300,13 @@
 "muni": "焼津市",
 "purpose": "防火",
 "label": "焼津市 建築基準法に基づく建築形態規制等の指定内容（PDF）"
+},
+{
+"url": "https://www.city.yaizu.lg.jp/documents/11689/keitaikisei.pdf",
+"pref": "静岡県",
+"muni": "焼津市",
+"purpose": "白地",
+"label": "焼津市 建築形態規制等の指定内容（PDF）"
 },
 {
 "url": "https://www2.wagmap.jp/kakegawa/PositionSelect?mid=15",
@@ -1869,6 +1974,27 @@
 "label": "牧之原市 都市計画法第53条許可申請"
 },
 {
+"url": "https://www.city.makinohara.shizuoka.jp/soshiki/20/2038.html",
+"pref": "静岡県",
+"muni": "牧之原市",
+"purpose": "下水道",
+"label": "牧之原市 農業集落排水（笠名地区）"
+},
+{
+"url": "https://www.city.makinohara.shizuoka.jp/reiki/reiki_honbun/r221RG00000512.html",
+"pref": "静岡県",
+"muni": "牧之原市",
+"purpose": "下水道",
+"label": "牧之原市農業集落排水処理施設条例"
+},
+{
+"url": "https://www.city.makinohara.shizuoka.jp/site/makinohara-life/601.html",
+"pref": "静岡県",
+"muni": "牧之原市",
+"purpose": "下水道",
+"label": "牧之原市 浄化槽設置事業補助金"
+},
+{
 "url": "https://www.town.higashiizu.lg.jp/bamen/sumai/1798.html",
 "pref": "静岡県",
 "muni": "東伊豆町",
@@ -1911,6 +2037,20 @@
 "label": "建築規制及び都市計画情報（東伊豆町）"
 },
 {
+"url": "https://www.town.higashiizu.lg.jp/kurashi/suido/index.html",
+"pref": "静岡県",
+"muni": "東伊豆町",
+"purpose": "水道",
+"label": "東伊豆町 水道（水道課）"
+},
+{
+"url": "https://www.town.higashiizu.lg.jp/kurashi/suido/2437.html",
+"pref": "静岡県",
+"muni": "東伊豆町",
+"purpose": "水道",
+"label": "東伊豆町 指定給水装置工事事業者（当番一覧）"
+},
+{
 "url": "https://www.town.kawazu.shizuoka.jp/wp/wp-content/uploads/2024/05/toshikeikakuyoutochiikizu.pdf",
 "pref": "静岡県",
 "muni": "河津町",
@@ -1951,6 +2091,13 @@
 "muni": "河津町",
 "purpose": "地区計画",
 "label": "河津町例規集（目次検索）"
+},
+{
+"url": "https://www.town.kawazu.shizuoka.jp/choumin/jyoukasou/",
+"pref": "静岡県",
+"muni": "河津町",
+"purpose": "下水道",
+"label": "河津町 合併処理浄化槽の設置補助（公共下水道なし）"
 },
 {
 "url": "https://www.town.minamiizu.shizuoka.jp/docs/2013031200255/",
@@ -2091,6 +2238,13 @@
 "muni": "西伊豆町",
 "purpose": "地区計画",
 "label": "西伊豆町例規集（体系目次）"
+},
+{
+"url": "https://www.town.nishiizu.shizuoka.jp/kakuka/kankyou/kankyou/joukasou.html",
+"pref": "静岡県",
+"muni": "西伊豆町",
+"purpose": "下水道",
+"label": "西伊豆町 合併処理浄化槽設置補助"
 },
 {
 "url": "https://www.town.kannami.shizuoka.jp/soshiki/1012/2/5/1179.html",
@@ -2450,6 +2604,20 @@
 "label": "川根本町例規集（体系目次）"
 },
 {
+"url": "https://www.town.kawanehon.shizuoka.jp/soshiki/kurashikankyo/seikatsukankyo/gaxtupeijoukasou/5856.html",
+"pref": "静岡県",
+"muni": "川根本町",
+"purpose": "下水道",
+"label": "川根本町 合併処理浄化槽設置整備事業費補助金"
+},
+{
+"url": "https://www.town.kawanehon.shizuoka.jp/soshiki/kurashikankyo/seikatsukankyo/suidou/siteikyusuisoutikoujijigyosya/index.html",
+"pref": "静岡県",
+"muni": "川根本町",
+"purpose": "水道",
+"label": "川根本町 指定給水装置工事事業者"
+},
+{
 "url": "https://www.town.morimachi.shizuoka.jp/gyosei/machinososhiki/kensetsuka/toshikeikakukakari/2/752.html",
 "pref": "静岡県",
 "muni": "森町",
@@ -2490,6 +2658,13 @@
 "muni": "森町",
 "purpose": "消防",
 "label": "袋井市森町広域行政組合火災予防条例の一部改正（袋井消防本部）"
+},
+{
+"url": "https://www.town.morimachi.shizuoka.jp/gyosei/machinososhiki/jogesuidoka/josuidokanrigakari/1/1/3771.html",
+"pref": "静岡県",
+"muni": "森町",
+"purpose": "水道",
+"label": "森町 指定給水装置工事事業者名簿"
 },
 {
 "url": "https://www.pref.yamanashi.jp/toshikei/tosikeikakuzu/tosikeikakuzukeisai.html",
@@ -2644,6 +2819,41 @@
 "muni": "（県）",
 "purpose": "浸水",
 "label": "横川ほか4河川の流域図（PDF）"
+},
+{
+"url": "https://www.pref.yamanashi.jp/somu/shigaku/reiki/reiki_honbun/a500RG00001202.html",
+"pref": "山梨県",
+"muni": "（県）",
+"purpose": "白地",
+"label": "山梨県告示第92号 用途地域の指定のない区域の容積率等の限度（例規集）"
+},
+{
+"url": "https://www.mlit.go.jp/common/001302947.pdf",
+"pref": "山梨県",
+"muni": "（県）",
+"purpose": "建築協定",
+"label": "国土交通省 建築協定認可一覧（平成20〜29年度・PDF）"
+},
+{
+"url": "https://www.mlit.go.jp/common/001302949.pdf",
+"pref": "山梨県",
+"muni": "（県）",
+"purpose": "建築協定",
+"label": "国土交通省 有効建築協定数（特定行政庁別・PDF）"
+},
+{
+"url": "https://www.pref.yamanashi.jp/somu/shigaku/reiki/reiki_honbun/a500RG00000961.html",
+"pref": "山梨県",
+"muni": "（県）",
+"purpose": "災害",
+"label": "山梨県建築基準法施行条例 第2条の2・第2条の3（災害危険区域）"
+},
+{
+"url": "https://www.pref.yamanashi.jp/documents/113481/202511takken_seigen_ichiran.pdf",
+"pref": "山梨県",
+"muni": "（県）",
+"purpose": "災害",
+"label": "山梨県 法令制限の問い合わせ先一覧（2025年11月・PDF）"
 },
 {
 "url": "https://www.mlit.go.jp/river/kasen/tokuteitoshikasen/portal.html",
@@ -2805,6 +3015,34 @@
 "muni": "甲府市",
 "purpose": "開発許可",
 "label": "甲府市 都市計画法第53条第1項に基づく建築許可について"
+},
+{
+"url": "https://www.city.kofu.yamanashi.jp/kenchikushido/machi/kenchiku/kenchikukijun/shiraji.html",
+"pref": "山梨県",
+"muni": "甲府市",
+"purpose": "白地",
+"label": "甲府市 白地地域の建築形態規制"
+},
+{
+"url": "https://www.city.kofu.yamanashi.jp/toshikekaku/shise/shisaku/machi/toshi/documents/dai2syou3_1.pdf",
+"pref": "山梨県",
+"muni": "甲府市",
+"purpose": "建築協定",
+"label": "甲府市 建築協定の締結状況（景観計画の資料・PDF）"
+},
+{
+"url": "https://www.city.kofu.yamanashi.jp/kenchikushido/index.html",
+"pref": "山梨県",
+"muni": "甲府市",
+"purpose": "建築協定",
+"label": "甲府市 建築指導課（建築協定の窓口）"
+},
+{
+"url": "https://www.city.kofu.yamanashi.jp/kenchikushido/machi/kenchiku/sedo/choki.html",
+"pref": "山梨県",
+"muni": "甲府市",
+"purpose": "災害",
+"label": "甲府市 長期優良住宅の認定（災害危険区域の記載）"
 },
 {
 "url": "https://www.city.fujiyoshida.yamanashi.jp/page/2080.html",
@@ -3220,6 +3458,13 @@
 "label": "北杜市例規集（第10編 建設）"
 },
 {
+"url": "https://www.city.hokuto.yamanashi.jp/docs/1028.html",
+"pref": "山梨県",
+"muni": "北杜市",
+"purpose": "建築協定",
+"label": "北杜市 都市計画・用途地域・建築制限等のご案内"
+},
+{
 "url": "https://www.city.kai.yamanashi.jp/page/4535.html",
 "pref": "山梨県",
 "muni": "甲斐市",
@@ -3619,6 +3864,13 @@
 "label": "山梨県 下水道事業実施市町村連絡先"
 },
 {
+"url": "https://www.town.hayakawa.yamanashi.jp/town/organization/townsman.html",
+"pref": "山梨県",
+"muni": "早川町",
+"purpose": "水道",
+"label": "早川町 町民課（上下水道の窓口）"
+},
+{
 "url": "https://www.pref.yamanashi.jp/toshikei/tosikeikakuzu/tosikeikakuzukeisai.html",
 "pref": "山梨県",
 "muni": "身延町",
@@ -3792,6 +4044,13 @@
 "muni": "道志村",
 "purpose": "地区計画",
 "label": "道志村ホームページ"
+},
+{
+"url": "http://www.vill.doshi.lg.jp/ka/info.php?if_id=89&ka_id=1",
+"pref": "山梨県",
+"muni": "道志村",
+"purpose": "下水道",
+"label": "道志村 申請書ダウンロード（合併浄化槽整備申請書）"
 },
 {
 "url": "https://www.pref.yamanashi.jp/toshikei/tosikeikakuzu/tosikeikakuzukeisai.html",
@@ -4025,6 +4284,20 @@
 "label": "小菅村ホームページ"
 },
 {
+"url": "http://www.vill.kosuge.yamanashi.jp/living/shinko/identification.html",
+"pref": "山梨県",
+"muni": "小菅村",
+"purpose": "下水道",
+"label": "小菅村 下水道事業経営戦略（源流振興課）"
+},
+{
+"url": "http://www.vill.kosuge.yamanashi.jp/living/shinko/simple.html",
+"pref": "山梨県",
+"muni": "小菅村",
+"purpose": "水道",
+"label": "小菅村 簡易水道事業（源流振興課）"
+},
+{
 "url": "https://ops-jg.d1-law.com/opensearch/?jctcd=8A80736C3F",
 "pref": "山梨県",
 "muni": "丹波山村",
@@ -4037,6 +4310,13 @@
 "muni": "丹波山村",
 "purpose": "下水道",
 "label": "山梨県 下水道事業実施市町村連絡先"
+},
+{
+"url": "https://www.vill.tabayama.yamanashi.jp/gyousei/soshiki.html",
+"pref": "山梨県",
+"muni": "丹波山村",
+"purpose": "水道",
+"label": "丹波山村 行政組織図（簡易水道の窓口）"
 },
 {
 "url": "https://www.pref.kanagawa.jp/docs/cz4/cnt/f360252/index.html",
@@ -4242,6 +4522,48 @@
 "label": "県西土木事務所 許認可指導課（53条の申請書あり）"
 },
 {
+"url": "https://www.pref.kanagawa.jp/docs/cz4/cnt/f6963/p36725.html",
+"pref": "神奈川県",
+"muni": "（県）",
+"purpose": "白地",
+"label": "神奈川県 用途地域の指定のない区域における建築形態制限の指定"
+},
+{
+"url": "https://www.pref.kanagawa.jp/documents/24963/0_02shiteigaiyou.pdf",
+"pref": "神奈川県",
+"muni": "（県）",
+"purpose": "白地",
+"label": "神奈川県 建築形態制限指定の概要（数値・PDF。令和7年11月11日現在）"
+},
+{
+"url": "https://www.pref.kanagawa.jp/documents/24951/jourei3jou_kaisetsu.pdf",
+"pref": "神奈川県",
+"muni": "（県）",
+"purpose": "災害",
+"label": "神奈川県建築基準条例の解説（災害危険区域の条を削除。令和8年4月1日施行）"
+},
+{
+"url": "https://www.pref.kanagawa.jp/docs/cz4/cnt/f6963/251223.html",
+"pref": "神奈川県",
+"muni": "（県）",
+"purpose": "災害",
+"label": "神奈川県建築基準条例の一部改正（令和7年12月23日公布）"
+},
+{
+"url": "https://www.pref.kanagawa.jp/documents/24928/k0_kanagawa-benrityou_r8.doc",
+"pref": "神奈川県",
+"muni": "（県）",
+"purpose": "防火",
+"label": "神奈川県版 建築確認べんり帳 令和8年版（Word）「法第22条の指定」"
+},
+{
+"url": "https://www.pref.kanagawa.jp/docs/ck2/machikenn/machi020311.html",
+"pref": "神奈川県",
+"muni": "（県）",
+"purpose": "防火",
+"label": "厚木土木事務所 建築のよくある質問（22条区域）"
+},
+{
 "url": "https://www.mlit.go.jp/river/kasen/tokuteitoshikasen/portal.html",
 "pref": "神奈川県",
 "muni": "（県）",
@@ -4424,6 +4746,20 @@
 "label": "横浜市 都市計画法第53条に基づく建築許可"
 },
 {
+"url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/tetsuduki/kuiki/chousei.html",
+"pref": "神奈川県",
+"muni": "横浜市",
+"purpose": "白地",
+"label": "横浜市 市街化調整区域の建築物の制限"
+},
+{
+"url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/tetsuduki/kuiki/saigai.html",
+"pref": "神奈川県",
+"muni": "横浜市",
+"purpose": "災害",
+"label": "横浜市 災害危険区域"
+},
+{
 "url": "https://kawasaki.geocloud.jp/webgis/?p=1",
 "pref": "神奈川県",
 "muni": "川崎市",
@@ -4585,6 +4921,27 @@
 "label": "川崎市 都市計画施設の区域内における建築物の建築（都計法53条）"
 },
 {
+"url": "https://reiki.city.kawasaki.jp/kawasaki/d1w_reiki/H415902500579/H415902500579_j.html",
+"pref": "神奈川県",
+"muni": "川崎市",
+"purpose": "白地",
+"label": "川崎市 市街化調整区域における容積率等の指定（告示第579号）"
+},
+{
+"url": "https://www.city.kawasaki.jp/500/page/0000165026.html",
+"pref": "神奈川県",
+"muni": "川崎市",
+"purpose": "白地",
+"label": "川崎市 市街化調整区域における形態規制（案内）"
+},
+{
+"url": "https://www.city.kawasaki.jp/500/page/0000115824.html",
+"pref": "神奈川県",
+"muni": "川崎市",
+"purpose": "災害",
+"label": "川崎市建築基準条例に基づく災害危険区域"
+},
+{
 "url": "https://sagamihara.geocloud.jp/",
 "pref": "神奈川県",
 "muni": "相模原市",
@@ -4739,6 +5096,20 @@
 "label": "相模原市 境川（特定都市河川）"
 },
 {
+"url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026823/machitsukuri/kaihatsu/1004764.html",
+"pref": "神奈川県",
+"muni": "相模原市",
+"purpose": "白地",
+"label": "相模原市 用途地域の指定のない区域等の建築形態制限"
+},
+{
+"url": "https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/004/781/kaisetu_20250425.pdf",
+"pref": "神奈川県",
+"muni": "相模原市",
+"purpose": "災害",
+"label": "相模原市建築基準条例 第3条・第4条（災害危険区域）解説（PDF）"
+},
+{
 "url": "https://www2.wagmap.jp/yokosuka/Agreement?IsPost=False&MapId=5&RequestPage=%2fyokosuka%2fPositionSelect%3fmid%3d5",
 "pref": "神奈川県",
 "muni": "横須賀市",
@@ -4865,6 +5236,20 @@
 "label": "横須賀市 都市計画道路等の区域内における建築等の制限（都計法53条）"
 },
 {
+"url": "https://www.city.yokosuka.kanagawa.jp/4805/tokei/thouku/thouku.html",
+"pref": "神奈川県",
+"muni": "横須賀市",
+"purpose": "白地",
+"label": "横須賀市 市街化調整区域内の形態制限"
+},
+{
+"url": "https://www.city.yokosuka.kanagawa.jp/reiki/reiki_honbun/g204RG00000421.html",
+"pref": "神奈川県",
+"muni": "横須賀市",
+"purpose": "災害",
+"label": "横須賀市建築基準条例 第3条・第4条（災害危険区域）"
+},
+{
 "url": "https://webgis.alandis.jp/hiratsuka14/",
 "pref": "神奈川県",
 "muni": "平塚市",
@@ -4961,6 +5346,27 @@
 "muni": "平塚市",
 "purpose": "開発許可",
 "label": "平塚市 都市計画施設区域内建築物の許可申請（第53条）"
+},
+{
+"url": "https://www.city.hiratsuka.kanagawa.jp/common/000020527.pdf",
+"pref": "神奈川県",
+"muni": "平塚市",
+"purpose": "白地",
+"label": "平塚市 市街化調整区域の建築形態制限（PDF）"
+},
+{
+"url": "https://www.city.hiratsuka.kanagawa.jp/common/000023786.pdf",
+"pref": "神奈川県",
+"muni": "平塚市",
+"purpose": "災害",
+"label": "平塚市建築基準条例の解説 第2章（災害危険区域・PDF）"
+},
+{
+"url": "https://www.pref.kanagawa.jp/documents/24928/08_hiratsuka-benrityou_r8.doc",
+"pref": "神奈川県",
+"muni": "平塚市",
+"purpose": "防火",
+"label": "建築確認べんり帳 平塚市（Word）「法第22条の指定」"
 },
 {
 "url": "https://www2.wagmap.jp/kamakura-hazard/PositionSelect?mid=231",
@@ -5082,6 +5488,27 @@
 "label": "鎌倉市 都市計画法第53条の規定による建築の許可"
 },
 {
+"url": "https://www.city.kamakura.kanagawa.jp/kenchikushidou/documents/siteikannkei.pdf",
+"pref": "神奈川県",
+"muni": "鎌倉市",
+"purpose": "白地",
+"label": "鎌倉市の建築基準法の指定関係（PDF）"
+},
+{
+"url": "https://www.city.kamakura.kanagawa.jp/kenchikushidou/chouseikuiki.html",
+"pref": "神奈川県",
+"muni": "鎌倉市",
+"purpose": "白地",
+"label": "鎌倉市 市街化調整区域における建築物の形態制限（区域図）"
+},
+{
+"url": "https://www.city.kamakura.kanagawa.jp/kenchikushidou/documents/kamakura_kenchikukijun_jourei_20250311.pdf",
+"pref": "神奈川県",
+"muni": "鎌倉市",
+"purpose": "災害",
+"label": "鎌倉市建築基準条例 第3条・第4条（災害危険区域・PDF）"
+},
+{
 "url": "https://webgis.alandis.jp/fujisawa14/210/portal/",
 "pref": "神奈川県",
 "muni": "藤沢市",
@@ -5185,6 +5612,27 @@
 "muni": "藤沢市",
 "purpose": "開発許可",
 "label": "藤沢市 都市計画施設等の区域内における建築物の規制及び許可（都計法53条）"
+},
+{
+"url": "https://www.city.fujisawa.kanagawa.jp/kentiku/machizukuri/kenchiku/kakunin/shinse-kensa/kakushukijun/shitenaiyo.html",
+"pref": "神奈川県",
+"muni": "藤沢市",
+"purpose": "白地",
+"label": "藤沢市 市街化調整区域における建築形態制限"
+},
+{
+"url": "https://www.city.fujisawa.kanagawa.jp/documents/20898/02dai2syou.pdf",
+"pref": "神奈川県",
+"muni": "藤沢市",
+"purpose": "災害",
+"label": "藤沢市建築基準等に関する条例の解説 第2章（災害危険区域・PDF）"
+},
+{
+"url": "https://www.pref.kanagawa.jp/documents/24928/05_fujisawa-benrityou_r8.docx",
+"pref": "神奈川県",
+"muni": "藤沢市",
+"purpose": "防火",
+"label": "建築確認べんり帳 藤沢市（Word）「法第22条の指定」"
 },
 {
 "url": "https://www2.wagmap.jp/navi-odawara/Portal",
@@ -5299,6 +5747,20 @@
 "label": "小田原市 都市計画法第53条許可"
 },
 {
+"url": "https://www.city.odawara.kanagawa.jp/field/c-planning/building/etc/youtotiiki.html",
+"pref": "神奈川県",
+"muni": "小田原市",
+"purpose": "白地",
+"label": "小田原市 用途地域の指定のない区域の建築形態制限"
+},
+{
+"url": "https://www.city.odawara.kanagawa.jp/global-image/units/92127/1-20250128085530_b67981cf2c4f92.pdf",
+"pref": "神奈川県",
+"muni": "小田原市",
+"purpose": "災害",
+"label": "小田原市建築基準条例等及び同解説（第3条 災害危険区域・PDF）"
+},
+{
 "url": "https://www2.wagmap.jp/chigasaki/Portal",
 "pref": "神奈川県",
 "muni": "茅ヶ崎市",
@@ -5411,6 +5873,20 @@
 "label": "茅ヶ崎市 都市計画法第53条の許可基準"
 },
 {
+"url": "https://www.city.chigasaki.kanagawa.jp/machidukuri/shidou/1008188.html",
+"pref": "神奈川県",
+"muni": "茅ヶ崎市",
+"purpose": "白地",
+"label": "茅ヶ崎市 市街化調整区域の建築形態制限"
+},
+{
+"url": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/008/169/jourei.pdf",
+"pref": "神奈川県",
+"muni": "茅ヶ崎市",
+"purpose": "災害",
+"label": "茅ヶ崎市建築基準条例（災害危険区域の規定なし・PDF）"
+},
+{
 "url": "https://www.machi-info.jp/machikado/yamato_city/consentpage/gis-toshi.html",
 "pref": "神奈川県",
 "muni": "大和市",
@@ -5521,6 +5997,13 @@
 "muni": "大和市",
 "purpose": "開発許可",
 "label": "大和市 都市計画道路の予定区域内の建築制限（第53条関係）"
+},
+{
+"url": "https://www.city.yamato.lg.jp/material/files/group/10/H12-11-kaisetsu.pdf",
+"pref": "神奈川県",
+"muni": "大和市",
+"purpose": "災害",
+"label": "大和市建築基準条例 逐条解説（災害危険区域の規定なし・PDF）"
 },
 {
 "url": "https://www.city.atsugi.kanagawa.jp/soshiki/toshikeikakuka/12/6129.html",
@@ -5642,6 +6125,27 @@
 "label": "厚木市 都市計画法第53条に基づく許可申請"
 },
 {
+"url": "https://www.city.atsugi.kanagawa.jp/soshiki/kenchikushidoka/11/2/924.html",
+"pref": "神奈川県",
+"muni": "厚木市",
+"purpose": "白地",
+"label": "厚木市 用途地域が定められていない地域の建築形態制限"
+},
+{
+"url": "https://www.city.atsugi.kanagawa.jp/material/files/group/50/R7_12kenkizyogaii.pdf",
+"pref": "神奈川県",
+"muni": "厚木市",
+"purpose": "災害",
+"label": "厚木市建築基準条例の改正（災害危険区域の条を削除・令和7年12月）"
+},
+{
+"url": "https://www.pref.kanagawa.jp/documents/24928/07_atsugi-benrityou_r8.docx",
+"pref": "神奈川県",
+"muni": "厚木市",
+"purpose": "防火",
+"label": "建築確認べんり帳 厚木市（Word）「法第22条の指定」"
+},
+{
 "url": "https://www2.wagmap.jp/hadano/Portal",
 "pref": "神奈川県",
 "muni": "秦野市",
@@ -5752,6 +6256,20 @@
 "muni": "秦野市",
 "purpose": "開発許可",
 "label": "秦野市 都市計画法第53条の許可申請"
+},
+{
+"url": "https://www.city.hadano.kanagawa.jp/soshiki/8/1057/2/1/3188.html",
+"pref": "神奈川県",
+"muni": "秦野市",
+"purpose": "白地",
+"label": "秦野市 用途地域別の制限等"
+},
+{
+"url": "https://www.city.hadano.kanagawa.jp/material/files/group/58/kaisetu.pdf",
+"pref": "神奈川県",
+"muni": "秦野市",
+"purpose": "災害",
+"label": "秦野市建築基準条例及び解説（第3条 災害危険区域・PDF）"
 },
 {
 "url": "https://www.city.zushi.kanagawa.jp/jigyosha/kaihatsu/1009302.html",

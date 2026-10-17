@@ -144,6 +144,57 @@
     "南アルプス市",
     "中央市"
    ]
+  },
+  {
+   "label": "山梨県告示第92号 用途地域の指定のない区域の容積率等の限度（例規集）",
+   "url": "https://www.pref.yamanashi.jp/somu/shigaku/reiki/reiki_honbun/a500RG00001202.html",
+   "what": "都市計画区域ごとの容積率・建ぺい率・斜線の数値の表（甲府都市計画区域＝20/10・6/10 など。図示区域は別の値）。図は県建築住宅課・建設事務所・市町村で縦覧",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "白地",
+   "role": "まずここで調べる",
+   "except": [
+    "甲府市"
+   ]
+  },
+  {
+   "label": "国土交通省 建築協定認可一覧（平成20〜29年度・PDF）",
+   "url": "https://www.mlit.go.jp/common/001302947.pdf",
+   "what": "その年度に認可した協定だけ（山梨県は大月市の桂台第3区・第4区など）。有効な協定の全部ではない。県に一覧のページはないので、建設事務所に確かめる",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "建築協定",
+   "role": "補助"
+  },
+  {
+   "label": "国土交通省 有効建築協定数（特定行政庁別・PDF）",
+   "url": "https://www.mlit.go.jp/common/001302949.pdf",
+   "what": "件数だけ（平成29年度末：山梨県15）。地区名はない",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "建築協定",
+   "role": "補助"
+  },
+  {
+   "label": "山梨県建築基準法施行条例 第2条の2・第2条の3（災害危険区域）",
+   "url": "https://www.pref.yamanashi.jp/somu/shigaku/reiki/reiki_honbun/a500RG00000961.html",
+   "what": "急傾斜地崩壊危険区域と、知事が指定した区域が災害危険区域。居室のある建物はRC造などにし、崖に直接面させない。区域は建設事務所に確かめる",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "災害",
+   "role": "まずここで調べる",
+   "except": [
+    "甲府市"
+   ]
+  },
+  {
+   "label": "山梨県 法令制限の問い合わせ先一覧（2025年11月・PDF）",
+   "url": "https://www.pref.yamanashi.jp/documents/113481/202511takken_seigen_ichiran.pdf",
+   "what": "災害危険区域：甲府市内は甲府市、ほかは県の各建設事務所",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "災害",
+   "role": "補助"
   }
  ],
  "municipalities": {
@@ -226,6 +277,42 @@
     "verified": true,
     "checked": "2026-10-17",
     "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "甲府市 白地地域の建築形態規制",
+    "url": "https://www.city.kofu.yamanashi.jp/kenchikushido/machi/kenchiku/kenchikukijun/shiraji.html",
+    "what": "区域ごとの容積率・建ぺい率・斜線（例：（1）200%・60%・道路1.5・隣地20m＋1.25）。町名ごとに区域を割り当て。区域図あり",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "甲府市 建築協定の締結状況（景観計画の資料・PDF）",
+    "url": "https://www.city.kofu.yamanashi.jp/toshikekaku/shise/shisaku/machi/toshi/documents/dai2syou3_1.pdf",
+    "what": "美里団地・ムサシノヒルズ湯村の2件（2008年の資料。いまも有効かは窓口で確かめる）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "建築協定",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "甲府市 建築指導課（建築協定の窓口）",
+    "url": "https://www.city.kofu.yamanashi.jp/kenchikushido/index.html",
+    "what": "業務に「建築協定等に関すること」。協定の一覧はない",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "建築協定",
+    "role": "補助"
+   },
+   {
+    "label": "甲府市 長期優良住宅の認定（災害危険区域の記載）",
+    "url": "https://www.city.kofu.yamanashi.jp/kenchikushido/machi/kenchiku/sedo/choki.html",
+    "what": "「災害危険区域（現在指定はありません）」（2024年6月更新）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "災害",
     "role": "まずここで調べる"
    }
   ],
@@ -497,6 +584,15 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "北杜市 都市計画・用途地域・建築制限等のご案内",
+    "url": "https://www.city.hokuto.yamanashi.jp/docs/1028.html",
+    "what": "「建築協定：なし」（2017年8月更新）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "建築協定",
+    "role": "まずここで調べる"
    }
   ],
   "市川三郷町": [
@@ -598,6 +694,15 @@
     "what": "早川町は単独特定環境保全公共下水道あり（県の公共下水道事業のページ）。窓口は町民課 0556-45-2518。町のサイトに排水設備・区域のページは見つからず",
     "verified": true,
     "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "早川町 町民課（上下水道の窓口）",
+    "url": "https://www.town.hayakawa.yamanashi.jp/town/organization/townsman.html",
+    "what": "上下水道・合併浄化槽は町民課 環境担当。給水の申込みの案内ページはない",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "水道",
     "role": "まずここで調べる"
    }
   ],
@@ -1158,6 +1263,15 @@
     "verified": false,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "道志村 申請書ダウンロード（合併浄化槽整備申請書）",
+    "url": "http://www.vill.doshi.lg.jp/ka/info.php?if_id=89&ka_id=1",
+    "what": "下水道はなく、村全体を合併浄化槽で処理。産業振興課",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "下水道",
+    "role": "まずここで調べる"
    }
   ],
   "上野原市": [
@@ -1337,6 +1451,15 @@
     "verified": true,
     "purpose": "下水道",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "丹波山村 行政組織図（簡易水道の窓口）",
+    "url": "https://www.vill.tabayama.yamanashi.jp/gyousei/soshiki.html",
+    "what": "簡易水道は住民生活課、下水道は振興課",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "水道",
+    "role": "まずここで調べる"
    }
   ],
   "小菅村": [
@@ -1346,6 +1469,24 @@
     "what": "条例化：確かめられない（公式サイトにつながらず、例規集を開けなかった）",
     "verified": false,
     "purpose": "地区計画",
+    "role": "補助"
+   },
+   {
+    "label": "小菅村 下水道事業経営戦略（源流振興課）",
+    "url": "http://www.vill.kosuge.yamanashi.jp/living/shinko/identification.html",
+    "what": "特定環境保全公共下水道と農業集落排水がある。区域・排水設備の申請は源流振興課に確かめる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "下水道",
+    "role": "補助"
+   },
+   {
+    "label": "小菅村 簡易水道事業（源流振興課）",
+    "url": "http://www.vill.kosuge.yamanashi.jp/living/shinko/simple.html",
+    "what": "簡易水道。給水の申込みは源流振興課に確かめる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "水道",
     "role": "補助"
    }
   ]

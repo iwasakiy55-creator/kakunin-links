@@ -281,6 +281,69 @@
     "函南町",
     "伊豆の国市"
    ]
+  },
+  {
+   "label": "静岡県 白地地域の建築形態制限 一覧（令和3年4月1日現在・PDF）",
+   "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/002/530/siraji_20210401.pdf",
+   "what": "市町・地区ごとの表（多くは容積率200%・建蔽率60%・道路∠1.5・隣地31m+∠2.5。熱海市・三島市の一部などは別の値）。地区ごとの値はPDFの表で1行ずつ確かめる",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "白地",
+   "role": "まずここで調べる",
+   "only": [
+    "県が特定行政庁の市町"
+   ]
+  },
+  {
+   "label": "静岡県 白地地域の建築形態制限（案内）",
+   "url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1044596/1002530/index.html",
+   "what": "県の案内の入口。詳細は市町の建築担当課",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "白地",
+   "role": "補助",
+   "only": [
+    "県が特定行政庁の市町"
+   ]
+  },
+  {
+   "label": "静岡県 白地地域の指定 告示の一覧",
+   "url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1044596/1002530/1047474/1016011.html",
+   "what": "告示の番号・施行日・対象区域（令和5年3月31日 第223号まで）",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "白地",
+   "role": "補助",
+   "only": [
+    "県が特定行政庁の市町"
+   ]
+  },
+  {
+   "label": "静岡県 災害危険区域（静岡県建築基準条例 第3条・第4条）",
+   "url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1044596/1044605/1015970.html",
+   "what": "県内全域に適用。①急傾斜地崩壊危険区域 1,350か所 ②津波・高潮・出水などで知事が指定した 142か所（令和8年3月31日現在）。区域は県GIS",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "災害",
+   "role": "まずここで調べる"
+  },
+  {
+   "label": "静岡県GIS 災害危険区域",
+   "url": "https://www.gis.pref.shizuoka.jp/?z=9&ll=34.9791%2C138.3831&t=roadmap&mp=110&op=70&vlf=00003f",
+   "what": "災害危険区域の地図",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "災害",
+   "role": "まずここで調べる"
+  },
+  {
+   "label": "静岡県 災害危険区域の一覧表（知事指定の142か所）",
+   "url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1044596/1044605/1015981.html",
+   "what": "市町ごとの一覧（浜松市25・静岡市9・焼津市7 など。2026年9月更新）",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "災害",
+   "role": "補助"
   }
  ],
  "municipalities": {
@@ -402,6 +465,15 @@
     "checked": "2026-10-18",
     "purpose": "浸水",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡市 建築関係例規「用途地域の指定のない区域の形態規制」",
+    "url": "https://www.city.shizuoka.lg.jp/s2574/s007816.html",
+    "what": "容積率200%。建蔽率は旧由比町・旧蒲原町が70%、それ以外は60%。道路∠1.5、隣地31m+∠2.5",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
+    "role": "まずここで調べる"
    }
   ],
   "浜松市": [
@@ -512,6 +584,15 @@
     "checked": "2026-10-17",
     "purpose": "防火",
     "role": "補助"
+   },
+   {
+    "label": "浜松市 用途地域の指定のない区域の建築形態規制の指定一覧（PDF）",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/documents/133890/siteinasikenchikukeitaiseigen.pdf",
+    "what": "市告示第271号（H19.4.1）。容積率200%（一部400%）・建蔽率60%・道路1.5・隣地2.5。日影あり",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
+    "role": "まずここで調べる"
    }
   ],
   "沼津市": [
@@ -586,6 +667,33 @@
     "verified": true,
     "checked": "2026-10-17",
     "purpose": "防火",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "沼津市 建築関係例規（沼津市建築協定条例）",
+    "url": "https://www.city.numazu.shizuoka.jp/shisei/office/ichiran/toshikei/jyutakuseisaku/reiki.htm",
+    "what": "建築協定条例の案内だけ。協定の一覧はない（有効1件：平成29年度末。窓口は住宅政策課）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "建築協定",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "国土交通省 建築協定認可一覧（沼津市：コモンステージ片浜駅）",
+    "url": "https://www.mlit.go.jp/common/001302947.pdf",
+    "what": "平成21年認可。いまも有効かは窓口で確かめる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "建築協定",
+    "role": "補助"
+   },
+   {
+    "label": "沼津市告示第18号 白地地域の建築形態制限（PDF）",
+    "url": "https://www.city.numazu.shizuoka.jp/shisei/jourei/yoko/pdf/kenchiku/kenchiku_010.pdf",
+    "what": "大部分は容積率20/10・建ぺい率6/10。内浦・西浦などの字の一部は20/10・7/10、30/10・7/10。道路∠1.5、隣地31m+∠2.5",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
     "role": "まずここで調べる"
    }
   ],
@@ -663,6 +771,24 @@
     "purpose": "地区計画",
     "role": "まずここで調べる",
     "checked": "2026-10-17"
+   },
+   {
+    "label": "富士市 建築関係例規（富士市建築協定条例）",
+    "url": "https://www.city.fuji.shizuoka.jp/1040070000/p003898.html",
+    "what": "建築協定条例の案内だけ。協定の一覧はない（有効1件：平成29年度末。地区名は不明）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "建築協定",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "富士市 高さ制限・日影規制の指定状況（PDF）",
+    "url": "https://www.city.fuji.shizuoka.jp/documents/3867/fmervo000000dvw5.pdf",
+    "what": "調整区域：容積率200%・建ぺい率60%・道路1.5（20m）・隣地31m+2.5・日影あり",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
+    "role": "まずここで調べる"
    }
   ],
   "富士宮市": [
@@ -757,6 +883,15 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "富士宮市 設計にあたっての条件（用途地域の指定のない区域）",
+    "url": "https://www.city.fujinomiya.lg.jp/1040610000/p002400.html",
+    "what": "容積率200%・建ぺい率60%・道路1.5・隣地31m+2.5",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
+    "role": "まずここで調べる"
    }
   ],
   "焼津市": [
@@ -840,6 +975,15 @@
     "verified": true,
     "checked": "2026-10-17",
     "purpose": "防火",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "焼津市 建築形態規制等の指定内容（PDF）",
+    "url": "https://www.city.yaizu.lg.jp/documents/11689/keitaikisei.pdf",
+    "what": "調整区域は容積率200%・建蔽率60%、または300%・60%の2段。隣地31m+2.5",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
     "role": "まずここで調べる"
    }
   ],
@@ -1146,6 +1290,24 @@
     "verified": true,
     "purpose": "下水道",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "東伊豆町 水道（水道課）",
+    "url": "https://www.town.higashiizu.lg.jp/kurashi/suido/index.html",
+    "what": "水道の案内の一覧。給水装置工事は水道課へ",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "東伊豆町 指定給水装置工事事業者（当番一覧）",
+    "url": "https://www.town.higashiizu.lg.jp/kurashi/suido/2437.html",
+    "what": "指定給水装置工事事業者の一覧（PDF）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "水道",
+    "role": "補助"
    }
   ],
   "河津町": [
@@ -1172,6 +1334,15 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "河津町 合併処理浄化槽の設置補助（公共下水道なし）",
+    "url": "https://www.town.kawazu.shizuoka.jp/choumin/jyoukasou/",
+    "what": "町に公共下水道はない。補助は単独浄化槽からの替えだけ（新築は対象外）。町民生活課",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "下水道",
+    "role": "まずここで調べる"
    }
   ],
   "南伊豆町": [
@@ -1266,6 +1437,15 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "西伊豆町 合併処理浄化槽設置補助",
+    "url": "https://www.town.nishiizu.shizuoka.jp/kakuka/kankyou/kankyou/joukasou.html",
+    "what": "新築も補助の対象（着工前に申請）。下水道の区域の案内はない。環境課",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "下水道",
+    "role": "まずここで調べる"
    }
   ],
   "御殿場市": [
@@ -1773,6 +1953,24 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "川根本町 合併処理浄化槽設置整備事業費補助金",
+    "url": "https://www.town.kawanehon.shizuoka.jp/soshiki/kurashikankyo/seikatsukankyo/gaxtupeijoukasou/5856.html",
+    "what": "着工前の申請（建築確認通知書の写しが要る）。下水道の案内はない。くらし環境課",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "川根本町 指定給水装置工事事業者",
+    "url": "https://www.town.kawanehon.shizuoka.jp/soshiki/kurashikankyo/seikatsukankyo/suidou/siteikyusuisoutikoujijigyosya/index.html",
+    "what": "事業者の一覧と様式（簡易水道）。くらし環境課",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "水道",
+    "role": "まずここで調べる"
    }
   ],
   "磐田市": [
@@ -2154,6 +2352,33 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "牧之原市 農業集落排水（笠名地区）",
+    "url": "https://www.city.makinohara.shizuoka.jp/soshiki/20/2038.html",
+    "what": "農業集落排水は笠名地区だけ。ほかは浄化槽。農林水産課 基盤整備係",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "牧之原市農業集落排水処理施設条例",
+    "url": "https://www.city.makinohara.shizuoka.jp/reiki/reiki_honbun/r221RG00000512.html",
+    "what": "第6条：排水区域で新築するときは排水設備を設ける",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "下水道",
+    "role": "補助"
+   },
+   {
+    "label": "牧之原市 浄化槽設置事業補助金",
+    "url": "https://www.city.makinohara.shizuoka.jp/site/makinohara-life/601.html",
+    "what": "合併処理浄化槽の設置補助（市内全域・新築も対象）。環境課",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "下水道",
+    "role": "補助"
    }
   ],
   "森町": [
@@ -2180,6 +2405,15 @@
     "what": "袋井市森町広域行政組合火災予防条例の改正のお知らせ（袋井市のサイト内）。森町を管轄する旨は条例の名前から。住警器の専用ページは見つからなかった",
     "verified": true,
     "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "森町 指定給水装置工事事業者名簿",
+    "url": "https://www.town.morimachi.shizuoka.jp/gyosei/machinososhiki/jogesuidoka/josuidokanrigakari/1/1/3771.html",
+    "what": "指定事業者の名簿。上下水道課 上水道管理係",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "水道",
     "role": "まずここで調べる"
    }
   ]

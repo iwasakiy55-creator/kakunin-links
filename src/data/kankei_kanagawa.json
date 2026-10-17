@@ -303,6 +303,142 @@
     "山北町",
     "開成町"
    ]
+  },
+  {
+   "label": "神奈川県 用途地域の指定のない区域における建築形態制限の指定",
+   "url": "https://www.pref.kanagawa.jp/docs/cz4/cnt/f6963/p36725.html",
+   "what": "市街化調整区域などが対象（平成16年4月施行）。都市計画区域外は神奈川県建築基準条例。数値は下の「指定の概要」",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "白地",
+   "role": "まずここで調べる",
+   "except": [
+    "横浜市",
+    "川崎市",
+    "相模原市",
+    "横須賀市",
+    "藤沢市",
+    "平塚市",
+    "小田原市",
+    "茅ヶ崎市",
+    "厚木市",
+    "大和市",
+    "鎌倉市",
+    "秦野市"
+   ]
+  },
+  {
+   "label": "神奈川県 建築形態制限指定の概要（数値・PDF。令和7年11月11日現在）",
+   "url": "https://www.pref.kanagawa.jp/documents/24963/0_02shiteigaiyou.pdf",
+   "what": "ほとんどの町は容積率100%・建蔽率50%・道路∠1.25・隣地20m+∠1.25。自然公園特別地域などは50/30。区域ごとの例外あり",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "白地",
+   "role": "まずここで調べる",
+   "except": [
+    "横浜市",
+    "川崎市",
+    "相模原市",
+    "横須賀市",
+    "藤沢市",
+    "平塚市",
+    "小田原市",
+    "茅ヶ崎市",
+    "厚木市",
+    "大和市",
+    "鎌倉市",
+    "秦野市"
+   ]
+  },
+  {
+   "label": "神奈川県建築基準条例の解説（災害危険区域の条を削除。令和8年4月1日施行）",
+   "url": "https://www.pref.kanagawa.jp/documents/24951/jourei3jou_kaisetsu.pdf",
+   "what": "県の災害危険区域は、いまは指定なし（土砂災害特別警戒区域で、令80条の3により構造を規制）",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "災害",
+   "role": "まずここで調べる",
+   "except": [
+    "横浜市",
+    "川崎市",
+    "相模原市",
+    "横須賀市",
+    "藤沢市",
+    "平塚市",
+    "小田原市",
+    "茅ヶ崎市",
+    "厚木市",
+    "大和市",
+    "鎌倉市",
+    "秦野市"
+   ]
+  },
+  {
+   "label": "神奈川県建築基準条例の一部改正（令和7年12月23日公布）",
+   "url": "https://www.pref.kanagawa.jp/docs/cz4/cnt/f6963/251223.html",
+   "what": "第2条の2・第2条の3（災害危険区域）を削除。新旧対照表あり",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "災害",
+   "role": "補助",
+   "except": [
+    "横浜市",
+    "川崎市",
+    "相模原市",
+    "横須賀市",
+    "藤沢市",
+    "平塚市",
+    "小田原市",
+    "茅ヶ崎市",
+    "厚木市",
+    "大和市",
+    "鎌倉市",
+    "秦野市"
+   ]
+  },
+  {
+   "label": "神奈川県版 建築確認べんり帳 令和8年版（Word）「法第22条の指定」",
+   "url": "https://www.pref.kanagawa.jp/documents/24928/k0_kanagawa-benrityou_r8.doc",
+   "what": "全域＝逗子・三浦・葉山・大磯・二宮・寒川・座間・海老名・綾瀬・開成／一部＝伊勢原・箱根・真鶴・湯河原・愛川・南足柄・中井・大井・松田・山北。「一部」の範囲は土木事務所で確かめる",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "防火",
+   "role": "まずここで調べる",
+   "only": [
+    "逗子市",
+    "三浦市",
+    "葉山町",
+    "大磯町",
+    "二宮町",
+    "寒川町",
+    "座間市",
+    "海老名市",
+    "綾瀬市",
+    "伊勢原市",
+    "愛川町",
+    "開成町",
+    "箱根町",
+    "真鶴町",
+    "湯河原町",
+    "南足柄市",
+    "中井町",
+    "大井町",
+    "松田町",
+    "山北町"
+   ]
+  },
+  {
+   "label": "厚木土木事務所 建築のよくある質問（22条区域）",
+   "url": "https://www.pref.kanagawa.jp/docs/ck2/machikenn/machi020311.html",
+   "what": "愛川町は市街化区域がすべて22条区域（調整区域は窓口で）。清川村は22条区域の指定なし",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "防火",
+   "role": "まずここで調べる",
+   "only": [
+    "愛川町",
+    "清川村"
+   ]
   }
  ],
  "municipalities": {
@@ -421,6 +557,24 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "横浜市 市街化調整区域の建築物の制限",
+    "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/tetsuduki/kuiki/chousei.html",
+    "what": "一般：建蔽率50%・容積率80%。幹線街路の沿道50m以内：60%・200%。道路1.25・隣地20m+1.25・日影あり",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "横浜市 災害危険区域",
+    "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/tetsuduki/kuiki/saigai.html",
+    "what": "横浜市内に災害危険区域はない（2021年5月に全域を除いた）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "災害",
+    "role": "まずここで調べる"
    }
   ],
   "川崎市": [
@@ -537,6 +691,33 @@
     "verified": true,
     "checked": "2026-10-17",
     "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "川崎市 市街化調整区域における容積率等の指定（告示第579号）",
+    "url": "https://reiki.city.kawasaki.jp/kawasaki/d1w_reiki/H415902500579/H415902500579_j.html",
+    "what": "区域1〜23ごとに指定（容積率は主に50・80・200%、建蔽率30〜60%）。区域は市の都市計画情報で調べる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "川崎市 市街化調整区域における形態規制（案内）",
+    "url": "https://www.city.kawasaki.jp/500/page/0000165026.html",
+    "what": "数値は告示第579号、日影は市建築基準条例第7条",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
+    "role": "補助"
+   },
+   {
+    "label": "川崎市建築基準条例に基づく災害危険区域",
+    "url": "https://www.city.kawasaki.jp/500/page/0000115824.html",
+    "what": "急傾斜地崩壊危険区域を災害危険区域とする（土砂災害特別警戒区域は除く）。区域は「ガイドマップかわさき」",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "災害",
     "role": "まずここで調べる"
    }
   ],
@@ -657,6 +838,24 @@
     "checked": "2026-10-18",
     "purpose": "浸水",
     "role": "補助"
+   },
+   {
+    "label": "相模原市 用途地域の指定のない区域等の建築形態制限",
+    "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026823/machitsukuri/kaihatsu/1004764.html",
+    "what": "旧市域ごとに指定（調整区域は100/50・80/50 など）。都市計画区域外（旧津久井・藤野）も指定あり",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "相模原市建築基準条例 第3条・第4条（災害危険区域）解説（PDF）",
+    "url": "https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/004/781/kaisetu_20250425.pdf",
+    "what": "急傾斜地崩壊危険区域を指定（特別警戒区域は除く）。区域の表あり",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "災害",
+    "role": "まずここで調べる"
    }
   ],
   "横須賀市": [
@@ -756,6 +955,24 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "横須賀市 市街化調整区域内の形態制限",
+    "url": "https://www.city.yokosuka.kanagawa.jp/4805/tokei/thouku/thouku.html",
+    "what": "一般は容積率80%・建ぺい率40%。特別緑地保全地区などは50/30。道路1.25（20m）・隣地20m+1.25",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "横須賀市建築基準条例 第3条・第4条（災害危険区域）",
+    "url": "https://www.city.yokosuka.kanagawa.jp/reiki/reiki_honbun/g204RG00000421.html",
+    "what": "急傾斜地崩壊危険区域（市長告示で除いた区域を除く）と、市長が指定した区域",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "災害",
+    "role": "まずここで調べる"
    }
   ],
   "平塚市": [
@@ -839,6 +1056,33 @@
     "verified": true,
     "checked": "2026-10-17",
     "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "平塚市 市街化調整区域の建築形態制限（PDF）",
+    "url": "https://www.city.hiratsuka.kanagawa.jp/common/000020527.pdf",
+    "what": "市街化調整区域のすべて：建ぺい率50%・容積率100%・道路1.25・隣地20m+1.25",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "平塚市建築基準条例の解説 第2章（災害危険区域・PDF）",
+    "url": "https://www.city.hiratsuka.kanagawa.jp/common/000023786.pdf",
+    "what": "急傾斜地崩壊危険区域を指定（7か所・平成27年時点）。いまの条文は窓口で確かめる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "災害",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "建築確認べんり帳 平塚市（Word）「法第22条の指定」",
+    "url": "https://www.pref.kanagawa.jp/documents/24928/08_hiratsuka-benrityou_r8.doc",
+    "what": "全域（防火・準防火地域を除く）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "防火",
     "role": "まずここで調べる"
    }
   ],
@@ -933,6 +1177,33 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "鎌倉市の建築基準法の指定関係（PDF）",
+    "url": "https://www.city.kamakura.kanagawa.jp/kenchikushidou/documents/siteikannkei.pdf",
+    "what": "市街化調整区域：風致地区内は容積率80%・建蔽率40%、風致地区外は100%・50%",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "鎌倉市 市街化調整区域における建築物の形態制限（区域図）",
+    "url": "https://www.city.kamakura.kanagawa.jp/kenchikushidou/chouseikuiki.html",
+    "what": "区域図（画像）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
+    "role": "補助"
+   },
+   {
+    "label": "鎌倉市建築基準条例 第3条・第4条（災害危険区域・PDF）",
+    "url": "https://www.city.kamakura.kanagawa.jp/kenchikushidou/documents/kamakura_kenchikukijun_jourei_20250311.pdf",
+    "what": "急傾斜地崩壊危険区域（特別警戒区域は除く）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "災害",
+    "role": "まずここで調べる"
    }
   ],
   "藤沢市": [
@@ -1000,6 +1271,33 @@
     "verified": true,
     "checked": "2026-10-17",
     "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "藤沢市 市街化調整区域における建築形態制限",
+    "url": "https://www.city.fujisawa.kanagawa.jp/kentiku/machizukuri/kenchiku/kakunin/shinse-kensa/kakushukijun/shitenaiyo.html",
+    "what": "A地区80/50、B地区100/40、C地区80/40、D地区（沿道）100/60。区域は「ふじさわキュンマップ」",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "藤沢市建築基準等に関する条例の解説 第2章（災害危険区域・PDF）",
+    "url": "https://www.city.fujisawa.kanagawa.jp/documents/20898/02dai2syou.pdf",
+    "what": "急傾斜地崩壊危険区域（特別警戒区域は除く）。RC造など",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "災害",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "建築確認べんり帳 藤沢市（Word）「法第22条の指定」",
+    "url": "https://www.pref.kanagawa.jp/documents/24928/05_fujisawa-benrityou_r8.docx",
+    "what": "市の区域の全部",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "防火",
     "role": "まずここで調べる"
    }
   ],
@@ -1093,6 +1391,24 @@
     "verified": true,
     "checked": "2026-10-17",
     "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "小田原市 用途地域の指定のない区域の建築形態制限",
+    "url": "https://www.city.odawara.kanagawa.jp/field/c-planning/building/etc/youtotiiki.html",
+    "what": "容積率100%・建ぺい率50%・道路1.25・隣地20m+1.25",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "小田原市建築基準条例等及び同解説（第3条 災害危険区域・PDF）",
+    "url": "https://www.city.odawara.kanagawa.jp/global-image/units/92127/1-20250128085530_b67981cf2c4f92.pdf",
+    "what": "急傾斜地崩壊危険区域を災害危険区域とする",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "災害",
     "role": "まずここで調べる"
    }
   ],
@@ -1194,6 +1510,24 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "茅ヶ崎市 市街化調整区域の建築形態制限",
+    "url": "https://www.city.chigasaki.kanagawa.jp/machidukuri/shidou/1008188.html",
+    "what": "市街化調整区域の全域：容積率100%・建ぺい率50%・道路1.25・隣地20m+1.25",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "茅ヶ崎市建築基準条例（災害危険区域の規定なし・PDF）",
+    "url": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/008/169/jourei.pdf",
+    "what": "条例に災害危険区域の規定はない",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "災害",
+    "role": "補助"
    }
   ],
   "逗子市": [
@@ -1379,6 +1713,24 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "秦野市 用途地域別の制限等",
+    "url": "https://www.city.hadano.kanagawa.jp/soshiki/8/1057/2/1/3188.html",
+    "what": "市街化調整区域：容積率100%・建ぺい率50%・道路1.25（20m）・隣地20m+1.25",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "秦野市建築基準条例及び解説（第3条 災害危険区域・PDF）",
+    "url": "https://www.city.hadano.kanagawa.jp/material/files/group/58/kaisetu.pdf",
+    "what": "急傾斜地崩壊危険区域を指定（令和5年4月版）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "災害",
+    "role": "まずここで調べる"
    }
   ],
   "厚木市": [
@@ -1453,6 +1805,33 @@
     "verified": true,
     "checked": "2026-10-17",
     "purpose": "開発許可",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "厚木市 用途地域が定められていない地域の建築形態制限",
+    "url": "https://www.city.atsugi.kanagawa.jp/soshiki/kenchikushidoka/11/2/924.html",
+    "what": "容積率100%（一部300%）・建ぺい率50%（一部60%）・道路1.25・隣地20+1.25。「一部」の区域は窓口で",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "白地",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "厚木市建築基準条例の改正（災害危険区域の条を削除・令和7年12月）",
+    "url": "https://www.city.atsugi.kanagawa.jp/material/files/group/50/R7_12kenkizyogaii.pdf",
+    "what": "第3条・第4条を削除（令和7年12月22日施行）。いまは災害危険区域の指定なし",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "災害",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "建築確認べんり帳 厚木市（Word）「法第22条の指定」",
+    "url": "https://www.pref.kanagawa.jp/documents/24928/07_atsugi-benrityou_r8.docx",
+    "what": "全域（国定公園等の一部区域を除く）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "防火",
     "role": "まずここで調べる"
    }
   ],
@@ -1546,6 +1925,15 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "大和市建築基準条例 逐条解説（災害危険区域の規定なし・PDF）",
+    "url": "https://www.city.yamato.lg.jp/material/files/group/10/H12-11-kaisetsu.pdf",
+    "what": "条例に災害危険区域の規定はない",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "災害",
+    "role": "補助"
    }
   ],
   "葉山町": [

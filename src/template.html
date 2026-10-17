@@ -1120,6 +1120,7 @@ function flags(x) {
 }
 const score = x => (x.role || "").startsWith("まず") ? 0 : 1;
 function show(html, focus = true) { document.body.classList.remove("home"); const m = $("#main"); m.innerHTML = html; m.classList.remove("fade"); void m.offsetWidth; m.classList.add("fade"); window.scrollTo(0, 0); if (focus) m.focus({ preventScroll: true }); }
+let LOCKED = false;
 function go(h) { history.replaceState(null, "", h ? "#" + encodeURIComponent(h) : location.pathname + location.search); }
 
 /* 見回り */
@@ -1199,6 +1200,7 @@ function narrow() {     // はじめの枠に入れた字で、一覧を絞る�
   const msg = $("#startMsg"); if (msg) msg.innerHTML = key ? `<span class="msg">${hit ? `${hit} 件。${hit === 1 ? "Enter で開きます" : "下から選んでください"}` : "見つかりません"}</span>` : "";
 }
 function home() {
+  if (LOCKED) return;   // 時間外・期間外は、どのボタンからも中に入れない
   if (PT >= D.prefs.length) PT = 0;
   go(""); setTimeout(() => { const a = $("#startA"); if (a && !/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)) a.focus(); }, 50);
   const rc = recent.filter(r => D.prefs[r.p] && D.prefs[r.p].munis[r.m]);
@@ -1342,6 +1344,7 @@ function memoBox(url, mm, where) {
   return `<div class="lmemo"><textarea data-mk="${esc(memoKeyU(url))}" data-where="${esc(where)}" placeholder="このページのメモ（例：区域図は PDF の 3 枚目）" aria-label="このページのメモ">${esc(mm ? mm.t : "")}</textarea><div class="st">${mm ? `${esc(mm.at)} に保存` : "書くと、自動で保存します"}</div></div>`;
 }
 function city(pi, m) {
+  if (LOCKED) return;   // 時間外・期間外は、どのボタンからも中に入れない
   const p = D.prefs[pi];
   go(p.name + (m ? "/" + m : ""));
   if (m) { PT = pi; store.set("linkshu-pt", pi); }
@@ -1493,6 +1496,7 @@ function caseSummary() {
 
 /* 建築基準関係規定の一覧 */
 function laws() {
+  if (LOCKED) return;   // 時間外・期間外は、どのボタンからも中に入れない
   go("関係規定");
   const K = D.kankei || { items: [], also: [] };
   const back = recent[0] && D.prefs[recent[0].p] ? recent[0] : null;
@@ -1565,6 +1569,7 @@ function suggest() {
   $("#sug").style.display = "block";
 }
 function words(qr) {
+  if (LOCKED) return;   // 時間外・期間外は、どのボタンからも中に入れない
   go("");
   const qs = qr.toLowerCase().split(/\s+/).filter(Boolean), hits = [];
   D.prefs.forEach(p => [[p.name + "（県のページ）", p.pref], ...Object.entries(p.munis)].forEach(([m, xs]) => xs.forEach(x => {
@@ -1748,6 +1753,8 @@ function boot() {
   if (g) {
     $("#main").innerHTML = `<div class="gate"><div class="gi">${svg(I.clock, 34)}</div><h2>${esc(g[0])}</h2><p>${esc(g[1])}</p></div>`;
     $("header .sbox").style.visibility = "hidden"; $("#memoBtn").style.display = "none";
+    LOCKED = true;
+    ["#helpBtn", "#lawBtn"].forEach(s => { const b = $(s); if (b) b.style.display = "none"; });
     return;
   }
   const jd = s => s ? s.replace(/^(\d+)-0?(\d+)-0?(\d+)$/, "$1年$2月$3日") : "";

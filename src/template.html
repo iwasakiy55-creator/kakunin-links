@@ -760,6 +760,19 @@ kbd { display:inline-block; font-family:inherit; font-size:14px; font-weight:bol
 .kind.look .kh::after { content:"② 開いて調べる"; margin-left:auto; font-size:13px; color:var(--faint); font-weight:normal; }
 .mdl::before { font-size:16.5px !important; color:var(--a) !important; }
 .kind.look .kh::after { font-size:15.5px !important; color:var(--a) !important; font-weight:bold !important; }
+
+/* 鬼レビューの直し */
+.kind.ask .ck.mado { display:none; }
+.mdr .tagk, .mdr .first.tagk { font-size:13px !important; padding:1px 7px !important; }
+.case::before { content:"準備：地名地番を貼る・保存先を選ぶ（はじめに1回）"; display:block; font-size:15px; font-weight:bold; color:var(--sub); margin:0 0 8px; }
+.prog .tm { color:var(--faint); font-size:14px; }
+@media (max-width: 760px) {
+  .mdl { flex-wrap:nowrap !important; overflow-x:auto !important; top:0 !important; padding:8px !important; scrollbar-width:thin; }
+  .mdl::before { display:none; }
+  .case .how1, .case .prog .tm { display:none; }
+  .mdr .lk .main::after { padding:6px 12px; font-size:14px; }
+  .kind.look .kh::after { display:none; }
+}
 </style>
 </head>
 <body>
@@ -1121,7 +1134,7 @@ function chips(x) {           // 大事なことを、先に札で
   else if (/条例化：確かめられない/.test(w)) out.push(`<span class="ck warn">条例は未確認</span>`);
   if (/PDF/.test(x.label + w)) out.push(`<span class="ck">PDF</span>`);
   if (/GIS|マップ|地図/.test(x.label)) out.push(`<span class="ck">地図</span>`);
-  if (/窓口|閲覧は/.test(w)) out.push(`<span class="ck">窓口で確かめる</span>`);
+  if (/窓口|閲覧は/.test(w)) out.push(`<span class="ck mado">窓口で確かめる</span>`);
   return out.join("");
 }
 /* 調べるページ と 決まり・窓口 を分ける（名前で見分ける。データは変えない） */
@@ -1137,7 +1150,7 @@ function linkBlock(o, p, m, first) {
   const x = o.x, mm = MEMO[memoKeyU(x.url)];
   const kt = o.ken && (m || x.src) ? `<span class="first tagk">${esc(x.src || p.name)}</span>` : "";
   return `<div class="lkw"><div class="lk ${first ? "top" : ""}" data-u="${esc(x.url)}">
-    <a class="main" href="${esc(x.url)}" target="_blank" rel="noopener" title="${esc(x.label + (x.what ? "\n" + x.what : ""))}">${chips(x) ? `<div class="cks">${chips(x)}</div>` : ""}<div class="tl">${kt}${esc(shortLabel(x.label))}${svg(I.arrow, 15)}</div>
+    <a class="main" href="${esc(x.url)}" target="_blank" rel="noopener" title="${esc(x.label + (shortNote(x.what) ? "\n" + shortNote(x.what) : ""))}">${chips(x) ? `<div class="cks">${chips(x)}</div>` : ""}<div class="tl">${kt}${esc(shortLabel(x.label))}${svg(I.arrow, 15)}</div>
       ${shortNote(x.what, x) ? `<div class="what">${esc(shortNote(x.what, x))}</div>` : ""}</a>
     <div class="acts"><button class="act" data-copy="${esc(x.url)}" title="このページの場所を写す（質疑書などに貼れる）" aria-label="場所を写す" data-lb="写す">${svg(I.copy, 17)}</button>
       <button class="act ${mm ? "has" : ""}" data-lmemo="${esc(x.url)}" title="このページにメモを書く" aria-label="メモ" data-lb="メモ">${svg(I.pen, 17)}</button></div></div>
@@ -1181,7 +1194,7 @@ function city(pi, m) {
   const G = Object.fromEntries(D.purposes.map(x => [x[0], x[3] || ""]));
   const navs = list.map(({ k, t, all }, idx) => { const it = CASE.items[k] || {};
     const gh = idx === 0 || G[list[idx - 1].k] !== G[k] ? `<div class="grp">${esc(G[k] || "")}</div>` : "";
-    return gh + `<button data-sel="${esc(k)}" class="${it.seen || it.saved ? "seen" : ""} ${all.length ? "" : "none"}" style="--pc:var(${(ICON[k] || ICON["そのほか"])[0]})"><span class="n">${idx + 1}</span><span class="tx">${esc(t)}</span><span class="ck">${svg(I.ok, 18)}</span></button>`; }).join("");
+    return gh + `<button data-sel="${esc(k)}" class="${it.seen || it.saved ? "seen" : ""} ${all.length ? "" : "none"}" ${all.length ? "" : 'title="この市町村では、載せている調べ先がありません"'} style="--pc:var(${(ICON[k] || ICON["そのほか"])[0]})"><span class="n">${idx + 1}</span><span class="tx">${esc(t)}</span><span class="ck">${svg(I.ok, 18)}</span></button>`; }).join("");
   const keys = `<div class="keys">数字キーで開く：${list.map((o, i) => `<b>${i + 1}</b> ${esc(o.t.replace("建築基準法の", ""))}`).join("　")}</div>`;
   const hold = m && (p.hold || []).includes(m)
     ? `<div class="holdn">${svg(I.info, 20)}<div><b>${esc(m)}</b>のホームページは、リンクに事前の許可が要るため、許可をいただくまで載せていません。${esc(p.name)}・国などのページを載せています。${esc(m)}のページは、${esc(m)}のホームページから直接たどってください。</div></div>` : "";

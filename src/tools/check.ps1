@@ -90,8 +90,11 @@ foreach ($r in $res) {
   $chg = ''
   if ($pv -and $pv.changed) { $chg = $pv.changed }
   $why = ''; if ($pv -and $pv.why) { $why = $pv.why }
-  if ($ok -and $pv -and $pv.title -and $r.title -and ($pv.title -ne $r.title)) { $chg = $today; $why = 'title'; $changed++ }
-  elseif ($ok -and $pv -and $pv.hash -and $r.hash -and ($pv.hash -ne $r.hash)) { $chg = $today; $why = 'body'; $changed++ }
+  # 例規集の検索の画面は、開くたびに中の文字が変わるので、変わったかは見ない（2026-10-18）
+  $dyn = $r.url -match 'd1-law\.com/opensearch|legal-square\.com'
+  if ($dyn) { $chg = ''; $why = '' }
+  if (-not $dyn -and $ok -and $pv -and $pv.title -and $r.title -and ($pv.title -ne $r.title)) { $chg = $today; $why = 'title'; $changed++ }
+  elseif (-not $dyn -and $ok -and $pv -and $pv.hash -and $r.hash -and ($pv.hash -ne $r.hash)) { $chg = $today; $why = 'body'; $changed++ }
   $hash = $r.hash; if (-not $ok -and $pv -and $pv.hash) { $hash = $pv.hash }
   $title = $r.title; if (-not $ok -and $pv -and $pv.title) { $title = $pv.title }
   if (-not $ok) { $bad++ }

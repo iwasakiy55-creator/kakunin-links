@@ -686,6 +686,13 @@
 "label": "沼津市告示第18号 白地地域の建築形態制限（PDF）"
 },
 {
+"url": "https://www.city.numazu.shizuoka.jp/shisei/office/ichiran/toshikei/jyutakuseisaku/keikan/doc/kyouaidouro.pdf",
+"pref": "静岡県",
+"muni": "沼津市",
+"purpose": "決まり",
+"label": "狭あい道路拡幅整備事業のご案内（PDF）"
+},
+{
 "url": "https://www.city.atami.lg.jp/shisei/machidukuri/1001373/1001383.html",
 "pref": "静岡県",
 "muni": "熱海市",
@@ -931,6 +938,13 @@
 "label": "富士宮市 設計にあたっての条件（用途地域の指定のない区域）"
 },
 {
+"url": "https://www.city.fujinomiya.lg.jp/1040610000/p002102.html",
+"pref": "静岡県",
+"muni": "富士宮市",
+"purpose": "決まり",
+"label": "狭あい道路（富士宮市）"
+},
+{
 "url": "https://webgis.tohnichi-asp.jp/ito/toshikei/",
 "pref": "静岡県",
 "muni": "伊東市",
@@ -1160,6 +1174,34 @@
 "muni": "富士市",
 "purpose": "白地",
 "label": "富士市 高さ制限・日影規制の指定状況（PDF）"
+},
+{
+"url": "https://www.city.fuji.shizuoka.jp/documents/3871/dorosyogo.pdf",
+"pref": "静岡県",
+"muni": "富士市",
+"purpose": "決まり",
+"label": "富士市の道路等の照合制度（PDF）"
+},
+{
+"url": "https://www.city.fuji.shizuoka.jp/documents/3871/dorosyogo.pdf#toshi",
+"pref": "静岡県",
+"muni": "富士市",
+"purpose": "決まり",
+"label": "富士市の道路等の照合制度（PDF）"
+},
+{
+"url": "https://www.city.fuji.shizuoka.jp/documents/3871/dorosyogo.pdf#gesui",
+"pref": "静岡県",
+"muni": "富士市",
+"purpose": "決まり",
+"label": "富士市の道路等の照合制度（PDF）"
+},
+{
+"url": "https://www.city.fuji.shizuoka.jp/1040070000/p003946.html",
+"pref": "静岡県",
+"muni": "富士市",
+"purpose": "決まり",
+"label": "狭あい道路拡幅整備事業（富士市）"
 },
 {
 "url": "https://www.sonicweb-asp.jp/iwata/map?theme=th_3",
@@ -1769,6 +1811,20 @@
 "muni": "裾野市",
 "purpose": "開発許可",
 "label": "裾野市 都市計画法第53条の許可申請"
+},
+{
+"url": "https://www.city.susono.shizuoka.jp/soshiki/6/1/3/5/1760.html",
+"pref": "静岡県",
+"muni": "裾野市",
+"purpose": "決まり",
+"label": "確認申請（建築物）／裾野市"
+},
+{
+"url": "https://www.city.susono.shizuoka.jp/soshiki/6/1/3/5/1760.html#shobo",
+"pref": "静岡県",
+"muni": "裾野市",
+"purpose": "決まり",
+"label": "確認申請（建築物）／裾野市"
 },
 {
 "url": "https://experience.arcgis.com/experience/dd07e699e2ce41ac8a265a386f59f6f3/page/地図-都市計画-用途地域?org=kosai",
@@ -5523,6 +5579,20 @@
 "label": "建築確認べんり帳 平塚市（Word）「法第22条の指定」"
 },
 {
+"url": "https://www.city.hiratsuka.kanagawa.jp/common/200046807.pdf",
+"pref": "神奈川県",
+"muni": "平塚市",
+"purpose": "決まり",
+"label": "狭あい道路整備事業のご案内（PDF）"
+},
+{
+"url": "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_02899.html",
+"pref": "神奈川県",
+"muni": "平塚市",
+"purpose": "決まり",
+"label": "景観法および平塚市景観条例の届出"
+},
+{
 "url": "https://www2.wagmap.jp/kamakura-hazard/PositionSelect?mid=231",
 "pref": "神奈川県",
 "muni": "鎌倉市",
@@ -5789,6 +5859,20 @@
 "label": "建築確認べんり帳 藤沢市（Word）「法第22条の指定」"
 },
 {
+"url": "https://www.city.fujisawa.kanagawa.jp/keikan/machizukuri/kenchiku/kekan/todokede.html",
+"pref": "神奈川県",
+"muni": "藤沢市",
+"purpose": "決まり",
+"label": "景観法に基づく手続の対象（藤沢市）"
+},
+{
+"url": "https://www.city.fujisawa.kanagawa.jp/keikan/machizukuri/kenchiku/kekan/jizenkyogi.html",
+"pref": "神奈川県",
+"muni": "藤沢市",
+"purpose": "決まり",
+"label": "景観法に基づく手続に関する事前協議（藤沢市）"
+},
+{
 "url": "https://www2.wagmap.jp/navi-odawara/Portal",
 "pref": "神奈川県",
 "muni": "小田原市",
@@ -5913,6 +5997,27 @@
 "muni": "小田原市",
 "purpose": "災害",
 "label": "小田原市建築基準条例等及び同解説（第3条 災害危険区域・PDF）"
+},
+{
+"url": "https://www.city.odawara.kanagawa.jp/field/c-planning/building/confirmation/kyouai.html",
+"pref": "神奈川県",
+"muni": "小田原市",
+"purpose": "決まり",
+"label": "後退用地の協議（小田原市）"
+},
+{
+"url": "https://www.city.odawara.kanagawa.jp/field/c-planning/keikan/todokede.html",
+"pref": "神奈川県",
+"muni": "小田原市",
+"purpose": "決まり",
+"label": "景観の届出（小田原市）"
+},
+{
+"url": "https://www.city.odawara.kanagawa.jp/field/c-planning/building/confirmation/k-sinsei_zen.html",
+"pref": "神奈川県",
+"muni": "小田原市",
+"purpose": "決まり",
+"label": "建築確認申請前の手続き（小田原市）"
 },
 {
 "url": "https://www2.wagmap.jp/chigasaki/Portal",
@@ -6041,6 +6146,20 @@
 "label": "茅ヶ崎市建築基準条例（災害危険区域の規定なし・PDF）"
 },
 {
+"url": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/008/230/tetsudukijourei.shin.pdf",
+"pref": "神奈川県",
+"muni": "茅ヶ崎市",
+"purpose": "決まり",
+"label": "茅ヶ崎市まちづくり手続条例（PDF）"
+},
+{
+"url": "https://www.city.chigasaki.kanagawa.jp/machidukuri/shidou/1008167.html",
+"pref": "神奈川県",
+"muni": "茅ヶ崎市",
+"purpose": "決まり",
+"label": "建築確認申請の手続きについて（茅ヶ崎市）"
+},
+{
 "url": "https://www.machi-info.jp/machikado/yamato_city/consentpage/gis-toshi.html",
 "pref": "神奈川県",
 "muni": "大和市",
@@ -6158,6 +6277,13 @@
 "muni": "大和市",
 "purpose": "災害",
 "label": "大和市建築基準条例 逐条解説（災害危険区域の規定なし・PDF）"
+},
+{
+"url": "https://www.city.yamato.lg.jp/gyosei/soshik/71/kakusyuzigyou/4736.html",
+"pref": "神奈川県",
+"muni": "大和市",
+"purpose": "決まり",
+"label": "狭あい道路用地取得事業（大和市）"
 },
 {
 "url": "https://www.city.atsugi.kanagawa.jp/soshiki/toshikeikakuka/12/6129.html",
@@ -6298,6 +6424,13 @@
 "muni": "厚木市",
 "purpose": "防火",
 "label": "建築確認べんり帳 厚木市（Word）「法第22条の指定」"
+},
+{
+"url": "https://www.city.atsugi.kanagawa.jp/soshiki/kaihatsushinsaka/2_2/3/596.html",
+"pref": "神奈川県",
+"muni": "厚木市",
+"purpose": "決まり",
+"label": "特定開発事業の手引（厚木市）"
 },
 {
 "url": "https://www2.wagmap.jp/hadano/Portal",

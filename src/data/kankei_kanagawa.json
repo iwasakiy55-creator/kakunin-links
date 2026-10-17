@@ -1150,6 +1150,28 @@
     "checked": "2026-10-18",
     "purpose": "防火",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "狭あい道路整備事業のご案内（PDF）",
+    "url": "https://www.city.hiratsuka.kanagawa.jp/common/200046807.pdf",
+    "what": "「建築確認をされる前に必ず」協議申請（建築指導課で種別・後退を確認→土木総務課で境界確定図→道路管理課）。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭あい道路に関する協議申請",
+    "rule_for": "道路"
+   },
+   {
+    "label": "景観法および平塚市景観条例の届出",
+    "url": "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_02899.html",
+    "what": "重点区域は大きさにかかわらず手続（戸建ても）。着手の30日前まで、事前協議はその概ね30日前",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観重点区域内の手続",
+    "rule_for": "そのほか"
    }
   ],
   "鎌倉市": [
@@ -1365,6 +1387,28 @@
     "checked": "2026-10-18",
     "purpose": "防火",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "景観法に基づく手続の対象（藤沢市）",
+    "url": "https://www.city.fujisawa.kanagawa.jp/keikan/machizukuri/kenchiku/kekan/todokede.html",
+    "what": "景観形成地区（サム・ジュ・モール・湘南辻堂など）は、すべての建物の建築行為が届出（戸建ても）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観形成地区内の届出",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "景観法に基づく手続に関する事前協議（藤沢市）",
+    "url": "https://www.city.fujisawa.kanagawa.jp/keikan/machizukuri/kenchiku/kekan/jizenkyogi.html",
+    "what": "江の島景観地区の住宅は事前協議が要る。景観地区内は認定申請も",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観法の事前協議（江の島景観地区は戸建ても）",
+    "rule_for": "そのほか"
    }
   ],
   "小田原市": [
@@ -1476,6 +1520,39 @@
     "checked": "2026-10-18",
     "purpose": "災害",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "後退用地の協議（小田原市）",
+    "url": "https://www.city.odawara.kanagawa.jp/field/c-planning/building/confirmation/kyouai.html",
+    "what": "狭い公道に接する敷地は、確認申請の前に協議書（建築指導課 建築道路相談係）。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "後退用地に関する協議書",
+    "rule_for": "道路"
+   },
+   {
+    "label": "景観の届出（小田原市）",
+    "url": "https://www.city.odawara.kanagawa.jp/field/c-planning/keikan/todokede.html",
+    "what": "小田原城周辺・小田原駅周辺・国道1号本町南町・かまぼこ通りは、大きさにかかわらず新築はすべて対象（戸建ても）。着手の30日前まで",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観の届出（重点区域・拠点型）",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "建築確認申請前の手続き（小田原市）",
+    "url": "https://www.city.odawara.kanagawa.jp/field/c-planning/building/confirmation/k-sinsei_zen.html",
+    "what": "市街化区域は給排水業務課の汚水処理確認、全件で道水路整備課の道路計画の確認（市に出す申請の一覧。民間機関のときは窓口で確かめる）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "確認申請前の庁内手続き（汚水処理確認・道路計画の確認）",
+    "rule_for": "そのほか"
    }
   ],
   "茅ヶ崎市": [
@@ -1594,6 +1671,28 @@
     "checked": "2026-10-18",
     "purpose": "災害",
     "role": "補助"
+   },
+   {
+    "label": "茅ヶ崎市まちづくり手続条例（PDF）",
+    "url": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/008/230/tetsudukijourei.shin.pdf",
+    "what": "1.8m以上4m未満の道に接する敷地は、後退用地について市長と協議（義務）。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭隘道路に接する敷地での建築の協議（まちづくり条例8条）",
+    "rule_for": "道路"
+   },
+   {
+    "label": "建築確認申請の手続きについて（茅ヶ崎市）",
+    "url": "https://www.city.chigasaki.kanagawa.jp/machidukuri/shidou/1008167.html",
+    "what": "建築工事の前に、建築計画を市長に届け出る（戸建ても）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築に係る届出（まちづくり条例7条）",
+    "rule_for": "そのほか"
    }
   ],
   "逗子市": [
@@ -1954,6 +2053,17 @@
     "checked": "2026-10-18",
     "purpose": "防火",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "特定開発事業の手引（厚木市）",
+    "url": "https://www.city.atsugi.kanagawa.jp/soshiki/kaihatsushinsaka/2_2/3/596.html",
+    "what": "区域500㎡以上・高さ10m超、低層住専では軒高7m超か3階以上は承認が要る（低層住専の3階建て戸建てはかかる）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "住みよいまちづくり条例（低層住専の3階建てなど）",
+    "rule_for": "開発許可"
    }
   ],
   "大和市": [
@@ -2055,6 +2165,17 @@
     "checked": "2026-10-18",
     "purpose": "災害",
     "role": "補助"
+   },
+   {
+    "label": "狭あい道路用地取得事業（大和市）",
+    "url": "https://www.city.yamato.lg.jp/gyosei/soshik/71/kakusyuzigyou/4736.html",
+    "what": "4m未満の市道（2項道路）に面した土地に建てるとき、協議申請書を道路整備課 道路用地係へ",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭あい道路に関する協議申請",
+    "rule_for": "道路"
    }
   ],
   "葉山町": [

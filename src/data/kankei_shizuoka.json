@@ -728,6 +728,17 @@
     "checked": "2026-10-18",
     "purpose": "白地",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "狭あい道路拡幅整備事業のご案内（PDF）",
+    "url": "https://www.city.numazu.shizuoka.jp/shisei/office/ichiran/toshikei/jyutakuseisaku/keikan/doc/kyouaidouro.pdf",
+    "what": "2項道路に接して建てるときは、後退の要否にかかわらず事前協議書（住宅政策課）。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭あい道路拡幅整備の事前協議書",
+    "rule_for": "道路"
    }
   ],
   "富士市": [
@@ -822,6 +833,50 @@
     "checked": "2026-10-18",
     "purpose": "白地",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "富士市の道路等の照合制度（PDF）",
+    "url": "https://www.city.fuji.shizuoka.jp/documents/3871/dorosyogo.pdf",
+    "what": "確認申請の前に、建築土地対策課で照合カードの交付を受け、申請書の裏に貼る（案内図・配置図・公図）。4m以上の1号道路・60条証明の原本・狭あい協議済通知書があれば不要。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "道路照合カード",
+    "rule_for": "道路"
+   },
+   {
+    "label": "富士市の道路等の照合制度（PDF）",
+    "url": "https://www.city.fuji.shizuoka.jp/documents/3871/dorosyogo.pdf#toshi",
+    "what": "用途地域の境・都市計画道路などを書いた配置図に、確認申請の前に都市計画課で照合印",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "都市計画の照合印",
+    "rule_for": "都市計画"
+   },
+   {
+    "label": "富士市の道路等の照合制度（PDF）",
+    "url": "https://www.city.fuji.shizuoka.jp/documents/3871/dorosyogo.pdf#gesui",
+    "what": "下水道処理区域では、確認申請の前に下水道建設課（県富士総合庁舎6階）で配置図に照合印",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "下水道照合印",
+    "rule_for": "下水道"
+   },
+   {
+    "label": "狭あい道路拡幅整備事業（富士市）",
+    "url": "https://www.city.fuji.shizuoka.jp/1040070000/p003946.html",
+    "what": "2項道路に接する敷地は、確認申請の30日前までに事前協議（建築土地対策課）。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭あい道路拡幅整備の事前協議",
+    "rule_for": "道路"
    }
   ],
   "富士宮市": [
@@ -925,6 +980,17 @@
     "checked": "2026-10-18",
     "purpose": "白地",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "狭あい道路（富士宮市）",
+    "url": "https://www.city.fujinomiya.lg.jp/1040610000/p002102.html",
+    "what": "2項道路で後退が出るときは、確認申請の30日前までに事前協議（建築住宅課 建築指導係）。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭あい道路後退用地の事前協議",
+    "rule_for": "道路"
    }
   ],
   "焼津市": [
@@ -1687,6 +1753,28 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "確認申請（建築物）／裾野市",
+    "url": "https://www.city.susono.shizuoka.jp/soshiki/6/1/3/5/1760.html",
+    "what": "確認申請に公図の写しと付近見取図（1/2,500。地域地区・都市計画施設も書く）を付ける",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "公図の写し・付近見取図の添付（市の施行細則）",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "確認申請（建築物）／裾野市",
+    "url": "https://www.city.susono.shizuoka.jp/soshiki/6/1/3/5/1760.html#shobo",
+    "what": "確認申請に、富士山南東消防組合の消防同意調査書を付ける",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "消防同意調査書",
+    "rule_for": "消防"
    }
   ],
   "函南町": [

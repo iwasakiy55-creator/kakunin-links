@@ -881,6 +881,13 @@ header .brand { margin-right:auto; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .rules { background:#3A2F12; border-color:#8A6A1A; } :root:not([data-theme="light"]) .rules .rule { background:#2A2310; color:#F4E7C2; border-color:#6A5520; } :root:not([data-theme="light"]) .rules .rh2, :root:not([data-theme="light"]) .rules .rw { color:#F0DCA0; } }
 .rules.none { background:var(--bg); border:1px dashed var(--line); color:var(--sub); font-size:14.5px; padding:8px 14px; }
 @media (max-width: 760px) { .rules .rule { padding:8px 10px; gap:6px; } .rules .rn { font-size:16px; } .rules .rw { font-size:14.5px; flex-basis:100%; } .rules .rgo { margin-left:0; } }
+@media (max-width: 760px) {
+  .rules:not(.in) .rw { display:none; }
+  .rules:not(.in) .rule { flex-wrap:nowrap; padding:8px 10px; }
+  .rules:not(.in) .rgo { margin-left:auto; padding:4px 10px; font-size:13px; }
+  .rules:not(.in) .rh2 { font-size:15.5px; }
+  .rules:not(.in)::after { content:"くわしくは、それぞれの目的のつまみの中に出ます"; font-size:13px; color:#6B4E00; }
+}
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
 <link rel="manifest" href="manifest.webmanifest?v=2"><link rel="apple-touch-icon" href="apple-touch-icon.png?v=2"><link rel="icon" type="image/png" href="favicon.png?v=2"><meta name="theme-color" content="#17708F"><meta name="apple-mobile-web-app-title" content="調べ先リンク">

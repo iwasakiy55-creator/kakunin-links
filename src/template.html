@@ -556,6 +556,27 @@ body.finding .ptabs { opacity:.5; }
 @media (max-width: 760px) { .ptabs { top:108px; } .ptabs button { padding:8px 14px; font-size:16px; } }
 
 .prog .tm { color:var(--sub); font-size:15.5px; margin-right:8px; } .prog .tm b { color:var(--ink); }
+
+/* 色の意味（はじめの画面）：県の色・地域の淡い色・特定行政庁の札 */
+:root { --p0:#17708F; --p1:#7A4FB0; --p2:#3B55B8;
+  --r0:#D9F0EE; --r1:#DCEAF8; --r2:#E3F1DA; --r3:#FBE9D6; --r4:#F2E2F3;
+  --rl0:#2A9D8F; --rl1:#3A7BC8; --rl2:#5E9A3A; --rl3:#D08A3A; --rl4:#A65AA8; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --p0:#5CB6D6; --p1:#B79BE0; --p2:#8FA6F0;
+  --r0:#163A37; --r1:#1A3047; --r2:#22361A; --r3:#3E2C17; --r4:#38243A; } }
+:root[data-theme="dark"] { --p0:#5CB6D6; --p1:#B79BE0; --p2:#8FA6F0; --r0:#163A37; --r1:#1A3047; --r2:#22361A; --r3:#3E2C17; --r4:#38243A; }
+.ptabs button { --pc:var(--p0); border-width:2px; }
+.ptabs button:hover { border-color:var(--pc); color:var(--pc); }
+.ptabs button.on { background:var(--pc); border-color:var(--pc); color:#fff; }
+.pref { --pc:var(--p0); border-top:5px solid var(--pc); }
+.pref h3 { color:var(--pc); }
+.rg { --rb:var(--r0); --rl:var(--rl0); border-top-color:transparent; padding:10px 10px; margin:6px -6px 0; border-radius:12px; background:color-mix(in srgb, var(--rb) 45%, transparent); }
+.rgn { display:inline-block; align-self:start; background:var(--rb); color:color-mix(in srgb, var(--rl) 80%, var(--ink)); border-radius:8px; padding:6px 12px; margin-top:4px; font-size:16px; text-align:center; }
+.grid button { background:var(--panel); border-left:5px solid var(--rl); }
+.grid button:hover { background:var(--rb); border-color:var(--rl); color:var(--ink); }
+.grid button .d { display:none; }
+.grid button .tkb { display:inline-block; font-size:11px; font-weight:bold; color:#fff; background:var(--pc); border-radius:4px; padding:0 5px; margin-left:6px; vertical-align:2px; }
+.legend i { display:none; }
+.legend .tkb { display:inline-block; font-size:11px; font-weight:bold; color:#fff; background:var(--p0); border-radius:4px; padding:0 5px; margin-right:4px; }
 </style>
 </head>
 <body>
@@ -864,10 +885,10 @@ function home() {
     + checkBand()
     + (rc.length ? `<div class="shelf"><span>${svg(I.hist, 15)}最近見た</span>${rc.map(r => `<button class="pill" data-p="${r.p}" data-m="${esc(r.m)}">${esc(r.m)}</button>`).join("")}</div>` : "")
     + (memoed.length ? `<div class="shelf"><span>${svg(I.memo, 15)}メモのある市町村</span>${memoed.map(o => `<button class="pill memo" data-p="${o.p}" data-m="${esc(o.m)}">${esc(o.m)}</button>`).join("")}</div>` : "")
-    + `<div class="ptabs" role="tablist">${D.prefs.map((p, i) => `<button role="tab" data-pt="${i}" class="${i === PT ? "on" : ""}">${esc(p.name)}<small>${Object.keys(p.munis).length}</small></button>`).join("")}</div>`
-    + D.prefs.map((p, i) => `<div class="pref ${i === PT ? "" : "off"}" data-pi="${i}"><h3>${esc(p.name)}<span class="n">${Object.keys(p.munis).length} 市町村</span><button class="pill" data-p="${i}" data-m="">県全体のページ</button></h3>
-      ${regions(p).map(([r, xs]) => `<div class="rg"><div class="rgn">${esc(r)}</div><div class="grid">${xs.map(m => `<button class="${isTk(p, m) ? "tk" : ""}" data-p="${i}" data-m="${esc(m)}" data-nm="${esc(norm(m))}" title="${isTk(p, m) ? "特定行政庁" : ""}">${esc(m)}${isTk(p, m) ? '<span class="d"></span>' : ""}</button>`).join("")}</div></div>`).join("")}</div>`).join("")
-    + `<div class="legend"><span><i></i>太字と点＝特定行政庁</span></div>`, false);
+    + `<div class="ptabs" role="tablist">${D.prefs.map((p, i) => `<button role="tab" data-pt="${i}" class="${i === PT ? "on" : ""}" style="--pc:var(--p${i % 3})">${esc(p.name)}<small>${Object.keys(p.munis).length}</small></button>`).join("")}</div>`
+    + D.prefs.map((p, i) => `<div class="pref ${i === PT ? "" : "off"}" data-pi="${i}" style="--pc:var(--p${i % 3})"><h3>${esc(p.name)}<span class="n">${Object.keys(p.munis).length} 市町村</span><button class="pill" data-p="${i}" data-m="">県全体のページ</button></h3>
+      ${regions(p).map(([r, xs], ri) => `<div class="rg" style="--rb:var(--r${ri % 5});--rl:var(--rl${ri % 5})"><div class="rgn">${esc(r)}</div><div class="grid">${xs.map(m => `<button class="${isTk(p, m) ? "tk" : ""}" data-p="${i}" data-m="${esc(m)}" data-nm="${esc(norm(m))}" title="${isTk(p, m) ? "特定行政庁" : ""}">${esc(m)}${isTk(p, m) ? '<span class="tkb">特定</span>' : ""}</button>`).join("")}</div></div>`).join("")}</div>`).join("")
+    + `<div class="legend"><span><span class="tkb">特定</span>＝特定行政庁（建築基準法の道路・中間検査を、市で調べる）</span></div>`, false);
   document.body.classList.add("home");
   const a = $("#startA"); if (a) { a.addEventListener("input", narrow); narrow(); }
 }

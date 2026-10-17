@@ -1,0 +1,30 @@
+{
+ "name": "建築確認 調べ先リンク集",
+ "short_name": "調べ先リンク",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#0C4660",
+ "theme_color": "#17708F",
+ "lang": "ja",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}

@@ -870,6 +870,7 @@ header .brand { margin-right:auto; }
 .tb .tl .lwk { display:inline-block; margin-left:10px; vertical-align:2px; font-size:13.5px; font-weight:bold; color:#5B3C94; background:#F3EEFA; border:1px solid #CDBDE8; border-radius:6px; padding:1px 8px; white-space:nowrap; }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" type="image/png" href="favicon.png"><meta name="theme-color" content="#17708F"><meta name="apple-mobile-web-app-title" content="調べ先リンク">
 </head>
 <body>
 <header><div class="wrap">
@@ -1056,6 +1057,7 @@ const ICON = {
   "下水道": ["--c3", '<path d="M4 6h16M4 12h16M4 18h16"/>'],
   "浄化槽": ["--c3", '<rect x="4" y="8" width="16" height="10" rx="2"/><path d="M8 8V5h8v3"/>'],
   "水道": ["--c7", '<path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/>'],
+  "防火": ["--c4", '<path d="M12 3c2 4 6 6 6 11a6 6 0 0 1-12 0c0-3 2-5 3-6 0 2 1 3 2 3 0-3 0-6 1-8z"/>'],
   "消防": ["--c4", '<path d="M12 3c2 4 6 6 6 11a6 6 0 0 1-12 0c0-3 2-5 3-6 0 2 1 3 2 3 0-3 0-6 1-8z"/>'],
   "地形": ["--c9", '<path d="m3 20 6-10 4 6 3-4 5 8z"/><path d="M14 6h.01"/>'],
   "盛土": ["--c5", '<path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/>'],
@@ -1255,6 +1257,7 @@ const LAW_RULES = {
   "白地": [[/./, "基準法52・53条"]],
   "道路": [[/位置指定|1項5号|第１項第５号|第1項第5号/, "基準法42条1項5号"], [/2項|２項|第2項/, "基準法42条2項"], [/43条|ただし書/, "基準法43条"], [/./, "基準法42条"]],
   "地形": [[/地理院/, ""], [/./, "基準法40条（条例）"]],
+  "防火": [[/22条|２２条|屋根不燃/, "基準法22条"], [/防火地域|準防火/, "基準法61条"], [/./, "基準法22条"]],
   "災害": [[/土砂/, "土砂法9条"], [/急傾斜/, "急傾斜地法3条"], [/災害危険区域/, "基準法39条"], [/./, ""]],
   "建築協定": [[/./, "基準法69条"]],
   "道路台帳": [[/./, "道路法28条"]],

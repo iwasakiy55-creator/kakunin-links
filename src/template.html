@@ -882,11 +882,10 @@ header .brand { margin-right:auto; }
 .rules.none { background:var(--bg); border:1px dashed var(--line); color:var(--sub); font-size:14.5px; padding:8px 14px; }
 @media (max-width: 760px) { .rules .rule { padding:8px 10px; gap:6px; } .rules .rn { font-size:16px; } .rules .rw { font-size:14.5px; flex-basis:100%; } .rules .rgo { margin-left:0; } }
 @media (max-width: 760px) {
-  .rules:not(.in) .rw { display:none; }
-  .rules:not(.in) .rule { flex-wrap:nowrap; padding:8px 10px; }
+  .rules:not(.in) .rw { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .rules:not(.in) .rule { padding:8px 10px; }
   .rules:not(.in) .rgo { margin-left:auto; padding:4px 10px; font-size:13px; }
   .rules:not(.in) .rh2 { font-size:15.5px; }
-  .rules:not(.in)::after { content:"くわしくは、それぞれの目的のつまみの中に出ます"; font-size:13px; color:#6B4E00; }
 }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">

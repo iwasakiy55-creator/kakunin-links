@@ -696,6 +696,28 @@ kbd { display:inline-block; font-family:inherit; font-size:14px; font-weight:bol
 .mdr .lk { padding:12px 16px; }
 .flow4 { display:none; }
 .how1 { margin-top:10px; font-size:16px; color:var(--sub); }
+
+/* 磨き：札は名前の右に・目次の見出しを詰める・上の箱を2行に */
+.mdr .lk .main { display:flex; flex-wrap:wrap; align-items:center; gap:6px 10px; }
+.mdr .lk .main .tl { order:1; }
+.mdr .lk .main .cks { order:2; margin:0; }
+.mdr .lk .main .ck { font-size:12.5px; padding:1px 8px; }
+.mdl .grp { margin:0 0 4px !important; padding:14px 12px 2px !important; font-size:13.5px; color:var(--faint); letter-spacing:.08em; }
+.mdl .grp:first-child { padding-top:4px !important; }
+.case .line2 { margin-top:8px; }
+.case .how1 { margin-top:4px; font-size:14.5px; }
+.case .how1 kbd { font-size:12.5px; }
+.prog .dots { display:none; }
+
+/* 市町村：箱をやめ、駅の案内のような名前の一覧に */
+.rg { background:none !important; border-radius:0 !important; margin:0 !important; padding:12px 4px !important; border-top:1px solid var(--line) !important; }
+.rg:first-of-type { border-top:0 !important; }
+.rgn { background:none !important; color:var(--rl) !important; font-weight:bold; font-size:16px !important; text-align:left !important; white-space:nowrap; min-width:6.5em; padding:8px 0 0 12px !important; border-left:4px solid var(--rl); border-radius:0 !important; margin-top:2px !important; }
+.grid { gap:2px 6px !important; }
+.grid button { border:0 !important; background:transparent !important; box-shadow:none !important; min-height:42px; padding:6px 10px !important; border-radius:8px !important; justify-content:flex-start !important; font-size:19px !important; color:var(--ink); }
+.grid button:hover { background:color-mix(in srgb, var(--rl) 14%, transparent) !important; color:var(--ink); text-decoration:underline; text-decoration-color:var(--rl); text-underline-offset:5px; }
+.grid button .tkb { margin-left:6px !important; }
+.grid button.hit { background:var(--a-pale) !important; outline:2px solid var(--a); }
 </style>
 </head>
 <body>

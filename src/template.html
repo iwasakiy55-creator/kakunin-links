@@ -868,6 +868,17 @@ header .brand { margin-right:auto; }
 @media (max-width: 760px) { .mdl button .tx .lw { display:none; } }
 
 .tb .tl .lwk { display:inline-block; margin-left:10px; vertical-align:2px; font-size:13.5px; font-weight:bold; color:#5B3C94; background:#F3EEFA; border:1px solid #CDBDE8; border-radius:6px; padding:1px 8px; white-space:nowrap; }
+
+/* この市町村だけの決まり */
+.rules { background:#FFF6DB; border:2px solid #E8B93A; border-radius:14px; padding:12px 14px; margin:0 0 14px; display:flex; flex-direction:column; gap:8px; }
+.rules .rh2 { font-weight:bold; font-size:17px; color:#6B4E00; }
+.rules .rule { display:flex; align-items:center; gap:12px; flex-wrap:wrap; background:#fff; border:1px solid #EAD38A; border-radius:10px; padding:10px 14px; text-decoration:none; color:#2B2100; }
+.rules .rule:hover { border-color:#C99A1A; background:#FFFBEE; }
+.rules .rn { font-weight:bold; font-size:17.5px; }
+.rules .rw { flex:1 1 300px; font-size:15.5px; color:#5A4A1A; line-height:1.6; }
+.rules .rgo { margin-left:auto; font-size:14px; font-weight:bold; color:#fff; background:#B8861B; border-radius:999px; padding:5px 14px; white-space:nowrap; }
+.rules.in { margin:0 0 12px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .rules { background:#3A2F12; border-color:#8A6A1A; } :root:not([data-theme="light"]) .rules .rule { background:#2A2310; color:#F4E7C2; border-color:#6A5520; } :root:not([data-theme="light"]) .rules .rh2, :root:not([data-theme="light"]) .rules .rw { color:#F0DCA0; } }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
 <link rel="manifest" href="manifest.webmanifest?v=2"><link rel="apple-touch-icon" href="apple-touch-icon.png?v=2"><link rel="icon" type="image/png" href="favicon.png?v=2"><meta name="theme-color" content="#17708F"><meta name="apple-mobile-web-app-title" content="調べ先リンク">
@@ -1282,6 +1293,14 @@ function lawOf(x) {
   for (const [re, v, only] of (LAW_RULES[x.purpose] || [])) if (re.test(only === "L" ? x.label : s)) return v;
   return "";
 }
+/* この市だけの決まり（忘れやすい手続き）。purpose が「決まり」のもの */
+function rulesOf(p, m) {
+  if (!m) return [];
+  return [...(p.munis[m] || []), ...p.pref.filter(x => x.only && x.only.includes(m))].filter(x => x.purpose === "決まり");
+}
+function ruleCard(x, compact) {
+  return `<a class="rule" href="${esc(x.url)}" target="_blank" rel="noopener" title="${esc(x.label)}"><span class="rn">${esc(x.name || x.label)}</span>${compact ? "" : `<span class="rw">${esc(x.what || "")}</span>`}<span class="rgo">根拠 ↗</span></a>`;
+}
 function linkType(x) {
   const s = x.label + " " + x.url, w = x.label + (x.what || "");
   if (/\.pdf($|\?)/i.test(x.url) || /PDF/.test(x.label + (x.what || ""))) return ["pdf", "📄", "PDF", "資料を開く"];
@@ -1336,7 +1355,7 @@ function city(pi, m) {
     if (!all.length) return `<div class="row empty" data-k="${esc(k)}" id="p${idx}" style="--pc:var(${cv})">${head}<div class="body none">${esc(EMPTY[k] || "公式のページが見つかっていません。担当の課で確かめてください")}</div><div class="shots" data-sk="${esc(k)}"></div>${idx < list.length - 1 ? `<div class="nextp"><button data-next="${idx + 1}">次へ：${esc(list[idx + 1].t)} ▶</button></div>` : ""}</div>`;
     const [f, ...rest] = all;
     const opened = rest.some(o => MEMO[memoKeyU(o.x.url)]);
-    return `<div class="row ${it.seen || it.saved ? "is-seen" : ""}" data-k="${esc(k)}" data-first="${esc(f.x.label)}" id="p${idx}" style="--pc:var(${cv})">${head}<div class="body">${twoKinds([f, ...rest], p, m)}</div><div class="shots" data-sk="${esc(k)}"></div>${idx < list.length - 1 ? `<div class="nextp"><button data-next="${idx + 1}">次へ：${esc(list[idx + 1].t)} ▶</button></div>` : ""}</div>`;
+    return `<div class="row ${it.seen || it.saved ? "is-seen" : ""}" data-k="${esc(k)}" data-first="${esc(f.x.label)}" id="p${idx}" style="--pc:var(${cv})">${head}<div class="body">${(() => { const rs = rulesOf(p, m).filter(x => x.rule_for === k); return rs.length ? `<div class="rules in"><div class="rh2">⚠ この市町村だけの決まり</div>${rs.map(x => ruleCard(x, false)).join("")}</div>` : ""; })()}${twoKinds([f, ...rest], p, m)}</div><div class="shots" data-sk="${esc(k)}"></div>${idx < list.length - 1 ? `<div class="nextp"><button data-next="${idx + 1}">次へ：${esc(list[idx + 1].t)} ▶</button></div>` : ""}</div>`;
   }).join("");
   const toc = list.map(({ k, t, all }, idx) => `<a href="#p${idx}" data-jump="p${idx}" class="${all.length ? "" : "off"}" style="--pc:var(${(ICON[k] || ICON["そのほか"])[0]})"><i></i>${esc(t)}</a>`).join("");
   caseFor(p.name + "/" + (m || ""));
@@ -1362,7 +1381,7 @@ function city(pi, m) {
     <div class="ttl"><h2>${esc(m || p.name + "（県全体）")}</h2>${(() => { const ri = m ? regions(p).findIndex(([, xs]) => xs.includes(m)) : -1, rn = ri >= 0 ? regions(p)[ri][0] : "";
       return `<span class="pchip" style="--pc:var(--p${pi % 3})">${esc(p.name)}</span>${rn ? `<span class="rchip" style="--rb:var(--r${ri % 5});--rl:var(--rl${ri % 5})">${esc(rn)}</span>` : ""}`; })()}${tk ? `<span class="badge tkx">特定行政庁</span>` : m && isLim(p, m) ? `<span class="badge limx">限定特定行政庁</span><span class="note2">指定道路図は${esc(m)}・中間検査は${esc(p.name)}</span>` : m ? `<span class="note2">道路・中間検査は${esc(p.name)}</span>` : ""}<span class="sp"></span>
       ${cm ? "" : `<button class="pill" data-go="cmemo">${svg(I.pen, 15)}メモを書く</button>`}<button class="pill" data-go="copy">${svg(I.copy, 15)}場所を写す</button><button class="pill" data-go="print">${svg(I.print, 15)}印刷</button></div>
-    ${sub2}${hold}${caseBox}${keys}${cmemo}<div class="md"><nav class="mdl" aria-label="目的">${navs}</nav><div class="mdr">${rows}</div></div>`);
+    ${sub2}${hold}${(() => { const rs = rulesOf(p, m); return rs.length ? `<div class="rules"><div class="rh2">⚠ この市町村だけの決まり（確認申請の前に）</div>${rs.map(x => ruleCard(x, false)).join("")}</div>` : ""; })()}${caseBox}${keys}${cmemo}<div class="md"><nav class="mdl" aria-label="目的">${navs}</nav><div class="mdr">${rows}</div></div>`);
   caseProgress();
   const first = list.find(o => o.all.length && !((CASE.items[o.k] || {}).seen)) || list[0];
   setActive(first ? first.k : "");

@@ -406,6 +406,13 @@
 "label": "静岡市 建築関係例規「用途地域の指定のない区域の形態規制」"
 },
 {
+"url": "https://www.city.shizuoka.lg.jp/000_004876.html",
+"pref": "静岡県",
+"muni": "静岡市",
+"purpose": "決まり",
+"label": "景観法に基づく行為の届出／静岡市"
+},
+{
 "url": "https://www2.wagmap.jp/hamamatsu/PositionSelect?mid=3",
 "pref": "静岡県",
 "muni": "浜松市",
@@ -551,6 +558,20 @@
 "muni": "浜松市",
 "purpose": "白地",
 "label": "浜松市 用途地域の指定のない区域の建築形態規制の指定一覧（PDF）"
+},
+{
+"url": "https://www.city.hamamatsu.shizuoka.jp/kensido/home_tochi/home/kakutyouseibi/semai1-260401.html",
+"pref": "静岡県",
+"muni": "浜松市",
+"purpose": "決まり",
+"label": "狭い道路の拡幅整備（事前協議申請）／浜松市"
+},
+{
+"url": "https://www.city.hamamatsu.shizuoka.jp/tochi/city/toshikai/keikan/juuten.html",
+"pref": "静岡県",
+"muni": "浜松市",
+"purpose": "決まり",
+"label": "景観計画重点地区の届出／浜松市"
 },
 {
 "url": "https://www.city.numazu.shizuoka.jp/shisei/keikaku/various/toshikei/naiyou/soukatsu.htm",
@@ -726,6 +747,13 @@
 "muni": "熱海市",
 "purpose": "開発許可",
 "label": "熱海市 都市計画法53条に基づく建築許可"
+},
+{
+"url": "https://www.city.atami.lg.jp/_res/projects/default_project/_page_/001/001/356/madogutisiryou2026.pdf",
+"pref": "静岡県",
+"muni": "熱海市",
+"purpose": "決まり",
+"label": "熱海市まちづくり条例（窓口資料・PDF）"
 },
 {
 "url": "https://www.city.mishima.shizuoka.jp/page/1739.html",
@@ -1309,6 +1337,27 @@
 "label": "焼津市 建築形態規制等の指定内容（PDF）"
 },
 {
+"url": "https://www.city.yaizu.lg.jp/documents/685/r8kakuninzizen.pdf",
+"pref": "静岡県",
+"muni": "焼津市",
+"purpose": "決まり",
+"label": "令和8年度版 焼津市建築確認事前チェックリスト（PDF）"
+},
+{
+"url": "https://www.city.yaizu.lg.jp/documents/685/r8kakuninzizen.pdf#no27",
+"pref": "静岡県",
+"muni": "焼津市",
+"purpose": "決まり",
+"label": "焼津市建築確認事前チェックリスト No.27 景観法（PDF）"
+},
+{
+"url": "https://www.city.yaizu.lg.jp/documents/685/r8kakuninzizen.pdf#no8",
+"pref": "静岡県",
+"muni": "焼津市",
+"purpose": "決まり",
+"label": "焼津市建築確認事前チェックリスト No.8（PDF）"
+},
+{
 "url": "https://www2.wagmap.jp/kakegawa/PositionSelect?mid=15",
 "pref": "静岡県",
 "muni": "掛川市",
@@ -1589,6 +1638,20 @@
 "label": "袋井市 都市計画法第53条（建築）の制限について"
 },
 {
+"url": "https://www.city.fukuroi.shizuoka.jp/soshiki/53/1/hojo/1524208736024.html",
+"pref": "静岡県",
+"muni": "袋井市",
+"purpose": "決まり",
+"label": "狭あい道路拡幅整備事業／袋井市"
+},
+{
+"url": "https://www.city.fukuroi.shizuoka.jp/soshiki/17/5/keikaku_hokoku/1422535451538.html",
+"pref": "静岡県",
+"muni": "袋井市",
+"purpose": "決まり",
+"label": "袋井市景観計画"
+},
+{
 "url": "https://www.city.shimoda.shizuoka.jp/category/020800sumai_kentiku/148119.html",
 "pref": "静岡県",
 "muni": "下田市",
@@ -1785,6 +1848,13 @@
 "label": "湖西市 都市計画施設の区域内における建築（都計法53条）"
 },
 {
+"url": "https://www.city.kosai.shizuoka.jp/kurashi_tetsuzuki/toshikeikaku_machizukuri/toshikeikaku/2/3307.html",
+"pref": "静岡県",
+"muni": "湖西市",
+"purpose": "決まり",
+"label": "新居関所周辺地区景観計画／湖西市"
+},
+{
 "url": "https://www.city.izu.shizuoka.jp/soshiki/1024/2/3/931.html",
 "pref": "静岡県",
 "muni": "伊豆市",
@@ -1848,6 +1918,13 @@
 "label": "伊豆市の地区計画、届出手続について"
 },
 {
+"url": "https://www.city.izu.shizuoka.jp/material/files/group/42/01060202_pdf_2019722_radE2024.pdf",
+"pref": "静岡県",
+"muni": "伊豆市",
+"purpose": "決まり",
+"label": "伊豆市狭あい道路拡幅整備に関する要綱（PDF）"
+},
+{
 "url": "https://www.gis.pref.shizuoka.jp/?mc=02&mp=101&z=10",
 "pref": "静岡県",
 "muni": "御前崎市",
@@ -1909,6 +1986,20 @@
 "muni": "伊豆の国市",
 "purpose": "地区計画",
 "label": "伊豆の国市 地区計画"
+},
+{
+"url": "https://www.city.izunokuni.shizuoka.jp/tosikei/kyouai.html",
+"pref": "静岡県",
+"muni": "伊豆の国市",
+"purpose": "決まり",
+"label": "伊豆の国市 狭あい道路拡幅整備事業"
+},
+{
+"url": "https://www.city.izunokuni.shizuoka.jp/tosikei/keikankeikaku.html",
+"pref": "静岡県",
+"muni": "伊豆の国市",
+"purpose": "決まり",
+"label": "伊豆の国市 景観計画"
 },
 {
 "url": "https://www.city.makinohara.shizuoka.jp/soshiki/27/36495.html",
@@ -2198,6 +2289,13 @@
 "label": "松崎町例規集（目次検索）"
 },
 {
+"url": "https://www.town.matsuzaki.shizuoka.jp/docs/2021042700039/file_contents/%E6%9D%BE%E5%B4%8E%E7%94%BA%E6%99%AF%E8%A6%B3%E3%81%BE%E3%81%A1%E3%81%A5%E3%81%8F%E3%82%8A%E6%9D%A1%E4%BE%8B%E6%96%BD%E8%A1%8C%E8%A6%8F%E5%89%878.10.pdf",
+"pref": "静岡県",
+"muni": "松崎町",
+"purpose": "決まり",
+"label": "松崎町景観まちづくり条例施行規則（PDF）"
+},
+{
 "url": "https://www.town.nishiizu.shizuoka.jp/kakuka/machizukuri/kikaku/tochi_tatemono.html",
 "pref": "静岡県",
 "muni": "西伊豆町",
@@ -2366,6 +2464,13 @@
 "label": "清水町 地区計画について"
 },
 {
+"url": "https://www.town.shimizu.shizuoka.jp/toshi/toshi00026.html",
+"pref": "静岡県",
+"muni": "清水町",
+"purpose": "決まり",
+"label": "4m未満の道路に接して建築物を新築・増築・改築される皆様へ"
+},
+{
 "url": "https://experience.arcgis.com/experience/f0f31a252fea499ea94617dc6cf80cea",
 "pref": "静岡県",
 "muni": "長泉町",
@@ -2434,6 +2539,13 @@
 "muni": "長泉町",
 "purpose": "開発許可",
 "label": "長泉町 都市計画法第53条の許可申請"
+},
+{
+"url": "https://www.town.nagaizumi.lg.jp/soshiki/kensetsu/kyoai/7655.html",
+"pref": "静岡県",
+"muni": "長泉町",
+"purpose": "決まり",
+"label": "長泉町 狭あい道路整備事業"
 },
 {
 "url": "https://www.fuji-oyama.jp/soshiki/17/",
@@ -4760,6 +4872,20 @@
 "label": "横浜市 災害危険区域"
 },
 {
+"url": "https://www.city.yokohama.lg.jp/faq/kukyoku/kenchiku/kenchiku-bosai/20211013170909314.html",
+"pref": "神奈川県",
+"muni": "横浜市",
+"purpose": "決まり",
+"label": "狭あい道路拡幅整備事業（横浜市FAQ）"
+},
+{
+"url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/tetsuduki/kakunin/qa-kakunin.html",
+"pref": "神奈川県",
+"muni": "横浜市",
+"purpose": "決まり",
+"label": "建築確認Q&A（横浜市）"
+},
+{
 "url": "https://kawasaki.geocloud.jp/webgis/?p=1",
 "pref": "神奈川県",
 "muni": "川崎市",
@@ -4942,6 +5068,20 @@
 "label": "川崎市建築基準条例に基づく災害危険区域"
 },
 {
+"url": "https://www.city.kawasaki.jp/500/page/0000017817.html",
+"pref": "神奈川県",
+"muni": "川崎市",
+"purpose": "決まり",
+"label": "狭あい道路拡幅整備事業（川崎市）"
+},
+{
+"url": "https://www.city.kawasaki.jp/500/page/0000017742.html",
+"pref": "神奈川県",
+"muni": "川崎市",
+"purpose": "決まり",
+"label": "建築基準関係規定及びその他建築に関する調査及び手続等（川崎市）"
+},
+{
 "url": "https://sagamihara.geocloud.jp/",
 "pref": "神奈川県",
 "muni": "相模原市",
@@ -5110,6 +5250,13 @@
 "label": "相模原市建築基準条例 第3条・第4条（災害危険区域）解説（PDF）"
 },
 {
+"url": "https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/004/796/qa_20250401_2.pdf",
+"pref": "神奈川県",
+"muni": "相模原市",
+"purpose": "決まり",
+"label": "相模原市 建築審査課 よくある質問（A5-3・PDF）"
+},
+{
 "url": "https://www2.wagmap.jp/yokosuka/Agreement?IsPost=False&MapId=5&RequestPage=%2fyokosuka%2fPositionSelect%3fmid%3d5",
 "pref": "神奈川県",
 "muni": "横須賀市",
@@ -5248,6 +5395,13 @@
 "muni": "横須賀市",
 "purpose": "災害",
 "label": "横須賀市建築基準条例 第3条・第4条（災害危険区域）"
+},
+{
+"url": "https://www.city.yokosuka.kanagawa.jp/4821/keikan/catlog/nagare.html",
+"pref": "神奈川県",
+"muni": "横須賀市",
+"purpose": "決まり",
+"label": "建築物等色彩協議要綱（横須賀市）"
 },
 {
 "url": "https://webgis.alandis.jp/hiratsuka14/",
@@ -6349,6 +6503,20 @@
 "label": "逗子市 都市計画法第53条に関する許可申請"
 },
 {
+"url": "https://www.city.zushi.kanagawa.jp/jigyosha/kaihatsu/1004909/1004910.html",
+"pref": "神奈川県",
+"muni": "逗子市",
+"purpose": "決まり",
+"label": "建築確認申請の経由（逗子市）"
+},
+{
+"url": "https://www.city.zushi.kanagawa.jp/jigyosha/kaihatsu/1004898/1004899.html",
+"pref": "神奈川県",
+"muni": "逗子市",
+"purpose": "決まり",
+"label": "逗子市まちづくり条例"
+},
+{
 "url": "https://www.city.miura.kanagawa.jp/soshiki/toshikeikakuka/machizukuri/toshikeikakuka/madoguchi/8043.html",
 "pref": "神奈川県",
 "muni": "三浦市",
@@ -6431,6 +6599,27 @@
 "muni": "三浦市",
 "purpose": "開発許可",
 "label": "三浦市 都市計画施設の区域等における建築物の建築許可（都計法53条）"
+},
+{
+"url": "https://www.city.miura.kanagawa.jp/soshiki/toshikeikakuka/1/4/491.html",
+"pref": "神奈川県",
+"muni": "三浦市",
+"purpose": "決まり",
+"label": "建築確認申請の経由について（三浦市）"
+},
+{
+"url": "https://www.city.miura.kanagawa.jp/soshiki/toshikeikakuka/1/4/491.html#kyokai",
+"pref": "神奈川県",
+"muni": "三浦市",
+"purpose": "決まり",
+"label": "建築確認申請の経由について（三浦市）"
+},
+{
+"url": "https://www.city.miura.kanagawa.jp/soshiki/toshikeikakuka/1/4/491.html#kyotei",
+"pref": "神奈川県",
+"muni": "三浦市",
+"purpose": "決まり",
+"label": "建築確認申請の経由について（三浦市）"
 },
 {
 "url": "https://www2.wagmap.jp/isehara/Portal",
@@ -6888,6 +7077,20 @@
 "label": "葉山町 地区計画策定状況"
 },
 {
+"url": "https://www.town.hayama.lg.jp/soshiki/toshi/4/2/1721.html",
+"pref": "神奈川県",
+"muni": "葉山町",
+"purpose": "決まり",
+"label": "葉山町まちづくり条例とは"
+},
+{
+"url": "https://www.town.hayama.lg.jp/soshiki/toshi/3/1/3162.html",
+"pref": "神奈川県",
+"muni": "葉山町",
+"purpose": "決まり",
+"label": "建築・土地・道路・海岸・都市計画"
+},
+{
 "url": "https://www.town.samukawa.kanagawa.jp/soshiki/toshikensetsu/toshikeikaku/tokei_kaihatsu/info/toshikeikaku/toshikeikakujouhou/index.html",
 "pref": "神奈川県",
 "muni": "寒川町",
@@ -7063,6 +7266,27 @@
 "label": "二宮町 都市計画法第53条区域"
 },
 {
+"url": "https://www.town.ninomiya.kanagawa.jp/0000000143.html",
+"pref": "神奈川県",
+"muni": "二宮町",
+"purpose": "決まり",
+"label": "道路に関すること（事業者向け）"
+},
+{
+"url": "https://www.town.ninomiya.kanagawa.jp/0000000107.html",
+"pref": "神奈川県",
+"muni": "二宮町",
+"purpose": "決まり",
+"label": "建築確認申請"
+},
+{
+"url": "https://www.town.ninomiya.kanagawa.jp/0000000394.html",
+"pref": "神奈川県",
+"muni": "二宮町",
+"purpose": "決まり",
+"label": "下水道関係"
+},
+{
 "url": "https://www.town.nakai.kanagawa.jp/soshiki/machiseibikakeikakuhan/keikaku_seisaku/1/782.html",
 "pref": "神奈川県",
 "muni": "中井町",
@@ -7119,6 +7343,20 @@
 "label": "中井町の地区計画"
 },
 {
+"url": "https://www.town.nakai.kanagawa.jp/soshiki/machiseibikaseibihan/doro_kotsu/659.html",
+"pref": "神奈川県",
+"muni": "中井町",
+"purpose": "決まり",
+"label": "道路後退用地整備"
+},
+{
+"url": "https://www.town.nakai.kanagawa.jp/soshiki/machiseibikakeikakuhan/kaihatsu_machizukuri/614.html",
+"pref": "神奈川県",
+"muni": "中井町",
+"purpose": "決まり",
+"label": "建築確認申請"
+},
+{
 "url": "https://www.town.oi.kanagawa.jp/soshiki/11/toshikeikakuzu.html",
 "pref": "神奈川県",
 "muni": "大井町",
@@ -7166,6 +7404,20 @@
 "muni": "大井町",
 "purpose": "水道",
 "label": "大井町 水道工事を行う場合の手続きについて"
+},
+{
+"url": "https://www.town.oi.kanagawa.jp/soshiki/11/kyoyuai.html",
+"pref": "神奈川県",
+"muni": "大井町",
+"purpose": "決まり",
+"label": "狭あい道路の相談"
+},
+{
+"url": "https://www.town.oi.kanagawa.jp/soshiki/11/keiyu.html",
+"pref": "神奈川県",
+"muni": "大井町",
+"purpose": "決まり",
+"label": "建築確認申請の経由"
 },
 {
 "url": "https://town.matsuda.kanagawa.jp/soshiki/10/tosikeikaku.html",
@@ -7217,6 +7469,13 @@
 "label": "松田町 市街地再開発事業の施行区域内で建築を行う場合（53条）"
 },
 {
+"url": "https://town.matsuda.kanagawa.jp/uploaded/attachment/9824.pdf",
+"pref": "神奈川県",
+"muni": "松田町",
+"purpose": "決まり",
+"label": "狭あい道路協議の流れ（PDF）"
+},
+{
 "url": "https://www.town.yamakita.kanagawa.jp/0000007340.html",
 "pref": "神奈川県",
 "muni": "山北町",
@@ -7257,6 +7516,20 @@
 "muni": "山北町",
 "purpose": "水道",
 "label": "山北町 水道工事について"
+},
+{
+"url": "https://www.town.yamakita.kanagawa.jp/0000007342.html",
+"pref": "神奈川県",
+"muni": "山北町",
+"purpose": "決まり",
+"label": "山北町狭あい道路拡幅整備要綱"
+},
+{
+"url": "https://www.town.yamakita.kanagawa.jp/0000007360.html",
+"pref": "神奈川県",
+"muni": "山北町",
+"purpose": "決まり",
+"label": "建築確認申請経由事務について"
 },
 {
 "url": "https://www.town.kaisei.kanagawa.jp/info/418",
@@ -7357,6 +7630,20 @@
 "label": "箱根町例規集"
 },
 {
+"url": "https://www.town.hakone.kanagawa.jp/index.cfm/11,2473,66,237,html",
+"pref": "神奈川県",
+"muni": "箱根町",
+"purpose": "決まり",
+"label": "建築確認申請の手続きについて（箱根町）"
+},
+{
+"url": "https://www.town.hakone.kanagawa.jp/www/contents/1100000001397/simple/20250527.pdf",
+"pref": "神奈川県",
+"muni": "箱根町",
+"purpose": "決まり",
+"label": "建築・開発 窓口相談チェックシート（PDF）"
+},
+{
 "url": "https://www.town.manazuru.kanagawa.jp/soshiki/toshikeikaku/toshikeikaku/2176.html",
 "pref": "神奈川県",
 "muni": "真鶴町",
@@ -7397,6 +7684,13 @@
 "muni": "真鶴町",
 "purpose": "水道",
 "label": "真鶴町 給水工事は指定工事店で"
+},
+{
+"url": "https://www.town.manazuru.kanagawa.jp/material/files/group/17/keikan.pdf",
+"pref": "神奈川県",
+"muni": "真鶴町",
+"purpose": "決まり",
+"label": "真鶴町景観計画に係る届出（PDF）"
 },
 {
 "url": "https://www.town.yugawara.kanagawa.jp/soshiki/5/1050.html",
@@ -7455,6 +7749,27 @@
 "label": "湯河原町 都市計画法第53条の許可申請"
 },
 {
+"url": "https://www.town.yugawara.kanagawa.jp/soshiki/5/1046.html",
+"pref": "神奈川県",
+"muni": "湯河原町",
+"purpose": "決まり",
+"label": "建築確認申請経由業務用必要書類等フロー"
+},
+{
+"url": "https://www.town.yugawara.kanagawa.jp/uploaded/attachment/1202.pdf",
+"pref": "神奈川県",
+"muni": "湯河原町",
+"purpose": "決まり",
+"label": "湯河原町景観計画「行為の制限に関する事項」（PDF）"
+},
+{
+"url": "https://www.town.yugawara.kanagawa.jp/online-service/toshikeikakudobokukankyou/p01283.html",
+"pref": "神奈川県",
+"muni": "湯河原町",
+"purpose": "決まり",
+"label": "まちづくり課 計画係（様式）"
+},
+{
 "url": "https://www.town.aikawa.kanagawa.jp/soshiki/kensetsu/toshi/toshi/info/toshikeikakuzu/1432857728646.html",
 "pref": "神奈川県",
 "muni": "愛川町",
@@ -7495,6 +7810,27 @@
 "muni": "愛川町",
 "purpose": "地区計画",
 "label": "愛川町例規集"
+},
+{
+"url": "https://www.town.aikawa.kanagawa.jp/soshiki/kensetsu/toshi/toshi/info/build_house/1422278432473.html",
+"pref": "神奈川県",
+"muni": "愛川町",
+"purpose": "決まり",
+"label": "道路後退用地（愛川町）"
+},
+{
+"url": "https://www.town.aikawa.kanagawa.jp/soshiki/kensetsu/toshi/toshi/info/build_house/1422278434092.html",
+"pref": "神奈川県",
+"muni": "愛川町",
+"purpose": "決まり",
+"label": "建築確認（愛川町）"
+},
+{
+"url": "https://www.town.aikawa.kanagawa.jp/section/reiki_int/reiki_honbun/g233RG00000463.html",
+"pref": "神奈川県",
+"muni": "愛川町",
+"purpose": "決まり",
+"label": "愛川町風致地区条例"
 },
 {
 "url": "https://www.city.atsugi.kanagawa.jp/soshiki/yoboka/6/3/23218.html",

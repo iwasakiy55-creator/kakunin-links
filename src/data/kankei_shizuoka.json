@@ -474,6 +474,17 @@
     "checked": "2026-10-18",
     "purpose": "白地",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "景観法に基づく行為の届出／静岡市",
+    "url": "https://www.city.shizuoka.lg.jp/000_004876.html",
+    "what": "宇津ノ谷・日の出・駿府城公園周辺・三保半島・御幸通り周辺・東静岡駅周辺は、別の基準。確認申請の30日前まで。戸建てにかかるかは窓口で",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観の届出（重点地区6地区）",
+    "rule_for": "そのほか"
    }
   ],
   "浜松市": [
@@ -593,6 +604,28 @@
     "checked": "2026-10-18",
     "purpose": "白地",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "狭い道路の拡幅整備（事前協議申請）／浜松市",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/kensido/home_tochi/home/kakutyouseibi/semai1-260401.html",
+    "what": "市街化区域で狭い道路に接する敷地は、寄附の有無にかかわらず、確認申請の前に事前協議申請書（建築行政課）。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭い道路の拡幅整備 事前協議",
+    "rule_for": "道路"
+   },
+   {
+    "label": "景観計画重点地区の届出／浜松市",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/tochi/city/toshikai/keikan/juuten.html",
+    "what": "重点地区内は延べ10㎡超の建築が対象（戸建ても）。着手の30日前か、確認申請の2週間前まで",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観の届出（重点地区：都田テクノポリス工業地区）",
+    "rule_for": "そのほか"
    }
   ],
   "沼津市": [
@@ -985,6 +1018,39 @@
     "checked": "2026-10-18",
     "purpose": "白地",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "令和8年度版 焼津市建築確認事前チェックリスト（PDF）",
+    "url": "https://www.city.yaizu.lg.jp/documents/685/r8kakuninzizen.pdf",
+    "what": "確認申請の前に、チェックリストの項目（道路・下水道・水道・区画整理・地区計画など）を所管課で調べ、許可証の添付・協議済み印などの手続きをする。戸建てにもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築確認事前チェックリストによる事前調査（協議済み印など）",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "焼津市建築確認事前チェックリスト No.27 景観法（PDF）",
+    "url": "https://www.city.yaizu.lg.jp/documents/685/r8kakuninzizen.pdf#no27",
+    "what": "重点地区は規模によらず、すべての行為が対象（戸建ても）。確認申請の30日前まで",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観の届出（重点地区：浜通り周辺・花沢の里周辺）",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "焼津市建築確認事前チェックリスト No.8（PDF）",
+    "url": "https://www.city.yaizu.lg.jp/documents/685/r8kakuninzizen.pdf#no8",
+    "what": "協定の地区内は、建築住宅課と地元自治会などで協定の内容を確かめる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築協定（大島タウン）",
+    "rule_for": "建築協定"
    }
   ],
   "熱海市": [
@@ -1036,6 +1102,17 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "熱海市まちづくり条例（窓口資料・PDF）",
+    "url": "https://www.city.atami.lg.jp/_res/projects/default_project/_page_/001/001/356/madogutisiryou2026.pdf",
+    "what": "敷地1,000㎡以上などの事業のほか、300㎡超の区画形質の変更・1m超の切土・50cm超の盛土も対象行為。斜面地で切土・盛土のある戸建ては、かかるおそれ。個別法の申請より前。罰則あり",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "熱海市まちづくり条例の開発事業事前協議",
+    "rule_for": "開発許可"
    }
   ],
   "三島市": [
@@ -1188,6 +1265,17 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "伊豆市狭あい道路拡幅整備に関する要綱（PDF）",
+    "url": "https://www.city.izu.shizuoka.jp/material/files/group/42/01060202_pdf_2019722_radE2024.pdf",
+    "what": "2項道路の後退用地を市に寄附して補助を受けるなら、確認申請の30日前までに協議申出書。都市計画課 土地対策スタッフ",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭あい道路拡幅整備の事前協議（補助を受けるとき）",
+    "rule_for": "道路"
    }
   ],
   "伊豆の国市": [
@@ -1230,6 +1318,28 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "伊豆の国市 狭あい道路拡幅整備事業",
+    "url": "https://www.city.izunokuni.shizuoka.jp/tosikei/kyouai.html",
+    "what": "後退用地を寄附して助成を受けるなら、確認申請の30日前までに事前協議の申出。都市計画課",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭あい道路拡幅整備の事前協議（助成を受けるとき）",
+    "rule_for": "道路"
+   },
+   {
+    "label": "伊豆の国市 景観計画",
+    "url": "https://www.city.izunokuni.shizuoka.jp/tosikei/keikankeikaku.html",
+    "what": "地区内は規模にかかわらず、すべての建築物（戸建ても）が対象。確認申請の前、行為の30日前までに届出",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観の届出（韮山反射炉周辺の景観重点整備地区）",
+    "rule_for": "そのほか"
    }
   ],
   "下田市": [
@@ -1411,6 +1521,17 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "松崎町景観まちづくり条例施行規則（PDF）",
+    "url": "https://www.town.matsuzaki.shizuoka.jp/docs/2021042700039/file_contents/%E6%9D%BE%E5%B4%8E%E7%94%BA%E6%99%AF%E8%A6%B3%E3%81%BE%E3%81%A1%E3%81%A5%E3%81%8F%E3%82%8A%E6%9D%A1%E4%BE%8B%E6%96%BD%E8%A1%8C%E8%A6%8F%E5%89%878.10.pdf",
+    "what": "建築基準法の手続きの30日前までに届出（景観協議なら60日前）。高さ10m超か延べ500㎡以上。農村景観ゾーンでは高さ8m超で戸建てもかかる。企画観光課",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観計画区域内行為の届出（松崎町景観まちづくり条例）",
+    "rule_for": "そのほか"
    }
   ],
   "西伊豆町": [
@@ -1658,6 +1779,17 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "4m未満の道路に接して建築物を新築・増築・改築される皆様へ",
+    "url": "https://www.town.shimizu.shizuoka.jp/toshi/toshi00026.html",
+    "what": "幅員1.8m以上4m未満の道路に接する敷地は、建築確認申請のときなどに後退線表示杭を打つ（杭は町が無償で支給）。都市計画課 計画指導係",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "2項道路の後退線表示杭",
+    "rule_for": "道路"
    }
   ],
   "長泉町": [
@@ -1717,6 +1849,17 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "長泉町 狭あい道路整備事業",
+    "url": "https://www.town.nagaizumi.lg.jp/soshiki/kensetsu/kyoai/7655.html",
+    "what": "2項道路の後退用地を寄附して補助（上限60万円）を受けるときの事前協議。建設計画課 管理指導チーム",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭あい道路整備の事前協議（補助を受けるとき）",
+    "rule_for": "道路"
    }
   ],
   "小山町": [
@@ -2140,6 +2283,28 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "狭あい道路拡幅整備事業／袋井市",
+    "url": "https://www.city.fukuroi.shizuoka.jp/soshiki/53/1/hojo/1524208736024.html",
+    "what": "狭あい道路に接する敷地は、全域で事前相談届出書（建築住宅課）。重点地域で後退用地を寄附するなら、確認申請の45日前までに事前協議申請書（維持管理課）。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭あい道路の事前相談・事前協議",
+    "rule_for": "道路"
+   },
+   {
+    "label": "袋井市景観計画",
+    "url": "https://www.city.fukuroi.shizuoka.jp/soshiki/17/5/keikaku_hokoku/1422535451538.html",
+    "what": "高さ15m超か敷地1,000㎡以上が対象。広い敷地の戸建てならかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観計画の届出（敷地1,000㎡以上）",
+    "rule_for": "そのほか"
    }
   ],
   "湖西市": [
@@ -2199,6 +2364,17 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "新居関所周辺地区景観計画／湖西市",
+    "url": "https://www.city.kosai.shizuoka.jp/kurashi_tetsuzuki/toshikeikaku_machizukuri/toshikeikaku/2/3307.html",
+    "what": "区域内の新築・増改築は、確認申請の30日前までに都市政策課へ。規模の下限は書かれていない（戸建ても対象になりうる）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観の届出（新居関所周辺地区）",
+    "rule_for": "そのほか"
    }
   ],
   "御前崎市": [

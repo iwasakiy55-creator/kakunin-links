@@ -575,6 +575,28 @@
     "checked": "2026-10-18",
     "purpose": "災害",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "狭あい道路拡幅整備事業（横浜市FAQ）",
+    "url": "https://www.city.yokohama.lg.jp/faq/kukyoku/kenchiku/kenchiku-bosai/20211013170909314.html",
+    "what": "整備促進路線（2項道路）に接する敷地は義務。確認申請の30日前までに協議申請。建築局建築防災課。戸建ても対象",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭あい道路拡幅整備の協議（狭あい協議）",
+    "rule_for": "道路"
+   },
+   {
+    "label": "建築確認Q&A（横浜市）",
+    "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/tetsuduki/kakunin/qa-kakunin.html",
+    "what": "路地状部分の幅が足りない旗竿敷地（既存不適格）は、確認申請の前に市長の許可。市街地建築課",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "路地状敷地の許可（市建築基準条例第4条）",
+    "rule_for": "道路"
    }
   ],
   "川崎市": [
@@ -719,6 +741,28 @@
     "checked": "2026-10-18",
     "purpose": "災害",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "狭あい道路拡幅整備事業（川崎市）",
+    "url": "https://www.city.kawasaki.jp/500/page/0000017817.html",
+    "what": "4m未満の道路に接する敷地は、確認申請の前に道路の中心・後退の位置を協議。建築審査課。戸建ても対象",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭あい道路拡幅整備協議（狭あい協議）",
+    "rule_for": "道路"
+   },
+   {
+    "label": "建築基準関係規定及びその他建築に関する調査及び手続等（川崎市）",
+    "url": "https://www.city.kawasaki.jp/500/page/0000017742.html",
+    "what": "市に確認申請を出すときは、報告書の所管課と事前協議して結果をまとめ、申請に付ける",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "事前協議報告書（確認申請に添付）",
+    "rule_for": "そのほか"
    }
   ],
   "相模原市": [
@@ -856,6 +900,17 @@
     "checked": "2026-10-18",
     "purpose": "災害",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "相模原市 建築審査課 よくある質問（A5-3・PDF）",
+    "url": "https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/004/796/qa_20250401_2.pdf",
+    "what": "専用住宅は、建築面積150㎡未満なら浸透桝2か所以上、150㎡以上なら4か所以上。確認申請の計画に入れる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "雨水浸透桝の設置",
+    "rule_for": "下水道"
    }
   ],
   "横須賀市": [
@@ -973,6 +1028,17 @@
     "checked": "2026-10-18",
     "purpose": "災害",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "建築物等色彩協議要綱（横須賀市）",
+    "url": "https://www.city.yokosuka.kanagawa.jp/4821/keikan/catlog/nagare.html",
+    "what": "景観の届出がいらない一般の戸建ても、外観の色彩を協議して色彩協議書を出す（市全域・一部除く）。関係法令の手続の前まで。まちなみ景観課",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築物等色彩協議",
+    "rule_for": "そのほか"
    }
   ],
   "平塚市": [
@@ -1571,6 +1637,28 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "建築確認申請の経由（逗子市）",
+    "url": "https://www.city.zushi.kanagawa.jp/jigyosha/kaihatsu/1004909/1004910.html",
+    "what": "確認申請の要る建築は全部、出す前に市まちづくり景観課の経由。事前調査書・案内図・配置図・公図写。戸建ても対象",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築確認申請の経由（小規模開発事業事前調査書）",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "逗子市まちづくり条例",
+    "url": "https://www.city.zushi.kanagawa.jp/jigyosha/kaihatsu/1004898/1004899.html",
+    "what": "高さ10m以上・延べ1,000㎡以上・斜面地を含む敷地などが対象。開発行為は300㎡以上。斜面地の戸建てもかかることがある",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "まちづくり条例・景観条例の手続",
+    "rule_for": "開発許可"
    }
   ],
   "三浦市": [
@@ -1622,6 +1710,39 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "建築確認申請の経由について（三浦市）",
+    "url": "https://www.city.miura.kanagawa.jp/soshiki/toshikeikakuka/1/4/491.html",
+    "what": "出す前に必ず市都市計画課の経由。建築計画届出書と添付。戸建ても対象（約20分）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築確認申請の経由（建築計画届出書）",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "建築確認申請の経由について（三浦市）",
+    "url": "https://www.city.miura.kanagawa.jp/soshiki/toshikeikakuka/1/4/491.html#kyokai",
+    "what": "区域区分・用途地域・都市計画道路の境界が敷地にかかるときは、経由の前に都市計画課の確認",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "都市計画の境界の事前確認",
+    "rule_for": "都市計画"
+   },
+   {
+    "label": "建築確認申請の経由について（三浦市）",
+    "url": "https://www.city.miura.kanagawa.jp/soshiki/toshikeikakuka/1/4/491.html#kyotei",
+    "what": "建築協定の区域内は、確認申請の前に委員会の承認を受け、経由のときに出す",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築協定委員会の承認",
+    "rule_for": "建築協定"
    }
   ],
   "秦野市": [
@@ -1969,6 +2090,28 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "葉山町まちづくり条例とは",
+    "url": "https://www.town.hayama.lg.jp/soshiki/toshi/4/2/1721.html",
+    "what": "一般の住宅もふくむ建築行為が対象。条例の手続が終わるまで、確認申請に入れない。都市計画課建築指導係（先に電話で予約）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "まちづくり条例の事前相談・開発事業の手続",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "建築・土地・道路・海岸・都市計画",
+    "url": "https://www.town.hayama.lg.jp/soshiki/toshi/3/1/3162.html",
+    "what": "法律の手続の前に、都市計画課へ事前相談",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "新築・増築前の事前相談（まちづくり条例）",
+    "rule_for": "そのほか"
    }
   ],
   "寒川町": [
@@ -2091,6 +2234,39 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "道路に関すること（事業者向け）",
+    "url": "https://www.town.ninomiya.kanagawa.jp/0000000143.html",
+    "what": "接する道が4m未満なら、都市整備課道路班に協議書を出す（戸建てにもかかる）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭あい道路等に関する協議",
+    "rule_for": "道路"
+   },
+   {
+    "label": "建築確認申請",
+    "url": "https://www.town.ninomiya.kanagawa.jp/0000000107.html",
+    "what": "確認申請は、出す前に都市整備課計画指導班を経由して経由印を受ける",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築確認申請の経由（町の経由印）",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "下水道関係",
+    "url": "https://www.town.ninomiya.kanagawa.jp/0000000394.html",
+    "what": "供用開始区域なら、確認申請の直前に下水道課へ誓約書（案内図・配管図）。戸建てにもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "公共下水道供用開始区域に係る誓約書",
+    "rule_for": "下水道"
    }
   ],
   "中井町": [
@@ -2134,6 +2310,28 @@
     "purpose": "地区計画",
     "role": "まずここで調べる",
     "checked": "2026-10-17"
+   },
+   {
+    "label": "道路後退用地整備",
+    "url": "https://www.town.nakai.kanagawa.jp/soshiki/machiseibikaseibihan/doro_kotsu/659.html",
+    "what": "4m未満の道路に接するとき、事前に協議書を出す（まち整備課整備班）。戸建てにもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "道路後退用地の協議",
+    "rule_for": "道路"
+   },
+   {
+    "label": "建築確認申請",
+    "url": "https://www.town.nakai.kanagawa.jp/soshiki/machiseibikakeikakuhan/kaihatsu_machizukuri/614.html",
+    "what": "確認申請の前に、まち整備課都市計画班で経由（3開庁日ほど）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築確認申請の経由",
+    "rule_for": "そのほか"
    }
   ],
   "大井町": [
@@ -2168,6 +2366,28 @@
     "verified": true,
     "purpose": "水道",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "狭あい道路の相談",
+    "url": "https://www.town.oi.kanagawa.jp/soshiki/11/kyoyuai.html",
+    "what": "確認申請の要る建築で狭あい道路に接するとき、都市整備課に相談し、後退用地の無償譲渡申出書か無償使用承諾書を出す",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭あい道路の相談",
+    "rule_for": "道路"
+   },
+   {
+    "label": "建築確認申請の経由",
+    "url": "https://www.town.oi.kanagawa.jp/soshiki/11/keiyu.html",
+    "what": "確認申請書の正本・副本2部を都市整備課に出す（郵送も可）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築確認申請の経由",
+    "rule_for": "そのほか"
    }
   ],
   "松田町": [
@@ -2211,6 +2431,17 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "狭あい道路協議の流れ（PDF）",
+    "url": "https://town.matsuda.kanagawa.jp/uploaded/attachment/9824.pdf",
+    "what": "道路後退が要るとき、協議書（正副2部）を出し、協議済書で後退部分を確かめる。まちづくり課都市計画係",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭あい道路の改善に関する協議",
+    "rule_for": "道路"
    }
   ],
   "山北町": [
@@ -2245,6 +2476,28 @@
     "verified": true,
     "purpose": "水道",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "山北町狭あい道路拡幅整備要綱",
+    "url": "https://www.town.yamakita.kanagawa.jp/0000007342.html",
+    "what": "町道の狭あい道路に接するとき、確認申請の30日前までに事前協議書（助成を使わなくても要る）。戸建てにもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭あい道路拡幅整備の事前協議",
+    "rule_for": "道路"
+   },
+   {
+    "label": "建築確認申請経由事務について",
+    "url": "https://www.town.yamakita.kanagawa.jp/0000007360.html",
+    "what": "確認申請の前に都市整備課で経由（3開庁日ほど）。地区計画・農地・給水・下水道接続・町道を町が確かめる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築確認申請の経由",
+    "rule_for": "そのほか"
    }
   ],
   "開成町": [
@@ -2322,6 +2575,28 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "建築確認申請の手続きについて（箱根町）",
+    "url": "https://www.town.hakone.kanagawa.jp/index.cfm/11,2473,66,237,html",
+    "what": "正本・副本と「箱根町（控）」を都市整備課へ出し、正本に受付印をもらってから機関へ。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築確認申請の町経由（箱根町の控えを提出）",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "建築・開発 窓口相談チェックシート（PDF）",
+    "url": "https://www.town.hakone.kanagawa.jp/www/contents/1100000001397/simple/20250527.pdf",
+    "what": "下水道は汚水・雑排水だけ（雨水・温泉排水はつなげない）。浄化槽の処理水・雨水を側溝や水路に流すときは管理者の承諾。上下水道温泉課。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "排水の確認（下水道への接続・側溝への放流の承諾）",
+    "rule_for": "下水道"
    }
   ],
   "真鶴町": [
@@ -2356,6 +2631,17 @@
     "verified": true,
     "purpose": "水道",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "真鶴町景観計画に係る届出（PDF）",
+    "url": "https://www.town.manazuru.kanagawa.jp/material/files/group/17/keikan.pdf",
+    "what": "床面積10㎡以下を除く、すべての建築物（戸建ても）。美の基準自主提案書・彩色した立面図などを正副2部",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観計画区域内行為の届出（美の基準自主提案書）",
+    "rule_for": "そのほか"
    }
   ],
   "湯河原町": [
@@ -2408,6 +2694,39 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "建築確認申請経由業務用必要書類等フロー",
+    "url": "https://www.town.yugawara.kanagawa.jp/soshiki/5/1046.html",
+    "what": "県西土木事務所・民間機関に出す前に、町（まちづくり課）を経由。書類はページのフロー（PDF）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築確認申請の町経由",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "湯河原町景観計画「行為の制限に関する事項」（PDF）",
+    "url": "https://www.town.yugawara.kanagawa.jp/uploaded/attachment/1202.pdf",
+    "what": "温泉場地区（景観まちづくり推進地区）は床面積10㎡超が対象（戸建ても）。地区外は150㎡超か3階以上",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観の届出（温泉場地区）",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "まちづくり課 計画係（様式）",
+    "url": "https://www.town.yugawara.kanagawa.jp/online-service/toshikeikakudobokukankyou/p01283.html",
+    "what": "湯河原・福浦の風致地区の中で建築するときは、許可申請書と建築物計画書。まちづくり課 計画係",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "風致地区の許可申請（湯河原町風致地区条例）",
+    "rule_for": "そのほか"
    }
   ],
   "愛川町": [
@@ -2434,6 +2753,39 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "道路後退用地（愛川町）",
+    "url": "https://www.town.aikawa.kanagawa.jp/soshiki/kensetsu/toshi/toshi/info/build_house/1422278432473.html",
+    "what": "狭い道路に接して建てるとき、道路の中心から2.35m下がり、町が後退用地を買い取る。前もって都市施設課に相談。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "道路後退用地（狭あい道路）の協議と買取り",
+    "rule_for": "道路"
+   },
+   {
+    "label": "建築確認（愛川町）",
+    "url": "https://www.town.aikawa.kanagawa.jp/soshiki/kensetsu/toshi/toshi/info/build_house/1422278434092.html",
+    "what": "確認申請書3部と「都市計画法関係審査申請書」を、都市施設課を経由して出す。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築確認の町経由（都市計画法関係審査申請書）",
+    "rule_for": "都市計画"
+   },
+   {
+    "label": "愛川町風致地区条例",
+    "url": "https://www.town.aikawa.kanagawa.jp/section/reiki_int/reiki_honbun/g233RG00000463.html",
+    "what": "風致地区内の新築は町長の許可（床面積10㎡以下などを除く）。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "風致地区の許可（愛川町風致地区条例）",
+    "rule_for": "そのほか"
    }
   ],
   "清川村": [

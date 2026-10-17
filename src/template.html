@@ -851,6 +851,21 @@ header .brand { margin-right:auto; }
 @media (max-width: 760px) { .mdl .grp { flex:none; border-top:0; border-left:1px dashed var(--line); padding:0 4px 0 10px !important; margin:0 !important; font-size:12.5px !important; writing-mode:horizontal-tb; white-space:nowrap; } .mdl .grp:first-of-type { border-left:0; padding-left:2px !important; } }
 .mdl .grp { flex:none !important; border-top:0 !important; border-left:2px solid var(--line); padding:0 2px 0 12px !important; margin:0 0 0 6px !important; font-size:13.5px !important; white-space:nowrap; }
 .mdl .grp:first-of-type { border-left:0; padding-left:2px !important; margin-left:0 !important; }
+
+/* 条文（押すと開く） */
+.jobun { flex:1 1 100%; margin:0 8px 8px; border:1px solid var(--line); border-radius:10px; background:var(--panel); }
+.jobun summary { cursor:pointer; padding:8px 14px; font-size:15.5px; font-weight:bold; color:#5B3C94; list-style:none; }
+.jobun summary::-webkit-details-marker { display:none; }
+.jobun summary::before { content:"▶ "; font-size:12px; }
+.jobun[open] summary::before { content:"▼ "; }
+.jobun .jt { white-space:pre-wrap; font-family:"BIZ UDPMincho", "Yu Mincho", serif; font-size:16px; line-height:1.9; padding:4px 18px 8px; color:var(--ink); border-top:1px dashed var(--line); }
+.jobun .js { font-size:13px; color:var(--sub); padding:0 18px 10px; }
+
+/* 根拠の条（落とさないための表示） */
+.mdl button .tx .lw { font-size:12px; font-weight:normal; margin-left:6px; color:var(--sub); }
+.mdl button.sel .tx .lw { color:rgba(255,255,255,.9); }
+.rh .lwh { margin-left:12px; font-size:15px; font-weight:bold; color:var(--sub); background:var(--bg); border:1px solid var(--line); border-radius:6px; padding:2px 10px; }
+@media (max-width: 760px) { .mdl button .tx .lw { display:none; } }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -1255,7 +1270,7 @@ function linkBlock(o, p, m, first) {
       ${shortNote(x.what, x) ? `<div class="what">${esc(shortNote(x.what, x))}</div>` : ""}</a>
     <div class="acts"><button class="act" data-copy="${esc(x.url)}" title="このページの場所を写す（質疑書などに貼れる）" aria-label="場所を写す" data-lb="写す">${svg(I.copy, 17)}</button>
       <button class="act ${mm ? "has" : ""}" data-lmemo="${esc(x.url)}" title="このページにメモを書く" aria-label="メモ" data-lb="メモ">${svg(I.pen, 17)}</button></div></div>
-    ${flags(x) ? `<div style="flex-basis:100%;padding:0 8px 4px">${flags(x)}</div>` : ""}${mm ? memoBox(x.url, mm, p.name + "/" + (m || "")) : ""}</div>`;
+    ${x.jobun ? `<details class="jobun"><summary>条文を見る</summary><div class="jt">${esc(x.jobun.text)}</div><div class="js">出典：${esc(x.jobun.source)}${x.jobun.version ? "（" + esc(x.jobun.version) + "）" : ""}${x.jobun.exact === false ? "　※写しに怪しいところがあります。原文で確かめてください" : ""}</div></details>` : ""}    ${flags(x) ? `<div style="flex-basis:100%;padding:0 8px 4px">${flags(x)}</div>` : ""}${mm ? memoBox(x.url, mm, p.name + "/" + (m || "")) : ""}</div>`;
 }
 function memoBox(url, mm, where) {
   return `<div class="lmemo"><textarea data-mk="${esc(memoKeyU(url))}" data-where="${esc(where)}" placeholder="このページのメモ（例：区域図は PDF の 3 枚目）" aria-label="このページのメモ">${esc(mm ? mm.t : "")}</textarea><div class="st">${mm ? `${esc(mm.at)} に保存` : "書くと、自動で保存します"}</div></div>`;
@@ -1267,6 +1282,7 @@ function city(pi, m) {
   if (m) { recent = [{ p: pi, m }, ...recent.filter(r => !(r.p === pi && r.m === m))].slice(0, 8); store.set("linkshu-recent", recent); }
   const own = m ? p.munis[m] || [] : p.pref, ken = m ? forMuni(p, m) : [];
   const tk = m && isTk(p, m);
+  const LAWOF = Object.fromEntries(D.purposes.map(x => [x[0], x[4] || ""]));
   const list = D.purposes.map(([k, t, sub]) => {
     const a = own.filter(x => (x.purpose || "そのほか") === k).map(x => ({ x, ken: !m }));
     const b = ken.filter(x => (x.purpose || "そのほか") === k).map(x => ({ x, ken: true }));
@@ -1277,7 +1293,7 @@ function city(pi, m) {
   const rows = list.map(({ k, t, sub, all }, idx) => {
     const [cv, ic] = ICON[k] || ICON["そのほか"];
     const it = CASE.items[k] || {};
-    const head = `<div class="rh"><span class="no" title="キーボードの ${idx + 1} で開く">${idx + 1}</span><b>${esc(t)}</b><span class="sp"></span><span class="seen">${svg(I.ok, 15)}<span class="sv">開いた</span></span>
+    const head = `<div class="rh"><span class="no" title="キーボードの ${idx + 1} で開く">${idx + 1}</span><b>${esc(t)}</b>${LAWOF[k] ? `<span class="lwh">${esc(LAWOF[k])}</span>` : ""}<span class="sp"></span><span class="seen">${svg(I.ok, 15)}<span class="sv">開いた</span></span>
 </div>`;
     if (!all.length) return `<div class="row empty" data-k="${esc(k)}" id="p${idx}" style="--pc:var(${cv})">${head}<div class="body none">${esc(EMPTY[k] || "公式のページが見つかっていません。担当の課で確かめてください")}</div><div class="shots" data-sk="${esc(k)}"></div>${idx < list.length - 1 ? `<div class="nextp"><button data-next="${idx + 1}">次へ：${esc(list[idx + 1].t)} ▶</button></div>` : ""}</div>`;
     const [f, ...rest] = all;
@@ -1295,7 +1311,7 @@ function city(pi, m) {
   const G = Object.fromEntries(D.purposes.map(x => [x[0], x[3] || ""]));
   const navs = list.map(({ k, t, all }, idx) => { const it = CASE.items[k] || {};
     const gh = idx === 0 || G[list[idx - 1].k] !== G[k] ? `<div class="grp">${esc(G[k] || "")}</div>` : "";
-    return gh + `<button data-sel="${esc(k)}" class="${it.seen || it.saved ? "seen" : ""} ${all.length ? "" : "none"}" ${all.length ? "" : 'title="この市町村では、載せている調べ先がありません"'} style="--pc:var(${(ICON[k] || ICON["そのほか"])[0]})"><span class="n">${idx + 1}</span><span class="tx">${esc(t)}</span><span class="ck">${svg(I.ok, 18)}</span></button>`; }).join("");
+    return gh + `<button data-sel="${esc(k)}" class="${it.seen || it.saved ? "seen" : ""} ${all.length ? "" : "none"}" ${all.length ? "" : 'title="この市町村では、載せている調べ先がありません"'} style="--pc:var(${(ICON[k] || ICON["そのほか"])[0]})"><span class="n">${idx + 1}</span><span class="tx">${esc(t)}${LAWOF[k] ? `<small class="lw">${esc(LAWOF[k])}</small>` : ""}</span><span class="ck">${svg(I.ok, 18)}</span></button>`; }).join("");
   const keys = `<div class="keys">数字キーで開く：${list.map((o, i) => `<b>${i + 1}</b> ${esc(o.t.replace("建築基準法の", ""))}`).join("　")}</div>`;
   const hold = m && (p.hold || []).includes(m)
     ? `<div class="holdn">${svg(I.info, 20)}<div><b>${esc(m)}</b>のホームページは、リンクに事前の許可が要るため、許可をいただくまで載せていません。${esc(p.name)}・国などのページを載せています。${esc(m)}のページは、${esc(m)}のホームページから直接たどってください。</div></div>` : "";

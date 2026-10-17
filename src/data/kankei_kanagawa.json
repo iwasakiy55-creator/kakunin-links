@@ -2276,6 +2276,28 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "狭あい道路について（寒川町）",
+    "url": "https://www.town.samukawa.kanagawa.jp/soshiki/toshikensetsu/doro/kanri/info/douronitsuite/1360806971691.html",
+    "what": "2項道路に接する敷地は、確認申請の前に事前協議申請書（道路課管理担当）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭あい道路に関する事前協議申請",
+    "rule_for": "道路"
+   },
+   {
+    "label": "建築確認の手続き（寒川町）",
+    "url": "https://www.town.samukawa.kanagawa.jp/soshiki/toshikensetsu/toshikeikaku/tokei_kaihatsu/info/kaihatsu_kenchiku/jizenkyogi_kakunin/1361759839884.html",
+    "what": "確認申請の前に、下水道課の確認書、道路課の申請（狭あい・側溝への流入）を済ませ、整理票を付けて都市計画課の経由",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築確認申請の経由（下水道の確認書・整理票）",
+    "rule_for": "下水道"
    }
   ],
   "大磯町": [
@@ -2311,6 +2333,28 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "建築確認の手続きについて（大磯町）",
+    "url": "https://www.town.oiso.kanagawa.jp/soshiki/toshikensetsubu/toshi/tanto/kenchikubutsu/kakunin/tetsuduki.html",
+    "what": "県平塚土木事務所・民間機関に出す前に、都市計画課で経由（建築指導申請書1部）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築確認申請書の経由（建築指導申請書）",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "大磯町景観計画 概要版（PDF）",
+    "url": "https://www.town.oiso.kanagawa.jp/material/files/group/21/keikankeikakugaiyou1.PDF",
+    "what": "確認申請の要る新築は、届出の規模でなくても、景観チェックシートで自己診断し町と協議（戸建ても）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観チェックシートと景観形成協議",
+    "rule_for": "そのほか"
    }
   ],
   "二宮町": [
@@ -2991,6 +3035,39 @@
     "verified": true,
     "purpose": "建築協定",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "建築確認申請の経由事務（伊勢原市）",
+    "url": "https://www.city.isehara.kanagawa.jp/docs/2026061900132",
+    "what": "確認申請の前に市長へ届け出る。確認申請書（正副）を建築住宅課に持参して経由を受けてから提出。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築行為届出書と確認申請書の経由（地域まちづくり推進条例50条）",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "狭あい道路に関する協議申請（伊勢原市）",
+    "url": "https://www.city.isehara.kanagawa.jp/docs/2021021600022/",
+    "what": "建築行為届出書より前に協議申請書（建築住宅課 開発調整係）。道路中心・後退の方法は、先に県平塚土木と市土木総務課で調整",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭あい道路に関する協議申請",
+    "rule_for": "道路"
+   },
+   {
+    "label": "伊勢原市景観条例（例規集）",
+    "url": "https://www.city.isehara.kanagawa.jp/reiki_int/reiki_honbun/c500RG00000585.html",
+    "what": "大山まちなみ継承地区は延べ10㎡超が対象（戸建ても）。届出の前に事前協議、届出は着手の30日前まで",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観の事前協議・届出（大山まちなみ継承地区）",
+    "rule_for": "そのほか"
    }
   ],
   "海老名市": [
@@ -3049,6 +3126,17 @@
     "verified": true,
     "purpose": "建築協定",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "条例の対象となる開発事業一覧（PDF）",
+    "url": "https://www.city.ebina.kanagawa.jp/_res/projects/default_project/_page_/001/006/878/yo-shiki/080401taisyoujigyou.pdf",
+    "what": "市街化調整区域で建てるときは、規模によらず協議・近隣周知（戸建ても）。住宅まちづくり課",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "住みよいまちづくり条例（市街化調整区域の建築）",
+    "rule_for": "開発許可"
    }
   ],
   "座間市": [
@@ -3107,6 +3195,28 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "確認申請経由（座間市）",
+    "url": "https://www.city.zama.kanagawa.jp/shisei/machi/kaihatsu/1004483.html",
+    "what": "経由届・申請書の写しなどを都市整備課へ。配置図に市道の番号と幅員・下水道・排水処理を書き、雨水は敷地内で処理（浸透桝を図示）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "確認申請経由（配置図に排水系統・雨水の敷地内処理を明記）",
+    "rule_for": "下水道"
+   },
+   {
+    "label": "座間市景観計画",
+    "url": "https://www.city.zama.kanagawa.jp/shisei/machi/keikan/1004487.html",
+    "what": "地区内は新築の延べ10㎡超が対象（戸建ても）。着工の30日前まで",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観の届出（鈴鹿長宿特定景観計画地区）",
+    "rule_for": "そのほか"
    }
   ],
   "南足柄市": [
@@ -3158,6 +3268,39 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "建築確認申請（経由）について（PDF）",
+    "url": "https://www.city.minamiashigara.kanagawa.jp/global-image/units/162386/1-20230703152414.pdf",
+    "what": "県西土木事務所や経由が要る民間機関に出すときは、建築営繕課で経由（申請前に電話）。市保管用に公図の写し",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築確認申請の経由",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "届出対象行為と規模等の基準（PDF）",
+    "url": "https://www.city.minamiashigara.kanagawa.jp/global-image/units/79201/1-20161226170041.pdf",
+    "what": "保安林・自然環境保全地域・水資源かん養保全地域では、高さ5m超か延べ10㎡超が対象（戸建ても）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観の事前協議・届出（山並み景観ゾーンの保安林など）",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "家を建てるときの手続き（南足柄市）",
+    "url": "https://www.city.minamiashigara.kanagawa.jp/kurashi/sumai/house/iewo_tateru.html#kyotei",
+    "what": "建築計画を建築営繕課と事前に協議",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築協定区域の事前協議（藤和グリーンヒル南足柄）",
+    "rule_for": "建築協定"
    }
   ],
   "綾瀬市": [
@@ -3216,6 +3359,28 @@
     "verified": true,
     "purpose": "建築協定",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "建築確認の経由（綾瀬市）",
+    "url": "https://www.city.ayase.kanagawa.jp/kurashi_tetsuzuki/zumai/zumai_kenchiku/25218.html",
+    "what": "確認申請の前に、経由カード・申請書の写し・排水計画つきの配置図を都市計画課へ（来庁が必要）。各担当課を回って確認を受けてから申請",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "建築確認経由カード（各課の持ち回り）",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "綾瀬市景観計画に基づく届出書",
+    "url": "https://www.city.ayase.kanagawa.jp/shigoto_sangyo_machizukuri/kaihatsu_toshikeikaku/toshikeikaku_machizukuri/3/14273.html",
+    "what": "重点地区は確認申請の要る建築物すべて（戸建ても）。協議書は着手の60日前まで",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観の協議（景観重点地区：綾瀬シンボルロード）",
+    "rule_for": "そのほか"
    }
   ]
  }

@@ -6825,6 +6825,27 @@
 "label": "建築協定について（伊勢原市）"
 },
 {
+"url": "https://www.city.isehara.kanagawa.jp/docs/2026061900132",
+"pref": "神奈川県",
+"muni": "伊勢原市",
+"purpose": "決まり",
+"label": "建築確認申請の経由事務（伊勢原市）"
+},
+{
+"url": "https://www.city.isehara.kanagawa.jp/docs/2021021600022/",
+"pref": "神奈川県",
+"muni": "伊勢原市",
+"purpose": "決まり",
+"label": "狭あい道路に関する協議申請（伊勢原市）"
+},
+{
+"url": "https://www.city.isehara.kanagawa.jp/reiki_int/reiki_honbun/c500RG00000585.html",
+"pref": "神奈川県",
+"muni": "伊勢原市",
+"purpose": "決まり",
+"label": "伊勢原市景観条例（例規集）"
+},
+{
 "url": "https://www.city.ebina.kanagawa.jp/shisei/seisaku/machidukuri/toshi/1008405.html",
 "pref": "神奈川県",
 "muni": "海老名市",
@@ -6914,6 +6935,13 @@
 "muni": "海老名市",
 "purpose": "建築協定",
 "label": "海老名の建築協定について（海老名市）"
+},
+{
+"url": "https://www.city.ebina.kanagawa.jp/_res/projects/default_project/_page_/001/006/878/yo-shiki/080401taisyoujigyou.pdf",
+"pref": "神奈川県",
+"muni": "海老名市",
+"purpose": "決まり",
+"label": "条例の対象となる開発事業一覧（PDF）"
 },
 {
 "url": "https://www.city.zama.kanagawa.jp/shisei/machi/toshikeikaku/1004466.html",
@@ -7007,6 +7035,20 @@
 "label": "地区計画（座間市）"
 },
 {
+"url": "https://www.city.zama.kanagawa.jp/shisei/machi/kaihatsu/1004483.html",
+"pref": "神奈川県",
+"muni": "座間市",
+"purpose": "決まり",
+"label": "確認申請経由（座間市）"
+},
+{
+"url": "https://www.city.zama.kanagawa.jp/shisei/machi/keikan/1004487.html",
+"pref": "神奈川県",
+"muni": "座間市",
+"purpose": "決まり",
+"label": "座間市景観計画"
+},
+{
 "url": "https://www2.wagmap.jp/minamiashigara/Portal",
 "pref": "神奈川県",
 "muni": "南足柄市",
@@ -7075,6 +7117,27 @@
 "muni": "南足柄市",
 "purpose": "地区計画",
 "label": "地区計画（南足柄市）"
+},
+{
+"url": "https://www.city.minamiashigara.kanagawa.jp/global-image/units/162386/1-20230703152414.pdf",
+"pref": "神奈川県",
+"muni": "南足柄市",
+"purpose": "決まり",
+"label": "建築確認申請（経由）について（PDF）"
+},
+{
+"url": "https://www.city.minamiashigara.kanagawa.jp/global-image/units/79201/1-20161226170041.pdf",
+"pref": "神奈川県",
+"muni": "南足柄市",
+"purpose": "決まり",
+"label": "届出対象行為と規模等の基準（PDF）"
+},
+{
+"url": "https://www.city.minamiashigara.kanagawa.jp/kurashi/sumai/house/iewo_tateru.html#kyotei",
+"pref": "神奈川県",
+"muni": "南足柄市",
+"purpose": "決まり",
+"label": "家を建てるときの手続き（南足柄市）"
 },
 {
 "url": "https://www.city.ayase.kanagawa.jp/shigoto_sangyo_machizukuri/kaihatsu_toshikeikaku/16788.html",
@@ -7152,6 +7215,20 @@
 "muni": "綾瀬市",
 "purpose": "建築協定",
 "label": "建築協定（綾瀬市）"
+},
+{
+"url": "https://www.city.ayase.kanagawa.jp/kurashi_tetsuzuki/zumai/zumai_kenchiku/25218.html",
+"pref": "神奈川県",
+"muni": "綾瀬市",
+"purpose": "決まり",
+"label": "建築確認の経由（綾瀬市）"
+},
+{
+"url": "https://www.city.ayase.kanagawa.jp/shigoto_sangyo_machizukuri/kaihatsu_toshikeikaku/toshikeikaku_machizukuri/3/14273.html",
+"pref": "神奈川県",
+"muni": "綾瀬市",
+"purpose": "決まり",
+"label": "綾瀬市景観計画に基づく届出書"
 },
 {
 "url": "https://www.town.hayama.lg.jp/soshiki/soumu/oshirase/16361.html",
@@ -7287,6 +7364,20 @@
 "label": "寒川町 都市計画法第53条第1項の許可申請"
 },
 {
+"url": "https://www.town.samukawa.kanagawa.jp/soshiki/toshikensetsu/doro/kanri/info/douronitsuite/1360806971691.html",
+"pref": "神奈川県",
+"muni": "寒川町",
+"purpose": "決まり",
+"label": "狭あい道路について（寒川町）"
+},
+{
+"url": "https://www.town.samukawa.kanagawa.jp/soshiki/toshikensetsu/toshikeikaku/tokei_kaihatsu/info/kaihatsu_kenchiku/jizenkyogi_kakunin/1361759839884.html",
+"pref": "神奈川県",
+"muni": "寒川町",
+"purpose": "決まり",
+"label": "建築確認の手続き（寒川町）"
+},
+{
 "url": "https://www.town.oiso.kanagawa.jp/soshiki/toshikensetsubu/toshi/tanto/1365727477322.html",
 "pref": "神奈川県",
 "muni": "大磯町",
@@ -7341,6 +7432,20 @@
 "muni": "大磯町",
 "purpose": "開発許可",
 "label": "大磯町 都市計画法第53条第1項の許可申請"
+},
+{
+"url": "https://www.town.oiso.kanagawa.jp/soshiki/toshikensetsubu/toshi/tanto/kenchikubutsu/kakunin/tetsuduki.html",
+"pref": "神奈川県",
+"muni": "大磯町",
+"purpose": "決まり",
+"label": "建築確認の手続きについて（大磯町）"
+},
+{
+"url": "https://www.town.oiso.kanagawa.jp/material/files/group/21/keikankeikakugaiyou1.PDF",
+"pref": "神奈川県",
+"muni": "大磯町",
+"purpose": "決まり",
+"label": "大磯町景観計画 概要版（PDF）"
 },
 {
 "url": "https://www.town.ninomiya.kanagawa.jp/0000000133.html",

@@ -140,6 +140,15 @@
    "verified": true,
    "purpose": "開発許可",
    "role": "補助"
+  },
+  {
+   "label": "静岡県内の特定行政庁の窓口",
+   "url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1044597/1015972.html",
+   "what": "特定行政庁6市と限定特定行政庁9市の一覧と窓口。限定特定行政庁の市は、一部の建築物だけを扱い、ほかは県",
+   "verified": true,
+   "checked": "2026-10-17",
+   "purpose": "道路",
+   "role": "補助"
   }
  ],
  "municipalities": {

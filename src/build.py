@@ -65,6 +65,10 @@ HOLD = {
     "神奈川県": {"清川村": "kiyokawa"},
 }
 
+# 限定特定行政庁（建築基準法第97条の2）。2026-10-17 に県の公式の一覧で確かめた
+# 静岡：扱う範囲は「施行令第148条第1項に該当する建築物に限り市、その他は県」（県の受付窓口一覧表の凡例）。中間検査は県の告示、指定道路図は市
+GENTEI = {"静岡県": ["三島市", "御殿場市", "藤枝市", "磐田市", "島田市", "裾野市", "袋井市", "掛川市", "湖西市"]}
+
 # 元データに特定行政庁の一覧がない県（静岡は、申請チェッカーの中間検査の調べ先と同じ6市）
 TOKUTEI = {"静岡県": ["静岡市", "浜松市", "沼津市", "富士市", "富士宮市", "焼津市"]}
 
@@ -94,6 +98,7 @@ def load(pref: str, files: list[str]) -> dict:
                 return key in q.netloc or key in q.path or re.search(r"legal-square|g-reiki|d1-law|reiki", q.netloc)
             out["munis"][m] = [x for x in out["munis"][m] if not own(x.get("url", ""))]
     out["hold"] = list(HOLD.get(pref, {}))
+    out["gentei"] = list(GENTEI.get(pref, []))
     return out
 
 

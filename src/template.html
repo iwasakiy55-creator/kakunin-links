@@ -596,6 +596,34 @@ body.finding .ptabs { opacity:.5; }
 .case { border-top:4px solid var(--a); }
 
 .ck.c { background:#1E6FB8; color:#fff; border-color:#1E6FB8; }
+
+/* 文字の見やすさ（2026-10-17）：読み間違えにくい書体・濃さ・大きさ・行間 */
+:root { --sub:#3A4A52; --faint:#5F6F77; --a:#0E5F7A; --a2:#0A4A60; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --sub:#C3D0D6; --faint:#9FB0B8; --a:#6CC2E0; --a2:#4FA8C8; } }
+:root[data-theme="dark"] { --sub:#C3D0D6; --faint:#9FB0B8; --a:#6CC2E0; --a2:#4FA8C8; }
+body, button, input, textarea { font-family:"BIZ UDPGothic","BIZ UDPゴシック","Meiryo UI","Meiryo","Yu Gothic UI",sans-serif; }
+body { font-size:18.5px; line-height:1.75; letter-spacing:.02em; color:var(--ink); -webkit-font-smoothing:auto; }
+h1, h2, h3, .ttl h2, .hero h2, .row .rh b, .brand b { letter-spacing:.01em; font-feature-settings:"palt"; }
+.hero h2 { font-size:32px; }
+.mdr .lk .main .tl { font-size:20px; line-height:1.5; font-weight:bold; color:var(--a); }
+.mdr .lk.top .main .tl { color:color-mix(in srgb, var(--pc) 60%, #0F2530); }
+.mdr .lk .main .what { font-size:17px; color:var(--sub); line-height:1.7; max-width:42em; }
+.ck { font-size:14.5px; padding:3px 11px; letter-spacing:.03em; }
+.case .hint, .case .how, .prog .tm, .case .line2 .dir, .case .line2 .dir button { font-size:16px; color:var(--sub); }
+.case .how b { font-size:14.5px; }
+.mdl button { font-size:18px; color:var(--ink); }
+.mdl button.none .tx { color:var(--faint); }
+.mdl .grp { font-size:14.5px; color:var(--sub); }
+.grid button { font-size:18.5px; color:var(--ink); }
+.rgn { font-size:16.5px; }
+.steps > div { font-size:17.5px; }
+.legend, footer { font-size:15.5px; color:var(--sub); }
+.back2 { font-size:16.5px; color:var(--sub); }
+.note { font-size:15.5px; }
+.law th, .law td { font-size:17.5px; } .law td.nm small { font-size:15px; }
+#terms .tx { font-size:17px; }
+.grid button .tkb { font-size:12.5px; padding:1px 6px; }
+.steps > div { font-size:17px; line-height:1.5; }
 </style>
 </head>
 <body>

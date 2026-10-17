@@ -1544,7 +1544,7 @@
    },
    {
     "label": "道志村ホームページ",
-    "url": "https://www.vill.doshi.lg.jp/",
+    "url": "http://www.vill.doshi.lg.jp/",
     "what": "条例化：確かめられない（公式サイトにつながらず、例規集を開けなかった）",
     "verified": false,
     "purpose": "地区計画",
@@ -1784,7 +1784,7 @@
   "小菅村": [
    {
     "label": "小菅村ホームページ",
-    "url": "https://www.vill.kosuge.yamanashi.jp/",
+    "url": "http://www.vill.kosuge.yamanashi.jp/",
     "what": "条例化：確かめられない（公式サイトにつながらず、例規集を開けなかった）",
     "verified": false,
     "purpose": "地区計画",

@@ -88,10 +88,14 @@
   {
    "label": "静岡県 菊川水系黒沢川（特定都市河川）",
    "url": "https://www.pref.shizuoka.jp/machizukuri/kasensabo/river/1003551/1073849/1073851.html",
-   "what": "令和7年3月31日に特定都市河川に指定。流域で1,000㎡以上の雨水浸透阻害行為は知事の許可（袋井土木事務所）。対象地域はページ内のPDF。浸水被害防止区域の指定の記載はなし",
+   "what": "菊川市の一部が流域（流域面積3.3km²。国の一覧で流域の市町村は1）。1,000㎡以上の雨水浸透阻害行為は知事の許可（袋井土木事務所 企画検査課）。対象地域はページ内の流域界図",
    "verified": true,
    "purpose": "浸水",
-   "role": "まずここで調べる"
+   "role": "まずここで調べる",
+   "only": [
+    "菊川市"
+   ],
+   "checked": "2026-10-18"
   },
   {
    "label": "静岡県 地区計画の建築条例策定状況",
@@ -216,6 +220,67 @@
     "吉田町",
     "川根本町"
    ]
+  },
+  {
+   "label": "静岡県内の特定都市河川の一覧",
+   "url": "https://www.pref.shizuoka.jp/machizukuri/kasensabo/river/1003551/1073849/index.html",
+   "what": "県内は巴川（静岡市）と黒沢川（菊川市）の2つ（2026年10月）",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "浸水",
+   "role": "補助"
+  },
+  {
+   "label": "巴川流域の特定都市河川浸水被害対策法（静岡土木事務所）",
+   "url": "https://www.pref.shizuoka.jp/machizukuri/dobokujimusho/shizuokadoboku/1044558/1072344/1072345.html",
+   "what": "巴川・大谷川放水路・大沢川（平成21年4月1日指定）。流域図・流域水害対策計画",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "浸水",
+   "role": "まずここで調べる",
+   "only": [
+    "静岡市"
+   ]
+  },
+  {
+   "label": "黒沢川 対象となる地域（流域界図・PDF）",
+   "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/073/851/tiiki.pdf",
+   "what": "黒沢川の流域界の図",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "浸水",
+   "role": "補助",
+   "only": [
+    "菊川市"
+   ]
+  },
+  {
+   "label": "【指定予定】狩野川水系 来光川・柿沢川・堂川・函南冷川（国土交通省の発表）",
+   "url": "https://www.mlit.go.jp/report/press/mizukokudo05_hh_000282.html",
+   "what": "2026年9月18日に指定の手続きを始めた。令和8年12月に指定の予定。流域は三島市・函南町・伊豆の国市。指定までは許可は要らない",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "浸水",
+   "role": "補助",
+   "only": [
+    "三島市",
+    "函南町",
+    "伊豆の国市"
+   ]
+  },
+  {
+   "label": "【指定予定】洞川ほか 特定都市河川の指定について（沼津土木事務所）",
+   "url": "https://www.pref.shizuoka.jp/machizukuri/dobokujimusho/numazudoboku/1044531/1004246/1086047.html",
+   "what": "洞川（伊豆の国市）の指定の手続き。2026年10月8日更新",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "浸水",
+   "role": "補助",
+   "only": [
+    "三島市",
+    "函南町",
+    "伊豆の国市"
+   ]
   }
  ],
  "municipalities": {
@@ -328,6 +393,15 @@
     "checked": "2026-10-17",
     "purpose": "防火",
     "role": "補助"
+   },
+   {
+    "label": "巴川流域の総合治水対策（静岡市）",
+    "url": "https://www.city.shizuoka.lg.jp/s9568/s007965.html",
+    "what": "1,000㎡以上の雨水浸透阻害行為は市長の許可。建設局土木部河川課 総合治水係",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "浸水",
+    "role": "まずここで調べる"
    }
   ],
   "浜松市": [

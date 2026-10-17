@@ -648,6 +648,15 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "相模原市 境川（特定都市河川）",
+    "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026823/1004604/1026854/index.html",
+    "what": "境川流域（相模原市の分）の案内",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "浸水",
+    "role": "補助"
    }
   ],
   "横須賀市": [

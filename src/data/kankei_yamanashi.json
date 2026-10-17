@@ -118,6 +118,32 @@
    "except": [
     "甲府市"
    ]
+  },
+  {
+   "label": "雨水浸透阻害行為の許可申請について（山梨県）",
+   "url": "https://www.pref.yamanashi.jp/chisui/ryuikichisui/usuishintousogaikoui_kyokashinsei.html",
+   "what": "市長の許可（1,000㎡以上）。南アルプス市 道路整備課／中央市 まちづくり推進課",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "浸水",
+   "role": "まずここで調べる",
+   "only": [
+    "南アルプス市",
+    "中央市"
+   ]
+  },
+  {
+   "label": "横川ほか4河川の流域図（PDF）",
+   "url": "https://www.pref.yamanashi.jp/documents/119027/tokuteitoshikasen_gaiyouryuuikizu.pdf",
+   "what": "流域の範囲（南アルプス市・中央市）",
+   "verified": true,
+   "checked": "2026-10-18",
+   "purpose": "浸水",
+   "role": "補助",
+   "only": [
+    "南アルプス市",
+    "中央市"
+   ]
   }
  ],
  "municipalities": {

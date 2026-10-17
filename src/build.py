@@ -47,6 +47,9 @@ PURPOSES = [   # (key, 見出し, 中身, まとまり, 根拠の条)  並びは
 
 # 全国共通のページ（国土地理院）。どの県・市町村にも出す
 NATIONAL = [
+    {"label": "特定都市河川の取組状況一覧（全国の指定・予定）", "url": "https://www.mlit.go.jp/river/kasen/tokuteitoshikasen/portal.html", "src": "国土交通省",
+     "what": "全国の特定都市河川の指定と指定予定の一覧（ポータルの中のPDF。令和8年9月1日時点）。流域に入るかは、県の流域図で確かめる",
+     "verified": True, "checked": "2026-10-18", "purpose": "浸水", "role": "補助"},
     {"label": "地理院地図（標高・断面図・傾斜量図）", "url": "https://maps.gsi.go.jp/", "src": "国土地理院",
      "what": "地図を右クリックで標高。上の「ツール」→「断面図」で、敷地まわりの高低差を線で見られる。傾斜量図・陰影起伏図も重ねられる。がけかどうかの判定ではなく、目安",
      "verified": True, "checked": "2026-10-16", "purpose": "地形", "role": "まずここで調べる"},

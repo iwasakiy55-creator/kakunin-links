@@ -161,6 +161,48 @@
 "label": "島田土木事務所 よくあるお問い合わせ Q9（53条）"
 },
 {
+"url": "https://www.pref.shizuoka.jp/machizukuri/kasensabo/river/1003551/1073849/index.html",
+"pref": "静岡県",
+"muni": "（県）",
+"purpose": "浸水",
+"label": "静岡県内の特定都市河川の一覧"
+},
+{
+"url": "https://www.pref.shizuoka.jp/machizukuri/dobokujimusho/shizuokadoboku/1044558/1072344/1072345.html",
+"pref": "静岡県",
+"muni": "（県）",
+"purpose": "浸水",
+"label": "巴川流域の特定都市河川浸水被害対策法（静岡土木事務所）"
+},
+{
+"url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/073/851/tiiki.pdf",
+"pref": "静岡県",
+"muni": "（県）",
+"purpose": "浸水",
+"label": "黒沢川 対象となる地域（流域界図・PDF）"
+},
+{
+"url": "https://www.mlit.go.jp/report/press/mizukokudo05_hh_000282.html",
+"pref": "静岡県",
+"muni": "（県）",
+"purpose": "浸水",
+"label": "【指定予定】狩野川水系 来光川・柿沢川・堂川・函南冷川（国土交通省の発表）"
+},
+{
+"url": "https://www.pref.shizuoka.jp/machizukuri/dobokujimusho/numazudoboku/1044531/1004246/1086047.html",
+"pref": "静岡県",
+"muni": "（県）",
+"purpose": "浸水",
+"label": "【指定予定】洞川ほか 特定都市河川の指定について（沼津土木事務所）"
+},
+{
+"url": "https://www.mlit.go.jp/river/kasen/tokuteitoshikasen/portal.html",
+"pref": "静岡県",
+"muni": "（県）",
+"purpose": "浸水",
+"label": "特定都市河川の取組状況一覧（全国の指定・予定）"
+},
+{
 "url": "https://maps.gsi.go.jp/",
 "pref": "静岡県",
 "muni": "（県）",
@@ -306,6 +348,13 @@
 "muni": "静岡市",
 "purpose": "防火",
 "label": "静岡市 建築関係例規"
+},
+{
+"url": "https://www.city.shizuoka.lg.jp/s9568/s007965.html",
+"pref": "静岡県",
+"muni": "静岡市",
+"purpose": "浸水",
+"label": "巴川流域の総合治水対策（静岡市）"
 },
 {
 "url": "https://www2.wagmap.jp/hamamatsu/PositionSelect?mid=3",
@@ -2583,6 +2632,27 @@
 "label": "山梨県告示第294号 屋根を不燃材料で造り又はふかなければならない区域の指定（法22条）"
 },
 {
+"url": "https://www.pref.yamanashi.jp/chisui/ryuikichisui/usuishintousogaikoui_kyokashinsei.html",
+"pref": "山梨県",
+"muni": "（県）",
+"purpose": "浸水",
+"label": "雨水浸透阻害行為の許可申請について（山梨県）"
+},
+{
+"url": "https://www.pref.yamanashi.jp/documents/119027/tokuteitoshikasen_gaiyouryuuikizu.pdf",
+"pref": "山梨県",
+"muni": "（県）",
+"purpose": "浸水",
+"label": "横川ほか4河川の流域図（PDF）"
+},
+{
+"url": "https://www.mlit.go.jp/river/kasen/tokuteitoshikasen/portal.html",
+"pref": "山梨県",
+"muni": "（県）",
+"purpose": "浸水",
+"label": "特定都市河川の取組状況一覧（全国の指定・予定）"
+},
+{
 "url": "https://maps.gsi.go.jp/",
 "pref": "山梨県",
 "muni": "（県）",
@@ -4172,6 +4242,13 @@
 "label": "県西土木事務所 許認可指導課（53条の申請書あり）"
 },
 {
+"url": "https://www.mlit.go.jp/river/kasen/tokuteitoshikasen/portal.html",
+"pref": "神奈川県",
+"muni": "（県）",
+"purpose": "浸水",
+"label": "特定都市河川の取組状況一覧（全国の指定・予定）"
+},
+{
 "url": "https://maps.gsi.go.jp/",
 "pref": "神奈川県",
 "muni": "（県）",
@@ -4653,6 +4730,13 @@
 "muni": "相模原市",
 "purpose": "開発許可",
 "label": "相模原市 都市計画道路等の区域内に建築物を建築する場合（都計法53条）"
+},
+{
+"url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026823/1004604/1026854/index.html",
+"pref": "神奈川県",
+"muni": "相模原市",
+"purpose": "浸水",
+"label": "相模原市 境川（特定都市河川）"
 },
 {
 "url": "https://www2.wagmap.jp/yokosuka/Agreement?IsPost=False&MapId=5&RequestPage=%2fyokosuka%2fPositionSelect%3fmid%3d5",

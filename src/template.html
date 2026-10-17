@@ -785,6 +785,26 @@ header .brand { margin-right:auto; }
   header .hbtn { padding:6px 10px !important; font-size:14px !important; min-height:36px; }
   header #themeBtn { display:none; }
 }
+
+/* リンク：左に種類（大きく）・真ん中に名前と出どころ・右に開く */
+.mdr .lk .main { display:flex !important; flex-wrap:nowrap !important; align-items:center !important; gap:14px !important; }
+.mdr .lk .main::before { display:none !important; }
+.ty { flex:none; width:64px; height:56px; border-radius:12px; display:flex; flex-direction:column; align-items:center; justify-content:center; font-size:13.5px; font-weight:bold; line-height:1.2; }
+.ty .ti { font-size:22px; line-height:1; margin-bottom:3px; }
+.ty-map { background:#DDF1EC; color:#0F6B57; }
+.ty-pdf { background:#FBE3E0; color:#B03A2E; }
+.ty-law { background:#ECE4F7; color:#5B3C94; }
+.ty-ask { background:#FCEBD5; color:#9A5512; }
+.ty-page { background:#E3ECF7; color:#2E5D96; }
+.tb { flex:1; min-width:0; display:flex; flex-direction:column; gap:2px; }
+.tb .tl { font-size:19px !important; font-weight:bold; color:var(--ink) !important; line-height:1.4; }
+.tb .own { font-size:14.5px; color:var(--sub); }
+.tb .cks { display:flex; flex-wrap:wrap; gap:6px; margin-top:4px; }
+.mdr .lk .main::after { order:9; }
+.mdr .tagk { display:none !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .ty { filter:brightness(.8) saturate(1.2); } }
+:root[data-theme="dark"] .ty { filter:brightness(.8) saturate(1.2); }
+@media (max-width: 760px) { .ty { width:52px; height:48px; font-size:12px; } .ty .ti { font-size:18px; } .tb .tl { font-size:17px !important; } .mdr .lk .main { gap:10px !important; } }
 </style>
 </head>
 <body>
@@ -1160,11 +1180,26 @@ function twoKinds(all, p, m) {
   const sec = (cls, ic, h, xs, top) => xs.length ? `<div class="kind ${cls}"><div class="kh"><span class="ki">${ic}</span>${h}<span class="kn">${xs.length}</span></div>${xs.map((o, i) => linkBlock(o, p, m, top && i === 0)).join("")}</div>` : "";
   return sec("look", "🔍", "調べる（地図・図面）", look, false) + sec("ask", "☎", "決まり・窓口（条例・手続き・問い合わせ先）", ask, false);
 }
+/* リンクの種類（名前と場所から決める。データは変えない） */
+function linkType(x) {
+  const s = x.label + " " + x.url, w = x.label + (x.what || "");
+  if (/\.pdf($|\?)/i.test(x.url) || /PDF/.test(x.label)) return ["pdf", "📄", "PDF", "資料を開く"];
+  if (/GIS|ＧＩＳ|マップ|MAP|地図|わが街|ガイド|gis|map|chiriin/i.test(s)) return ["map", "🗺", "地図", "地図で探す"];
+  if (/条例|例規|規則/.test(x.label)) return ["law", "⚖", "条例", "決まりを読む"];
+  if (/相談|窓口|問い?合わ?せ|課$|課）|係$|担当/.test(x.label) || /窓口/.test(w)) return ["ask", "☎", "窓口", "聞く先を見る"];
+  return ["page", "📘", "説明", "説明を読む"];
+}
+function cleanName(s, own) {
+  let v = String(s).replace(/^(山梨県|静岡県|神奈川県|国土地理院)\s*/, "");
+  if (own) v = v.replace(new RegExp("^" + own.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\s*"), "");
+  return v.trim() || s;
+}
 function linkBlock(o, p, m, first) {
   const x = o.x, mm = MEMO[memoKeyU(x.url)];
   const kt = o.ken && (m || x.src) ? `<span class="first tagk">${esc(x.src || p.name)}</span>` : "";
   return `<div class="lkw"><div class="lk ${first ? "top" : ""}" data-u="${esc(x.url)}">
-    <a class="main" href="${esc(x.url)}" target="_blank" rel="noopener" title="${esc(x.label + (shortNote(x.what) ? "\n" + shortNote(x.what) : ""))}">${chips(x) ? `<div class="cks">${chips(x)}</div>` : ""}<div class="tl">${kt}${esc(shortLabel(x.label))}${svg(I.arrow, 15)}</div>
+    <a class="main" href="${esc(x.url)}" target="_blank" rel="noopener" title="${esc(x.label + (shortNote(x.what) ? "\n" + shortNote(x.what) : ""))}">${(() => { const ty = linkType(x), own = x.src || (o.ken ? p.name : (m || p.name)), ck = chips(x).replace(/<span class="ck( mado)?">(PDF|地図|窓口で確かめる)<\/span>/g, "");
+      return `<span class="ty ty-${ty[0]}"><span class="ti">${ty[1]}</span>${ty[2]}</span><span class="tb"><span class="tl">${esc(cleanName(shortLabel(x.label), own))}</span><span class="own">${esc(own)}${ty[3] ? "　" + ty[3] : ""}</span>${ck ? `<span class="cks">${ck}</span>` : ""}</span>`; })()}
       ${shortNote(x.what, x) ? `<div class="what">${esc(shortNote(x.what, x))}</div>` : ""}</a>
     <div class="acts"><button class="act" data-copy="${esc(x.url)}" title="このページの場所を写す（質疑書などに貼れる）" aria-label="場所を写す" data-lb="写す">${svg(I.copy, 17)}</button>
       <button class="act ${mm ? "has" : ""}" data-lmemo="${esc(x.url)}" title="このページにメモを書く" aria-label="メモ" data-lb="メモ">${svg(I.pen, 17)}</button></div></div>

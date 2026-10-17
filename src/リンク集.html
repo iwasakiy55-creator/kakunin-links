@@ -729,6 +729,20 @@ kbd { display:inline-block; font-family:inherit; font-size:14px; font-weight:bol
 .kind.ask { margin-top:16px; padding-top:6px; border-top:1px dashed var(--line); }
 .kind.ask .lk { background:color-mix(in srgb, #F4A43A 6%, var(--panel)); }
 .kind.ask .lk .main .tl { color:#8A4B0F; }
+
+/* 目的：左の列をやめ、上に並べるつまみに（別のスクロールなし。送っても上に残る） */
+.md { display:block !important; }
+.mdl { position:sticky !important; top:var(--hdrh, 70px) !important; z-index:20; display:flex !important; flex-direction:row !important; flex-wrap:wrap !important; gap:6px !important; max-height:none !important; overflow:visible !important; padding:10px 12px !important; margin:0 0 14px; border-radius:14px; }
+.mdl .grp { display:none !important; }
+.mdl button { width:auto !important; flex:none !important; padding:6px 12px 6px 6px !important; font-size:16px !important; gap:7px !important; border:1px solid var(--line) !important; border-radius:999px !important; background:var(--panel) !important; }
+.mdl button .n { width:24px !important; height:24px !important; font-size:13px !important; border-radius:50% !important; }
+.mdl button .tx br { display:none; }
+.mdl button .ck { display:none !important; }
+.mdl button.sel { background:var(--pc) !important; color:#fff !important; border-color:var(--pc) !important; }
+.mdl button.sel .n { background:#fff !important; color:var(--pc) !important; }
+.mdl button.sel::before { display:none !important; }
+.mdl button.seen:not(.sel) { border-color:color-mix(in srgb, var(--done) 50%, transparent) !important; }
+.mdl button.none { opacity:.55; }
 </style>
 </head>
 <body>

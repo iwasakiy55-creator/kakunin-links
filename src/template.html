@@ -1154,9 +1154,11 @@ const LOOK_RE = /マップ|GIS|ＧＩＳ|地図|総括図|台帳|計画図|計�
 const ASK_RE = /条例|例規|告示|相談|について|手続|申請|届出|窓口|担当|案内|問い?合わ?せ|事前協議|取扱|要綱|指針|手引|の流れ|制度|概要|火災予防|課$|課）|係$/;
 const isAsk = x => !LOOK_RE.test(x.label) && ASK_RE.test(x.label);
 function twoKinds(all, p, m) {
-  const look = all.filter(o => !isAsk(o.x)), ask = all.filter(o => isAsk(o.x));
+  // 並べる順：GIS・地図のサイト → そのほか → PDF（「まずここ」とは決めない）
+  const rank = x => /GIS|ＧＩＳ|マップ|MAP|地図|わが街|ガイド/i.test(x.label) && !/PDF/.test(x.label) ? 0 : /PDF/.test(x.label + (x.what || "")) ? 2 : 1;
+  const look = all.filter(o => !isAsk(o.x)).map((o, i) => [o, i]).sort((A, B) => rank(A[0].x) - rank(B[0].x) || A[1] - B[1]).map(z => z[0]), ask = all.filter(o => isAsk(o.x));
   const sec = (cls, ic, h, xs, top) => xs.length ? `<div class="kind ${cls}"><div class="kh"><span class="ki">${ic}</span>${h}<span class="kn">${xs.length}</span></div>${xs.map((o, i) => linkBlock(o, p, m, top && i === 0)).join("")}</div>` : "";
-  return sec("look", "🔍", "調べる（地図・図面）", look, true) + sec("ask", "☎", "決まり・窓口（条例・手続き・問い合わせ先）", ask, !look.length);
+  return sec("look", "🔍", "調べる（地図・図面）", look, false) + sec("ask", "☎", "決まり・窓口（条例・手続き・問い合わせ先）", ask, false);
 }
 function linkBlock(o, p, m, first) {
   const x = o.x, mm = MEMO[memoKeyU(x.url)];

@@ -1237,7 +1237,7 @@ function linkType(x) {
 }
 function cleanName(s, own) {
   let v = /^(山梨県|静岡県|神奈川県|国土地理院)(GIS|ＧＩＳ|地図|統合型)/.test(s) ? String(s) : String(s).replace(/^(山梨県|静岡県|神奈川県|国土地理院)\s*/, "");
-  if (own) v = v.replace(new RegExp("^" + own.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\s*"), "");
+  if (own && !/^(山梨県|静岡県|神奈川県|国土地理院)(GIS|ＧＩＳ|地図|統合型)/.test(v)) v = v.replace(new RegExp("^" + own.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\s*"), "");
   return v.trim() || s;
 }
 function linkBlock(o, p, m, first) {

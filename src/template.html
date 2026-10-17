@@ -682,6 +682,20 @@ kbd { display:inline-block; font-family:inherit; font-size:14px; font-weight:bol
 /* 丸囲みの「特」「限」 */
 .tkb, .grid button .tkb, .legend .tkb, #help .tkb { display:inline-grid; place-items:center; width:24px; height:24px; padding:0 !important; border-radius:50%; font-size:14px; font-weight:bold; letter-spacing:0; line-height:1; vertical-align:-3px; background:#B8461B; color:#fff; border:2px solid #B8461B; box-sizing:border-box; }
 .tkb.lim, .grid button .tkb.lim, .legend .tkb.lim, #help .tkb.lim { background:#fff; color:#B8461B; border:2px solid #B8461B; }
+
+/* 市町村のボタン：平らなタイル（左の太い線なし・名前は左寄せ・印は右端） */
+.grid { gap:8px; }
+.grid button { display:flex; align-items:center; justify-content:space-between; gap:6px; text-align:left; min-height:50px; padding:8px 12px 8px 14px; border:1px solid color-mix(in srgb, var(--rl) 28%, transparent); border-left-width:1px; border-radius:12px; background:var(--panel); box-shadow:none; font-weight:normal; transform:none; }
+.grid button.tk { font-weight:normal; }
+.grid button:hover { background:color-mix(in srgb, var(--rl) 12%, var(--panel)); border-color:var(--rl); color:var(--ink); transform:none; box-shadow:0 2px 8px color-mix(in srgb, var(--rl) 25%, transparent); }
+.grid button .tkb { margin-left:auto; flex:none; vertical-align:0; }
+.grid button.hit { border-color:var(--a); border-width:2px; background:var(--a-pale); color:var(--ink); font-weight:bold; }
+
+/* 文字を減らす：説明文は出さない（乗せると出る）。手順は1行 */
+.mdr .lk .main .what { display:none; }
+.mdr .lk { padding:12px 16px; }
+.flow4 { display:none; }
+.how1 { margin-top:10px; font-size:16px; color:var(--sub); }
 </style>
 </head>
 <body>
@@ -1091,7 +1105,7 @@ function city(pi, m) {
       <button class="btn" data-go="copyAddr">${svg(I.copy, 15)}写す</button></div>
 
     <div class="line2"><div class="prog" id="prog"></div><span class="dir" id="dirName"></span></div>
-    <div class="flow4"><div><span>1</span><p>左の目次で<br><b>ページを開く</b></p></div><i>▶</i><div><span>2</span><p><kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd><br>で<b>切り取る</b></p></div><i>▶</i><div><span>3</span><p>この画面に戻り<br><kbd>Ctrl</kbd>+<kbd>V</kbd></p></div><i>▶</i><div class="ok"><span>✓</span><p>保存先に<br><b>PDF で保存</b></p></div></div></div>`;
+    <div class="how1">写す：<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> → ここで <kbd>Ctrl</kbd>+<kbd>V</kbd> → PDF 保存</div><div class="flow4"><div><span>1</span><p>左の目次で<br><b>ページを開く</b></p></div><i>▶</i><div><span>2</span><p><kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd><br>で<b>切り取る</b></p></div><i>▶</i><div><span>3</span><p>この画面に戻り<br><kbd>Ctrl</kbd>+<kbd>V</kbd></p></div><i>▶</i><div class="ok"><span>✓</span><p>保存先に<br><b>PDF で保存</b></p></div></div></div>`;
   const G = Object.fromEntries(D.purposes.map(x => [x[0], x[3] || ""]));
   const navs = list.map(({ k, t, all }, idx) => { const it = CASE.items[k] || {};
     const gh = idx === 0 || G[list[idx - 1].k] !== G[k] ? `<div class="grp">${esc(G[k] || "")}</div>` : "";

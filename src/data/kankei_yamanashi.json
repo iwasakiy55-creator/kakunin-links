@@ -314,6 +314,28 @@
     "checked": "2026-10-18",
     "purpose": "災害",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "建築基準法上の道路種別等に関する相談（甲府市）",
+    "url": "https://www.city.kofu.yamanashi.jp/kenchikushido/dourosoudan.html",
+    "what": "4m未満の道に接する敷地は、敷地を決める前に建築指導課へ道路相談カード・公図・現況図（回答まで約2週間〜1か月）。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "道路相談（道路種別・後退の方法）",
+    "rule_for": "道路"
+   },
+   {
+    "label": "甲府市 風致地区 申請ガイド（PDF）",
+    "url": "https://www.city.kofu.yamanashi.jp/toshikekaku/machi/kekaku/kekan/documents/220506_huutitikushinnseigaido.pdf",
+    "what": "風致地区内の新築は、事前相談のあと許可を受けてから確認申請（高さ10m以下・建蔽率40%以下・色彩・壁面後退）。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "風致地区の許可（甲府市風致地区条例）",
+    "rule_for": "都市計画"
    }
   ],
   "甲斐市": [
@@ -381,6 +403,17 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "甲斐市景観計画（PDF）",
+    "url": "https://www.city.kai.yamanashi.jp/uploaded/attachment/5274.pdf",
+    "what": "森林・北部山間・田園居住地域は10㎡超（戸建ても）。着手30日前まで",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観計画区域内行為の届出",
+    "rule_for": "そのほか"
    }
   ],
   "中央市": [
@@ -440,6 +473,17 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "中央市 景観の届出対象行為一覧（PDF）",
+    "url": "https://www.city.chuo.yamanashi.jp/material/files/group/22/keikan_todokede_taishoukoui_itiran.pdf",
+    "what": "森林地域は10㎡超（戸建ても）。着手30日前まで",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観の届出（森林景観形成地域）",
+    "rule_for": "そのほか"
    }
   ],
   "昭和町": [
@@ -490,6 +534,17 @@
     "verified": false,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "地区計画区域内での建築（昭和町）",
+    "url": "https://www.town.showa.yamanashi.jp/soshiki/9/1582.html",
+    "what": "神屋・鍛冶新居・常永は、着手30日前までに届出→適合通知書→確認申請（写しを付ける）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "地区計画の届出と適合通知書",
+    "rule_for": "地区計画"
    }
   ],
   "韮崎市": [
@@ -593,6 +648,28 @@
     "checked": "2026-10-18",
     "purpose": "建築協定",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "北杜市まちづくり条例の建築行為の届出",
+    "url": "https://www.city.hokuto.yamanashi.jp/docs/1011.html",
+    "what": "10㎡以上の新築など（車庫・物置も）は着手30日前までに土地政策課へ。適合通知書をもらってから確認申請。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "まちづくり条例の建築行為の届出",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "北杜市景観条例の届出",
+    "url": "https://www.city.hokuto.yamanashi.jp/docs/1083.html",
+    "what": "山岳高原地域は10㎡超（戸建ても）。着手30日以上前",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観条例の届出",
+    "rule_for": "そのほか"
    }
   ],
   "市川三郷町": [
@@ -627,6 +704,17 @@
     "verified": true,
     "purpose": "水道",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "森林景観形成地域の届出対象行為（PDF）",
+    "url": "https://www.town.ichikawamisato.yamanashi.jp/40administration/05kensetsu/files/shinrin.pdf",
+    "what": "森林地域は10㎡超（戸建ても）。着手30日前まで",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観の届出（森林景観形成地域）",
+    "rule_for": "そのほか"
    }
   ],
   "富士川町": [
@@ -661,6 +749,17 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "富士川町景観条例 別表（PDF）",
+    "url": "https://www.town.fujikawa.yamanashi.jp/docs/2023080800221/file_contents/12keikan_jourei_beppyou.pdf",
+    "what": "森林地域は10㎡超（戸建ても）。行為の30日前まで",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観条例の届出（森林景観形成地域）",
+    "rule_for": "そのほか"
    }
   ],
   "早川町": [
@@ -704,6 +803,17 @@
     "checked": "2026-10-18",
     "purpose": "水道",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "早川町景観計画（PDF）",
+    "url": "https://www.town.hayakawa.yamanashi.jp/town/grapple/pdf/keikankeikakukaisei201603.pdf",
+    "what": "高さ10m超か床面積150㎡超は、着手30日前までに届出（150㎡超の戸建てはかかる）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観計画区域内行為の届出",
+    "rule_for": "そのほか"
    }
   ],
   "身延町": [
@@ -738,6 +848,17 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "風致地区の許可申請（身延町）",
+    "url": "https://www.town.minobu.lg.jp/page/1164.html",
+    "what": "風致地区（身延山 799ha）内の新築・増改築・色彩の変更は許可",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "風致地区の許可（身延山）",
+    "rule_for": "都市計画"
    }
   ],
   "南部町": [
@@ -825,6 +946,17 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "富士吉田市景観計画",
+    "url": "https://www.city.fujiyoshida.yamanashi.jp/page/2232.html",
+    "what": "山並み地域は10㎡超の新築が届出（戸建ても）。高さ13m超は事前協議",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観の届出（山並み地域）",
+    "rule_for": "そのほか"
    }
   ],
   "西桂町": [
@@ -860,6 +992,17 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "西桂町景観計画及び景観条例",
+    "url": "https://www.town.nishikatsura.yamanashi.jp/info/370",
+    "what": "住宅などは、ほぼすべての建築行為が対象。建設産業課",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観条例の届出",
+    "rule_for": "そのほか"
    }
   ],
   "忍野村": [
@@ -911,6 +1054,28 @@
     "verified": false,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "忍野村景観計画",
+    "url": "https://www.vill.oshino.lg.jp/page/1116.html",
+    "what": "建築面積10㎡超の新築は企画課へ届出（戸建ても）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観計画行為届出",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "風致地区（忍野村）",
+    "url": "https://www.vill.oshino.lg.jp/page/1032.html",
+    "what": "風致地区（忍草の奥山尾田・鐘山など）は、建蔽率40%・高さ10m・後退・緑地率の基準。建設課",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "風致地区の許可",
+    "rule_for": "都市計画"
    }
   ],
   "山中湖村": [
@@ -946,6 +1111,28 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "都市計画・建築等 手続き一覧（PDF）",
+    "url": "https://www.vill.yamanakako.lg.jp/docs/2014072500014/files/kenchikuichiran.pdf",
+    "what": "新築・増改築は着手30日前までに届出（戸建ても）。2,000㎡以上か10m以上は事前協議",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観条例の届出（普通地域）",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "都市計画・建築等 手続き一覧（PDF）",
+    "url": "https://www.vill.yamanakako.lg.jp/docs/2014072500014/files/kenchikuichiran.pdf#jokaso",
+    "what": "浄化槽を置くときは、県への届とは別に、村（建設水道課）へも確認申請と同時に届出",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "浄化槽等汚水終末処理槽設置届（村）",
+    "rule_for": "浄化槽"
    }
   ],
   "鳴沢村": [
@@ -989,6 +1176,17 @@
     "verified": true,
     "purpose": "下水道",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "鳴沢村景観条例（PDF）",
+    "url": "https://www.vill.narusawa.yamanashi.jp/material/files/group/4/narusawamurakeikanjyourei.pdf",
+    "what": "山岳景観形成地域は建築面積10㎡超（戸建ても）。届出の対象はすべて村長と事前協議",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観条例の届出と事前協議",
+    "rule_for": "そのほか"
    }
   ],
   "富士河口湖町": [
@@ -1024,6 +1222,17 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "富士河口湖町景観条例の届出（PDF）",
+    "url": "https://www.town.fujikawaguchiko.lg.jp/upload/file/toshiseibi/keikan_todokede_01.pdf",
+    "what": "森林地域は10㎡超（戸建ても）、湖畔は10m／250㎡超。着手30日前まで",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観条例の届出",
+    "rule_for": "そのほか"
    }
   ],
   "山梨市": [
@@ -1092,6 +1301,17 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "山梨市狭あい道路拡幅整備に関する要綱（PDF）",
+    "url": "https://www.city.yamanashi.yamanashi.jp/uploaded/attachment/2122.pdf",
+    "what": "2項道路の市道などに接する敷地は、確認申請の30日前までに協議申請書で協議（要綱9条）。戸建てもかかる",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "狭あい道路拡幅整備の協議",
+    "rule_for": "道路"
    }
   ],
   "甲州市": [
@@ -1134,6 +1354,28 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "甲州市 景観",
+    "url": "https://www.city.koshu.yamanashi.jp/docs/2021012100326/",
+    "what": "市内全域で延べ10㎡超の新築は、着工30日前までに都市整備課へ（戸建ても）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観の届出（市全域）",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "開発行為について（甲州市）",
+    "url": "https://www.city.koshu.yamanashi.jp/docs/2026031100012",
+    "what": "塩山1,000㎡・勝沼500㎡・区域外2,000㎡以上（建築だけでも対象。広い敷地の戸建ても）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "開発行為等指導要綱の協議",
+    "rule_for": "開発許可"
    }
   ],
   "南アルプス市": [
@@ -1194,6 +1436,17 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "景観法に基づく届出手続き（南アルプス市）",
+    "url": "https://www.city.minami-alps.yamanashi.jp/docs/1827.html",
+    "what": "建築確認の手続きの前に届出、30日は着手できない。山方は高さ10m／延べ150㎡超（戸建てもかかる）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観法に基づく届出（確認申請の前）",
+    "rule_for": "そのほか"
    }
   ],
   "都留市": [
@@ -1245,6 +1498,39 @@
     "verified": true,
     "purpose": "下水道",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "都留市景観計画 第3章（PDF）",
+    "url": "https://www.city.tsuru.yamanashi.jp/material/files/group/12/chapter3.pdf",
+    "what": "森林地域は延べ10㎡超の新築は、着手30日前までに届出（戸建ても）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観の届出（森林景観形成地域）",
+    "rule_for": "そのほか"
+   },
+   {
+    "label": "建築確認申請等（都留市）",
+    "url": "https://www.city.tsuru.yamanashi.jp/soshiki/kensetsu/kenchikujuutaku_t/846.html",
+    "what": "4m未満の道に接する建築は、建設課建築住宅担当と事前協議",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "2項道路に接する場合の事前協議",
+    "rule_for": "道路"
+   },
+   {
+    "label": "開発許可の手続き（都留市）",
+    "url": "https://www.city.tsuru.yamanashi.jp/soshiki/kensetsu/toshikeikaku_t/844.html",
+    "what": "区画形質の変更を伴わない建築も含め、1,000㎡以上は市長の同意（広い敷地の戸建ても対象になりうる）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "開発行為指導要綱の同意（1,000㎡以上）",
+    "rule_for": "開発許可"
    }
   ],
   "道志村": [
@@ -1340,6 +1626,17 @@
     "checked": "2026-10-17",
     "purpose": "開発許可",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "上野原市景観計画 第3章（PDF）",
+    "url": "https://www.city.uenohara.yamanashi.jp/uploaded/attachment/2733.pdf",
+    "what": "森林地域は10㎡超（戸建ても）。着手30日前まで",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観の届出（森林景観形成地域）",
+    "rule_for": "そのほか"
    }
   ],
   "大月市": [
@@ -1433,6 +1730,17 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "笛吹市景観計画 第4章（PDF）",
+    "url": "https://www.city.fuefuki.yamanashi.jp/documents/949/dai4syou.pdf",
+    "what": "森林地域は10㎡超（戸建ても）。着手30日前まで",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観の届出（森林景観形成地域）",
+    "rule_for": "そのほか"
    }
   ],
   "丹波山村": [
@@ -1460,6 +1768,17 @@
     "checked": "2026-10-18",
     "purpose": "水道",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "丹波山村景観計画（概要版・PDF）",
+    "url": "https://vill.tabayama.yamanashi.jp/gyousei/files/tabayama_keikankeikaku_digest.pdf",
+    "what": "高さ10m超か延べ150㎡超は事前に届出（150㎡超の戸建てはかかる）",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "決まり",
+    "role": "まずここで調べる",
+    "name": "景観計画の届出",
+    "rule_for": "そのほか"
    }
   ],
   "小菅村": [

@@ -743,6 +743,21 @@ kbd { display:inline-block; font-family:inherit; font-size:14px; font-weight:bol
 .mdl button.sel::before { display:none !important; }
 .mdl button.seen:not(.sel) { border-color:color-mix(in srgb, var(--done) 50%, transparent) !important; }
 .mdl button.none { opacity:.55; }
+
+/* 押せる所を、はっきり：リンクの右に「開く」ボタン・まずここ・目的の見出し */
+.mdr .lk { cursor:pointer; transition:border-color .12s, background .12s, box-shadow .12s; }
+.mdr .lk .main { width:100%; }
+.mdr .lk .main::after { content:"開く ↗"; order:9; margin-left:auto; flex:none; background:var(--a); color:#fff; font-weight:bold; font-size:15px; padding:7px 16px; border-radius:999px; }
+.mdr .lk:hover { border-color:var(--a) !important; background:var(--a-pale) !important; box-shadow:0 3px 10px var(--glow); }
+.mdr .lk:hover .main::after { filter:brightness(1.12); }
+.mdr .lk .main .tl svg { display:none; }
+.kind.ask .lk .main::after { background:#B8691B; }
+.kind.ask .lk:hover { border-color:#B8691B !important; background:#FDF1E1 !important; }
+.mdr .lk.top .main::before { content:"まずここ"; order:0; flex:none; background:#F2C14E; color:#3B2E05; font-weight:bold; font-size:13px; padding:2px 9px; border-radius:6px; }
+.mdl::before { content:"① 調べる目的を選ぶ"; flex:1 1 100%; font-size:14px; font-weight:bold; color:var(--sub); margin:0 0 2px 4px; }
+.mdl button:hover { border-color:var(--pc) !important; box-shadow:0 2px 6px color-mix(in srgb, var(--pc) 30%, transparent); }
+.mdl button.none { opacity:.45; cursor:default; }
+.kind.look .kh::after { content:"② 開いて調べる"; margin-left:auto; font-size:13px; color:var(--faint); font-weight:normal; }
 </style>
 </head>
 <body>

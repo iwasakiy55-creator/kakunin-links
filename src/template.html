@@ -577,6 +577,23 @@ body.finding .ptabs { opacity:.5; }
 .grid button .tkb { display:inline-block; font-size:11px; font-weight:bold; color:#fff; background:var(--pc); border-radius:4px; padding:0 5px; margin-left:6px; vertical-align:2px; }
 .legend i { display:none; }
 .legend .tkb { display:inline-block; font-size:11px; font-weight:bold; color:#fff; background:var(--p0); border-radius:4px; padding:0 5px; margin-right:4px; }
+
+/* メリハリ：札・短い名前・1行の説明 */
+.cks { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 6px; }
+.ck { display:inline-block; font-size:13.5px; font-weight:bold; border-radius:6px; padding:2px 10px; background:var(--bg); color:var(--sub); border:1px solid var(--line); }
+.ck.ok { background:#2C8A57; color:#fff; border-color:#2C8A57; }
+.ck.no { background:var(--bg); color:var(--ink); }
+.ck.warn { background:#F2C14E; color:#3B2E05; border-color:#F2C14E; }
+.mdr .lk .main .tl { font-size:19px; line-height:1.45; }
+.mdr .lk .main .what { font-size:16px; color:var(--sub); margin-top:4px; line-height:1.6; }
+.mdr .lk { padding:14px 16px; }
+.mdr .lk.top { border-width:2px; }
+.pchip, .rchip { display:inline-block; font-size:15px; font-weight:bold; border-radius:999px; padding:3px 13px; }
+.pchip { background:var(--pc); color:#fff; }
+.rchip { background:var(--rb); color:color-mix(in srgb, var(--rl) 80%, var(--ink)); }
+.ttl h2 { color:var(--ink); }
+.back2 { color:var(--sub); }
+.case { border-top:4px solid var(--a); }
 </style>
 </head>
 <body>
@@ -902,12 +919,38 @@ const EMPTY = {
 };
 /* 市町村の画面 */
 const KEN_FIRST = new Set(["災害", "盛土", "白地", "地形"]);
+/* 見せ方を整える（データは変えない） */
+function shortLabel(s) {      // かっこの中の補足は外す（全部は、乗せたときに出す）
+  let v = String(s || "").replace(/（[^（）]*）$/, "").replace(/\([^()]*\)$/, "").trim();
+  v = v.replace(/^(岳南広域都市計画|御殿場小山広域都市計画|中遠広域都市計画|[^\s]{2,6}広域都市計画)/, "");
+  return v.length > 42 ? v.slice(0, 40) + "…" : (v || s);
+}
+const NOTE_NG = /開けた|開いて|確かめ|検索|見当た|要約|題名|verified|一覧のページで|ページ自体|ページは開いて|記載なし|書かれていない|書かれている|と書|ページに|このページ|指示|見込み|未確認|が出る|件出|出る$/;
+function shortNote(s, x) {       // 調べたときの記録は出さず、使う人に要ることだけ
+  const parts = String(s || "").replace(/^条例化：[^。]*。?/, "").split(/(?<=。)|・(?=[^\d])/).map(x => x.trim()).filter(Boolean);
+  const keep = parts.filter(x => !NOTE_NG.test(x));
+  const v = (keep.length ? keep : []).join(" ").replace(/。$/, "");
+  if (!v && x && x.purpose === "地区計画" && /条例/.test(x.label || "")) return "例規集のページ。題名で探すと、条例の本文（対象の地区）が出ます";
+  return v.length > 70 ? v.slice(0, 68) + "…" : v;
+}
+function chips(x) {           // 大事なことを、先に札で
+  const w = String(x.what || ""), out = [];
+  const a = w.match(/条例化：あり（([^）]*)）/);
+  const isJ = x.purpose === "地区計画" && /条例/.test(x.label || "") && !/案の作成手続/.test(x.label || "");
+  if (a || isJ) { const n = ((a ? a[1] : "") + " " + (x.label || "") + " " + w).match(/(\d+)\s*(地区|本)/); out.push(`<span class="ck ok">条例あり${n ? "　" + n[1] + n[2] : ""}</span>`); }
+  else if (/条例化：なし/.test(w)) out.push(`<span class="ck no">条例なし</span>`);
+  else if (/条例化：確かめられない/.test(w)) out.push(`<span class="ck warn">条例は未確認</span>`);
+  if (/PDF/.test(x.label + w)) out.push(`<span class="ck">PDF</span>`);
+  if (/GIS|マップ|地図/.test(x.label)) out.push(`<span class="ck">地図</span>`);
+  if (/窓口|閲覧は/.test(w)) out.push(`<span class="ck">窓口で確かめる</span>`);
+  return out.join("");
+}
 function linkBlock(o, p, m, first) {
   const x = o.x, mm = MEMO[memoKeyU(x.url)];
   const kt = o.ken && (m || x.src) ? `<span class="first tagk">${esc(x.src || p.name)}</span>` : "";
   return `<div class="lkw"><div class="lk ${first ? "top" : ""}" data-u="${esc(x.url)}">
-    <a class="main" href="${esc(x.url)}" target="_blank" rel="noopener"><div class="tl">${kt}${esc(x.label)}${svg(I.arrow, 15)}</div>
-      ${x.what ? `<div class="what">${esc(x.what)}</div>` : ""}</a>
+    <a class="main" href="${esc(x.url)}" target="_blank" rel="noopener" title="${esc(x.label + (x.what ? "\n" + x.what : ""))}">${chips(x) ? `<div class="cks">${chips(x)}</div>` : ""}<div class="tl">${kt}${esc(shortLabel(x.label))}${svg(I.arrow, 15)}</div>
+      ${shortNote(x.what, x) ? `<div class="what">${esc(shortNote(x.what, x))}</div>` : ""}</a>
     <div class="acts"><button class="act" data-copy="${esc(x.url)}" title="このページの場所を写す（質疑書などに貼れる）" aria-label="場所を写す" data-lb="写す">${svg(I.copy, 17)}</button>
       <button class="act ${mm ? "has" : ""}" data-lmemo="${esc(x.url)}" title="このページにメモを書く" aria-label="メモ" data-lb="メモ">${svg(I.pen, 17)}</button></div></div>
     ${flags(x) ? `<div style="flex-basis:100%;padding:0 8px 4px">${flags(x)}</div>` : ""}${mm ? memoBox(x.url, mm, p.name + "/" + (m || "")) : ""}</div>`;
@@ -960,7 +1003,8 @@ function city(pi, m) {
     <textarea data-mk="${esc(mk)}" placeholder="気づいたことを書いておけます（例：指定道路図は窓口で確認。担当は建築指導課）" aria-label="この市町村のメモ" ${canStore ? "" : "disabled"}>${esc(cm ? cm.t : "")}</textarea></div>`;
   show(`<div class="crumbs"><button data-go="home">はじめ</button>›<span>${esc(p.name)}</span>${m ? `›<span>${esc(m)}</span>` : ""}</div>
     <button class="back2" data-go="home">◀ ほかの市町村を選ぶ</button>
-    <div class="ttl"><h2>${esc(m || p.name + "（県全体）")}</h2>${tk ? `<span class="badge">特定行政庁</span>` : m ? `<span class="note2">道路・中間検査は${esc(p.name)}</span>` : ""}<span class="sp"></span>
+    <div class="ttl"><h2>${esc(m || p.name + "（県全体）")}</h2>${(() => { const ri = m ? regions(p).findIndex(([, xs]) => xs.includes(m)) : -1, rn = ri >= 0 ? regions(p)[ri][0] : "";
+      return `<span class="pchip" style="--pc:var(--p${pi % 3})">${esc(p.name)}</span>${rn ? `<span class="rchip" style="--rb:var(--r${ri % 5});--rl:var(--rl${ri % 5})">${esc(rn)}</span>` : ""}`; })()}${tk ? `<span class="badge">特定行政庁</span>` : m ? `<span class="note2">道路・中間検査は${esc(p.name)}</span>` : ""}<span class="sp"></span>
       ${cm ? "" : `<button class="pill" data-go="cmemo">${svg(I.pen, 15)}メモを書く</button>`}<button class="pill" data-go="copy">${svg(I.copy, 15)}場所を写す</button><button class="pill" data-go="print">${svg(I.print, 15)}印刷</button></div>
     ${sub2}${hold}${caseBox}${keys}${cmemo}<div class="md"><nav class="mdl" aria-label="目的">${navs}</nav><div class="mdr">${rows}</div></div>`);
   caseProgress();

@@ -887,6 +887,23 @@ header .brand { margin-right:auto; }
   .rules:not(.in) .rgo { margin-left:auto; padding:4px 10px; font-size:13px; }
   .rules:not(.in) .rh2 { font-size:15.5px; }
 }
+
+/* 地図をまとめて開く */
+.maps { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:10px 14px; margin:0 0 14px; box-shadow:var(--shadow); }
+.maps summary { cursor:pointer; font-weight:bold; font-size:17px; color:#0F6B57; list-style:none; }
+.maps summary::-webkit-details-marker { display:none; }
+.maps summary::after { content:" ▾"; font-size:13px; color:var(--sub); }
+.maps:not([open]) summary::after { content:" ▸"; }
+.mgrid { display:grid; grid-template-columns:repeat(auto-fill, minmax(230px, 1fr)); gap:8px; margin-top:10px; }
+.mcard { display:flex; flex-direction:column; gap:3px; text-decoration:none; color:var(--ink); background:#EEF8F5; border:1px solid #BFE3D8; border-radius:10px; padding:9px 12px; }
+.mcard:hover { border-color:#0F6B57; background:#DDF1EC; }
+.mcard b { font-size:16.5px; line-height:1.35; }
+.mcard b::after { content:" ↗"; color:#0F6B57; }
+.mcard .mo { font-size:13px; color:var(--sub); }
+.mcard .mps { display:flex; flex-wrap:wrap; gap:4px; }
+.mcard .mps i { font-style:normal; font-size:12px; background:#fff; border:1px solid #BFE3D8; border-radius:999px; padding:0 7px; color:#0F6B57; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .mcard { background:#163A37; border-color:#2A6A5E; } :root:not([data-theme="light"]) .mcard .mps i { background:#0F2A27; border-color:#2A6A5E; color:#9FE0CF; } }
+@media (max-width: 760px) { .mgrid { grid-template-columns:1fr 1fr; } .mcard b { font-size:15px; } }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
 <link rel="manifest" href="manifest.webmanifest?v=2"><link rel="apple-touch-icon" href="apple-touch-icon.png?v=2"><link rel="icon" type="image/png" href="favicon.png?v=2"><meta name="theme-color" content="#17708F"><meta name="apple-mobile-web-app-title" content="調べ先リンク">
@@ -1382,6 +1399,16 @@ function city(pi, m) {
     const gh = idx === 0 || G[list[idx - 1].k] !== G[k] ? `<div class="grp">${esc(G[k] || "")}</div>` : "";
     return gh + `<button data-sel="${esc(k)}" class="${it.seen || it.saved ? "seen" : ""} ${all.length ? "" : "none"}" ${all.length ? "" : 'title="この市町村では、載せている調べ先がありません"'} style="--pc:var(${(ICON[k] || ICON["そのほか"])[0]})"><span class="n">${idx + 1}</span><span class="tx">${esc(t)}</span><span class="ck">${svg(I.ok, 18)}</span></button>`; }).join("");
   const keys = `<div class="keys">数字キーで開く：${list.map((o, i) => `<b>${i + 1}</b> ${esc(o.t.replace("建築基準法の", ""))}`).join("　")}</div>`;
+  // 地図だけを、まとめて1か所に（どの目的で使う地図かを添える）
+  const mapsBox = (() => {
+    const mp = new Map();
+    list.forEach(({ k, t: tt, all }) => all.forEach(o => { if (linkType(o.x)[0] !== "map") return;
+      const u = o.x.url; if (!mp.has(u)) mp.set(u, { x: o.x, ken: o.ken, ps: [] }); const e = mp.get(u); if (!e.ps.includes(tt)) e.ps.push(tt); }));
+    const ms = [...mp.values()].sort((A, B) => B.ps.length - A.ps.length);
+    if (!ms.length) return "";
+    return `<details class="maps" open><summary>🗺 地図をまとめて開く（${ms.length}）</summary><div class="mgrid">${ms.map(e => { const own = e.x.src || (e.ken ? p.name : (m || p.name));
+      return `<a class="mcard" href="${esc(e.x.url)}" target="_blank" rel="noopener" data-u="${esc(e.x.url)}" title="${esc(e.x.label)}"><b>${esc(cleanName(shortLabel(e.x.label), own))}</b><span class="mo">${esc(own)}</span><span class="mps">${e.ps.map(s => `<i>${esc(s)}</i>`).join("")}</span></a>`; }).join("")}</div></details>`;
+  })();
   const hold = m && (p.hold || []).includes(m)
     ? `<div class="holdn">${svg(I.info, 20)}<div><b>${esc(m)}</b>のホームページは、リンクに事前の許可が要るため、許可をいただくまで載せていません。${esc(p.name)}・国などのページを載せています。${esc(m)}のページは、${esc(m)}のホームページから直接たどってください。</div></div>` : "";
   const sub2 = m ? `<div class="sub2">建築基準法の道路・中間検査は <b>${esc(tk ? m : p.name)}</b>${tk ? "" : "（県の所管）"}</div>` : `<div class="sub2">県全体で使うページ</div>`;
@@ -1393,7 +1420,7 @@ function city(pi, m) {
     <div class="ttl"><h2>${esc(m || p.name + "（県全体）")}</h2>${(() => { const ri = m ? regions(p).findIndex(([, xs]) => xs.includes(m)) : -1, rn = ri >= 0 ? regions(p)[ri][0] : "";
       return `<span class="pchip" style="--pc:var(--p${pi % 3})">${esc(p.name)}</span>${rn ? `<span class="rchip" style="--rb:var(--r${ri % 5});--rl:var(--rl${ri % 5})">${esc(rn)}</span>` : ""}`; })()}${tk ? `<span class="badge tkx">特定行政庁</span>` : m && isLim(p, m) ? `<span class="badge limx">限定特定行政庁</span><span class="note2">指定道路図は${esc(m)}・中間検査は${esc(p.name)}</span>` : m ? `<span class="note2">道路・中間検査は${esc(p.name)}</span>` : ""}<span class="sp"></span>
       ${cm ? "" : `<button class="pill" data-go="cmemo">${svg(I.pen, 15)}メモを書く</button>`}<button class="pill" data-go="copy">${svg(I.copy, 15)}場所を写す</button><button class="pill" data-go="print">${svg(I.print, 15)}印刷</button></div>
-    ${sub2}${hold}${(() => { const rs = rulesOf(p, m); return rs.length ? `<div class="rules"><div class="rh2">⚠ この市町村だけの決まり（確認申請の前に）</div>${rs.map(x => ruleCard(x, false)).join("")}</div>` : (m ? `<div class="rules none">この市町村だけの決まり（確認申請の前の手続き）は、公式のページでは見つかっていません。ないとは限らないので、窓口で確かめてください。</div>` : ""); })()}${caseBox}${keys}${cmemo}<div class="md"><nav class="mdl" aria-label="目的">${navs}</nav><div class="mdr">${rows}</div></div>`);
+    ${sub2}${hold}${(() => { const rs = rulesOf(p, m); return rs.length ? `<div class="rules"><div class="rh2">⚠ この市町村だけの決まり（確認申請の前に）</div>${rs.map(x => ruleCard(x, false)).join("")}</div>` : (m ? `<div class="rules none">この市町村だけの決まり（確認申請の前の手続き）は、公式のページでは見つかっていません。ないとは限らないので、窓口で確かめてください。</div>` : ""); })()}${mapsBox}${caseBox}${keys}${cmemo}<div class="md"><nav class="mdl" aria-label="目的">${navs}</nav><div class="mdr">${rows}</div></div>`);
   caseProgress();
   const first = list.find(o => o.all.length && !((CASE.items[o.k] || {}).seen)) || list[0];
   setActive(first ? first.k : "");

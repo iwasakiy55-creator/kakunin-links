@@ -1227,7 +1227,7 @@ function twoKinds(all, p, m) {
 function linkType(x) {
   const s = x.label + " " + x.url, w = x.label + (x.what || "");
   if (/\.pdf($|\?)/i.test(x.url) || /PDF/.test(x.label + (x.what || ""))) return ["pdf", "📄", "PDF", "資料を開く"];
-  if (/GIS|ＧＩＳ|マップ|MAP|地図|わが街|ガイド|gis|map|chiriin/i.test(s)) return ["map", "🗺", "地図", "地図で探す"];
+  if (/GIS|ＧＩＳ|マップ|MAP|地図|わが街|ガイド|gis|map|chiriin/i.test(s) && !/案内|について|の概要|運用を開始|確かめ方/.test(x.label)) return ["map", "🗺", "地図", "地図で探す"];
   if (/相談|窓口|問い?合わ?せ|課$|課）|係$|担当/.test(x.label)) return ["ask", "☎", "窓口", "聞く先を見る"];
   if (/条例|例規|規則/.test(x.label)) return ["law", "⚖", "条例", "決まりを読む"];
   if (/窓口/.test(w)) return ["ask", "☎", "窓口", "聞く先を見る"];
@@ -1265,7 +1265,7 @@ function city(pi, m) {
     const a = own.filter(x => (x.purpose || "そのほか") === k).map(x => ({ x, ken: !m }));
     const b = ken.filter(x => (x.purpose || "そのほか") === k).map(x => ({ x, ken: true }));
     const rk = x => k !== "地区計画" ? score(x) : (/条例化：(なし|確かめられない)/.test(x.what || "") ? 3 : (/条例/.test(x.label || "") || /例規/.test(x.label || "")) ? 2 : (/GIS|マップ|地図/.test(x.label || "") ? 1 : 0));
-    const all = (KEN_FIRST.has(k) ? [...b, ...a] : [...a, ...b]).map((o, i) => ({ ...o, i })).sort((u, v) => rk(u.x) - rk(v.x) || u.i - v.i);
+    const all = (KEN_FIRST.has(k) ? [...b, ...a] : [...a, ...b]).map((o, i) => ({ ...o, i })).sort((u, v) => rk(u.x) - rk(v.x) || u.i - v.i).filter((o, i, xs) => xs.findIndex(z => z.x.url === o.x.url) === i);  // 同じページは1回だけ
     return { k, t, sub, all };
   }).filter(o => o.all.length || !["そのほか", "白地"].includes(o.k));
   const rows = list.map(({ k, t, sub, all }, idx) => {

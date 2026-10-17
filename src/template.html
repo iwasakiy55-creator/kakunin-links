@@ -805,6 +805,7 @@ header .brand { margin-right:auto; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .ty { filter:brightness(.8) saturate(1.2); } }
 :root[data-theme="dark"] .ty { filter:brightness(.8) saturate(1.2); }
 @media (max-width: 760px) { .ty { width:52px; height:48px; font-size:12px; } .ty .ti { font-size:18px; } .tb .tl { font-size:17px !important; } .mdr .lk .main { gap:10px !important; } }
+.tb .tl { order:0 !important; } .tb .own { order:1; } .tb .cks { order:2 !important; }
 </style>
 </head>
 <body>
@@ -1183,7 +1184,7 @@ function twoKinds(all, p, m) {
 /* リンクの種類（名前と場所から決める。データは変えない） */
 function linkType(x) {
   const s = x.label + " " + x.url, w = x.label + (x.what || "");
-  if (/\.pdf($|\?)/i.test(x.url) || /PDF/.test(x.label)) return ["pdf", "📄", "PDF", "資料を開く"];
+  if (/\.pdf($|\?)/i.test(x.url) || /PDF/.test(x.label + (x.what || ""))) return ["pdf", "📄", "PDF", "資料を開く"];
   if (/GIS|ＧＩＳ|マップ|MAP|地図|わが街|ガイド|gis|map|chiriin/i.test(s)) return ["map", "🗺", "地図", "地図で探す"];
   if (/条例|例規|規則/.test(x.label)) return ["law", "⚖", "条例", "決まりを読む"];
   if (/相談|窓口|問い?合わ?せ|課$|課）|係$|担当/.test(x.label) || /窓口/.test(w)) return ["ask", "☎", "窓口", "聞く先を見る"];

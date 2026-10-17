@@ -648,6 +648,26 @@ kbd { display:inline-block; font-family:inherit; font-size:14px; font-weight:bol
 .flow4 > div p { margin:0; min-width:0; }
 #help .hs { border-radius:0; } #help .hs > div { flex:1; min-width:0; }
 #help .hs { white-space:normal; font-size:inherit; font-weight:normal; padding:12px 0; }
+
+/* はじめの画面を締める（2026-10-17） */
+.hero { padding:20px 26px 18px; margin-bottom:14px; border-radius:18px; }
+.hero h2 { font-size:28px; margin:0 0 12px; }
+.hero form input { padding:14px 16px; font-size:19px; }
+.route { display:flex; flex-wrap:wrap; align-items:center; gap:6px 10px; margin-top:12px; font-size:16px; color:rgba(255,255,255,.92); }
+.route span { display:inline-flex; align-items:center; gap:7px; }
+.route b { width:24px; height:24px; border-radius:50%; background:rgba(255,255,255,.22); display:inline-grid; place-items:center; font-size:14px; }
+.route i { font-style:normal; opacity:.6; }
+.route kbd { background:rgba(255,255,255,.95); color:#0F2530; border-color:rgba(255,255,255,.6); font-size:13px; }
+.route a { margin-left:auto; color:#fff; text-decoration:underline; cursor:pointer; white-space:nowrap; }
+.steps { display:none !important; }
+.ptabs { margin:0 0 8px; }
+.pref { border-top-width:3px; padding:12px 14px 12px; }
+.pref h3 { margin-bottom:8px; }
+.rg { padding:8px 8px; margin:4px -4px 0; }
+.rgn { margin-top:2px; padding:7px 10px; }
+.grid { gap:8px; }
+.grid button { padding:10px 6px; box-shadow:0 1px 0 var(--line); }
+@media (max-width: 760px) { .route a { margin-left:0; } }
 </style>
 </head>
 <body>
@@ -960,12 +980,10 @@ function home() {
   show(`<div class="hero"><h2>どこの物件を調べますか？</h2>
       <p>都市計画・建築基準法の道路・災害・盛土・中間検査を、どこで調べるか。県と市町村の公式のページだけを、目的ごとにまとめました。</p>
       <form id="startF" autocomplete="off"><input id="startA" placeholder="市町村の名前、または地名地番を貼る（例：沼津市大手町1丁目1番1）" aria-label="市町村の名前、または地名地番" value="${esc(CASE.addr || "")}"><button type="submit">調べはじめる</button></form>
-      <div class="or">貼ると、その市町村の調べ先が開きます。地名地番は、この画面を閉じると消えます（外には送りません）。</div><div id="startMsg"></div>
+      <div class="route"><span><b>1</b>入れて Enter</span><i>›</i><span><b>2</b>目的を選んで開く</span><i>›</i><span><b>3</b>切り取って <kbd>Ctrl</kbd>+<kbd>V</kbd> で PDF 保存</span><a data-help="1">くわしい使い方</a></div><div id="startMsg"></div>
       <div class="stats"><div><b>${D.prefs.length}</b><span>県</span></div><div><b>${MUNIS.length}</b><span>市町村</span></div><div><b>${NLINK}</b><span>公式のページ</span></div></div>
       <svg class="deco" width="240" height="160" viewBox="0 0 24 16" fill="none" stroke="#fff" stroke-width=".5"><path d="M1 15h22M3 15V8l5-4 5 4v7M13 15V6l4-3 4 3v9M6 15v-4h4v4M15 9h4M15 12h4"/></svg></div>`
-    + `<div class="steps"><div><span>1</span><div><b>市町村か地名地番</b>を入れて Enter</div></div>
-      <div><span>2</span><div>左の目次で<b>目的を選び</b>、ページを開く</div></div>
-      <div><span>3</span><div>画面を切り取り <b>Ctrl + V</b> で PDF 保存　<a class="hl" data-help="1">くわしい使い方</a></div></div></div>`
+    + ""
     + checkBand()
     + (rc.length ? `<div class="shelf"><span>${svg(I.hist, 15)}最近見た</span>${rc.map(r => `<button class="pill" data-p="${r.p}" data-m="${esc(r.m)}">${esc(r.m)}</button>`).join("")}</div>` : "")
     + (memoed.length ? `<div class="shelf"><span>${svg(I.memo, 15)}メモのある市町村</span>${memoed.map(o => `<button class="pill memo" data-p="${o.p}" data-m="${esc(o.m)}">${esc(o.m)}</button>`).join("")}</div>` : "")

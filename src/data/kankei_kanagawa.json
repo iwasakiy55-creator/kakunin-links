@@ -216,6 +216,93 @@
     "真鶴町",
     "湯河原町"
    ]
+  },
+  {
+   "label": "神奈川県 都市計画法第53条（建築の許可）の運用",
+   "url": "https://www.pref.kanagawa.jp/docs/a7k/cnt/f534/index.html",
+   "what": "都計法53条の許可。県が許可するのは13町。窓口は各土木事務所の許認可指導課。市は自分で許可",
+   "verified": true,
+   "checked": "2026-10-17",
+   "purpose": "開発許可",
+   "role": "まずここで調べる",
+   "only": [
+    "葉山町",
+    "寒川町",
+    "大磯町",
+    "二宮町",
+    "中井町",
+    "大井町",
+    "松田町",
+    "山北町",
+    "開成町",
+    "箱根町",
+    "真鶴町",
+    "湯河原町",
+    "愛川町"
+   ]
+  },
+  {
+   "label": "神奈川県 都市計画施設などの区域内に建築物を設置するには（19市の担当課一覧）（都計法53条）",
+   "url": "https://www.pref.kanagawa.jp/docs/a7k/faq/toshikeikakushisetsu.html",
+   "what": "都計法53条の許可。市の担当課と電話の一覧・町の受け持ちの土木事務所",
+   "verified": true,
+   "checked": "2026-10-17",
+   "purpose": "開発許可",
+   "role": "まずここで調べる"
+  },
+  {
+   "label": "平塚土木事務所 都市計画法（第32条・第53条）",
+   "url": "https://www.pref.kanagawa.jp/docs/rt3/cnt/f645/p46759.html",
+   "what": "都計法53条の許可。許可書は平塚土木事務所が交付。申請は各町の窓口",
+   "verified": true,
+   "checked": "2026-10-17",
+   "purpose": "開発許可",
+   "role": "まずここで調べる",
+   "only": [
+    "大磯町",
+    "二宮町",
+    "寒川町"
+   ]
+  },
+  {
+   "label": "横須賀土木事務所 都市計画区域内での建築 許認可案内（53条）",
+   "url": "https://www.pref.kanagawa.jp/docs/wk7/cnt/f12379/p36908.html",
+   "what": "都計法53条の許可。申請は葉山町都市計画課に2部。許可書は横須賀土木事務所",
+   "verified": true,
+   "checked": "2026-10-17",
+   "purpose": "開発許可",
+   "role": "まずここで調べる",
+   "only": [
+    "葉山町"
+   ]
+  },
+  {
+   "label": "厚木土木事務所 許認可指導課（53条）",
+   "url": "https://www.pref.kanagawa.jp/docs/ck2/cnt/f440028/p361767.html",
+   "what": "都計法53条の許可。厚木土木事務所が許可",
+   "verified": true,
+   "checked": "2026-10-17",
+   "purpose": "開発許可",
+   "role": "まずここで調べる",
+   "only": [
+    "愛川町"
+   ]
+  },
+  {
+   "label": "県西土木事務所 許認可指導課（53条の申請書あり）",
+   "url": "https://www.pref.kanagawa.jp/docs/vd8/kyoninka/p6301.html",
+   "what": "都計法53条の許可。窓口は県西土木事務所の許認可指導課",
+   "verified": true,
+   "checked": "2026-10-17",
+   "purpose": "開発許可",
+   "role": "まずここで調べる",
+   "only": [
+    "中井町",
+    "大井町",
+    "松田町",
+    "山北町",
+    "開成町"
+   ]
   }
  ],
  "municipalities": {
@@ -325,6 +412,15 @@
     "checked": "2026-10-17",
     "purpose": "防火",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "横浜市 都市計画法第53条に基づく建築許可",
+    "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/toshikeikaku/seigen/53jou-kyoka.html",
+    "what": "都計法53条の許可。市長の許可。都市計画課指導係",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
    }
   ],
   "川崎市": [
@@ -433,6 +529,15 @@
     "checked": "2026-10-17",
     "purpose": "防火",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "川崎市 都市計画施設の区域内における建築物の建築（都計法53条）",
+    "url": "https://www.city.kawasaki.jp/500/page/0000008808.html",
+    "what": "都計法53条の許可。都市計画課（公園・緑地は建設緑政局）",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
    }
   ],
   "相模原市": [
@@ -534,6 +639,15 @@
     "checked": "2026-10-17",
     "purpose": "防火",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "相模原市 都市計画道路等の区域内に建築物を建築する場合（都計法53条）",
+    "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026875/faq/jyutaku/1002122.html",
+    "what": "都計法53条の許可。都市計画課（区画整理の施行区域だけは都市整備課）",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
    }
   ],
   "横須賀市": [
@@ -624,6 +738,15 @@
     "checked": "2026-10-17",
     "purpose": "防火",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "横須賀市 都市計画道路等の区域内における建築等の制限（都計法53条）",
+    "url": "https://www.city.yokosuka.kanagawa.jp/4805/g_info/l100000945.html",
+    "what": "都計法53条の許可。市長の許可。都市計画課",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
    }
   ],
   "平塚市": [
@@ -699,6 +822,15 @@
      "version": "平成２９年３月１６日 改訂（この資料の表紙。いまの条例と同じかは確かめていない）",
      "exact": true
     }
+   },
+   {
+    "label": "平塚市 都市計画施設区域内建築物の許可申請（第53条）",
+    "url": "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_02870.html",
+    "what": "都計法53条の許可。まちづくり政策課 都市計画担当",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
    }
   ],
   "鎌倉市": [
@@ -783,6 +915,15 @@
     "checked": "2026-10-17",
     "purpose": "防火",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "鎌倉市 都市計画法第53条の規定による建築の許可",
+    "url": "https://www.city.kamakura.kanagawa.jp/plan/53jou-kyokakijun.html",
+    "what": "都計法53条の許可。都市計画課",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
    }
   ],
   "藤沢市": [
@@ -841,6 +982,15 @@
     "what": "建築協定28件（片瀬山10・湘南ライフタウン11・その他7）",
     "verified": true,
     "purpose": "建築協定",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "藤沢市 都市計画施設等の区域内における建築物の規制及び許可（都計法53条）",
+    "url": "https://www.city.fujisawa.kanagawa.jp/kaihatsu/machizukuri/kenchiku/kaihatsu/tokeihou-53jou.html",
+    "what": "都計法53条の許可。開発業務課",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
     "role": "まずここで調べる"
    }
   ],
@@ -926,6 +1076,15 @@
     "checked": "2026-10-17",
     "purpose": "防火",
     "role": "補助"
+   },
+   {
+    "label": "小田原市 都市計画法第53条許可",
+    "url": "https://www.city.odawara.kanagawa.jp/field/c-planning/urban-d/plan/53kyoka.html",
+    "what": "都計法53条の許可。市長の許可。都市計画課 都市計画係",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
    }
   ],
   "茅ヶ崎市": [
@@ -1017,6 +1176,15 @@
     "checked": "2026-10-17",
     "purpose": "防火",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "茅ヶ崎市 都市計画法第53条の許可基準",
+    "url": "https://www.city.chigasaki.kanagawa.jp/machidukuri/toshikeikaku/1007981.html",
+    "what": "都計法53条の許可。都市計画課 総務担当",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
    }
   ],
   "逗子市": [
@@ -1050,6 +1218,15 @@
     "what": "寝室・台所は必須、条件により階段室・廊下。ページに条例名の記載はなし（消防予防課 046-871-4326）",
     "verified": true,
     "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "逗子市 都市計画法第53条に関する許可申請",
+    "url": "https://www.city.zushi.kanagawa.jp/jigyosha/kaihatsu/1004909/1004919.html",
+    "what": "都計法53条の許可。まちづくり景観課",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
     "role": "まずここで調べる"
    }
   ],
@@ -1092,6 +1269,15 @@
     "what": "三浦市は平成29年4月から横須賀市と消防広域化（三浦市サイトで確認）。設置場所は寝室・台所、寝室が2階なら階段。三浦市内は三浦消防署予防係 046-884-0122。条例名の記載はなし",
     "verified": true,
     "purpose": "消防",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "三浦市 都市計画施設の区域等における建築物の建築許可（都計法53条）",
+    "url": "https://www.city.miura.kanagawa.jp/soshiki/toshikeikakuka/1/2558.html",
+    "what": "都計法53条の許可。都市計画課",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
     "role": "まずここで調べる"
    }
   ],
@@ -1175,6 +1361,15 @@
     "checked": "2026-10-17",
     "purpose": "防火",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "秦野市 都市計画法第53条の許可申請",
+    "url": "https://www.city.hadano.kanagawa.jp/soshiki/8/1053/5/1268.html",
+    "what": "都計法53条の許可。市長の許可。まちづくり計画課",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
    }
   ],
   "厚木市": [
@@ -1241,6 +1436,15 @@
      "version": "令和７年１２月版",
      "exact": true
     }
+   },
+   {
+    "label": "厚木市 都市計画法第53条に基づく許可申請",
+    "url": "https://www.city.atsugi.kanagawa.jp/soshiki/toshikeikakuka/7/10/8421.html",
+    "what": "都計法53条の許可。都市計画課 都市計画係",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
    }
   ],
   "大和市": [
@@ -1324,6 +1528,15 @@
     "checked": "2026-10-17",
     "purpose": "防火",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "大和市 都市計画道路の予定区域内の建築制限（第53条関係）",
+    "url": "https://www.city.yamato.lg.jp/gyosei/soshik/20/kakushutetuduki/2751.html",
+    "what": "都計法53条の許可。市長の許可。まちづくり計画課",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
    }
   ],
   "葉山町": [
@@ -1393,6 +1606,15 @@
     "verified": true,
     "purpose": "浄化槽",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "寒川町 都市計画法第53条第1項の許可申請",
+    "url": "https://www.town.samukawa.kanagawa.jp/soshiki/toshikensetsu/toshikeikaku/tokei_kaihatsu/info/kaihatsu_kenchiku/jizenkyogi_kakunin/1507014086547.html",
+    "what": "都計法53条の許可。許可は県（平塚土木）。提出は町の都市計画課",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
    }
   ],
   "大磯町": [
@@ -1418,6 +1640,15 @@
     "what": "西小磯柳原地区・万台こゆるぎの森地区の地区計画。条例化：あり（「大磯町地区計画の区域内における建築物の制限に関する条例」が掲載。対象地区はページに記載なし）",
     "verified": true,
     "purpose": "地区計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "大磯町 都市計画法第53条第1項の許可申請",
+    "url": "https://www.town.oiso.kanagawa.jp/sangyo/kenchikubutsu/shinsei/1358922568989.html",
+    "what": "都計法53条の許可。許可は県（平塚土木）。提出は町の都市計画課",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
     "role": "まずここで調べる"
    }
   ],
@@ -1454,6 +1685,15 @@
     "purpose": "地区計画",
     "role": "まずここで調べる",
     "checked": "2026-10-17"
+   },
+   {
+    "label": "二宮町 都市計画法第53条区域",
+    "url": "https://www.town.ninomiya.kanagawa.jp/0000000128.html",
+    "what": "都計法53条の許可。許可は平塚土木事務所長。提出は町を通す",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
    }
   ],
   "中井町": [
@@ -1564,6 +1804,15 @@
     "what": "排水設備は町の下水道排水設備指定工事店だけが施工（下水道法10条）。貸付金制度。処理区域の地図はページになし（上下水道係 0465-83-1227）",
     "verified": true,
     "purpose": "下水道",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "松田町 市街地再開発事業の施行区域内で建築を行う場合（53条）",
+    "url": "https://town.matsuda.kanagawa.jp/site/saikaihatsu/202512kentikukisei.html",
+    "what": "都計法53条の許可。許可は県知事（県西土木）。再開発の施行区域だけの案内",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
     "role": "まずここで調べる"
    }
   ],
@@ -1753,6 +2002,15 @@
     "purpose": "地区計画",
     "role": "まずここで調べる",
     "checked": "2026-10-17"
+   },
+   {
+    "label": "湯河原町 都市計画法第53条の許可申請",
+    "url": "https://www.town.yugawara.kanagawa.jp/soshiki/5/1058.html",
+    "what": "都計法53条の許可。許可は県（小田原土木センター）。提出は町のまちづくり課",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "開発許可",
+    "role": "まずここで調べる"
    }
   ],
   "愛川町": [

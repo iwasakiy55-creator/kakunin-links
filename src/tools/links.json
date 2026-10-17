@@ -154,6 +154,13 @@
 "label": "静岡県GIS 建築関連情報（22条指定区域が載っている）"
 },
 {
+"url": "https://shimada.doboku.pref.shizuoka.jp/others/%E3%81%9D%E3%81%AE%E4%BB%96/",
+"pref": "静岡県",
+"muni": "（県）",
+"purpose": "開発許可",
+"label": "島田土木事務所 よくあるお問い合わせ Q9（53条）"
+},
+{
 "url": "https://maps.gsi.go.jp/",
 "pref": "静岡県",
 "muni": "（県）",
@@ -588,6 +595,13 @@
 "label": "熱海市 地区計画"
 },
 {
+"url": "https://www.city.atami.lg.jp/shisei/machidukuri/1001373/1001384.html",
+"pref": "静岡県",
+"muni": "熱海市",
+"purpose": "開発許可",
+"label": "熱海市 都市計画法53条に基づく建築許可"
+},
+{
 "url": "https://www.city.mishima.shizuoka.jp/page/1739.html",
 "pref": "静岡県",
 "muni": "三島市",
@@ -642,6 +656,13 @@
 "muni": "三島市",
 "purpose": "地区計画",
 "label": "三島市 地区計画の区域内における建築物の制限について"
+},
+{
+"url": "https://www.city.mishima.shizuoka.jp/page/1279.html",
+"pref": "静岡県",
+"muni": "三島市",
+"purpose": "開発許可",
+"label": "三島市 都市計画施設等の区域内における建築の規制（第53条・第54条）"
 },
 {
 "url": "https://www2.wagmap.jp/fujinomiyacity/PositionSelect?mid=2",
@@ -742,6 +763,13 @@
 "label": "富士宮市 設計にあたっての条件"
 },
 {
+"url": "https://www.city.fujinomiya.lg.jp/1040400000/p002027.html",
+"pref": "静岡県",
+"muni": "富士宮市",
+"purpose": "開発許可",
+"label": "富士宮市 都市計画決定区域内における建築の構造制限（第53条）"
+},
+{
 "url": "https://webgis.tohnichi-asp.jp/ito/toshikei/",
 "pref": "静岡県",
 "muni": "伊東市",
@@ -798,6 +826,13 @@
 "label": "伊東市例規集"
 },
 {
+"url": "https://www.city.ito.shizuoka.jp/gyosei/soshikikarasagasu/toshikeikakuka/index.html",
+"pref": "静岡県",
+"muni": "伊東市",
+"purpose": "開発許可",
+"label": "伊東市 都市計画課（都市計画施設区域内の建築許可）（都計法53条）"
+},
+{
 "url": "https://www2.wagmap.jp/shimada/PositionSelect?mid=10",
 "pref": "静岡県",
 "muni": "島田市",
@@ -852,6 +887,13 @@
 "muni": "島田市",
 "purpose": "地区計画",
 "label": "島田市 地区計画とは"
+},
+{
+"url": "https://www.city.shimada.shizuoka.jp/gyosei-docs/KyokaShinsei53.html",
+"pref": "静岡県",
+"muni": "島田市",
+"purpose": "開発許可",
+"label": "島田市 都市計画施設上の建築に係る許可（第53条関係）"
 },
 {
 "url": "https://www.city.fuji.shizuoka.jp/1040050000/p003818.html",
@@ -1006,6 +1048,13 @@
 "muni": "磐田市",
 "purpose": "地区計画",
 "label": "地区計画"
+},
+{
+"url": "https://www.city.iwata.shizuoka.jp/sangyou_business/kenchiku/1002165.html",
+"pref": "静岡県",
+"muni": "磐田市",
+"purpose": "開発許可",
+"label": "磐田市 都市計画法第53条建築許可"
 },
 {
 "url": "https://www.city.yaizu.lg.jp/life/urban/development/about/index.html",
@@ -1239,6 +1288,13 @@
 "label": "藤枝市 地区計画"
 },
 {
+"url": "https://www.city.fujieda.shizuoka.jp/soshiki/toshikensetsu/toshiseisaku/gyomu/6/1445914520856.html",
+"pref": "静岡県",
+"muni": "藤枝市",
+"purpose": "開発許可",
+"label": "藤枝市 都市計画法第53条第1項の許可の手引き"
+},
+{
 "url": "https://www.city.gotemba.lg.jp/gyousei/g-3/g-3-1/1208.html",
 "pref": "静岡県",
 "muni": "御殿場市",
@@ -1302,6 +1358,13 @@
 "label": "御殿場市 地区計画区域内における行為の届出"
 },
 {
+"url": "https://www.city.gotemba.lg.jp/gyousei/g-3/g-3-2/1601.html",
+"pref": "静岡県",
+"muni": "御殿場市",
+"purpose": "開発許可",
+"label": "御殿場市 都市計画施設区域内の建築許可（第53条）"
+},
+{
 "url": "https://www2.wagmap.jp/fukuroi/PositionSelect?mid=2",
 "pref": "静岡県",
 "muni": "袋井市",
@@ -1363,6 +1426,13 @@
 "muni": "袋井市",
 "purpose": "地区計画",
 "label": "袋井市例規集"
+},
+{
+"url": "https://www.city.fukuroi.shizuoka.jp/soshiki/17/5/tochiriyou/1422535621560.html",
+"pref": "静岡県",
+"muni": "袋井市",
+"purpose": "開発許可",
+"label": "袋井市 都市計画法第53条（建築）の制限について"
 },
 {
 "url": "https://www.city.shimoda.shizuoka.jp/category/020800sumai_kentiku/148119.html",
@@ -1477,6 +1547,13 @@
 "label": "裾野市 地区計画"
 },
 {
+"url": "https://www.city.susono.shizuoka.jp/soshiki/6/1/7/14411.html",
+"pref": "静岡県",
+"muni": "裾野市",
+"purpose": "開発許可",
+"label": "裾野市 都市計画法第53条の許可申請"
+},
+{
 "url": "https://experience.arcgis.com/experience/dd07e699e2ce41ac8a265a386f59f6f3/page/地図-都市計画-用途地域?org=kosai",
 "pref": "静岡県",
 "muni": "湖西市",
@@ -1545,6 +1622,13 @@
 "muni": "湖西市",
 "purpose": "下水道",
 "label": "排水設備工事（湖西市）"
+},
+{
+"url": "https://www.city.kosai.shizuoka.jp/kurashi_tetsuzuki/toshikeikaku_machizukuri/toshikeikaku/2/3309.html",
+"pref": "静岡県",
+"muni": "湖西市",
+"purpose": "開発許可",
+"label": "湖西市 都市計画施設の区域内における建築（都計法53条）"
 },
 {
 "url": "https://www.city.izu.shizuoka.jp/soshiki/1024/2/3/931.html",
@@ -1727,6 +1811,13 @@
 "muni": "牧之原市",
 "purpose": "地区計画",
 "label": "東名相良牧之原IC北側地区の地区計画"
+},
+{
+"url": "https://www.city.makinohara.shizuoka.jp/soshiki/27/1987.html",
+"pref": "静岡県",
+"muni": "牧之原市",
+"purpose": "開発許可",
+"label": "牧之原市 都市計画法第53条許可申請"
 },
 {
 "url": "https://www.town.higashiizu.lg.jp/bamen/sumai/1798.html",
@@ -2133,6 +2224,13 @@
 "muni": "長泉町",
 "purpose": "地区計画",
 "label": "長泉町例規集"
+},
+{
+"url": "https://www.town.nagaizumi.lg.jp/soshiki/kensetsu/kaihatsu/53jyokyoka.html",
+"pref": "静岡県",
+"muni": "長泉町",
+"purpose": "開発許可",
+"label": "長泉町 都市計画法第53条の許可申請"
 },
 {
 "url": "https://www.fuji-oyama.jp/soshiki/17/",
@@ -2632,6 +2730,13 @@
 "label": "甲府市建築基準法施行条例 第4条（がけ附近の建築物）"
 },
 {
+"url": "https://www.city.kofu.yamanashi.jp/toshikekaku/gojuusannjou.html",
+"pref": "山梨県",
+"muni": "甲府市",
+"purpose": "開発許可",
+"label": "甲府市 都市計画法第53条第1項に基づく建築許可について"
+},
+{
 "url": "https://www.city.fujiyoshida.yamanashi.jp/page/2080.html",
 "pref": "山梨県",
 "muni": "富士吉田市",
@@ -2679,6 +2784,13 @@
 "muni": "富士吉田市",
 "purpose": "地区計画",
 "label": "富士吉田市例規集（第9編 建設）"
+},
+{
+"url": "https://www.city.fujiyoshida.yamanashi.jp/page/2095.html",
+"pref": "山梨県",
+"muni": "富士吉田市",
+"purpose": "開発許可",
+"label": "富士吉田市 都市計画法第53条の許可申請"
 },
 {
 "url": "https://www.city.tsuru.yamanashi.jp/soshiki/kensetsu/toshikeikaku_t/1/811.html",
@@ -2805,6 +2917,13 @@
 "muni": "山梨市",
 "purpose": "地区計画",
 "label": "山梨市例規集（第11編 建設）"
+},
+{
+"url": "https://www.city.yamanashi.yamanashi.jp/soshiki/20/1957.html",
+"pref": "山梨県",
+"muni": "山梨市",
+"purpose": "開発許可",
+"label": "山梨市 都市計画施設の区域において建築等をする場合には許可が必要です（都計法53条）"
 },
 {
 "url": "https://www.city.otsuki.yamanashi.jp/sangyo/machi/toshikeikaku.html",
@@ -2961,6 +3080,13 @@
 "label": "南アルプス市地区計画"
 },
 {
+"url": "https://www.city.minami-alps.yamanashi.jp/docs/2101.html",
+"pref": "山梨県",
+"muni": "南アルプス市",
+"purpose": "開発許可",
+"label": "南アルプス市 都市計画法第53条関係申請"
+},
+{
 "url": "https://www.city.hokuto.yamanashi.jp/docs/1028.html",
 "pref": "山梨県",
 "muni": "北杜市",
@@ -3101,6 +3227,13 @@
 "label": "甲斐市例規集（第10編 建設）"
 },
 {
+"url": "https://www.city.kai.yamanashi.jp/page/4668.html",
+"pref": "山梨県",
+"muni": "甲斐市",
+"purpose": "開発許可",
+"label": "甲斐市 都市計画法第53条第1項に基づく許可申請について"
+},
+{
 "url": "https://www.city.fuefuki.yamanashi.jp/machizukuri/youto/youto.html",
 "pref": "山梨県",
 "muni": "笛吹市",
@@ -3234,6 +3367,13 @@
 "label": "地区計画について"
 },
 {
+"url": "https://www.city.uenohara.yamanashi.jp/page/1211.html",
+"pref": "山梨県",
+"muni": "上野原市",
+"purpose": "開発許可",
+"label": "上野原市 都市計画法第53条に基づく建築許可申請"
+},
+{
 "url": "https://www.city.koshu.yamanashi.jp/docs/2024120900017/",
 "pref": "山梨県",
 "muni": "甲州市",
@@ -3337,6 +3477,13 @@
 "muni": "中央市",
 "purpose": "開発許可",
 "label": "開発許可制度"
+},
+{
+"url": "https://www.city.chuo.yamanashi.jp/soshiki/toshikeikaku/toshiseibi/380.html",
+"pref": "山梨県",
+"muni": "中央市",
+"purpose": "開発許可",
+"label": "中央市 都市計画法第53条に基づく建築許可について"
 },
 {
 "url": "https://www.pref.yamanashi.jp/toshikei/tosikeikakuzu/tosikeikakuzukeisai.html",
@@ -3983,6 +4130,48 @@
 "label": "神奈川県 よくある質問（県西土木 建築指導班）：法22条指定区域"
 },
 {
+"url": "https://www.pref.kanagawa.jp/docs/a7k/cnt/f534/index.html",
+"pref": "神奈川県",
+"muni": "（県）",
+"purpose": "開発許可",
+"label": "神奈川県 都市計画法第53条（建築の許可）の運用"
+},
+{
+"url": "https://www.pref.kanagawa.jp/docs/a7k/faq/toshikeikakushisetsu.html",
+"pref": "神奈川県",
+"muni": "（県）",
+"purpose": "開発許可",
+"label": "神奈川県 都市計画施設などの区域内に建築物を設置するには（19市の担当課一覧）（都計法53条）"
+},
+{
+"url": "https://www.pref.kanagawa.jp/docs/rt3/cnt/f645/p46759.html",
+"pref": "神奈川県",
+"muni": "（県）",
+"purpose": "開発許可",
+"label": "平塚土木事務所 都市計画法（第32条・第53条）"
+},
+{
+"url": "https://www.pref.kanagawa.jp/docs/wk7/cnt/f12379/p36908.html",
+"pref": "神奈川県",
+"muni": "（県）",
+"purpose": "開発許可",
+"label": "横須賀土木事務所 都市計画区域内での建築 許認可案内（53条）"
+},
+{
+"url": "https://www.pref.kanagawa.jp/docs/ck2/cnt/f440028/p361767.html",
+"pref": "神奈川県",
+"muni": "（県）",
+"purpose": "開発許可",
+"label": "厚木土木事務所 許認可指導課（53条）"
+},
+{
+"url": "https://www.pref.kanagawa.jp/docs/vd8/kyoninka/p6301.html",
+"pref": "神奈川県",
+"muni": "（県）",
+"purpose": "開発許可",
+"label": "県西土木事務所 許認可指導課（53条の申請書あり）"
+},
+{
 "url": "https://maps.gsi.go.jp/",
 "pref": "神奈川県",
 "muni": "（県）",
@@ -4151,6 +4340,13 @@
 "label": "横浜市 法第22条区域"
 },
 {
+"url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/toshikeikaku/seigen/53jou-kyoka.html",
+"pref": "神奈川県",
+"muni": "横浜市",
+"purpose": "開発許可",
+"label": "横浜市 都市計画法第53条に基づく建築許可"
+},
+{
 "url": "https://kawasaki.geocloud.jp/webgis/?p=1",
 "pref": "神奈川県",
 "muni": "川崎市",
@@ -4305,6 +4501,13 @@
 "label": "川崎市 建築基準法第22条による区域（告示）"
 },
 {
+"url": "https://www.city.kawasaki.jp/500/page/0000008808.html",
+"pref": "神奈川県",
+"muni": "川崎市",
+"purpose": "開発許可",
+"label": "川崎市 都市計画施設の区域内における建築物の建築（都計法53条）"
+},
+{
 "url": "https://sagamihara.geocloud.jp/",
 "pref": "神奈川県",
 "muni": "相模原市",
@@ -4445,6 +4648,13 @@
 "label": "相模原市 建築物の屋根の構造を指定する区域（22条区域）"
 },
 {
+"url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026875/faq/jyutaku/1002122.html",
+"pref": "神奈川県",
+"muni": "相模原市",
+"purpose": "開発許可",
+"label": "相模原市 都市計画道路等の区域内に建築物を建築する場合（都計法53条）"
+},
+{
 "url": "https://www2.wagmap.jp/yokosuka/Agreement?IsPost=False&MapId=5&RequestPage=%2fyokosuka%2fPositionSelect%3fmid%3d5",
 "pref": "神奈川県",
 "muni": "横須賀市",
@@ -4564,6 +4774,13 @@
 "label": "横須賀市 建築基準法第22条の区域指定（告示）"
 },
 {
+"url": "https://www.city.yokosuka.kanagawa.jp/4805/g_info/l100000945.html",
+"pref": "神奈川県",
+"muni": "横須賀市",
+"purpose": "開発許可",
+"label": "横須賀市 都市計画道路等の区域内における建築等の制限（都計法53条）"
+},
+{
 "url": "https://webgis.alandis.jp/hiratsuka14/",
 "pref": "神奈川県",
 "muni": "平塚市",
@@ -4653,6 +4870,13 @@
 "muni": "平塚市",
 "purpose": "地形",
 "label": "平塚市建築基準条例 第5条（がけ付近の建築物）・解説（PDF）"
+},
+{
+"url": "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_02870.html",
+"pref": "神奈川県",
+"muni": "平塚市",
+"purpose": "開発許可",
+"label": "平塚市 都市計画施設区域内建築物の許可申請（第53条）"
 },
 {
 "url": "https://www2.wagmap.jp/kamakura-hazard/PositionSelect?mid=231",
@@ -4767,6 +4991,13 @@
 "label": "鎌倉市の建築基準法の指定関係（PDF）"
 },
 {
+"url": "https://www.city.kamakura.kanagawa.jp/plan/53jou-kyokakijun.html",
+"pref": "神奈川県",
+"muni": "鎌倉市",
+"purpose": "開発許可",
+"label": "鎌倉市 都市計画法第53条の規定による建築の許可"
+},
+{
 "url": "https://webgis.alandis.jp/fujisawa14/210/portal/",
 "pref": "神奈川県",
 "muni": "藤沢市",
@@ -4863,6 +5094,13 @@
 "muni": "藤沢市",
 "purpose": "建築協定",
 "label": "建築協定一覧"
+},
+{
+"url": "https://www.city.fujisawa.kanagawa.jp/kaihatsu/machizukuri/kenchiku/kaihatsu/tokeihou-53jou.html",
+"pref": "神奈川県",
+"muni": "藤沢市",
+"purpose": "開発許可",
+"label": "藤沢市 都市計画施設等の区域内における建築物の規制及び許可（都計法53条）"
 },
 {
 "url": "https://www2.wagmap.jp/navi-odawara/Portal",
@@ -4970,6 +5208,13 @@
 "label": "小田原市 建築の制限"
 },
 {
+"url": "https://www.city.odawara.kanagawa.jp/field/c-planning/urban-d/plan/53kyoka.html",
+"pref": "神奈川県",
+"muni": "小田原市",
+"purpose": "開発許可",
+"label": "小田原市 都市計画法第53条許可"
+},
+{
 "url": "https://www2.wagmap.jp/chigasaki/Portal",
 "pref": "神奈川県",
 "muni": "茅ヶ崎市",
@@ -5075,6 +5320,13 @@
 "label": "茅ヶ崎市の建築基準法の取り扱い（22条区域）"
 },
 {
+"url": "https://www.city.chigasaki.kanagawa.jp/machidukuri/toshikeikaku/1007981.html",
+"pref": "神奈川県",
+"muni": "茅ヶ崎市",
+"purpose": "開発許可",
+"label": "茅ヶ崎市 都市計画法第53条の許可基準"
+},
+{
 "url": "https://www.machi-info.jp/machikado/yamato_city/consentpage/gis-toshi.html",
 "pref": "神奈川県",
 "muni": "大和市",
@@ -5178,6 +5430,13 @@
 "muni": "大和市",
 "purpose": "防火",
 "label": "大和市建築基準法施行細則 第18条（屋根の構造を指定する区域・PDF）"
+},
+{
+"url": "https://www.city.yamato.lg.jp/gyosei/soshik/20/kakushutetuduki/2751.html",
+"pref": "神奈川県",
+"muni": "大和市",
+"purpose": "開発許可",
+"label": "大和市 都市計画道路の予定区域内の建築制限（第53条関係）"
 },
 {
 "url": "https://www.city.atsugi.kanagawa.jp/soshiki/toshikeikakuka/12/6129.html",
@@ -5292,6 +5551,13 @@
 "label": "厚木市建築基準条例 第5条（崖付近の建築物）解説（PDF）"
 },
 {
+"url": "https://www.city.atsugi.kanagawa.jp/soshiki/toshikeikakuka/7/10/8421.html",
+"pref": "神奈川県",
+"muni": "厚木市",
+"purpose": "開発許可",
+"label": "厚木市 都市計画法第53条に基づく許可申請"
+},
+{
 "url": "https://www2.wagmap.jp/hadano/Portal",
 "pref": "神奈川県",
 "muni": "秦野市",
@@ -5397,6 +5663,13 @@
 "label": "秦野市 建築指導課 よくある質問 Q6（PDF）"
 },
 {
+"url": "https://www.city.hadano.kanagawa.jp/soshiki/8/1053/5/1268.html",
+"pref": "神奈川県",
+"muni": "秦野市",
+"purpose": "開発許可",
+"label": "秦野市 都市計画法第53条の許可申請"
+},
+{
 "url": "https://www.city.zushi.kanagawa.jp/jigyosha/kaihatsu/1009302.html",
 "pref": "神奈川県",
 "muni": "逗子市",
@@ -5465,6 +5738,13 @@
 "muni": "逗子市",
 "purpose": "消防",
 "label": "住宅用火災警報器について（逗子市消防本部 消防予防課）"
+},
+{
+"url": "https://www.city.zushi.kanagawa.jp/jigyosha/kaihatsu/1004909/1004919.html",
+"pref": "神奈川県",
+"muni": "逗子市",
+"purpose": "開発許可",
+"label": "逗子市 都市計画法第53条に関する許可申請"
 },
 {
 "url": "https://www.city.miura.kanagawa.jp/soshiki/toshikeikakuka/machizukuri/toshikeikakuka/madoguchi/8043.html",
@@ -5542,6 +5822,13 @@
 "muni": "三浦市",
 "purpose": "消防",
 "label": "住宅用火災警報器について（横須賀市消防局）"
+},
+{
+"url": "https://www.city.miura.kanagawa.jp/soshiki/toshikeikakuka/1/2558.html",
+"pref": "神奈川県",
+"muni": "三浦市",
+"purpose": "開発許可",
+"label": "三浦市 都市計画施設の区域等における建築物の建築許可（都計法53条）"
 },
 {
 "url": "https://www2.wagmap.jp/isehara/Portal",
@@ -6055,6 +6342,13 @@
 "label": "浄化槽（茅ヶ崎市 環境保全課）"
 },
 {
+"url": "https://www.town.samukawa.kanagawa.jp/soshiki/toshikensetsu/toshikeikaku/tokei_kaihatsu/info/kaihatsu_kenchiku/jizenkyogi_kakunin/1507014086547.html",
+"pref": "神奈川県",
+"muni": "寒川町",
+"purpose": "開発許可",
+"label": "寒川町 都市計画法第53条第1項の許可申請"
+},
+{
 "url": "https://www.town.oiso.kanagawa.jp/soshiki/toshikensetsubu/toshi/tanto/1365727477322.html",
 "pref": "神奈川県",
 "muni": "大磯町",
@@ -6104,6 +6398,13 @@
 "label": "大磯町 地区計画"
 },
 {
+"url": "https://www.town.oiso.kanagawa.jp/sangyo/kenchikubutsu/shinsei/1358922568989.html",
+"pref": "神奈川県",
+"muni": "大磯町",
+"purpose": "開発許可",
+"label": "大磯町 都市計画法第53条第1項の許可申請"
+},
+{
 "url": "https://www.town.ninomiya.kanagawa.jp/0000000133.html",
 "pref": "神奈川県",
 "muni": "二宮町",
@@ -6151,6 +6452,13 @@
 "muni": "二宮町",
 "purpose": "地区計画",
 "label": "地区計画区域内の建築等の届出"
+},
+{
+"url": "https://www.town.ninomiya.kanagawa.jp/0000000128.html",
+"pref": "神奈川県",
+"muni": "二宮町",
+"purpose": "開発許可",
+"label": "二宮町 都市計画法第53条区域"
 },
 {
 "url": "https://www.town.nakai.kanagawa.jp/soshiki/machiseibikakeikakuhan/keikaku_seisaku/1/782.html",
@@ -6298,6 +6606,13 @@
 "muni": "松田町",
 "purpose": "下水道",
 "label": "上下水道（環境上下水道課）"
+},
+{
+"url": "https://town.matsuda.kanagawa.jp/site/saikaihatsu/202512kentikukisei.html",
+"pref": "神奈川県",
+"muni": "松田町",
+"purpose": "開発許可",
+"label": "松田町 市街地再開発事業の施行区域内で建築を行う場合（53条）"
 },
 {
 "url": "https://www.town.yamakita.kanagawa.jp/0000007340.html",
@@ -6529,6 +6844,13 @@
 "muni": "湯河原町",
 "purpose": "地区計画",
 "label": "船岡周辺地区地区計画（まちづくり課 計画係）"
+},
+{
+"url": "https://www.town.yugawara.kanagawa.jp/soshiki/5/1058.html",
+"pref": "神奈川県",
+"muni": "湯河原町",
+"purpose": "開発許可",
+"label": "湯河原町 都市計画法第53条の許可申請"
 },
 {
 "url": "https://www.town.aikawa.kanagawa.jp/soshiki/kensetsu/toshi/toshi/info/toshikeikakuzu/1432857728646.html",

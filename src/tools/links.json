@@ -126,6 +126,27 @@
 "label": "静岡県内の特定行政庁の窓口"
 },
 {
+"url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/052/541/r8_4jyourei_zentai.pdf",
+"pref": "静岡県",
+"muni": "（県）",
+"purpose": "地形",
+"label": "静岡県建築基準条例 第10条（がけ付近の建築物）・同解説（PDF）"
+},
+{
+"url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/052/541/joureijuujoukaisetu.pdf",
+"pref": "静岡県",
+"muni": "（県）",
+"purpose": "地形",
+"label": "静岡県建築基準条例 第10条（がけ条例）の解説 詳細版（PDF）"
+},
+{
+"url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1052541.html",
+"pref": "静岡県",
+"muni": "（県）",
+"purpose": "地形",
+"label": "静岡県建築基準条例の案内（条例・解説・Q&A）"
+},
+{
 "url": "https://maps.gsi.go.jp/",
 "pref": "静岡県",
 "muni": "（県）",
@@ -376,6 +397,13 @@
 "muni": "浜松市",
 "purpose": "地区計画",
 "label": "浜松市内の地区計画区域とその内容"
+},
+{
+"url": "https://www.city.hamamatsu.shizuoka.jp/kensido/gakejyourei.html",
+"pref": "静岡県",
+"muni": "浜松市",
+"purpose": "地形",
+"label": "がけ条例（静岡県建築基準条例第10条）の案内（浜松市）"
 },
 {
 "url": "https://www.city.numazu.shizuoka.jp/shisei/keikaku/various/toshikei/naiyou/soukatsu.htm",
@@ -2380,6 +2408,20 @@
 "label": "特定都市河川・特定都市河川流域の指定（山梨県）"
 },
 {
+"url": "https://www.pref.yamanashi.jp/somu/shigaku/reiki/reiki_honbun/a500RG00000961.html",
+"pref": "山梨県",
+"muni": "（県）",
+"purpose": "地形",
+"label": "山梨県建築基準法施行条例 第2条の4（がけ附近の建築物）"
+},
+{
+"url": "https://www.pref.yamanashi.jp/documents/6626/gake.pdf",
+"pref": "山梨県",
+"muni": "（県）",
+"purpose": "地形",
+"label": "がけ付近の建築規制の案内（山梨県 峡南建設事務所・PDF）"
+},
+{
 "url": "https://maps.gsi.go.jp/",
 "pref": "山梨県",
 "muni": "（県）",
@@ -2518,6 +2560,13 @@
 "muni": "甲府市",
 "purpose": "地区計画",
 "label": "甲府市例規集（第11類 建設・五十音）"
+},
+{
+"url": "https://www1.g-reiki.net/kofu/reiki_honbun/e602RG00000408.html",
+"pref": "山梨県",
+"muni": "甲府市",
+"purpose": "地形",
+"label": "甲府市建築基準法施行条例 第4条（がけ附近の建築物）"
 },
 {
 "url": "https://www.city.fujiyoshida.yamanashi.jp/page/2080.html",
@@ -3850,6 +3899,20 @@
 "label": "建築協定相談窓口（神奈川県）"
 },
 {
+"url": "https://www.pref.kanagawa.jp/documents/24951/jourei3jou_kaisetsu.pdf",
+"pref": "神奈川県",
+"muni": "（県）",
+"purpose": "地形",
+"label": "神奈川県建築基準条例 第3条（崖附近の建築物）の解説（PDF）"
+},
+{
+"url": "https://www.pref.kanagawa.jp/docs/cz4/cnt/f360239/index.html",
+"pref": "神奈川県",
+"muni": "（県）",
+"purpose": "地形",
+"label": "神奈川県建築基準条例の解説（章ごとのPDF）"
+},
+{
 "url": "https://maps.gsi.go.jp/",
 "pref": "神奈川県",
 "muni": "（県）",
@@ -4004,6 +4067,13 @@
 "label": "iマッピー（行政地図情報提供システム）の更新情報"
 },
 {
+"url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/tetsuduki/jorei/kijunjourei/kijunjourei.html",
+"pref": "神奈川県",
+"muni": "横浜市",
+"purpose": "地形",
+"label": "横浜市建築基準条例 第3条（崖）と解説"
+},
+{
 "url": "https://kawasaki.geocloud.jp/webgis/?p=1",
 "pref": "神奈川県",
 "muni": "川崎市",
@@ -4144,6 +4214,13 @@
 "label": "都市計画情報インターネット提供サービス"
 },
 {
+"url": "https://www.city.kawasaki.jp/500/cmsfiles/contents/0000035/35933/kijyunjyoureioyobidoukaisetu_R8.7.pdf",
+"pref": "神奈川県",
+"muni": "川崎市",
+"purpose": "地形",
+"label": "川崎市建築基準条例 第5条（がけ付近の建築物）・解説（PDF）"
+},
+{
 "url": "https://sagamihara.geocloud.jp/",
 "pref": "神奈川県",
 "muni": "相模原市",
@@ -4270,6 +4347,13 @@
 "label": "さがみはら地図情報"
 },
 {
+"url": "https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/004/781/kaisetu_20250425.pdf",
+"pref": "神奈川県",
+"muni": "相模原市",
+"purpose": "地形",
+"label": "相模原市建築基準条例 第5条（崖付近の建築物）解説（PDF）"
+},
+{
 "url": "https://www2.wagmap.jp/yokosuka/Agreement?IsPost=False&MapId=5&RequestPage=%2fyokosuka%2fPositionSelect%3fmid%3d5",
 "pref": "神奈川県",
 "muni": "横須賀市",
@@ -4375,6 +4459,13 @@
 "label": "建築協定について（横須賀市 建築指導課）"
 },
 {
+"url": "https://www.city.yokosuka.kanagawa.jp/reiki/reiki_honbun/g204RG00000421.html",
+"pref": "神奈川県",
+"muni": "横須賀市",
+"purpose": "地形",
+"label": "横須賀市建築基準条例 第5条（崖の擁壁）"
+},
+{
 "url": "https://webgis.alandis.jp/hiratsuka14/",
 "pref": "神奈川県",
 "muni": "平塚市",
@@ -4457,6 +4548,13 @@
 "muni": "平塚市",
 "purpose": "地区計画",
 "label": "ひらつかわくわくマップ"
+},
+{
+"url": "https://www.city.hiratsuka.kanagawa.jp/common/200010510.pdf",
+"pref": "神奈川県",
+"muni": "平塚市",
+"purpose": "地形",
+"label": "平塚市建築基準条例 第5条（がけ付近の建築物）・解説（PDF）"
 },
 {
 "url": "https://www2.wagmap.jp/kamakura-hazard/PositionSelect?mid=231",
@@ -4555,6 +4653,13 @@
 "muni": "鎌倉市",
 "purpose": "地区計画",
 "label": "鎌倉市都市計画情報提供サービス"
+},
+{
+"url": "https://www.city.kamakura.kanagawa.jp/kenchikushidou/documents/kamakura_kenchikukijun_jourei_20250311.pdf",
+"pref": "神奈川県",
+"muni": "鎌倉市",
+"purpose": "地形",
+"label": "鎌倉市建築基準条例 第5条（崖付近の建築物）（PDF）"
 },
 {
 "url": "https://webgis.alandis.jp/fujisawa14/210/portal/",
@@ -4739,6 +4844,13 @@
 "label": "建築協定とは（小田原市 建築指導課）"
 },
 {
+"url": "https://www.city.odawara.kanagawa.jp/field/c-planning/building/confirmation/kaisetsu.html",
+"pref": "神奈川県",
+"muni": "小田原市",
+"purpose": "地形",
+"label": "小田原市建築基準条例等の解説（第5条 がけ付近の建築物）"
+},
+{
 "url": "https://www2.wagmap.jp/chigasaki/Portal",
 "pref": "神奈川県",
 "muni": "茅ヶ崎市",
@@ -4830,6 +4942,13 @@
 "label": "浄化槽の手続きについて（環境保全課）"
 },
 {
+"url": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/008/168/kenchiku_kijyun_jourei_r4-26.pdf",
+"pref": "神奈川県",
+"muni": "茅ヶ崎市",
+"purpose": "地形",
+"label": "茅ヶ崎市建築基準条例 第3条（がけ付近の建築物）（PDF）"
+},
+{
 "url": "https://www.machi-info.jp/machikado/yamato_city/consentpage/gis-toshi.html",
 "pref": "神奈川県",
 "muni": "大和市",
@@ -4919,6 +5038,13 @@
 "muni": "大和市",
 "purpose": "建築協定",
 "label": "建築協定制度（大和市）"
+},
+{
+"url": "https://en3-jg.d1-law.com/yamato/d1w_reiki/h412901010011/h412901010011_j.html",
+"pref": "神奈川県",
+"muni": "大和市",
+"purpose": "地形",
+"label": "大和市建築基準条例 第3条（がけ付近の建築物）"
 },
 {
 "url": "https://www.city.atsugi.kanagawa.jp/soshiki/toshikeikakuka/12/6129.html",
@@ -5026,6 +5152,13 @@
 "label": "地区計画（各地区のページ）"
 },
 {
+"url": "https://www.city.atsugi.kanagawa.jp/material/files/group/50/kenjokaiR7_12.pdf",
+"pref": "神奈川県",
+"muni": "厚木市",
+"purpose": "地形",
+"label": "厚木市建築基準条例 第5条（崖付近の建築物）解説（PDF）"
+},
+{
 "url": "https://www2.wagmap.jp/hadano/Portal",
 "pref": "神奈川県",
 "muni": "秦野市",
@@ -5115,6 +5248,13 @@
 "muni": "秦野市",
 "purpose": "建築協定",
 "label": "建築協定・建築規約（秦野市）"
+},
+{
+"url": "https://www1.g-reiki.net/city.hadano/reiki_honbun/g213RG00000536.html",
+"pref": "神奈川県",
+"muni": "秦野市",
+"purpose": "地形",
+"label": "秦野市建築基準条例 第5条（崖付近の建築物）"
 },
 {
 "url": "https://www.city.zushi.kanagawa.jp/jigyosha/kaihatsu/1009302.html",

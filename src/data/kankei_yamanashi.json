@@ -76,6 +76,30 @@
     "南アルプス市",
     "中央市"
    ]
+  },
+  {
+   "label": "山梨県建築基準法施行条例 第2条の4（がけ附近の建築物）",
+   "url": "https://www.pref.yamanashi.jp/somu/shigaku/reiki/reiki_honbun/a500RG00000961.html",
+   "what": "がけ（高さ3m以上・勾配30度超。第2条の3）の高さの2倍以内は擁壁が要る。甲府市には適用しない（第21条の8）",
+   "verified": true,
+   "checked": "2026-10-17",
+   "purpose": "地形",
+   "role": "まずここで調べる",
+   "except": [
+    "甲府市"
+   ]
+  },
+  {
+   "label": "がけ付近の建築規制の案内（山梨県 峡南建設事務所・PDF）",
+   "url": "https://www.pref.yamanashi.jp/documents/6626/gake.pdf",
+   "what": "令80条の3・条例第2条の3・第2条の4を並べた解説",
+   "verified": true,
+   "checked": "2026-10-17",
+   "purpose": "地形",
+   "role": "補助",
+   "except": [
+    "甲府市"
+   ]
   }
  ],
  "municipalities": {
@@ -135,6 +159,15 @@
     "verified": true,
     "purpose": "地区計画",
     "role": "補助"
+   },
+   {
+    "label": "甲府市建築基準法施行条例 第4条（がけ附近の建築物）",
+    "url": "https://www1.g-reiki.net/kofu/reiki_honbun/e602RG00000408.html",
+    "what": "がけ（勾配30度超・高さ3m以上。第3条）の高さの2倍以内は擁壁が要る。甲府市は県の条例でなく、この条例",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "地形",
+    "role": "まずここで調べる"
    }
   ],
   "甲斐市": [

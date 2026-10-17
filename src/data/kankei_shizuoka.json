@@ -149,6 +149,33 @@
    "checked": "2026-10-17",
    "purpose": "道路",
    "role": "補助"
+  },
+  {
+   "label": "静岡県建築基準条例 第10条（がけ付近の建築物）・同解説（PDF）",
+   "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/052/541/r8_4jyourei_zentai.pdf",
+   "what": "令和8年4月版 p.12。高さ2mを超えるがけの下端から、がけの高さの2倍以内は擁壁が要る。県内全域に適用",
+   "verified": true,
+   "checked": "2026-10-17",
+   "purpose": "地形",
+   "role": "まずここで調べる"
+  },
+  {
+   "label": "静岡県建築基準条例 第10条（がけ条例）の解説 詳細版（PDF）",
+   "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/052/541/joureijuujoukaisetu.pdf",
+   "what": "審査の取扱い・審査フロー・添付図書・Q&A（静岡県が特定行政庁の建築物に使う）",
+   "verified": true,
+   "checked": "2026-10-17",
+   "purpose": "地形",
+   "role": "補助"
+  },
+  {
+   "label": "静岡県建築基準条例の案内（条例・解説・Q&A）",
+   "url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1052541.html",
+   "what": "がけ条例の解説・解説詳細版・Q&AのPDFが並ぶ県のページ",
+   "verified": true,
+   "checked": "2026-10-17",
+   "purpose": "地形",
+   "role": "補助"
   }
  ],
  "municipalities": {
@@ -326,6 +353,15 @@
     "purpose": "地区計画",
     "role": "まずここで調べる",
     "checked": "2026-10-17"
+   },
+   {
+    "label": "がけ条例（静岡県建築基準条例第10条）の案内（浜松市）",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/kensido/gakejyourei.html",
+    "what": "根拠は県の条例第10条。令和8年4月1日から、市内の扱いの一部を県の基準に変える",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "地形",
+    "role": "まずここで調べる"
    }
   ],
   "沼津市": [

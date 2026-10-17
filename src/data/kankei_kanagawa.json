@@ -146,6 +146,50 @@
     "藤沢市",
     "秦野市"
    ]
+  },
+  {
+   "label": "神奈川県建築基準条例 第3条（崖附近の建築物）の解説（PDF）",
+   "url": "https://www.pref.kanagawa.jp/documents/24951/jourei3jou_kaisetsu.pdf",
+   "what": "崖（勾配30度超・高さ2m超）の高さの2倍以内は擁壁が要る。自分の条例を持つ11市を除く",
+   "verified": true,
+   "checked": "2026-10-17",
+   "purpose": "地形",
+   "role": "まずここで調べる",
+   "except": [
+    "横浜市",
+    "川崎市",
+    "横須賀市",
+    "相模原市",
+    "鎌倉市",
+    "厚木市",
+    "平塚市",
+    "小田原市",
+    "秦野市",
+    "茅ヶ崎市",
+    "大和市"
+   ]
+  },
+  {
+   "label": "神奈川県建築基準条例の解説（章ごとのPDF）",
+   "url": "https://www.pref.kanagawa.jp/docs/cz4/cnt/f360239/index.html",
+   "what": "条例本文は県法規集（第12編 都市＞第6章 建築基準）",
+   "verified": true,
+   "checked": "2026-10-17",
+   "purpose": "地形",
+   "role": "補助",
+   "except": [
+    "横浜市",
+    "川崎市",
+    "横須賀市",
+    "相模原市",
+    "鎌倉市",
+    "厚木市",
+    "平塚市",
+    "小田原市",
+    "秦野市",
+    "茅ヶ崎市",
+    "大和市"
+   ]
   }
  ],
  "municipalities": {
@@ -231,6 +275,15 @@
     "purpose": "地区計画",
     "role": "補助",
     "checked": "2026-10-17"
+   },
+   {
+    "label": "横浜市建築基準条例 第3条（崖）と解説",
+    "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/tetsuduki/jorei/kijunjourei/kijunjourei.html",
+    "what": "崖（高さ3m超・勾配30度超）の高さの2倍以内は擁壁か防土堤。市の条例（県の条例ではない）",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "地形",
+    "role": "まずここで調べる"
    }
   ],
   "川崎市": [
@@ -315,6 +368,15 @@
     "purpose": "地区計画",
     "role": "補助",
     "checked": "2026-10-17"
+   },
+   {
+    "label": "川崎市建築基準条例 第5条（がけ付近の建築物）・解説（PDF）",
+    "url": "https://www.city.kawasaki.jp/500/cmsfiles/contents/0000035/35933/kijyunjyoureioyobidoukaisetu_R8.7.pdf",
+    "what": "令和8年7月版。がけ（高さ3m超）の高さの2倍以内。市の条例",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "地形",
+    "role": "まずここで調べる"
    }
   ],
   "相模原市": [
@@ -392,6 +454,15 @@
     "purpose": "地区計画",
     "role": "補助",
     "checked": "2026-10-17"
+   },
+   {
+    "label": "相模原市建築基準条例 第5条（崖付近の建築物）解説（PDF）",
+    "url": "https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_page_/001/004/781/kaisetu_20250425.pdf",
+    "what": "崖（高さ3m超）の高さの2倍以内。市の条例",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "地形",
+    "role": "まずここで調べる"
    }
   ],
   "横須賀市": [
@@ -458,6 +529,15 @@
     "verified": true,
     "purpose": "建築協定",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "横須賀市建築基準条例 第5条（崖の擁壁）",
+    "url": "https://www.city.yokosuka.kanagawa.jp/reiki/reiki_honbun/g204RG00000421.html",
+    "what": "崖（高さ3m超）の高さの2倍以内。市の条例",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "地形",
+    "role": "まずここで調べる"
    }
   ],
   "平塚市": [
@@ -518,6 +598,15 @@
     "purpose": "地区計画",
     "role": "補助",
     "checked": "2026-10-17"
+   },
+   {
+    "label": "平塚市建築基準条例 第5条（がけ付近の建築物）・解説（PDF）",
+    "url": "https://www.city.hiratsuka.kanagawa.jp/common/200010510.pdf",
+    "what": "がけ（高さ3m超）の高さの2倍以内。市の条例。平成29年改訂の版（いまの版か確かめる）",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "地形",
+    "role": "まずここで調べる"
    }
   ],
   "鎌倉市": [
@@ -578,6 +667,15 @@
     "purpose": "地区計画",
     "role": "補助",
     "checked": "2026-10-17"
+   },
+   {
+    "label": "鎌倉市建築基準条例 第5条（崖付近の建築物）（PDF）",
+    "url": "https://www.city.kamakura.kanagawa.jp/kenchikushidou/documents/kamakura_kenchikukijun_jourei_20250311.pdf",
+    "what": "崖（高さ2m超）の高さの2倍以内。市の条例",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "地形",
+    "role": "まずここで調べる"
    }
   ],
   "藤沢市": [
@@ -688,6 +786,15 @@
     "verified": true,
     "purpose": "建築協定",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "小田原市建築基準条例等の解説（第5条 がけ付近の建築物）",
+    "url": "https://www.city.odawara.kanagawa.jp/field/c-planning/building/confirmation/kaisetsu.html",
+    "what": "がけ（高さ3m超）の高さの2倍の範囲。市の条例",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "地形",
+    "role": "まずここで調べる"
    }
   ],
   "茅ヶ崎市": [
@@ -754,6 +861,15 @@
     "what": "設置届は環境保全課へ設置の21日前（型式認定は10日前）まで。建築確認を伴う場合は建築確認の申請先へ。使用開始報告は30日以内",
     "verified": true,
     "purpose": "浄化槽",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "茅ヶ崎市建築基準条例 第3条（がけ付近の建築物）（PDF）",
+    "url": "https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/008/168/kenchiku_kijyun_jourei_r4-26.pdf",
+    "what": "がけ（高さ3m超・勾配30度超）の高さの2倍以内。市の条例。令和4年の版（いまの版か確かめる）",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "地形",
     "role": "まずここで調べる"
    }
   ],
@@ -889,6 +1005,15 @@
     "verified": true,
     "purpose": "建築協定",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "秦野市建築基準条例 第5条（崖付近の建築物）",
+    "url": "https://www1.g-reiki.net/city.hadano/reiki_honbun/g213RG00000536.html",
+    "what": "崖（高さ3m超）の高さの2倍以内。市の条例",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "地形",
+    "role": "まずここで調べる"
    }
   ],
   "厚木市": [
@@ -940,6 +1065,15 @@
     "purpose": "地区計画",
     "role": "まずここで調べる",
     "checked": "2026-10-17"
+   },
+   {
+    "label": "厚木市建築基準条例 第5条（崖付近の建築物）解説（PDF）",
+    "url": "https://www.city.atsugi.kanagawa.jp/material/files/group/50/kenjokaiR7_12.pdf",
+    "what": "崖（勾配30度超・高さ3m超）の高さの2倍以内。市の条例",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "地形",
+    "role": "まずここで調べる"
    }
   ],
   "大和市": [
@@ -998,6 +1132,15 @@
     "what": "開いたが、認可された協定の一覧は載っていない（令和7年4月からまちづくり推進課へ移管）。一覧はまちづくり推進課で確かめる",
     "verified": false,
     "purpose": "建築協定",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "大和市建築基準条例 第3条（がけ付近の建築物）",
+    "url": "https://en3-jg.d1-law.com/yamato/d1w_reiki/h412901010011/h412901010011_j.html",
+    "what": "がけ（高さ3m超）の高さの2倍以内。市の条例",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "地形",
     "role": "まずここで調べる"
    }
   ],

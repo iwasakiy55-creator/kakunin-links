@@ -15,18 +15,6 @@
    "role": "補助：市町に地図がないとき"
   },
   {
-   "label": "静岡県GIS 建築関連情報マップ（掲載内容の案内）",
-   "url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1052551/1015991.html",
-   "what": "県が所管する区域の建築基準法上の道路、宅造法規制区域・災害危険区域、建築協定区域、22条指定区域、白地地域・区域区分、6条1項4号指定区域など",
-   "verified": true,
-   "except": [
-    "静岡市",
-    "浜松市"
-   ],
-   "purpose": "都市計画",
-   "role": "補助：県が所管する区域の22条区域・区域区分など"
-  },
-  {
    "label": "白地地域（用途地域の指定のない区域）の建築形態制限",
    "url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1044596/1002530/index.html",
    "what": "白地地域の容積率・建蔽率・高さ制限などの一覧（PDF）",

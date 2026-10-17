@@ -5501,6 +5501,16 @@ window.LINK_STATUS = {
                                                                                                              "why":  "",
                                                                                                              "hash":  "51DAB9E4E764A0D5"
                                                                                                          },
+                  "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1044597/1015972.html":  {
+                                                                                                             "code":  "200",
+                                                                                                             "at":  "2026-10-17",
+                                                                                                             "fails":  0,
+                                                                                                             "kind":  "",
+                                                                                                             "title":  "静岡県内の特定行政庁の窓口｜静岡県公式ホームページ",
+                                                                                                             "changed":  "",
+                                                                                                             "why":  "",
+                                                                                                             "hash":  "B1F6D4C4BD1C9D41"
+                                                                                                         },
                   "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1052541.html":  {
                                                                                                      "code":  "200",
                                                                                                      "at":  "2026-10-17",
@@ -7154,7 +7164,7 @@ window.LINK_STATUS = {
                   "https://www.vill.doshi.lg.jp/":  {
                                                         "code":  "ConnectFailure",
                                                         "at":  "2026-10-17",
-                                                        "fails":  13,
+                                                        "fails":  14,
                                                         "kind":  "",
                                                         "title":  "",
                                                         "changed":  "",
@@ -7164,7 +7174,7 @@ window.LINK_STATUS = {
                   "https://www.vill.kosuge.yamanashi.jp/":  {
                                                                 "code":  "ConnectFailure",
                                                                 "at":  "2026-10-17",
-                                                                "fails":  13,
+                                                                "fails":  14,
                                                                 "kind":  "",
                                                                 "title":  "",
                                                                 "changed":  "",

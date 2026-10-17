@@ -718,6 +718,17 @@ kbd { display:inline-block; font-family:inherit; font-size:14px; font-weight:bol
 .grid button:hover { background:color-mix(in srgb, var(--rl) 14%, transparent) !important; color:var(--ink); text-decoration:underline; text-decoration-color:var(--rl); text-underline-offset:5px; }
 .grid button .tkb { margin-left:6px !important; }
 .grid button.hit { background:var(--a-pale) !important; outline:2px solid var(--a); }
+
+/* 調べる と 決まり・窓口 */
+.kind { margin:0 0 10px; }
+.kind .kh { display:flex; align-items:center; gap:8px; font-size:15px; font-weight:bold; color:var(--sub); padding:6px 4px 6px; }
+.kind .ki { width:26px; height:26px; border-radius:50%; display:grid; place-items:center; font-size:14px; }
+.kind.look .ki { background:var(--a-pale); }
+.kind.ask .ki { background:#FBEBD3; }
+.kind .kn { font-weight:normal; color:var(--faint); font-size:13.5px; }
+.kind.ask { margin-top:16px; padding-top:6px; border-top:1px dashed var(--line); }
+.kind.ask .lk { background:color-mix(in srgb, #F4A43A 6%, var(--panel)); }
+.kind.ask .lk .main .tl { color:#8A4B0F; }
 </style>
 </head>
 <body>
@@ -1082,6 +1093,15 @@ function chips(x) {           // 大事なことを、先に札で
   if (/窓口|閲覧は/.test(w)) out.push(`<span class="ck">窓口で確かめる</span>`);
   return out.join("");
 }
+/* 調べるページ と 決まり・窓口 を分ける（名前で見分ける。データは変えない） */
+const LOOK_RE = /マップ|GIS|ＧＩＳ|地図|総括図|台帳|計画図|計画書|ハザード|インターネット公開|閲覧|図面|網図|区域図|指定図|道路図|一覧|図（|図\(|図$/;
+const ASK_RE = /条例|例規|告示|相談|について|手続|申請|届出|窓口|担当|案内|問い?合わ?せ|事前協議|取扱|要綱|指針|手引|の流れ|制度|概要|火災予防|課$|課）|係$/;
+const isAsk = x => !LOOK_RE.test(x.label) && ASK_RE.test(x.label);
+function twoKinds(all, p, m) {
+  const look = all.filter(o => !isAsk(o.x)), ask = all.filter(o => isAsk(o.x));
+  const sec = (cls, ic, h, xs, top) => xs.length ? `<div class="kind ${cls}"><div class="kh"><span class="ki">${ic}</span>${h}<span class="kn">${xs.length}</span></div>${xs.map((o, i) => linkBlock(o, p, m, top && i === 0)).join("")}</div>` : "";
+  return sec("look", "🔍", "調べる（地図・図面）", look, true) + sec("ask", "☎", "決まり・窓口（条例・手続き・問い合わせ先）", ask, !look.length);
+}
 function linkBlock(o, p, m, first) {
   const x = o.x, mm = MEMO[memoKeyU(x.url)];
   const kt = o.ken && (m || x.src) ? `<span class="first tagk">${esc(x.src || p.name)}</span>` : "";
@@ -1117,8 +1137,7 @@ function city(pi, m) {
     if (!all.length) return `<div class="row empty" data-k="${esc(k)}" id="p${idx}" style="--pc:var(${cv})">${head}<div class="body none">${esc(EMPTY[k] || "公式のページが見つかっていません。担当の課で確かめてください")}</div><div class="shots" data-sk="${esc(k)}"></div>${idx < list.length - 1 ? `<div class="nextp"><button data-next="${idx + 1}">次へ：${esc(list[idx + 1].t)} ▶</button></div>` : ""}</div>`;
     const [f, ...rest] = all;
     const opened = rest.some(o => MEMO[memoKeyU(o.x.url)]);
-    return `<div class="row ${it.seen || it.saved ? "is-seen" : ""}" data-k="${esc(k)}" data-first="${esc(f.x.label)}" id="p${idx}" style="--pc:var(${cv})">${head}<div class="body">${linkBlock(f, p, m, true)}
-      ${rest.length ? `<details class="more" open><summary>ほかのページ（${rest.length}）</summary><div>${rest.map(o => linkBlock(o, p, m, false)).join("")}</div></details>` : ""}</div><div class="shots" data-sk="${esc(k)}"></div>${idx < list.length - 1 ? `<div class="nextp"><button data-next="${idx + 1}">次へ：${esc(list[idx + 1].t)} ▶</button></div>` : ""}</div>`;
+    return `<div class="row ${it.seen || it.saved ? "is-seen" : ""}" data-k="${esc(k)}" data-first="${esc(f.x.label)}" id="p${idx}" style="--pc:var(${cv})">${head}<div class="body">${twoKinds([f, ...rest], p, m)}</div><div class="shots" data-sk="${esc(k)}"></div>${idx < list.length - 1 ? `<div class="nextp"><button data-next="${idx + 1}">次へ：${esc(list[idx + 1].t)} ▶</button></div>` : ""}</div>`;
   }).join("");
   const toc = list.map(({ k, t, all }, idx) => `<a href="#p${idx}" data-jump="p${idx}" class="${all.length ? "" : "off"}" style="--pc:var(${(ICON[k] || ICON["そのほか"])[0]})"><i></i>${esc(t)}</a>`).join("");
   caseFor(p.name + "/" + (m || ""));

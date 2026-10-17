@@ -813,6 +813,9 @@ header .brand { margin-right:auto; }
 .kind.ask .lk { background:var(--panel) !important; }
 .kind .kh { font-size:16px !important; color:var(--ink) !important; }
 .tb .own .unv { color:var(--faint); font-size:13px; }
+
+.ty-proc { background:#FFF3C4; color:#7A5B00; }
+.ty-list { background:#DCEFF7; color:#16627F; }
 </style>
 </head>
 <body>
@@ -1179,7 +1182,7 @@ function chips(x) {           // 大事なことを、先に札で
 /* 調べるページ と 決まり・窓口 を分ける（名前で見分ける。データは変えない） */
 const LOOK_RE = /マップ|GIS|ＧＩＳ|地図|総括図|台帳|計画図|計画書|ハザード|インターネット公開|閲覧|図面|網図|区域図|指定図|道路図|一覧|図（|図\(|図$/;
 const ASK_RE = /条例|例規|告示|相談|について|手続|申請|届出|窓口|担当|案内|問い?合わ?せ|事前協議|取扱|要綱|指針|手引|の流れ|制度|概要|火災予防|課$|課）|係$/;
-const isAsk = x => { const ty = linkType(x)[0]; return ty === "law" || ty === "ask" ? true : ty === "map" || ty === "pdf" ? false : !LOOK_RE.test(x.label) && ASK_RE.test(x.label); };
+const isAsk = x => { const ty = linkType(x)[0]; return ty === "law" || ty === "ask" || ty === "proc" ? true : ty === "map" || ty === "pdf" || ty === "list" ? false : !LOOK_RE.test(x.label) && ASK_RE.test(x.label); };
 function twoKinds(all, p, m) {
   // 並べる順：GIS・地図のサイト → そのほか → PDF（「まずここ」とは決めない）
   const rank = x => /GIS|ＧＩＳ|マップ|MAP|地図|わが街|ガイド/i.test(x.label) && !/PDF/.test(x.label) ? 0 : /PDF/.test(x.label + (x.what || "")) ? 2 : 1;
@@ -1195,6 +1198,8 @@ function linkType(x) {
   if (/相談|窓口|問い?合わ?せ|課$|課）|係$|担当/.test(x.label)) return ["ask", "☎", "窓口", "聞く先を見る"];
   if (/条例|例規|規則/.test(x.label)) return ["law", "⚖", "条例", "決まりを読む"];
   if (/窓口/.test(w)) return ["ask", "☎", "窓口", "聞く先を見る"];
+  if (/申請|申込|申し込|届出|届け出|届$|様式|書式|手続|工事|事前協議|協議|検査|設置|接続|切替/.test(x.label)) return ["proc", "📝", "手続き", "出し方を見る"];
+  if (/一覧|区域|指定|告示|供用|地区|名簿|事業者|管轄|所在地|路線|台帳/.test(x.label)) return ["list", "📋", "一覧", "区域・指定を見る"];
   return ["page", "📘", "説明", "説明を読む"];
 }
 function cleanName(s, own) {

@@ -1296,7 +1296,8 @@ function linkType(x) {
 function cleanName(s, own) {
   let v = /^(山梨県|静岡県|神奈川県|国土地理院)(GIS|ＧＩＳ|地図|統合型)/.test(s) ? String(s) : String(s).replace(/^(山梨県|静岡県|神奈川県|国土地理院)\s*/, "");
   if (own && !/^(山梨県|静岡県|神奈川県|国土地理院)(GIS|ＧＩＳ|地図|統合型)/.test(v)) v = v.replace(new RegExp("^" + own.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\s*"), "");
-  return v.trim() || s;
+  v = v.trim();
+  return !v || /^(内|の|における|全域|管内|下の)/.test(v) ? s : v;   // 「静岡県内の…」を「内の…」にしない
 }
 function linkBlock(o, p, m, first) {
   const x = o.x, mm = MEMO[memoKeyU(x.url)];

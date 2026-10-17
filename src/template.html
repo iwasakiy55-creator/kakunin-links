@@ -1244,7 +1244,7 @@ const isAsk = x => { const ty = linkType(x)[0]; return ty === "law" || ty === "a
 function twoKinds(all, p, m) {
   // 並べる順：GIS・地図のサイト → そのほか → PDF（「まずここ」とは決めない）
   const rank = x => /GIS|ＧＩＳ|マップ|MAP|地図|わが街|ガイド/i.test(x.label) && !/PDF/.test(x.label) ? 0 : /PDF/.test(x.label + (x.what || "")) ? 2 : 1;
-  const look = all.filter(o => !isAsk(o.x)).map((o, i) => [o, i]).sort((A, B) => rank(A[0].x) - rank(B[0].x) || A[1] - B[1]).map(z => z[0]), ask = all.filter(o => isAsk(o.x));
+  const look = all.filter(o => !isAsk(o.x)).map((o, i) => [o, i]).sort((A, B) => (A[0].x.daicho ? 9 : 0) - (B[0].x.daicho ? 9 : 0) || rank(A[0].x) - rank(B[0].x) || A[1] - B[1]).map(z => z[0]), ask = all.filter(o => isAsk(o.x));
   const sec = (cls, ic, h, xs, top) => xs.length ? `<div class="kind ${cls}"><div class="kh"><span class="ki">${ic}</span>${h}<span class="kn">${xs.length}</span></div>${xs.map((o, i) => linkBlock(o, p, m, top && i === 0)).join("")}</div>` : "";
   return sec("look", "🔍", "調べる（地図・図面）", look, false) + sec("ask", "☎", "決まり・窓口（条例・手続き・問い合わせ先）", ask, false);
 }
@@ -1278,6 +1278,7 @@ function lawOf(x) {
     if (/53条|都市計画施設/.test(s)) a.push("53");
     return "都計法" + (a.length ? a.join("・") : "29") + "条";
   }
+  if (x.daicho) return "道路法28条";
   for (const [re, v, only] of (LAW_RULES[x.purpose] || [])) if (re.test(only === "L" ? x.label : s)) return v;
   return "";
 }
@@ -1323,7 +1324,7 @@ function city(pi, m) {
     const a = own.filter(x => (x.purpose || "そのほか") === k).map(x => ({ x, ken: !m }));
     const b = ken.filter(x => (x.purpose || "そのほか") === k).map(x => ({ x, ken: true }));
     const rk = x => k !== "地区計画" ? score(x) : (/条例化：(なし|確かめられない)/.test(x.what || "") ? 3 : (/条例/.test(x.label || "") || /例規/.test(x.label || "")) ? 2 : (/GIS|マップ|地図/.test(x.label || "") ? 1 : 0));
-    const all = (KEN_FIRST.has(k) ? [...b, ...a] : [...a, ...b]).map((o, i) => ({ ...o, i })).sort((u, v) => rk(u.x) - rk(v.x) || u.i - v.i).filter((o, i, xs) => xs.findIndex(z => z.x.url === o.x.url) === i);  // 同じページは1回だけ
+    const all = (KEN_FIRST.has(k) ? [...b, ...a] : [...a, ...b]).map((o, i) => ({ ...o, i })).sort((u, v) => (u.x.daicho ? 9 : 0) - (v.x.daicho ? 9 : 0) || rk(u.x) - rk(v.x) || u.i - v.i).filter((o, i, xs) => xs.findIndex(z => z.x.url === o.x.url) === i);  // 同じページは1回だけ
     return { k, t, sub, all };
   }).filter(o => o.all.length || !["そのほか", "白地"].includes(o.k));
   const rows = list.map(({ k, t, sub, all }, idx) => {

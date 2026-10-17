@@ -840,6 +840,11 @@ header .brand { margin-right:auto; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #terms .box { background:#FFFFFF; color:#1A1A1A; } }
 @media (max-width: 760px) { #terms .tx { padding:18px 18px 8px !important; font-size:15.5px !important; } #terms .tx h2 { font-size:21px !important; } }
 #terms .tx > ol { padding-left:26px; margin:0 0 6px; } #terms .tx > ol li { margin:3px 0; }
+@media (max-width: 760px) {
+  .mdr .lk .main::after { content:"↗" !important; width:44px; height:44px; padding:0 !important; display:grid; place-items:center; font-size:20px !important; border-radius:50% !important; }
+  .tb .own .vb { display:none; }
+  .mdr .lk { padding:10px 12px !important; }
+}
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -1231,7 +1236,7 @@ function linkType(x) {
   return ["page", "📘", "説明", "説明を読む"];
 }
 function cleanName(s, own) {
-  let v = String(s).replace(/^(山梨県|静岡県|神奈川県|国土地理院)\s*/, "");
+  let v = /^(山梨県|静岡県|神奈川県|国土地理院)(GIS|ＧＩＳ|地図|統合型)/.test(s) ? String(s) : String(s).replace(/^(山梨県|静岡県|神奈川県|国土地理院)\s*/, "");
   if (own) v = v.replace(new RegExp("^" + own.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\s*"), "");
   return v.trim() || s;
 }
@@ -1240,7 +1245,7 @@ function linkBlock(o, p, m, first) {
   const kt = o.ken && (m || x.src) ? `<span class="first tagk">${esc(x.src || p.name)}</span>` : "";
   return `<div class="lkw"><div class="lk ${first ? "top" : ""}" data-u="${esc(x.url)}">
     <a class="main" href="${esc(x.url)}" target="_blank" rel="noopener" title="${esc(x.label + (shortNote(x.what) ? "\n" + shortNote(x.what) : ""))}">${(() => { const ty = linkType(x), own = x.src || (o.ken ? p.name : (m || p.name)), ck = chips(x).replace(/<span class="ck( mado)?">(PDF|地図|窓口で確かめる)<\/span>/g, "");
-      return `<span class="ty ty-${ty[0]}"><span class="ti">${ty[1]}</span>${ty[2]}</span><span class="tb"><span class="tl">${esc(cleanName(shortLabel(x.label), own))}</span><span class="own">${esc(own)}${ty[3] ? "　" + ty[3] : ""}${x.verified === false ? `<span class="unv">　中身は未確認</span>` : ""}</span>${ck ? `<span class="cks">${ck}</span>` : ""}</span>`; })()}
+      return `<span class="ty ty-${ty[0]}"><span class="ti">${ty[1]}</span>${ty[2]}</span><span class="tb"><span class="tl">${esc(cleanName(shortLabel(x.label), own))}</span><span class="own">${esc(own)}${ty[3] ? `<span class="vb">　${ty[3]}</span>` : ""}${x.verified === false ? `<span class="unv">　中身は未確認</span>` : ""}</span>${ck ? `<span class="cks">${ck}</span>` : ""}</span>`; })()}
       ${shortNote(x.what, x) ? `<div class="what">${esc(shortNote(x.what, x))}</div>` : ""}</a>
     <div class="acts"><button class="act" data-copy="${esc(x.url)}" title="このページの場所を写す（質疑書などに貼れる）" aria-label="場所を写す" data-lb="写す">${svg(I.copy, 17)}</button>
       <button class="act ${mm ? "has" : ""}" data-lmemo="${esc(x.url)}" title="このページにメモを書く" aria-label="メモ" data-lb="メモ">${svg(I.pen, 17)}</button></div></div>

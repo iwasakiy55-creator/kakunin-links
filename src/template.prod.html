@@ -1,0 +1,1816 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>建築確認 調べ先リンク集</title>
+<style>
+:root {
+  --bg:#F2F5F7; --panel:#FFFFFF; --ink:#0F2530; --sub:#5A6B73; --faint:#8A989F; --line:#DDE4E8;
+  --a:#17708F; --a2:#0E4F66; --a-ink:#FFFFFF; --a-pale:#E3F0F5; --glow:rgba(23,112,143,.20);
+  --ok:#2C7A51; --ok-pale:#E5F3EB; --warn:#9A6412; --warn-pale:#FFF4DE;
+  --memo:#FFF8D6; --memo-line:#E9D58A; --memo-ink:#5B4A12;
+  --c1:#17708F; --c2:#7A5AA8; --c3:#4D7C2A; --c4:#B5502E; --c5:#8C6A1C; --c6:#5B6770; --c7:#2D6C9E; --c8:#6B7280;
+  --shadow:0 1px 2px rgba(15,37,48,.05), 0 8px 24px rgba(15,37,48,.06);
+  --r:16px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg:#0D171C; --panel:#152329; --ink:#E5EDF0; --sub:#9EB0B8; --faint:#73868E; --line:#25353D;
+  --a:#5CB6D6; --a2:#3E93B3; --a-ink:#06141A; --a-pale:#17313B; --glow:rgba(92,182,214,.25);
+  --ok:#6CC18F; --ok-pale:#163024; --warn:#E6B66A; --warn-pale:#382C16;
+  --memo:#2F2A16; --memo-line:#5E5124; --memo-ink:#EBDDA4;
+  --c1:#5CB6D6; --c2:#B79BE0; --c3:#9BC873; --c4:#EE9373; --c5:#E0C06A; --c6:#A3B0B8; --c7:#7FB3E0; --c8:#A3A9B3;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.22); } }
+:root[data-theme="dark"] {
+  --bg:#0D171C; --panel:#152329; --ink:#E5EDF0; --sub:#9EB0B8; --faint:#73868E; --line:#25353D;
+  --a:#5CB6D6; --a2:#3E93B3; --a-ink:#06141A; --a-pale:#17313B; --glow:rgba(92,182,214,.25);
+  --ok:#6CC18F; --ok-pale:#163024; --warn:#E6B66A; --warn-pale:#382C16;
+  --memo:#2F2A16; --memo-line:#5E5124; --memo-ink:#EBDDA4;
+  --c1:#5CB6D6; --c2:#B79BE0; --c3:#9BC873; --c4:#EE9373; --c5:#E0C06A; --c6:#A3B0B8; --c7:#7FB3E0; --c8:#A3A9B3;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.22); }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:120px; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:"Yu Gothic UI","Yu Gothic","Hiragino Sans","Meiryo",sans-serif; font-size:16px; line-height:1.65; -webkit-font-smoothing:antialiased; }
+a { color:inherit; }
+button, input, textarea { font-family:inherit; color:inherit; }
+:focus-visible { outline:3px solid var(--glow); outline-offset:2px; border-radius:8px; }
+main:focus, main:focus-visible { outline:none; }
+.duo > *, .row > *, .lkline > *, .ttl > * { min-width:0; }
+.what, .who, .cmemo, .hit, .note { overflow-wrap:anywhere; }
+.wrap { max-width:1020px; margin:0 auto; padding:0 16px; }
+.ic-s { display:inline-block; vertical-align:-3px; }
+
+/* 上の帯 */
+header { background:color-mix(in srgb, var(--panel) 90%, transparent); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:10; }
+header .wrap { display:flex; align-items:center; gap:12px; padding-top:10px; padding-bottom:10px; }
+.brand { display:flex; align-items:center; gap:10px; cursor:pointer; white-space:nowrap; border:0; background:none; padding:2px; text-align:left; }
+.brand .mk { width:36px; height:36px; border-radius:10px; background:linear-gradient(135deg, #1A7FA2, #0E4F66); display:grid; place-items:center; color:#fff; box-shadow:0 3px 10px rgba(14,79,102,.3); }
+.brand b { font-size:17px; letter-spacing:.03em; display:block; line-height:1.25; }
+.brand small { display:block; font-size:11px; color:var(--sub); }
+.sbox { position:relative; flex:1; }
+.sbox > svg { position:absolute; left:14px; top:50%; transform:translateY(-50%); color:var(--faint); pointer-events:none; }
+#q { width:100%; padding:11px 44px 11px 42px; border:1.5px solid var(--line); border-radius:12px; font-size:16.5px; background:var(--panel); transition:border-color .15s, box-shadow .15s; }
+#q::placeholder { color:var(--faint); }
+#q:focus { outline:none; border-color:var(--a); box-shadow:0 0 0 4px var(--glow); }
+.kbd { position:absolute; right:12px; top:50%; transform:translateY(-50%); font-size:12px; color:var(--faint); border:1px solid var(--line); border-bottom-width:2px; border-radius:6px; padding:0 7px; pointer-events:none; background:var(--bg); }
+#sug { position:absolute; left:0; right:0; top:calc(100% + 6px); background:var(--panel); border:1px solid var(--line); border-radius:14px; box-shadow:0 12px 40px rgba(0,0,0,.16); display:none; max-height:64vh; overflow-y:auto; padding:6px; }
+#sug button { display:flex; justify-content:space-between; align-items:center; gap:10px; width:100%; text-align:left; border:0; background:none; padding:9px 12px; font-size:16px; cursor:pointer; border-radius:9px; }
+#sug button.on { background:var(--a-pale); }
+#sug button mark { background:none; color:var(--a); font-weight:bold; }
+#sug small { color:var(--sub); font-size:13px; white-space:nowrap; }
+#sug .tk { font-size:11px; color:var(--a); border:1px solid currentColor; border-radius:4px; padding:0 4px; margin-left:6px; }
+#sug .wd { border-top:1px solid var(--line); border-radius:0 0 9px 9px; margin-top:4px; padding-top:11px; color:var(--a); }
+.hbtn { position:relative; display:inline-flex; align-items:center; gap:6px; border:1px solid var(--line); background:var(--panel); border-radius:12px; padding:9px 12px; font-size:14.5px; cursor:pointer; white-space:nowrap; transition:all .12s; }
+.hbtn:hover { border-color:var(--a); color:var(--a); }
+.hbtn .cnt { min-width:20px; height:20px; border-radius:10px; background:var(--memo-line); color:var(--memo-ink); font-size:12px; font-weight:bold; display:inline-grid; place-items:center; padding:0 5px; }
+.hbtn.sq { padding:9px; }
+main { padding:22px 0 36px; min-height:62vh; }
+.fade { animation:fade .24s ease-out; }
+@keyframes fade { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
+@media (prefers-reduced-motion: reduce) { .fade { animation:none; } html { scroll-behavior:auto; } * { transition:none !important; } }
+
+/* はじめの画面 */
+.hero { position:relative; overflow:hidden; border-radius:20px; padding:28px 28px 24px; margin-bottom:16px; color:#fff;
+  background:radial-gradient(900px 260px at 95% -30%, rgba(255,255,255,.20), transparent 60%), radial-gradient(500px 200px at 0% 120%, rgba(92,182,214,.35), transparent 60%), linear-gradient(135deg, #1A7FA2 0%, #0E4F66 58%, #0A3A4B 100%); box-shadow:0 10px 30px rgba(14,79,102,.25); }
+.hero h2 { font-size:30px; margin:0 0 6px; letter-spacing:.03em; line-height:1.3; }
+.hero p { margin:0; opacity:.92; font-size:15.5px; max-width:640px; }
+.hero .stats { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+.hero .stats div { background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.2); border-radius:12px; padding:6px 14px; }
+.hero .stats b { font-size:22px; margin-right:4px; font-variant-numeric:tabular-nums; }
+.hero .stats span { font-size:13px; opacity:.9; }
+.hero .deco { position:absolute; right:-6px; bottom:-14px; opacity:.14; pointer-events:none; }
+.band { display:flex; align-items:center; gap:12px; background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:11px 14px; margin:0 0 16px; box-shadow:var(--shadow); }
+.dot { width:32px; height:32px; flex:none; border-radius:50%; display:grid; place-items:center; background:var(--ok-pale); color:var(--ok); }
+.band.warn .dot { background:var(--warn-pale); color:var(--warn); }
+.band .tx { flex:1; font-size:15px; line-height:1.5; }
+.band .tx small { display:block; color:var(--sub); font-size:12.5px; }
+.pill { display:inline-flex; align-items:center; gap:6px; border:1px solid var(--line); background:var(--panel); border-radius:999px; padding:5px 14px; font-size:14.5px; cursor:pointer; transition:all .12s; white-space:nowrap; }
+.pill:hover { border-color:var(--a); color:var(--a); }
+.pill.memo { background:var(--memo); border-color:var(--memo-line); color:var(--memo-ink); }
+.shelf { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:0 0 14px; }
+.shelf > span { color:var(--sub); font-size:13.5px; margin-right:4px; display:inline-flex; align-items:center; gap:5px; }
+.pref { background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:15px 16px 16px; margin-bottom:14px; box-shadow:var(--shadow); }
+.pref h3 { margin:0 0 11px; font-size:18px; display:flex; align-items:center; gap:10px; }
+.pref h3 .n { font-size:13px; color:var(--sub); font-weight:normal; flex:1; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(114px, 1fr)); gap:7px; }
+.grid button { position:relative; border:1px solid var(--line); background:var(--bg); border-radius:10px; padding:8px 6px; font-size:15px; cursor:pointer; transition:all .12s; }
+.grid button:hover { border-color:var(--a); background:var(--a-pale); color:var(--a); transform:translateY(-1px); box-shadow:0 4px 10px var(--glow); }
+.grid button.tk { font-weight:bold; }
+.grid button .d { position:absolute; top:6px; right:6px; width:7px; height:7px; border-radius:50%; background:var(--a); }
+.grid button .mm { position:absolute; top:4px; left:5px; color:var(--memo-line); }
+.legend { font-size:13px; color:var(--sub); margin:2px 4px 0; display:flex; flex-wrap:wrap; align-items:center; gap:4px 16px; }
+.legend i { display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--a); margin-right:5px; }
+
+/* 市町村の画面 */
+.crumbs { display:flex; align-items:center; gap:6px; font-size:14px; color:var(--sub); margin-bottom:6px; }
+.crumbs button { border:0; background:none; color:var(--a); cursor:pointer; padding:2px 0; font-size:14px; }
+.crumbs button:hover { text-decoration:underline; }
+.ttl { display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; margin-bottom:12px; }
+.ttl h2 { font-size:32px; margin:0; letter-spacing:.03em; line-height:1.2; }
+.ttl .sp { flex:1; }
+.badge { display:inline-flex; align-items:center; gap:5px; font-size:13px; font-weight:bold; color:var(--a); background:var(--a-pale); border-radius:999px; padding:3px 11px; }
+.duo { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px; }
+.who { display:flex; gap:12px; align-items:flex-start; background:var(--panel); border:1px solid var(--line); border-left:4px solid var(--a); border-radius:14px; padding:12px 14px; font-size:15px; box-shadow:var(--shadow); }
+.who svg { flex:none; color:var(--a); margin-top:2px; }
+.who b { color:var(--a); }
+.cmemo { background:var(--memo); border:1px solid var(--memo-line); border-radius:14px; padding:10px 12px; color:var(--memo-ink); box-shadow:var(--shadow); }
+.cmemo .h { display:flex; align-items:center; gap:6px; font-size:13.5px; font-weight:bold; margin-bottom:4px; }
+.cmemo .h .st { margin-left:auto; font-weight:normal; font-size:12px; opacity:.8; }
+.cmemo textarea { width:100%; min-height:52px; border:0; background:transparent; resize:vertical; font-size:15px; line-height:1.6; color:var(--memo-ink); padding:0; }
+.cmemo textarea:focus { outline:none; }
+.cmemo textarea::placeholder { color:var(--memo-ink); opacity:.55; }
+.toc { position:sticky; top:63px; z-index:6; display:flex; gap:6px; overflow-x:auto; padding:8px 0 10px; margin:0 0 4px; background:linear-gradient(var(--bg) 75%, transparent); scrollbar-width:none; }
+.toc::-webkit-scrollbar { display:none; }
+.toc a { flex:none; text-decoration:none; font-size:13.5px; border:1px solid var(--line); background:var(--panel); border-radius:999px; padding:4px 12px 4px 9px; display:inline-flex; align-items:center; gap:6px; transition:all .12s; }
+.toc a:hover { border-color:var(--pc); color:var(--pc); }
+.toc a i { width:8px; height:8px; border-radius:50%; background:var(--pc); }
+.toc a.off { opacity:.45; }
+.row { --pc:var(--c1); background:var(--panel); border:1px solid var(--line); border-radius:var(--r); padding:15px 16px; margin-bottom:12px; display:grid; grid-template-columns:46px 180px 1fr; gap:4px 14px; align-items:start; box-shadow:var(--shadow); transition:box-shadow .2s; }
+.row:target, .row.flash { box-shadow:0 0 0 3px color-mix(in srgb, var(--pc) 35%, transparent), var(--shadow); }
+.row .ic { width:46px; height:46px; border-radius:13px; display:grid; place-items:center; color:var(--pc); background:color-mix(in srgb, var(--pc) 13%, transparent); }
+.row .k b { display:block; font-size:17.5px; line-height:1.35; margin-top:2px; }
+.row .k small { color:var(--sub); font-size:12.5px; line-height:1.5; display:block; margin-top:3px; }
+.lk { margin-bottom:2px; }
+.lk + .lk { margin-top:10px; }
+.lkline { display:flex; gap:8px; align-items:stretch; }
+.go { flex:1; display:flex; align-items:center; gap:12px; text-decoration:none; background:linear-gradient(135deg, var(--a), var(--a2)); color:var(--a-ink); border-radius:12px; padding:11px 16px; font-weight:bold; font-size:16px; transition:transform .12s, box-shadow .12s; box-shadow:0 2px 8px var(--glow); min-width:0; }
+.go:hover { transform:translateY(-1px); box-shadow:0 8px 20px var(--glow); }
+.go .lbl { flex:1; min-width:0; }
+.go svg { flex:none; opacity:.9; }
+.go.sub { background:var(--panel); color:var(--a); border:1px solid var(--line); box-shadow:none; font-size:15px; padding:9px 14px; }
+.go.sub:hover { border-color:var(--a); background:var(--a-pale); box-shadow:none; }
+.act { flex:none; display:grid; place-items:center; width:42px; border:1px solid var(--line); background:var(--panel); border-radius:12px; cursor:pointer; color:var(--sub); transition:all .12s; }
+.act:hover { border-color:var(--a); color:var(--a); }
+.act.has { background:var(--memo); border-color:var(--memo-line); color:var(--memo-ink); }
+.tagk { display:inline-block; font-size:11.5px; font-weight:bold; background:rgba(255,255,255,.22); border-radius:4px; padding:0 6px; margin-right:8px; vertical-align:1px; }
+.go.sub .tagk { background:var(--a-pale); color:var(--a); }
+.what { font-size:14px; color:var(--sub); margin:6px 2px 0; }
+.note { display:inline-flex; align-items:center; gap:5px; font-size:12.5px; color:var(--warn); background:var(--warn-pale); border-radius:7px; padding:2px 9px; margin:6px 4px 0 2px; }
+.lmemo { margin:8px 0 0; background:var(--memo); border:1px solid var(--memo-line); border-radius:10px; padding:7px 10px; color:var(--memo-ink); }
+.lmemo textarea { width:100%; min-height:42px; border:0; background:transparent; resize:vertical; font-size:14.5px; line-height:1.55; color:var(--memo-ink); padding:0; }
+.lmemo textarea:focus { outline:none; }
+.lmemo textarea::placeholder { color:var(--memo-ink); opacity:.55; }
+.lmemo .st { font-size:11.5px; opacity:.75; text-align:right; }
+details.more { margin-top:10px; }
+details.more summary { cursor:pointer; color:var(--a); font-size:14px; list-style:none; display:inline-flex; align-items:center; gap:5px; padding:2px 0; }
+details.more summary::-webkit-details-marker { display:none; }
+details.more summary::before { content:""; width:7px; height:7px; border-right:2px solid currentColor; border-bottom:2px solid currentColor; transform:rotate(-45deg); transition:transform .15s; margin-right:3px; }
+details.more[open] summary::before { transform:rotate(45deg); }
+details.more > div { margin-top:8px; padding-left:10px; border-left:2px solid var(--line); }
+.none { color:var(--sub); font-size:14.5px; padding-top:11px; }
+.row.empty { box-shadow:none; background:transparent; border-style:dashed; }
+.row.empty .ic { filter:grayscale(1); opacity:.55; }
+.row.empty .k b { color:var(--sub); }
+
+/* 一覧の画面（検索・見回り・メモ） */
+.hits h2 { font-size:24px; margin:0 0 4px; }
+.hits .lead { color:var(--sub); margin:0 0 16px; font-size:14.5px; }
+.hit { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:11px 14px; margin-bottom:8px; box-shadow:var(--shadow); }
+.hit .w2 { font-size:13px; color:var(--sub); display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+.hit .w2 button { border:0; background:none; color:var(--a); cursor:pointer; padding:0; font-size:13px; }
+.hit .w2 button:hover { text-decoration:underline; }
+.hit a.t { color:var(--a); font-weight:bold; text-decoration:none; }
+.hit a.t:hover { text-decoration:underline; }
+.hit .url { font-size:12px; color:var(--faint); word-break:break-all; }
+.hit .mtx { background:var(--memo); border:1px solid var(--memo-line); color:var(--memo-ink); border-radius:9px; padding:6px 10px; margin-top:6px; white-space:pre-wrap; font-size:14.5px; }
+.grp { margin-bottom:20px; }
+.grp h3 { font-size:16px; margin:0 0 9px; display:flex; align-items:center; gap:8px; }
+.grp h3 span { font-size:13px; background:var(--a-pale); color:var(--a); border-radius:999px; padding:0 9px; }
+.grp .nil { color:var(--sub); font-size:14px; padding:4px 2px; }
+.tools { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 18px; }
+.empty-state { text-align:center; color:var(--sub); padding:40px 16px; background:var(--panel); border:1px dashed var(--line); border-radius:var(--r); }
+.empty-state svg { color:var(--memo-line); margin-bottom:6px; }
+.gate { text-align:center; max-width:560px; margin:60px auto; background:var(--panel); border:1px solid var(--line); border-radius:20px; padding:36px 24px; box-shadow:var(--shadow); }
+.gate .gi { width:66px; height:66px; margin:0 auto 12px; border-radius:50%; display:grid; place-items:center; background:var(--a-pale); color:var(--a); }
+.gate h2 { margin:0 0 8px; font-size:22px; }
+.gate p { margin:0; color:var(--sub); }
+footer { font-size:13px; color:var(--sub); padding:0 0 34px; line-height:1.75; }
+footer .wrap { border-top:1px solid var(--line); padding-top:14px; }
+.toast { position:fixed; left:50%; bottom:24px; transform:translateX(-50%) translateY(20px); background:var(--ink); color:var(--bg); border-radius:999px; padding:9px 20px; font-size:14px; opacity:0; transition:all .2s; pointer-events:none; z-index:30; box-shadow:0 8px 24px rgba(0,0,0,.2); }
+.toast.on { opacity:1; transform:translateX(-50%); }
+.sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+@media (max-width: 760px) {
+  header .wrap { flex-wrap:wrap; }
+  .brand small, .kbd, .hbtn .lb { display:none; }
+  .sbox { order:3; flex-basis:100%; }
+  .brand { flex:1; }
+  .duo { grid-template-columns:1fr; }
+  .row { grid-template-columns:40px 1fr; padding:13px; }
+  .row .ic { width:40px; height:40px; }
+  .row > .body { grid-column:1 / -1; }
+  .toc { top:108px; }
+  .hero { padding:22px 20px; } .hero h2 { font-size:24px; }
+  .ttl h2 { font-size:26px; }
+  .ttl .sp { display:none; }
+  .ttl .pill { font-size:13.5px; padding:4px 11px; }
+  .cmemo .h { flex-wrap:wrap; } .cmemo .h .st { margin-left:0; width:100%; }
+  .hbtn { padding:8px 10px; }
+  .act { width:38px; }
+}
+@media print {
+  header, .crumbs, .toc, .band, .act, .ttl .pill, details.more summary, .toast, .cmemo textarea:placeholder-shown { display:none !important; }
+  body { background:#fff; } main { padding:0; }
+  .row, .who, .cmemo { box-shadow:none; break-inside:avoid; }
+  details.more > div { display:block !important; }
+  .go { background:none !important; color:#000 !important; border:1px solid #bbb; box-shadow:none !important; }
+  .go::after { content:"  " attr(href); font-weight:normal; font-size:10px; word-break:break-all; }
+}
+
+/* 2026-10-16 見やすく：重いボタンをやめ、1目的＝1枚の、静かなカードに */
+.row { grid-template-columns:1fr; gap:0; padding:0; overflow:hidden; }
+.row .rh { display:flex; align-items:center; gap:10px; padding:11px 16px 9px; border-bottom:1px solid var(--line); }
+.row .rh .ic { width:30px; height:30px; border-radius:8px; }
+.row .rh .ic svg { width:17px; height:17px; }
+.row .rh b { font-size:16.5px; }
+.row .body { padding:6px 8px 8px; }
+.lk { display:flex; align-items:flex-start; gap:6px; border-radius:10px; padding:8px 8px; margin:0 !important; }
+.lk:hover { background:var(--a-pale); }
+.lk .main { flex:1; min-width:0; text-decoration:none; display:block; }
+.lk .main .tl { color:var(--a); font-weight:bold; font-size:16px; line-height:1.45; }
+.lk .main .tl svg { vertical-align:-2px; margin-left:4px; opacity:.7; }
+.lk .main .what { margin:2px 0 0; font-size:13.5px; }
+.lk .first { display:inline-block; font-size:11.5px; font-weight:bold; color:#fff; background:var(--a); border-radius:4px; padding:0 6px; margin-right:6px; vertical-align:2px; }
+.lk .tagk { background:var(--chip, var(--bg)); color:var(--sub); border:1px solid var(--line); }
+.lk .acts { flex:none; display:flex; gap:2px; opacity:.45; transition:opacity .12s; }
+.lk:hover .acts, .lk:focus-within .acts { opacity:1; }
+.act { width:34px; height:34px; border:0; background:none; border-radius:8px; }
+.act:hover { background:var(--panel); }
+.act.has { opacity:1; }
+.lk .lmemo { flex-basis:100%; }
+.lkw { display:flex; flex-wrap:wrap; }
+.lkw > .lk { flex:1 1 100%; }
+.lkw > .lmemo { flex:1 1 100%; margin:0 8px 6px; }
+details.more { margin:2px 8px 4px; }
+details.more > div { padding-left:0; border-left:0; margin-top:2px; }
+.row.empty .rh { border-bottom:0; }
+.row.empty .body { padding:0 16px 12px; }
+.sub2 { font-size:14px; color:var(--sub); margin:-4px 0 14px; }
+.sub2 b { color:var(--ink); }
+.cmemo { margin:0 0 14px; }
+.duo, .toc { display:none !important; }
+.ttl { margin-bottom:6px; }
+
+/* 物件の調べ（地名地番・結果・調べた） */
+.hero form { display:flex; gap:8px; margin-top:18px; max-width:640px; }
+.hero form input { flex:1; min-width:0; border:0; border-radius:12px; padding:12px 14px; font-size:16.5px; background:rgba(255,255,255,.96); color:#0F2530; }
+.hero form input::placeholder { color:#6B7B83; }
+.hero form button { border:0; border-radius:12px; padding:0 18px; font-size:15.5px; font-weight:bold; background:#FFD86B; color:#3B2E05; cursor:pointer; white-space:nowrap; }
+.hero form button:hover { filter:brightness(1.05); }
+.hero .or { font-size:13px; opacity:.85; margin-top:8px; }
+.hero .msg { font-size:14px; margin-top:8px; background:rgba(0,0,0,.18); border-radius:8px; padding:4px 10px; display:inline-block; }
+.case { background:var(--panel); border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow); padding:12px 14px; margin:0 0 14px; }
+.case .r1 { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.case label { font-size:13px; color:var(--sub); white-space:nowrap; }
+.case input { flex:1; min-width:180px; border:1.5px solid var(--line); border-radius:10px; padding:8px 12px; font-size:16px; background:var(--bg); }
+.case input:focus { outline:none; border-color:var(--a); box-shadow:0 0 0 3px var(--glow); }
+.case .btn { display:inline-flex; align-items:center; gap:6px; border:0; border-radius:10px; padding:8px 14px; font-size:14.5px; font-weight:bold; cursor:pointer; background:var(--a); color:var(--a-ink); white-space:nowrap; }
+.case .btn.ghost { background:none; color:var(--sub); border:1px solid var(--line); font-weight:normal; }
+.case .btn.ghost:hover { color:var(--a); border-color:var(--a); }
+.case .r2 { display:flex; align-items:center; gap:12px; margin-top:9px; flex-wrap:wrap; }
+.case .bar { flex:1; min-width:140px; height:8px; border-radius:4px; background:var(--bg); overflow:hidden; border:1px solid var(--line); }
+.case .bar i { display:block; height:100%; background:linear-gradient(90deg, var(--ok), #4FB37C); width:0; transition:width .3s; }
+.case .cnt { font-size:14.5px; font-weight:bold; white-space:nowrap; }
+.case .cnt.all { color:var(--ok); }
+.case .hint { font-size:12px; color:var(--faint); }
+.row .rh .sp { flex:1; }
+.res { width:min(380px, 42vw); border:1px solid var(--line); border-radius:8px; padding:5px 10px; font-size:14.5px; background:var(--bg); }
+.res:focus { outline:none; border-color:var(--a); box-shadow:0 0 0 3px var(--glow); background:var(--panel); }
+.chk { display:inline-flex; align-items:center; gap:5px; border:1.5px solid var(--line); background:var(--panel); border-radius:999px; padding:4px 12px 4px 8px; font-size:13.5px; cursor:pointer; white-space:nowrap; color:var(--sub); transition:all .15s; }
+.chk .bx { width:16px; height:16px; border-radius:5px; border:1.5px solid currentColor; display:grid; place-items:center; }
+.chk:hover { border-color:var(--ok); color:var(--ok); }
+.row.done .chk { background:var(--ok); border-color:var(--ok); color:#fff; }
+.row.done .chk .bx { background:#fff; color:var(--ok); border-color:#fff; }
+.row.done .rh { background:var(--ok-pale); }
+.row.done .body { opacity:.72; }
+@media (max-width: 760px) {
+  .case { top:108px; }
+  .row .rh { flex-wrap:wrap; } .row .rh .sp { display:none; }
+  .res { order:5; width:100%; }
+  .hero form { flex-direction:column; } .hero form button { padding:10px; }
+}
+@media print {
+  .case { position:static; box-shadow:none; } .case .btn, .case .hint, .chk { display:none !important; }
+  .res { border:0; padding:0; font-weight:bold; }
+}
+
+/* 画面の写し（スクショ） */
+.shots { display:flex; flex-wrap:wrap; gap:8px; padding:4px 16px 12px; align-items:center; }
+.shots:empty { display:none; }
+.shot { position:relative; width:150px; height:96px; border-radius:9px; overflow:hidden; border:1px solid var(--line); background:var(--bg); cursor:zoom-in; }
+.shot img { width:100%; height:100%; object-fit:cover; object-position:top left; display:block; }
+.shot button { position:absolute; top:4px; right:4px; width:22px; height:22px; border-radius:50%; border:0; background:rgba(0,0,0,.6); color:#fff; cursor:pointer; font-size:13px; line-height:1; }
+.pastebtn { display:inline-flex; align-items:center; gap:5px; border:1.5px dashed var(--line); background:none; border-radius:999px; padding:3px 11px; font-size:13px; color:var(--sub); cursor:pointer; white-space:nowrap; }
+.pastebtn:hover, .row.active .pastebtn { border-color:var(--a); color:var(--a); }
+.row.active { box-shadow:0 0 0 2px var(--glow), var(--shadow); }
+.row.drag { box-shadow:0 0 0 3px var(--a), var(--shadow); }
+#zoom { position:fixed; inset:0; background:rgba(5,15,20,.82); z-index:40; display:none; place-items:center; padding:24px; cursor:zoom-out; }
+#zoom img { max-width:100%; max-height:100%; border-radius:8px; box-shadow:0 10px 40px rgba(0,0,0,.5); }
+.case .btn.rec { background:#2C7A51; }
+@media print { .pastebtn, .shot button { display:none !important; } }
+
+/* 2026-10-16 文字を大きく・押しやすく（だれでも使える） */
+body { font-size:18.5px; line-height:1.7; }
+:root { --sub:#44545C; --faint:#6B7B83; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --sub:#B8C6CC; --faint:#93A4AB; } }
+:root[data-theme="dark"] { --sub:#B8C6CC; --faint:#93A4AB; }
+.wrap { max-width:1080px; }
+.brand b { font-size:20px; } .brand small { font-size:13px; }
+#q { font-size:19px; padding:14px 46px 14px 46px; }
+#sug button { font-size:19px; padding:12px 14px; } #sug small { font-size:15px; }
+.hbtn { font-size:17px; padding:11px 14px; }
+.hero h2 { font-size:34px; } .hero p { font-size:18px; }
+.hero form input { font-size:19px; padding:15px 16px; } .hero form button { font-size:18px; padding:0 22px; }
+.hero .or { font-size:15px; }
+.band .tx { font-size:17px; } .band .tx small { font-size:14.5px; }
+.pill { font-size:16.5px; padding:8px 16px; }
+.pref h3 { font-size:21px; } .pref h3 .n { font-size:15px; }
+.grid { grid-template-columns:repeat(auto-fill, minmax(132px, 1fr)); gap:9px; }
+.grid button { font-size:18px; padding:12px 6px; }
+.legend { font-size:15px; }
+.crumbs, .crumbs button { font-size:16px; }
+.ttl h2 { font-size:36px; }
+.badge { font-size:15px; padding:4px 13px; }
+.sub2 { font-size:17px; }
+.case label { font-size:16px; color:var(--ink); font-weight:bold; }
+.case input { font-size:18.5px; padding:11px 14px; }
+.case .btn { font-size:17px; padding:11px 18px; }
+.case .cnt { font-size:18px; } .case .hint { font-size:15px; color:var(--sub); }
+.row .rh { padding:14px 18px 12px; } .row .rh b { font-size:20px; }
+.row .rh .ic { width:38px; height:38px; } .row .rh .ic svg { width:21px; height:21px; }
+.res { font-size:17px; padding:9px 12px; width:min(420px, 40vw); }
+.chk { font-size:16.5px; padding:8px 16px 8px 11px; } .chk .bx { width:20px; height:20px; }
+.pastebtn { font-size:16px; padding:7px 14px; }
+.lk { padding:12px 12px; }
+.lk .main .tl { font-size:19px; }
+.lk .main .what { font-size:16px; }
+.lk .acts { opacity:1; gap:6px; }
+.act { width:auto; height:auto; padding:7px 12px; border:1px solid var(--line); background:var(--panel); border-radius:10px; font-size:15px; display:inline-flex; align-items:center; gap:5px; color:var(--sub); }
+.act::after { content:attr(data-lb); }
+.note { font-size:15px; }
+details.more summary { font-size:17px; padding:6px 0; }
+.cmemo .h { font-size:16px; } .cmemo textarea, .lmemo textarea { font-size:17px; }
+.hit { padding:14px 16px; } .hit .w2, .hit .w2 button { font-size:15px; } .hit .mtx { font-size:17px; }
+.hits h2 { font-size:28px; } .hits .lead { font-size:17px; }
+.grp h3 { font-size:19px; }
+footer { font-size:15px; }
+.toast { font-size:17px; padding:12px 24px; bottom:30px; max-width:90vw; text-align:center; }
+.gate h2 { font-size:26px; } .gate p { font-size:18px; }
+.kbd { display:none; }
+@media (max-width: 760px) { .ttl h2 { font-size:28px; } .res { width:100%; } .grid { grid-template-columns:repeat(auto-fill, minmax(112px, 1fr)); } }
+
+/* 早くたどり着く：番号キー・帯を小さく */
+.row .rh .no { flex:none; width:30px; height:30px; border-radius:8px; display:grid; place-items:center; font-weight:bold; font-size:17px; color:#fff; background:var(--pc); }
+.case { padding:10px 14px; }
+.case .r2 { margin-top:8px; gap:8px; }
+.case .r2 .btn { padding:8px 14px; font-size:16px; }
+.case .bar { max-width:160px; }
+.case .hint { font-size:14.5px; margin-top:4px; }
+.keys { font-size:15px; color:var(--sub); margin:-6px 0 12px; }
+.keys b { display:inline-block; min-width:24px; text-align:center; border:1px solid var(--line); border-bottom-width:2px; border-radius:6px; padding:0 5px; background:var(--panel); color:var(--ink); }
+@media (max-width: 760px) { .keys { display:none; } }
+
+/* 入力・チェックは廃止（2026-10-16）。メモも出さない */
+#memoBtn, .cmemo, [data-go="cmemo"], [data-lmemo], .lmemo, .pill.memo, .shelf:has(.pill.memo), .grid button .mm { display:none !important; }
+
+/* 色の意味（2026-10-16）
+   目的の色＝その目的だけに使う（番号・左の線・いちばん上のページ）。緑＝済んだ。黄＝気をつけて。青（基本の色）＝操作 */
+:root { --c1:#1E6FB8; --c7:#4B4FB0; --c3:#18806E; --c4:#C2412D; --c9:#3E8A3A; --c5:#94621A; --c6:#68757D; --c2:#8A4FB0; --c8:#6B7280; --done:#2C8A57; --done-pale:#E4F5EA; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --c1:#6FB2F0; --c7:#9EA2F2; --c3:#5CC8B4; --c4:#F08A73; --c9:#86CD7D; --c5:#E0B064; --c6:#A9B5BC; --c2:#C69BEA; --done:#6CD198; --done-pale:#173326; } }
+:root[data-theme="dark"] { --c1:#6FB2F0; --c7:#9EA2F2; --c3:#5CC8B4; --c4:#F08A73; --c9:#86CD7D; --c5:#E0B064; --c6:#A9B5BC; --c2:#C69BEA; --done:#6CD198; --done-pale:#173326; }
+.row { border-left:6px solid var(--pc); }
+.row .rh { background:color-mix(in srgb, var(--pc) 7%, var(--panel)); border-bottom-color:color-mix(in srgb, var(--pc) 22%, var(--line)); }
+.row .rh b { color:color-mix(in srgb, var(--pc) 70%, var(--ink)); }
+.row .lk.top { background:color-mix(in srgb, var(--pc) 9%, transparent); border:1.5px solid color-mix(in srgb, var(--pc) 45%, transparent); margin:4px 0 2px !important; }
+.row .lk.top:hover { background:color-mix(in srgb, var(--pc) 16%, transparent); }
+.row .lk.top .tl { color:color-mix(in srgb, var(--pc) 80%, var(--ink)); font-size:20px; }
+.row .lk.top .tl svg { opacity:1; }
+.row .lk .tl { color:var(--ink); }
+.row .seen { display:none; align-items:center; gap:5px; font-size:15.5px; font-weight:bold; color:var(--done); background:var(--done-pale); border-radius:999px; padding:4px 12px; white-space:nowrap; }
+.row.is-seen .seen { display:inline-flex; }
+.row.is-seen .no { background:var(--done); }
+.row.is-seen { border-left-color:var(--done); }
+.prog { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:10px; font-size:17px; }
+.prog b { color:var(--done); }
+.prog .dots { display:flex; gap:6px; flex-wrap:wrap; }
+.prog .dots i { width:28px; height:28px; border-radius:7px; display:grid; place-items:center; font-style:normal; font-size:14.5px; font-weight:bold; color:#fff; background:var(--pc); opacity:.45; cursor:pointer; }
+.prog .dots i.on { background:var(--done); opacity:1; }
+.steps { display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; margin:0 0 16px; }
+.steps > div { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:12px 14px; box-shadow:var(--shadow); display:flex; gap:10px; align-items:flex-start; font-size:17.5px; line-height:1.45; font-weight:bold; }
+.steps > div > span { flex:none; width:32px; height:32px; border-radius:50%; background:var(--a); color:#fff; display:grid; place-items:center; }
+.steps small { display:block; color:var(--sub); font-size:14.5px; margin-top:3px; font-weight:normal; }
+.toast.ok { background:var(--done); color:#fff; }
+.keys { display:none; }
+@media (max-width: 760px) { .steps { grid-template-columns:1fr; } }
+
+/* 文字を減らす・並びを整える（2026-10-16） */
+.brand small { display:none; }
+.crumbs { display:none; }
+.ttl { margin:4px 0 14px; align-items:baseline; }
+.ttl .note2 { font-size:16px; color:var(--sub); }
+.sub2, .ttl .pill { display:none !important; }
+.case { padding:12px 16px; }
+.case .r1 label { display:none; }
+.case .line2 { display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-top:10px; }
+.case .line2 .prog { margin:0; flex:1; min-width:260px; }
+.case .line2 .dir { font-size:14.5px; color:var(--sub); white-space:nowrap; }
+.case .line2 .dir button { border:0; background:none; color:var(--a); cursor:pointer; font-size:14.5px; padding:0 0 0 4px; text-decoration:underline; }
+.case .how { font-size:14.5px; color:var(--sub); margin-top:6px; }
+.case .how b { color:var(--ink); background:var(--bg); border:1px solid var(--line); border-bottom-width:2px; border-radius:6px; padding:0 6px; font-weight:normal; font-size:13.5px; }
+.lk .main .what { display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden; }
+.lk:hover .main .what, .lk:focus-within .main .what { -webkit-line-clamp:unset; }
+.lk .acts { display:none; }
+.row .body { padding:8px 10px 10px; }
+.row.empty .body { padding:10px 18px 14px; font-size:16px; }
+.hero { padding:30px 30px 26px; }
+.hero p { display:none; }
+.hero .or { display:none; }
+.hero .stats { margin-top:16px; }
+.steps > div { align-items:center; }
+.steps small { display:none; }
+.band { display:none; }
+.legend { justify-content:center; }
+footer { font-size:14px; }
+.fade { animation:none !important; }
+
+/* 左に目次・右に中身（2026-10-16） */
+.md { display:grid; grid-template-columns:250px 1fr; gap:16px; align-items:start; }
+.mdl { position:sticky; top:84px; background:var(--panel); border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow); padding:8px; display:flex; flex-direction:column; gap:3px; }
+.mdl button { --pc:var(--c1); display:flex; align-items:center; gap:10px; width:100%; text-align:left; border:0; background:none; border-radius:10px; padding:11px 12px; font-size:18px; cursor:pointer; color:var(--ink); position:relative; }
+.mdl button:hover { background:color-mix(in srgb, var(--pc) 9%, transparent); }
+.mdl button .n { flex:none; width:30px; height:30px; border-radius:8px; display:grid; place-items:center; font-weight:bold; font-size:16px; color:#fff; background:var(--pc); }
+.mdl button .tx { flex:1; line-height:1.3; }
+.mdl button .ck { flex:none; color:var(--done); display:none; }
+.mdl button.seen .ck { display:block; }
+.mdl button.seen .n { background:var(--done); }
+.mdl button.sel { background:color-mix(in srgb, var(--pc) 14%, transparent); font-weight:bold; color:color-mix(in srgb, var(--pc) 75%, var(--ink)); }
+.mdl button.sel::before { content:""; position:absolute; left:-8px; top:8px; bottom:8px; width:5px; border-radius:0 4px 4px 0; background:var(--pc); }
+.mdl button.none .tx { color:var(--faint); }
+.mdr .row { display:none; margin:0; }
+.mdr .row.sel { display:block; }
+.mdr .row .rh { padding:16px 20px 14px; }
+.mdr .row .rh b { font-size:24px; }
+.mdr .row .body { padding:12px 14px 14px; }
+.mdr .lk { margin:0 0 8px !important; border:1.5px solid var(--line); }
+.mdr .lk.top { border-color:color-mix(in srgb, var(--pc) 50%, transparent); }
+.mdr .lk .main .what { -webkit-line-clamp:unset; display:block; }
+.mdr details.more { margin:6px 0 0; }
+.mdr details.more > summary { display:none; }
+.mdr details.more > div { display:block; margin:0; }
+.mdr .shots { padding:4px 20px 16px; }
+.mdr .nextp { display:flex; justify-content:flex-end; padding:0 16px 14px; }
+.mdr .nextp button { border:1px solid var(--line); background:var(--panel); border-radius:10px; padding:9px 16px; font-size:16.5px; cursor:pointer; color:var(--a); }
+.mdr .nextp button:hover { border-color:var(--a); }
+.prog .dots { display:none; }
+@media (max-width: 760px) {
+  .md { grid-template-columns:1fr; }
+  .mdl { position:static; flex-direction:row; overflow-x:auto; padding:6px; }
+  .mdl button { flex:none; width:auto; padding:8px 10px; font-size:16px; }
+  .mdl button.sel::before { display:none; }
+}
+
+/* 目次のまとまり・関係規定の一覧 */
+.mdl .grp { font-size:13.5px; color:var(--faint); font-weight:bold; padding:10px 12px 2px; letter-spacing:.05em; }
+.mdl .grp:first-child { padding-top:4px; }
+.mdl button { padding:9px 12px; font-size:17px; }
+.mdl button .n { width:28px; height:28px; font-size:15px; }
+.law { background:var(--panel); border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow); overflow:hidden; }
+.law table { width:100%; border-collapse:collapse; }
+.law th, .law td { text-align:left; padding:12px 14px; border-bottom:1px solid var(--line); vertical-align:top; font-size:17px; }
+.law th { background:var(--bg); font-size:15px; color:var(--sub); }
+.law td.nm b { display:block; } .law td.nm small { color:var(--sub); font-size:14.5px; }
+.law a { color:var(--a); }
+.hs { display:inline-block; border-radius:999px; padding:2px 12px; font-size:15px; font-weight:bold; white-space:nowrap; }
+.hs.よく { background:#C2412D; color:#fff; } .hs.場合 { background:#F2C14E; color:#3B2E05; } .hs.まれ { background:var(--bg); color:var(--faint); border:1px solid var(--line); }
+.law tr.まれ td { color:var(--sub); }
+.lawtabs { display:flex; gap:8px; margin:0 0 12px; flex-wrap:wrap; }
+.hbtn.law-b { font-weight:bold; }
+
+/* 利用規約 */
+#terms { position:fixed; inset:0; z-index:50; background:rgba(5,15,20,.6); display:none; place-items:center; padding:16px; }
+#terms .box { background:var(--panel); border-radius:18px; max-width:760px; width:100%; max-height:88vh; display:flex; flex-direction:column; box-shadow:0 20px 60px rgba(0,0,0,.35); }
+#terms .tx { overflow-y:auto; padding:22px 26px 8px; font-size:16.5px; line-height:1.75; }
+#terms .tx h2 { font-size:23px; margin:0; } #terms .tx .tv { color:var(--sub); font-size:14px; margin:2px 0 10px; }
+#terms .tx h3 { font-size:17.5px; margin:16px 0 4px; } #terms .tx p, #terms .tx ul { margin:0 0 6px; } #terms .tx li { margin:2px 0; }
+#terms .ft { padding:14px 26px 18px; border-top:1px solid var(--line); display:flex; gap:10px; justify-content:flex-end; flex-wrap:wrap; }
+#terms .ft button { border:0; border-radius:12px; padding:12px 22px; font-size:17px; font-weight:bold; cursor:pointer; background:var(--a); color:var(--a-ink); }
+#terms .ft button.g { background:none; border:1px solid var(--line); color:var(--sub); font-weight:normal; }
+footer a.tl { color:var(--a); cursor:pointer; text-decoration:underline; }
+
+.holdn { display:flex; gap:12px; align-items:flex-start; background:var(--warn-pale); border:1px solid #E2B04A; border-radius:14px; padding:12px 16px; margin:0 0 14px; font-size:16.5px; line-height:1.6; }
+.holdn svg { flex:none; color:var(--warn); margin-top:3px; }
+
+/* 鬼レビュー（2026-10-17）：入口を1つに・はみ出さない・目次を1画面に */
+html, body { overflow-x:hidden; }
+body.home header .sbox { visibility:hidden; }
+.hero .stats, .hero .deco { display:none; }
+.hero { padding:26px 28px; }
+.hero h2 { font-size:30px; margin-bottom:14px; }
+.hero form { margin-top:0; max-width:none; }
+.hero form input { font-size:20px; padding:16px 18px; }
+.hero form button { font-size:19px; padding:0 26px; }
+.steps > div { font-size:17px; font-weight:normal; }
+.steps > div b { font-weight:bold; }
+.back2 { border:0; background:none; color:var(--a); font-size:16px; cursor:pointer; padding:2px 0; margin:0 0 2px; }
+.back2:hover { text-decoration:underline; }
+.md > *, .case > *, .case .r1 > * { min-width:0; }
+.mdl { max-height:calc(100vh - 100px); overflow-y:auto; }
+.mdl .grp { padding:8px 12px 0; }
+.mdl button { padding:7px 12px; }
+.law td:nth-child(1), .law td:nth-child(4), .law td:nth-child(5) { white-space:nowrap; }
+.law td:nth-child(5) a { white-space:nowrap; }
+@media (max-width: 760px) {
+  .mdl .grp { display:none; }
+  .mdl { max-height:none; }
+  .mdl button { flex:none; }
+  .case .r1 { flex-wrap:nowrap; } .case .r1 input { min-width:0; flex:1; }
+  .case .btn { padding:10px 12px; }
+  .law table, .law tbody, .law tr, .law td { display:block; width:100%; } .law tr:first-child { display:none; }
+  .law td { border:0; padding:4px 14px; } .law tr { border-bottom:1px solid var(--line); padding:8px 0; }
+  .hbtn.law-b { padding:9px 10px; font-size:15px; }
+}
+
+/* 地域ごとの一覧・絞り込み */
+.rg { display:grid; grid-template-columns:96px 1fr; gap:8px 12px; align-items:start; padding:8px 0; border-top:1px dashed var(--line); }
+.pref h3 + .rg { border-top:0; padding-top:0; }
+.rgn { font-size:15.5px; font-weight:bold; color:var(--sub); padding-top:11px; }
+.rg.dim, .pref.dim { display:none; }
+.grid button.dim { opacity:.25; }
+.grid button.hit { border-color:var(--a); background:var(--a-pale); color:var(--a); font-weight:bold; }
+.hero .msg { margin-top:10px; font-size:16px; }
+@media (max-width: 760px) { .rg { grid-template-columns:1fr; gap:4px; } .rgn { padding-top:4px; } }
+
+#terms .sum { background:var(--a-pale); border-radius:12px; padding:12px 16px 6px; margin:4px 0 12px; }
+#terms .sum ol { margin:6px 0 4px; padding-left:22px; } #terms .sum li { margin:4px 0; }
+#terms .tx h3 { font-size:16.5px; }
+
+/* 県の切り替え */
+.ptabs { display:flex; gap:8px; margin:0 0 12px; flex-wrap:wrap; position:sticky; top:63px; z-index:6; padding:6px 0; background:linear-gradient(var(--bg) 80%, transparent); }
+.ptabs button { border:1.5px solid var(--line); background:var(--panel); border-radius:12px; padding:10px 22px; font-size:18px; font-weight:bold; cursor:pointer; color:var(--sub); }
+.ptabs button:hover { border-color:var(--a); color:var(--a); }
+.ptabs button.on { background:var(--a); border-color:var(--a); color:var(--a-ink); }
+.ptabs button small { font-weight:normal; font-size:13px; margin-left:6px; opacity:.85; }
+.pref.off { display:none; }
+body.finding .pref.off { display:block; }
+body.finding .pref.off.dim { display:none; }
+body.finding .ptabs { opacity:.5; }
+@media (max-width: 760px) { .ptabs { top:108px; } .ptabs button { padding:8px 14px; font-size:16px; } }
+
+.prog .tm { color:var(--sub); font-size:15.5px; margin-right:8px; } .prog .tm b { color:var(--ink); }
+
+/* 色の意味（はじめの画面）：県の色・地域の淡い色・特定行政庁の札 */
+:root { --p0:#17708F; --p1:#7A4FB0; --p2:#3B55B8;
+  --r0:#D9F0EE; --r1:#DCEAF8; --r2:#E3F1DA; --r3:#FBE9D6; --r4:#F2E2F3;
+  --rl0:#2A9D8F; --rl1:#3A7BC8; --rl2:#5E9A3A; --rl3:#D08A3A; --rl4:#A65AA8; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --p0:#5CB6D6; --p1:#B79BE0; --p2:#8FA6F0;
+  --r0:#163A37; --r1:#1A3047; --r2:#22361A; --r3:#3E2C17; --r4:#38243A; } }
+:root[data-theme="dark"] { --p0:#5CB6D6; --p1:#B79BE0; --p2:#8FA6F0; --r0:#163A37; --r1:#1A3047; --r2:#22361A; --r3:#3E2C17; --r4:#38243A; }
+.ptabs button { --pc:var(--p0); border-width:2px; }
+.ptabs button:hover { border-color:var(--pc); color:var(--pc); }
+.ptabs button.on { background:var(--pc); border-color:var(--pc); color:#fff; }
+.pref { --pc:var(--p0); border-top:5px solid var(--pc); }
+.pref h3 { color:var(--pc); }
+.rg { --rb:var(--r0); --rl:var(--rl0); border-top-color:transparent; padding:10px 10px; margin:6px -6px 0; border-radius:12px; background:color-mix(in srgb, var(--rb) 45%, transparent); }
+.rgn { display:inline-block; align-self:start; background:var(--rb); color:color-mix(in srgb, var(--rl) 80%, var(--ink)); border-radius:8px; padding:6px 12px; margin-top:4px; font-size:16px; text-align:center; }
+.grid button { background:var(--panel); border-left:5px solid var(--rl); }
+.grid button:hover { background:var(--rb); border-color:var(--rl); color:var(--ink); }
+.grid button .d { display:none; }
+.grid button .tkb { display:inline-block; font-size:11px; font-weight:bold; color:#fff; background:var(--pc); border-radius:4px; padding:0 5px; margin-left:6px; vertical-align:2px; }
+.legend i { display:none; }
+.legend .tkb { display:inline-block; font-size:11px; font-weight:bold; color:#fff; background:var(--p0); border-radius:4px; padding:0 5px; margin-right:4px; }
+
+/* メリハリ：札・短い名前・1行の説明 */
+.cks { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 6px; }
+.ck { display:inline-block; font-size:13.5px; font-weight:bold; border-radius:6px; padding:2px 10px; background:var(--bg); color:var(--sub); border:1px solid var(--line); }
+.ck.ok { background:#2C8A57; color:#fff; border-color:#2C8A57; }
+.ck.no { background:var(--bg); color:var(--ink); }
+.ck.warn { background:#F2C14E; color:#3B2E05; border-color:#F2C14E; }
+.mdr .lk .main .tl { font-size:19px; line-height:1.45; }
+.mdr .lk .main .what { font-size:16px; color:var(--sub); margin-top:4px; line-height:1.6; }
+.mdr .lk { padding:14px 16px; }
+.mdr .lk.top { border-width:2px; }
+.pchip, .rchip { display:inline-block; font-size:15px; font-weight:bold; border-radius:999px; padding:3px 13px; }
+.pchip { background:var(--pc); color:#fff; }
+.rchip { background:var(--rb); color:color-mix(in srgb, var(--rl) 80%, var(--ink)); }
+.ttl h2 { color:var(--ink); }
+.back2 { color:var(--sub); }
+.case { border-top:4px solid var(--a); }
+
+.ck.c { background:#1E6FB8; color:#fff; border-color:#1E6FB8; }
+
+/* 文字の見やすさ（2026-10-17）：読み間違えにくい書体・濃さ・大きさ・行間 */
+:root { --sub:#3A4A52; --faint:#5F6F77; --a:#0E5F7A; --a2:#0A4A60; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --sub:#C3D0D6; --faint:#9FB0B8; --a:#6CC2E0; --a2:#4FA8C8; } }
+:root[data-theme="dark"] { --sub:#C3D0D6; --faint:#9FB0B8; --a:#6CC2E0; --a2:#4FA8C8; }
+body, button, input, textarea { font-family:"BIZ UDPGothic","BIZ UDPゴシック","Meiryo UI","Meiryo","Yu Gothic UI",sans-serif; }
+body { font-size:18.5px; line-height:1.75; letter-spacing:.02em; color:var(--ink); -webkit-font-smoothing:auto; }
+h1, h2, h3, .ttl h2, .hero h2, .row .rh b, .brand b { letter-spacing:.01em; font-feature-settings:"palt"; }
+.hero h2 { font-size:32px; }
+.mdr .lk .main .tl { font-size:20px; line-height:1.5; font-weight:bold; color:var(--a); }
+.mdr .lk.top .main .tl { color:color-mix(in srgb, var(--pc) 60%, #0F2530); }
+.mdr .lk .main .what { font-size:17px; color:var(--sub); line-height:1.7; max-width:42em; }
+.ck { font-size:14.5px; padding:3px 11px; letter-spacing:.03em; }
+.case .hint, .case .how, .prog .tm, .case .line2 .dir, .case .line2 .dir button { font-size:16px; color:var(--sub); }
+.case .how b { font-size:14.5px; }
+.mdl button { font-size:18px; color:var(--ink); }
+.mdl button.none .tx { color:var(--faint); }
+.mdl .grp { font-size:14.5px; color:var(--sub); }
+.grid button { font-size:18.5px; color:var(--ink); }
+.rgn { font-size:16.5px; }
+.steps > div { font-size:17.5px; }
+.legend, footer { font-size:15.5px; color:var(--sub); }
+.back2 { font-size:16.5px; color:var(--sub); }
+.note { font-size:15.5px; }
+.law th, .law td { font-size:17.5px; } .law td.nm small { font-size:15px; }
+#terms .tx { font-size:17px; }
+.grid button .tkb { font-size:12.5px; padding:1px 6px; }
+.steps > div { font-size:17px; line-height:1.5; }
+
+/* 使い方 */
+.flow4 { display:flex; align-items:stretch; gap:6px; margin-top:12px; flex-wrap:wrap; }
+.flow4 > div { flex:1; min-width:140px; background:var(--bg); border:1px solid var(--line); border-radius:12px; padding:9px 12px; font-size:16px; line-height:1.55; display:flex; gap:10px; align-items:center; }
+.flow4 > div span { flex:none; width:28px; height:28px; border-radius:50%; background:var(--a); color:#fff; display:grid; place-items:center; font-weight:bold; font-size:15px; }
+.flow4 > div.ok { background:var(--done-pale, #E4F5EA); border-color:#9BD0B0; } .flow4 > div.ok span { background:#2C8A57; }
+.flow4 > i { align-self:center; color:var(--faint); font-style:normal; font-size:14px; }
+kbd { display:inline-block; font-family:inherit; font-size:14px; font-weight:bold; background:var(--panel); border:1px solid var(--line); border-bottom-width:3px; border-radius:6px; padding:0 7px; margin:0 1px; line-height:1.5; color:var(--ink); }
+.case .how { display:none; }
+#help { position:fixed; inset:0; z-index:55; background:rgba(5,15,20,.6); display:none; place-items:center; padding:16px; }
+#help .hbox { background:var(--panel); border-radius:18px; max-width:820px; width:100%; max-height:90vh; overflow-y:auto; box-shadow:0 20px 60px rgba(0,0,0,.35); padding:20px 26px 22px; }
+#help .hhead { display:flex; align-items:center; margin-bottom:8px; } #help .hhead h2 { margin:0; font-size:26px; flex:1; }
+#help .hhead button { border:0; background:var(--bg); width:44px; height:44px; border-radius:50%; font-size:24px; cursor:pointer; color:var(--ink); }
+#help .hs { display:flex; gap:14px; padding:12px 0; border-bottom:1px dashed var(--line); }
+#help .hs > span { flex:none; width:40px; height:40px; border-radius:50%; background:var(--a); color:#fff; display:grid; place-items:center; font-size:20px; font-weight:bold; }
+#help .hs b { font-size:19px; } #help .hs p { margin:4px 0 0; font-size:17px; line-height:1.75; color:var(--sub); } #help .hs p b { font-size:17px; color:var(--ink); }
+#help .hs b.g { color:#2C8A57; }
+#help .hnote { margin-top:14px; background:var(--bg); border-radius:12px; padding:12px 14px; font-size:16px; line-height:2; }
+#help .tkb { display:inline-block; font-size:12.5px; font-weight:bold; color:#fff; background:var(--p0); border-radius:4px; padding:0 6px; }
+.steps a.hl { color:var(--a); text-decoration:underline; cursor:pointer; font-size:15.5px; margin-left:6px; white-space:nowrap; }
+@media (max-width: 760px) { .flow4 > i { display:none; } .flow4 > div { min-width:45%; } #help .hbox { padding:16px; } }
+.flow4 > div p { margin:0; min-width:0; }
+#help .hs { border-radius:0; } #help .hs > div { flex:1; min-width:0; }
+#help .hs { white-space:normal; font-size:inherit; font-weight:normal; padding:12px 0; }
+
+/* はじめの画面を締める（2026-10-17） */
+.hero { padding:20px 26px 18px; margin-bottom:14px; border-radius:18px; }
+.hero h2 { font-size:28px; margin:0 0 12px; }
+.hero form input { padding:14px 16px; font-size:19px; }
+.route { display:flex; flex-wrap:wrap; align-items:center; gap:6px 10px; margin-top:12px; font-size:16px; color:rgba(255,255,255,.92); }
+.route span { display:inline-flex; align-items:center; gap:7px; }
+.route b { width:24px; height:24px; border-radius:50%; background:rgba(255,255,255,.22); display:inline-grid; place-items:center; font-size:14px; }
+.route i { font-style:normal; opacity:.6; }
+.route kbd { background:rgba(255,255,255,.95); color:#0F2530; border-color:rgba(255,255,255,.6); font-size:13px; }
+.route a { margin-left:auto; color:#fff; text-decoration:underline; cursor:pointer; white-space:nowrap; }
+.steps { display:none !important; }
+.ptabs { margin:0 0 8px; }
+.pref { border-top-width:3px; padding:12px 14px 12px; }
+.pref h3 { margin-bottom:8px; }
+.rg { padding:8px 8px; margin:4px -4px 0; }
+.rgn { margin-top:2px; padding:7px 10px; }
+.grid { gap:8px; }
+.grid button { padding:10px 6px; box-shadow:0 1px 0 var(--line); }
+@media (max-width: 760px) { .route a { margin-left:0; } }
+
+/* 特定行政庁の札を見やすく */
+.grid button .tkb, .legend .tkb, #help .tkb { font-size:13.5px; font-weight:bold; letter-spacing:.05em; color:#fff; background:#B8461B; border-radius:5px; padding:2px 7px; margin-left:7px; vertical-align:1px; line-height:1.4; }
+.grid button .tkb.lim { background:#fff; color:#B8461B; border:1.5px solid #B8461B; padding:1px 6px; }
+.grid button.tk { font-weight:bold; }
+
+.legend { gap:6px 20px; }
+.legend .tkb.lim { background:#fff; color:#B8461B; border:1.5px solid #B8461B; padding:1px 6px; }
+.badge.tkx { background:#B8461B; color:#fff; }
+.badge.limx { background:#fff; color:#B8461B; border:1.5px solid #B8461B; }
+
+/* 丸囲みの「特」「限」 */
+.tkb, .grid button .tkb, .legend .tkb, #help .tkb { display:inline-grid; place-items:center; width:24px; height:24px; padding:0 !important; border-radius:50%; font-size:14px; font-weight:bold; letter-spacing:0; line-height:1; vertical-align:-3px; background:#B8461B; color:#fff; border:2px solid #B8461B; box-sizing:border-box; }
+.tkb.lim, .grid button .tkb.lim, .legend .tkb.lim, #help .tkb.lim { background:#fff; color:#B8461B; border:2px solid #B8461B; }
+
+/* 市町村のボタン：平らなタイル（左の太い線なし・名前は左寄せ・印は右端） */
+.grid { gap:8px; }
+.grid button { display:flex; align-items:center; justify-content:space-between; gap:6px; text-align:left; min-height:50px; padding:8px 12px 8px 14px; border:1px solid color-mix(in srgb, var(--rl) 28%, transparent); border-left-width:1px; border-radius:12px; background:var(--panel); box-shadow:none; font-weight:normal; transform:none; }
+.grid button.tk { font-weight:normal; }
+.grid button:hover { background:color-mix(in srgb, var(--rl) 12%, var(--panel)); border-color:var(--rl); color:var(--ink); transform:none; box-shadow:0 2px 8px color-mix(in srgb, var(--rl) 25%, transparent); }
+.grid button .tkb { margin-left:auto; flex:none; vertical-align:0; }
+.grid button.hit { border-color:var(--a); border-width:2px; background:var(--a-pale); color:var(--ink); font-weight:bold; }
+
+/* 文字を減らす：説明文は出さない（乗せると出る）。手順は1行 */
+.mdr .lk .main .what { display:none; }
+.mdr .lk { padding:12px 16px; }
+.flow4 { display:none; }
+.how1 { margin-top:10px; font-size:16px; color:var(--sub); }
+
+/* 磨き：札は名前の右に・目次の見出しを詰める・上の箱を2行に */
+.mdr .lk .main { display:flex; flex-wrap:wrap; align-items:center; gap:6px 10px; }
+.mdr .lk .main .tl { order:1; }
+.mdr .lk .main .cks { order:2; margin:0; }
+.mdr .lk .main .ck { font-size:12.5px; padding:1px 8px; }
+.mdl .grp { margin:0 0 4px !important; padding:14px 12px 2px !important; font-size:13.5px; color:var(--faint); letter-spacing:.08em; }
+.mdl .grp:first-child { padding-top:4px !important; }
+.case .line2 { margin-top:8px; }
+.case .how1 { margin-top:4px; font-size:14.5px; }
+.case .how1 kbd { font-size:12.5px; }
+.prog .dots { display:none; }
+
+/* 市町村：箱をやめ、駅の案内のような名前の一覧に */
+.rg { background:none !important; border-radius:0 !important; margin:0 !important; padding:12px 4px !important; border-top:1px solid var(--line) !important; }
+.rg:first-of-type { border-top:0 !important; }
+.rgn { background:none !important; color:var(--rl) !important; font-weight:bold; font-size:16px !important; text-align:left !important; white-space:nowrap; min-width:6.5em; padding:8px 0 0 12px !important; border-left:4px solid var(--rl); border-radius:0 !important; margin-top:2px !important; }
+.grid { gap:2px 6px !important; }
+.grid button { border:0 !important; background:transparent !important; box-shadow:none !important; min-height:42px; padding:6px 10px !important; border-radius:8px !important; justify-content:flex-start !important; font-size:19px !important; color:var(--ink); }
+.grid button:hover { background:color-mix(in srgb, var(--rl) 14%, transparent) !important; color:var(--ink); text-decoration:underline; text-decoration-color:var(--rl); text-underline-offset:5px; }
+.grid button .tkb { margin-left:6px !important; }
+.grid button.hit { background:var(--a-pale) !important; outline:2px solid var(--a); }
+
+/* 調べる と 決まり・窓口 */
+.kind { margin:0 0 10px; }
+.kind .kh { display:flex; align-items:center; gap:8px; font-size:15px; font-weight:bold; color:var(--sub); padding:6px 4px 6px; }
+.kind .ki { width:26px; height:26px; border-radius:50%; display:grid; place-items:center; font-size:14px; }
+.kind.look .ki { background:var(--a-pale); }
+.kind.ask .ki { background:#FBEBD3; }
+.kind .kn { font-weight:normal; color:var(--faint); font-size:13.5px; }
+.kind.ask { margin-top:16px; padding-top:6px; border-top:1px dashed var(--line); }
+.kind.ask .lk { background:color-mix(in srgb, #F4A43A 6%, var(--panel)); }
+.kind.ask .lk .main .tl { color:#8A4B0F; }
+
+/* 目的：左の列をやめ、上に並べるつまみに（別のスクロールなし。送っても上に残る） */
+.md { display:block !important; }
+.mdl { position:sticky !important; top:var(--hdrh, 70px) !important; z-index:20; display:flex !important; flex-direction:row !important; flex-wrap:wrap !important; gap:6px !important; max-height:none !important; overflow:visible !important; padding:10px 12px !important; margin:0 0 14px; border-radius:14px; }
+.mdl .grp { display:none !important; }
+.mdl button { width:auto !important; flex:none !important; padding:6px 12px 6px 6px !important; font-size:16px !important; gap:7px !important; border:1px solid var(--line) !important; border-radius:999px !important; background:var(--panel) !important; }
+.mdl button .n { width:24px !important; height:24px !important; font-size:13px !important; border-radius:50% !important; }
+.mdl button .tx br { display:none; }
+.mdl button .ck { display:none !important; }
+.mdl button.sel { background:var(--pc) !important; color:#fff !important; border-color:var(--pc) !important; }
+.mdl button.sel .n { background:#fff !important; color:var(--pc) !important; }
+.mdl button.sel::before { display:none !important; }
+.mdl button.seen:not(.sel) { border-color:color-mix(in srgb, var(--done) 50%, transparent) !important; }
+.mdl button.none { opacity:.55; }
+
+/* 押せる所を、はっきり：リンクの右に「開く」ボタン・まずここ・目的の見出し */
+.mdr .lk { cursor:pointer; transition:border-color .12s, background .12s, box-shadow .12s; }
+.mdr .lk .main { width:100%; }
+.mdr .lk .main::after { content:"開く ↗"; order:9; margin-left:auto; flex:none; background:var(--a); color:#fff; font-weight:bold; font-size:15px; padding:7px 16px; border-radius:999px; }
+.mdr .lk:hover { border-color:var(--a) !important; background:var(--a-pale) !important; box-shadow:0 3px 10px var(--glow); }
+.mdr .lk:hover .main::after { filter:brightness(1.12); }
+.mdr .lk .main .tl svg { display:none; }
+.kind.ask .lk .main::after { background:#B8691B; }
+.kind.ask .lk:hover { border-color:#B8691B !important; background:#FDF1E1 !important; }
+.mdr .lk.top .main::before { content:"まずここ"; order:0; flex:none; background:#F2C14E; color:#3B2E05; font-weight:bold; font-size:13px; padding:2px 9px; border-radius:6px; }
+.mdl::before { content:"① 調べる目的を選ぶ"; flex:1 1 100%; font-size:14px; font-weight:bold; color:var(--sub); margin:0 0 2px 4px; }
+.mdl button:hover { border-color:var(--pc) !important; box-shadow:0 2px 6px color-mix(in srgb, var(--pc) 30%, transparent); }
+.mdl button.none { opacity:.45; cursor:default; }
+.kind.look .kh::after { content:"② 開いて調べる"; margin-left:auto; font-size:13px; color:var(--faint); font-weight:normal; }
+.mdl::before { font-size:16.5px !important; color:var(--a) !important; }
+.kind.look .kh::after { font-size:15.5px !important; color:var(--a) !important; font-weight:bold !important; }
+
+/* 鬼レビューの直し */
+.kind.ask .ck.mado { display:none; }
+.mdr .tagk, .mdr .first.tagk { font-size:13px !important; padding:1px 7px !important; }
+.case::before { content:"準備：地名地番を貼る・保存先を選ぶ（はじめに1回）"; display:block; font-size:15px; font-weight:bold; color:var(--sub); margin:0 0 8px; }
+.prog .tm { color:var(--faint); font-size:14px; }
+@media (max-width: 760px) {
+  .mdl { flex-wrap:nowrap !important; overflow-x:auto !important; top:0 !important; padding:8px !important; scrollbar-width:thin; }
+  .mdl::before { display:none; }
+  .case .how1, .case .prog .tm { display:none; }
+  .mdr .lk .main::after { padding:6px 12px; font-size:14px; }
+  .kind.look .kh::after { display:none; }
+}
+
+/* 入れ物を1つに：上の帯の検索はやめる（はじめの画面＝市町村・地名地番、市町村の画面＝地名地番） */
+header .sbox { display:none !important; }
+header .wrap { justify-content:flex-start; }
+header .brand { margin-right:auto; }
+@media (max-width: 760px) {
+  header .wrap { flex-wrap:nowrap !important; gap:6px !important; padding-top:8px; padding-bottom:8px; }
+  header .brand small { display:none; }
+  header .brand b { font-size:17px; }
+  header .hbtn { padding:6px 10px !important; font-size:14px !important; min-height:36px; }
+  header #themeBtn { display:none; }
+}
+
+/* リンク：左に種類（大きく）・真ん中に名前と出どころ・右に開く */
+.mdr .lk .main { display:flex !important; flex-wrap:nowrap !important; align-items:center !important; gap:14px !important; }
+.mdr .lk .main::before { display:none !important; }
+.ty { flex:none; width:64px; height:56px; border-radius:12px; display:flex; flex-direction:column; align-items:center; justify-content:center; font-size:13.5px; font-weight:bold; line-height:1.2; }
+.ty .ti { font-size:22px; line-height:1; margin-bottom:3px; }
+.ty-map { background:#DDF1EC; color:#0F6B57; }
+.ty-pdf { background:#FBE3E0; color:#B03A2E; }
+.ty-law { background:#ECE4F7; color:#5B3C94; }
+.ty-ask { background:#FCEBD5; color:#9A5512; }
+.ty-page { background:#E3ECF7; color:#2E5D96; }
+.tb { flex:1; min-width:0; display:flex; flex-direction:column; gap:2px; }
+.tb .tl { font-size:19px !important; font-weight:bold; color:var(--ink) !important; line-height:1.4; }
+.tb .own { font-size:14.5px; color:var(--sub); }
+.tb .cks { display:flex; flex-wrap:wrap; gap:6px; margin-top:4px; }
+.mdr .lk .main::after { order:9; }
+.mdr .tagk { display:none !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .ty { filter:brightness(.8) saturate(1.2); } }
+:root[data-theme="dark"] .ty { filter:brightness(.8) saturate(1.2); }
+@media (max-width: 760px) { .ty { width:52px; height:48px; font-size:12px; } .ty .ti { font-size:18px; } .tb .tl { font-size:17px !important; } .mdr .lk .main { gap:10px !important; } }
+.tb .tl { order:0 !important; } .tb .own { order:1; } .tb .cks { order:2 !important; }
+
+/* 鬼レビュー2 */
+.kind.look .kh::after { display:none !important; }
+.kind.ask .lk .main::after { background:var(--a) !important; }
+.kind.ask .lk { background:var(--panel) !important; }
+.kind .kh { font-size:16px !important; color:var(--ink) !important; }
+.tb .own .unv { color:var(--faint); font-size:13px; }
+
+.ty-proc { background:#FFF3C4; color:#7A5B00; }
+.ty-list { background:#DCEFF7; color:#16627F; }
+#help .tys { display:flex; flex-wrap:wrap; gap:8px; margin:6px 0 10px; }
+#help .tys .ty { width:58px; height:50px; font-size:12.5px; }
+.rgn { font-size:17.5px !important; }
+
+/* 利用規約：書類らしい緊張感（明朝・黒の罫・角を立てる） */
+#terms { background:rgba(10,10,12,.72); }
+#terms .box { border-radius:4px !important; border-top:6px solid #1A1A1A; background:#FFFFFF; color:#1A1A1A; }
+#terms .tx { font-family:"BIZ UDPMincho", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif; font-size:16.5px !important; line-height:1.9 !important; color:#1A1A1A; text-align:justify; padding:26px 34px 10px !important; }
+#terms .tx h2 { font-size:25px !important; font-weight:700; text-align:center; letter-spacing:.12em; padding-bottom:10px; border-bottom:2px solid #1A1A1A; }
+#terms .tx .tv { text-align:center; color:#555 !important; font-size:13.5px !important; margin:8px 0 2px !important; }
+#terms .must { text-align:center; color:#A3161A; font-weight:700; letter-spacing:.3em; font-size:15px; margin:0 0 12px !important; }
+#terms .sum { background:#FFFFFF !important; border:1.5px solid #1A1A1A; border-radius:0 !important; padding:0 0 6px !important; }
+#terms .sum .sumh { display:block; background:#1A1A1A; color:#fff; padding:7px 14px; font-size:15.5px; letter-spacing:.06em; }
+#terms .sum ol { padding:6px 16px 0 36px !important; }
+#terms .sum li { margin:6px 0 !important; }
+#terms .sum li::marker { font-weight:700; }
+#terms .tx b { font-weight:700; }
+#terms .tx h3 { font-size:17px !important; font-weight:700; margin:20px 0 4px !important; padding-left:10px; border-left:4px solid #1A1A1A; }
+#terms .ft { background:#F4F4F2; border-top:1.5px solid #1A1A1A !important; }
+#terms .ft button { background:#1A1A1A !important; color:#fff !important; border-radius:4px !important; letter-spacing:.04em; }
+#terms .ft button:hover { background:#A3161A !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #terms .box { background:#FFFFFF; color:#1A1A1A; } }
+@media (max-width: 760px) { #terms .tx { padding:18px 18px 8px !important; font-size:15.5px !important; } #terms .tx h2 { font-size:21px !important; } }
+#terms .tx > ol { padding-left:26px; margin:0 0 6px; } #terms .tx > ol li { margin:3px 0; }
+@media (max-width: 760px) {
+  .mdr .lk .main::after { content:"↗" !important; width:44px; height:44px; padding:0 !important; display:grid; place-items:center; font-size:20px !important; border-radius:50% !important; }
+  .tb .own .vb { display:none; }
+  .mdr .lk { padding:10px 12px !important; }
+}
+/* 目的のつまみ：法律ごとの見出しを、つまみの列の中に出す */
+.mdl .grp { display:inline-flex !important; align-items:center; flex:1 1 100%; padding:6px 4px 0 !important; margin:4px 0 0 !important; font-size:14.5px !important; font-weight:bold; color:var(--sub) !important; border-top:1px dashed var(--line); }
+.mdl .grp:first-of-type { border-top:0; margin-top:0 !important; padding-top:0 !important; }
+@media (max-width: 760px) { .mdl .grp { flex:none; border-top:0; border-left:1px dashed var(--line); padding:0 4px 0 10px !important; margin:0 !important; font-size:12.5px !important; writing-mode:horizontal-tb; white-space:nowrap; } .mdl .grp:first-of-type { border-left:0; padding-left:2px !important; } }
+.mdl .grp { flex:none !important; border-top:0 !important; border-left:2px solid var(--line); padding:0 2px 0 12px !important; margin:0 0 0 6px !important; font-size:13.5px !important; white-space:nowrap; }
+.mdl .grp:first-of-type { border-left:0; padding-left:2px !important; margin-left:0 !important; }
+
+/* 条文（押すと開く） */
+.jobun { flex:1 1 100%; margin:0 8px 8px; border:1px solid var(--line); border-radius:10px; background:var(--panel); }
+.jobun summary { cursor:pointer; padding:8px 14px; font-size:15.5px; font-weight:bold; color:#5B3C94; list-style:none; }
+.jobun summary::-webkit-details-marker { display:none; }
+.jobun summary::before { content:"▶ "; font-size:12px; }
+.jobun[open] summary::before { content:"▼ "; }
+.jobun .jt { white-space:pre-wrap; font-family:"BIZ UDPMincho", "Yu Mincho", serif; font-size:16px; line-height:1.9; padding:4px 18px 8px; color:var(--ink); border-top:1px dashed var(--line); }
+.jobun .js { font-size:13px; color:var(--sub); padding:0 18px 10px; }
+
+/* 根拠の条（落とさないための表示） */
+.mdl button .tx .lw { font-size:12px; font-weight:normal; margin-left:6px; color:var(--sub); }
+.mdl button.sel .tx .lw { color:rgba(255,255,255,.9); }
+.rh .lwh { margin-left:12px; font-size:15px; font-weight:bold; color:var(--sub); background:var(--bg); border:1px solid var(--line); border-radius:6px; padding:2px 10px; }
+@media (max-width: 760px) { .mdl button .tx .lw { display:none; } }
+
+.tb .tl .lwk { display:inline-block; margin-left:10px; vertical-align:2px; font-size:13.5px; font-weight:bold; color:#5B3C94; background:#F3EEFA; border:1px solid #CDBDE8; border-radius:6px; padding:1px 8px; white-space:nowrap; }
+
+/* この市町村だけの決まり */
+.rules { background:#FFF6DB; border:2px solid #E8B93A; border-radius:14px; padding:12px 14px; margin:0 0 14px; display:flex; flex-direction:column; gap:8px; }
+.rules .rh2 { font-weight:bold; font-size:17px; color:#6B4E00; }
+.rules .rule { display:flex; align-items:center; gap:12px; flex-wrap:wrap; background:#fff; border:1px solid #EAD38A; border-radius:10px; padding:10px 14px; text-decoration:none; color:#2B2100; }
+.rules .rule:hover { border-color:#C99A1A; background:#FFFBEE; }
+.rules .rn { font-weight:bold; font-size:17.5px; }
+.rules .rw { flex:1 1 300px; font-size:15.5px; color:#5A4A1A; line-height:1.6; }
+.rules .rgo { margin-left:auto; font-size:14px; font-weight:bold; color:#fff; background:#B8861B; border-radius:999px; padding:5px 14px; white-space:nowrap; }
+.rules.in { margin:0 0 12px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .rules { background:#3A2F12; border-color:#8A6A1A; } :root:not([data-theme="light"]) .rules .rule { background:#2A2310; color:#F4E7C2; border-color:#6A5520; } :root:not([data-theme="light"]) .rules .rh2, :root:not([data-theme="light"]) .rules .rw { color:#F0DCA0; } }
+.rules.none { background:var(--bg); border:1px dashed var(--line); color:var(--sub); font-size:14.5px; padding:8px 14px; }
+@media (max-width: 760px) { .rules .rule { padding:8px 10px; gap:6px; } .rules .rn { font-size:16px; } .rules .rw { font-size:14.5px; flex-basis:100%; } .rules .rgo { margin-left:0; } }
+@media (max-width: 760px) {
+  .rules:not(.in) .rw { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .rules:not(.in) .rule { padding:8px 10px; }
+  .rules:not(.in) .rgo { margin-left:auto; padding:4px 10px; font-size:13px; }
+  .rules:not(.in) .rh2 { font-size:15.5px; }
+}
+
+/* 地図をまとめて開く */
+.maps { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:10px 14px; margin:0 0 14px; box-shadow:var(--shadow); }
+.maps summary { cursor:pointer; font-weight:bold; font-size:17px; color:#0F6B57; list-style:none; }
+.maps summary::-webkit-details-marker { display:none; }
+.maps summary::after { content:" ▾"; font-size:13px; color:var(--sub); }
+.maps:not([open]) summary::after { content:" ▸"; }
+.mgrid { display:grid; grid-template-columns:repeat(auto-fill, minmax(230px, 1fr)); gap:8px; margin-top:10px; }
+.mcard { display:flex; flex-direction:column; gap:3px; text-decoration:none; color:var(--ink); background:#EEF8F5; border:1px solid #BFE3D8; border-radius:10px; padding:9px 12px; }
+.mcard:hover { border-color:#0F6B57; background:#DDF1EC; }
+.mcard b { font-size:16.5px; line-height:1.35; }
+.mcard b::after { content:" ↗"; color:#0F6B57; }
+.mcard .mo { font-size:13px; color:var(--sub); }
+.mcard .mps { display:flex; flex-wrap:wrap; gap:4px; }
+.mcard .mps i { font-style:normal; font-size:12px; background:#fff; border:1px solid #BFE3D8; border-radius:999px; padding:0 7px; color:#0F6B57; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .mcard { background:#163A37; border-color:#2A6A5E; } :root:not([data-theme="light"]) .mcard .mps i { background:#0F2A27; border-color:#2A6A5E; color:#9FE0CF; } }
+@media (max-width: 760px) { .mgrid { grid-template-columns:1fr 1fr; } .mcard b { font-size:15px; } }
+.devbar { background:#7A1FA2; color:#fff; font-weight:bold; text-align:center; padding:6px 10px; font-size:14px; position:sticky; top:0; z-index:60; }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.webmanifest?v=2"><link rel="apple-touch-icon" href="apple-touch-icon.png?v=2"><link rel="icon" type="image/png" href="favicon.png?v=2"><meta name="theme-color" content="#17708F"><meta name="apple-mobile-web-app-title" content="調べ先リンク">
+</head>
+<body>
+<header><div class="wrap">
+  <button class="brand" id="home" title="はじめの画面へ">
+    <span class="mk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l7-5 7 5v12"/><path d="M9 21v-6h6v6"/></svg></span>
+    <span><b>調べ先リンク集</b><small>建築確認　静岡・山梨・神奈川</small></span>
+  </button>
+  <div class="sbox">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" autocomplete="off" placeholder="市町村の名前を入れる（例：沼津、甲府、藤沢）" aria-label="市町村の名前、または探すことば" aria-controls="sug">
+    <span class="kbd" id="kbd" aria-hidden="true">/</span>
+    <div id="sug" role="listbox"></div>
+  </div>
+  <button class="hbtn" id="memoBtn" title="メモの一覧"><span id="memoIc"></span><span class="lb">メモ</span><span class="cnt" id="memoCnt" hidden></span></button>
+  <button class="hbtn" id="helpBtn" title="使い方">使い方</button>
+  <button class="hbtn law-b" id="lawBtn" title="建築基準関係規定の一覧">関係規定</button>
+  <button class="hbtn sq" id="themeBtn" title="画面の明るさを切り替える" aria-label="画面の明るさ"><span id="themeIc"></span></button>
+</div></header>
+<main class="wrap" id="main" tabindex="-1"></main>
+<footer><div class="wrap" id="foot"></div></footer>
+<div id="help" role="dialog" aria-modal="true" aria-label="使い方"><div class="hbox">
+<div class="hhead"><h2>使い方</h2><button id="helpClose" aria-label="閉じる">×</button></div>
+<div class="hsteps">
+<div class="hs"><span>1</span><div><b>市町村を選ぶ</b><p>はじめの画面の枠に、<b>市町村の名前</b>か<b>地名地番</b>を入れて Enter。<br>県のつまみ（静岡・山梨・神奈川）で切り替えて、一覧から押してもよい。</p></div></div>
+<div class="hs"><span>2</span><div><b>目的を選ぶ</b><p>上に並ぶつまみ（都市計画・道路・災害 …）を押すと、下に調べ先が出ます。<br>上が<b>「🔍 調べる」</b>（地図・図面）、下が<b>「☎ 決まり・窓口」</b>（条例・手続き・問い合わせ先）。</p></div></div>
+<div class="hs"><span>3</span><div><b>「開く」を押して調べる</b><p>リンクの左の札で、何のページかが分かります。開いた目的には <b class="g">✓</b> が付きます。<br>地名地番を枠に貼っておくと、<b>「写す」</b>で地図の検索に貼り付けられます。</p></div></div>
+<div class="hs"><span>4</span><div><b>画面の写しを PDF で残す</b><p>調べた画面を <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> で切り取り、リンク集の画面に戻って <kbd>Ctrl</kbd>+<kbd>V</kbd>。<br>いま選んでいる目的の名前で、<b>保存先のフォルダに PDF</b> で入ります（はじめの1回だけ、保存先を聞かれます）。</p></div></div>
+<div class="hs"><span>!</span><div><b>黄色い枠＝この市町村だけの決まり</b><p>富士市の照合印・狭あい道路の協議・景観の届出など、<b>確認申請の前に済ませる手続き</b>です。期限（30日前 など）に気をつけてください。戸建てにかからないもの（大きな開発だけのもの）は載せていません。</p></div></div>
+<div class="hs"><span>5</span><div><b>関係規定を確かめる</b><p>上の<b>「関係規定」</b>で、建築基準関係規定（19）の一覧と、条文・調べ先が見られます。</p></div></div>
+</div>
+<div class="hnote"><b>リンクの札</b><div class="tys"><span class="ty ty-map"><span class="ti">🗺</span>地図</span><span class="ty ty-pdf"><span class="ti">📄</span>PDF</span><span class="ty ty-list"><span class="ti">📋</span>一覧</span><span class="ty ty-page"><span class="ti">📘</span>説明</span><span class="ty ty-law"><span class="ti">⚖</span>条例</span><span class="ty ty-proc"><span class="ti">📝</span>手続き</span><span class="ty ty-ask"><span class="ti">☎</span>窓口</span></div>
+<b>市町村の印</b>　<span class="tkb">特</span> 特定行政庁　<span class="tkb lim">限</span> 限定特定行政庁（一部の建築物だけ市。ほかは県）<br>
+<b>困ったとき</b>　リンクが開けない・載っていない・間違っているときは、マルホープ 岩崎まで。迷ったら、担当の課で確かめてください。</div>
+</div></div>
+<div id="terms" role="dialog" aria-modal="true" aria-label="利用規約"><div class="box"><div class="tx"><h2>調べ先リンク集　利用規約（案）</h2>
+<p class="tv">2026年10月17日 制定（第5版）</p>
+<p class="must">必ずお読みください</p><div class="sum"><b class="sumh">重要事項　ご利用の前に、次の各事項にご同意ください。</b>
+<ol><li>本サービスは、<b>調査先の所在を案内するもの</b>であり、法令への適合、区域・道路等への該当性その他の事項について<b>判断を行うものではありません</b>。審査上の判断は、審査を行う方が、リンク先の正式な情報に基づいて行ってください。</li>
+<li>当社は、掲載するリンクおよび説明の<b>正確性、最新性および網羅性を保証しません</b>。本サービスに掲載されていない区域、規定および調査先があります。</li>
+<li>当社は、リンク先の内容、リンク先への接続の可否およびリンク先において生じた事象について、責任を負いません。</li>
+<li>入力された地名地番および画面の写しは、<b>利用者の端末内においてのみ</b>取り扱われます。画面の写しの保存の成否は、利用者においてご確認ください。</li>
+<li>本サービスは、当社と利用契約を締結した者およびその役職員に限りご利用いただけます。本サービスの所在（URL）を第三者に開示しないでください。</li></ol></div>
+<h3>第1条（目的および定義）</h3>
+<p>本規約は、株式会社マルホープ（以下「当社」といいます。）が提供する「調べ先リンク集」（以下「本サービス」といいます。）の利用条件を定めるものです。本サービスは、建築確認の審査および申請に際して参照すべき県、市町村、国その他の機関の公式情報の所在を、目的別に整理して案内するものです。</p>
+<h3>第2条（規約への同意）</h3>
+<p>利用者は、本サービスを利用するたびに本規約に同意するものとし、同意しない場合は本サービスを利用することはできません。</p>
+<h3>第3条（利用資格、利用条件および料金）</h3>
+<ol><li>本サービスを利用できる者は、当社と本サービスの利用に関する契約（以下「利用契約」といいます。）を締結した者（以下「契約者」といいます。）およびその役職員に限ります。利用者は、本サービスの所在（URL）を第三者に開示し、または公開してはなりません。</li>
+<li>本サービスの利用期間、利用時間、料金その他の利用条件は、利用契約に定めるところによります。本規約と利用契約の定めが異なる場合は、利用契約の定めが優先するものとします。</li>
+<li>当社は、契約者に事前に通知のうえ、本サービスの内容を変更し、または本サービスの提供を中止することができます。ただし、緊急の保守、障害その他やむを得ない事由がある場合は、事前の通知なく、本サービスの全部または一部の提供を一時停止することができます。</li></ol>
+<h3>第4条（本サービスの性質）</h3>
+<ol><li>本サービスは、法令への適合、区域・道路・規制への該当性、許可・届出の要否その他の事項について<b>判断を行うものではありません</b>。</li>
+<li>本サービスは参考情報の提供にとどまります。建築確認の審査および申請における判断は、リンク先の正式な告示、図面、条例等および所管課への確認に基づいて行うものとし、当該判断に係る責任は、これを行う者が負うものとします。</li>
+<li>本サービスにおける「戸建てで該当しやすい」等の表示は、当社による目安であり、該当性を示すものではありません。</li></ol>
+<h3>第5条（非保証）</h3>
+<ol><li>当社は、本サービスに掲載するリンク、説明および一覧について、その正確性、最新性、網羅性および利用者の特定の目的への適合性を保証しません。</li>
+<li>法令、告示、条例、区域の指定およびリンク先の内容は、変更されることがあります。当社はリンク先への接続の可否を定期的に確認しますが、その内容の変更の有無までは確認していません。</li>
+<li>本サービスに掲載されていない区域、規定および調査先があります。掲載がないことは、当該事項に該当しないことを意味するものではありません。</li></ol>
+<h3>第6条（リンク先の取扱い）</h3>
+<ol><li>リンク先は、それぞれの管理者が管理するものです。当社は、リンク先の内容、リンク先への接続の可否、およびリンク先において利用者に生じた不具合、コンピュータウイルスによる被害その他一切の事象について、責任を負いません。</li>
+<li>本サービスは、県、市町村、国その他の機関とは関係を有せず、これらの機関が本サービスを推奨するものではありません。</li>
+<li>当社は、各リンク先が定めるリンクに関する規定の遵守に努め、リンク先の機関から指摘を受けた場合は、速やかに修正または削除します。事前の許可を要するリンク先については、許可を得るまで掲載しません。</li>
+<li>利用者がリンク先の地図、資料等の画面を複製して利用する場合は、各リンク先の利用規約（出典の表示方法、利用の範囲等）に従うものとします。国土地理院の地図を利用する場合は、「出典：国土地理院」と表示するものとします。</li></ol>
+<h3>第7条（情報の取扱い）</h3>
+<ol><li>利用者が入力した地名地番は、利用者のブラウザのタブ内にのみ保持され、タブを閉じることにより消去されます。当社はこれを取得しません。</li>
+<li>画面の写し（PDF）は、利用者が指定した利用者の端末内のフォルダに保存され、当社はこれを取得しません。保存の失敗または消失について、当社は責任を負いません。重要な記録は、保存されたことを確認のうえ、利用者の定める方法により保管してください。</li>
+<li>本サービスは、表示に際してリンクの一覧を当社が利用する外部の配信基盤（GitHub）から読み込みます。この際、当該基盤において、接続の日時および接続元が記録されることがあります。</li>
+<li>利用者の端末およびブラウザの管理（第三者による画面の閲覧の防止等を含みます。）は、利用者の責任において行うものとします。</li></ol>
+<h3>第8条（禁止事項）</h3>
+<p>利用者は、次の各号に掲げる行為をしてはなりません。</p>
+<ol><li>本サービスの画面、一覧その他の内容を、当社の承諾なく複製し、頒布し、販売し、または改変する行為</li>
+<li>自動化された手段による大量の接続その他、本サービスまたはリンク先に過度の負荷をかける行為</li>
+<li>利用契約に定める利用条件または同意の手続を回避して本サービスを利用する行為</li>
+<li>法令または本規約に違反する行為</li></ol>
+<h3>第9条（免責および責任の制限）</h3>
+<ol><li>当社は、本サービスの利用もしくは利用不能、または本サービスの内容の誤りにより利用者または第三者に生じた損害について、当社の故意または重大な過失による場合を除き、責任を負いません。</li>
+<li>当社が責任を負う場合であっても、その範囲は、直接かつ通常の損害に限られるものとします。</li></ol>
+<h3>第10条（知的財産権）</h3>
+<p>本サービスの画面、一覧および説明文に関する権利は、当社または正当な権利者に帰属します。リンク先の情報に関する権利は、それぞれの権利者に帰属します。</p>
+<h3>第11条（規約の変更）</h3>
+<p>当社は、本規約を変更することがあります。変更後の規約は、本サービスの画面に表示した時点から効力を生じるものとします。</p>
+<h3>第12条（準拠法および管轄裁判所）</h3>
+<p>本規約は、日本法に準拠し、日本法に従って解釈されるものとします。本サービスに関して紛争が生じた場合は、当社の本店所在地を管轄する地方裁判所を第一審の専属的合意管轄裁判所とします。</p>
+<h3>第13条（お問い合わせ）</h3>
+<p>本サービスに関するお問い合わせは、株式会社マルホープ 岩崎までご連絡ください（連絡先は名刺に記載のとおりです）。リンク先の機関からのご連絡も承ります。</p></div><div class="ft"><button class="g" id="termsClose" hidden>閉じる</button><button id="termsOk">重要事項および本規約に同意して利用する</button></div></div></div>
+<div id="zoom" role="dialog" aria-label="画面の写し"><img alt=""></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const SITE = /*SITE*/"";
+const IS_DEV = /*DEV*/false;   // 開発版（/dev/）は、時間の制限なし・上に「開発版」と出す
+let D = /*DATA*/null;      // 中に入っている一覧。最新の一覧（latest.js）が取れたら、そちらを使う
+let ST = {}, ST_AT = "", MUNIS = [], NLINK = 0;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const norm = s => String(s).replace(/[ヶケが]/g, "ケ").replace(/[\s　]/g, "").toLowerCase();
+const isTk = (p, m) => p.tokutei.some(t => t.replace(/（.*/, "") === m);
+const isLim = (p, m) => (p.gentei || []).includes(m);
+function setData(d) {
+  D = d; ST = (d.status && d.status.links) || {}; ST_AT = (d.status && d.status.checked_at) || "";
+  MUNIS = []; D.prefs.forEach((p, i) => Object.keys(p.munis).forEach(m => MUNIS.push({ p: i, m })));
+  NLINK = D.prefs.reduce((n, p) => n + p.pref.length + Object.values(p.munis).reduce((a, xs) => a + xs.length, 0), 0);
+}
+
+/* このブラウザに残すもの（メモ・最近見た・明るさ）。外には送らない */
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } },
+};
+let MEMO = store.get("linkshu-memo", {});      // { "m:静岡県/沼津市": {t, at}, "u:<url>": {t, at, where} }
+let recent = store.get("linkshu-recent", []);
+const canStore = store.set("linkshu-probe", 1);
+const memoKeyM = (p, m) => "m:" + p + "/" + (m || "");
+const memoKeyU = u => "u:" + u;
+function memoSet(k, t, where) {
+  const s = t.trim();
+  if (s) MEMO[k] = { t: s, at: new Date().toISOString().slice(0, 16).replace("T", " "), ...(where ? { where } : {}) }; else delete MEMO[k];
+  const ok = store.set("linkshu-memo", MEMO); memoCount(); return ok;
+}
+function memoCount() { const n = Object.keys(MEMO).length; const c = $("#memoCnt"); c.hidden = !n; c.textContent = n; }
+const muniHasMemo = (pn, m) => MEMO[memoKeyM(pn, m)] || Object.values(MEMO).some(v => v.where === pn + "/" + m);
+
+/* 物件の調べ。地名地番と結果は、このタブの中だけに残す（閉じると消える）。外には送らない */
+const ss = {
+  get(k, d) { try { const v = sessionStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { sessionStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+};
+let CASE = ss.get("linkshu-case", { addr: "", where: "", items: {} });   // items: {目的: {done, note}}
+function caseSave() { ss.set("linkshu-case", CASE); }
+function caseFor(where) { if (CASE.where !== where) CASE = { addr: CASE.where ? "" : CASE.addr, where, items: {}, t0: Date.now() }; if (!CASE.t0) CASE.t0 = Date.now(); caseSave(); }
+const EX = { "都市計画": "例：第一種住居 60/200・準防火", "道路": "例：42条1項1号・幅員6m", "道路台帳": "例：市道○号線・認定幅員6m", "災害": "例：区域外", "地形": "例：高低差 約1m・がけなし",
+  "盛土": "例：宅造区域・許可不要", "白地": "例：該当なし", "中間検査": "例：対象外（告示○号）", "そのほか": "例：景観計画区域" };
+function findMuni(addr) {     // 地名地番から市町村を見つける（いちばん長く合うもの）
+  const a = norm(addr); let best = null;
+  MUNIS.forEach(o => { const n = norm(o.m); const i = a.indexOf(n); if (i >= 0 && (!best || n.length > norm(best.m).length)) best = o; });
+  return best;
+}
+
+/* 画面の写しの置き場。このPCのブラウザの中（IndexedDB）だけ。外には送らない */
+const SHOTS = {};      // { where|目的: [dataURL] }
+const idb = (() => {
+  let db = null;
+  const open = () => new Promise(res => { try { const r = indexedDB.open("linkshu", 1); r.onupgradeneeded = () => r.result.createObjectStore("shots"); r.onsuccess = () => { db = r.result; res(db); }; r.onerror = () => res(null); } catch (e) { res(null); } });
+  const ready = open();
+  const tx = async (mode, fn) => { await ready; if (!db) return null; return new Promise(res => { try { const s = db.transaction("shots", mode).objectStore("shots"); const q = fn(s); q.onsuccess = () => res(q.result); q.onerror = () => res(null); } catch (e) { res(null); } }); };
+  return { get: k => tx("readonly", s => s.get(k)), put: (k, v) => tx("readwrite", s => s.put(v, k)), clear: () => tx("readwrite", s => s.clear()) };
+})();
+const shotKey = k => CASE.where + "|" + k;
+async function shotsLoad(k) { return SHOTS[shotKey(k)] || []; }
+function shrink(blob) {       // 長い辺 1600 画素まで小さくして、JPEG に
+  return new Promise(res => { const u = URL.createObjectURL(blob), im = new Image();
+    im.onload = () => { const s = Math.min(1, 1600 / Math.max(im.width, im.height)), c = document.createElement("canvas"); c.width = Math.round(im.width * s); c.height = Math.round(im.height * s);
+      c.getContext("2d").drawImage(im, 0, 0, c.width, c.height); URL.revokeObjectURL(u); res(c.toDataURL("image/jpeg", .85)); };
+    im.onerror = () => res(null); im.src = u; });
+}
+async function addShot(k, blob) {
+  const d = await shrink(blob); if (!d) { toast("画像を読み込めませんでした"); return; }
+  const r = document.querySelector(`.row[data-k="${CSS.escape(k)}"]`), name = r ? r.querySelector(".rh b").textContent : k;
+  try {
+    const where = await saveShotPdf(name, d);
+    (SHOTS[shotKey(k)] = SHOTS[shotKey(k)] || []).push(d); drawShots(k); markSeen(k, true);
+    toast(`「${name}」の写しを PDF で保存しました：${where}`, "ok");
+  } catch (e) { toast("保存できませんでした（" + (e && e.name === "NotAllowedError" ? "フォルダへの書き込みが許可されていません。保存先を選び直してください" : "ネットにつながっているか確かめてください") + "）"); }
+}
+async function drawShots(k) {
+  const box = document.querySelector(`.shots[data-sk="${CSS.escape(k)}"]`); if (!box) return;
+  const arr = await shotsLoad(k);
+  box.innerHTML = arr.map((d, i) => `<div class="shot" data-zoom="${i}"><img src="${d}" alt="画面の写し ${i + 1}"></div>`).join("");
+}
+let ACTIVE = "";
+function setActive(k) {
+  ACTIVE = k;
+  document.querySelectorAll(".row[data-k]").forEach(r => { r.classList.toggle("sel", r.dataset.k === k); r.classList.remove("active"); });
+  document.querySelectorAll(".mdl [data-sel]").forEach(b => b.classList.toggle("sel", b.dataset.sel === k));
+}
+
+/* 目的ごとの色と絵 */
+const ICON = {
+  "都市計画": ["--c1", '<path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/>'],
+  "道路": ["--c7", '<path d="M8 3 4 21M16 3l4 18"/><path d="M12 4v3M12 10.5v3M12 17v3"/>'],
+  "道路台帳": ["--c3", '<path d="M4 4h11a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3z"/><path d="M4 17a3 3 0 0 1 3-3h11"/>'],
+  "災害": ["--c4", '<path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17h.01"/>'],
+  "地区計画": ["--c1", '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>'],
+  "建築協定": ["--c7", '<path d="M8 3h8l3 3v15H5V3z"/><path d="M9 12h6M9 16h4"/>'],
+  "開発許可": ["--c5", '<path d="M4 20h16M6 20V10l6-5 6 5v10"/><path d="M10 14h4"/>'],
+  "浸水": ["--c4", '<path d="M3 15c3 0 3 2 6 2s3-2 6-2 3 2 6 2"/><path d="M12 3s5 5 5 8a5 5 0 0 1-10 0c0-3 5-8 5-8z"/>'],
+  "下水道": ["--c3", '<path d="M4 6h16M4 12h16M4 18h16"/>'],
+  "浄化槽": ["--c3", '<rect x="4" y="8" width="16" height="10" rx="2"/><path d="M8 8V5h8v3"/>'],
+  "水道": ["--c7", '<path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/>'],
+  "防火": ["--c4", '<path d="M12 3c2 4 6 6 6 11a6 6 0 0 1-12 0c0-3 2-5 3-6 0 2 1 3 2 3 0-3 0-6 1-8z"/>'],
+  "消防": ["--c4", '<path d="M12 3c2 4 6 6 6 11a6 6 0 0 1-12 0c0-3 2-5 3-6 0 2 1 3 2 3 0-3 0-6 1-8z"/>'],
+  "地形": ["--c9", '<path d="m3 20 6-10 4 6 3-4 5 8z"/><path d="M14 6h.01"/>'],
+  "盛土": ["--c5", '<path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/>'],
+  "白地": ["--c6", '<rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 12h16" stroke-dasharray="2 3"/>'],
+  "中間検査": ["--c2", '<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="m9 13 2 2 4-4"/>'],
+  "そのほか": ["--c8", '<circle cx="6" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="18" cy="12" r="1.3"/>'],
+};
+const svg = (d, s = 22, cls = "") => `<svg class="${cls}" width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
+const I = {
+  arrow: '<path d="M7 17 17 7M8 7h9v9"/>',
+  memo: '<path d="M5 3h10l4 4v14H5z"/><path d="M14 3v5h5M8 13h8M8 17h5"/>',
+  pen: '<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="m13.5 6.5 4 4"/>',
+  copy: '<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/>',
+  print: '<path d="M7 9V3h10v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v7H7z"/>',
+  info: '<circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/>',
+  warn: '<path d="M12 9v4M12 17h.01"/><circle cx="12" cy="12" r="9"/>',
+  ok: '<path d="m5 12 5 5 9-10"/>',
+  bld: '<path d="M3 21h18M5 21V9l7-5 7 5v12"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  moon: '<path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/>',
+  hist: '<path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/>',
+  down: '<path d="M12 3v12M7 10l5 5 5-5M5 21h14"/>',
+  up: '<path d="M12 21V9M7 14l5-5 5 5M5 3h14"/>',
+};
+
+function toast(t, kind) { const e = $("#toast"); e.textContent = t; e.className = "toast " + (kind || ""); void e.offsetWidth; e.classList.add("on"); clearTimeout(toast.t); toast.t = setTimeout(() => e.classList.remove("on"), 3500); }
+function copy(t, msg) { (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(() => toast(msg), () => prompt("この内容を写してください", t)); }
+function forMuni(p, m) { return p.pref.filter(x => (!x.only || x.only.includes(m)) && (!x.except || !x.except.includes(m))); }
+const recentChg = d => d && (Date.now() - new Date(d)) / 864e5 <= 60;
+function problem(st) {
+  if (!st || (st.fails || 0) < 2) return "";
+  return st.kind === "top" ? "トップページに移ってしまいます（ページが移ったかもしれません）" : st.kind === "notfound" ? "「ページが見つかりません」と出ます" : "いま開けない状態です";
+}
+function flags(x) {
+  const st = ST[x.url], f = [];
+  const pb = problem(st); if (pb) f.push(pb);
+  if (st && recentChg(st.changed)) f.push(`${st.changed} にページの${st.why === "title" ? "題名" : "中身"}が変わりました。告示・条例の改正かもしれません。開いて確かめてください`);
+  return f.map(t => `<span class="note">${svg(I.warn, 13)}${esc(t)}</span>`).join("");
+}
+const score = x => (x.role || "").startsWith("まず") ? 0 : 1;
+function show(html, focus = true) { document.body.classList.remove("home"); const m = $("#main"); m.innerHTML = html; m.classList.remove("fade"); void m.offsetWidth; m.classList.add("fade"); window.scrollTo(0, 0); if (focus) m.focus({ preventScroll: true }); }
+let LOCKED = false;
+function go(h) { history.replaceState(null, "", h ? "#" + encodeURIComponent(h) : location.pathname + location.search); }
+
+/* 見回り */
+function issues() {
+  const out = [];
+  D.prefs.forEach(p => [[p.name + "（県のページ）", p.pref], ...Object.entries(p.munis)].forEach(([m, xs]) => xs.forEach(x => {
+    const st = ST[x.url]; if (!st) return;
+    const pb = problem(st), ch = recentChg(st.changed), once = (st.fails || 0) === 1;
+    if (pb || ch || once) out.push({ p, m, x, st, pb, ch, once });
+  })));
+  return out;
+}
+function checkBand() {
+  if (!ST_AT) return "";
+  const is = issues(), n = is.filter(o => o.pb).length, c = is.filter(o => o.ch).length, bad = n || c;
+  return `<div class="band ${bad ? "warn" : ""}"><div class="dot">${svg(bad ? I.warn : I.ok, 18)}</div>
+    <div class="tx">${bad ? `中身が変わったページ <b>${c}</b> 件・開けないリンク <b>${n}</b> 件があります` : `${NLINK} 件のリンクは、すべて開けました`}<small>毎日 19 時に、すべてのリンクを見回っています（前回 ${esc(ST_AT)}）</small></div>
+    <button class="pill" data-go="check">見回りの結果</button></div>`;
+}
+function report() {
+  go("見回り");
+  const is = issues();
+  const grp = (t, xs, why) => `<div class="grp"><h3>${esc(t)}<span>${xs.length}</span></h3>${xs.length ? xs.map(o => hit(o.p, o.m, o.x, why(o))).join("") : `<div class="nil">ありません</div>`}</div>`;
+  show(`<div class="crumbs"><button data-go="home">はじめ</button>›<span>見回りの結果</span></div><div class="hits"><h2>リンクの見回りの結果</h2>
+    <p class="lead">${ST_AT ? `前回の見回り ${esc(ST_AT)}。` : ""}開いて確かめ、ページが移っていたら、新しい場所をマルホープへお知らせください。</p>`
+    + grp("開けないリンク（2回続けて）", is.filter(o => o.pb), o => o.pb + `（状態 ${o.st.code}）`)
+    + grp("中身・題名が変わったページ（60日以内）", is.filter(o => o.ch && !o.pb).sort((a, b) => (b.st.changed || "").localeCompare(a.st.changed || "")), o => `${o.st.changed} に${o.st.why === "title" ? "題名" : "中身"}が変わった（いまの題名：${o.st.title || "―"}）`)
+    + grp("今回だけ開けなかった（次の見回りで、もう一度見ます）", is.filter(o => o.once), o => `状態 ${o.st.code}`)
+    + "</div>");
+}
+function hit(p, m, x, extra) {
+  const real = p.munis[m] ? m : "";
+  const mm = MEMO[memoKeyU(x.url)];
+  return `<div class="hit"><div class="w2">${esc(p.name)}　${real ? `<button data-p="${D.prefs.indexOf(p)}" data-m="${esc(real)}">${esc(real)}</button>` : esc(m)}　／ ${esc(x.purpose || "")}</div>
+    <a class="t" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)} ↗</a>${x.what ? `<div class="w2">${esc(x.what)}</div>` : ""}
+    ${extra ? `<div class="w2">${esc(extra)}</div>` : ""}${mm ? `<div class="mtx">${esc(mm.t)}</div>` : ""}</div>`;
+}
+
+/* はじめの画面 */
+/* 市町村の地域（一覧を探しやすくするため） */
+const REGION = {
+  "静岡県": [["伊豆", "熱海市 伊東市 下田市 伊豆市 伊豆の国市 東伊豆町 河津町 南伊豆町 松崎町 西伊豆町 函南町"],
+            ["東部", "沼津市 三島市 富士宮市 富士市 御殿場市 裾野市 清水町 長泉町 小山町"],
+            ["中部", "静岡市 島田市 焼津市 藤枝市 牧之原市 吉田町 川根本町"],
+            ["西部", "浜松市 磐田市 掛川市 袋井市 湖西市 御前崎市 菊川市 森町"]],
+  "山梨県": [["中北", "甲府市 韮崎市 南アルプス市 北杜市 甲斐市 中央市 昭和町"],
+            ["峡東", "山梨市 笛吹市 甲州市"],
+            ["峡南", "市川三郷町 早川町 身延町 南部町 富士川町"],
+            ["富士・東部", "富士吉田市 都留市 大月市 上野原市 道志村 西桂町 忍野村 山中湖村 鳴沢村 富士河口湖町 小菅村 丹波山村"]],
+  "神奈川県": [["横浜・川崎", "横浜市 川崎市"],
+            ["横須賀・三浦", "横須賀市 鎌倉市 逗子市 三浦市 葉山町"],
+            ["湘南", "平塚市 藤沢市 茅ヶ崎市 秦野市 伊勢原市 寒川町 大磯町 二宮町"],
+            ["県央", "相模原市 厚木市 大和市 海老名市 座間市 綾瀬市 愛川町 清川村"],
+            ["県西", "小田原市 南足柄市 中井町 大井町 松田町 山北町 開成町 箱根町 真鶴町 湯河原町"]],
+};
+function regions(p) {     // 地域ごとの市町村の並び。地域に入っていない市町村は「そのほか」に
+  const ms = Object.keys(p.munis), used = new Set(), out = [];
+  (REGION[p.name] || []).forEach(([r, s]) => { const xs = s.split(" ").filter(m => p.munis[m]); xs.forEach(m => used.add(m)); if (xs.length) out.push([r, xs]); });
+  const rest = ms.filter(m => !used.has(m)); if (rest.length) out.push(["そのほか", rest]);
+  return out;
+}
+
+let PT = (() => { const v = store.get("linkshu-pt", 0); return typeof v === "number" ? v : 0; })();
+function setPT(i) {
+  PT = i; store.set("linkshu-pt", i);
+  document.querySelectorAll(".ptabs [data-pt]").forEach(b => b.classList.toggle("on", +b.dataset.pt === i));
+  document.querySelectorAll(".pref[data-pi]").forEach(g => g.classList.toggle("off", +g.dataset.pi !== i));
+}
+function narrow() {     // はじめの枠に入れた字で、一覧を絞る（地名地番を貼ったときは、市町村の名前の部分で）
+  const v = norm(($("#startA") || {}).value || ""), bs = [...document.querySelectorAll(".grid button[data-nm]")];
+  const o = v ? findMuni(v) : null, key = o ? norm(o.m) : v.replace(/^(静岡県|山梨県|神奈川県)/, "");
+  let hit = 0;
+  bs.forEach(b => { const on = !key || b.dataset.nm.includes(key) || (o && b.dataset.nm === norm(o.m)); b.classList.toggle("dim", !on); b.classList.toggle("hit", !!key && on); if (on) hit++; });
+  document.querySelectorAll(".rg").forEach(g => g.classList.toggle("dim", !!key && !g.querySelector("button:not(.dim)")));
+  document.querySelectorAll(".pref").forEach(g => g.classList.toggle("dim", !!key && !g.querySelector(".rg:not(.dim)")));
+  document.body.classList.toggle("finding", !!key);
+  const msg = $("#startMsg"); if (msg) msg.innerHTML = key ? `<span class="msg">${hit ? `${hit} 件。${hit === 1 ? "Enter で開きます" : "下から選んでください"}` : "見つかりません"}</span>` : "";
+}
+function home() {
+  if (LOCKED) return;   // 時間外・期間外は、どのボタンからも中に入れない
+  if (PT >= D.prefs.length) PT = 0;
+  go(""); setTimeout(() => { const a = $("#startA"); if (a && !/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)) a.focus(); }, 50);
+  const rc = recent.filter(r => D.prefs[r.p] && D.prefs[r.p].munis[r.m]);
+  const memoed = MUNIS.filter(o => muniHasMemo(D.prefs[o.p].name, o.m));
+  show(`<div class="hero"><h2>どこの物件を調べますか？</h2>
+      <p>都市計画・建築基準法の道路・災害・盛土・中間検査を、どこで調べるか。県と市町村の公式のページだけを、目的ごとにまとめました。</p>
+      <form id="startF" autocomplete="off"><input id="startA" placeholder="市町村の名前、または地名地番を貼る（例：沼津市大手町1丁目1番1）" aria-label="市町村の名前、または地名地番" value="${esc(CASE.addr || "")}"><button type="submit">調べはじめる</button></form>
+      <div class="route"><span><b>1</b>入れて Enter</span><i>›</i><span><b>2</b>目的を選んで開く</span><i>›</i><span><b>3</b>切り取って <kbd>Ctrl</kbd>+<kbd>V</kbd> で PDF 保存</span><a data-help="1">くわしい使い方</a></div><div id="startMsg"></div>
+      <div class="stats"><div><b>${D.prefs.length}</b><span>県</span></div><div><b>${MUNIS.length}</b><span>市町村</span></div><div><b>${NLINK}</b><span>公式のページ</span></div></div>
+      <svg class="deco" width="240" height="160" viewBox="0 0 24 16" fill="none" stroke="#fff" stroke-width=".5"><path d="M1 15h22M3 15V8l5-4 5 4v7M13 15V6l4-3 4 3v9M6 15v-4h4v4M15 9h4M15 12h4"/></svg></div>`
+    + ""
+    + checkBand()
+    + (rc.length ? `<div class="shelf"><span>${svg(I.hist, 15)}最近見た</span>${rc.map(r => `<button class="pill" data-p="${r.p}" data-m="${esc(r.m)}">${esc(r.m)}</button>`).join("")}</div>` : "")
+    + (memoed.length ? `<div class="shelf"><span>${svg(I.memo, 15)}メモのある市町村</span>${memoed.map(o => `<button class="pill memo" data-p="${o.p}" data-m="${esc(o.m)}">${esc(o.m)}</button>`).join("")}</div>` : "")
+    + `<div class="ptabs" role="tablist">${D.prefs.map((p, i) => `<button role="tab" data-pt="${i}" class="${i === PT ? "on" : ""}" style="--pc:var(--p${i % 3})">${esc(p.name)}<small>${Object.keys(p.munis).length}</small></button>`).join("")}</div>`
+    + D.prefs.map((p, i) => `<div class="pref ${i === PT ? "" : "off"}" data-pi="${i}" style="--pc:var(--p${i % 3})"><h3>${esc(p.name)}<span class="n">${Object.keys(p.munis).length} 市町村</span><button class="pill" data-p="${i}" data-m="">県全体のページ</button></h3>
+      ${regions(p).map(([r, xs], ri) => `<div class="rg" style="--rb:var(--r${ri % 5});--rl:var(--rl${ri % 5})"><div class="rgn">${esc(r)}</div><div class="grid">${xs.map(m => `<button class="${isTk(p, m) ? "tk" : ""}" data-p="${i}" data-m="${esc(m)}" data-nm="${esc(norm(m))}" title="${isTk(p, m) ? "特定行政庁" : ""}">${esc(m)}${isTk(p, m) ? '<span class="tkb" title="特定行政庁">特</span>' : isLim(p, m) ? '<span class="tkb lim" title="限定特定行政庁">限</span>' : ""}</button>`).join("")}</div></div>`).join("")}</div>`).join("")
+    + `<div class="legend"><span><span class="tkb">特</span>＝特定行政庁　　<span class="tkb lim">限</span>＝限定特定行政庁（一部の建築物だけ市。ほかは県）</span></div>`, false);
+  document.body.classList.add("home");
+  const a = $("#startA"); if (a) { a.addEventListener("input", narrow); narrow(); }
+}
+
+/* ページがないときの言葉（目的ごと） */
+const EMPTY = {
+  "浸水": "特定都市河川の流域の指定は、見つかっていません（流域でなければ、雨水浸透阻害行為の許可は要りません）。迷うときは県の河川の担当課で確かめてください",
+  "建築協定": "認可された建築協定の一覧は、公開されていません。協定の区域かどうかは、建築の担当課で確かめてください",
+  "下水道": "下水道の案内のページが見つかっていません。公共下水道があるか・処理区域かは、下水道の担当課で確かめてください",
+  "地区計画": "地区計画の案内のページが見つかっていません。都市計画の担当課で確かめてください",
+};
+/* 市町村の画面 */
+const KEN_FIRST = new Set(["災害", "盛土", "白地", "地形"]);
+/* 見せ方を整える（データは変えない） */
+function shortLabel(s) {      // かっこの中の補足は外す（全部は、乗せたときに出す）
+  let v = String(s || "").replace(/（[^（）]*）$/, "").replace(/\([^()]*\)$/, "").trim();
+  { const w = v.replace(/^(岳南広域都市計画|御殿場小山広域都市計画|中遠広域都市計画|[^\s]{2,6}広域都市計画)/, ""); if (w.length >= 4) v = w; }
+  return v.length > 42 ? v.slice(0, 40) + "…" : (v || s);
+}
+const NOTE_NG = /開けた|開いて|確かめ|検索|見当た|要約|題名|verified|一覧のページで|ページ自体|ページは開いて|記載なし|書かれていない|書かれている|と書|ページに|このページ|指示|見込み|未確認|が出る|件出|出る$/;
+function shortNote(s, x) {       // 調べたときの記録は出さず、使う人に要ることだけ
+  const parts = String(s || "").replace(/^条例化：[^。]*。?/, "").split(/(?<=。)|・(?=[^\d])/).map(x => x.trim()).filter(Boolean);
+  const keep = parts.filter(x => !NOTE_NG.test(x));
+  const v = (keep.length ? keep : []).join(" ").replace(/。$/, "");
+  if (!v && x && x.purpose === "地区計画" && /条例/.test(x.label || "")) return "例規集のページ。題名で探すと、条例の本文（対象の地区）が出ます";
+  return v.length > 70 ? v.slice(0, 68) + "…" : v;
+}
+function chips(x) {           // 大事なことを、先に札で
+  const w = String(x.what || ""), out = [];
+  const a = w.match(/条例化：あり（([^）]*)）/);
+  const isJ = x.purpose === "地区計画" && /条例/.test(x.label || "") && !/案の作成手続/.test(x.label || "");
+  if (a || isJ) { const n = ((a ? a[1] : "") + " " + (x.label || "") + " " + w).match(/(\d+)\s*(地区|本)/); out.push(`<span class="ck ok">条例あり＝審査の対象${n ? "　" + n[1] + n[2] : ""}</span>`); }
+  else if (x.purpose === "地区計画" && !/条例化/.test(w) && !/例規/.test(x.label || "")) out.push(`<span class="ck c">地区計画の中身（計画書・計画図）</span>`);
+  else if (/条例化：なし/.test(w)) out.push(`<span class="ck no">条例なし</span>`);
+  else if (/条例化：確かめられない/.test(w)) out.push(`<span class="ck warn">条例は未確認</span>`);
+  if (/PDF/.test(x.label + w)) out.push(`<span class="ck">PDF</span>`);
+  if (/GIS|マップ|地図/.test(x.label)) out.push(`<span class="ck">地図</span>`);
+  if (/窓口|閲覧は/.test(w)) out.push(`<span class="ck mado">窓口で確かめる</span>`);
+  return out.join("");
+}
+/* 調べるページ と 決まり・窓口 を分ける（名前で見分ける。データは変えない） */
+const LOOK_RE = /マップ|GIS|ＧＩＳ|地図|総括図|台帳|計画図|計画書|ハザード|インターネット公開|閲覧|図面|網図|区域図|指定図|道路図|一覧|図（|図\(|図$/;
+const ASK_RE = /条例|例規|告示|相談|について|手続|申請|届出|窓口|担当|案内|問い?合わ?せ|事前協議|取扱|要綱|指針|手引|の流れ|制度|概要|火災予防|課$|課）|係$/;
+const isAsk = x => { const ty = linkType(x)[0]; return ty === "law" || ty === "ask" || ty === "proc" ? true : ty === "map" || ty === "pdf" || ty === "list" ? false : !LOOK_RE.test(x.label) && ASK_RE.test(x.label); };
+function twoKinds(all, p, m) {
+  // 並べる順：GIS・地図のサイト → そのほか → PDF（「まずここ」とは決めない）
+  const rank = x => /GIS|ＧＩＳ|マップ|MAP|地図|わが街|ガイド/i.test(x.label) && !/PDF/.test(x.label) ? 0 : /PDF/.test(x.label + (x.what || "")) ? 2 : 1;
+  const look = all.filter(o => !isAsk(o.x)).map((o, i) => [o, i]).sort((A, B) => (A[0].x.daicho ? 9 : 0) - (B[0].x.daicho ? 9 : 0) || rank(A[0].x) - rank(B[0].x) || A[1] - B[1]).map(z => z[0]), ask = all.filter(o => isAsk(o.x));
+  const sec = (cls, ic, h, xs, top) => xs.length ? `<div class="kind ${cls}"><div class="kh"><span class="ki">${ic}</span>${h}<span class="kn">${xs.length}</span></div>${xs.map((o, i) => linkBlock(o, p, m, top && i === 0)).join("")}</div>` : "";
+  return sec("look", "🔍", "調べる（地図・図面）", look, false) + sec("ask", "☎", "決まり・窓口（条例・手続き・問い合わせ先）", ask, false);
+}
+/* リンクの種類（名前と場所から決める。データは変えない） */
+/* リンクごとの根拠の条（名前と説明から決める。データは変えない） */
+const LAW_RULES = {
+  "都市計画": [[/区域区分|市街化区域|市街化調整区域/, "都計法7条"], [/./, "都計法8条"]],
+  "開発許可": "multi",
+  "地区計画": [[/条例/, "基準法68条の2", "L"], [/届出|届け出/, "都計法58条の2"], [/./, "都計法12条の4"]],
+  "白地": [[/./, "基準法52・53条"]],
+  "道路": [[/位置指定|1項5号|第１項第５号|第1項第5号/, "基準法42条1項5号"], [/2項|２項|第2項/, "基準法42条2項"], [/43条|ただし書/, "基準法43条"], [/./, "基準法42条"]],
+  "地形": [[/地理院/, ""], [/./, "基準法40条（条例）"]],
+  "防火": [[/22条|２２条|屋根不燃/, "基準法22条"], [/防火地域|準防火/, "基準法61条"], [/./, "基準法22条"]],
+  "災害": [[/土砂/, "土砂法9条"], [/急傾斜/, "急傾斜地法3条"], [/災害危険区域/, "基準法39条"], [/./, ""]],
+  "建築協定": [[/./, "基準法69条"]],
+  "道路台帳": [[/./, "道路法28条"]],
+  "盛土": [[/./, "盛土規制法12・30条"]],
+  "浸水": [[/浸水被害防止区域/, "特定都市河川法56条"], [/./, "特定都市河川法30条"]],
+  "下水道": [[/./, "下水道法10条"]],
+  "浄化槽": [[/届/, "浄化槽法5条"], [/./, "浄化槽法3条の2"]],
+  "水道": [[/./, "水道法16条"]],
+  "消防": [[/警報器/, "消防法9条の2"], [/./, "消防法9条"]],
+  "中間検査": [[/./, "基準法7条の3"]],
+};
+function lawOf(x) {
+  const s = x.label + " " + (x.what || "");
+  if (LAW_RULES[x.purpose] === "multi") {   // 開発許可：29・43・53条のうち、当てはまるものを全部
+    const a = [];
+    if (/29条|開発行為|開発許可|開発の許可|開発事業/.test(s)) a.push("29");
+    if (/43条|調整区域内.*建築|建築等の許可|建築行為/.test(s)) a.push("43");
+    if (/53条|都市計画施設/.test(s)) a.push("53");
+    return "都計法" + (a.length ? a.join("・") : "29") + "条";
+  }
+  if (x.daicho) return "道路法28条";
+  for (const [re, v, only] of (LAW_RULES[x.purpose] || [])) if (re.test(only === "L" ? x.label : s)) return v;
+  return "";
+}
+/* この市だけの決まり（忘れやすい手続き）。purpose が「決まり」のもの */
+function rulesOf(p, m) {
+  if (!m) return [];
+  return [...(p.munis[m] || []), ...p.pref.filter(x => x.only && x.only.includes(m))].filter(x => x.purpose === "決まり");
+}
+function ruleCard(x, compact) {
+  return `<a class="rule" href="${esc(x.url)}" target="_blank" rel="noopener" title="${esc(x.label)}"><span class="rn">${esc(x.name || x.label)}</span>${compact ? "" : `<span class="rw">${esc(x.what || "")}</span>`}<span class="rgo">根拠 ↗</span></a>`;
+}
+function linkType(x) {
+  const s = x.label + " " + x.url, w = x.label + (x.what || "");
+  if (/\.pdf($|\?)/i.test(x.url) || /PDF/.test(x.label + (x.what || ""))) return ["pdf", "📄", "PDF", "資料を開く"];
+  if (/GIS|ＧＩＳ|マップ|MAP|地図|わが街|ガイド|gis|map|chiriin/i.test(s) && !/案内|について|の概要|運用を開始|確かめ方/.test(x.label)) return ["map", "🗺", "地図", "地図で探す"];
+  if (/相談|窓口|問い?合わ?せ|課$|課）|係$|担当/.test(x.label)) return ["ask", "☎", "窓口", "聞く先を見る"];
+  if (/条例|例規|規則/.test(x.label)) return ["law", "⚖", "条例", "決まりを読む"];
+  if (/窓口/.test(w)) return ["ask", "☎", "窓口", "聞く先を見る"];
+  if (/申請|申込|申し込|届出|届け出|届$|様式|書式|手続|工事|事前協議|接続|切替/.test(x.label)) return ["proc", "📝", "手続き", "出し方を見る"];
+  if (/一覧|供用開始区域|規制区域|警戒区域|区域図|指定区域|告示|名簿|事業者|管轄|所在地|路線/.test(x.label)) return ["list", "📋", "一覧", "区域・指定を見る"];
+  return ["page", "📘", "説明", "説明を読む"];
+}
+function cleanName(s, own) {
+  let v = /^(山梨県|静岡県|神奈川県|国土地理院)(GIS|ＧＩＳ|地図|統合型)/.test(s) ? String(s) : String(s).replace(/^(山梨県|静岡県|神奈川県|国土地理院)\s*/, "");
+  if (own && !/^(山梨県|静岡県|神奈川県|国土地理院)(GIS|ＧＩＳ|地図|統合型)/.test(v)) v = v.replace(new RegExp("^" + own.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\s*"), "");
+  v = v.trim();
+  return !v || /^(内|の|における|全域|管内|下の)/.test(v) ? s : v;   // 「静岡県内の…」を「内の…」にしない
+}
+function linkBlock(o, p, m, first) {
+  const x = o.x, mm = MEMO[memoKeyU(x.url)];
+  const kt = o.ken && (m || x.src) ? `<span class="first tagk">${esc(x.src || p.name)}</span>` : "";
+  return `<div class="lkw"><div class="lk ${first ? "top" : ""}" data-u="${esc(x.url)}">
+    <a class="main" href="${esc(x.url)}" target="_blank" rel="noopener" title="${esc(x.label + (shortNote(x.what) ? "\n" + shortNote(x.what) : ""))}">${(() => { const ty = linkType(x), own = x.src || (o.ken ? p.name : (m || p.name)), ck = chips(x).replace(/<span class="ck( mado)?">(PDF|地図|窓口で確かめる)<\/span>/g, "");
+      return `<span class="ty ty-${ty[0]}"><span class="ti">${ty[1]}</span>${ty[2]}</span><span class="tb"><span class="tl">${esc(cleanName(shortLabel(x.label), own))}${lawOf(x) ? `<span class="lwk">${esc(lawOf(x))}</span>` : ""}</span><span class="own">${esc(own)}${ty[3] ? `<span class="vb">　${ty[3]}</span>` : ""}${x.verified === false ? `<span class="unv">　中身は未確認</span>` : ""}</span>${ck ? `<span class="cks">${ck}</span>` : ""}</span>`; })()}
+      ${shortNote(x.what, x) ? `<div class="what">${esc(shortNote(x.what, x))}</div>` : ""}</a>
+    <div class="acts"><button class="act" data-copy="${esc(x.url)}" title="このページの場所を写す（質疑書などに貼れる）" aria-label="場所を写す" data-lb="写す">${svg(I.copy, 17)}</button>
+      <button class="act ${mm ? "has" : ""}" data-lmemo="${esc(x.url)}" title="このページにメモを書く" aria-label="メモ" data-lb="メモ">${svg(I.pen, 17)}</button></div></div>
+    ${x.jobun ? `<details class="jobun"><summary>条文を見る</summary><div class="jt">${esc(x.jobun.text)}</div><div class="js">出典：${esc(x.jobun.source)}${x.jobun.version ? "（" + esc(x.jobun.version) + "）" : ""}${x.jobun.exact === false ? "　※写しに怪しいところがあります。原文で確かめてください" : ""}</div></details>` : ""}    ${flags(x) ? `<div style="flex-basis:100%;padding:0 8px 4px">${flags(x)}</div>` : ""}${mm ? memoBox(x.url, mm, p.name + "/" + (m || "")) : ""}</div>`;
+}
+function memoBox(url, mm, where) {
+  return `<div class="lmemo"><textarea data-mk="${esc(memoKeyU(url))}" data-where="${esc(where)}" placeholder="このページのメモ（例：区域図は PDF の 3 枚目）" aria-label="このページのメモ">${esc(mm ? mm.t : "")}</textarea><div class="st">${mm ? `${esc(mm.at)} に保存` : "書くと、自動で保存します"}</div></div>`;
+}
+function city(pi, m) {
+  if (LOCKED) return;   // 時間外・期間外は、どのボタンからも中に入れない
+  const p = D.prefs[pi];
+  go(p.name + (m ? "/" + m : ""));
+  if (m) { PT = pi; store.set("linkshu-pt", pi); }
+  if (m) { recent = [{ p: pi, m }, ...recent.filter(r => !(r.p === pi && r.m === m))].slice(0, 8); store.set("linkshu-recent", recent); }
+  const own = m ? p.munis[m] || [] : p.pref, ken = m ? forMuni(p, m) : [];
+  const tk = m && isTk(p, m);
+  const LAWOF = Object.fromEntries(D.purposes.map(x => [x[0], x[4] || ""]));
+  const list = D.purposes.map(([k, t, sub]) => {
+    const a = own.filter(x => (x.purpose || "そのほか") === k).map(x => ({ x, ken: !m }));
+    const b = ken.filter(x => (x.purpose || "そのほか") === k).map(x => ({ x, ken: true }));
+    const rk = x => k !== "地区計画" ? score(x) : (/条例化：(なし|確かめられない)/.test(x.what || "") ? 3 : (/条例/.test(x.label || "") || /例規/.test(x.label || "")) ? 2 : (/GIS|マップ|地図/.test(x.label || "") ? 1 : 0));
+    const all = (KEN_FIRST.has(k) ? [...b, ...a] : [...a, ...b]).map((o, i) => ({ ...o, i })).sort((u, v) => (u.x.daicho ? 9 : 0) - (v.x.daicho ? 9 : 0) || rk(u.x) - rk(v.x) || u.i - v.i).filter((o, i, xs) => xs.findIndex(z => z.x.url === o.x.url) === i);  // 同じページは1回だけ
+    return { k, t, sub, all };
+  }).filter(o => o.all.length || !["そのほか", "白地"].includes(o.k));
+  const rows = list.map(({ k, t, sub, all }, idx) => {
+    const [cv, ic] = ICON[k] || ICON["そのほか"];
+    const it = CASE.items[k] || {};
+    const head = `<div class="rh"><span class="no" title="キーボードの ${idx + 1} で開く">${idx + 1}</span><b>${esc(t)}</b>${LAWOF[k] ? `<span class="lwh">${esc(LAWOF[k])}</span>` : ""}<span class="sp"></span><span class="seen">${svg(I.ok, 15)}<span class="sv">開いた</span></span>
+</div>`;
+    if (!all.length) return `<div class="row empty" data-k="${esc(k)}" id="p${idx}" style="--pc:var(${cv})">${head}<div class="body none">${esc(EMPTY[k] || "公式のページが見つかっていません。担当の課で確かめてください")}</div><div class="shots" data-sk="${esc(k)}"></div>${idx < list.length - 1 ? `<div class="nextp"><button data-next="${idx + 1}">次へ：${esc(list[idx + 1].t)} ▶</button></div>` : ""}</div>`;
+    const [f, ...rest] = all;
+    const opened = rest.some(o => MEMO[memoKeyU(o.x.url)]);
+    return `<div class="row ${it.seen || it.saved ? "is-seen" : ""}" data-k="${esc(k)}" data-first="${esc(f.x.label)}" id="p${idx}" style="--pc:var(${cv})">${head}<div class="body">${(() => { const rs = rulesOf(p, m).filter(x => x.rule_for === k); return rs.length ? `<div class="rules in"><div class="rh2">⚠ この市町村だけの決まり</div>${rs.map(x => ruleCard(x, false)).join("")}</div>` : ""; })()}${twoKinds([f, ...rest], p, m)}</div><div class="shots" data-sk="${esc(k)}"></div>${idx < list.length - 1 ? `<div class="nextp"><button data-next="${idx + 1}">次へ：${esc(list[idx + 1].t)} ▶</button></div>` : ""}</div>`;
+  }).join("");
+  const toc = list.map(({ k, t, all }, idx) => `<a href="#p${idx}" data-jump="p${idx}" class="${all.length ? "" : "off"}" style="--pc:var(${(ICON[k] || ICON["そのほか"])[0]})"><i></i>${esc(t)}</a>`).join("");
+  caseFor(p.name + "/" + (m || ""));
+  const caseBox = `<div class="case" id="case"><div class="r1"><label for="caseA">地名地番</label>
+      <input id="caseA" value="${esc(CASE.addr)}" placeholder="地名地番（貼っておくと、すぐ写せます）" autocomplete="off">
+      <button class="btn" data-go="copyAddr">${svg(I.copy, 15)}写す</button></div>
+
+    <div class="line2"><div class="prog" id="prog"></div><span class="dir" id="dirName"></span></div>
+    <div class="how1">写す：<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> → ここで <kbd>Ctrl</kbd>+<kbd>V</kbd> → PDF 保存</div><div class="flow4"><div><span>1</span><p>左の目次で<br><b>ページを開く</b></p></div><i>▶</i><div><span>2</span><p><kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd><br>で<b>切り取る</b></p></div><i>▶</i><div><span>3</span><p>この画面に戻り<br><kbd>Ctrl</kbd>+<kbd>V</kbd></p></div><i>▶</i><div class="ok"><span>✓</span><p>保存先に<br><b>PDF で保存</b></p></div></div></div>`;
+  const G = Object.fromEntries(D.purposes.map(x => [x[0], x[3] || ""]));
+  const navs = list.map(({ k, t, all }, idx) => { const it = CASE.items[k] || {};
+    const gh = idx === 0 || G[list[idx - 1].k] !== G[k] ? `<div class="grp">${esc(G[k] || "")}</div>` : "";
+    return gh + `<button data-sel="${esc(k)}" class="${it.seen || it.saved ? "seen" : ""} ${all.length ? "" : "none"}" ${all.length ? "" : 'title="この市町村では、載せている調べ先がありません"'} style="--pc:var(${(ICON[k] || ICON["そのほか"])[0]})"><span class="n">${idx + 1}</span><span class="tx">${esc(t)}</span><span class="ck">${svg(I.ok, 18)}</span></button>`; }).join("");
+  const keys = `<div class="keys">数字キーで開く：${list.map((o, i) => `<b>${i + 1}</b> ${esc(o.t.replace("建築基準法の", ""))}`).join("　")}</div>`;
+  // 地図だけを、まとめて1か所に（どの目的で使う地図かを添える）
+  const mapsBox = (() => {
+    const mp = new Map();
+    list.forEach(({ k, t: tt, all }) => all.forEach(o => { if (linkType(o.x)[0] !== "map") return;
+      const u = o.x.url; if (!mp.has(u)) mp.set(u, { x: o.x, ken: o.ken, ps: [] }); const e = mp.get(u); if (!e.ps.includes(tt)) e.ps.push(tt); }));
+    const ms = [...mp.values()].sort((A, B) => B.ps.length - A.ps.length);
+    if (!ms.length) return "";
+    return `<details class="maps" open><summary>🗺 地図をまとめて開く（${ms.length}）</summary><div class="mgrid">${ms.map(e => { const own = e.x.src || (e.ken ? p.name : (m || p.name));
+      return `<a class="mcard" href="${esc(e.x.url)}" target="_blank" rel="noopener" data-u="${esc(e.x.url)}" title="${esc(e.x.label)}"><b>${esc(cleanName(shortLabel(e.x.label), own))}</b><span class="mo">${esc(own)}</span><span class="mps">${e.ps.map(s => `<i>${esc(s)}</i>`).join("")}</span></a>`; }).join("")}</div></details>`;
+  })();
+  const hold = m && (p.hold || []).includes(m)
+    ? `<div class="holdn">${svg(I.info, 20)}<div><b>${esc(m)}</b>のホームページは、リンクに事前の許可が要るため、許可をいただくまで載せていません。${esc(p.name)}・国などのページを載せています。${esc(m)}のページは、${esc(m)}のホームページから直接たどってください。</div></div>` : "";
+  const sub2 = m ? `<div class="sub2">建築基準法の道路・中間検査は <b>${esc(tk ? m : p.name)}</b>${tk ? "" : "（県の所管）"}</div>` : `<div class="sub2">県全体で使うページ</div>`;
+  const mk = memoKeyM(p.name, m), cm = MEMO[mk];
+  const cmemo = `<div class="cmemo" id="cmemo" ${cm ? "" : "hidden"}><div class="h">${svg(I.memo, 15)}${esc(m || p.name)}のメモ<span class="st" id="cmSt">${cm ? `${esc(cm.at)} に保存` : "このPCのブラウザだけに残ります"}</span></div>
+    <textarea data-mk="${esc(mk)}" placeholder="気づいたことを書いておけます（例：指定道路図は窓口で確認。担当は建築指導課）" aria-label="この市町村のメモ" ${canStore ? "" : "disabled"}>${esc(cm ? cm.t : "")}</textarea></div>`;
+  show(`<div class="crumbs"><button data-go="home">はじめ</button>›<span>${esc(p.name)}</span>${m ? `›<span>${esc(m)}</span>` : ""}</div>
+    <button class="back2" data-go="home">◀ ほかの市町村を選ぶ</button>
+    <div class="ttl"><h2>${esc(m || p.name + "（県全体）")}</h2>${(() => { const ri = m ? regions(p).findIndex(([, xs]) => xs.includes(m)) : -1, rn = ri >= 0 ? regions(p)[ri][0] : "";
+      return `<span class="pchip" style="--pc:var(--p${pi % 3})">${esc(p.name)}</span>${rn ? `<span class="rchip" style="--rb:var(--r${ri % 5});--rl:var(--rl${ri % 5})">${esc(rn)}</span>` : ""}`; })()}${tk ? `<span class="badge tkx">特定行政庁</span>` : m && isLim(p, m) ? `<span class="badge limx">限定特定行政庁</span><span class="note2">指定道路図は${esc(m)}・中間検査は${esc(p.name)}</span>` : m ? `<span class="note2">道路・中間検査は${esc(p.name)}</span>` : ""}<span class="sp"></span>
+      ${cm ? "" : `<button class="pill" data-go="cmemo">${svg(I.pen, 15)}メモを書く</button>`}<button class="pill" data-go="copy">${svg(I.copy, 15)}場所を写す</button><button class="pill" data-go="print">${svg(I.print, 15)}印刷</button></div>
+    ${sub2}${hold}${(() => { const rs = rulesOf(p, m); return rs.length ? `<div class="rules"><div class="rh2">⚠ この市町村だけの決まり（確認申請の前に）</div>${rs.map(x => ruleCard(x, false)).join("")}</div>` : (m ? `<div class="rules none">この市町村だけの決まり（確認申請の前の手続き）は、公式のページでは見つかっていません。ないとは限らないので、窓口で確かめてください。</div>` : ""); })()}${mapsBox}${caseBox}${keys}${cmemo}<div class="md"><nav class="mdl" aria-label="目的">${navs}</nav><div class="mdr">${rows}</div></div>`);
+  caseProgress();
+  const first = list.find(o => o.all.length && !((CASE.items[o.k] || {}).seen)) || list[0];
+  setActive(first ? first.k : "");
+  document.querySelectorAll(".shots[data-sk]").forEach(b => drawShots(b.dataset.sk)); drawDir();
+}
+/* 保存：選んだフォルダの中に、物件ごとのフォルダを作って置く（このPCの中だけ） */
+let DIR = null;
+const canDir = "showDirectoryPicker" in window;
+const safe = s => String(s || "").replace(/[\\/:*?"<>|\s]/g, "").slice(0, 40);
+function caseFolder() { const [pn, m] = CASE.where.split("/"), d = new Date(), z = n => String(n).padStart(2, "0"); return ["調べ先", safe(m || pn), `${d.getFullYear()}${z(d.getMonth() + 1)}${z(d.getDate())}`].join("_"); }
+async function pickDir() {
+  try { DIR = await window.showDirectoryPicker({ mode: "readwrite", id: "linkshu" }); idb.put("dir", DIR); drawDir(); toast("保存先を決めました"); return true; }
+  catch (e) { return false; }
+}
+async function dirReady() {
+  if (!canDir) return false;
+  if (!DIR) DIR = await idb.get("dir");
+  if (!DIR) return pickDir();
+  try { if ((await DIR.queryPermission({ mode: "readwrite" })) === "granted" || (await DIR.requestPermission({ mode: "readwrite" })) === "granted") return true; } catch (e) {}
+  return pickDir();
+}
+async function saveFile(name, blob) {    // 保存先があればそこへ。なければ、ふつうのダウンロード
+  if (await dirReady()) {
+    const sub = await DIR.getDirectoryHandle(caseFolder(), { create: true });
+    const fh = await sub.getFileHandle(name, { create: true }), w = await fh.createWritable();
+    await w.write(blob); await w.close();
+    return DIR.name + "\\" + caseFolder() + "\\" + name;
+  }
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = caseFolder() + "_" + name; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 3000);
+  return "ダウンロード：" + a.download;
+}
+async function drawDir() {
+  const el = $("#dirName"); if (!el) return;
+  if (!canDir) { el.textContent = "保存先：ダウンロード"; return; }
+  if (!DIR) DIR = await idb.get("dir");
+  el.innerHTML = DIR ? `保存先：${esc(DIR.name)}<button data-go="pickDir">変える</button>` : `<button data-go="pickDir">保存先のフォルダを選ぶ</button>`;
+}
+let jspdfP = null;
+function pdfLib() {
+  if (!jspdfP) jspdfP = new Promise((res, rej) => { const s = document.createElement("script"); s.src = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"; s.onload = () => res(window.jspdf.jsPDF); s.onerror = rej; document.head.appendChild(s); });
+  return jspdfP;
+}
+const stamp = () => { const d = new Date(), z = n => String(n).padStart(2, "0"); return `${d.getFullYear()}${z(d.getMonth() + 1)}${z(d.getDate())}_${z(d.getHours())}${z(d.getMinutes())}${z(d.getSeconds())}`; };
+async function saveShotPdf(k, dataUrl) {
+  const JsPDF = await pdfLib();
+  const src = await new Promise(r => { const i = new Image(); i.onload = () => r(i); i.src = dataUrl; });
+  const [pn, m] = CASE.where.split("/"), d = new Date(), z = n => String(n).padStart(2, "0");
+  const fs = Math.max(16, Math.round(src.width / 60)), band = fs * 2.6;
+  const cv = document.createElement("canvas"); cv.width = src.width; cv.height = Math.round(src.height + band);
+  const g = cv.getContext("2d"); g.fillStyle = "#fff"; g.fillRect(0, 0, cv.width, cv.height);
+  g.fillStyle = "#0F2530"; g.font = `bold ${fs}px "Yu Gothic UI","Meiryo",sans-serif`; g.textBaseline = "middle";
+  g.fillText(`調べ先の確認　${m || pn}（${pn}）　${k}`, fs * .8, band * .36);
+  g.font = `${Math.round(fs * .78)}px "Yu Gothic UI","Meiryo",sans-serif`; g.fillStyle = "#56676F";
+  g.fillText(`${d.getFullYear()}-${z(d.getMonth() + 1)}-${z(d.getDate())} ${z(d.getHours())}:${z(d.getMinutes())}`, fs * .8, band * .76);
+  g.drawImage(src, 0, band);
+  const im = cv; dataUrl = cv.toDataURL("image/jpeg", .88);
+  const pdf = new JsPDF({ orientation: im.width > im.height ? "l" : "p", unit: "px", format: [im.width, im.height], hotfixes: ["px_scaling"] });
+  pdf.addImage(dataUrl, "JPEG", 0, 0, im.width, im.height);
+  return saveFile(`${safe(k)}_${stamp()}.pdf`, pdf.output("blob"));
+}
+async function saveSummary() {
+  const head = `調べ先リンク集（${D.built} 版）`;
+  const txt = caseSummary() + "\r\n" + head + "\r\n";
+  const where = await saveFile(`調べた結果_${stamp()}.txt`, new Blob(["\ufeff" + txt.replace(/\n/g, "\r\n").replace(/\r\r/g, "\r")], { type: "text/plain" }));
+  toast("保存しました：" + where);
+}
+function markSeen(k, saved) {
+  const it = CASE.items[k] = CASE.items[k] || {}; it.seen = true; if (saved) it.saved = (it.saved || 0) + 1; caseSave();
+  const r = document.querySelector(`.row[data-k="${CSS.escape(k)}"]`); if (r) r.classList.add("is-seen");
+  const nb = document.querySelector(`.mdl [data-sel="${CSS.escape(k)}"]`); if (nb) nb.classList.add("seen");
+  caseProgress();
+}
+function caseProgress() {
+  const rs = [...document.querySelectorAll(".row[data-k]:not(.empty)")], pg = $("#prog"); if (!pg) return;
+  rs.forEach(r => { const it = CASE.items[r.dataset.k] || {}, sv = r.querySelector(".sv"); if (sv) sv.textContent = it.saved ? `写し ${it.saved} 枚 保存` : "開いた"; });
+  const d = rs.filter(r => r.classList.contains("is-seen")).length, n = rs.length, sh = rs.reduce((a, r) => a + ((CASE.items[r.dataset.k] || {}).saved || 0), 0);
+  if (d === n && n && !CASE.t1) { CASE.t1 = Date.now(); caseSave(); }
+  const mins = CASE.t0 ? Math.max(1, Math.round(((CASE.t1 || Date.now()) - CASE.t0) / 60000)) : 0;
+  const tm = mins ? `<span class="tm">${CASE.t1 ? `調べにかかった時間 <b>${mins} 分</b>` : `始めてから ${mins} 分`}</span>` : "";
+  clearTimeout(caseProgress.t); if (!CASE.t1 && pg) caseProgress.t = setTimeout(caseProgress, 60000);
+  pg.innerHTML = tm + `<span>${d === n && n ? `${svg(I.ok, 18, "ic-s")} <b>すべて開きました</b>` : `開いた <b>${d}</b> / ${n}`}${sh ? `　写し <b>${sh}</b> 枚` : ""}</span>
+    <span class="dots">${rs.map(r => `<i class="${r.classList.contains("is-seen") ? "on" : ""}" style="--pc:${r.style.getPropertyValue("--pc")}" data-jump="${r.id}" title="${esc(r.querySelector(".rh b").textContent)}">${r.querySelector(".no").textContent}</i>`).join("")}</span>`;
+}
+function caseProgressOld() {
+  const rs = [...document.querySelectorAll(".row[data-k]")], n = rs.length, d = rs.filter(r => r.classList.contains("done")).length;
+  const c = $("#caseCnt"); if (!c) return;
+  c.textContent = d === n ? `すべて調べました（${n} / ${n}）` : `調べた ${d} / ${n}`; c.classList.toggle("all", d === n);
+  $("#caseBar").style.width = (n ? d * 100 / n : 0) + "%";
+}
+function caseSummary() {
+  const [pn, m] = CASE.where.split("/");
+  const z = n => String(n).padStart(2, "0"), d = new Date();
+  const lines = [...document.querySelectorAll(".row[data-k]")].map(r => {
+    const k = r.dataset.k, it = CASE.items[k] || {}, t = r.querySelector(".rh b").textContent;
+    return `${it.done ? "■" : "□"} ${t}：${it.note || (it.done ? "（調べた）" : "未")}${r.dataset.first ? `　〔${r.dataset.first}〕` : ""}`;
+  });
+  return `調べ先の確認　${m || pn}（${pn}）　${d.getFullYear()}-${z(d.getMonth() + 1)}-${z(d.getDate())}
+` + lines.join("\n");
+}
+
+/* 建築基準関係規定の一覧 */
+function laws() {
+  if (LOCKED) return;   // 時間外・期間外は、どのボタンからも中に入れない
+  go("関係規定");
+  const K = D.kankei || { items: [], also: [] };
+  const back = recent[0] && D.prefs[recent[0].p] ? recent[0] : null;
+  const pk = Object.fromEntries(D.purposes.map(x => [x[0], x[1]]));
+  const row = x => `<tr class="${esc(x.house || "")}"><td><span class="hs ${esc(x.house || "")}">${{ よく: "よくかかる", 場合: "場合による", まれ: "まれ" }[x.house] || ""}</span></td>
+    <td class="nm"><b>${esc(x.law)}</b><small>${esc(x.art)}${x.no ? "　（" + esc(x.no) + "）" : ""}</small></td><td>${esc(x.what)}</td>
+    <td>${x.purpose && back ? `<button class="pill" data-p="${back.p}" data-m="${esc(back.m)}" data-sel2="${esc(x.purpose)}">${esc(pk[x.purpose] || x.purpose)}を調べる</button>` : x.purpose ? esc(pk[x.purpose] || "") : "―"}</td>
+    <td>${x.lawId ? `<a href="https://laws.e-gov.go.jp/law/${esc(x.lawId)}" target="_blank" rel="noopener">条文 ↗</a>` : ""}</td></tr>`;
+  show(`<div class="hits"><h2>建築基準関係規定</h2><p class="lead">建築基準法第6条第1項・施行令第9条の16の法律と、「建築基準関係規定とみなす」とされた3つ（${esc(K.checked || "")} に法令の原文で確かめた）。「戸建てで」の欄は目安です。${back ? `「調べる」を押すと、${esc(back.m)}の調べ先が開きます。` : "市町村を選んでから開くと、その市町村の調べ先へ飛べます。"}</p>
+    <div class="law"><table><tr><th>戸建てで</th><th>法令・条</th><th>見ること</th><th>調べ先</th><th>原文</th></tr>${K.items.map(row).join("")}</table></div>
+    <h3 style="margin:22px 0 10px">あわせて見るもの（建築基準法の中で、市町村ごとに違うもの）</h3>
+    <div class="law"><table>${(K.also || []).map(x => row({ ...x, house: "" })).join("")}</table></div></div>`);
+}
+
+/* メモの一覧 */
+function memos() {
+  go("メモ");
+  const where = k => {
+    if (k.startsWith("m:")) return k.slice(2);
+    return MEMO[k].where || "";
+  };
+  const byW = {};
+  Object.keys(MEMO).forEach(k => (byW[where(k)] = byW[where(k)] || []).push(k));
+  const label = u => { for (const p of D.prefs) for (const xs of [p.pref, ...Object.values(p.munis)]) { const x = xs.find(x => x.url === u); if (x) return x; } return null; };
+  const ws = Object.keys(byW).sort();
+  show(`<div class="crumbs"><button data-go="home">はじめ</button>›<span>メモ</span></div><div class="hits"><h2>メモの一覧</h2>
+    <p class="lead">メモは、このPCのブラウザだけに残ります（外には送りません）。ほかのPCへ移すとき・ほかの人に渡すときは、書き出して、相手の画面で読み込みます。申請者の名前や地番は書かないでください。</p>
+    <div class="tools"><button class="pill" data-go="export">${svg(I.down, 15)}メモを書き出す</button><button class="pill" data-go="import">${svg(I.up, 15)}メモを読み込む</button><input type="file" id="imp" accept=".json,application/json" class="sr"></div>`
+    + (ws.length ? ws.map(w => {
+      const [pn, m] = w.split("/"), pi = D.prefs.findIndex(p => p.name === pn);
+      return `<div class="grp"><h3>${pi >= 0 ? `<button class="pill" data-p="${pi}" data-m="${esc(m || "")}">${esc(m || pn + "（県全体）")}</button>` : esc(w)}<span>${byW[w].length}</span></h3>` + byW[w].map(k => {
+        const mm = MEMO[k];
+        if (k.startsWith("m:")) return `<div class="hit"><div class="w2">${esc(m || pn)} 全体のメモ・${esc(mm.at)}</div><div class="mtx">${esc(mm.t)}</div></div>`;
+        const x = label(k.slice(2));
+        return `<div class="hit"><div class="w2">${esc(x ? x.purpose : "")}・${esc(mm.at)}</div><a class="t" href="${esc(k.slice(2))}" target="_blank" rel="noopener">${esc(x ? x.label : k.slice(2))} ↗</a><div class="mtx">${esc(mm.t)}</div></div>`;
+      }).join("") + "</div>";
+    }).join("") : `<div class="empty-state">${svg(I.memo, 40)}<div>まだメモはありません。<br>市町村の画面の黄色い欄や、各ページの ${svg(I.pen, 14, "ic-s")} から書けます。</div></div>`) + "</div>");
+}
+function exportMemo() {
+  const blob = new Blob([JSON.stringify({ kind: "調べ先リンク集のメモ", at: new Date().toISOString(), memo: MEMO }, null, 1)], { type: "application/json" });
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "リンク集のメモ_" + new Date().toISOString().slice(0, 10) + ".json"; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000); toast("メモを書き出しました");
+}
+function importMemo(file) {
+  const r = new FileReader();
+  r.onload = () => {
+    try {
+      const d = JSON.parse(r.result), m = d.memo || {};
+      let n = 0;
+      Object.entries(m).forEach(([k, v]) => { if (v && typeof v.t === "string" && /^[mu]:/.test(k)) {
+        if (MEMO[k] && MEMO[k].t !== v.t && !MEMO[k].t.includes(v.t)) MEMO[k] = { ...MEMO[k], t: MEMO[k].t + "\n――\n" + v.t }; else if (!MEMO[k]) MEMO[k] = v; n++; } });
+      store.set("linkshu-memo", MEMO); memoCount(); memos(); toast(`${n} 件のメモを読み込みました（同じ場所のメモは、つなげました）`);
+    } catch (e) { toast("このファイルは読み込めません"); }
+  };
+  r.readAsText(file);
+}
+
+/* 検索 */
+let sel = 0;
+function hl(s, q) { const i = norm(s).indexOf(q); return i < 0 || s.length !== norm(s).length ? esc(s) : esc(s.slice(0, i)) + "<mark>" + esc(s.slice(i, i + q.length)) + "</mark>" + esc(s.slice(i + q.length)); }
+function suggest() {
+  const raw = $("#q").value.trim(), q = norm(raw);
+  $("#kbd").style.display = raw ? "none" : "";
+  if (!q) { $("#sug").style.display = "none"; return; }
+  const c = MUNIS.filter(o => norm(o.m).includes(q) || norm(D.prefs[o.p].name + o.m).includes(q))
+    .sort((a, b) => norm(a.m).indexOf(q) - norm(b.m).indexOf(q) || a.m.length - b.m.length).slice(0, 9);
+  sel = 0;
+  $("#sug").innerHTML = c.map((o, i) => `<button class="${i === 0 ? "on" : ""}" role="option" data-p="${o.p}" data-m="${esc(o.m)}"><span>${hl(o.m, q)}${isTk(D.prefs[o.p], o.m) ? '<span class="tk">特定行政庁</span>' : ""}</span><small>${esc(D.prefs[o.p].name)}</small></button>`).join("")
+    + `<button class="wd ${c.length ? "" : "on"}" role="option" data-w="1">${svg('<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>', 15, "ic-s")}　「${esc(raw)}」を含むページ・メモを、すべての県から探す</button>`;
+  $("#sug").style.display = "block";
+}
+function words(qr) {
+  if (LOCKED) return;   // 時間外・期間外は、どのボタンからも中に入れない
+  go("");
+  const qs = qr.toLowerCase().split(/\s+/).filter(Boolean), hits = [];
+  D.prefs.forEach(p => [[p.name + "（県のページ）", p.pref], ...Object.entries(p.munis)].forEach(([m, xs]) => xs.forEach(x => {
+    const mm = MEMO[memoKeyU(x.url)];
+    const s = `${p.name} ${m} ${x.label} ${x.what} ${x.purpose} ${mm ? mm.t : ""}`.toLowerCase();
+    if (qs.every(w => s.includes(w))) hits.push([p, m, x]);
+  })));
+  const cm = Object.entries(MEMO).filter(([k, v]) => k.startsWith("m:") && qs.every(w => v.t.toLowerCase().includes(w)));
+  show(`<div class="crumbs"><button data-go="home">はじめ</button>›<span>探す</span></div><div class="hits"><h2>「${esc(qr)}」を含むもの</h2><p class="lead">ページ ${hits.length} 件${cm.length ? `・市町村のメモ ${cm.length} 件` : ""}</p>`
+    + cm.map(([k, v]) => { const [pn, m] = k.slice(2).split("/"), pi = D.prefs.findIndex(p => p.name === pn); return `<div class="hit"><div class="w2">${esc(pn)}　${pi >= 0 ? `<button data-p="${pi}" data-m="${esc(m)}">${esc(m || "県全体")}</button>` : ""}　／ メモ</div><div class="mtx">${esc(v.t)}</div></div>`; }).join("")
+    + hits.slice(0, 200).map(([p, m, x]) => hit(p, m, x)).join("")
+    + (hits.length || cm.length ? "" : `<div class="empty-state">見つかりませんでした。ことばを短くしてみてください（例：「指定道路」「盛土」「中間検査」）。</div>`) + "</div>");
+}
+function pick(btn) {
+  $("#sug").style.display = "none";
+  if (btn.dataset.w) { words($("#q").value.trim()); return; }
+  $("#q").value = ""; $("#kbd").style.display = ""; $("#q").blur();
+  city(+btn.dataset.p, btn.dataset.m || null);
+}
+
+/* 明るさ */
+function theme(t) {
+  if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme;
+  const dark = t ? t === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  $("#themeIc").innerHTML = svg(dark ? I.sun : I.moon, 18);
+}
+
+/* 動き */
+function wire() {
+  $("#q").addEventListener("input", suggest);
+  $("#q").addEventListener("focus", suggest);
+  $("#q").addEventListener("keydown", e => {
+    const bs = [...$("#sug").querySelectorAll("button")];
+    if (e.key === "Escape") { $("#sug").style.display = "none"; $("#q").blur(); return; }
+    if (!bs.length) return;
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); sel = (bs.findIndex(b => b.classList.contains("on")) + (e.key === "ArrowDown" ? 1 : bs.length - 1)) % bs.length; bs.forEach((b, i) => b.classList.toggle("on", i === sel)); bs[sel].scrollIntoView({ block: "nearest" }); }
+    if (e.key === "Enter") { e.preventDefault(); pick(bs.find(b => b.classList.contains("on")) || bs[0]); }
+  });
+  $("#sug").addEventListener("mousedown", e => { const b = e.target.closest("button"); if (b) { e.preventDefault(); pick(b); } });
+  $("#q").addEventListener("blur", () => setTimeout(() => $("#sug").style.display = "none", 150));
+  document.addEventListener("keydown", e => {
+    const typing = /^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName);
+    if (e.key === "/" && !typing) { e.preventDefault(); const f = $("#startA") || $("#caseA"); if (f) f.focus(); }
+    if (!typing && !e.ctrlKey && !e.altKey && !e.metaKey && /^[1-9]$/.test(e.key)) {
+      const r = document.querySelectorAll(".row[data-k]")[+e.key - 1];
+      if (r) { e.preventDefault(); setActive(r.dataset.k); const a = r.querySelector(".lk .main"); if (a) { window.open(a.href, "_blank", "noopener"); markSeen(r.dataset.k); } }
+    }
+    if (e.key === "Escape" && !typing && location.hash && $("#zoom").style.display !== "grid") home();
+  });
+  document.addEventListener("click", e => {
+    if (e.target.closest("[data-help]")) { $("#help").style.display = "grid"; return; }
+    const pt = e.target.closest("[data-pt]"); if (pt) { setPT(+pt.dataset.pt); return; }
+    const j = e.target.closest("[data-jump]");
+    if (j) { e.preventDefault(); const r = document.getElementById(j.dataset.jump); r.scrollIntoView(); r.classList.add("flash"); setTimeout(() => r.classList.remove("flash"), 1200); return; }
+    const sl = e.target.closest("[data-sel]"); if (sl) { setActive(sl.dataset.sel); return; }
+    const nx = e.target.closest("[data-next]"); if (nx) { const r = document.querySelectorAll(".row[data-k]")[+nx.dataset.next]; if (r) { setActive(r.dataset.k); window.scrollTo({ top: 0 }); } return; }
+    const pb = e.target.closest("[data-paste]");
+    if (pb) { setActive(pb.dataset.paste); toast("Win + Shift + S で画面を切り取って、Ctrl + V で貼ってください"); return; }
+    const zs = e.target.closest("[data-delshot]");
+    if (zs) { e.stopPropagation(); const k = zs.closest(".shots").dataset.sk; SHOTS[shotKey(k)].splice(+zs.dataset.delshot, 1); shotsSave(k); drawShots(k); return; }
+    const zm = e.target.closest("[data-zoom]");
+    if (zm) { const z = $("#zoom"); z.querySelector("img").src = zm.querySelector("img").src; z.style.display = "grid"; return; }
+    if (e.target.closest("#zoom")) { $("#zoom").style.display = "none"; return; }
+    const rowEl = e.target.closest(".row[data-k]"); if (rowEl) setActive(rowEl.dataset.k);
+    if (rowEl && e.target.closest(".lk .main")) markSeen(rowEl.dataset.k);
+    const ck = e.target.closest("[data-chk]");
+    if (ck) { const k = ck.dataset.chk, it = CASE.items[k] = CASE.items[k] || {}; it.done = !it.done; caseSave();
+      const r = ck.closest(".row"); r.classList.toggle("done", it.done); ck.setAttribute("aria-pressed", it.done); ck.querySelector(".bx").innerHTML = it.done ? svg(I.ok, 12) : ""; caseProgress(); return; }
+    const c = e.target.closest("[data-copy]"); if (c) { copy(c.dataset.copy, "ページの場所を写しました（貼り付けられます）"); return; }
+    const lm = e.target.closest("[data-lmemo]");
+    if (lm) {
+      const blk = lm.closest(".lkw"); let box = blk.querySelector(".lmemo");
+      if (!box) { blk.insertAdjacentHTML("beforeend", memoBox(lm.dataset.lmemo, null, location.hash ? decodeURIComponent(location.hash.slice(1)) : "")); box = blk.querySelector(".lmemo"); }
+      box.querySelector("textarea").focus(); return;
+    }
+    const g = e.target.closest("[data-go]");
+    if (g) {
+      const k = g.dataset.go;
+      if (k === "home") { $("#q").value = ""; home(); }
+      if (k === "check") report();
+      if (k === "print") window.print();
+      if (k === "copy") copy(location.href, "この画面の場所を写しました");
+      if (k === "copyAddr") { const v = $("#caseA").value.trim(); v ? copy(v, "地名地番を写しました。サイトの検索に貼り付けてください") : ($("#caseA").focus(), toast("先に地名地番を貼り付けてください")); }
+      if (k === "copySum") copy(caseSummary(), "結果を写しました（審査の記録などに貼れます）");
+      if (k === "saveSum") saveSummary();
+      if (k === "pickDir") pickDir();
+      if (k === "newCase") { if (confirm("地名地番と、この物件の結果を消して、次の物件にしますか？")) { CASE = { addr: "", where: "", items: {} }; caseSave(); Object.keys(SHOTS).forEach(k => delete SHOTS[k]); home(); } }
+      if (k === "export") exportMemo();
+      if (k === "cmemo") { const c = $("#cmemo"); c.hidden = false; g.remove(); c.querySelector("textarea").focus(); }
+      if (k === "import") $("#imp").click();
+      return;
+    }
+    const b = e.target.closest("main button[data-p]"); if (b) { city(+b.dataset.p, b.dataset.m || null); if (b.dataset.sel2) setActive(b.dataset.sel2); return; }
+  });
+  document.addEventListener("change", e => { if (e.target.id === "imp" && e.target.files[0]) importMemo(e.target.files[0]); });
+  document.addEventListener("input", e => {
+    if (e.target.id === "caseA") { CASE.addr = e.target.value; caseSave(); }
+    if (e.target.id === "caseNo") { CASE.no = e.target.value; caseSave(); drawDir(); }
+    if (e.target.id === "caseWho") store.set("linkshu-who", e.target.value);
+    const rs = e.target.closest("[data-res]");
+    if (rs) { const it = CASE.items[rs.dataset.res] = CASE.items[rs.dataset.res] || {}; it.note = rs.value; caseSave(); }
+  });
+  document.addEventListener("keydown", e => {      // 結果の欄で Enter → 調べたにする
+    const rs = e.target.closest && e.target.closest("[data-res]");
+    if (rs && e.key === "Enter") { e.preventDefault(); const b = rs.parentElement.querySelector("[data-chk]"); if (b && !rs.closest(".row").classList.contains("done")) b.click(); rs.blur(); }
+  });
+  document.addEventListener("focusin", e => { const r = e.target.closest && e.target.closest(".row[data-k]"); if (r) setActive(r.dataset.k); });
+  document.addEventListener("paste", e => {       // Ctrl + V：画像なら、いまの目的の欄に貼る
+    const it = [...(e.clipboardData ? e.clipboardData.items : [])].find(i => i.type.startsWith("image/"));
+    if (!it) return;
+    if (!document.querySelector(".row[data-k]")) { toast("市町村の画面で貼ってください"); return; }
+    e.preventDefault();
+    const k = ACTIVE || document.querySelector(".row[data-k]").dataset.k; setActive(k);
+    addShot(k, it.getAsFile());
+  });
+  document.addEventListener("dragover", e => { const r = e.target.closest && e.target.closest(".row[data-k]"); if (r && [...e.dataTransfer.types].includes("Files")) { e.preventDefault(); r.classList.add("drag"); } });
+  document.addEventListener("dragleave", e => { const r = e.target.closest && e.target.closest(".row[data-k]"); if (r) r.classList.remove("drag"); });
+  document.addEventListener("drop", e => { const r = e.target.closest && e.target.closest(".row[data-k]"); if (!r) return; e.preventDefault(); r.classList.remove("drag");
+    [...e.dataTransfer.files].filter(f => f.type.startsWith("image/")).forEach(f => { setActive(r.dataset.k); addShot(r.dataset.k, f); }); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") $("#zoom").style.display = "none"; });
+  document.addEventListener("submit", e => {
+    if (e.target.id !== "startF") return;
+    e.preventDefault();
+    const v = $("#startA").value.trim(); if (!v) { $("#startA").focus(); return; }
+    let o = findMuni(v);
+    if (!o) { const hs = [...document.querySelectorAll(".grid button.hit")]; if (hs.length === 1) o = { p: +hs[0].dataset.p, m: hs[0].dataset.m }; }
+    if (!o) { $("#startMsg").innerHTML = `<span class="msg">市町村の名前が見つかりませんでした。市町村の名前から貼り付けるか、下から選んでください。</span>`; CASE.addr = v; caseSave(); return; }
+    const onlyName = norm(v).replace(/^(静岡県|山梨県|神奈川県)/, "").replace(/^.{1,4}郡/, "") === norm(o.m);
+    CASE = { addr: onlyName ? "" : v, where: D.prefs[o.p].name + "/" + o.m, items: {}, t0: Date.now() }; caseSave();
+    city(o.p, o.m);
+  });
+  let tm;
+  document.addEventListener("input", e => {          // メモは、書くと自動で保存する
+    const ta = e.target.closest("textarea[data-mk]"); if (!ta) return;
+    clearTimeout(tm);
+    tm = setTimeout(() => {
+      const ok = memoSet(ta.dataset.mk, ta.value, ta.dataset.where || "");
+      const st = ta.dataset.mk.startsWith("m:") ? $("#cmSt") : ta.parentElement.querySelector(".st");
+      if (st) st.textContent = ok ? (ta.value.trim() ? "保存しました" : "メモを消しました") : "保存できませんでした";
+      const act = ta.closest(".lkw") && ta.closest(".lkw").querySelector("[data-lmemo]"); if (act) act.classList.toggle("has", !!ta.value.trim());
+    }, 500);
+  });
+  $("#home").onclick = () => { $("#q").value = ""; home(); };
+  $("#memoBtn").onclick = () => memos();
+  $("#lawBtn").onclick = () => { $("#q").value = ""; laws(); };
+  $("#helpBtn").onclick = () => { $("#help").style.display = "grid"; };
+  $("#helpClose").onclick = () => { $("#help").style.display = "none"; };
+  $("#help").addEventListener("click", e => { if (e.target.id === "help") $("#help").style.display = "none"; });
+  $("#memoIc").innerHTML = svg(I.memo, 18);
+  $("#themeBtn").onclick = () => { const cur = document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); const n = cur === "dark" ? "light" : "dark"; store.set("linkshu-theme", n); theme(n); };
+  theme(store.get("linkshu-theme", ""));
+  memoCount();
+}
+
+/* 利用の制限（試用の期間・時間帯）。時刻は日本時間 */
+function gate(c) {
+  if (!c) return "";
+  const now = new Date(Date.now() + (9 * 60 + new Date().getTimezoneOffset()) * 60e3);
+  const z = n => String(n).padStart(2, "0");
+  const ymd = `${now.getFullYear()}-${z(now.getMonth() + 1)}-${z(now.getDate())}`, hm = `${z(now.getHours())}:${z(now.getMinutes())}`, dw = now.getDay();
+  const dn = "日月火水木金土", jd = s => s ? s.replace(/^(\d+)-0?(\d+)-0?(\d+)$/, "$1年$2月$3日") : "";
+  const span = `${jd(c.trial_from)}〜${jd(c.trial_until)}`;
+  const days = c.days || [], wk = days.join() === "1,2,3,4,5" ? "平日" : days.map(d => dn[d]).join("・");
+  const hrs = `${wk} ${c.hours_from}〜${c.hours_to}`;
+  if (c.trial_from && ymd < c.trial_from) return ["試用は、まだ始まっていません", `試用の期間は ${span} です。`];
+  if (c.trial_until && ymd > c.trial_until) return ["試用の期間が終わりました", `試用の期間は ${span} でした。続けてお使いになるときは、${c.contact || "マルホープ"}までご連絡ください。`];
+  if (days.length && !days.includes(dw) || c.hours_from && hm < c.hours_from || c.hours_to && hm >= c.hours_to)
+    return ["いまは、ご利用の時間外です", `ご利用いただける時間は ${hrs} です（試用の期間 ${span}）。`];
+  return "";
+}
+const TERMS_VER = "2026-10-17c";
+function terms(read) {      // はじめてのとき（と、規約を変えたとき）は、同意してから使う
+  const el = $("#terms"); el.style.display = "grid";
+  $("#termsOk").hidden = !!read; $("#termsClose").hidden = !read;
+  $("#termsOk").onclick = () => { el.style.display = "none"; const a = $("#startA"); if (a) a.focus(); };
+  $("#termsClose").onclick = () => { el.style.display = "none"; };
+}
+function boot() {
+  wire();
+  if (IS_DEV) { const b = document.createElement("div"); b.className = "devbar"; b.textContent = "開発版（確かめ用）：ここで直したものは、まだ本番には出ていません"; document.body.prepend(b); }
+  const c = D.config, g = /[?&]naiken\b/.test(location.search) || IS_DEV ? "" : gate(c);   // ?naiken＝マルホープの確かめ用（制限の外でも見られる）
+  if (g) {
+    $("#main").innerHTML = `<div class="gate"><div class="gi">${svg(I.clock, 34)}</div><h2>${esc(g[0])}</h2><p>${esc(g[1])}</p></div>`;
+    $("header .sbox").style.visibility = "hidden"; $("#memoBtn").style.display = "none";
+    LOCKED = true;
+    ["#helpBtn", "#lawBtn"].forEach(s => { const b = $(s); if (b) b.style.display = "none"; });
+    return;
+  }
+  const jd = s => s ? s.replace(/^(\d+)-0?(\d+)-0?(\d+)$/, "$1年$2月$3日") : "";
+  $("#foot").innerHTML = `県・市町村の公式サイトだけ（${esc(D.built)} 版・毎日 19 時にリンクを見回り）。判断に迷うときは担当の課へ。`
+    + (c && c.trial_until ? `　試用：${esc(jd(c.trial_until))}まで` : "")
+    + `<br><a class="tl" id="termsLink">利用規約</a>　リンクが開けない・載せてほしいページは、${esc((c && c.contact) || "株式会社マルホープ 岩崎")}まで。`;
+  $("#termsLink").onclick = () => terms(true);
+  terms(false);      // 開くたびに、規約に同意してから使う
+  const h = decodeURIComponent(location.hash.slice(1));   // #山梨県/甲府市 の形で開くと、その市町村を出す
+  if (h === "見回り") { report(); return; }
+  if (h === "メモ") { memos(); return; }
+  if (h === "関係規定") { laws(); return; }
+  const [pn, m] = h.split("/");
+  const i = D.prefs.findIndex(p => p.name === pn);
+  if (i >= 0) city(i, m && D.prefs[i].munis[m] ? m : null); else home();
+}
+(() => {   // 最新の一覧を取りに行く。4秒で取れなければ、中に入っている一覧で動く
+  setData(D);
+  let done = false;
+  const start = () => { if (done) return; done = true; if (window.LINK_LATEST && window.LINK_LATEST.built >= D.built) setData(window.LINK_LATEST); boot(); };
+  if (!SITE || /^\?preview/.test(location.search)) { start(); return; }
+  const s = document.createElement("script");
+  s.src = SITE + "latest.js?t=" + Date.now();
+  s.onload = start; s.onerror = start; setTimeout(start, 4000);
+  document.head.appendChild(s);
+})();
+</script>
+</body>
+</html>

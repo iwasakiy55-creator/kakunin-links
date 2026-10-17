@@ -125,13 +125,19 @@ def main() -> None:
         "stale_days": 365,
     }
     js = json.dumps(payload, ensure_ascii=False)
-    tpl = (ROOT / "template.html").read_text(encoding="utf-8")
+    # 本番は template.prod.html（「本番に出す」で template.html を写したもの）。開発版（/dev/）は template.html
+    dev_tpl = (ROOT / "template.html").read_text(encoding="utf-8")
+    prod_p = ROOT / "template.prod.html"
+    tpl = prod_p.read_text(encoding="utf-8") if prod_p.exists() else dev_tpl
     html = tpl.replace("/*DATA*/null", js).replace('/*SITE*/""', json.dumps(SITE_URL))
     (ROOT / "リンク集.html").write_text(html, encoding="utf-8")
     SITE_DIR.mkdir(parents=True, exist_ok=True)
     (SITE_DIR / "index.html").write_text(html, encoding="utf-8")
     (SITE_DIR / "latest.js").write_text("window.LINK_LATEST = " + js + ";\n", encoding="utf-8")
     (SITE_DIR / ".nojekyll").write_text("", encoding="utf-8")
+    dev = dev_tpl.replace("/*DATA*/null", js).replace('/*SITE*/""', json.dumps(SITE_URL)).replace("/*DEV*/false", "true").replace("<head>", '<head><meta name="robots" content="noindex">', 1)
+    (SITE_DIR / "dev").mkdir(exist_ok=True)
+    (SITE_DIR / "dev" / "index.html").write_text(dev, encoding="utf-8")
     links = [{"url": x["url"], "pref": p["name"], "muni": m, "purpose": x.get("purpose", ""), "label": x.get("label", "")}
              for p in prefs for m, xs in [("（県）", p["pref"])] + list(p["munis"].items()) for x in xs if x.get("url")]
     (ROOT / "tools").mkdir(exist_ok=True)

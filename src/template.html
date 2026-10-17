@@ -904,6 +904,7 @@ header .brand { margin-right:auto; }
 .mcard .mps i { font-style:normal; font-size:12px; background:#fff; border:1px solid #BFE3D8; border-radius:999px; padding:0 7px; color:#0F6B57; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .mcard { background:#163A37; border-color:#2A6A5E; } :root:not([data-theme="light"]) .mcard .mps i { background:#0F2A27; border-color:#2A6A5E; color:#9FE0CF; } }
 @media (max-width: 760px) { .mgrid { grid-template-columns:1fr 1fr; } .mcard b { font-size:15px; } }
+.devbar { background:#7A1FA2; color:#fff; font-weight:bold; text-align:center; padding:6px 10px; font-size:14px; position:sticky; top:0; z-index:60; }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
 <link rel="manifest" href="manifest.webmanifest?v=2"><link rel="apple-touch-icon" href="apple-touch-icon.png?v=2"><link rel="icon" type="image/png" href="favicon.png?v=2"><meta name="theme-color" content="#17708F"><meta name="apple-mobile-web-app-title" content="調べ先リンク">
@@ -996,6 +997,7 @@ header .brand { margin-right:auto; }
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script>
 const SITE = /*SITE*/"";
+const IS_DEV = /*DEV*/false;   // 開発版（/dev/）は、時間の制限なし・上に「開発版」と出す
 let D = /*DATA*/null;      // 中に入っている一覧。最新の一覧（latest.js）が取れたら、そちらを使う
 let ST = {}, ST_AT = "", MUNIS = [], NLINK = 0;
 const $ = s => document.querySelector(s);
@@ -1776,7 +1778,8 @@ function terms(read) {      // はじめてのとき（と、規約を変えた�
 }
 function boot() {
   wire();
-  const c = D.config, g = /[?&]naiken\b/.test(location.search) ? "" : gate(c);   // ?naiken＝マルホープの確かめ用（制限の外でも見られる）
+  if (IS_DEV) { const b = document.createElement("div"); b.className = "devbar"; b.textContent = "開発版（確かめ用）：ここで直したものは、まだ本番には出ていません"; document.body.prepend(b); }
+  const c = D.config, g = /[?&]naiken\b/.test(location.search) || IS_DEV ? "" : gate(c);   // ?naiken＝マルホープの確かめ用（制限の外でも見られる）
   if (g) {
     $("#main").innerHTML = `<div class="gate"><div class="gi">${svg(I.clock, 34)}</div><h2>${esc(g[0])}</h2><p>${esc(g[1])}</p></div>`;
     $("header .sbox").style.visibility = "hidden"; $("#memoBtn").style.display = "none";

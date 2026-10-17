@@ -182,6 +182,23 @@
    "checked": "2026-10-17",
    "purpose": "地形",
    "role": "補助"
+  },
+  {
+   "label": "静岡県GIS 建築関連情報（22条指定区域が載っている）",
+   "url": "https://www.pref.shizuoka.jp/kurashikankyo/kenchiku/taishinka/1052551/1015991.html",
+   "what": "県GISの「建築関連情報」に22条指定区域が載っている（区域の文・告示番号は書かれていない）。県が特定行政庁の市町",
+   "verified": true,
+   "checked": "2026-10-17",
+   "purpose": "防火",
+   "role": "まずここで調べる",
+   "except": [
+    "静岡市",
+    "浜松市",
+    "沼津市",
+    "富士市",
+    "富士宮市",
+    "焼津市"
+   ]
   }
  ],
  "municipalities": {
@@ -276,6 +293,24 @@
     "purpose": "地区計画",
     "role": "補助",
     "checked": "2026-10-17"
+   },
+   {
+    "label": "静岡市 建築基準法第22条の規定による区域指定（告示・PDF）",
+    "url": "https://www.city.shizuoka.lg.jp/documents/7671/000788308.pdf",
+    "what": "静岡都市計画区域のうち、防火地域・準防火地域を除く区域（平成15年告示第22号）",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "防火",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "静岡市 建築関係例規",
+    "url": "https://www.city.shizuoka.lg.jp/s2574/s007816.html",
+    "what": "上の告示へのリンクがある例規のページ",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "防火",
+    "role": "補助"
    }
   ],
   "浜松市": [
@@ -368,6 +403,24 @@
     "checked": "2026-10-17",
     "purpose": "地形",
     "role": "まずここで調べる"
+   },
+   {
+    "label": "浜松市 建築基準法第22条第1項の区域の指定",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/kensido/home_tochi/home/kensido/kisoku/22-1.html",
+    "what": "都市計画区域で防火・準防火地域を除く区域と、天竜区緑恵台地区（告示第253号ほか。令和7年4月変更）",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "防火",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "浜松市 特定行政庁が指定する事項等",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/kensido/tokuteigyouseityounositeisyuudan.html",
+    "what": "22条区域を含む、特定行政庁の指定事項の一覧",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "防火",
+    "role": "補助"
    }
   ],
   "沼津市": [
@@ -433,6 +486,15 @@
     "what": "浄化槽設置届（設置の21日前まで、認定型式は10日前まで）。問い合わせはクリーンセンター",
     "verified": true,
     "purpose": "浄化槽",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "沼津市 まちづくり政策課の担当業務（22条区域の記載・PDF）",
+    "url": "https://city.numazu.shizuoka.jp/shisei/office/ichiran/toshikei/doc/machiseisaku_tantou.pdf",
+    "what": "都市計画区域内の、防火・準防火地域以外は22条区域",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "防火",
     "role": "まずここで調べる"
    }
   ],
@@ -586,6 +648,15 @@
     "purpose": "地区計画",
     "role": "まずここで調べる",
     "checked": "2026-10-17"
+   },
+   {
+    "label": "富士宮市 設計にあたっての条件",
+    "url": "https://www.city.fujinomiya.lg.jp/entrepreneur/visuf8000000gm2s.html",
+    "what": "準防火地域を除く都市計画区域内を22条区域に指定",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "防火",
+    "role": "まずここで調べる"
    }
   ],
   "焼津市": [
@@ -661,6 +732,15 @@
     "purpose": "地区計画",
     "role": "まずここで調べる",
     "checked": "2026-10-17"
+   },
+   {
+    "label": "焼津市 建築基準法に基づく建築形態規制等の指定内容（PDF）",
+    "url": "https://www.city.yaizu.lg.jp/documents/11689/keitaikisei.pdf",
+    "what": "焼津市内全域を22条区域に指定（準防火地域を除く）",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "防火",
+    "role": "まずここで調べる"
    }
   ],
   "熱海市": [

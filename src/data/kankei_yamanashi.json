@@ -106,6 +106,18 @@
    "except": [
     "甲府市"
    ]
+  },
+  {
+   "label": "山梨県告示第294号 屋根を不燃材料で造り又はふかなければならない区域の指定（法22条）",
+   "url": "https://www.pref.yamanashi.jp/somu/shigaku/reiki/reiki_honbun/a500RG00000408.html",
+   "what": "富士吉田市・都留市・山梨市・甲斐市・上野原市・甲州市・市川三郷町・身延町・富士川町の区域（の一部）。範囲は関係図面（県庁・各市町役場で縦覧）",
+   "verified": true,
+   "checked": "2026-10-17",
+   "purpose": "防火",
+   "role": "まずここで調べる",
+   "except": [
+    "甲府市"
+   ]
   }
  ],
  "municipalities": {

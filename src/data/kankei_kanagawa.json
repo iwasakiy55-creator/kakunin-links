@@ -196,6 +196,26 @@
     "茅ヶ崎市",
     "大和市"
    ]
+  },
+  {
+   "label": "神奈川県 よくある質問（県西土木 建築指導班）：法22条指定区域",
+   "url": "https://www.pref.kanagawa.jp/docs/vd8/kenchikukeikakubu.html",
+   "what": "開成町は全域が22条区域。ほかの市町は「法第22条指定区域概略図（県西土木）」を見る。境界の付近は窓口で確かめる",
+   "verified": true,
+   "checked": "2026-10-17",
+   "purpose": "防火",
+   "role": "まずここで調べる",
+   "only": [
+    "南足柄市",
+    "中井町",
+    "大井町",
+    "松田町",
+    "山北町",
+    "開成町",
+    "箱根町",
+    "真鶴町",
+    "湯河原町"
+   ]
   }
  ],
  "municipalities": {
@@ -296,6 +316,15 @@
      "version": "令和７年12月版（沿革：昭40条例53・平22条例５・平30条例18・一部改正）",
      "exact": false
     }
+   },
+   {
+    "label": "横浜市 法第22条区域",
+    "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/tetsuduki/kuiki/22.html",
+    "what": "横浜市一円（防火・準防火地域を除く）。昭和26年告示第132号",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "防火",
+    "role": "まずここで調べる"
    }
   ],
   "川崎市": [
@@ -395,6 +424,15 @@
      "version": "令和８年７月版（最終の附則：令和８年６月３０日条例第３６号）",
      "exact": true
     }
+   },
+   {
+    "label": "川崎市 建築基準法第22条による区域（告示）",
+    "url": "https://reiki.city.kawasaki.jp/kawasaki/d1w_reiki/H326902500110/H326902500110_j.html",
+    "what": "川崎市全域（昭和26年告示第110号）",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "防火",
+    "role": "まずここで調べる"
    }
   ],
   "相模原市": [
@@ -487,6 +525,15 @@
      "version": "令和７年４月２５日版（沿革：一部改正〔平成24年条例18号〕）",
      "exact": true
     }
+   },
+   {
+    "label": "相模原市 建築物の屋根の構造を指定する区域（22条区域）",
+    "url": "https://www.city.sagamihara.kanagawa.jp/shisei/1026823/machitsukuri/kaihatsu/1004798.html",
+    "what": "南区・中央区は全域。緑区は町名ごと（区域図4枚）",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "防火",
+    "role": "まずここで調べる"
    }
   ],
   "横須賀市": [
@@ -568,6 +615,15 @@
      "version": "沿革：昭53条例19・平31条例10・令5条例21・一部改正（例規集の最終の附則：令和7年11月11日条例第64号）",
      "exact": true
     }
+   },
+   {
+    "label": "横須賀市 建築基準法第22条の区域指定（告示）",
+    "url": "https://www.city.yokosuka.kanagawa.jp/reiki/reiki_honbun/g204RG00000426.html",
+    "what": "市全域（昭和29年告示第2号）",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "防火",
+    "role": "まずここで調べる"
    }
   ],
   "平塚市": [
@@ -718,6 +774,15 @@
      "version": "最終の付則：令和７年３月11日条例第25号",
      "exact": true
     }
+   },
+   {
+    "label": "鎌倉市の建築基準法の指定関係（PDF）",
+    "url": "https://www.city.kamakura.kanagawa.jp/kenchikushidou/documents/siteikannkei.pdf",
+    "what": "市内全域（防火・準防火地域を除く）",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "防火",
+    "role": "まずここで調べる"
    }
   ],
   "藤沢市": [
@@ -843,6 +908,24 @@
      "version": "令和６年12月改訂版",
      "exact": true
     }
+   },
+   {
+    "label": "小田原市 建築基準法第22条区域図（PDF）",
+    "url": "https://www.city.odawara.kanagawa.jp/global-image/units/673861/1-20250327094342_b67e49f3e6a985.pdf",
+    "what": "22条区域（防火・準防火地域を除く）を地図で示す",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "防火",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "小田原市 建築の制限",
+    "url": "https://www.city.odawara.kanagawa.jp/field/c-planning/building/confirmation/seigen.html",
+    "what": "上の区域図のリンクがあるページ",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "防火",
+    "role": "補助"
    }
   ],
   "茅ヶ崎市": [
@@ -925,6 +1008,15 @@
      "version": "資料の表示：令4条例26・一部改正、令和4年9月28日（最終の附則：令和４年条例第26号）",
      "exact": true
     }
+   },
+   {
+    "label": "茅ヶ崎市の建築基準法の取り扱い（22条区域）",
+    "url": "https://www.city.chigasaki.kanagawa.jp/machidukuri/shidou/1008168.html",
+    "what": "茅ヶ崎市全域",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "防火",
+    "role": "まずここで調べる"
    }
   ],
   "逗子市": [
@@ -1074,6 +1166,15 @@
      "version": "沿革：平30条例32・一部改正（例規集の最終の附則：令和7年3月24日条例第5号）",
      "exact": true
     }
+   },
+   {
+    "label": "秦野市 建築指導課 よくある質問 Q6（PDF）",
+    "url": "https://www.city.hadano.kanagawa.jp/material/files/group/58/QandA.pdf",
+    "what": "丹沢大山国定公園区域内の山岳地帯を除いて22条区域",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "防火",
+    "role": "まずここで調べる"
    }
   ],
   "厚木市": [
@@ -1214,6 +1315,15 @@
      "version": "例規集のページ（改正の最終の日付は、ページからは読み取らなかった）",
      "exact": true
     }
+   },
+   {
+    "label": "大和市建築基準法施行細則 第18条（屋根の構造を指定する区域・PDF）",
+    "url": "https://www.city.yamato.lg.jp/material/files/group/52/20250413.pdf",
+    "what": "大和市全域",
+    "verified": true,
+    "checked": "2026-10-17",
+    "purpose": "防火",
+    "role": "まずここで調べる"
    }
   ],
   "葉山町": [

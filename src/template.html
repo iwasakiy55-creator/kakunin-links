@@ -370,7 +370,7 @@ footer { font-size:15px; }
 @media (max-width: 760px) { .keys { display:none; } }
 
 /* 入力・チェックは廃止（2026-10-16）。メモも出さない */
-#memoBtn, .cmemo, [data-go="cmemo"], [data-lmemo], .lmemo, .pill.memo, .shelf:has(.pill.memo), .legend span:nth-child(2), .grid button .mm { display:none !important; }
+#memoBtn, .cmemo, [data-go="cmemo"], [data-lmemo], .lmemo, .pill.memo, .shelf:has(.pill.memo), .grid button .mm { display:none !important; }
 
 /* 色の意味（2026-10-16）
    目的の色＝その目的だけに使う（番号・左の線・いちばん上のページ）。緑＝済んだ。黄＝気をつけて。青（基本の色）＝操作 */
@@ -678,6 +678,10 @@ kbd { display:inline-block; font-family:inherit; font-size:14px; font-weight:bol
 .legend .tkb.lim { background:#fff; color:#B8461B; border:1.5px solid #B8461B; padding:1px 6px; }
 .badge.tkx { background:#B8461B; color:#fff; }
 .badge.limx { background:#fff; color:#B8461B; border:1.5px solid #B8461B; }
+
+/* 丸囲みの「特」「限」 */
+.tkb, .grid button .tkb, .legend .tkb, #help .tkb { display:inline-grid; place-items:center; width:24px; height:24px; padding:0 !important; border-radius:50%; font-size:14px; font-weight:bold; letter-spacing:0; line-height:1; vertical-align:-3px; background:#B8461B; color:#fff; border:2px solid #B8461B; box-sizing:border-box; }
+.tkb.lim, .grid button .tkb.lim, .legend .tkb.lim, #help .tkb.lim { background:#fff; color:#B8461B; border:2px solid #B8461B; }
 </style>
 </head>
 <body>
@@ -708,7 +712,7 @@ kbd { display:inline-block; font-family:inherit; font-size:14px; font-weight:bol
 <div class="hs"><span>4</span><div><b>画面の写しを PDF で残す</b><p>調べた画面を <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> で切り取り、リンク集の画面に戻って <kbd>Ctrl</kbd>+<kbd>V</kbd>。<br>いま選んでいる目的の名前で、<b>保存先のフォルダに PDF</b> で入ります（はじめの1回だけ、保存先を聞かれます）。</p></div></div>
 <div class="hs"><span>5</span><div><b>関係規定を確かめる</b><p>上の<b>「関係規定」</b>で、建築基準関係規定（19）の一覧と、条文・調べ先が見られます。</p></div></div>
 </div>
-<div class="hnote"><b>札の見方</b>　<span class="ck c">地区計画の中身</span> 計画書・計画図　<span class="ck ok">条例あり＝審査の対象</span>　<span class="ck">窓口で確かめる</span>　<span class="tkb">特定</span> 特定行政庁<br>
+<div class="hnote"><b>札の見方</b>　<span class="ck c">地区計画の中身</span> 計画書・計画図　<span class="ck ok">条例あり＝審査の対象</span>　<span class="ck">窓口で確かめる</span>　<span class="tkb">特</span> 特定行政庁　<span class="tkb lim">限</span> 限定特定行政庁<br>
 <b>困ったとき</b>　リンクが開けない・載っていない・間違っているときは、マルホープ 岩崎まで。迷ったら、担当の課で確かめてください。</div>
 </div></div>
 <div id="terms" role="dialog" aria-modal="true" aria-label="利用規約"><div class="box"><div class="tx"><h2>調べ先リンク集　利用規約（案）</h2>
@@ -1000,8 +1004,8 @@ function home() {
     + (memoed.length ? `<div class="shelf"><span>${svg(I.memo, 15)}メモのある市町村</span>${memoed.map(o => `<button class="pill memo" data-p="${o.p}" data-m="${esc(o.m)}">${esc(o.m)}</button>`).join("")}</div>` : "")
     + `<div class="ptabs" role="tablist">${D.prefs.map((p, i) => `<button role="tab" data-pt="${i}" class="${i === PT ? "on" : ""}" style="--pc:var(--p${i % 3})">${esc(p.name)}<small>${Object.keys(p.munis).length}</small></button>`).join("")}</div>`
     + D.prefs.map((p, i) => `<div class="pref ${i === PT ? "" : "off"}" data-pi="${i}" style="--pc:var(--p${i % 3})"><h3>${esc(p.name)}<span class="n">${Object.keys(p.munis).length} 市町村</span><button class="pill" data-p="${i}" data-m="">県全体のページ</button></h3>
-      ${regions(p).map(([r, xs], ri) => `<div class="rg" style="--rb:var(--r${ri % 5});--rl:var(--rl${ri % 5})"><div class="rgn">${esc(r)}</div><div class="grid">${xs.map(m => `<button class="${isTk(p, m) ? "tk" : ""}" data-p="${i}" data-m="${esc(m)}" data-nm="${esc(norm(m))}" title="${isTk(p, m) ? "特定行政庁" : ""}">${esc(m)}${isTk(p, m) ? '<span class="tkb">特定</span>' : isLim(p, m) ? '<span class="tkb lim">限定</span>' : ""}</button>`).join("")}</div></div>`).join("")}</div>`).join("")
-    + `<div class="legend"><span><span class="tkb">特定</span>＝特定行政庁　　<span class="tkb lim">限定</span>＝限定特定行政庁（一部の建築物だけ市。ほかは県）</span></div>`, false);
+      ${regions(p).map(([r, xs], ri) => `<div class="rg" style="--rb:var(--r${ri % 5});--rl:var(--rl${ri % 5})"><div class="rgn">${esc(r)}</div><div class="grid">${xs.map(m => `<button class="${isTk(p, m) ? "tk" : ""}" data-p="${i}" data-m="${esc(m)}" data-nm="${esc(norm(m))}" title="${isTk(p, m) ? "特定行政庁" : ""}">${esc(m)}${isTk(p, m) ? '<span class="tkb" title="特定行政庁">特</span>' : isLim(p, m) ? '<span class="tkb lim" title="限定特定行政庁">限</span>' : ""}</button>`).join("")}</div></div>`).join("")}</div>`).join("")
+    + `<div class="legend"><span><span class="tkb">特</span>＝特定行政庁　　<span class="tkb lim">限</span>＝限定特定行政庁（一部の建築物だけ市。ほかは県）</span></div>`, false);
   document.body.classList.add("home");
   const a = $("#startA"); if (a) { a.addEventListener("input", narrow); narrow(); }
 }

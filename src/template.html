@@ -806,6 +806,13 @@ header .brand { margin-right:auto; }
 :root[data-theme="dark"] .ty { filter:brightness(.8) saturate(1.2); }
 @media (max-width: 760px) { .ty { width:52px; height:48px; font-size:12px; } .ty .ti { font-size:18px; } .tb .tl { font-size:17px !important; } .mdr .lk .main { gap:10px !important; } }
 .tb .tl { order:0 !important; } .tb .own { order:1; } .tb .cks { order:2 !important; }
+
+/* 鬼レビュー2 */
+.kind.look .kh::after { display:none !important; }
+.kind.ask .lk .main::after { background:var(--a) !important; }
+.kind.ask .lk { background:var(--panel) !important; }
+.kind .kh { font-size:16px !important; color:var(--ink) !important; }
+.tb .own .unv { color:var(--faint); font-size:13px; }
 </style>
 </head>
 <body>
@@ -1028,7 +1035,6 @@ function flags(x) {
   const st = ST[x.url], f = [];
   const pb = problem(st); if (pb) f.push(pb);
   if (st && recentChg(st.changed)) f.push(`${st.changed} にページの${st.why === "title" ? "題名" : "中身"}が変わりました。告示・条例の改正かもしれません。開いて確かめてください`);
-  if (x.verified === false) f.push("地図などで、中身までは確かめていません");
   return f.map(t => `<span class="note">${svg(I.warn, 13)}${esc(t)}</span>`).join("");
 }
 const score = x => (x.role || "").startsWith("まず") ? 0 : 1;
@@ -1173,7 +1179,7 @@ function chips(x) {           // 大事なことを、先に札で
 /* 調べるページ と 決まり・窓口 を分ける（名前で見分ける。データは変えない） */
 const LOOK_RE = /マップ|GIS|ＧＩＳ|地図|総括図|台帳|計画図|計画書|ハザード|インターネット公開|閲覧|図面|網図|区域図|指定図|道路図|一覧|図（|図\(|図$/;
 const ASK_RE = /条例|例規|告示|相談|について|手続|申請|届出|窓口|担当|案内|問い?合わ?せ|事前協議|取扱|要綱|指針|手引|の流れ|制度|概要|火災予防|課$|課）|係$/;
-const isAsk = x => !LOOK_RE.test(x.label) && ASK_RE.test(x.label);
+const isAsk = x => { const ty = linkType(x)[0]; return ty === "law" || ty === "ask" ? true : ty === "map" || ty === "pdf" ? false : !LOOK_RE.test(x.label) && ASK_RE.test(x.label); };
 function twoKinds(all, p, m) {
   // 並べる順：GIS・地図のサイト → そのほか → PDF（「まずここ」とは決めない）
   const rank = x => /GIS|ＧＩＳ|マップ|MAP|地図|わが街|ガイド/i.test(x.label) && !/PDF/.test(x.label) ? 0 : /PDF/.test(x.label + (x.what || "")) ? 2 : 1;
@@ -1186,8 +1192,9 @@ function linkType(x) {
   const s = x.label + " " + x.url, w = x.label + (x.what || "");
   if (/\.pdf($|\?)/i.test(x.url) || /PDF/.test(x.label + (x.what || ""))) return ["pdf", "📄", "PDF", "資料を開く"];
   if (/GIS|ＧＩＳ|マップ|MAP|地図|わが街|ガイド|gis|map|chiriin/i.test(s)) return ["map", "🗺", "地図", "地図で探す"];
+  if (/相談|窓口|問い?合わ?せ|課$|課）|係$|担当/.test(x.label)) return ["ask", "☎", "窓口", "聞く先を見る"];
   if (/条例|例規|規則/.test(x.label)) return ["law", "⚖", "条例", "決まりを読む"];
-  if (/相談|窓口|問い?合わ?せ|課$|課）|係$|担当/.test(x.label) || /窓口/.test(w)) return ["ask", "☎", "窓口", "聞く先を見る"];
+  if (/窓口/.test(w)) return ["ask", "☎", "窓口", "聞く先を見る"];
   return ["page", "📘", "説明", "説明を読む"];
 }
 function cleanName(s, own) {
@@ -1200,7 +1207,7 @@ function linkBlock(o, p, m, first) {
   const kt = o.ken && (m || x.src) ? `<span class="first tagk">${esc(x.src || p.name)}</span>` : "";
   return `<div class="lkw"><div class="lk ${first ? "top" : ""}" data-u="${esc(x.url)}">
     <a class="main" href="${esc(x.url)}" target="_blank" rel="noopener" title="${esc(x.label + (shortNote(x.what) ? "\n" + shortNote(x.what) : ""))}">${(() => { const ty = linkType(x), own = x.src || (o.ken ? p.name : (m || p.name)), ck = chips(x).replace(/<span class="ck( mado)?">(PDF|地図|窓口で確かめる)<\/span>/g, "");
-      return `<span class="ty ty-${ty[0]}"><span class="ti">${ty[1]}</span>${ty[2]}</span><span class="tb"><span class="tl">${esc(cleanName(shortLabel(x.label), own))}</span><span class="own">${esc(own)}${ty[3] ? "　" + ty[3] : ""}</span>${ck ? `<span class="cks">${ck}</span>` : ""}</span>`; })()}
+      return `<span class="ty ty-${ty[0]}"><span class="ti">${ty[1]}</span>${ty[2]}</span><span class="tb"><span class="tl">${esc(cleanName(shortLabel(x.label), own))}</span><span class="own">${esc(own)}${ty[3] ? "　" + ty[3] : ""}${x.verified === false ? `<span class="unv">　中身は未確認</span>` : ""}</span>${ck ? `<span class="cks">${ck}</span>` : ""}</span>`; })()}
       ${shortNote(x.what, x) ? `<div class="what">${esc(shortNote(x.what, x))}</div>` : ""}</a>
     <div class="acts"><button class="act" data-copy="${esc(x.url)}" title="このページの場所を写す（質疑書などに貼れる）" aria-label="場所を写す" data-lb="写す">${svg(I.copy, 17)}</button>
       <button class="act ${mm ? "has" : ""}" data-lmemo="${esc(x.url)}" title="このページにメモを書く" aria-label="メモ" data-lb="メモ">${svg(I.pen, 17)}</button></div></div>

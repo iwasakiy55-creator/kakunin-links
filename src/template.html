@@ -1440,7 +1440,7 @@ function city(pi, m) {
       if (ms.length) nMap++;
       const chip = o => { const who = o.x.src ? "国" : o.ken ? "県" : "市町村"; const own = o.x.src || (o.ken ? p.name : (m || p.name));
         return `<a class="mchip" href="${esc(o.x.url)}" target="_blank" rel="noopener" data-ks="${esc(k)}" title="${esc(o.x.label)}"><i class="w w-${who === "国" ? "n" : who === "県" ? "k" : "m"}">${who}</i>${esc(cleanName(shortLabel(o.x.label), own))} ↗</a>`; };
-      const other = all.length ? "地図はありません（資料・窓口で確かめる。下のつまみで）" : "載っている調べ先がありません（窓口で確かめる）";
+      const other = all.length ? "地図なし（資料・窓口で）" : "調べ先なし（窓口で）";
       return `<div class="mrow ${ms.length ? "has" : "nomap"}"><div class="mk">${ms.length ? "◎" : "✕"} ${esc(tt)}</div><div class="mv">${ms.length ? ms.map(chip).join("") : `<span class="mno">${other}</span>`}</div></div>`;
     }).join("");
     return `<details class="maps" open><summary>🗺 地図で調べられるもの（${nMap} / ${list.filter(o => o.k !== "そのほか").length}）</summary><div class="mtab">${rowsH}</div></details>`;

@@ -1026,6 +1026,13 @@ header .brand { margin-right:auto; }
 .maps .mt.none .mts { color:var(--faint); opacity:.8; }
 .case { padding:10px 14px !important; margin-bottom:12px !important; }
 .case::before { font-size:13.5px !important; margin-bottom:6px !important; }
+@media (max-width: 760px) {
+  .rules .rule { display:grid !important; grid-template-columns:1fr auto; gap:4px 8px !important; align-items:center; }
+  .rules .rule .rn { grid-column:1; }
+  .rules .rule .rgo { grid-column:2; grid-row:1; margin:0 !important; }
+  .rules .rule .rw { grid-column:1 / -1; }
+  .case .line2 { display:flex; justify-content:space-between; align-items:center; gap:8px; }
+}
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
 <link rel="manifest" href="manifest.webmanifest?v=2"><link rel="apple-touch-icon" href="apple-touch-icon.png?v=2"><link rel="icon" type="image/png" href="favicon.png?v=2"><meta name="theme-color" content="#17708F"><meta name="apple-mobile-web-app-title" content="調べ先リンク">

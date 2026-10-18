@@ -71,6 +71,16 @@ window.LINK_STATUS = {
                                                                                                         "why":  "",
                                                                                                         "hash":  "B05CC58F23FE132A"
                                                                                                     },
+                  "http://www.vill.doshi.lg.jp/":  {
+                                                       "code":  "200",
+                                                       "at":  "2026-10-18",
+                                                       "fails":  0,
+                                                       "kind":  "",
+                                                       "title":  "道志村役場",
+                                                       "changed":  "",
+                                                       "why":  "",
+                                                       "hash":  "FF8F099A0AD94FA5"
+                                                   },
                   "http://www.vill.doshi.lg.jp/ka/info.php?if_id=89\u0026ka_id=1":  {
                                                                                         "code":  "200",
                                                                                         "at":  "2026-10-18",
@@ -81,6 +91,16 @@ window.LINK_STATUS = {
                                                                                         "why":  "",
                                                                                         "hash":  "2D2A6A3B9D4AFF31"
                                                                                     },
+                  "http://www.vill.kosuge.yamanashi.jp/":  {
+                                                               "code":  "200",
+                                                               "at":  "2026-10-18",
+                                                               "fails":  0,
+                                                               "kind":  "",
+                                                               "title":  "小菅村ホームページ",
+                                                               "changed":  "",
+                                                               "why":  "",
+                                                               "hash":  "31C13AF8B895FE35"
+                                                           },
                   "http://www.vill.kosuge.yamanashi.jp/living/shinko/identification.html":  {
                                                                                                 "code":  "200",
                                                                                                 "at":  "2026-10-18",
@@ -441,6 +461,16 @@ window.LINK_STATUS = {
                                                                     "why":  "",
                                                                     "hash":  "D2187CC8DF69B14D"
                                                                 },
+                  "https://maps.yaizu-smartcity.jp/#/?baseMap=gsi\u0026layers=j42AX122dteM0MAF5i7fVqQfoJc3VO5D2yM14iFxhF\u0026center=138.32315540789853%2F34.85991838300079\u0026zoom=13.786673574483752":  {
+                                                                                                                                                                                                                "code":  "200",
+                                                                                                                                                                                                                "at":  "2026-10-18",
+                                                                                                                                                                                                                "fails":  0,
+                                                                                                                                                                                                                "kind":  "",
+                                                                                                                                                                                                                "title":  "スマートマップ焼津",
+                                                                                                                                                                                                                "changed":  "",
+                                                                                                                                                                                                                "why":  "",
+                                                                                                                                                                                                                "hash":  "C76043D4C6A53959"
+                                                                                                                                                                                                            },
                   "https://ops-jg.d1-law.com/opensearch/?jctcd=8A80260D3F":  {
                                                                                  "code":  "200",
                                                                                  "at":  "2026-10-18",
@@ -477,8 +507,8 @@ window.LINK_STATUS = {
                                                                                  "fails":  0,
                                                                                  "kind":  "",
                                                                                  "title":  "葉山町例規集（神奈川県）",
-                                                                                 "changed":  "2026-10-18",
-                                                                                 "why":  "body",
+                                                                                 "changed":  "",
+                                                                                 "why":  "",
                                                                                  "hash":  "A510079400539798"
                                                                              },
                   "https://ops-jg.d1-law.com/opensearch/?jctcd=8A80731BD1":  {
@@ -509,7 +539,7 @@ window.LINK_STATUS = {
                                                                                              "title":  "小田原市例規集（神奈川県）",
                                                                                              "changed":  "",
                                                                                              "why":  "",
-                                                                                             "hash":  "5C7FA4C3900DA5EC"
+                                                                                             "hash":  "B6C5C9F502FB0D0E"
                                                                                          },
                   "https://ops-jg.d1-law.com/opensearch/SrJbF01/init?jctcd=8A8573C75D\u0026houcd=H411901010028":  {
                                                                                                                       "code":  "200",
@@ -517,8 +547,8 @@ window.LINK_STATUS = {
                                                                                                                       "fails":  0,
                                                                                                                       "kind":  "",
                                                                                                                       "title":  "沼津市地区計画の区域内における建築物の制限に関する条例 沼津市例規集（静岡県）",
-                                                                                                                      "changed":  "2026-10-18",
-                                                                                                                      "why":  "body",
+                                                                                                                      "changed":  "",
+                                                                                                                      "why":  "",
                                                                                                                       "hash":  "1E60561E3936D746"
                                                                                                                   },
                   "https://ops-jg.d1-law.com/opensearch/SrJbF01/init?jctcd=8A8573C7C2\u0026houcd=H421901010026":  {
@@ -527,8 +557,8 @@ window.LINK_STATUS = {
                                                                                                                       "fails":  0,
                                                                                                                       "kind":  "",
                                                                                                                       "title":  "掛川市地区計画の区域内における建築物の制限に関する条例 掛川市例規集（静岡県）",
-                                                                                                                      "changed":  "2026-10-18",
-                                                                                                                      "why":  "body",
+                                                                                                                      "changed":  "",
+                                                                                                                      "why":  "",
                                                                                                                       "hash":  "DDF6BAE1A50B8079"
                                                                                                                   },
                   "https://ops-jg.d1-law.com/opensearch/SrJbF01/init?jctcd=8A8573C7C8\u0026houcd=H413901010021":  {
@@ -537,8 +567,8 @@ window.LINK_STATUS = {
                                                                                                                       "fails":  0,
                                                                                                                       "kind":  "",
                                                                                                                       "title":  "下田都市計画再開発地区計画武ガ浜地区再開発地区計画の区域内における建築物の制限に関する条例 下田市例規集（静岡県）",
-                                                                                                                      "changed":  "2026-10-18",
-                                                                                                                      "why":  "body",
+                                                                                                                      "changed":  "",
+                                                                                                                      "why":  "",
                                                                                                                       "hash":  "1D61FF54129538A4"
                                                                                                                   },
                   "https://ops-jg.d1-law.com/opensearch/SrJbF01/init?jctcd=8A8573C81C\u0026houcd=H501901010007":  {
@@ -547,8 +577,8 @@ window.LINK_STATUS = {
                                                                                                                       "fails":  0,
                                                                                                                       "kind":  "",
                                                                                                                       "title":  "伊豆市牧之郷地区計画の区域内における建築物の制限に関する条例 伊豆市例規集（静岡県）",
-                                                                                                                      "changed":  "2026-10-18",
-                                                                                                                      "why":  "body",
+                                                                                                                      "changed":  "",
+                                                                                                                      "why":  "",
                                                                                                                       "hash":  "51C12EFF90DDDF05"
                                                                                                                   },
                   "https://ops-jg.d1-law.com/opensearch/SrJbF01/init?jctcd=8A8573F059\u0026houcd=H418901010009":  {
@@ -557,8 +587,8 @@ window.LINK_STATUS = {
                                                                                                                       "fails":  0,
                                                                                                                       "kind":  "",
                                                                                                                       "title":  "清水町地区計画の区域内における建築物の制限等に関する条例 清水町例規集（静岡県）",
-                                                                                                                      "changed":  "2026-10-18",
-                                                                                                                      "why":  "body",
+                                                                                                                      "changed":  "",
+                                                                                                                      "why":  "",
                                                                                                                       "hash":  "617905B67DDAD80D"
                                                                                                                   },
                   "https://ops-jg.d1-law.com/opensearch/SrMjF01/init?jctcd=8A8573EED2":  {
@@ -621,6 +651,16 @@ window.LINK_STATUS = {
                                                                    "why":  "",
                                                                    "hash":  "2CE23411DBFE30F8"
                                                                },
+                  "https://sagamihara.geocloud.jp":  {
+                                                         "code":  "200",
+                                                         "at":  "2026-10-18",
+                                                         "fails":  0,
+                                                         "kind":  "",
+                                                         "title":  "さがみはら地図情報",
+                                                         "changed":  "",
+                                                         "why":  "",
+                                                         "hash":  "15DB52C32C3FB51E"
+                                                     },
                   "https://sagamihara.geocloud.jp/":  {
                                                           "code":  "200",
                                                           "at":  "2026-10-18",
@@ -3447,9 +3487,9 @@ window.LINK_STATUS = {
                                                                                       "fails":  0,
                                                                                       "kind":  "",
                                                                                       "title":  "下水道の種類と区域 - 掛川市",
-                                                                                      "changed":  "",
-                                                                                      "why":  "",
-                                                                                      "hash":  "2A3B9EF01CD3101C"
+                                                                                      "changed":  "2026-10-18",
+                                                                                      "why":  "body",
+                                                                                      "hash":  "09A16AA4300E4BA2"
                                                                                   },
                   "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/8038.html":  {
                                                                                       "code":  "200",
@@ -3457,9 +3497,9 @@ window.LINK_STATUS = {
                                                                                       "fails":  0,
                                                                                       "kind":  "",
                                                                                       "title":  "給水装置工事の申込み - 掛川市",
-                                                                                      "changed":  "2026-10-17",
+                                                                                      "changed":  "2026-10-18",
                                                                                       "why":  "body",
-                                                                                      "hash":  "7F63C7E3C903D38C"
+                                                                                      "hash":  "C9D2130A9BF7D059"
                                                                                   },
                   "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/8840.html":  {
                                                                                       "code":  "200",
@@ -3467,9 +3507,9 @@ window.LINK_STATUS = {
                                                                                       "fails":  0,
                                                                                       "kind":  "",
                                                                                       "title":  "住宅用火災警報器の点検及び交換について - 掛川市",
-                                                                                      "changed":  "2026-10-17",
+                                                                                      "changed":  "2026-10-18",
                                                                                       "why":  "body",
-                                                                                      "hash":  "A5BC89A847E698C6"
+                                                                                      "hash":  "521FE17031FD1464"
                                                                                   },
                   "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/9859.html":  {
                                                                                       "code":  "200",
@@ -3477,9 +3517,9 @@ window.LINK_STATUS = {
                                                                                       "fails":  0,
                                                                                       "kind":  "",
                                                                                       "title":  "地区計画について - 掛川市",
-                                                                                      "changed":  "2026-10-17",
+                                                                                      "changed":  "2026-10-18",
                                                                                       "why":  "body",
-                                                                                      "hash":  "15C8C2E2E448555D"
+                                                                                      "hash":  "DA07720CD2498F44"
                                                                                   },
                   "https://www.city.kakegawa.shizuoka.jp/gyosei/docs/9982.html":  {
                                                                                       "code":  "200",
@@ -5951,6 +5991,16 @@ window.LINK_STATUS = {
                                                                                                                                   "why":  "",
                                                                                                                                   "hash":  "1A1F1A16110A4A03"
                                                                                                                               },
+                  "https://www.city.yaizu.lg.jp/map-info/urban-planning/":  {
+                                                                                "code":  "200",
+                                                                                "at":  "2026-10-18",
+                                                                                "fails":  0,
+                                                                                "kind":  "",
+                                                                                "title":  "焼津市都市計画図 ご利用上の注意事項",
+                                                                                "changed":  "",
+                                                                                "why":  "",
+                                                                                "hash":  "9FD11D5884BE71DC"
+                                                                            },
                   "https://www.city.yamanashi.yamanashi.jp/soshiki/20/1957.html":  {
                                                                                        "code":  "200",
                                                                                        "at":  "2026-10-18",
@@ -9661,26 +9711,6 @@ window.LINK_STATUS = {
                                                                                              "why":  "",
                                                                                              "hash":  "FACC7AB75FB91480"
                                                                                          },
-                  "https://www.vill.doshi.lg.jp/":  {
-                                                        "code":  "ConnectFailure",
-                                                        "at":  "2026-10-18",
-                                                        "fails":  15,
-                                                        "kind":  "",
-                                                        "title":  "",
-                                                        "changed":  "",
-                                                        "why":  "",
-                                                        "hash":  ""
-                                                    },
-                  "https://www.vill.kosuge.yamanashi.jp/":  {
-                                                                "code":  "ConnectFailure",
-                                                                "at":  "2026-10-18",
-                                                                "fails":  15,
-                                                                "kind":  "",
-                                                                "title":  "",
-                                                                "changed":  "",
-                                                                "why":  "",
-                                                                "hash":  ""
-                                                            },
                   "https://www.vill.narusawa.yamanashi.jp/gyosei/machizukuri_kankyo/jogesuido/961.html":  {
                                                                                                               "code":  "200",
                                                                                                               "at":  "2026-10-18",
@@ -10221,6 +10251,16 @@ window.LINK_STATUS = {
                                                          "why":  "",
                                                          "hash":  "EA210B880BA30391"
                                                      },
+                  "https://www2.wagmap.jp/fuefuki/Portal":  {
+                                                                "code":  "200",
+                                                                "at":  "2026-10-18",
+                                                                "fails":  0,
+                                                                "kind":  "",
+                                                                "title":  "ふえふきわが街ガイドマップ | トップ",
+                                                                "changed":  "",
+                                                                "why":  "",
+                                                                "hash":  "EA210B880BA30391"
+                                                            },
                   "https://www2.wagmap.jp/fujicity/PositionSelect?mid=11":  {
                                                                                 "code":  "200",
                                                                                 "at":  "2026-10-18",
@@ -10321,6 +10361,16 @@ window.LINK_STATUS = {
                                                                "why":  "",
                                                                "hash":  "DAB45622EB3A862D"
                                                            },
+                  "https://www2.wagmap.jp/hamamatsu/":  {
+                                                            "code":  "200",
+                                                            "at":  "2026-10-18",
+                                                            "fails":  0,
+                                                            "kind":  "",
+                                                            "title":  "浜松市地図情報サイト | トップ",
+                                                            "changed":  "",
+                                                            "why":  "",
+                                                            "hash":  "FEE42E486EDFE1C7"
+                                                        },
                   "https://www2.wagmap.jp/hamamatsu/PositionSelect?mid=3":  {
                                                                                 "code":  "200",
                                                                                 "at":  "2026-10-18",
@@ -10361,6 +10411,16 @@ window.LINK_STATUS = {
                                                                                  "why":  "",
                                                                                  "hash":  "A2634C478006BE91"
                                                                              },
+                  "https://www2.wagmap.jp/hayama/":  {
+                                                         "code":  "200",
+                                                         "at":  "2026-10-18",
+                                                         "fails":  0,
+                                                         "kind":  "",
+                                                         "title":  "はやまMAP | トップ",
+                                                         "changed":  "",
+                                                         "why":  "",
+                                                         "hash":  "38C7A83B7ECEC7BF"
+                                                     },
                   "https://www2.wagmap.jp/isehara/Portal":  {
                                                                 "code":  "200",
                                                                 "at":  "2026-10-18",

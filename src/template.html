@@ -969,6 +969,16 @@ header .brand { margin-right:auto; }
 @media (max-width: 760px) { .maps .mlist { grid-template-columns:1fr; } .maps .mk2 { width:6em; font-size:12.5px; } }
 .maps .mlist { display:flex !important; flex-direction:column; gap:0 !important; }
 .maps .mline { padding:4px 0; }
+/* 地図の抜粋：タイル */
+.maps .mtiles { display:grid; grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:6px; margin-top:8px; }
+.maps .mtile { position:relative; display:flex; flex-direction:column; gap:2px; min-height:64px; padding:6px 8px 6px 10px; border-radius:10px; text-decoration:none; color:var(--ink);
+  background:color-mix(in srgb, var(--pc) 7%, var(--panel)); border:1px solid color-mix(in srgb, var(--pc) 28%, transparent); border-left:4px solid var(--pc); }
+.maps .mtile:hover { background:color-mix(in srgb, var(--pc) 14%, var(--panel)); }
+.maps .mtp { font-size:11.5px; font-weight:bold; color:color-mix(in srgb, var(--pc) 80%, var(--ink)); }
+.maps .mtn { font-size:13.5px; font-weight:bold; line-height:1.3; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.maps .mtw { display:flex; gap:3px; margin-top:auto; }
+.maps .mtw .w { font-style:normal; font-size:10px; font-weight:bold; border-radius:999px; padding:0 6px; color:#fff; }
+@media (max-width: 760px) { .maps .mtiles { grid-template-columns:repeat(2, 1fr); } }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
 <link rel="manifest" href="manifest.webmanifest?v=2"><link rel="apple-touch-icon" href="apple-touch-icon.png?v=2"><link rel="icon" type="image/png" href="favicon.png?v=2"><meta name="theme-color" content="#17708F"><meta name="apple-mobile-web-app-title" content="調べ先リンク">
@@ -1486,7 +1496,7 @@ function city(pi, m) {
     const sysName = x => { const s = shortLabel(x.label); const q = s.match(/「([^」]+)」/); return (q ? q[1] : s.replace(/（[^）]*）/g, "")).replace(/\s/g, ""); };
     const isBody = x => /地図本体/.test(x.label) || !/^(www\.)?(city|town|vill)\./.test(new URL(x.url).hostname);
     const isMapPdf = x => linkType(x)[0] === "pdf" && /図|マップ|MAP|地図/i.test(x.label);
-    const has = [], no = [];
+    const has = [], no = [], hasK = [];
     list.filter(o => o.k !== "そのほか").forEach(({ k, t: tt, all }) => {
       const seen = new Map();
       all.filter(o => linkType(o.x)[0] === "map" || isMapPdf(o.x)).forEach(o => { const key = (o.x.src ? "n:" : o.ken ? "k:" : "m:") + sysName(o.x); const prev = seen.get(key);
@@ -1495,10 +1505,12 @@ function city(pi, m) {
       if (!ms.length) { no.push(tt); return; }
       const chip = o => { const own = o.x.src || (o.ken ? p.name : (m || p.name)); const pdf = linkType(o.x)[0] === "pdf"; const who = o.x.src ? "国" : o.ken ? "県" : "市";
         return `<a class="mchip ${pdf ? "pdf" : ""}" href="${esc(o.x.url)}" target="_blank" rel="noopener" data-ks="${esc(k)}" title="${esc(o.x.label)}"><i class="w w-${who === "国" ? "n" : who === "県" ? "k" : "m"}">${who}</i>${pdf ? '<i class="w w-pdf">PDF</i>' : ""}${esc(cleanName(shortLabel(o.x.label), own))}</a>`; };
-      has.push(`<div class="mline"><span class="mk2">${esc(tt)}</span><span class="mv2">${ms.map(chip).join("")}</span></div>`);
+      ms.forEach(o => { const own = o.x.src || (o.ken ? p.name : (m || p.name)); const pdf = linkType(o.x)[0] === "pdf"; const who = o.x.src ? "国" : o.ken ? "県" : "市";
+        has.push(`<a class="mtile ${pdf ? "pdf" : ""}" href="${esc(o.x.url)}" target="_blank" rel="noopener" data-ks="${esc(k)}" title="${esc(o.x.label)}" style="--pc:var(${(ICON[k] || ICON["そのほか"])[0]})"><span class="mtp">${esc(tt)}</span><span class="mtn">${esc(cleanName(shortLabel(o.x.label), own))}</span><span class="mtw"><i class="w w-${who === "国" ? "n" : who === "県" ? "k" : "m"}">${who}</i>${pdf ? '<i class="w w-pdf">PDF</i>' : ""}</span></a>`); });
+      hasK.push(tt);
     });
     if (!has.length) return "";
-    return `<details class="maps" open><summary>🗺 地図の抜粋（${has.length} / ${has.length + no.length}）</summary><div class="mlist">${has.join("")}</div>${no.length ? `<div class="mnone">地図なし：${no.map(esc).join("・")}（下のつまみで、資料・窓口を見る）</div>` : ""}</details>`;
+    return `<details class="maps" open><summary>🗺 地図の抜粋（${hasK.length} / ${hasK.length + no.length}）</summary><div class="mtiles">${has.join("")}</div>${no.length ? `<div class="mnone">地図なし：${no.map(esc).join("・")}（下のつまみで、資料・窓口を見る）</div>` : ""}</details>`;
   })();
   const hold = m && (p.hold || []).includes(m)
     ? `<div class="holdn">${svg(I.info, 20)}<div><b>${esc(m)}</b>のホームページは、リンクに事前の許可が要るため、許可をいただくまで載せていません。${esc(p.name)}・国などのページを載せています。${esc(m)}のページは、${esc(m)}のホームページから直接たどってください。</div></div>` : "";

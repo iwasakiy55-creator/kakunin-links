@@ -1040,7 +1040,8 @@ header .brand { margin-right:auto; }
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script>
 const SITE = /*SITE*/"";
-const IS_DEV = /*DEV*/false;   // 開発版（/dev/）は、時間の制限なし・上に「開発版」と出す
+const IS_DEV = /*DEV*/false;
+const TOUCH = window.matchMedia && matchMedia("(hover: none), (pointer: coarse)").matches;   // スマホ・タブレットでは、開いただけで文字入力（キーボード）を出さない   // 開発版（/dev/）は、時間の制限なし・上に「開発版」と出す
 let D = /*DATA*/null;      // 中に入っている一覧。最新の一覧（latest.js）が取れたら、そちらを使う
 let ST = {}, ST_AT = "", MUNIS = [], NLINK = 0;
 const $ = s => document.querySelector(s);
@@ -1264,7 +1265,7 @@ function narrow() {     // はじめの枠に入れた字で、一覧を絞る�
 function home() {
   if (LOCKED) return;   // 時間外・期間外は、どのボタンからも中に入れない
   if (PT >= D.prefs.length) PT = 0;
-  go(""); setTimeout(() => { const a = $("#startA"); if (a && !/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)) a.focus(); }, 50);
+  go(""); setTimeout(() => { const a = $("#startA"); if (a && !TOUCH && !/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)) a.focus(); }, 50);
   const rc = recent.filter(r => D.prefs[r.p] && D.prefs[r.p].munis[r.m]);
   const memoed = MUNIS.filter(o => muniHasMemo(D.prefs[o.p].name, o.m));
   show(`<div class="hero"><h2>どこの物件を調べますか？</h2>
@@ -1840,7 +1841,7 @@ const TERMS_VER = "2026-10-17c";
 function terms(read) {      // はじめてのとき（と、規約を変えたとき）は、同意してから使う
   const el = $("#terms"); el.style.display = "grid";
   $("#termsOk").hidden = !!read; $("#termsClose").hidden = !read;
-  $("#termsOk").onclick = () => { el.style.display = "none"; const a = $("#startA"); if (a) a.focus(); };
+  $("#termsOk").onclick = () => { el.style.display = "none"; const a = $("#startA"); if (a && !TOUCH) a.focus(); };
   $("#termsClose").onclick = () => { el.style.display = "none"; };
 }
 function boot() {

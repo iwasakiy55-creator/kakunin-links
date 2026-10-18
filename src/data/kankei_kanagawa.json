@@ -911,6 +911,15 @@
     "role": "まずここで調べる",
     "name": "雨水浸透桝の設置",
     "rule_for": "下水道"
+   },
+   {
+    "label": "さがみはら地図情報（Web公開型GIS）",
+    "url": "https://sagamihara.geocloud.jp",
+    "what": "道路台帳・指定道路図・都市計画・下水道台帳・防災マップなど",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "道路",
+    "role": "まずここで調べる"
    }
   ],
   "横須賀市": [
@@ -2233,6 +2242,24 @@
     "role": "まずここで調べる",
     "name": "新築・増築前の事前相談（まちづくり条例）",
     "rule_for": "そのほか"
+   },
+   {
+    "label": "はやまMAP（都市計画マップ）",
+    "url": "https://www2.wagmap.jp/hayama/",
+    "what": "都市計画マップ。道路台帳図・ハザードマップも同じポータルから",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "はやまMAP（道路台帳図）",
+    "url": "https://www2.wagmap.jp/hayama/",
+    "what": "道路台帳図。ポータルから選ぶ",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "道路",
+    "role": "まずここで調べる"
    }
   ],
   "寒川町": [
@@ -3068,6 +3095,24 @@
     "role": "まずここで調べる",
     "name": "景観の事前協議・届出（大山まちなみ継承地区）",
     "rule_for": "そのほか"
+   },
+   {
+    "label": "いせはらWebMaps（地図）",
+    "url": "https://www2.wagmap.jp/isehara/Portal",
+    "what": "道路台帳・公共下水道台帳。ポータルから選ぶ",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "いせはらWebMaps（下水道台帳の地図）",
+    "url": "https://www2.wagmap.jp/isehara/Portal",
+    "what": "公共下水道台帳。ポータルから選ぶ",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "下水道",
+    "role": "まずここで調べる"
    }
   ],
   "海老名市": [
@@ -3137,6 +3182,15 @@
     "role": "まずここで調べる",
     "name": "住みよいまちづくり条例（市街化調整区域の建築）",
     "rule_for": "開発許可"
+   },
+   {
+    "label": "i-MAPわが街海老名ガイド",
+    "url": "https://www2.wagmap.jp/ebina/Portal",
+    "what": "道路情報の地図",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "道路",
+    "role": "まずここで調べる"
    }
   ],
   "座間市": [

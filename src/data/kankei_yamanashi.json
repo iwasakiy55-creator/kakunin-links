@@ -414,6 +414,33 @@
     "role": "まずここで調べる",
     "name": "景観計画区域内行為の届出",
     "rule_for": "そのほか"
+   },
+   {
+    "label": "デジMap甲斐（地図）",
+    "url": "https://webgis.alandis.jp/kai19/portal/",
+    "what": "都市計画図・道路情報・防災情報を、ポータルから選ぶ",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "デジMap甲斐（道路情報の地図）",
+    "url": "https://webgis.alandis.jp/kai19/portal/",
+    "what": "道路情報。ポータルから選ぶ",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "道路",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "デジMap甲斐（防災情報の地図）",
+    "url": "https://webgis.alandis.jp/kai19/portal/",
+    "what": "防災情報。ポータルから選ぶ",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "災害",
+    "role": "まずここで調べる"
    }
   ],
   "中央市": [
@@ -1741,6 +1768,24 @@
     "role": "まずここで調べる",
     "name": "景観の届出（森林景観形成地域）",
     "rule_for": "そのほか"
+   },
+   {
+    "label": "ふえふきわが街ガイドマップ",
+    "url": "https://www2.wagmap.jp/fuefuki/Portal",
+    "what": "都市計画区域・用途地域など",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "ふえふきわが街ガイドマップ（認定路線網図）",
+    "url": "https://www2.wagmap.jp/fuefuki/Portal",
+    "what": "認定路線網図。ポータルから選ぶ",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "道路",
+    "role": "まずここで調べる"
    }
   ],
   "丹波山村": [

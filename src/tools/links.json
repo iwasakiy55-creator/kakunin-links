@@ -574,6 +574,13 @@
 "label": "景観計画重点地区の届出／浜松市"
 },
 {
+"url": "https://www2.wagmap.jp/hamamatsu/",
+"pref": "静岡県",
+"muni": "浜松市",
+"purpose": "都市計画",
+"label": "浜松市都市計画マップ（わが街ガイド）"
+},
+{
 "url": "https://www.city.numazu.shizuoka.jp/shisei/keikaku/various/toshikei/naiyou/soukatsu.htm",
 "pref": "静岡県",
 "muni": "沼津市",
@@ -1398,6 +1405,20 @@
 "muni": "焼津市",
 "purpose": "決まり",
 "label": "焼津市建築確認事前チェックリスト No.8（PDF）"
+},
+{
+"url": "https://maps.yaizu-smartcity.jp/#/?baseMap=gsi&layers=j42AX122dteM0MAF5i7fVqQfoJc3VO5D2yM14iFxhF&center=138.32315540789853%2F34.85991838300079&zoom=13.786673574483752",
+"pref": "静岡県",
+"muni": "焼津市",
+"purpose": "都市計画",
+"label": "スマートマップ焼津（都市計画図）"
+},
+{
+"url": "https://www.city.yaizu.lg.jp/map-info/urban-planning/",
+"pref": "静岡県",
+"muni": "焼津市",
+"purpose": "都市計画",
+"label": "焼津市都市計画図（インターネット地図）"
 },
 {
 "url": "https://www2.wagmap.jp/kakegawa/PositionSelect?mid=15",
@@ -3794,6 +3815,27 @@
 "label": "甲斐市景観計画（PDF）"
 },
 {
+"url": "https://webgis.alandis.jp/kai19/portal/",
+"pref": "山梨県",
+"muni": "甲斐市",
+"purpose": "都市計画",
+"label": "デジMap甲斐（地図）"
+},
+{
+"url": "https://webgis.alandis.jp/kai19/portal/",
+"pref": "山梨県",
+"muni": "甲斐市",
+"purpose": "道路",
+"label": "デジMap甲斐（道路情報の地図）"
+},
+{
+"url": "https://webgis.alandis.jp/kai19/portal/",
+"pref": "山梨県",
+"muni": "甲斐市",
+"purpose": "災害",
+"label": "デジMap甲斐（防災情報の地図）"
+},
+{
 "url": "https://www.city.fuefuki.yamanashi.jp/machizukuri/youto/youto.html",
 "pref": "山梨県",
 "muni": "笛吹市",
@@ -3869,6 +3911,20 @@
 "muni": "笛吹市",
 "purpose": "決まり",
 "label": "笛吹市景観計画 第4章（PDF）"
+},
+{
+"url": "https://www2.wagmap.jp/fuefuki/Portal",
+"pref": "山梨県",
+"muni": "笛吹市",
+"purpose": "都市計画",
+"label": "ふえふきわが街ガイドマップ"
+},
+{
+"url": "https://www2.wagmap.jp/fuefuki/Portal",
+"pref": "山梨県",
+"muni": "笛吹市",
+"purpose": "道路",
+"label": "ふえふきわが街ガイドマップ（認定路線網図）"
 },
 {
 "url": "https://www.city.uenohara.yamanashi.jp/page/1020228.html",
@@ -5516,6 +5572,13 @@
 "label": "相模原市 建築審査課 よくある質問（A5-3・PDF）"
 },
 {
+"url": "https://sagamihara.geocloud.jp",
+"pref": "神奈川県",
+"muni": "相模原市",
+"purpose": "道路",
+"label": "さがみはら地図情報（Web公開型GIS）"
+},
+{
 "url": "https://www2.wagmap.jp/yokosuka/Agreement?IsPost=False&MapId=5&RequestPage=%2fyokosuka%2fPositionSelect%3fmid%3d5",
 "pref": "神奈川県",
 "muni": "横須賀市",
@@ -7049,6 +7112,20 @@
 "label": "伊勢原市景観条例（例規集）"
 },
 {
+"url": "https://www2.wagmap.jp/isehara/Portal",
+"pref": "神奈川県",
+"muni": "伊勢原市",
+"purpose": "道路",
+"label": "いせはらWebMaps（地図）"
+},
+{
+"url": "https://www2.wagmap.jp/isehara/Portal",
+"pref": "神奈川県",
+"muni": "伊勢原市",
+"purpose": "下水道",
+"label": "いせはらWebMaps（下水道台帳の地図）"
+},
+{
 "url": "https://www.city.ebina.kanagawa.jp/shisei/seisaku/machidukuri/toshi/1008405.html",
 "pref": "神奈川県",
 "muni": "海老名市",
@@ -7145,6 +7222,13 @@
 "muni": "海老名市",
 "purpose": "決まり",
 "label": "条例の対象となる開発事業一覧（PDF）"
+},
+{
+"url": "https://www2.wagmap.jp/ebina/Portal",
+"pref": "神奈川県",
+"muni": "海老名市",
+"purpose": "道路",
+"label": "i-MAPわが街海老名ガイド"
 },
 {
 "url": "https://www.city.zama.kanagawa.jp/shisei/machi/toshikeikaku/1004466.html",
@@ -7502,6 +7586,20 @@
 "muni": "葉山町",
 "purpose": "決まり",
 "label": "建築・土地・道路・海岸・都市計画"
+},
+{
+"url": "https://www2.wagmap.jp/hayama/",
+"pref": "神奈川県",
+"muni": "葉山町",
+"purpose": "都市計画",
+"label": "はやまMAP（都市計画マップ）"
+},
+{
+"url": "https://www2.wagmap.jp/hayama/",
+"pref": "神奈川県",
+"muni": "葉山町",
+"purpose": "道路",
+"label": "はやまMAP（道路台帳図）"
 },
 {
 "url": "https://www.town.samukawa.kanagawa.jp/soshiki/toshikensetsu/toshikeikaku/tokei_kaihatsu/info/toshikeikaku/toshikeikakujouhou/index.html",

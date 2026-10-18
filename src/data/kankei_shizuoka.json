@@ -626,6 +626,15 @@
     "role": "まずここで調べる",
     "name": "景観の届出（重点地区：都田テクノポリス工業地区）",
     "rule_for": "そのほか"
+   },
+   {
+    "label": "浜松市都市計画マップ（わが街ガイド）",
+    "url": "https://www2.wagmap.jp/hamamatsu/",
+    "what": "用途地域などの都市計画の地図",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
    }
   ],
   "沼津市": [
@@ -1117,6 +1126,24 @@
     "role": "まずここで調べる",
     "name": "建築協定（大島タウン）",
     "rule_for": "建築協定"
+   },
+   {
+    "label": "スマートマップ焼津（都市計画図）",
+    "url": "https://maps.yaizu-smartcity.jp/#/?baseMap=gsi&layers=j42AX122dteM0MAF5i7fVqQfoJc3VO5D2yM14iFxhF&center=138.32315540789853%2F34.85991838300079&zoom=13.786673574483752",
+    "what": "焼津市の都市計画図をデジタル地図で見る",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
+   },
+   {
+    "label": "焼津市都市計画図（インターネット地図）",
+    "url": "https://www.city.yaizu.lg.jp/map-info/urban-planning/",
+    "what": "利用上の注意に同意すると地図が開く",
+    "verified": true,
+    "checked": "2026-10-18",
+    "purpose": "都市計画",
+    "role": "まずここで調べる"
    }
   ],
   "熱海市": [

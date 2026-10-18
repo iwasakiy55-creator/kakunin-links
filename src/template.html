@@ -909,22 +909,20 @@ header .brand { margin-right:auto; }
 .maps .mgh + .mgrid { margin-top:6px; }
 .mcard .mo { display:none; }
 
-/* 何で調べられるか（つまみの2段目） */
-.mdl button { flex-wrap:wrap; row-gap:2px !important; }
-.mdl button .st { flex:1 1 100%; font-size:11.5px; font-weight:bold; line-height:1.2; padding-left:31px; white-space:nowrap; }
-.mdl button .st-map { color:#0F6B57; } .mdl button .st-doc { color:#2E5D96; } .mdl button .st-ask { color:#9A5512; } .mdl button .st-no { color:#9AA3A8; }
-.mdl button.sel .st { color:#fff !important; opacity:.95; }
-.mdl button { border-radius:14px !important; padding:6px 12px 6px 6px !important; }
-.mdl::before { content:"① 調べる目的を選ぶ　◎地図で調べられる　○資料・ページで　△窓口・条例で　✕載っていない" !important; }
-@media (max-width: 760px) { .mdl button .st { padding-left:0; font-size:10.5px; } .mdl::before { display:none; } }
-/* 目的のつまみを、どの市町村でも同じ升目に（法律の見出しは1行ずつ） */
-@media (min-width: 761px) {
-  .mdl { display:grid !important; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:8px !important; }
-  .mdl::before { grid-column:1 / -1; }
-  .mdl .grp { grid-column:1 / -1; border-left:0 !important; margin:6px 0 0 !important; padding:0 2px !important; font-size:14px !important; }
-  .mdl .grp:first-of-type { margin-top:0 !important; }
-  .mdl button { width:100% !important; justify-content:flex-start; min-height:54px; }
-}
+
+/* 地図のまとめ（同じ雛形の表） */
+.maps .mtab { display:flex; flex-direction:column; margin-top:8px; border-top:1px solid var(--line); }
+.maps .mrow { display:flex; gap:12px; align-items:flex-start; padding:7px 2px; border-bottom:1px solid var(--line); }
+.maps .mk { flex:none; width:11em; font-weight:bold; font-size:15px; padding-top:4px; }
+.maps .mrow.has .mk { color:#0F6B57; }
+.maps .mrow.nomap .mk { color:var(--faint); }
+.maps .mv { flex:1; display:flex; flex-wrap:wrap; gap:6px; }
+.maps .mchip { display:inline-flex; align-items:center; gap:6px; text-decoration:none; color:var(--ink); background:#EEF8F5; border:1px solid #BFE3D8; border-radius:999px; padding:4px 12px 4px 4px; font-size:14.5px; }
+.maps .mchip:hover { border-color:#0F6B57; background:#DDF1EC; }
+.maps .mchip .w { font-style:normal; font-size:11.5px; font-weight:bold; border-radius:999px; padding:1px 7px; color:#fff; }
+.maps .w-m { background:#0F6B57; } .maps .w-k { background:#17708F; } .maps .w-n { background:#7A8794; }
+.maps .mno { font-size:13.5px; color:var(--faint); padding-top:5px; }
+@media (max-width: 760px) { .maps .mrow { flex-direction:column; gap:4px; } .maps .mk { width:auto; padding-top:0; } }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
 <link rel="manifest" href="manifest.webmanifest?v=2"><link rel="apple-touch-icon" href="apple-touch-icon.png?v=2"><link rel="icon" type="image/png" href="favicon.png?v=2"><meta name="theme-color" content="#17708F"><meta name="apple-mobile-web-app-title" content="調べ先リンク">
@@ -1427,30 +1425,25 @@ function city(pi, m) {
   const G = Object.fromEntries(D.purposes.map(x => [x[0], x[3] || ""]));
   const navs = list.map(({ k, t, all }, idx) => { const it = CASE.items[k] || {};
     const gh = idx === 0 || G[list[idx - 1].k] !== G[k] ? `<div class="grp">${esc(G[k] || "")}</div>` : "";
-    return gh + `<button data-sel="${esc(k)}" class="${it.seen || it.saved ? "seen" : ""} ${all.length ? "" : "none"}" ${all.length ? "" : 'title="この市町村では、載せている調べ先がありません"'} style="--pc:var(${(ICON[k] || ICON["そのほか"])[0]})"><span class="n">${idx + 1}</span><span class="tx">${esc(t)}</span><span class="ck">${svg(I.ok, 18)}</span>${(() => { const s = canDo(all); return `<span class="st st-${s[0]}" title="${esc(s[2])}">${s[1]}</span>`; })()}</button>`; }).join("");
+    return gh + `<button data-sel="${esc(k)}" class="${it.seen || it.saved ? "seen" : ""} ${all.length ? "" : "none"}" ${all.length ? "" : 'title="この市町村では、載せている調べ先がありません"'} style="--pc:var(${(ICON[k] || ICON["そのほか"])[0]})"><span class="n">${idx + 1}</span><span class="tx">${esc(t)}</span><span class="ck">${svg(I.ok, 18)}</span></button>`; }).join("");
   const keys = `<div class="keys">数字キーで開く：${list.map((o, i) => `<b>${i + 1}</b> ${esc(o.t.replace("建築基準法の", ""))}`).join("　")}</div>`;
-  // 地図だけを、まとめて1か所に。市町村 → 県 → 国 の順に分け、それぞれ目的の順に並べる
+  // 地図のまとめ：どの市町村も同じ行（目的）で、地図で調べられるか／地図がないかを出す
   const mapsBox = (() => {
-    const mp = new Map();
-    list.forEach(({ k, t: tt, all }, li) => all.forEach(o => { if (linkType(o.x)[0] !== "map") return;
-      const u = o.x.url; if (!mp.has(u)) mp.set(u, { x: o.x, ken: o.ken, ps: [], ks: [], first: li }); const e = mp.get(u); if (!e.ps.includes(tt)) { e.ps.push(tt); e.ks.push(k); } }));
-    // 同じ地図サイトが2枚あるとき（案内のページと地図の本体）は1枚にまとめ、地図の本体のほうを残す
     const sysName = x => { const s = shortLabel(x.label); const q = s.match(/「([^」]+)」/); return (q ? q[1] : s.replace(/（[^）]*）/g, "")).replace(/\s/g, ""); };
     const isBody = x => /地図本体/.test(x.label) || !/^(www\.)?(city|town|vill)\./.test(new URL(x.url).hostname);
-    const merged = new Map();
-    [...mp.values()].forEach(e => { const key = (e.ken ? "k:" : "m:") + sysName(e.x); const o = merged.get(key);
-      if (!o) { merged.set(key, e); return; }
-      const keep = isBody(e.x) && !isBody(o.x) ? e : o, drop = keep === e ? o : e;
-      drop.ps.forEach((s, i) => { if (!keep.ps.includes(s)) { keep.ps.push(s); keep.ks.push(drop.ks[i]); } });
-      keep.first = Math.min(keep.first, drop.first); merged.set(key, keep); });
-    const ms = [...merged.values()];
-    if (!ms.length) return "";
-    const who = e => e.x.src ? "国" : e.ken ? "県" : "市町村";
-    const card = e => { const own = e.x.src || (e.ken ? p.name : (m || p.name));
-      return `<a class="mcard" href="${esc(e.x.url)}" target="_blank" rel="noopener" data-ks="${esc(e.ks.join(","))}" title="${esc(e.x.label)}"><b>${esc(cleanName(shortLabel(e.x.label), own))}</b><span class="mps">${e.ps.map(s => `<i>${esc(s)}</i>`).join("")}</span></a>`; };
-    const sec = (lab, xs) => xs.length ? `<div class="mgh">${esc(lab)}</div><div class="mgrid">${xs.sort((A, B) => A.first - B.first).map(card).join("")}</div>` : "";
-    return `<details class="maps" open><summary>🗺 地図をまとめて開く（${ms.length}）</summary>`
-      + sec(m || p.name, ms.filter(e => who(e) === "市町村")) + sec(p.name, ms.filter(e => who(e) === "県")) + sec("国", ms.filter(e => who(e) === "国")) + `</details>`;
+    let nMap = 0;
+    const rowsH = list.filter(o => o.k !== "そのほか").map(({ k, t: tt, all }) => {
+      const seen = new Map();
+      all.filter(o => linkType(o.x)[0] === "map").forEach(o => { const key = (o.x.src ? "n:" : o.ken ? "k:" : "m:") + sysName(o.x); const prev = seen.get(key);
+        if (!prev || (isBody(o.x) && !isBody(prev.x))) seen.set(key, o); });
+      const ms = [...seen.values()];
+      if (ms.length) nMap++;
+      const chip = o => { const who = o.x.src ? "国" : o.ken ? "県" : "市町村"; const own = o.x.src || (o.ken ? p.name : (m || p.name));
+        return `<a class="mchip" href="${esc(o.x.url)}" target="_blank" rel="noopener" data-ks="${esc(k)}" title="${esc(o.x.label)}"><i class="w w-${who === "国" ? "n" : who === "県" ? "k" : "m"}">${who}</i>${esc(cleanName(shortLabel(o.x.label), own))} ↗</a>`; };
+      const other = all.length ? "地図はありません（資料・窓口で確かめる。下のつまみで）" : "載っている調べ先がありません（窓口で確かめる）";
+      return `<div class="mrow ${ms.length ? "has" : "nomap"}"><div class="mk">${ms.length ? "◎" : "✕"} ${esc(tt)}</div><div class="mv">${ms.length ? ms.map(chip).join("") : `<span class="mno">${other}</span>`}</div></div>`;
+    }).join("");
+    return `<details class="maps" open><summary>🗺 地図で調べられるもの（${nMap} / ${list.filter(o => o.k !== "そのほか").length}）</summary><div class="mtab">${rowsH}</div></details>`;
   })();
   const hold = m && (p.hold || []).includes(m)
     ? `<div class="holdn">${svg(I.info, 20)}<div><b>${esc(m)}</b>のホームページは、リンクに事前の許可が要るため、許可をいただくまで載せていません。${esc(p.name)}・国などのページを載せています。${esc(m)}のページは、${esc(m)}のホームページから直接たどってください。</div></div>` : "";
@@ -1705,7 +1698,7 @@ function wire() {
     if (e.target.closest("#zoom")) { $("#zoom").style.display = "none"; return; }
     const rowEl = e.target.closest(".row[data-k]"); if (rowEl) setActive(rowEl.dataset.k);
     if (rowEl && e.target.closest(".lk .main")) markSeen(rowEl.dataset.k);
-    const mc = e.target.closest(".mcard[data-ks]"); if (mc) mc.dataset.ks.split(",").forEach(k => { if (k) markSeen(k); });   // 地図まとめから開いても、その目的に ✓
+    const mc = e.target.closest("a[data-ks]"); if (mc) mc.dataset.ks.split(",").forEach(k => { if (k) markSeen(k); });   // 地図まとめから開いても、その目的に ✓
     const ck = e.target.closest("[data-chk]");
     if (ck) { const k = ck.dataset.chk, it = CASE.items[k] = CASE.items[k] || {}; it.done = !it.done; caseSave();
       const r = ck.closest(".row"); r.classList.toggle("done", it.done); ck.setAttribute("aria-pressed", it.done); ck.querySelector(".bx").innerHTML = it.done ? svg(I.ok, 12) : ""; caseProgress(); return; }

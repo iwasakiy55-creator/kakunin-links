@@ -979,6 +979,26 @@ header .brand { margin-right:auto; }
 .maps .mtw { display:flex; gap:3px; margin-top:auto; }
 .maps .mtw .w { font-style:normal; font-size:10px; font-weight:bold; border-radius:999px; padding:0 6px; color:#fff; }
 @media (max-width: 760px) { .maps .mtiles { grid-template-columns:repeat(2, 1fr); } }
+
+/* 地図の抜粋：16マス */
+.maps .mtiles, .maps .mlist, .maps .mnone { display:none !important; }
+.maps summary small { font-weight:normal; color:var(--sub); font-size:12.5px; }
+.maps .mts16 { display:grid; grid-template-columns:repeat(8, 1fr); gap:6px; margin-top:8px; }
+.maps .mt { display:flex; flex-direction:column; justify-content:center; gap:2px; min-height:58px; padding:6px 8px; border-radius:10px; text-decoration:none; text-align:left; font:inherit; cursor:pointer; }
+.maps .mt.has { background:color-mix(in srgb, var(--pc) 12%, var(--panel)); border:1.5px solid color-mix(in srgb, var(--pc) 55%, transparent); color:var(--ink); }
+.maps .mt.has:hover, .maps .mt.has.on { background:color-mix(in srgb, var(--pc) 22%, var(--panel)); border-color:var(--pc); }
+.maps .mt.none { background:var(--bg); border:1px dashed var(--line); color:var(--faint); }
+.maps .mt .mtn { font-size:13.5px; font-weight:bold; line-height:1.25; }
+.maps .mt.has .mtn { color:color-mix(in srgb, var(--pc) 75%, var(--ink)); }
+.maps .mt .mts { font-size:11.5px; line-height:1.25; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.maps .mt.has .mts { color:var(--ink); }
+.maps .mpop { margin-top:8px; padding:8px 10px; border:1.5px solid var(--pc); border-radius:10px; background:color-mix(in srgb, var(--pc) 6%, var(--panel)); display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+.maps .mpop b { font-size:14px; margin-right:6px; }
+.maps .mpi { display:inline-flex; align-items:center; gap:5px; text-decoration:none; color:var(--ink); background:var(--panel); border:1px solid var(--line); border-radius:999px; padding:3px 12px 3px 4px; font-size:14px; }
+.maps .mpi:hover { border-color:var(--pc); }
+.maps .mpi .w { font-style:normal; font-size:10.5px; font-weight:bold; border-radius:999px; padding:0 6px; color:#fff; }
+@media (max-width: 1100px) { .maps .mts16 { grid-template-columns:repeat(4, 1fr); } }
+@media (max-width: 760px) { .maps .mts16 { grid-template-columns:repeat(4, 1fr); gap:4px; } .maps .mt { min-height:50px; padding:4px 5px; } .maps .mt .mtn { font-size:12px; } .maps .mt .mts { font-size:10.5px; } .maps summary small { display:none; } }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
 <link rel="manifest" href="manifest.webmanifest?v=2"><link rel="apple-touch-icon" href="apple-touch-icon.png?v=2"><link rel="icon" type="image/png" href="favicon.png?v=2"><meta name="theme-color" content="#17708F"><meta name="apple-mobile-web-app-title" content="調べ先リンク">
@@ -1491,26 +1511,28 @@ function city(pi, m) {
     const gh = idx === 0 || G[list[idx - 1].k] !== G[k] ? `<div class="grp">${esc(G[k] || "")}</div>` : "";
     return gh + `<button data-sel="${esc(k)}" class="${it.seen || it.saved ? "seen" : ""} ${all.length ? "" : "none"}" ${all.length ? "" : 'title="この市町村では、載せている調べ先がありません"'} style="--pc:var(${(ICON[k] || ICON["そのほか"])[0]})"><span class="n">${idx + 1}</span><span class="tx">${esc(t)}</span><span class="ck">${svg(I.ok, 18)}</span></button>`; }).join("");
   const keys = `<div class="keys">数字キーで開く：${list.map((o, i) => `<b>${i + 1}</b> ${esc(o.t.replace("建築基準法の", ""))}`).join("　")}</div>`;
-  // 地図の抜粋：地図のある目的だけを、1行ずつ小さく。地図のない目的は、最後に1行で
+  // 地図の抜粋：どの市町村も同じ16マス（目的）。地図があるマスは色付き。押すと地図が開く（2つ以上なら選ぶ）
   const mapsBox = (() => {
     const sysName = x => { const s = shortLabel(x.label); const q = s.match(/「([^」]+)」/); return (q ? q[1] : s.replace(/（[^）]*）/g, "")).replace(/\s/g, ""); };
     const isBody = x => /地図本体/.test(x.label) || !/^(www\.)?(city|town|vill)\./.test(new URL(x.url).hostname);
     const isMapPdf = x => linkType(x)[0] === "pdf" && /図|マップ|MAP|地図/i.test(x.label);
-    const has = [], no = [], hasK = [];
-    list.filter(o => o.k !== "そのほか").forEach(({ k, t: tt, all }) => {
+    let nMap = 0, pops = "";
+    const tiles = list.filter(o => o.k !== "そのほか").map(({ k, t: tt, all }, idx) => {
       const seen = new Map();
       all.filter(o => linkType(o.x)[0] === "map" || isMapPdf(o.x)).forEach(o => { const key = (o.x.src ? "n:" : o.ken ? "k:" : "m:") + sysName(o.x); const prev = seen.get(key);
         if (!prev || (isBody(o.x) && !isBody(prev.x))) seen.set(key, o); });
       const ms = [...seen.values()].sort((A, B) => (linkType(A.x)[0] === "pdf") - (linkType(B.x)[0] === "pdf"));
-      if (!ms.length) { no.push(tt); return; }
-      const chip = o => { const own = o.x.src || (o.ken ? p.name : (m || p.name)); const pdf = linkType(o.x)[0] === "pdf"; const who = o.x.src ? "国" : o.ken ? "県" : "市";
-        return `<a class="mchip ${pdf ? "pdf" : ""}" href="${esc(o.x.url)}" target="_blank" rel="noopener" data-ks="${esc(k)}" title="${esc(o.x.label)}"><i class="w w-${who === "国" ? "n" : who === "県" ? "k" : "m"}">${who}</i>${pdf ? '<i class="w w-pdf">PDF</i>' : ""}${esc(cleanName(shortLabel(o.x.label), own))}</a>`; };
-      ms.forEach(o => { const own = o.x.src || (o.ken ? p.name : (m || p.name)); const pdf = linkType(o.x)[0] === "pdf"; const who = o.x.src ? "国" : o.ken ? "県" : "市";
-        has.push(`<a class="mtile ${pdf ? "pdf" : ""}" href="${esc(o.x.url)}" target="_blank" rel="noopener" data-ks="${esc(k)}" title="${esc(o.x.label)}" style="--pc:var(${(ICON[k] || ICON["そのほか"])[0]})"><span class="mtp">${esc(tt)}</span><span class="mtn">${esc(cleanName(shortLabel(o.x.label), own))}</span><span class="mtw"><i class="w w-${who === "国" ? "n" : who === "県" ? "k" : "m"}">${who}</i>${pdf ? '<i class="w w-pdf">PDF</i>' : ""}</span></a>`); });
-      hasK.push(tt);
-    });
-    if (!has.length) return "";
-    return `<details class="maps" open><summary>🗺 地図の抜粋（${hasK.length} / ${hasK.length + no.length}）</summary><div class="mtiles">${has.join("")}</div>${no.length ? `<div class="mnone">地図なし：${no.map(esc).join("・")}（下のつまみで、資料・窓口を見る）</div>` : ""}</details>`;
+      const col = `--pc:var(${(ICON[k] || ICON["そのほか"])[0]})`;
+      if (!ms.length) return `<button class="mt none" data-jumpk="${esc(k)}" style="${col}" title="地図はありません。押すと、この目的の調べ先（資料・窓口）へ"><span class="mtn">${esc(tt)}</span><span class="mts">地図なし</span></button>`;
+      nMap++;
+      const item = o => { const own = o.x.src || (o.ken ? p.name : (m || p.name)); const pdf = linkType(o.x)[0] === "pdf"; const who = o.x.src ? "国" : o.ken ? "県" : "市";
+        return `<a class="mpi" href="${esc(o.x.url)}" target="_blank" rel="noopener" data-ks="${esc(k)}"><i class="w w-${who === "国" ? "n" : who === "県" ? "k" : "m"}">${who}</i>${pdf ? '<i class="w w-pdf">PDF</i>' : ""}${esc(cleanName(shortLabel(o.x.label), own))} ↗</a>`; };
+      const label = `<span class="mtn">${esc(tt)}</span><span class="mts">🗺 ${ms.length === 1 ? esc(cleanName(shortLabel(ms[0].x.label), ms[0].x.src || (ms[0].ken ? p.name : (m || p.name)))) : ms.length + "つの地図"}</span>`;
+      if (ms.length === 1) return `<a class="mt has" href="${esc(ms[0].x.url)}" target="_blank" rel="noopener" data-ks="${esc(k)}" style="${col}" title="${esc(ms[0].x.label)}">${label}</a>`;
+      pops += `<div class="mpop" data-mpop="${esc(k)}" hidden style="${col}"><b>${esc(tt)}の地図</b>${ms.map(item).join("")}</div>`;
+      return `<button class="mt has multi" data-mp="${esc(k)}" style="${col}">${label}</button>`;
+    }).join("");
+    return `<details class="maps" open><summary>🗺 地図の抜粋（${nMap} / ${list.filter(o => o.k !== "そのほか").length}）<small>　色付き＝地図あり（押すと開く）　灰色＝地図なし</small></summary><div class="mts16">${tiles}</div>${pops}</details>`;
   })();
   const hold = m && (p.hold || []).includes(m)
     ? `<div class="holdn">${svg(I.info, 20)}<div><b>${esc(m)}</b>のホームページは、リンクに事前の許可が要るため、許可をいただくまで載せていません。${esc(p.name)}・国などのページを載せています。${esc(m)}のページは、${esc(m)}のホームページから直接たどってください。</div></div>` : "";
@@ -1765,6 +1787,8 @@ function wire() {
     if (e.target.closest("#zoom")) { $("#zoom").style.display = "none"; return; }
     const rowEl = e.target.closest(".row[data-k]"); if (rowEl) setActive(rowEl.dataset.k);
     if (rowEl && e.target.closest(".lk .main")) markSeen(rowEl.dataset.k);
+    const mpb = e.target.closest("[data-mp]"); if (mpb) { const k = mpb.dataset.mp; document.querySelectorAll(".mpop").forEach(x => x.hidden = x.dataset.mpop !== k || !x.hidden); document.querySelectorAll(".mt.multi").forEach(x => x.classList.toggle("on", x === mpb && !document.querySelector(`.mpop[data-mpop="${k}"]`).hidden)); return; }
+    const mjk = e.target.closest("[data-jumpk]"); if (mjk) { const b = document.querySelector(`.mdl button[data-sel="${mjk.dataset.jumpk}"]`); if (b) { b.click(); b.scrollIntoView({ block: "center", behavior: "smooth" }); } return; }
     const mc = e.target.closest("a[data-ks]"); if (mc) mc.dataset.ks.split(",").forEach(k => { if (k) markSeen(k); });   // 地図まとめから開いても、その目的に ✓
     const ck = e.target.closest("[data-chk]");
     if (ck) { const k = ck.dataset.chk, it = CASE.items[k] = CASE.items[k] || {}; it.done = !it.done; caseSave();

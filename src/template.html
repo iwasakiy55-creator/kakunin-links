@@ -923,6 +923,28 @@ header .brand { margin-right:auto; }
 .maps .w-m { background:#0F6B57; } .maps .w-k { background:#17708F; } .maps .w-n { background:#7A8794; }
 .maps .mno { font-size:13.5px; color:var(--faint); padding-top:5px; }
 @media (max-width: 760px) { .maps .mrow { flex-direction:column; gap:4px; } .maps .mk { width:auto; padding-top:0; } }
+
+/* 地図のまとめ：同じ升目のカード */
+.maps summary small { font-weight:normal; color:var(--sub); font-size:13px; }
+.maps .mgrid2 { display:grid; grid-template-columns:repeat(auto-fill, minmax(330px, 1fr)); gap:8px; margin-top:10px; }
+.maps .mcell { border:1px solid var(--line); border-radius:12px; padding:8px 10px; background:var(--panel); display:flex; flex-direction:column; gap:6px; }
+.maps .mcell.has { border-color:#BFE3D8; background:#F6FCFA; }
+.maps .mcell.nomap { background:var(--bg); }
+.maps .mch { display:flex; align-items:baseline; gap:8px; flex-wrap:wrap; }
+.maps .mch b { font-size:15.5px; }
+.maps .mcell.has .mch b { color:#0F6B57; } .maps .mcell.nomap .mch b { color:var(--sub); }
+.maps .mchip.pdf { background:#FDF1EF; border-color:#F0C8C2; }
+.maps .w-pdf { background:#B03A2E; }
+.maps .mjo { margin-left:auto; }
+.maps .mjo > summary { cursor:pointer; list-style:none; font-size:12.5px; font-weight:bold; color:#5B3C94; background:#F3EEFA; border:1px solid #CDBDE8; border-radius:6px; padding:1px 8px; }
+.maps .mjo > summary::-webkit-details-marker { display:none; }
+.maps .mjo[open] { flex:1 1 100%; margin-left:0; order:3; }
+.maps .mja { margin-top:6px; border-top:1px dashed var(--line); padding-top:6px; }
+.maps .mjh { font-weight:bold; font-size:14px; } .maps .mjh a { font-weight:normal; font-size:12.5px; margin-left:6px; }
+.maps .mjt { white-space:pre-wrap; font-family:"BIZ UDPMincho", "Yu Mincho", serif; font-size:14.5px; line-height:1.8; max-height:18em; overflow:auto; }
+.maps .mjs { font-size:12px; color:var(--sub); margin-top:4px; }
+.maps .mtab { display:none; }
+@media (max-width: 760px) { .maps .mgrid2 { grid-template-columns:1fr; } }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
 <link rel="manifest" href="manifest.webmanifest?v=2"><link rel="apple-touch-icon" href="apple-touch-icon.png?v=2"><link rel="icon" type="image/png" href="favicon.png?v=2"><meta name="theme-color" content="#17708F"><meta name="apple-mobile-web-app-title" content="調べ先リンク">
@@ -1396,6 +1418,10 @@ function city(pi, m) {
   if (m) { recent = [{ p: pi, m }, ...recent.filter(r => !(r.p === pi && r.m === m))].slice(0, 8); store.set("linkshu-recent", recent); }
   const own = m ? p.munis[m] || [] : p.pref, ken = m ? forMuni(p, m) : [];
   const tk = m && isTk(p, m);
+  const ARTS = { "都市計画": ["toshi:7", "toshi:8"], "開発許可": ["toshi:29", "toshi:43", "toshi:53"], "道路": ["kijun:42", "kijun:43", "doro:28"],
+    "地形": ["kijun:40"], "防火": ["kijun:22", "kijun:61"], "災害": ["kijun:39", "dosha:9"], "地区計画": ["toshi:12_4", "toshi:58_2", "kijun:68_2"],
+    "建築協定": ["kijun:69"], "白地": ["kijun:52", "kijun:53"], "盛土": ["morido:12", "morido:30"], "浸水": ["kasen:30", "kasen:56"], "下水道": ["gesui:10"],
+    "浄化槽": ["jokaso:3_2", "jokaso:5"], "水道": ["suido:16"], "消防": ["shobo:9", "shobo:9_2"], "中間検査": ["kijun:7_3"] };
   const LAWOF = Object.fromEntries(D.purposes.map(x => [x[0], x[4] || ""]));
   const list = D.purposes.map(([k, t, sub]) => {
     const a = own.filter(x => (x.purpose || "そのほか") === k).map(x => ({ x, ken: !m }));
@@ -1427,23 +1453,26 @@ function city(pi, m) {
     const gh = idx === 0 || G[list[idx - 1].k] !== G[k] ? `<div class="grp">${esc(G[k] || "")}</div>` : "";
     return gh + `<button data-sel="${esc(k)}" class="${it.seen || it.saved ? "seen" : ""} ${all.length ? "" : "none"}" ${all.length ? "" : 'title="この市町村では、載せている調べ先がありません"'} style="--pc:var(${(ICON[k] || ICON["そのほか"])[0]})"><span class="n">${idx + 1}</span><span class="tx">${esc(t)}</span><span class="ck">${svg(I.ok, 18)}</span></button>`; }).join("");
   const keys = `<div class="keys">数字キーで開く：${list.map((o, i) => `<b>${i + 1}</b> ${esc(o.t.replace("建築基準法の", ""))}`).join("　")}</div>`;
-  // 地図のまとめ：どの市町村も同じ行（目的）で、地図で調べられるか／地図がないかを出す
+  // 地図のまとめ：どの市町村も同じ升目（目的）で、地図（PDF も）・根拠の条文を出す
   const mapsBox = (() => {
     const sysName = x => { const s = shortLabel(x.label); const q = s.match(/「([^」]+)」/); return (q ? q[1] : s.replace(/（[^）]*）/g, "")).replace(/\s/g, ""); };
     const isBody = x => /地図本体/.test(x.label) || !/^(www\.)?(city|town|vill)\./.test(new URL(x.url).hostname);
+    const isMapPdf = x => linkType(x)[0] === "pdf" && /図|マップ|MAP|地図/i.test(x.label);
     let nMap = 0;
-    const rowsH = list.filter(o => o.k !== "そのほか").map(({ k, t: tt, all }) => {
+    const cards = list.filter(o => o.k !== "そのほか").map(({ k, t: tt, all }) => {
       const seen = new Map();
-      all.filter(o => linkType(o.x)[0] === "map").forEach(o => { const key = (o.x.src ? "n:" : o.ken ? "k:" : "m:") + sysName(o.x); const prev = seen.get(key);
+      all.filter(o => linkType(o.x)[0] === "map" || isMapPdf(o.x)).forEach(o => { const key = (o.x.src ? "n:" : o.ken ? "k:" : "m:") + sysName(o.x); const prev = seen.get(key);
         if (!prev || (isBody(o.x) && !isBody(prev.x))) seen.set(key, o); });
-      const ms = [...seen.values()];
+      const ms = [...seen.values()].sort((A, B) => (linkType(A.x)[0] === "pdf") - (linkType(B.x)[0] === "pdf"));
       if (ms.length) nMap++;
-      const chip = o => { const who = o.x.src ? "国" : o.ken ? "県" : "市町村"; const own = o.x.src || (o.ken ? p.name : (m || p.name));
-        return `<a class="mchip" href="${esc(o.x.url)}" target="_blank" rel="noopener" data-ks="${esc(k)}" title="${esc(o.x.label)}"><i class="w w-${who === "国" ? "n" : who === "県" ? "k" : "m"}">${who}</i>${esc(cleanName(shortLabel(o.x.label), own))} ↗</a>`; };
-      const other = all.length ? "地図なし（資料・窓口で）" : "調べ先なし（窓口で）";
-      return `<div class="mrow ${ms.length ? "has" : "nomap"}"><div class="mk">${ms.length ? "◎" : "✕"} ${esc(tt)}</div><div class="mv">${ms.length ? ms.map(chip).join("") : `<span class="mno">${other}</span>`}</div></div>`;
+      const chip = o => { const who = o.x.src ? "国" : o.ken ? "県" : "市町村"; const own = o.x.src || (o.ken ? p.name : (m || p.name)); const pdf = linkType(o.x)[0] === "pdf";
+        return `<a class="mchip ${pdf ? "pdf" : ""}" href="${esc(o.x.url)}" target="_blank" rel="noopener" data-ks="${esc(k)}" title="${esc(o.x.label)}"><i class="w w-${who === "国" ? "n" : who === "県" ? "k" : "m"}">${who}</i>${pdf ? '<i class="w w-pdf">PDF</i>' : ""}${esc(cleanName(shortLabel(o.x.label), own))} ↗</a>`; };
+      const arts = (ARTS[k] || []).map(id => D.joubun && D.joubun[id]).filter(Boolean);
+      const law = arts.length ? `<details class="mjo"><summary>条文 ${esc(LAWOF[k] || "")}</summary>${arts.map(a => `<div class="mja"><div class="mjh">${esc(a.law)} ${esc(a.title)}${a.caption ? " " + esc(a.caption) : ""} <a href="${esc(a.url)}" target="_blank" rel="noopener">e-Gov ↗</a></div><div class="mjt">${esc(a.text.replace(/^（[^）]*）\n/, "").replace(/^第[^\n]*\n/, ""))}</div></div>`).join("")}<div class="mjs">出典：e-Gov 法令検索（${esc((arts[0].date || "").replace(/-/g, "/"))} 施行の版）。審査は e-Gov の原文で確かめる</div></details>` : "";
+      const none = all.length ? "地図なし（資料・窓口で）" : "調べ先なし（窓口で）";
+      return `<div class="mcell ${ms.length ? "has" : "nomap"}"><div class="mch"><b>${ms.length ? "◎" : "✕"} ${esc(tt)}</b>${law}</div><div class="mv">${ms.length ? ms.map(chip).join("") : `<span class="mno">${none}</span>`}</div></div>`;
     }).join("");
-    return `<details class="maps" open><summary>🗺 地図で調べられるもの（${nMap} / ${list.filter(o => o.k !== "そのほか").length}）</summary><div class="mtab">${rowsH}</div></details>`;
+    return `<details class="maps" open><summary>🗺 地図で調べられるもの（${nMap} / ${list.filter(o => o.k !== "そのほか").length}）　<small>◎地図あり　✕地図なし　「条文」で根拠の条文</small></summary><div class="mgrid2">${cards}</div></details>`;
   })();
   const hold = m && (p.hold || []).includes(m)
     ? `<div class="holdn">${svg(I.info, 20)}<div><b>${esc(m)}</b>のホームページは、リンクに事前の許可が要るため、許可をいただくまで載せていません。${esc(p.name)}・国などのページを載せています。${esc(m)}のページは、${esc(m)}のホームページから直接たどってください。</div></div>` : "";

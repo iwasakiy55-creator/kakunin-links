@@ -122,6 +122,7 @@ def main() -> None:
         "status": status,
         "config": config,
         "kankei": json.loads((DATA / "kankei.json").read_text(encoding="utf-8")),
+        "joubun": json.loads((DATA / "joubun.json").read_text(encoding="utf-8")),   # e-Gov から写した条文（src/tools/joubun/extract.py）
         "stale_days": 365,
     }
     js = json.dumps(payload, ensure_ascii=False)

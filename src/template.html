@@ -917,6 +917,14 @@ header .brand { margin-right:auto; }
 .mdl button { border-radius:14px !important; padding:6px 12px 6px 6px !important; }
 .mdl::before { content:"① 調べる目的を選ぶ　◎地図で調べられる　○資料・ページで　△窓口・条例で　✕載っていない" !important; }
 @media (max-width: 760px) { .mdl button .st { padding-left:0; font-size:10.5px; } .mdl::before { display:none; } }
+/* 目的のつまみを、どの市町村でも同じ升目に（法律の見出しは1行ずつ） */
+@media (min-width: 761px) {
+  .mdl { display:grid !important; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:8px !important; }
+  .mdl::before { grid-column:1 / -1; }
+  .mdl .grp { grid-column:1 / -1; border-left:0 !important; margin:6px 0 0 !important; padding:0 2px !important; font-size:14px !important; }
+  .mdl .grp:first-of-type { margin-top:0 !important; }
+  .mdl button { width:100% !important; justify-content:flex-start; min-height:54px; }
+}
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
 <link rel="manifest" href="manifest.webmanifest?v=2"><link rel="apple-touch-icon" href="apple-touch-icon.png?v=2"><link rel="icon" type="image/png" href="favicon.png?v=2"><meta name="theme-color" content="#17708F"><meta name="apple-mobile-web-app-title" content="調べ先リンク">

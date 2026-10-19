@@ -1953,6 +1953,8 @@ function boot() {
   $("#foot").innerHTML = `県・市町村の公式サイトだけ（${esc(D.built)} 版・毎日 19 時にリンクを見回り）。判断に迷うときは担当の課へ。`
     + (c && c.trial_until ? `　試用：${esc(jd(c.trial_until))}まで` : "")
     + `<br><a class="tl" id="termsLink">利用規約</a>　リンクが開けない・載せてほしいページは、${esc((c && c.contact) || "株式会社マルホープ 岩崎")}まで。`;
+  // マルホープの確かめ用（?naiken・開発版）だけ：利用の回数の記録へ（ドライブのファイル。持ち主しか開けない）
+  if (IS_DEV || /[?&]naiken/.test(location.search)) $("#foot").insertAdjacentHTML("beforeend", `　<a class="tl" href="https://drive.google.com/file/d/1BkSJ2T1h2MIyycuRXJKaGM-tIDKe581D/view" target="_blank" rel="noopener">利用の回数 ↗</a>`);
   $("#termsLink").onclick = () => terms(true);
   terms(false);      // 開くたびに、規約に同意してから使う
   // 利用の回数（Cloudflare Web Analytics。Cookie なし）。開発版・?naiken（マルホープの確かめ）は数えない。URL には県・市町村だけで、地名地番は入らない

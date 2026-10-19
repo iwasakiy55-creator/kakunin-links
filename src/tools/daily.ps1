@@ -12,6 +12,7 @@ try {
   L '見回りを始めます'
   git pull -q --rebase --autostash 2>&1 | Out-Null
   & (Join-Path $here 'check.ps1') -Quiet | Out-Host
+  try { L (& (Join-Path $here 'riyou.ps1')) } catch { L ('利用の回数：' + $_) }
   & py -X utf8 (Join-Path $src 'build.py') | Out-Host
   if ($LASTEXITCODE -ne 0) { throw '画面を作れませんでした' }
   git add -A | Out-Null

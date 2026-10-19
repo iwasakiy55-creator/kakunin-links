@@ -1103,6 +1103,7 @@ header .brand { margin-right:auto; }
 <ol><li>利用者が入力した地名地番は、利用者のブラウザのタブ内にのみ保持され、タブを閉じることにより消去されます。当社はこれを取得しません。</li>
 <li>画面の写し（PDF）は、利用者が指定した利用者の端末内のフォルダに保存され、当社はこれを取得しません。保存の失敗または消失について、当社は責任を負いません。重要な記録は、保存されたことを確認のうえ、利用者の定める方法により保管してください。</li>
 <li>本サービスは、表示に際してリンクの一覧を当社が利用する外部の配信基盤（GitHub）から読み込みます。この際、当該基盤において、接続の日時および接続元が記録されることがあります。</li>
+<li>当社は、利用の状況（表示の回数、閲覧された市町村のページ、端末の種類等）を把握するため、外部の解析サービス（Cloudflare Web Analytics）を利用します。当該サービスは Cookie を使用せず、利用者が入力した地名地番は送信されません。</li>
 <li>利用者の端末およびブラウザの管理（第三者による画面の閲覧の防止等を含みます。）は、利用者の責任において行うものとします。</li></ol>
 <h3>第8条（禁止事項）</h3>
 <p>利用者は、次の各号に掲げる行為をしてはなりません。</p>
@@ -1954,6 +1955,11 @@ function boot() {
     + `<br><a class="tl" id="termsLink">利用規約</a>　リンクが開けない・載せてほしいページは、${esc((c && c.contact) || "株式会社マルホープ 岩崎")}まで。`;
   $("#termsLink").onclick = () => terms(true);
   terms(false);      // 開くたびに、規約に同意してから使う
+  // 利用の回数（Cloudflare Web Analytics。Cookie なし）。開発版・?naiken（マルホープの確かめ）は数えない。URL には県・市町村だけで、地名地番は入らない
+  if (c && c.cf_beacon && !IS_DEV && !/[?&]naiken\b/.test(location.search)) {
+    const b = document.createElement("script"); b.defer = true; b.src = "https://static.cloudflareinsights.com/beacon.min.js";
+    b.setAttribute("data-cf-beacon", JSON.stringify({ token: c.cf_beacon, spa: true })); document.head.appendChild(b);
+  }
   const h = decodeURIComponent(location.hash.slice(1));   // #山梨県/甲府市 の形で開くと、その市町村を出す
   if (h === "見回り") { report(); return; }
   if (h === "メモ") { memos(); return; }

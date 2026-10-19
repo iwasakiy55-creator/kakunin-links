@@ -12,6 +12,6 @@
   "hours_from": "09:00",
   "hours_to": "17:00",
   "contact": "株式会社マルホープ 岩崎",
-  "cf_beacon": "",
+  "cf_beacon": "f769d71527614b3aa23c0b628bde85e6",
   "note_cf_beacon": "利用の回数を数える Cloudflare Web Analytics の token（公開してよい値）。空なら数えない"
 }

@@ -1956,7 +1956,7 @@ function boot() {
   $("#termsLink").onclick = () => terms(true);
   terms(false);      // 開くたびに、規約に同意してから使う
   // 利用の回数（Cloudflare Web Analytics。Cookie なし）。開発版・?naiken（マルホープの確かめ）は数えない。URL には県・市町村だけで、地名地番は入らない
-  if (c && c.cf_beacon && !IS_DEV && !/[?&]naiken/.test(location.search)) {
+  if (c && c.cf_beacon && !IS_DEV && !/[?&]naiken\b/.test(location.search)) {
     const b = document.createElement("script"); b.defer = true; b.src = "https://static.cloudflareinsights.com/beacon.min.js";
     b.setAttribute("data-cf-beacon", JSON.stringify({ token: c.cf_beacon, spa: true })); document.head.appendChild(b);
   }
